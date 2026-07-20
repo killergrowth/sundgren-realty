@@ -1,0 +1,113 @@
+name: Refresh Auctions
+
+on:
+  schedule:
+    # Every 3 hours
+    - cron: '0 */3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Generate auction pages (direct mode)
+        run: node generate-auctions.mjs --direct
+
+      - name: Build site
+        run: |
+          # On Ubuntu, build.js uses local paths — use direct mode instead
+          # The generate-auctions.mjs --direct already wrote auction pages to dist/
+          # We need to copy static files and build remaining pages
+          node -e "
+            const fs = require('fs');
+            const path = require('path');
+            const ROOT = process.cwd();
+            const DIST = path.join(ROOT, 'dist');
+
+            function read(p) {
+              const buf = fs.readFileSync(p);
+              const start = (buf[0]===0xEF && buf[1]===0xBB && buf[2]===0xBF) ? 3 : 0;
+              return buf.slice(start).toString('utf8');
+            }
+
+            function copyDir(src, dest) {
+              if (!fs.existsSync(src)) return;
+              fs.mkdirSync(dest, { recursive: true });
+              fs.readdirSync(src, { withFileTypes: true }).forEach(e => {
+                const s = path.join(src, e.name), d = path.join(dest, e.name);
+                if (e.isDirectory()) copyDir(s, d);
+                else fs.copyFileSync(s, d);
+              });
+            }
+
+            const header = read(path.join(ROOT, '_partials/header.html'));
+            const footer = read(path.join(ROOT, '_partials/footer.html'));
+            const pages = [
+              ['index.html','index.html'],
+              ['land-listings.html','land-listings/index.html'],
+              ['agents.html','agents/index.html'],
+              ['news.html','news/index.html'],
+              ['contact-us.html','contact-us/index.html'],
+              ['privacy-policy.html','privacy-policy/index.html'],
+              ['404.html','404.html'],
+            ];
+            for (const [src,dest] of pages) {
+              const srcPath = path.join(ROOT, src);
+              const destPath = path.join(DIST, dest);
+              if (!fs.existsSync(srcPath)) continue;
+              let html = read(srcPath).replace('<!-- HEADER -->',header).replace('<!-- FOOTER -->',footer);
+              fs.mkdirSync(path.dirname(destPath),{recursive:true});
+              fs.writeFileSync(destPath, html, 'utf8');
+              console.log('  Built:',dest);
+            }
+            for (const d of ['css','js','images']) copyDir(path.join(ROOT,d), path.join(DIST,d));
+            for (const f of ['robots.txt','_worker.js','_routes.json','_redirects']) {
+              const s = path.join(ROOT,f);
+              if (fs.existsSync(s)) fs.copyFileSync(s, path.join(DIST,f));
+            }
+            copyDir(path.join(ROOT,'functions'), path.join(DIST,'functions'));
+
+            // Sitemap
+            const today = new Date().toISOString().split('T')[0];
+            const base = 'https://sundgrenrealty.com';
+            const staticUrls = ['/','/land-listings/','/auctions/','/agents/','/news/','/contact-us/'];
+            const auctionDir = path.join(DIST,'auctions');
+            const auctionUrls = fs.existsSync(auctionDir)
+              ? fs.readdirSync(auctionDir,{withFileTypes:true}).filter(e=>e.isDirectory()).map(e=>'/auctions/'+e.name+'/')
+              : [];
+            const allUrls = [...staticUrls, ...auctionUrls];
+            const xml = '<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n' +
+              allUrls.map(u=>'  <url>\n    <loc>'+base+u+'</loc>\n    <lastmod>'+today+'</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>').join('\n') +
+              '\n</urlset>\n';
+            fs.writeFileSync(path.join(DIST,'sitemap.xml'), xml, 'utf8');
+            console.log('  Sitemap:',allUrls.length,'URLs');
+          "
+
+      - name: Deploy to Cloudflare Pages (main)
+        run: npx wrangler pages deploy ./dist --project-name sundgren-realty --branch main --commit-dirty=true
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: 27cafbbee6f8e1db0d9499405d4755c1
+
+      - name: Deploy to Cloudflare Pages (staging)
+        run: npx wrangler pages deploy ./dist --project-name sundgren-realty --branch staging --commit-dirty=true
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: 27cafbbee6f8e1db0d9499405d4755c1
+
+      - name: Commit updated state
+        run: |
+          git config user.name "KillerGrowth"
+          git config user.email "notifications@killergrowth.com"
+          git add auctions/_state.json
+          git diff --staged --quiet || git commit -m "chore: refresh auction state [skip ci]"
+          git push

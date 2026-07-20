@@ -1,0 +1,58 @@
+<!-- Top Bar -->
+<div class="top-bar">
+  <div class="container">
+    <a href="tel:3163217112">(316) 321-7112</a>
+    <span class="sep">|</span>
+    <a href="mailto:realty@sundgren.com">realty@sundgren.com</a>
+    <div class="socials">
+      <a href="https://www.facebook.com/sundgrenrealty" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://twitter.com/sundgrenrealty" target="_blank" rel="noopener" aria-label="Twitter/X"><i class="fab fa-x-twitter"></i></a>
+      <a href="https://www.youtube.com/@sundgrenrealty" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+    </div>
+  </div>
+</div>
+
+<!-- Main Nav -->
+<header class="site-header" id="site-header">
+  <div class="nav-inner">
+    <a href="/" class="logo-wrap" aria-label="Sundgren Realty Home">
+      <div class="logo-box">
+        <span class="logo-sun">&#9788;</span>
+        <span class="logo-name">Sundgren</span>
+        <span class="logo-sub">Realty</span>
+      </div>
+    </a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      &#9776;
+    </button>
+    <ul class="main-nav" id="main-nav">
+      <li><a href="https://realestate.sundgren.com/idx/featured" target="_blank" rel="noopener">Property Search</a></li>
+      <li><a href="https://realestate.sundgren.com/i/commercial-property" target="_blank" rel="noopener">Commercial</a></li>
+      <li><a href="/land-listings/">Land Listings</a></li>
+      <li><a href="/auctions/">Auctions</a></li>
+      <li><a href="/agents/">Agents</a></li>
+      <li><a href="/news/">News</a></li>
+      <li class="contact-btn"><a href="/contact-us/">Contact Us</a></li>
+    </ul>
+  </div>
+</header>
+
+<script>
+(function(){
+  var btn = document.getElementById('nav-toggle');
+  var nav = document.getElementById('main-nav');
+  if (btn && nav) {
+    btn.addEventListener('click', function() {
+      var open = nav.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open);
+    });
+  }
+  // Highlight active nav item
+  var path = window.location.pathname;
+  document.querySelectorAll('.main-nav li a').forEach(function(a) {
+    if (a.hostname === window.location.hostname && path !== '/' && a.getAttribute('href') && a.getAttribute('href') !== '/' && path.startsWith(a.getAttribute('href'))) {
+      a.classList.add('active');
+    }
+  });
+})();
+</script>

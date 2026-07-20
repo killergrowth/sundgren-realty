@@ -1,0 +1,9 @@
+# Sundgren Realty -- URL redirects
+# NEVER remove entries from this file. Only add.
+
+/land-listings  /land-listings/  301
+/auctions       /auctions/       301
+/agents         /agents/         301
+/news           /news/           301
+/contact-us     /contact-us/     301
+/privacy-policy /privacy-policy/ 301
