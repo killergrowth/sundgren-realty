@@ -1,2813 +1,2813 @@
 {
-  "lastFetch": "2026-07-20T20:58:10.757Z",
+  "lastFetch": "2026-07-21T00:54:17.367Z",
   "auctions": {
     "24096": {
       "slug": "test-auction-24096",
       "status": "complete",
       "name": "TEST AUCTION",
-      "generated": "2026-07-20T20:58:11.264Z"
+      "generated": "2026-07-21T00:54:17.874Z"
     },
     "24126": {
       "slug": "farm-machinery-equipment-auction-near-thayer-kansas-24126",
       "status": "complete",
       "name": "Farm Machinery & Equipment Auction Near Thayer Kansas",
-      "generated": "2026-07-20T20:58:11.262Z"
+      "generated": "2026-07-21T00:54:17.873Z"
     },
     "24350": {
       "slug": "test-auction-24350",
       "status": "complete",
       "name": "TEST AUCTION",
-      "generated": "2026-07-20T20:58:11.263Z"
+      "generated": "2026-07-21T00:54:17.874Z"
     },
     "24438": {
       "slug": "kawasaki-mule-kubota-tractor-ztr-mower-f150-boats-guns-tool-24438",
       "status": "complete",
       "name": "Kawasaki Mule, Kubota Tractor, ZTR Mower, F-150, Boats, Guns, Tool Auction In Leon",
-      "generated": "2026-07-20T20:58:11.261Z"
+      "generated": "2026-07-21T00:54:17.872Z"
     },
     "26908": {
       "slug": "2-20-acre-sedgwick-county-kansas-tracts-26908",
       "status": "complete",
       "name": "(2) 20 Acre Sedgwick County Kansas Tracts",
-      "generated": "2026-07-20T20:58:11.260Z"
+      "generated": "2026-07-21T00:54:17.871Z"
     },
     "27615": {
       "slug": "new-baler-vehicles-atv-tool-equipment-auction-27615",
       "status": "complete",
       "name": "New Baler, Vehicles, ATV, Tool, Equipment Auction",
-      "generated": "2026-07-20T20:58:11.260Z"
+      "generated": "2026-07-21T00:54:17.870Z"
     },
     "27634": {
       "slug": "leon-kansas-auctionguns-tractor-vehicles-camper-tools-equipm-27634",
       "status": "complete",
       "name": "Leon Kansas Auction-Guns, Tractor, Vehicles, Camper, Tools, & Equipment",
-      "generated": "2026-07-20T20:58:11.259Z"
+      "generated": "2026-07-21T00:54:17.869Z"
     },
     "27650": {
       "slug": "online-only-auction-kubota-tractor-kawasaki-mule-travalong-t-27650",
       "status": "complete",
       "name": "Online Only Auction - Kubota Tractor, Kawasaki Mule, Travalong Trailer, Much More!",
-      "generated": "2026-07-20T20:58:11.257Z"
+      "generated": "2026-07-21T00:54:17.867Z"
     },
     "27844": {
       "slug": "tillable-agriculture-commercial-development-land-27844",
       "status": "complete",
       "name": "Tillable, Agriculture, Commercial, Development Land",
-      "generated": "2026-07-20T20:58:11.258Z"
+      "generated": "2026-07-21T00:54:17.868Z"
     },
     "29629": {
       "slug": "large-farm-machinery-equipment-auction-near-eureka-29629",
       "status": "complete",
       "name": "Large Farm Machinery & Equipment Auction Near Eureka",
-      "generated": "2026-07-20T20:58:11.256Z"
+      "generated": "2026-07-21T00:54:17.866Z"
     },
     "31399": {
       "slug": "antique-furniture-and-wedgwood-flow-blue-31399",
       "status": "complete",
       "name": "Antique Furniture and Wedgwood Flow Blue",
-      "generated": "2026-07-20T20:58:11.256Z"
+      "generated": "2026-07-21T00:54:17.866Z"
     },
     "35629": {
       "slug": "online-only-auction-furniture-stained-glass-antiques-art-sta-35629",
       "status": "complete",
       "name": "Online Only Auction – Furniture, Stained Glass, Antiques, Art, Statues, & More!",
-      "generated": "2026-07-20T20:58:11.254Z"
+      "generated": "2026-07-21T00:54:17.864Z"
     },
     "36311": {
       "slug": "online-only-auction-high-end-furniture-art-decor-36311",
       "status": "complete",
       "name": "Online Only Auction – High End Furniture, Art, Decor",
-      "generated": "2026-07-20T20:58:11.253Z"
+      "generated": "2026-07-21T00:54:17.863Z"
     },
     "38124": {
       "slug": "11th-annual-garden-party-silent-auction-fundamental-learning-38124",
       "status": "complete",
       "name": "11th Annual Garden Party Silent Auction - Fundamental Learning Center",
-      "generated": "2026-07-20T20:58:11.252Z"
+      "generated": "2026-07-21T00:54:17.863Z"
     },
     "38977": {
       "slug": "furniture-art-decor-lawnpatio-auction-38977",
       "status": "complete",
       "name": "Furniture, Art, Decor, Lawn/Patio Auction",
-      "generated": "2026-07-20T20:58:11.251Z"
+      "generated": "2026-07-21T00:54:17.862Z"
     },
     "38999": {
       "slug": "premier-home-on-220-acres-38999",
       "status": "complete",
       "name": "Premier Home on 220+- Acres",
-      "generated": "2026-07-20T20:58:11.250Z"
+      "generated": "2026-07-21T00:54:17.861Z"
     },
     "41711": {
       "slug": "absolute-auction-2-acre-rose-hill-rd-lot-in-rose-hill-41711",
       "status": "complete",
       "name": "ABSOLUTE AUCTION: 2 Acre Rose Hill Rd Lot in Rose Hill",
-      "generated": "2026-07-20T20:58:11.249Z"
+      "generated": "2026-07-21T00:54:17.860Z"
     },
     "43463": {
       "slug": "semi-trailer-auction-43463",
       "status": "complete",
       "name": "Semi Trailer Auction",
-      "generated": "2026-07-20T20:58:11.248Z"
+      "generated": "2026-07-21T00:54:17.859Z"
     },
     "44951": {
       "slug": "online-only-auction-click-here-for-150-lots-44951",
       "status": "complete",
       "name": "Online Only Auction: Click here for 150+ Lots!",
-      "generated": "2026-07-20T20:58:11.246Z"
+      "generated": "2026-07-21T00:54:17.858Z"
     },
     "45530": {
       "slug": "land-auction-240-acres-in-butler-sedgwick-county-2-tracts-45530",
       "status": "complete",
       "name": "Land Auction - 240+- Acres in Butler & Sedgwick County - 2 Tracts",
-      "generated": "2026-07-20T20:58:11.245Z"
+      "generated": "2026-07-21T00:54:17.857Z"
     },
     "45570": {
       "slug": "jewelry-auction-many-items-never-worn-45570",
       "status": "complete",
       "name": "Jewelry Auction - Many Items Never Worn!",
-      "generated": "2026-07-20T20:58:11.244Z"
+      "generated": "2026-07-21T00:54:17.856Z"
     },
     "45590": {
       "slug": "jd-tractor-implement-equipment-auction-45590",
       "status": "complete",
       "name": "JD Tractor, Implement & Equipment Auction",
-      "generated": "2026-07-20T20:58:11.242Z"
+      "generated": "2026-07-21T00:54:17.854Z"
     },
     "46409": {
       "slug": "30-guns-rifles-shotguns-hand-guns-ammo-more-46409",
       "status": "complete",
       "name": "30+ Guns, Rifles, Shotguns, Hand Guns, Ammo & More",
-      "generated": "2026-07-20T20:58:11.241Z"
+      "generated": "2026-07-21T00:54:17.853Z"
     },
     "47224": {
       "slug": "online-only-art-furniture-decor-auction-47224",
       "status": "complete",
       "name": "Online Only Art, Furniture, Decor Auction",
-      "generated": "2026-07-20T20:58:11.240Z"
+      "generated": "2026-07-21T00:54:17.852Z"
     },
     "47918": {
       "slug": "darryl-meyersick-retirement-auction-47918",
       "status": "complete",
       "name": "Darryl Meyersick Retirement Auction",
-      "generated": "2026-07-20T20:58:11.239Z"
+      "generated": "2026-07-21T00:54:17.851Z"
     },
     "47938": {
       "slug": "freightliner-ram-3500-kubota-tractor-equip-auction-47938",
       "status": "complete",
       "name": "Freightliner, Ram 3500, Kubota Tractor & Equip Auction",
-      "generated": "2026-07-20T20:58:11.238Z"
+      "generated": "2026-07-21T00:54:17.850Z"
     },
     "48072": {
       "slug": "woodworking-tools-equip-online-only-auction-48072",
       "status": "complete",
       "name": "Woodworking Tools & Equip Online Only Auction",
-      "generated": "2026-07-20T20:58:11.236Z"
+      "generated": "2026-07-21T00:54:17.847Z"
     },
     "48569": {
       "slug": "272-acres-3-tracts-butler-county-land-48569",
       "status": "complete",
       "name": "272+- Acres - 3 Tracts Butler County Land",
-      "generated": "2026-07-20T20:58:11.237Z"
+      "generated": "2026-07-21T00:54:17.850Z"
     },
     "48754": {
       "slug": "80-acres-sedgwick-county-land-auction-48754",
       "status": "complete",
       "name": "80 Acres Sedgwick County Land Auction",
-      "generated": "2026-07-20T20:58:11.234Z"
+      "generated": "2026-07-21T00:54:17.845Z"
     },
     "48755": {
       "slug": "418-acres-whitewater-river-bottom-tillable-ground-timber-tow-48755",
       "status": "complete",
       "name": "41.8 Acres Whitewater River Bottom Tillable Ground & Timber; Towanda Kansas",
-      "generated": "2026-07-20T20:58:11.233Z"
+      "generated": "2026-07-21T00:54:17.845Z"
     },
     "48774": {
       "slug": "online-only-art-furniture-decor-auction-2-48774",
       "status": "complete",
       "name": "Online Only Art, Furniture, Decor Auction #2",
-      "generated": "2026-07-20T20:58:11.235Z"
+      "generated": "2026-07-21T00:54:17.846Z"
     },
     "49023": {
       "slug": "estate-of-ramon-betty-criss-final-auction-49023",
       "status": "complete",
       "name": "Estate of Ramon & Betty Criss * FINAL AUCTION *",
-      "generated": "2026-07-20T20:58:11.232Z"
+      "generated": "2026-07-21T00:54:17.844Z"
     },
     "49142": {
       "slug": "estate-of-georgiana-rose-fullinwider-49142",
       "status": "complete",
       "name": "Estate Of Georgiana Rose Fullinwider",
-      "generated": "2026-07-20T20:58:11.231Z"
+      "generated": "2026-07-21T00:54:17.843Z"
     },
     "49435": {
       "slug": "rare-unusual-antiques-outdoor-gear-gold-coins-tools-auction-49435",
       "status": "complete",
       "name": "Rare & Unusual Antiques, Outdoor Gear, Gold Coins, & Tools Auction",
-      "generated": "2026-07-20T20:58:11.230Z"
+      "generated": "2026-07-21T00:54:17.842Z"
     },
     "49956": {
       "slug": "vehicles-trailers-unique-antiques-tools-auction-49956",
       "status": "complete",
       "name": "Vehicles, Trailers, Unique Antiques, Tools Auction",
-      "generated": "2026-07-20T20:58:11.229Z"
+      "generated": "2026-07-21T00:54:17.841Z"
     },
     "50665": {
       "slug": "2-bed-15-bath-310-n-broadview-st-in-el-dorado-50665",
       "status": "complete",
       "name": "2 Bed 1.5 Bath - 310 N Broadview St in El Dorado",
-      "generated": "2026-07-20T20:58:11.227Z"
+      "generated": "2026-07-21T00:54:17.838Z"
     },
     "50681": {
       "slug": "online-only-outdoor-gear-equipment-coins-currency-50681",
       "status": "complete",
       "name": "ONLINE ONLY: Outdoor Gear & Equipment, Coins & Currency",
-      "generated": "2026-07-20T20:58:11.228Z"
+      "generated": "2026-07-21T00:54:17.840Z"
     },
     "51037": {
       "slug": "200-lots-tools-mowers-antiques-more-51037",
       "status": "complete",
       "name": "200+ Lots Tools, Mowers, Antiques & More",
-      "generated": "2026-07-20T20:58:11.227Z"
+      "generated": "2026-07-21T00:54:17.837Z"
     },
     "51238": {
       "slug": "steinway-piano-jewelry-quality-furniture-51238",
       "status": "complete",
       "name": "Steinway Piano, Jewelry, Quality Furniture",
-      "generated": "2026-07-20T20:58:11.226Z"
+      "generated": "2026-07-21T00:54:17.836Z"
     },
     "51306": {
       "slug": "absolute-commercial-residential-auction-51306",
       "status": "complete",
       "name": "Absolute Commercial & Residential Auction",
-      "generated": "2026-07-20T20:58:11.225Z"
+      "generated": "2026-07-21T00:54:17.835Z"
     },
     "51876": {
       "slug": "online-only-auction-antiques-collectibles-51876",
       "status": "complete",
       "name": "ONLINE ONLY AUCTION: Antiques & Collectibles",
-      "generated": "2026-07-20T20:58:11.224Z"
+      "generated": "2026-07-21T00:54:17.834Z"
     },
     "52052": {
       "slug": "advertising-collectibles-antiques-52052",
       "status": "complete",
       "name": "Advertising, Collectibles & Antiques",
-      "generated": "2026-07-20T20:58:11.223Z"
+      "generated": "2026-07-21T00:54:17.834Z"
     },
     "52229": {
       "slug": "frank-janet-duvanel-retirement-auction-52229",
       "status": "complete",
       "name": "Frank & Janet Duvanel Retirement Auction",
-      "generated": "2026-07-20T20:58:11.221Z"
+      "generated": "2026-07-21T00:54:17.832Z"
     },
     "52255": {
       "slug": "butler-county-fair-livestock-auction-52255",
       "status": "complete",
       "name": "Butler County Fair Livestock Auction",
-      "generated": "2026-07-20T20:58:11.222Z"
+      "generated": "2026-07-21T00:54:17.833Z"
     },
     "52287": {
       "slug": "tools-firearms-antiques-52287",
       "status": "complete",
       "name": "Tools, Firearms, Antiques",
-      "generated": "2026-07-20T20:58:11.220Z"
+      "generated": "2026-07-21T00:54:17.831Z"
     },
     "52313": {
       "slug": "40-acres-timber-small-cabin-chautauqua-county-kansas-52313",
       "status": "complete",
       "name": "40+- Acres Timber & Small Cabin, Chautauqua County Kansas",
-      "generated": "2026-07-20T20:58:11.216Z"
+      "generated": "2026-07-21T00:54:17.827Z"
     },
     "52711": {
       "slug": "tool-antique-toy-auction-near-wichita-52711",
       "status": "complete",
       "name": "Tool, Antique, Toy Auction Near Wichita",
-      "generated": "2026-07-20T20:58:11.218Z"
+      "generated": "2026-07-21T00:54:17.829Z"
     },
     "52788": {
       "slug": "online-only-auction-233-n-jones-in-el-dorado-52788",
       "status": "complete",
       "name": "ONLINE ONLY AUCTION: 233 N Jones in El Dorado",
-      "generated": "2026-07-20T20:58:11.217Z"
+      "generated": "2026-07-21T00:54:17.828Z"
     },
     "52822": {
       "slug": "gun-tool-antique-atv-auction-52822",
       "status": "complete",
       "name": "Gun, Tool, Antique, ATV Auction",
-      "generated": "2026-07-20T20:58:11.219Z"
+      "generated": "2026-07-21T00:54:17.830Z"
     },
     "55038": {
       "slug": "bill-callaway-living-estate-auction-55038",
       "status": "complete",
       "name": "Bill Callaway Living Estate Auction",
-      "generated": "2026-07-20T20:58:11.215Z"
+      "generated": "2026-07-21T00:54:17.826Z"
     },
     "55120": {
       "slug": "160-acres-barton-county-near-olmitz-land-auction-55120",
       "status": "complete",
       "name": "160 Acres Barton County Near Olmitz Land Auction",
-      "generated": "2026-07-20T20:58:11.210Z"
+      "generated": "2026-07-21T00:54:17.820Z"
     },
     "55385": {
       "slug": "160-acres-sumner-county-west-of-wellington-land-auction-55385",
       "status": "complete",
       "name": "160 Acres Sumner County West of Wellington Land Auction",
-      "generated": "2026-07-20T20:58:11.209Z"
+      "generated": "2026-07-21T00:54:17.819Z"
     },
     "55452": {
       "slug": "estate-of-jack-shirley-berentz-55452",
       "status": "complete",
       "name": "Estate of Jack & Shirley Berentz",
-      "generated": "2026-07-20T20:58:11.215Z"
+      "generated": "2026-07-21T00:54:17.825Z"
     },
     "55590": {
       "slug": "online-only-auction-john-deere-6400-guns-motorcycle-55590",
       "status": "complete",
       "name": "Online Only Auction: John Deere 6400, Guns, Motorcycle",
-      "generated": "2026-07-20T20:58:11.212Z"
+      "generated": "2026-07-21T00:54:17.822Z"
     },
     "55661": {
       "slug": "larsen-trust-farm-machinery-auction-55661",
       "status": "complete",
       "name": "Larsen Trust Farm Machinery Auction",
-      "generated": "2026-07-20T20:58:11.213Z"
+      "generated": "2026-07-21T00:54:17.823Z"
     },
     "55767": {
       "slug": "57-ford-guns-antiques-collectibles-55767",
       "status": "complete",
       "name": "57 Ford, Guns, Antiques & Collectibles",
-      "generated": "2026-07-20T20:58:11.214Z"
+      "generated": "2026-07-21T00:54:17.824Z"
     },
     "55980": {
       "slug": "online-only-auction-classic-cars-antiques-collectibles-55980",
       "status": "complete",
       "name": "Online Only Auction: Classic Cars, Antiques, Collectibles!",
-      "generated": "2026-07-20T20:58:11.211Z"
+      "generated": "2026-07-21T00:54:17.821Z"
     },
     "57544": {
       "slug": "ford-focus-kawasaki-mule-tools-cattle-equipment-online-only-57544",
       "status": "complete",
       "name": "Ford Focus, Kawasaki Mule, Tools, Cattle Equipment – Online Only Auction",
-      "generated": "2026-07-20T20:58:11.208Z"
+      "generated": "2026-07-21T00:54:17.818Z"
     },
     "57862": {
       "slug": "silver-coins-guns-tools-furniture-auction-57862",
       "status": "complete",
       "name": "Silver Coins, Guns, Tools, Furniture Auction",
-      "generated": "2026-07-20T20:58:11.207Z"
+      "generated": "2026-07-21T00:54:17.817Z"
     },
     "58073": {
       "slug": "antique-toys-advertising-online-only-auction-58073",
       "status": "complete",
       "name": "Antique Toys & Advertising Online Only Auction",
-      "generated": "2026-07-20T20:58:11.206Z"
+      "generated": "2026-07-21T00:54:17.816Z"
     },
     "60833": {
       "slug": "2011-buick-regal-cxl-60833",
       "status": "complete",
       "name": "2011 Buick Regal CXL",
-      "generated": "2026-07-20T20:58:11.205Z"
+      "generated": "2026-07-21T00:54:17.815Z"
     },
     "61367": {
       "slug": "online-only-auction-winchester-safe-utility-trailer-antiques-61367",
       "status": "complete",
       "name": "ONLINE ONLY AUCTION: Winchester Safe, Utility Trailer, Antiques, Collectibles",
-      "generated": "2026-07-20T20:58:11.204Z"
+      "generated": "2026-07-21T00:54:17.814Z"
     },
     "61708": {
       "slug": "john-deere-500c-bad-boy-60-ford-f100-atv-equipment-tools-61708",
       "status": "complete",
       "name": "John Deere 500C, Bad Boy 60\", Ford F100, ATV, Equipment & Tools",
-      "generated": "2026-07-20T20:58:11.202Z"
+      "generated": "2026-07-21T00:54:17.812Z"
     },
     "61873": {
       "slug": "estate-of-leonard-marilynn-morti-61873",
       "status": "complete",
       "name": "Estate of Leonard & Marilynn Morti",
-      "generated": "2026-07-20T20:58:11.203Z"
+      "generated": "2026-07-21T00:54:17.813Z"
     },
     "62055": {
       "slug": "40-acres-between-el-dorado-leon-butler-county-kansas-blackto-62055",
       "status": "complete",
       "name": "40+- Acres Between El Dorado & Leon, Butler County, Kansas; Blacktop, Pond, Pasture, & Timber",
-      "generated": "2026-07-20T20:58:11.200Z"
+      "generated": "2026-07-21T00:54:17.810Z"
     },
     "62205": {
       "slug": "estate-of-raymond-vaughters-70-guns-silver-coins-pocket-watc-62205",
       "status": "complete",
       "name": "Estate of Raymond Vaughters: 70+ Guns, Silver Coins, Pocket Watches, Knives",
-      "generated": "2026-07-20T20:58:11.201Z"
+      "generated": "2026-07-21T00:54:17.811Z"
     },
     "63180": {
       "slug": "ztr-mowers-trailer-antique-furniture-online-only-auction-63180",
       "status": "complete",
       "name": "ZTR Mowers, Trailer, Antique & Furniture Online Only Auction!",
-      "generated": "2026-07-20T20:58:11.200Z"
+      "generated": "2026-07-21T00:54:17.809Z"
     },
     "63431": {
       "slug": "545-acres-el-dorado-lakeview-land-butler-county-kansas-63431",
       "status": "complete",
       "name": "54.5 Acres El Dorado Lakeview Land – Butler County, Kansas",
-      "generated": "2026-07-20T20:58:11.199Z"
+      "generated": "2026-07-21T00:54:17.808Z"
     },
     "63462": {
       "slug": "raymond-vaughters-estate-63462",
       "status": "complete",
       "name": "Raymond Vaughters Estate",
-      "generated": "2026-07-20T20:58:11.198Z"
+      "generated": "2026-07-21T00:54:17.808Z"
     },
     "64276": {
       "slug": "estate-of-robert-j-dunn-64276",
       "status": "complete",
       "name": "Estate of Robert J Dunn",
-      "generated": "2026-07-20T20:58:11.197Z"
+      "generated": "2026-07-21T00:54:17.807Z"
     },
     "65165": {
       "slug": "dixon-ztr-tools-household-furniture-65165",
       "status": "complete",
       "name": "Dixon ZTR, Tools, Household, Furniture",
-      "generated": "2026-07-20T20:58:11.196Z"
+      "generated": "2026-07-21T00:54:17.805Z"
     },
     "65235": {
       "slug": "silver-gold-auction-65235",
       "status": "complete",
       "name": "Silver & Gold Auction",
-      "generated": "2026-07-20T20:58:11.194Z"
+      "generated": "2026-07-21T00:54:17.803Z"
     },
     "65289": {
       "slug": "butler-community-college-65289",
       "status": "complete",
       "name": "Butler Community College",
-      "generated": "2026-07-20T20:58:11.195Z"
+      "generated": "2026-07-21T00:54:17.804Z"
     },
     "65396": {
       "slug": "lake-house-near-emporia-65396",
       "status": "complete",
       "name": "Lake House Near Emporia",
-      "generated": "2026-07-20T20:58:11.193Z"
+      "generated": "2026-07-21T00:54:17.803Z"
     },
     "65997": {
       "slug": "358-acres-near-fredonia-65997",
       "status": "complete",
       "name": "35.8 Acres Near Fredonia",
-      "generated": "2026-07-20T20:58:11.191Z"
+      "generated": "2026-07-21T00:54:17.800Z"
     },
     "66513": {
       "slug": "antique-movie-memorabilia-more-66513",
       "status": "complete",
       "name": "Antique Movie Memorabilia & More!",
-      "generated": "2026-07-20T20:58:11.192Z"
+      "generated": "2026-07-21T00:54:17.801Z"
     },
     "66790": {
       "slug": "butler-county-fair-livestock-auction-66790",
       "status": "complete",
       "name": "Butler County Fair Livestock Auction",
-      "generated": "2026-07-20T20:58:11.192Z"
+      "generated": "2026-07-21T00:54:17.802Z"
     },
     "67404": {
       "slug": "77-acres-2-tracts-butler-county-kansas-land-w-ponds-brome-fl-67404",
       "status": "complete",
       "name": "77 Acres, 2 Tracts, Butler County Kansas Land w/ Ponds, Brome, Flint Hills Pasture, Great Location",
-      "generated": "2026-07-20T20:58:11.188Z"
+      "generated": "2026-07-21T00:54:17.797Z"
     },
     "67411": {
       "slug": "online-only-equipment-auction-67411",
       "status": "complete",
       "name": "ONLINE ONLY EQUIPMENT AUCTION",
-      "generated": "2026-07-20T20:58:11.190Z"
+      "generated": "2026-07-21T00:54:17.799Z"
     },
     "67639": {
       "slug": "72-acres-4848-nw-shumway-building-site-67639",
       "status": "complete",
       "name": "7.2 Acres - 4848 NW Shumway - Building Site!",
-      "generated": "2026-07-20T20:58:11.186Z"
+      "generated": "2026-07-21T00:54:17.795Z"
     },
     "67747": {
       "slug": "barn-home-on-173-acres-near-piedmont-67747",
       "status": "complete",
       "name": "Barn Home on 173 Acres Near Piedmont",
-      "generated": "2026-07-20T20:58:11.185Z"
+      "generated": "2026-07-21T00:54:17.795Z"
     },
     "67934": {
       "slug": "antique-movie-posters-more-67934",
       "status": "complete",
       "name": "Antique Movie Posters & MORE",
-      "generated": "2026-07-20T20:58:11.189Z"
+      "generated": "2026-07-21T00:54:17.798Z"
     },
     "68039": {
       "slug": "1370-acres-in-harper-county-5-tracts-68039",
       "status": "complete",
       "name": "1370 Acres in Harper County - 5 Tracts",
-      "generated": "2026-07-20T20:58:11.183Z"
+      "generated": "2026-07-21T00:54:17.794Z"
     },
     "68144": {
       "slug": "guns-knives-coins-currency-auction-68144",
       "status": "complete",
       "name": "Guns, Knives, Coins & Currency Auction",
-      "generated": "2026-07-20T20:58:11.187Z"
+      "generated": "2026-07-21T00:54:17.796Z"
     },
     "69157": {
       "slug": "house-80-acres-w-shop-hay-barn-watershed-lake-and-tillable-f-69157",
       "status": "complete",
       "name": "House & 80 Acres w/ Shop, Hay Barn, Watershed Lake and Tillable Farm Ground",
-      "generated": "2026-07-20T20:58:11.180Z"
+      "generated": "2026-07-21T00:54:17.791Z"
     },
     "69407": {
       "slug": "movie-posters-advertising-collectable-auction-3-69407",
       "status": "complete",
       "name": "Movie Posters, Advertising, Collectable Auction #3",
-      "generated": "2026-07-20T20:58:11.182Z"
+      "generated": "2026-07-21T00:54:17.793Z"
     },
     "69746": {
       "slug": "6-bed-2-bath-home-in-el-dorado-69746",
       "status": "complete",
       "name": "6 Bed 2 Bath Home in El Dorado",
-      "generated": "2026-07-20T20:58:11.179Z"
+      "generated": "2026-07-21T00:54:17.790Z"
     },
     "70128": {
       "slug": "2-tracts-house-95-acres-65-acres-70128",
       "status": "complete",
       "name": "2 Tracts: House + 9.5 Acres & 65 Acres",
-      "generated": "2026-07-20T20:58:11.175Z"
+      "generated": "2026-07-21T00:54:17.784Z"
     },
     "70444": {
       "slug": "3-tracts-rose-hill-ks-land-70444",
       "status": "complete",
       "name": "3 Tracts - Rose Hill KS Land",
-      "generated": "2026-07-20T20:58:11.181Z"
+      "generated": "2026-07-21T00:54:17.792Z"
     },
     "70467": {
       "slug": "230-acres-lyon-co-neosho-river-tillable-pasture-timber-70467",
       "status": "complete",
       "name": "230 Acres Lyon Co: Neosho River, Tillable, Pasture & Timber",
-      "generated": "2026-07-20T20:58:11.177Z"
+      "generated": "2026-07-21T00:54:17.787Z"
     },
     "70571": {
       "slug": "4-bed-3-bath-home-absolute-auction-70571",
       "status": "complete",
       "name": "4 Bed 3 Bath Home: ABSOLUTE AUCTION",
-      "generated": "2026-07-20T20:58:11.174Z"
+      "generated": "2026-07-21T00:54:17.783Z"
     },
     "70806": {
       "slug": "estate-of-john-harding-jr-final-auction-70806",
       "status": "complete",
       "name": "Estate of John Harding Jr - Final Auction",
-      "generated": "2026-07-20T20:58:11.178Z"
+      "generated": "2026-07-21T00:54:17.788Z"
     },
     "70819": {
       "slug": "98-acres-greenwood-county-70819",
       "status": "complete",
       "name": "98 Acres Greenwood County",
-      "generated": "2026-07-20T20:58:11.172Z"
+      "generated": "2026-07-21T00:54:17.781Z"
     },
     "71026": {
       "slug": "157-acres-harper-county-land-71026",
       "status": "complete",
       "name": "157+- Acres Harper County Land",
-      "generated": "2026-07-20T20:58:11.170Z"
+      "generated": "2026-07-21T00:54:17.780Z"
     },
     "71033": {
       "slug": "473-acres-diverse-land-near-harper-ks-71033",
       "status": "complete",
       "name": "473 Acres Diverse Land Near Harper KS",
-      "generated": "2026-07-20T20:58:11.167Z"
+      "generated": "2026-07-21T00:54:17.777Z"
     },
     "71056": {
       "slug": "estate-of-joyce-meyer-71056",
       "status": "complete",
       "name": "Estate of Joyce Meyer",
-      "generated": "2026-07-20T20:58:11.176Z"
+      "generated": "2026-07-21T00:54:17.785Z"
     },
     "71533": {
       "slug": "814-n-broadview-in-andover-online-only-absolute-real-estate-71533",
       "status": "complete",
       "name": "814 N Broadview in Andover: ONLINE ONLY ABSOLUTE REAL ESTATE AUCTION",
-      "generated": "2026-07-20T20:58:11.166Z"
+      "generated": "2026-07-21T00:54:17.776Z"
     },
     "71542": {
       "slug": "bear-trust-pp-online-only-auction-71542",
       "status": "complete",
       "name": "Bear Trust PP Online Only Auction",
-      "generated": "2026-07-20T20:58:11.173Z"
+      "generated": "2026-07-21T00:54:17.782Z"
     },
     "71600": {
       "slug": "butler-community-college-surplus-auction-71600",
       "status": "complete",
       "name": "Butler Community College Surplus Auction",
-      "generated": "2026-07-20T20:58:11.171Z"
+      "generated": "2026-07-21T00:54:17.780Z"
     },
     "71795": {
       "slug": "1514-acres-sumner-county-kansas-tillable-farm-ground-south-o-71795",
       "status": "complete",
       "name": "151.4 Acres Sumner County, Kansas Tillable Farm Ground South Of Conway Springs",
-      "generated": "2026-07-20T20:58:11.166Z"
+      "generated": "2026-07-21T00:54:17.775Z"
     },
     "71798": {
       "slug": "1428-acres-kingman-county-kansas-tillable-farm-ground-w-oil-71798",
       "status": "complete",
       "name": "142.8 Acres Kingman County Kansas Tillable Farm Ground W/ Oil Income Near Murdock",
-      "generated": "2026-07-20T20:58:11.164Z"
+      "generated": "2026-07-21T00:54:17.774Z"
     },
     "71887": {
       "slug": "carolyn-powell-online-auction-71887",
       "status": "complete",
       "name": "Carolyn Powell Online Auction",
-      "generated": "2026-07-20T20:58:11.169Z"
+      "generated": "2026-07-21T00:54:17.779Z"
     },
     "71997": {
       "slug": "auction-rifles-shotguns-handguns-71997",
       "status": "complete",
       "name": "AUCTION: Rifles, Shotguns, Handguns",
-      "generated": "2026-07-20T20:58:11.168Z"
+      "generated": "2026-07-21T00:54:17.778Z"
     },
     "72237": {
       "slug": "200-acres-reno-county-land-spring-fed-lake-ninnescah-river-h-72237",
       "status": "complete",
       "name": "200 Acres Reno County Land, Spring Fed Lake, Ninnescah River, House & Buildings",
-      "generated": "2026-07-20T20:58:11.163Z"
+      "generated": "2026-07-21T00:54:17.772Z"
     },
     "72335": {
       "slug": "2-bed-1-bath-home-in-el-dorado-72335",
       "status": "complete",
       "name": "2 Bed 1 Bath Home in El Dorado",
-      "generated": "2026-07-20T20:58:11.163Z"
+      "generated": "2026-07-21T00:54:17.771Z"
     },
     "73680": {
       "slug": "1949-plymouth-1994-daihatsu-hijet-mini-truck-73680",
       "status": "complete",
       "name": "1949 Plymouth, 1994 Daihatsu Hijet Mini Truck",
-      "generated": "2026-07-20T20:58:11.161Z"
+      "generated": "2026-07-21T00:54:17.769Z"
     },
     "73963": {
       "slug": "butler-community-college-auction-73963",
       "status": "complete",
       "name": "Butler Community College Auction",
-      "generated": "2026-07-20T20:58:11.162Z"
+      "generated": "2026-07-21T00:54:17.770Z"
     },
     "74243": {
       "slug": "80-acres-mcpherson-county-kansas-tillable-farm-ground-74243",
       "status": "complete",
       "name": "80+- Acres McPherson County Kansas Tillable Farm Ground",
-      "generated": "2026-07-20T20:58:11.160Z"
+      "generated": "2026-07-21T00:54:17.768Z"
     },
     "74246": {
       "slug": "558-acres-harvey-county-kansas-farm-ground-74246",
       "status": "complete",
       "name": "55.8 Acres Harvey County Kansas Farm Ground",
-      "generated": "2026-07-20T20:58:11.159Z"
+      "generated": "2026-07-21T00:54:17.768Z"
     },
     "74264": {
       "slug": "2004-acres-coffey-county-kansas-land-auction-selling-in-16-t-74264",
       "status": "complete",
       "name": "2004+- Acres Coffey County, Kansas Land Auction Selling In 16 Tracts",
-      "generated": "2026-07-20T20:58:11.157Z"
+      "generated": "2026-07-21T00:54:17.766Z"
     },
     "74359": {
       "slug": "2527-acres-osage-lyon-and-wabaunsee-county-kansas-land-selli-74359",
       "status": "complete",
       "name": "2527+- Acres Osage, Lyon, and Wabaunsee County, Kansas Land Selling In 16 Tracts",
-      "generated": "2026-07-20T20:58:11.157Z"
+      "generated": "2026-07-21T00:54:17.765Z"
     },
     "74510": {
       "slug": "farm-equipment-auction-lenning-farms-74510",
       "status": "complete",
       "name": "Farm Equipment Auction: Lenning Farms",
-      "generated": "2026-07-20T20:58:11.158Z"
+      "generated": "2026-07-21T00:54:17.767Z"
     },
     "75546": {
       "slug": "623-acres-chase-county-kansas-flint-hills-land-for-sale-75546",
       "status": "complete",
       "name": "623+- Acres Chase County Kansas Flint Hills Land For Sale",
-      "generated": "2026-07-20T20:58:11.156Z"
+      "generated": "2026-07-21T00:54:17.764Z"
     },
     "75554": {
       "slug": "1535-acres-marion-county-kansas-land-for-sale-by-auction-75554",
       "status": "complete",
       "name": "153.5 Acres Marion County, Kansas Land For Sale By Auction",
-      "generated": "2026-07-20T20:58:11.155Z"
+      "generated": "2026-07-21T00:54:17.763Z"
     },
     "75986": {
       "slug": "857-acres-5-tracts-wilson-county-ks-land-northwest-of-fredon-75986",
       "status": "complete",
       "name": "857+- Acres: 5 Tracts – Wilson County, KS Land Northwest of Fredonia",
-      "generated": "2026-07-20T20:58:11.154Z"
+      "generated": "2026-07-21T00:54:17.763Z"
     },
     "76260": {
       "slug": "595-acres-sw-butler-county-land-near-douglass-76260",
       "status": "complete",
       "name": "59.5 Acres SW Butler County Land Near Douglass",
-      "generated": "2026-07-20T20:58:11.152Z"
+      "generated": "2026-07-21T00:54:17.761Z"
     },
     "76285": {
       "slug": "4-tracts-1098-acres-chautauqua-co-ks-land-76285",
       "status": "complete",
       "name": "4 Tracts: 1098 Acres Chautauqua Co KS Land",
-      "generated": "2026-07-20T20:58:11.153Z"
+      "generated": "2026-07-21T00:54:17.762Z"
     },
     "77252": {
       "slug": "auction-4-bed-15-bath-home-between-el-dorado-and-towanda-77252",
       "status": "complete",
       "name": "AUCTION: 4 Bed 1.5 Bath Home Between El Dorado and Towanda",
-      "generated": "2026-07-20T20:58:11.151Z"
+      "generated": "2026-07-21T00:54:17.760Z"
     },
     "77873": {
       "slug": "77-acres-harvey-county-kansas-tillable-farm-ground-west-of-w-77873",
       "status": "complete",
       "name": "77 Acres Harvey County, Kansas Tillable Farm Ground West Of Whitewater",
-      "generated": "2026-07-20T20:58:11.150Z"
+      "generated": "2026-07-21T00:54:17.759Z"
     },
     "77874": {
       "slug": "80-acres-butler-county-kansas-native-flint-hills-pasture-77874",
       "status": "complete",
       "name": "80 Acres Butler County, Kansas Native Flint Hills Pasture",
-      "generated": "2026-07-20T20:58:11.148Z"
+      "generated": "2026-07-21T00:54:17.757Z"
     },
     "78116": {
       "slug": "160-acres-greenwood-county-ks-78116",
       "status": "complete",
       "name": "160 Acres Greenwood County KS",
-      "generated": "2026-07-20T20:58:11.147Z"
+      "generated": "2026-07-21T00:54:17.756Z"
     },
     "78458": {
       "slug": "160-acres-butler-county-kansas-land-30-acre-watershed-lake-78458",
       "status": "complete",
       "name": "160 Acres Butler County, Kansas Land – 30 Acre Watershed Lake",
-      "generated": "2026-07-20T20:58:11.146Z"
+      "generated": "2026-07-21T00:54:17.755Z"
     },
     "78536": {
       "slug": "home-in-burns-ks-personal-property-auction-78536",
       "status": "complete",
       "name": "Home in Burns KS & Personal Property Auction",
-      "generated": "2026-07-20T20:58:11.145Z"
+      "generated": "2026-07-21T00:54:17.754Z"
     },
     "78882": {
       "slug": "butler-community-college-auction-78882",
       "status": "complete",
       "name": "Butler Community College Auction",
-      "generated": "2026-07-20T20:58:11.149Z"
+      "generated": "2026-07-21T00:54:17.758Z"
     },
     "79376": {
       "slug": "17-guns-selling-by-online-only-auction-79376",
       "status": "complete",
       "name": "17 Guns Selling by Online Only Auction",
-      "generated": "2026-07-20T20:58:11.144Z"
+      "generated": "2026-07-21T00:54:17.753Z"
     },
     "79510": {
       "slug": "80-acres-butler-county-pasture-w-oil-income-79510",
       "status": "complete",
       "name": "80 Acres Butler County Pasture w/ Oil Income",
-      "generated": "2026-07-20T20:58:11.144Z"
+      "generated": "2026-07-21T00:54:17.752Z"
     },
     "79628": {
       "slug": "2-80-acre-tracts-between-conway-springs-and-argonia-79628",
       "status": "complete",
       "name": "(2) 80 Acre Tracts Between Conway Springs and Argonia",
-      "generated": "2026-07-20T20:58:11.143Z"
+      "generated": "2026-07-21T00:54:17.752Z"
     },
     "80812": {
       "slug": "benton-gun-auction-80812",
       "status": "complete",
       "name": "Benton Gun Auction",
-      "generated": "2026-07-20T20:58:11.142Z"
+      "generated": "2026-07-21T00:54:17.751Z"
     },
     "80989": {
       "slug": "465-acres-greenwood-county-kansas-land-for-sale-north-of-eur-80989",
       "status": "complete",
       "name": "46.5 Acres Greenwood County, Kansas Land For Sale North Of Eureka",
-      "generated": "2026-07-20T20:58:11.140Z"
+      "generated": "2026-07-21T00:54:17.749Z"
     },
     "81304": {
       "slug": "200-acres-greenwood-county-kansas-land-for-sale-near-eureka-81304",
       "status": "complete",
       "name": "200+- Acres Greenwood County, Kansas Land For Sale Near Eureka; Kitty Creek, Ponds, and Scenic Flint Hills Views",
-      "generated": "2026-07-20T20:58:11.138Z"
+      "generated": "2026-07-21T00:54:17.747Z"
     },
     "81833": {
       "slug": "rare-marbles-antiques-collectibles-and-more-81833",
       "status": "complete",
       "name": "Rare Marbles, Antiques, Collectibles and MORE",
-      "generated": "2026-07-20T20:58:11.141Z"
+      "generated": "2026-07-21T00:54:17.750Z"
     },
     "82410": {
       "slug": "plane-tractors-tool-auction-82410",
       "status": "complete",
       "name": "Plane, Tractors, Tool Auction",
-      "generated": "2026-07-20T20:58:11.139Z"
+      "generated": "2026-07-21T00:54:17.748Z"
     },
     "84149": {
       "slug": "online-only-auction-classic-cars-antiques-collectibles-84149",
       "status": "complete",
       "name": "Online Only Auction: Classic Cars, Antiques, Collectibles!",
-      "generated": "2026-07-20T20:58:11.136Z"
+      "generated": "2026-07-21T00:54:17.745Z"
     },
     "84384": {
       "slug": "815-acres-wilson-county-kansas-tillable-bottom-ground-near-f-84384",
       "status": "complete",
       "name": "81.5 Acres Wilson County, Kansas Tillable Bottom Ground Near Fredonia and New Albany Land For Sale",
-      "generated": "2026-07-20T20:58:11.131Z"
+      "generated": "2026-07-21T00:54:17.741Z"
     },
     "84385": {
       "slug": "115-acres-walnut-river-tillable-bottom-ground-cowley-county-84385",
       "status": "complete",
       "name": "115+- Acres Walnut River Tillable Bottom Ground, Cowley County, Kansas",
-      "generated": "2026-07-20T20:58:11.134Z"
+      "generated": "2026-07-21T00:54:17.744Z"
     },
     "84725": {
       "slug": "2022-butler-county-fair-livestock-auction-84725",
       "status": "complete",
       "name": "2022 Butler County Fair Livestock Auction",
-      "generated": "2026-07-20T20:58:11.137Z"
+      "generated": "2026-07-21T00:54:17.746Z"
     },
     "84844": {
       "slug": "2019-denali-truck-2015-ford-escape-tools-household-furniture-84844",
       "status": "complete",
       "name": "2019 Denali Truck, 2015 Ford Escape, Tools, Household, Furniture Online Only Auction!",
-      "generated": "2026-07-20T20:58:11.133Z"
+      "generated": "2026-07-21T00:54:17.743Z"
     },
     "84897": {
       "slug": "2008-audi-a6-1990-lowe-1700v-boat-84897",
       "status": "complete",
       "name": "2008 Audi A6 & 1990 Lowe 1700V Boat",
-      "generated": "2026-07-20T20:58:11.135Z"
+      "generated": "2026-07-21T00:54:17.744Z"
     },
     "84903": {
       "slug": "coca-cola-atv-furniture-antique-auction-84903",
       "status": "complete",
       "name": "Coca Cola, ATV, Furniture, Antique Auction",
-      "generated": "2026-07-20T20:58:11.132Z"
+      "generated": "2026-07-21T00:54:17.742Z"
     },
     "85210": {
       "slug": "151-acres-verdigris-river-tillable-bottom-ground-homestead-s-85210",
       "status": "complete",
       "name": "151 Acres Verdigris River Tillable Bottom Ground & Homestead South of Virgil in Greenwood County, Kansas",
-      "generated": "2026-07-20T20:58:11.127Z"
+      "generated": "2026-07-21T00:54:17.736Z"
     },
     "85270": {
       "slug": "rifle-shotgun-pistol-ammo-auction-85270",
       "status": "complete",
       "name": "Rifle, Shotgun, Pistol, Ammo Auction",
-      "generated": "2026-07-20T20:58:11.130Z"
+      "generated": "2026-07-21T00:54:17.740Z"
     },
     "85671": {
       "slug": "14408-e-willowbend-cir-wichita-ks-online-only-real-estate-au-85671",
       "status": "complete",
       "name": "14408 E Willowbend Cir, Wichita, KS: ONLINE ONLY REAL ESTATE AUCTION",
-      "generated": "2026-07-20T20:58:11.129Z"
+      "generated": "2026-07-21T00:54:17.739Z"
     },
     "85714": {
       "slug": "david-sylvia-mcham-estateantiques-collectibles-furniture-and-85714",
       "status": "complete",
       "name": "David & Sylvia McHam Estate~Antiques, Collectibles, Furniture and MORE! Online Auction ONLY!",
-      "generated": "2026-07-20T20:58:11.128Z"
+      "generated": "2026-07-21T00:54:17.738Z"
     },
     "86389": {
       "slug": "25-guns-scopes-sights-ammo-accessories-more-86389",
       "status": "complete",
       "name": "25 Guns, Scopes, Sights, Ammo, Accessories & More",
-      "generated": "2026-07-20T20:58:11.126Z"
+      "generated": "2026-07-21T00:54:17.735Z"
     },
     "87374": {
       "slug": "91522-harper-county-land-auction-3-tracts-87374",
       "status": "complete",
       "name": "9/15/22 Harper County Land Auction - 3 Tracts",
-      "generated": "2026-07-20T20:58:11.124Z"
+      "generated": "2026-07-21T00:54:17.733Z"
     },
     "87927": {
       "slug": "stock-trailer-nitro-tracker-boat-tractors-and-farm-equipment-87927",
       "status": "complete",
       "name": "Stock Trailer, Nitro Tracker Boat, Tractors and Farm Equipment",
-      "generated": "2026-07-20T20:58:11.125Z"
+      "generated": "2026-07-21T00:54:17.734Z"
     },
     "88658": {
       "slug": "79-mgb-roadster-guns-jukebox-hustler-lawnmower-advertising-m-88658",
       "status": "complete",
       "name": "'79 MGB Roadster, Guns, Jukebox, Hustler Lawnmower, Advertising Memorabilia, Furniture and much more! Online only auction!",
-      "generated": "2026-07-20T20:58:11.123Z"
+      "generated": "2026-07-21T00:54:17.732Z"
     },
     "88712": {
       "slug": "80-acres-northeast-sedgwick-county-kansas-tillable-farm-grou-88712",
       "status": "complete",
       "name": "80 Acres Northeast Sedgwick County, Kansas Tillable Farm Ground",
-      "generated": "2026-07-20T20:58:11.120Z"
+      "generated": "2026-07-21T00:54:17.729Z"
     },
     "88738": {
       "slug": "john-deere-2520-kawasaki-mule-pro-guns-equipment-88738",
       "status": "complete",
       "name": "John Deere 2520, Kawasaki Mule Pro, Guns & Equipment",
-      "generated": "2026-07-20T20:58:11.122Z"
+      "generated": "2026-07-21T00:54:17.731Z"
     },
     "88756": {
       "slug": "13816-us-hwy-50-halstead-kansas-67056-home-buildings-pond-on-88756",
       "status": "complete",
       "name": "13816 US HWY 50, Halstead, Kansas 67056 – Home, Buildings, & Pond on 8.8 Acres",
-      "generated": "2026-07-20T20:58:11.119Z"
+      "generated": "2026-07-21T00:54:17.728Z"
     },
     "88772": {
       "slug": "2-40-acre-land-tracts-southeast-of-augusta-in-butler-county-88772",
       "status": "complete",
       "name": "(2) 40 Acre Land Tracts Southeast of Augusta in Butler County, Kansas – Barn, Pens, Water, & Electric",
-      "generated": "2026-07-20T20:58:11.118Z"
+      "generated": "2026-07-21T00:54:17.727Z"
     },
     "88816": {
       "slug": "40-acres-sedgwick-county-kansas-tillable-farm-ground-between-88816",
       "status": "complete",
       "name": "40 Acres Sedgwick County, Kansas Tillable Farm Ground between Wichita & Sedgwick",
-      "generated": "2026-07-20T20:58:11.117Z"
+      "generated": "2026-07-21T00:54:17.726Z"
     },
     "88817": {
       "slug": "60-acres-marion-county-kansas-tillable-farm-ground-land-for-88817",
       "status": "complete",
       "name": "60 Acres Marion County, Kansas Tillable Farm Ground Land For Sale North of Peabody",
-      "generated": "2026-07-20T20:58:11.114Z"
+      "generated": "2026-07-21T00:54:17.722Z"
     },
     "89067": {
       "slug": "345-acres-montgomery-county-kansas-land-for-sale-pond-big-hi-89067",
       "status": "complete",
       "name": "34.5 Acres Montgomery County, Kansas Land For Sale – Pond, Big Hills, Heavy Timber, Oil Income",
-      "generated": "2026-07-20T20:58:11.113Z"
+      "generated": "2026-07-21T00:54:17.721Z"
     },
     "89170": {
       "slug": "sommerhauser-estate-auction-89170",
       "status": "complete",
       "name": "Sommerhauser Estate Auction",
-      "generated": "2026-07-20T20:58:11.116Z"
+      "generated": "2026-07-21T00:54:17.724Z"
     },
     "89200": {
       "slug": "1345-acres-butler-county-kansas-flint-hills-ranch-selling-in-89200",
       "status": "complete",
       "name": "1345 Acres:  Butler County, Kansas – Flint Hills Ranch Selling In 4 Tracts",
-      "generated": "2026-07-20T20:58:11.112Z"
+      "generated": "2026-07-21T00:54:17.720Z"
     },
     "89260": {
       "slug": "stock-trailers-atv-utv-cattle-equipment-utility-trailer-89260",
       "status": "complete",
       "name": "Stock Trailers, ATV, UTV, Cattle Equipment, Utility Trailer",
-      "generated": "2026-07-20T20:58:11.121Z"
+      "generated": "2026-07-21T00:54:17.730Z"
     },
     "89432": {
       "slug": "the-trading-station-pawn-shop-ammo-autographed-guitars-jewel-89432",
       "status": "complete",
       "name": "The Trading Station Pawn Shop - Ammo, Autographed Guitars, Jewelry, Coca-Cola, and much more! Online Only Auction!",
-      "generated": "2026-07-20T20:58:11.116Z"
+      "generated": "2026-07-21T00:54:17.725Z"
     },
     "89850": {
       "slug": "butler-community-college-online-only-auction-2012-ford-fusio-89850",
       "status": "complete",
       "name": "Butler Community College Online Only Auction - 2012 Ford Fusion, Large Equipment (Lathe, CNC Mill, Waterjet Pro, Press Brake, Axe Parts rinse booth & Eliminator SW-20), furniture, keyboards and MUCH MORE!",
-      "generated": "2026-07-20T20:58:11.115Z"
+      "generated": "2026-07-21T00:54:17.723Z"
     },
     "90470": {
       "slug": "430-acres-cowley-county-land-auction-selling-in-3-tracts-90470",
       "status": "complete",
       "name": "430 Acres Cowley County Land Auction Selling in 3 Tracts",
-      "generated": "2026-07-20T20:58:11.107Z"
+      "generated": "2026-07-21T00:54:17.715Z"
     },
     "90648": {
       "slug": "640-acres-chautauqua-county-kansas-watershed-lake-pasture-ro-90648",
       "status": "complete",
       "name": "640+- Acres Chautauqua County, Kansas – Watershed Lake, Pasture, Rolling Hills, & Hunting",
-      "generated": "2026-07-20T20:58:11.106Z"
+      "generated": "2026-07-21T00:54:17.714Z"
     },
     "90660": {
       "slug": "polaris-rzr-kubota-tractor-truck-trailers-tools-more-90660",
       "status": "complete",
       "name": "Polaris RZR, Kubota Tractor, Truck, Trailers, Tools & MORE",
-      "generated": "2026-07-20T20:58:11.110Z"
+      "generated": "2026-07-21T00:54:17.718Z"
     },
     "90662": {
       "slug": "566-sw-100th-20-acres-kubota-bx2380-implements-90662",
       "status": "complete",
       "name": "566 SW 100th - 20 Acres, Kubota BX2380 & Implements",
-      "generated": "2026-07-20T20:58:11.108Z"
+      "generated": "2026-07-21T00:54:17.717Z"
     },
     "90743": {
       "slug": "lee-auction-farm-equipment-trailers-ford-f350-building-suppl-90743",
       "status": "complete",
       "name": "Lee Auction -Farm Equipment, Trailers, Ford F-350, building supplies and much more! Online Auction only!",
-      "generated": "2026-07-20T20:58:11.111Z"
+      "generated": "2026-07-21T00:54:17.719Z"
     },
     "90834": {
       "slug": "824-acres-sedgwick-county-kansas-tillable-farm-ground-north-90834",
       "status": "complete",
       "name": "82.4 Acres Sedgwick County, Kansas Tillable Farm Ground North of Wichita",
-      "generated": "2026-07-20T20:58:11.108Z"
+      "generated": "2026-07-21T00:54:17.716Z"
     },
     "91333": {
       "slug": "4-bed-15-bath-home-in-el-dorado-54-mercury-monterey-converti-91333",
       "status": "complete",
       "name": "4 Bed 1.5 Bath Home in El Dorado, '54 Mercury Monterey Convertible & Personal Property Online Only Auction!",
-      "generated": "2026-07-20T20:58:11.104Z"
+      "generated": "2026-07-21T00:54:17.712Z"
     },
     "91513": {
       "slug": "120-acres-sedgwick-county-ks-land-2-tracts-91513",
       "status": "complete",
       "name": "120 Acres Sedgwick County KS Land - 2 Tracts",
-      "generated": "2026-07-20T20:58:11.105Z"
+      "generated": "2026-07-21T00:54:17.713Z"
     },
     "91565": {
       "slug": "plumbing-company-liquidation-auction-91565",
       "status": "complete",
       "name": "Plumbing Company Liquidation Auction",
-      "generated": "2026-07-20T20:58:11.109Z"
+      "generated": "2026-07-21T00:54:17.717Z"
     },
     "91704": {
       "slug": "320-acres-greenwood-county-kansas-flint-hills-land-north-of-91704",
       "status": "complete",
       "name": "320 Acres Greenwood County, Kansas Flint Hills Land North Of Eureka – Pasture, Creeks, Pond, & Hunting",
-      "generated": "2026-07-20T20:58:11.101Z"
+      "generated": "2026-07-21T00:54:17.710Z"
     },
     "92024": {
       "slug": "3-bed-house-in-valley-center-2005-silverado-2009-grand-carav-92024",
       "status": "complete",
       "name": "3 Bed House in Valley Center, 2005 Silverado, 2009 Grand Caravan",
-      "generated": "2026-07-20T20:58:11.099Z"
+      "generated": "2026-07-21T00:54:17.707Z"
     },
     "92060": {
       "slug": "1632-acres-harvey-county-kansas-land-near-whitewater-92060",
       "status": "complete",
       "name": "163.2 Acres Harvey County, Kansas Land Near Whitewater",
-      "generated": "2026-07-20T20:58:11.100Z"
+      "generated": "2026-07-21T00:54:17.709Z"
     },
     "92379": {
       "slug": "11380-se-20th-st-rosalia-kansas-67132-243-acres-house-pond-t-92379",
       "status": "complete",
       "name": "11380 SE 20th St, Rosalia, Kansas 67132 – 24.3 Acres, House, Pond, Tillable, and Trees",
-      "generated": "2026-07-20T20:58:11.102Z"
+      "generated": "2026-07-21T00:54:17.711Z"
     },
     "92392": {
       "slug": "161-acres-marion-county-kansas-pasture-south-of-peabody-92392",
       "status": "complete",
       "name": "161 Acres Marion County, Kansas Pasture South of Peabody",
-      "generated": "2026-07-20T20:58:11.098Z"
+      "generated": "2026-07-21T00:54:17.706Z"
     },
     "92415": {
       "slug": "silver-coins-bullion-coins-currency-gun-auction-92415",
       "status": "complete",
       "name": "Silver Coins, Bullion, Coins, Currency & Gun Auction",
-      "generated": "2026-07-20T20:58:11.099Z"
+      "generated": "2026-07-21T00:54:17.708Z"
     },
     "92834": {
       "slug": "tools-fishing-antiques-collectibles-furniture-and-more-onlin-92834",
       "status": "complete",
       "name": "Tools, Fishing, Antiques, Collectibles, Furniture and MORE! Online Auction ONLY!",
-      "generated": "2026-07-20T20:58:11.097Z"
+      "generated": "2026-07-21T00:54:17.705Z"
     },
     "93362": {
       "slug": "74-acres-sedgwick-county-kansas-tillable-farm-ground-near-be-93362",
       "status": "complete",
       "name": "74 Acres Sedgwick County, Kansas Tillable Farm Ground Near Bentley",
-      "generated": "2026-07-20T20:58:11.096Z"
+      "generated": "2026-07-21T00:54:17.704Z"
     },
     "93432": {
       "slug": "3-bedroom-1-bath-home-507-s-emporia-st-el-dorado-kansas-6704-93432",
       "status": "complete",
       "name": "3 Bedroom 1 Bath Home – 507 S. Emporia St., El Dorado, Kansas 67042",
-      "generated": "2026-07-20T20:58:11.094Z"
+      "generated": "2026-07-21T00:54:17.702Z"
     },
     "93834": {
       "slug": "antique-gun-knife-auction-93834",
       "status": "complete",
       "name": "Antique Gun & Knife Auction",
-      "generated": "2026-07-20T20:58:11.095Z"
+      "generated": "2026-07-21T00:54:17.703Z"
     },
     "93853": {
       "slug": "4457-acres-butler-county-kansas-pasture-land-between-towanda-93853",
       "status": "complete",
       "name": "445.7 Acres Butler County, Kansas Pasture Land Between Towanda and El Dorado",
-      "generated": "2026-07-20T20:58:11.093Z"
+      "generated": "2026-07-21T00:54:17.701Z"
     },
     "93948": {
       "slug": "eureka-ks-farm-equipment-auction-93948",
       "status": "complete",
       "name": "Eureka KS Farm Equipment Auction",
-      "generated": "2026-07-20T20:58:11.092Z"
+      "generated": "2026-07-21T00:54:17.700Z"
     },
     "94164": {
       "slug": "2-bed-1-bath-home-101-n-walnut-eureka-kansas-67045-94164",
       "status": "complete",
       "name": "2 Bed 1 Bath Home – 101 N Walnut, Eureka, Kansas 67045",
-      "generated": "2026-07-20T20:58:11.091Z"
+      "generated": "2026-07-21T00:54:17.699Z"
     },
     "94168": {
       "slug": "barn-home-on-388-acres-butler-county-7499-nw-hunter-rd-potwi-94168",
       "status": "complete",
       "name": "Barn Home on 38.8 Acres, Butler County – 7499 NW Hunter Rd., Potwin, KS 67123",
-      "generated": "2026-07-20T20:58:11.090Z"
+      "generated": "2026-07-21T00:54:17.698Z"
     },
     "95161": {
       "slug": "7200-ne-ellis-rd-el-dorado-ks-67042-house-and-building-on-40-95161",
       "status": "complete",
       "name": "7200 NE Ellis Rd., El Dorado, KS 67042 - House and Building on 40+- Acres, Tillable, Durechen Creek, & Large Mature Trees",
-      "generated": "2026-07-20T20:58:11.086Z"
+      "generated": "2026-07-21T00:54:17.696Z"
     },
     "95527": {
       "slug": "240-acres-cowley-county-kansas-land-2-tracts-tillable-pastur-95527",
       "status": "complete",
       "name": "240+- Acres Cowley County, Kansas Land: 2 Tracts, Tillable, Pasture, Timber, and Buildings",
-      "generated": "2026-07-20T20:58:11.085Z"
+      "generated": "2026-07-21T00:54:17.695Z"
     },
     "95773": {
       "slug": "suhn-cattle-company-semi-retirement-auction-95773",
       "status": "complete",
       "name": "Suhn Cattle Company – Semi Retirement Auction",
-      "generated": "2026-07-20T20:58:11.088Z"
+      "generated": "2026-07-21T00:54:17.697Z"
     },
     "96020": {
       "slug": "52-acres-harvey-county-tillable-farm-ground-on-the-east-bord-96020",
       "status": "complete",
       "name": "52+- Acres Harvey County Tillable Farm Ground on the East Border of Sedgwick, Kansas",
-      "generated": "2026-07-20T20:58:11.084Z"
+      "generated": "2026-07-21T00:54:17.694Z"
     },
     "96633": {
       "slug": "608-acres-chautauqua-county-kansas-land-northeast-of-sedan-b-96633",
       "status": "complete",
       "name": "608 Acres Chautauqua County, Kansas Land Northeast of Sedan – Big Hills, Live Water, Good Pasture, & Hunting",
-      "generated": "2026-07-20T20:58:11.083Z"
+      "generated": "2026-07-21T00:54:17.692Z"
     },
     "97023": {
       "slug": "farm-equipment-consignment-auction-97023",
       "status": "complete",
       "name": "Farm Equipment Consignment Auction",
-      "generated": "2026-07-20T20:58:11.082Z"
+      "generated": "2026-07-21T00:54:17.691Z"
     },
     "97174": {
       "slug": "667-acres-near-el-dorado-in-butler-county-kansas-4-tracts-pa-97174",
       "status": "complete",
       "name": "667 Acres Near El Dorado in Butler County, Kansas: 4 Tracts - Pasture, Oil Income, Recreation & Development Potential",
-      "generated": "2026-07-20T20:58:11.082Z"
+      "generated": "2026-07-21T00:54:17.690Z"
     },
     "98033": {
       "slug": "2467-acres-butler-county-kansas-land-auction-selling-in-10-t-98033",
       "status": "complete",
       "name": "2,467+- Acres Butler County, Kansas Land Auction Selling In 10 Tracts",
-      "generated": "2026-07-20T20:58:11.081Z"
+      "generated": "2026-07-21T00:54:17.689Z"
     },
     "98785": {
       "slug": "182-se-20th-st-el-dorado-ks-67042-house-buildings-on-166-acr-98785",
       "status": "complete",
       "name": "182 SE 20th St, El Dorado, KS 67042: House & Buildings on 16.6 Acres",
-      "generated": "2026-07-20T20:58:11.079Z"
+      "generated": "2026-07-21T00:54:17.687Z"
     },
     "98789": {
       "slug": "historic-marion-county-home-native-limestone-buildings-on-25-98789",
       "status": "complete",
       "name": "Historic Marion County Home & Native Limestone Buildings on 25 Acres Near Florence, Kansas",
-      "generated": "2026-07-20T20:58:11.080Z"
+      "generated": "2026-07-21T00:54:17.688Z"
     },
     "99077": {
       "slug": "225-n-atchison-el-dorado-ks-67042-4-bedroom-25-bathroom-clas-99077",
       "status": "complete",
       "name": "225 N Atchison, El Dorado, KS 67042: 4 Bedroom 2.5 Bathroom Classic Home",
-      "generated": "2026-07-20T20:58:11.077Z"
+      "generated": "2026-07-21T00:54:17.685Z"
     },
     "99082": {
       "slug": "8630-se-30th-st-el-dorado-ks-67042-18-acres-pond-trees-rural-99082",
       "status": "complete",
       "name": "8630 SE 30th St, El Dorado, KS 67042: 18+- Acres, Pond, Trees, Rural Water",
-      "generated": "2026-07-20T20:58:11.075Z"
+      "generated": "2026-07-21T00:54:17.683Z"
     },
     "99308": {
       "slug": "1006-s-cooper-st-wichita-ks-67207-3-bed-25-bath-all-brick-ho-99308",
       "status": "complete",
       "name": "1006 S Cooper St, Wichita, KS 67207: 3 Bed 2.5 Bath All Brick Home",
-      "generated": "2026-07-20T20:58:11.076Z"
+      "generated": "2026-07-21T00:54:17.684Z"
     },
     "99702": {
       "slug": "online-only-vehicle-consigment-auction-99702",
       "status": "complete",
       "name": "Online Only Vehicle Consigment Auction",
-      "generated": "2026-07-20T20:58:11.078Z"
+      "generated": "2026-07-21T00:54:17.686Z"
     },
     "100735": {
       "slug": "34-acres-south-of-sedan-in-chautauqua-county-kansas-near-the-100735",
       "status": "complete",
       "name": "34 Acres South Of Sedan In Chautauqua County, Kansas Near The Oklahoma Border",
-      "generated": "2026-07-20T20:58:11.073Z"
+      "generated": "2026-07-21T00:54:17.681Z"
     },
     "100864": {
       "slug": "611-w-12th-ave-el-dorado-ks-67042-3-bed-2-bath-home-w-2-car-100864",
       "status": "complete",
       "name": "611 W 12th Ave, El Dorado, KS 67042: 3 Bed 2 Bath Home w/ 2 Car Garage",
-      "generated": "2026-07-20T20:58:11.074Z"
+      "generated": "2026-07-21T00:54:17.682Z"
     },
     "100886": {
       "slug": "492-acres-butler-county-kansas-tillable-farm-ground-selling-100886",
       "status": "complete",
       "name": "492+- Acres Butler County, Kansas Tillable Farm Ground – Selling in 5 Tracts Near Whitewater",
-      "generated": "2026-07-20T20:58:11.072Z"
+      "generated": "2026-07-21T00:54:17.680Z"
     },
     "100893": {
       "slug": "40-acres-butler-county-walnut-river-tillable-bottom-ground-b-100893",
       "status": "complete",
       "name": "40+- Acres Butler County Walnut River Tillable Bottom Ground Between El Dorado & Augusta, Kansas",
-      "generated": "2026-07-20T20:58:11.070Z"
+      "generated": "2026-07-21T00:54:17.679Z"
     },
     "101770": {
       "slug": "120-acres-selling-in-3-tracts-south-of-el-dorado-in-butler-c-101770",
       "status": "complete",
       "name": "120+- Acres Selling in 3 Tracts: South of El Dorado in Butler County, Kansas Land For Sale",
-      "generated": "2026-07-20T20:58:11.068Z"
+      "generated": "2026-07-21T00:54:17.676Z"
     },
     "102315": {
       "slug": "farm-cattle-equipment-auction-102315",
       "status": "complete",
       "name": "Farm & Cattle Equipment Auction",
-      "generated": "2026-07-20T20:58:11.069Z"
+      "generated": "2026-07-21T00:54:17.677Z"
     },
     "102585": {
       "slug": "3016-acres-of-native-flint-hills-pasture-w-badger-creek-sout-102585",
       "status": "complete",
       "name": "301.6 Acres Of Native Flint Hills Pasture W/ Badger Creek Southeast of Winfield in Cowley County, Kansas",
-      "generated": "2026-07-20T20:58:11.067Z"
+      "generated": "2026-07-21T00:54:17.675Z"
     },
     "102586": {
       "slug": "595-acres-native-flint-hills-pasture-near-madison-in-greenwo-102586",
       "status": "complete",
       "name": "595 Acres Native Flint Hills Pasture Near Madison in Greenwood County, Kansas",
-      "generated": "2026-07-20T20:58:11.066Z"
+      "generated": "2026-07-21T00:54:17.674Z"
     },
     "103467": {
       "slug": "gun-coins-air-compressor-generator-tools-fitness-art-homewar-103467",
       "status": "complete",
       "name": "Gun, Coins, Air Compressor, Generator, Tools, Fitness, Art & Homeware Auction",
-      "generated": "2026-07-20T20:58:11.067Z"
+      "generated": "2026-07-21T00:54:17.675Z"
     },
     "104088": {
       "slug": "80-acres-on-indianola-rd-near-andover-in-butler-county-kansa-104088",
       "status": "complete",
       "name": "80+- Acres on Indianola Rd. Near Andover in Butler County, Kansas",
-      "generated": "2026-07-20T20:58:11.064Z"
+      "generated": "2026-07-21T00:54:17.671Z"
     },
     "104267": {
       "slug": "carol-hart-living-estate-online-only-auction-104267",
       "status": "complete",
       "name": "Carol Hart Living Estate Online Only Auction",
-      "generated": "2026-07-20T20:58:11.065Z"
+      "generated": "2026-07-21T00:54:17.673Z"
     },
     "104512": {
       "slug": "75-acres-between-madison-hamilton-on-hwy-99-in-greenwood-cou-104512",
       "status": "complete",
       "name": "75 Acres Between Madison & Hamilton on HWY 99 in Greenwood County, Kansas",
-      "generated": "2026-07-20T20:58:11.063Z"
+      "generated": "2026-07-21T00:54:17.670Z"
     },
     "105238": {
       "slug": "antique-vehicles-equipment-tractors-iron-105238",
       "status": "complete",
       "name": "Antique Vehicles, Equipment, Tractors & Iron",
-      "generated": "2026-07-20T20:58:11.062Z"
+      "generated": "2026-07-21T00:54:17.669Z"
     },
     "105301": {
       "slug": "149-acres-native-flint-hills-pasture-north-of-eureka-kansas-105301",
       "status": "complete",
       "name": "149 Acres Native Flint Hills Pasture North of Eureka, Kansas",
-      "generated": "2026-07-20T20:58:11.060Z"
+      "generated": "2026-07-21T00:54:17.667Z"
     },
     "105302": {
       "slug": "80-acres-tillable-farm-ground-between-whitewater-newton-harv-105302",
       "status": "complete",
       "name": "80+- Acres Tillable Farm Ground Between Whitewater & Newton, Harvey County, KS",
-      "generated": "2026-07-20T20:58:11.058Z"
+      "generated": "2026-07-21T00:54:17.665Z"
     },
     "105314": {
       "slug": "320-acres-irrigated-farm-ground-near-mount-hope-harvey-count-105314",
       "status": "complete",
       "name": "320 Acres Irrigated Farm Ground Near Mount Hope, Harvey County, Kansas – Selling in 3 Tracts",
-      "generated": "2026-07-20T20:58:11.061Z"
+      "generated": "2026-07-21T00:54:17.668Z"
     },
     "105579": {
       "slug": "el-dorado-kansas-multiproperty-online-only-real-estate-aucti-105579",
       "status": "complete",
       "name": "El Dorado, Kansas Multi-Property Online Only Real Estate Auction",
-      "generated": "2026-07-20T20:58:11.057Z"
+      "generated": "2026-07-21T00:54:17.664Z"
     },
     "106098": {
       "slug": "carol-hart-living-estate-online-only-auction-2-106098",
       "status": "complete",
       "name": "Carol Hart Living Estate Online Only Auction #2",
-      "generated": "2026-07-20T20:58:11.059Z"
+      "generated": "2026-07-21T00:54:17.666Z"
     },
     "106749": {
       "slug": "3-tracts-545-acres-greenwood-county-kansas-land-east-of-eure-106749",
       "status": "complete",
       "name": "3 Tracts: 545+- Acres Greenwood County, Kansas Land East of Eureka",
-      "generated": "2026-07-20T20:58:11.055Z"
+      "generated": "2026-07-21T00:54:17.662Z"
     },
     "106752": {
       "slug": "80-acres-rock-quarry-lakes-between-andover-and-augusta-kansa-106752",
       "status": "complete",
       "name": "80+- Acres: Rock Quarry Lakes Between Andover and Augusta, Kansas",
-      "generated": "2026-07-20T20:58:11.053Z"
+      "generated": "2026-07-21T00:54:17.660Z"
     },
     "107061": {
       "slug": "195-acres-tillable-farm-ground-between-hesston-and-goessel-k-107061",
       "status": "complete",
       "name": "195+- Acres Tillable Farm Ground Between Hesston and Goessel, Kansas Land For Sale",
-      "generated": "2026-07-20T20:58:11.052Z"
+      "generated": "2026-07-21T00:54:17.659Z"
     },
     "107107": {
       "slug": "120-acres-hunting-land-north-of-howard-in-elk-county-kansas-107107",
       "status": "complete",
       "name": "120+- Acres Hunting Land North of Howard in Elk County, Kansas",
-      "generated": "2026-07-20T20:58:11.050Z"
+      "generated": "2026-07-21T00:54:17.658Z"
     },
     "107292": {
       "slug": "guns-art-antiques-auction-107292",
       "status": "complete",
       "name": "Guns, Art, Antiques Auction ",
-      "generated": "2026-07-20T20:58:11.056Z"
+      "generated": "2026-07-21T00:54:17.663Z"
     },
     "107624": {
       "slug": "willys-jeep-farm-cattle-equipment-near-rosalia-107624",
       "status": "complete",
       "name": "Willys Jeep, Farm & Cattle Equipment Near Rosalia",
-      "generated": "2026-07-20T20:58:11.054Z"
+      "generated": "2026-07-21T00:54:17.661Z"
     },
     "107690": {
       "slug": "160-acres-reno-county-kansas-south-of-hutchinson-north-fork-107690",
       "status": "complete",
       "name": "160+- Acres Reno County, Kansas South of Hutchinson – North Fork of the Ninnescah River",
-      "generated": "2026-07-20T20:58:11.048Z"
+      "generated": "2026-07-21T00:54:17.656Z"
     },
     "108192": {
       "slug": "124-ranch-rd-grenola-ks-67346-house-and-buildings-on-326-sce-108192",
       "status": "complete",
       "name": "124 Ranch Rd., Grenola, KS 67346: House and Buildings on 326+- Scenic Acres, Chautauqua/Cowley County Line",
-      "generated": "2026-07-20T20:58:11.049Z"
+      "generated": "2026-07-21T00:54:17.657Z"
     },
     "108455": {
       "slug": "80-acres-northwest-of-fredonia-in-wilson-county-kansas-heavy-108455",
       "status": "complete",
       "name": "80+- Acres Northwest of Fredonia in Wilson County, Kansas – Heavy Timber, Spring Water, Pasture, & Great Hunting",
-      "generated": "2026-07-20T20:58:11.047Z"
+      "generated": "2026-07-21T00:54:17.654Z"
     },
     "108460": {
       "slug": "120-acres-south-of-conway-springs-in-sumner-county-kansas-108460",
       "status": "complete",
       "name": "120+- Acres South of Conway Springs in Sumner County, Kansas",
-      "generated": "2026-07-20T20:58:11.046Z"
+      "generated": "2026-07-21T00:54:17.653Z"
     },
     "108709": {
       "slug": "809-alexander-winfield-ks-67156-1-bed-1-bath-home-108709",
       "status": "complete",
       "name": "809 Alexander, Winfield, KS 67156 – 1 Bed 1 Bath Home",
-      "generated": "2026-07-20T20:58:11.045Z"
+      "generated": "2026-07-21T00:54:17.652Z"
     },
     "108811": {
       "slug": "woodshop-equipment-tools-furniture-guns-in-el-dorado-108811",
       "status": "complete",
       "name": "Woodshop Equipment, Tools, Furniture, Guns in El Dorado",
-      "generated": "2026-07-20T20:58:11.043Z"
+      "generated": "2026-07-21T00:54:17.650Z"
     },
     "108917": {
       "slug": "154-acres-cowley-county-kansas-land-between-atlanta-and-burd-108917",
       "status": "complete",
       "name": "154+- Acres Cowley County, Kansas Land Between Atlanta and Burden",
-      "generated": "2026-07-20T20:58:11.044Z"
+      "generated": "2026-07-21T00:54:17.651Z"
     },
     "109415": {
       "slug": "486-acres-southwest-of-winfield-in-cowley-county-kansas-sell-109415",
       "status": "complete",
       "name": "486+- Acres Southwest of Winfield in Cowley County, Kansas Selling in 3 Tracts – Tillable, Pasture, River & Hunting",
-      "generated": "2026-07-20T20:58:11.042Z"
+      "generated": "2026-07-21T00:54:17.649Z"
     },
     "109780": {
       "slug": "822-acres-greenwood-county-kansas-land-between-severy-and-pi-109780",
       "status": "complete",
       "name": "822 Acres Greenwood County, Kansas Land Between Severy and Piedmont Selling in 5 Tracts",
-      "generated": "2026-07-20T20:58:11.038Z"
+      "generated": "2026-07-21T00:54:17.645Z"
     },
     "110094": {
       "slug": "240-acres-flint-hills-pasture-between-cassoday-and-burns-in-110094",
       "status": "complete",
       "name": "240+- Acres Flint Hills Pasture Between Cassoday and Burns in Butler County, Kansas",
-      "generated": "2026-07-20T20:58:11.039Z"
+      "generated": "2026-07-21T00:54:17.646Z"
     },
     "110102": {
       "slug": "20-acres-southeast-of-andover-kansas-pond-trees-farm-ground-110102",
       "status": "complete",
       "name": "20 Acres Southeast of Andover, Kansas – Pond, Trees, Farm Ground & Utilities",
-      "generated": "2026-07-20T20:58:11.036Z"
+      "generated": "2026-07-21T00:54:17.643Z"
     },
     "110268": {
       "slug": "605-acres-cowley-county-kansas-land-east-of-rock-selling-in-110268",
       "status": "complete",
       "name": "605+- Acres Cowley County, Kansas Land East of Rock Selling in 6 Tracts",
-      "generated": "2026-07-20T20:58:11.037Z"
+      "generated": "2026-07-21T00:54:17.644Z"
     },
     "110311": {
       "slug": "handgun-rifle-shotgun-online-only-auction-110311",
       "status": "complete",
       "name": "Handgun, Rifle, Shotgun Online Only Auction",
-      "generated": "2026-07-20T20:58:11.041Z"
+      "generated": "2026-07-21T00:54:17.648Z"
     },
     "110801": {
       "slug": "328-acres-between-el-dorado-and-towanda-in-butler-county-kan-110801",
       "status": "complete",
       "name": "32.8 Acres Between El Dorado and Towanda in Butler County, Kansas Land For Sale",
-      "generated": "2026-07-20T20:58:11.034Z"
+      "generated": "2026-07-21T00:54:17.641Z"
     },
     "111047": {
       "slug": "18-acres-at-55th-st-south-and-south-meridian-wichita-kansas-111047",
       "status": "complete",
       "name": "18+- Acres at 55th St South and South Meridian, Wichita, Kansas",
-      "generated": "2026-07-20T20:58:11.033Z"
+      "generated": "2026-07-21T00:54:17.639Z"
     },
     "111431": {
       "slug": "home-outbuildings-on-20-acres-near-andover-rose-hill-and-aug-111431",
       "status": "complete",
       "name": "Home & Outbuildings on 20+- Acres Near Andover, Rose Hill, and Augusta",
-      "generated": "2026-07-20T20:58:11.032Z"
+      "generated": "2026-07-21T00:54:17.638Z"
     },
     "111607": {
       "slug": "farm-ranch-equipment-auction-fall-river-kansas-111607",
       "status": "complete",
       "name": "Farm & Ranch Equipment Auction, Fall River Kansas",
-      "generated": "2026-07-20T20:58:11.035Z"
+      "generated": "2026-07-21T00:54:17.642Z"
     },
     "111630": {
       "slug": "816-w-3rd-ave-el-dorado-ks-67042-2-bed-1-bath-home-111630",
       "status": "complete",
       "name": "816 W 3rd Ave, El Dorado, KS 67042 – 2 Bed 1 Bath Home",
-      "generated": "2026-07-20T20:58:11.031Z"
+      "generated": "2026-07-21T00:54:17.637Z"
     },
     "111985": {
       "slug": "the-harms-collection-auction-111985",
       "status": "complete",
       "name": "The Harms Collection Auction ",
-      "generated": "2026-07-20T20:58:11.026Z"
+      "generated": "2026-07-21T00:54:17.632Z"
     },
     "112514": {
       "slug": "patterson-kansas-duck-marsh-160-acres-north-of-mount-hope-in-112514",
       "status": "complete",
       "name": "Patterson Kansas Duck Marsh – 160 Acres, North of Mount Hope in Harvey County, Kansas",
-      "generated": "2026-07-20T20:58:11.029Z"
+      "generated": "2026-07-21T00:54:17.635Z"
     },
     "112562": {
       "slug": "john-deere-tractors-gator-tools-household-auction-112562",
       "status": "complete",
       "name": "John Deere Tractors, Gator, Tools & Household Auction ",
-      "generated": "2026-07-20T20:58:11.030Z"
+      "generated": "2026-07-21T00:54:17.636Z"
     },
     "112724": {
       "slug": "148-acres-of-tillable-farm-ground-southwest-of-scott-city-in-112724",
       "status": "complete",
       "name": "148 Acres of Tillable Farm Ground Southwest of Scott City in Scott County, Kansas",
-      "generated": "2026-07-20T20:58:11.028Z"
+      "generated": "2026-07-21T00:54:17.634Z"
     },
     "112941": {
       "slug": "1556-acres-of-scenic-native-flint-hills-pasture-north-of-eur-112941",
       "status": "complete",
       "name": "155.6 Acres of Scenic Native Flint Hills Pasture North of Eureka, Greenwood County, Kansas",
-      "generated": "2026-07-20T20:58:11.027Z"
+      "generated": "2026-07-21T00:54:17.633Z"
     },
     "113037": {
       "slug": "72-acres-at-south-143rd-st-east-and-east-39th-st-south-sedgw-113037",
       "status": "complete",
       "name": "72 Acres at South 143rd St East and East 39th St South, Sedgwick County, Kansas",
-      "generated": "2026-07-20T20:58:11.024Z"
+      "generated": "2026-07-21T00:54:17.630Z"
     },
     "113510": {
       "slug": "2-tracts-113-acres-fall-river-tillable-bottom-ground-trees-n-113510",
       "status": "complete",
       "name": "2 Tracts: 113 Acres, Fall River, Tillable Bottom Ground & Trees Near New Albany in Wilson County, Kansas",
-      "generated": "2026-07-20T20:58:11.022Z"
+      "generated": "2026-07-21T00:54:17.627Z"
     },
     "113584": {
       "slug": "the-harms-collection-online-only-gun-ammo-auction-113584",
       "status": "complete",
       "name": "The Harms Collection: Online Only Gun & Ammo Auction",
-      "generated": "2026-07-20T20:58:11.025Z"
+      "generated": "2026-07-21T00:54:17.631Z"
     },
     "113671": {
       "slug": "2-tracts-922-acres-chase-county-ks-flint-hills-ranch-near-ma-113671",
       "status": "complete",
       "name": "2 Tracts: 922+- Acres Chase County, KS Flint Hills Ranch Near Matfield Green",
-      "generated": "2026-07-20T20:58:11.021Z"
+      "generated": "2026-07-21T00:54:17.627Z"
     },
     "113799": {
       "slug": "80-acres-butler-county-kansas-tillable-land-for-sale-near-wh-113799",
       "status": "complete",
       "name": "80+- Acres Butler County, Kansas Tillable Land For Sale Near Whitewater and Elbing",
-      "generated": "2026-07-20T20:58:11.020Z"
+      "generated": "2026-07-21T00:54:17.626Z"
     },
     "113855": {
       "slug": "handgun-rifle-shotgun-auction-113855",
       "status": "complete",
       "name": "Handgun, Rifle, Shotgun Auction",
-      "generated": "2026-07-20T20:58:11.023Z"
+      "generated": "2026-07-21T00:54:17.628Z"
     },
     "113974": {
       "slug": "76-acres-large-pond-timber-flint-hills-pasture-greenwood-cou-113974",
       "status": "complete",
       "name": "76 Acres, Large Pond, Timber & Flint Hills Pasture – Greenwood County, KS",
-      "generated": "2026-07-20T20:58:11.019Z"
+      "generated": "2026-07-21T00:54:17.625Z"
     },
     "114465": {
       "slug": "230-acres-between-towanda-augusta-in-butler-county-kansas-114465",
       "status": "complete",
       "name": "230 Acres Between Towanda & Augusta in Butler County, Kansas",
-      "generated": "2026-07-20T20:58:11.016Z"
+      "generated": "2026-07-21T00:54:17.621Z"
     },
     "115124": {
       "slug": "the-harms-collection-auction-3-signs-unique-antiques-115124",
       "status": "complete",
       "name": "The Harms Collection Auction #3 - Signs & Unique Antiques",
-      "generated": "2026-07-20T20:58:11.018Z"
+      "generated": "2026-07-21T00:54:17.624Z"
     },
     "115380": {
       "slug": "rifles-shotguns-handguns-and-ammo-auction-115380",
       "status": "complete",
       "name": "Rifles, Shotguns, Handguns and Ammo Auction",
-      "generated": "2026-07-20T20:58:11.017Z"
+      "generated": "2026-07-21T00:54:17.622Z"
     },
     "115752": {
       "slug": "66-acres-between-augusta-and-douglass-in-butler-county-kansa-115752",
       "status": "complete",
       "name": "6.6 Acres Between Augusta and Douglass in Butler County Kansas",
-      "generated": "2026-07-20T20:58:11.012Z"
+      "generated": "2026-07-21T00:54:17.618Z"
     },
     "115758": {
       "slug": "the-harms-collection-auction-4-online-only-115758",
       "status": "complete",
       "name": "The Harms Collection Auction #4 - Online Only",
-      "generated": "2026-07-20T20:58:11.014Z"
+      "generated": "2026-07-21T00:54:17.620Z"
     },
     "115791": {
       "slug": "733-acres-native-flint-hills-pasture-north-of-latham-in-butl-115791",
       "status": "complete",
       "name": "73.3 Acres Native Flint Hills Pasture North of Latham in Butler County, Kansas",
-      "generated": "2026-07-20T20:58:11.013Z"
+      "generated": "2026-07-21T00:54:17.619Z"
     },
     "116212": {
       "slug": "900-acres-5-tracts-in-sumner-county-kansas-near-clearwater-a-116212",
       "status": "complete",
       "name": "900+- Acres, 5 Tracts in Sumner County, Kansas Near Clearwater and Conway Springs",
-      "generated": "2026-07-20T20:58:11.006Z"
+      "generated": "2026-07-21T00:54:17.611Z"
     },
     "116408": {
       "slug": "60-acres-butler-county-kansas-land-between-leon-and-atlanta-116408",
       "status": "complete",
       "name": "60+- Acres Butler County, Kansas Land Between Leon and Atlanta",
-      "generated": "2026-07-20T20:58:11.007Z"
+      "generated": "2026-07-21T00:54:17.612Z"
     },
     "116413": {
       "slug": "10-acres-southeast-of-derby-kansas-on-greenwich-rd-116413",
       "status": "complete",
       "name": "10+- Acres Southeast of Derby, Kansas on Greenwich Rd",
-      "generated": "2026-07-20T20:58:11.008Z"
+      "generated": "2026-07-21T00:54:17.613Z"
     },
     "116593": {
       "slug": "the-harms-collection-auction-5-unique-and-unusal-antiques-116593",
       "status": "complete",
       "name": "The Harms Collection Auction #5 - Unique and Unusal Antiques",
-      "generated": "2026-07-20T20:58:11.012Z"
+      "generated": "2026-07-21T00:54:17.616Z"
     },
     "117125": {
       "slug": "cattle-equipment-online-only-auction-117125",
       "status": "complete",
       "name": "Cattle Equipment Online Only Auction",
-      "generated": "2026-07-20T20:58:11.010Z"
+      "generated": "2026-07-21T00:54:17.615Z"
     },
     "117277": {
       "slug": "222-e-random-rd-el-dorado-ks-67042-3-bed-1-bath-home-117277",
       "status": "complete",
       "name": "222 E Random Rd, El Dorado, KS 67042 – 3 Bed 1 Bath Home",
-      "generated": "2026-07-20T20:58:11.004Z"
+      "generated": "2026-07-21T00:54:17.609Z"
     },
     "117410": {
       "slug": "the-harms-collection-auction-6-online-only-117410",
       "status": "complete",
       "name": "The Harms Collection Auction #6 - Online Only",
-      "generated": "2026-07-20T20:58:11.009Z"
+      "generated": "2026-07-21T00:54:17.614Z"
     },
     "117883": {
       "slug": "1532-acres-butler-county-kansas-land-between-el-dorado-augus-117883",
       "status": "complete",
       "name": "153.2 Acres Butler County, Kansas Land Between El Dorado & Augusta",
-      "generated": "2026-07-20T20:58:11.002Z"
+      "generated": "2026-07-21T00:54:17.607Z"
     },
     "117884": {
       "slug": "789-acres-flint-hills-pasture-butler-county-kansas-2-tracts-117884",
       "status": "complete",
       "name": "789 Acres Flint Hills Pasture, Butler County, Kansas – 2 Tracts",
-      "generated": "2026-07-20T20:58:11.001Z"
+      "generated": "2026-07-21T00:54:17.606Z"
     },
     "117885": {
       "slug": "1344-acres-west-of-newton-harvey-county-kansas-117885",
       "status": "complete",
       "name": "134.4 Acres West of Newton, Harvey County, Kansas",
-      "generated": "2026-07-20T20:58:11.000Z"
+      "generated": "2026-07-21T00:54:17.605Z"
     },
     "118091": {
       "slug": "the-harms-collection-auction-7-unique-and-unusual-antiques-118091",
       "status": "complete",
       "name": "The Harms Collection Auction #7 - Unique and Unusual Antiques",
-      "generated": "2026-07-20T20:58:11.003Z"
+      "generated": "2026-07-21T00:54:17.608Z"
     },
     "118227": {
       "slug": "vehicle-consignment-auction-online-only-118227",
       "status": "complete",
       "name": "Vehicle Consignment Auction - Online Only",
-      "generated": "2026-07-20T20:58:11.006Z"
+      "generated": "2026-07-21T00:54:17.610Z"
     },
     "118745": {
       "slug": "231-acres-tillable-on-the-ricemcpherson-county-kansas-line-118745",
       "status": "complete",
       "name": "231 Acres Tillable On The Rice/McPherson County Kansas Line",
-      "generated": "2026-07-20T20:58:10.998Z"
+      "generated": "2026-07-21T00:54:17.603Z"
     },
     "118886": {
       "slug": "133-acres-woodson-county-kansas-land-for-sale-near-toronto-118886",
       "status": "complete",
       "name": "133 Acres Woodson County Kansas Land For Sale Near Toronto",
-      "generated": "2026-07-20T20:58:10.986Z"
+      "generated": "2026-07-21T00:54:17.591Z"
     },
     "118915": {
       "slug": "36000-sq-ft-greenhouse-warehouse-office-space-in-eureka-kans-118915",
       "status": "complete",
       "name": "36,000+ Sq Ft Greenhouse, Warehouse, Office Space in Eureka Kansas",
-      "generated": "2026-07-20T20:58:10.997Z"
+      "generated": "2026-07-21T00:54:17.602Z"
     },
     "119099": {
       "slug": "the-harms-collection-auction-8-online-only-119099",
       "status": "complete",
       "name": "The Harms Collection Auction #8 - Online Only",
-      "generated": "2026-07-20T20:58:10.999Z"
+      "generated": "2026-07-21T00:54:17.604Z"
     },
     "119410": {
       "slug": "the-hess-collection-auction-119410",
       "status": "complete",
       "name": "The Hess Collection Auction",
-      "generated": "2026-07-20T20:58:10.997Z"
+      "generated": "2026-07-21T00:54:17.601Z"
     },
     "119542": {
       "slug": "2418-acres-2-tracts-near-mulvane-udall-on-the-sumnercowley-c-119542",
       "status": "complete",
       "name": "241.8 Acres: 2 Tracts Near Mulvane & Udall on the Sumner/Cowley County Line",
-      "generated": "2026-07-20T20:58:10.995Z"
+      "generated": "2026-07-21T00:54:17.600Z"
     },
     "120101": {
       "slug": "110-acres-tillable-near-bentley-in-sedgwick-county-kansas-120101",
       "status": "complete",
       "name": "110+- Acres Tillable Near Bentley in Sedgwick County, Kansas",
-      "generated": "2026-07-20T20:58:10.992Z"
+      "generated": "2026-07-21T00:54:17.596Z"
     },
     "120202": {
       "slug": "1348-acres-and-7500-sq-ft-building-308-e-main-lehigh-ks-6706-120202",
       "status": "complete",
       "name": "13.48 Acres and 7500+ Sq Ft Building: 308 E Main, Lehigh, KS 67063",
-      "generated": "2026-07-20T20:58:10.993Z"
+      "generated": "2026-07-21T00:54:17.597Z"
     },
     "120226": {
       "slug": "the-harms-collection-auction-9-signs-and-unique-antiques-120226",
       "status": "complete",
       "name": "The Harms Collection Auction #9 - Signs and Unique Antiques",
-      "generated": "2026-07-20T20:58:10.994Z"
+      "generated": "2026-07-21T00:54:17.599Z"
     },
     "120275": {
       "slug": "farm-equipment-auction-property-of-don-stuber-120275",
       "status": "complete",
       "name": "Farm Equipment Auction - Property of Don Stuber",
-      "generated": "2026-07-20T20:58:10.996Z"
+      "generated": "2026-07-21T00:54:17.600Z"
     },
     "120775": {
       "slug": "244-acres-near-whitewater-kansas-selling-in-4-tracts-120775",
       "status": "complete",
       "name": "244 Acres Near Whitewater, Kansas Selling in 4 Tracts",
-      "generated": "2026-07-20T20:58:10.991Z"
+      "generated": "2026-07-21T00:54:17.595Z"
     },
     "120782": {
       "slug": "203-acres-of-harvey-county-kansas-tillable-2-tracts-120782",
       "status": "complete",
       "name": "203 Acres of Harvey County, Kansas Tillable – 2 Tracts",
-      "generated": "2026-07-20T20:58:10.990Z"
+      "generated": "2026-07-21T00:54:17.595Z"
     },
     "121067": {
       "slug": "11-acres-at-949-nw-hwy-196-near-el-dorado-kansas-121067",
       "status": "complete",
       "name": "11 Acres at 949 NW HWY 196 Near El Dorado Kansas",
-      "generated": "2026-07-20T20:58:10.987Z"
+      "generated": "2026-07-21T00:54:17.593Z"
     },
     "121576": {
       "slug": "the-harms-collection-auction-10-online-only-121576",
       "status": "complete",
       "name": "The Harms Collection Auction #10 - Online Only",
-      "generated": "2026-07-20T20:58:10.989Z"
+      "generated": "2026-07-21T00:54:17.593Z"
     },
     "122042": {
       "slug": "80-acres-wilson-county-kansas-southwest-of-fredonia-122042",
       "status": "complete",
       "name": "80+- Acres Wilson County, Kansas Southwest of Fredonia",
-      "generated": "2026-07-20T20:58:10.984Z"
+      "generated": "2026-07-21T00:54:17.589Z"
     },
     "122322": {
       "slug": "618-acres-cowley-county-kansas-land-for-sale-southeast-of-ro-122322",
       "status": "complete",
       "name": "618 Acres Cowley County, Kansas Land For Sale Southeast of Rock",
-      "generated": "2026-07-20T20:58:10.983Z"
+      "generated": "2026-07-21T00:54:17.588Z"
     },
     "122417": {
       "slug": "gold-silver-jewelry-online-only-auction-122417",
       "status": "complete",
       "name": "Gold, Silver, Jewelry Online Only Auction",
-      "generated": "2026-07-20T20:58:10.985Z"
+      "generated": "2026-07-21T00:54:17.590Z"
     },
     "122960": {
       "slug": "shotgun-rifle-handgun-and-ammo-auction-122960",
       "status": "complete",
       "name": "Shotgun, Rifle, Handgun and Ammo Auction",
-      "generated": "2026-07-20T20:58:10.982Z"
+      "generated": "2026-07-21T00:54:17.587Z"
     },
     "123006": {
       "slug": "investment-real-estate-auction-818-w-1st-ave-el-dorado-ks-67-123006",
       "status": "complete",
       "name": "Investment Real Estate Auction: 818 W. 1st Ave, El Dorado, KS 67042",
-      "generated": "2026-07-20T20:58:10.978Z"
+      "generated": "2026-07-21T00:54:17.584Z"
     },
     "123165": {
       "slug": "60-acres-northeast-of-sedan-in-chautauqua-county-kansas-123165",
       "status": "complete",
       "name": "60+- Acres Northeast of Sedan in Chautauqua County, Kansas",
-      "generated": "2026-07-20T20:58:10.979Z"
+      "generated": "2026-07-21T00:54:17.585Z"
     },
     "123192": {
       "slug": "furniture-household-online-only-auction-in-el-dorado-123192",
       "status": "complete",
       "name": "Furniture & Household Online Only Auction in El Dorado",
-      "generated": "2026-07-20T20:58:10.981Z"
+      "generated": "2026-07-21T00:54:17.586Z"
     },
     "123710": {
       "slug": "1004-acres-northwest-of-towanda-in-butler-county-kansas-123710",
       "status": "complete",
       "name": "100.4 Acres Northwest of Towanda in Butler County, Kansas",
-      "generated": "2026-07-20T20:58:10.973Z"
+      "generated": "2026-07-21T00:54:17.581Z"
     },
     "124217": {
       "slug": "marion-county-lake-house-131-lakeshore-dr-marion-kansas-6686-124217",
       "status": "complete",
       "name": "Marion County Lake House: 131 Lakeshore Dr, Marion Kansas 66861",
-      "generated": "2026-07-20T20:58:10.972Z"
+      "generated": "2026-07-21T00:54:17.579Z"
     },
     "124458": {
       "slug": "gun-and-car-auction-rifles-shotguns-pistols-2008-dodge-aveng-124458",
       "status": "complete",
       "name": "Gun and Car Auction - Rifles, Shotguns, Pistols, 2008 Dodge Avenger",
-      "generated": "2026-07-20T20:58:10.977Z"
+      "generated": "2026-07-21T00:54:17.583Z"
     },
     "124487": {
       "slug": "2024-butler-county-fair-livestock-project-auction-124487",
       "status": "complete",
       "name": "2024 Butler County Fair Livestock & Project Auction",
-      "generated": "2026-07-20T20:58:10.980Z"
+      "generated": "2026-07-21T00:54:17.586Z"
     },
     "124522": {
       "slug": "antique-gun-fishing-reel-lamp-auction-124522",
       "status": "complete",
       "name": "Antique Gun, Fishing Reel, Lamp Auction",
-      "generated": "2026-07-20T20:58:10.974Z"
+      "generated": "2026-07-21T00:54:17.581Z"
     },
     "125051": {
       "slug": "160-acres-irrigated-tillable-farm-ground-sedgwick-county-kan-125051",
       "status": "complete",
       "name": "160+- Acres Irrigated Tillable Farm Ground, Sedgwick County, Kansas",
-      "generated": "2026-07-20T20:58:10.967Z"
+      "generated": "2026-07-21T00:54:17.575Z"
     },
     "125357": {
       "slug": "investment-real-estate-auction-1005-s-shelden-st-el-dorado-k-125357",
       "status": "complete",
       "name": "Investment Real Estate Auction – 1005 S Shelden St, El Dorado, KS 67042",
-      "generated": "2026-07-20T20:58:10.971Z"
+      "generated": "2026-07-21T00:54:17.578Z"
     },
     "125643": {
       "slug": "restaurant-liquidation-auction-cake-batter-batter-in-eureka-125643",
       "status": "complete",
       "name": "Restaurant Liquidation Auction: Cake Batter Batter in Eureka Kansas",
-      "generated": "2026-07-20T20:58:10.969Z"
+      "generated": "2026-07-21T00:54:17.577Z"
     },
     "126042": {
       "slug": "farm-house-buildings-on-20-acres-whitewater-kansas-126042",
       "status": "complete",
       "name": "Farm House & Buildings on 20 Acres, Whitewater, Kansas",
-      "generated": "2026-07-20T20:58:10.966Z"
+      "generated": "2026-07-21T00:54:17.574Z"
     },
     "126195": {
       "slug": "1185-acres-on-the-chautauqua-elk-county-line-near-moline-kan-126195",
       "status": "complete",
       "name": "118.5 Acres on the Chautauqua & Elk County Line near Moline, Kansas – Premium Hunting & Fishing",
-      "generated": "2026-07-20T20:58:10.958Z"
+      "generated": "2026-07-21T00:54:17.570Z"
     },
     "126384": {
       "slug": "online-only-auction-12-guns-ammo-gun-parts-accessories-126384",
       "status": "complete",
       "name": "Online Only Auction: 12 Guns, Ammo, Gun Parts & Accessories",
-      "generated": "2026-07-20T20:58:10.968Z"
+      "generated": "2026-07-21T00:54:17.576Z"
     },
     "126653": {
       "slug": "09-harley-davidson-03-f250-88-chevy-3500-antiques-guns-and-c-126653",
       "status": "complete",
       "name": "09 Harley Davidson, 03 F250, 88 Chevy 3500, Antiques, Guns and Collectables",
-      "generated": "2026-07-20T20:58:10.959Z"
+      "generated": "2026-07-21T00:54:17.571Z"
     },
     "127355": {
       "slug": "3158-acres-2-tracts-in-kingman-county-kansas-west-of-norwich-127355",
       "status": "complete",
       "name": "315.8 Acres - 2 Tracts in Kingman County, Kansas West of Norwich",
-      "generated": "2026-07-20T20:58:10.957Z"
+      "generated": "2026-07-21T00:54:17.569Z"
     },
     "127370": {
       "slug": "classic-cars-motorcycles-forklift-high-end-tools-equipmen-127370",
       "status": "complete",
       "name": "Classic Cars, Motorcycles, Forklift, High End Tools & Equipmen",
-      "generated": "2026-07-20T20:58:10.965Z"
+      "generated": "2026-07-21T00:54:17.573Z"
     },
     "127401": {
       "slug": "9884-nw-60th-st-potwin-ks-67123-house-large-shop-pond-on-88-127401",
       "status": "complete",
       "name": "9884 NW 60th St., Potwin, KS 67123 – House, Large Shop & Pond on 8.8 Acres",
-      "generated": "2026-07-20T20:58:10.955Z"
+      "generated": "2026-07-21T00:54:17.567Z"
     },
     "127405": {
       "slug": "640-acres-flint-hills-ranch-butler-county-kansas-watershed-l-127405",
       "status": "complete",
       "name": "640+- Acres Flint Hills Ranch, Butler County, Kansas; Watershed Lake, Pasture, Pens & Hunting",
-      "generated": "2026-07-20T20:58:10.954Z"
+      "generated": "2026-07-21T00:54:17.566Z"
     },
     "127550": {
       "slug": "2612-hwy-54-andover-ks-67002-house-and-shop-building-on-307-127550",
       "status": "complete",
       "name": "2612 HWY 54, Andover KS 67002 – House and Shop Building on 30.7 Acres",
-      "generated": "2026-07-20T20:58:10.953Z"
+      "generated": "2026-07-21T00:54:17.565Z"
     },
     "127855": {
       "slug": "1509-sw-hwy-77-el-dorado-ks-3-bed-2-12-bath-house-on-46-acre-127855",
       "status": "complete",
       "name": "1509 SW HWY 77, El Dorado, KS – 3 Bed 2 1/2 Bath House on 4.6 Acres",
-      "generated": "2026-07-20T20:58:10.952Z"
+      "generated": "2026-07-21T00:54:17.564Z"
     },
     "128542": {
       "slug": "gold-silver-coin-online-only-auction-128542",
       "status": "complete",
       "name": "Gold & Silver Coin Online Only Auction",
-      "generated": "2026-07-20T20:58:10.956Z"
+      "generated": "2026-07-21T00:54:17.568Z"
     },
     "128569": {
       "slug": "12404-n-webb-rd-valley-center-ks-67147-4-bedroom-2-bath-home-128569",
       "status": "complete",
       "name": "12404 N. Webb Rd., Valley Center, KS 67147 – 4 Bedroom 2 Bath Home on 20 Acres",
-      "generated": "2026-07-20T20:58:10.951Z"
+      "generated": "2026-07-21T00:54:17.563Z"
     },
     "128570": {
       "slug": "2-40-acre-tracts-between-andover-and-augusta-kansas-land-for-128570",
       "status": "complete",
       "name": "(2) 40 Acre Tracts Between Andover and Augusta Kansas Land For Sale",
-      "generated": "2026-07-20T20:58:10.950Z"
+      "generated": "2026-07-21T00:54:17.562Z"
     },
     "128571": {
       "slug": "146-acres-between-baldwin-city-wellsville-edgerton-douglas-c-128571",
       "status": "complete",
       "name": "146 Acres Between Baldwin City, Wellsville & Edgerton – Douglas County, Kansas",
-      "generated": "2026-07-20T20:58:10.949Z"
+      "generated": "2026-07-21T00:54:17.561Z"
     },
     "129245": {
       "slug": "the-harms-collection-auction-12-online-only-129245",
       "status": "complete",
       "name": "The Harms Collection Auction # 12 - Online Only",
-      "generated": "2026-07-20T20:58:10.946Z"
+      "generated": "2026-07-21T00:54:17.558Z"
     },
     "129376": {
       "slug": "1543-acres-northern-butler-county-kansas-near-burns-tillable-129376",
       "status": "complete",
       "name": "154.3 Acres Northern Butler County, Kansas Near Burns – Tillable Farm Ground, Oil Income, Hay Meadow",
-      "generated": "2026-07-20T20:58:10.945Z"
+      "generated": "2026-07-21T00:54:17.557Z"
     },
     "129443": {
       "slug": "114-acres-on-greenwich-near-101st-st-north-sedgwick-county-k-129443",
       "status": "complete",
       "name": "114+- Acres on Greenwich near 101st St North, Sedgwick County, Kansas",
-      "generated": "2026-07-20T20:58:10.943Z"
+      "generated": "2026-07-21T00:54:17.555Z"
     },
     "129645": {
       "slug": "ted-and-karen-corbin-auction-farm-cattle-equipment-129645",
       "status": "complete",
       "name": "Ted and Karen Corbin Auction – Farm & Cattle Equipment",
-      "generated": "2026-07-20T20:58:10.947Z"
+      "generated": "2026-07-21T00:54:17.559Z"
     },
     "129700": {
       "slug": "424-w-central-ave-el-dorado-kansas-67042-commercial-investme-129700",
       "status": "complete",
       "name": "424 W Central Ave, El Dorado Kansas 67042 Commercial Investment Real Estate",
-      "generated": "2026-07-20T20:58:10.944Z"
+      "generated": "2026-07-21T00:54:17.556Z"
     },
     "129703": {
       "slug": "the-myers-ranch-butler-county-kansas-540-acres-selling-in-4-129703",
       "status": "complete",
       "name": "The Myers Ranch, Butler County, Kansas – 540 Acres Selling In 4 Tracts",
-      "generated": "2026-07-20T20:58:10.941Z"
+      "generated": "2026-07-21T00:54:17.553Z"
     },
     "129839": {
       "slug": "farm-and-cattle-equipment-auction-near-winfield-kansas-129839",
       "status": "complete",
       "name": "Farm and Cattle Equipment Auction Near Winfield Kansas",
-      "generated": "2026-07-20T20:58:10.942Z"
+      "generated": "2026-07-21T00:54:17.554Z"
     },
     "129893": {
       "slug": "iron-antique-tractors-parts-online-only-auction-129893",
       "status": "complete",
       "name": "Iron, Antique Tractors, Parts: Online Only Auction",
-      "generated": "2026-07-20T20:58:10.948Z"
+      "generated": "2026-07-21T00:54:17.560Z"
     },
     "130265": {
       "slug": "1012-w-towanda-ave-el-dorado-ks-67042-investment-real-estate-130265",
       "status": "complete",
       "name": "1012 W Towanda Ave, El Dorado, KS 67042 - Investment Real Estate Auction",
-      "generated": "2026-07-20T20:58:10.939Z"
+      "generated": "2026-07-21T00:54:17.551Z"
     },
     "130271": {
       "slug": "308-acres-in-butler-county-kansas-watershed-lake-ponds-pastu-130271",
       "status": "complete",
       "name": "308 Acres in Butler County Kansas: Watershed Lake, Ponds, Pasture, Creek & Timber ",
-      "generated": "2026-07-20T20:58:10.938Z"
+      "generated": "2026-07-21T00:54:17.550Z"
     },
     "131103": {
       "slug": "furniture-antiques-household-online-only-auction-in-east-wic-131103",
       "status": "complete",
       "name": "Furniture, Antiques & Household Online Only Auction in East Wichita",
-      "generated": "2026-07-20T20:58:10.940Z"
+      "generated": "2026-07-21T00:54:17.552Z"
     },
     "131329": {
       "slug": "southeast-wichita-brick-ranch-style-home-on-41-acres-12425-e-131329",
       "status": "complete",
       "name": "Southeast Wichita Brick Ranch Style Home on 4.1 Acres: 12425 E. Osie St., Wichita KS 67207 and Tractors",
-      "generated": "2026-07-20T20:58:10.933Z"
+      "generated": "2026-07-21T00:54:17.546Z"
     },
     "131368": {
       "slug": "74-acres-between-el-dorado-leon-kansas-on-bluestem-rd-pond-t-131368",
       "status": "complete",
       "name": "7.4 Acres Between El Dorado & Leon, Kansas on Bluestem Rd – Pond, Trees, Pasture, Blacktop Frontage",
-      "generated": "2026-07-20T20:58:10.935Z"
+      "generated": "2026-07-21T00:54:17.548Z"
     },
     "131649": {
       "slug": "guns-woodshop-equipment-tools-kayak-and-more-131649",
       "status": "complete",
       "name": "Guns, Woodshop Equipment, Tools, Kayak and More!",
-      "generated": "2026-07-20T20:58:10.937Z"
+      "generated": "2026-07-21T00:54:17.549Z"
     },
     "132515": {
       "slug": "788-acres-harvey-county-kansas-land-between-whitewater-newto-132515",
       "status": "complete",
       "name": "78.8 Acres Harvey County, Kansas Land Between Whitewater & Newton",
-      "generated": "2026-07-20T20:58:10.933Z"
+      "generated": "2026-07-21T00:54:17.545Z"
     },
     "132797": {
       "slug": "antique-toy-tractors-and-collectibles-auction-132797",
       "status": "complete",
       "name": "Antique Toy Tractors and Collectibles Auction",
-      "generated": "2026-07-20T20:58:10.932Z"
+      "generated": "2026-07-21T00:54:17.544Z"
     },
     "133066": {
       "slug": "549-acres-butler-county-kansas-on-hwy-77-between-burns-and-e-133066",
       "status": "complete",
       "name": "54.9 Acres Butler County Kansas on HWY 77 Between Burns and El Dorado",
-      "generated": "2026-07-20T20:58:10.929Z"
+      "generated": "2026-07-21T00:54:17.540Z"
     },
     "133215": {
       "slug": "charleys-appliance-and-mattress-gallery-excess-inventory-red-133215",
       "status": "complete",
       "name": "Charley’s Appliance and Mattress Gallery: Excess Inventory Reduction Auction",
-      "generated": "2026-07-20T20:58:10.913Z"
+      "generated": "2026-07-21T00:54:17.522Z"
     },
     "133413": {
       "slug": "15-acre-butler-county-retreat-12556-sw-hopkins-switch-rd-aug-133413",
       "status": "complete",
       "name": "15+- Acre Butler County Retreat: 12556 SW Hopkins Switch Rd, Augusta, KS 67010",
-      "generated": "2026-07-20T20:58:10.926Z"
+      "generated": "2026-07-21T00:54:17.538Z"
     },
     "133561": {
       "slug": "investment-real-estate-auction-201-w-olive-ave-el-dorado-ks-133561",
       "status": "complete",
       "name": "Investment Real Estate Auction: 201 W Olive Ave, El Dorado, KS 67042",
-      "generated": "2026-07-20T20:58:10.925Z"
+      "generated": "2026-07-21T00:54:17.537Z"
     },
     "133657": {
       "slug": "2023-luxury-5th-wheel-construction-equipment-vehicles-more-133657",
       "status": "complete",
       "name": "2023 Luxury 5th Wheel, Construction Equipment, Vehicles & More",
-      "generated": "2026-07-20T20:58:10.931Z"
+      "generated": "2026-07-21T00:54:17.543Z"
     },
     "133741": {
       "slug": "quality-furniture-decor-household-items-133741",
       "status": "complete",
       "name": "Quality Furniture, Decor, Household Items",
-      "generated": "2026-07-20T20:58:10.930Z"
+      "generated": "2026-07-21T00:54:17.542Z"
     },
     "133797": {
       "slug": "quality-decor-homeware-gun-safe-fishing-more-133797",
       "status": "complete",
       "name": "Quality Decor, Homeware, Gun Safe, Fishing & More",
-      "generated": "2026-07-20T20:58:10.928Z"
+      "generated": "2026-07-21T00:54:17.539Z"
     },
     "133898": {
       "slug": "1095-se-conner-rd-el-dorado-ks-67042-133898",
       "status": "complete",
       "name": "1095 SE Conner Rd, El Dorado, KS 67042",
-      "generated": "2026-07-20T20:58:10.920Z"
+      "generated": "2026-07-21T00:54:17.532Z"
     },
     "134163": {
       "slug": "60-acres-sedgwick-county-kansas-future-development-land-near-134163",
       "status": "complete",
       "name": "60+- Acres Sedgwick County, Kansas – Future Development Land Near Valley Center",
-      "generated": "2026-07-20T20:58:10.923Z"
+      "generated": "2026-07-21T00:54:17.535Z"
     },
     "134390": {
       "slug": "1793-acres-harvey-county-kansas-tillable-farm-ground-north-o-134390",
       "status": "complete",
       "name": "179.3 Acres Harvey County, Kansas Tillable Farm Ground North of Sedgwick",
-      "generated": "2026-07-20T20:58:10.922Z"
+      "generated": "2026-07-21T00:54:17.534Z"
     },
     "134503": {
       "slug": "2-20-acre-properties-for-sale-by-auction-near-el-dorado-kans-134503",
       "status": "complete",
       "name": "(2) 20+- Acre Properties For Sale By Auction Near El Dorado Kansas",
-      "generated": "2026-07-20T20:58:10.924Z"
+      "generated": "2026-07-21T00:54:17.536Z"
     },
     "135078": {
       "slug": "2006-ram-guns-quality-tools-more-135078",
       "status": "complete",
       "name": "2006 Ram, Guns, Quality Tools & More",
-      "generated": "2026-07-20T20:58:10.917Z"
+      "generated": "2026-07-21T00:54:17.528Z"
     },
     "135488": {
       "slug": "mini-excavator-gmc-3500-power-tools-concrete-equipment-more-135488",
       "status": "complete",
       "name": "Mini Excavator, GMC 3500, Power Tools, Concrete Equipment, & More",
-      "generated": "2026-07-20T20:58:10.919Z"
+      "generated": "2026-07-21T00:54:17.531Z"
     },
     "135519": {
       "slug": "john-deere-850-tractor-husqvarna-ztr-mower-and-more-135519",
       "status": "complete",
       "name": "John Deere 850 Tractor, Husqvarna ZTR Mower and More",
-      "generated": "2026-07-20T20:58:10.921Z"
+      "generated": "2026-07-21T00:54:17.533Z"
     },
     "135983": {
       "slug": "reloading-supplies-equipment-and-accessories-135983",
       "status": "complete",
       "name": "Reloading Supplies, Equipment and Accessories",
-      "generated": "2026-07-20T20:58:10.918Z"
+      "generated": "2026-07-21T00:54:17.530Z"
     },
     "136328": {
       "slug": "40-acres-farmland-northeast-of-sedgwick-in-harvey-county-kan-136328",
       "status": "complete",
       "name": "40+- Acres Farmland Northeast of Sedgwick in Harvey County, Kansas",
-      "generated": "2026-07-20T20:58:10.915Z"
+      "generated": "2026-07-21T00:54:17.525Z"
     },
     "136494": {
       "slug": "80-acres-2-tracts-between-whitewater-benton-furley-in-sedgwi-136494",
       "status": "complete",
       "name": "80 Acres – 2 Tracts Between Whitewater, Benton & Furley in Sedgwick County, Kansas",
-      "generated": "2026-07-20T20:58:10.914Z"
+      "generated": "2026-07-21T00:54:17.524Z"
     },
     "136778": {
       "slug": "70-rifles-shotguns-handguns-and-ammo-136778",
       "status": "complete",
       "name": "70+ Rifles, Shotguns, Handguns, and Ammo ",
-      "generated": "2026-07-20T20:58:10.916Z"
+      "generated": "2026-07-21T00:54:17.527Z"
     },
     "136823": {
       "slug": "80-acres-cowley-county-kansas-flint-hills-pasture-between-ca-136823",
       "status": "complete",
       "name": "80+- Acres Cowley County, Kansas Flint Hills Pasture Between Cambridge and Latham",
-      "generated": "2026-07-20T20:58:10.910Z"
+      "generated": "2026-07-21T00:54:17.518Z"
     },
     "136848": {
       "slug": "147-acres-selling-in-5-tracts-bordering-lake-afton-sedgwick-136848",
       "status": "complete",
       "name": "147 Acres Selling in 5 Tracts Bordering Lake Afton, Sedgwick County, Kansas",
-      "generated": "2026-07-20T20:58:10.912Z"
+      "generated": "2026-07-21T00:54:17.521Z"
     },
     "137234": {
       "slug": "1365-acres-chautauqua-county-kansas-land-for-sale-east-of-se-137234",
       "status": "complete",
       "name": "136.5 Acres Chautauqua County, Kansas Land For Sale East of Sedan",
-      "generated": "2026-07-20T20:58:10.908Z"
+      "generated": "2026-07-21T00:54:17.515Z"
     },
     "137825": {
       "slug": "641-acres-5-tracts-in-cowley-and-sumner-county-kansas-137825",
       "status": "complete",
       "name": "641 Acres – 5 Tracts in Cowley and Sumner County, Kansas",
-      "generated": "2026-07-20T20:58:10.907Z"
+      "generated": "2026-07-21T00:54:17.514Z"
     },
     "137831": {
       "slug": "multiproperty-real-estate-auction-cowley-and-sumner-county-k-137831",
       "status": "complete",
       "name": "Multi-Property Real Estate Auction: Cowley and Sumner County, Kansas; Geuda Springs, Oxford & Arkansas City",
-      "generated": "2026-07-20T20:58:10.906Z"
+      "generated": "2026-07-21T00:54:17.513Z"
     },
     "138189": {
       "slug": "antique-toys-and-collectibles-138189",
       "status": "complete",
       "name": "Antique Toys and Collectibles",
-      "generated": "2026-07-20T20:58:10.911Z"
+      "generated": "2026-07-21T00:54:17.520Z"
     },
     "138446": {
       "slug": "furniture-art-antiques-household-auction-138446",
       "status": "complete",
       "name": "Furniture, Art, Antiques, & Household Auction",
-      "generated": "2026-07-20T20:58:10.910Z"
+      "generated": "2026-07-21T00:54:17.519Z"
     },
     "138579": {
       "slug": "the-hess-collection-auction-2-138579",
       "status": "complete",
       "name": "The Hess Collection Auction #2",
-      "generated": "2026-07-20T20:58:10.905Z"
+      "generated": "2026-07-21T00:54:17.512Z"
     },
     "138694": {
       "slug": "collectable-antique-hand-tools-auction-138694",
       "status": "complete",
       "name": "Collectable Antique Hand Tools Auction",
-      "generated": "2026-07-20T20:58:10.909Z"
+      "generated": "2026-07-21T00:54:17.516Z"
     },
     "138740": {
       "slug": "655-s-mccandless-andover-and-vehicles-skid-steer-ztr-mowers-138740",
       "status": "complete",
       "name": "655 S McCandless, Andover and Vehicles, Skid Steer, ZTR Mowers",
-      "generated": "2026-07-20T20:58:10.903Z"
+      "generated": "2026-07-21T00:54:17.511Z"
     },
     "138929": {
       "slug": "521-post-rd-el-dorado-ks-67042-138929",
       "status": "complete",
       "name": "521 Post Rd, El Dorado, KS 67042",
-      "generated": "2026-07-20T20:58:10.901Z"
+      "generated": "2026-07-21T00:54:17.509Z"
     },
     "139658": {
       "slug": "7-vehicles-golf-cart-ztr-mower-trailer-auction-139658",
       "status": "complete",
       "name": "7 Vehicles, Golf Cart, ZTR Mower, Trailer Auction",
-      "generated": "2026-07-20T20:58:10.904Z"
+      "generated": "2026-07-21T00:54:17.511Z"
     },
     "140456": {
       "slug": "276-acres-in-the-heart-of-the-kansas-flint-hills-w-rock-cree-140456",
       "status": "complete",
       "name": "27.6 Acres in the Heart of the Kansas Flint Hills w/ Rock Creek and Timber – Butler County, KS",
-      "generated": "2026-07-20T20:58:10.897Z"
+      "generated": "2026-07-21T00:54:17.505Z"
     },
     "140460": {
       "slug": "102-acres-south-of-el-dorado-kansas-selling-in-2-tracts-140460",
       "status": "complete",
       "name": "102 Acres South of El Dorado, Kansas – Selling in 2 Tracts",
-      "generated": "2026-07-20T20:58:10.896Z"
+      "generated": "2026-07-21T00:54:17.504Z"
     },
     "140472": {
       "slug": "446-acres-tillable-land-auction-east-of-goessel-marion-count-140472",
       "status": "complete",
       "name": "44.6 Acres Tillable Land Auction East of Goessel, Marion County, Kansas",
-      "generated": "2026-07-20T20:58:10.895Z"
+      "generated": "2026-07-21T00:54:17.503Z"
     },
     "140494": {
       "slug": "farm-and-ranch-equipment-online-only-auction-140494",
       "status": "complete",
       "name": "Farm and Ranch Equipment: Online Only Auction",
-      "generated": "2026-07-20T20:58:10.899Z"
+      "generated": "2026-07-21T00:54:17.508Z"
     },
     "140724": {
       "slug": "vehicles-powersports-online-only-auction-140724",
       "status": "complete",
       "name": "Vehicles & Powersports Online Only Auction",
-      "generated": "2026-07-20T20:58:10.898Z"
+      "generated": "2026-07-21T00:54:17.507Z"
     },
     "140849": {
       "slug": "7802-s-harvest-hill-rd-whitewater-ks-39-acres-pasture-trees-140849",
       "status": "complete",
       "name": "7802 S Harvest Hill Rd., Whitewater, KS – 39 Acres Pasture, Trees & Barn",
-      "generated": "2026-07-20T20:58:10.894Z"
+      "generated": "2026-07-21T00:54:17.502Z"
     },
     "140914": {
       "slug": "woodshop-tools-truck-riding-mower-more-140914",
       "status": "complete",
       "name": "Woodshop Tools, Truck, Riding Mower & MORE",
-      "generated": "2026-07-20T20:58:10.884Z"
+      "generated": "2026-07-21T00:54:17.494Z"
     },
     "141710": {
       "slug": "10801-e-87th-st-south-derby-kansas-67037-57-acre-building-si-141710",
       "status": "complete",
       "name": "10801 E. 87th St. South, Derby, Kansas 67037 – 5.7 Acre Building Site",
-      "generated": "2026-07-20T20:58:10.892Z"
+      "generated": "2026-07-21T00:54:17.500Z"
     },
     "141981": {
       "slug": "guns-furniture-generator-tools-auction-141981",
       "status": "complete",
       "name": "Guns, Furniture, Generator, Tools Auction",
-      "generated": "2026-07-20T20:58:10.893Z"
+      "generated": "2026-07-21T00:54:17.501Z"
     },
     "141990": {
       "slug": "160-acres-tillable-farm-ground-kingman-county-kansas-141990",
       "status": "complete",
       "name": "160 Acres Tillable Farm Ground, Kingman County, Kansas",
-      "generated": "2026-07-20T20:58:10.889Z"
+      "generated": "2026-07-21T00:54:17.498Z"
     },
     "142073": {
       "slug": "80-acres-tillable-farm-ground-west-of-whitewater-in-harvey-c-142073",
       "status": "complete",
       "name": "80 Acres Tillable Farm Ground West of Whitewater in Harvey County, Kansas",
-      "generated": "2026-07-20T20:58:10.888Z"
+      "generated": "2026-07-21T00:54:17.497Z"
     },
     "142408": {
       "slug": "40-acres-between-goessel-and-peabody-marion-county-kansas-142408",
       "status": "complete",
       "name": "40+- Acres Between Goessel and Peabody, Marion County, Kansas",
-      "generated": "2026-07-20T20:58:10.887Z"
+      "generated": "2026-07-21T00:54:17.496Z"
     },
     "142585": {
       "slug": "guns-ammo-coins-142585",
       "status": "complete",
       "name": "Guns, Ammo, & Coins",
-      "generated": "2026-07-20T20:58:10.891Z"
+      "generated": "2026-07-21T00:54:17.499Z"
     },
     "142772": {
       "slug": "771-acres-reno-county-kansas-tillable-farm-ground-w-oil-prod-142772",
       "status": "complete",
       "name": "77.1 Acres Reno County, Kansas Tillable Farm Ground w/ Oil Production",
-      "generated": "2026-07-20T20:58:10.883Z"
+      "generated": "2026-07-21T00:54:17.493Z"
     },
     "143371": {
       "slug": "tools-furniture-and-household-goods-143371",
       "status": "complete",
       "name": "Tools, Furniture, and Household Goods",
-      "generated": "2026-07-20T20:58:10.885Z"
+      "generated": "2026-07-21T00:54:17.495Z"
     },
     "143423": {
       "slug": "2-bed-2-bath-home-in-gridley-kansas-with-vehicles-mower-and-143423",
       "status": "complete",
       "name": "2 Bed 2 Bath Home in Gridley, Kansas with Vehicles, Mower, and Tools",
-      "generated": "2026-07-20T20:58:10.881Z"
+      "generated": "2026-07-21T00:54:17.491Z"
     },
     "143463": {
       "slug": "9224-w-82nd-st-n-valley-center-ks-4-bed-2-bath-on-47-acres-143463",
       "status": "complete",
       "name": "9224 W 82nd St N, Valley Center KS: 4 Bed 2 Bath on 4.7 Acres",
-      "generated": "2026-07-20T20:58:10.882Z"
+      "generated": "2026-07-21T00:54:17.492Z"
     },
     "144686": {
       "slug": "100-acres-sedgwick-county-kansas-tillable-farm-ground-betwee-144686",
       "status": "complete",
       "name": "100 Acres Sedgwick County, Kansas Tillable Farm Ground Between Valley Center & Sedgwick",
-      "generated": "2026-07-20T20:58:10.879Z"
+      "generated": "2026-07-21T00:54:17.489Z"
     },
     "145086": {
       "slug": "john-deere-loader-backhoe-gmc-c50-16-guns-antiques-and-more-145086",
       "status": "complete",
       "name": "John Deere Loader Backhoe, GMC C50, 16 Guns, Antiques and MORE",
-      "generated": "2026-07-20T20:58:10.880Z"
+      "generated": "2026-07-21T00:54:17.490Z"
     },
     "145825": {
       "slug": "property-of-wayne-calvin-antiques-and-collectibles-145825",
       "status": "complete",
       "name": "Property of Wayne Calvin, Antiques and Collectibles",
-      "generated": "2026-07-20T20:58:10.876Z"
+      "generated": "2026-07-21T00:54:17.487Z"
     },
     "145931": {
       "slug": "tractors-vehicles-and-power-sports-145931",
       "status": "complete",
       "name": "Tractors, Vehicles, and Power Sports",
-      "generated": "2026-07-20T20:58:10.878Z"
+      "generated": "2026-07-21T00:54:17.488Z"
     },
     "146406": {
       "slug": "farm-house-385-acres-selling-in-2-tracts-pasture-trees-ponds-146406",
       "status": "complete",
       "name": "Farm House & 38.5 Acres Selling in 2 Tracts - Pasture, Trees & Ponds at Peabody KS",
-      "generated": "2026-07-20T20:58:10.875Z"
+      "generated": "2026-07-21T00:54:17.486Z"
     },
     "146608": {
       "slug": "658-acres-mcpherson-kansas-interstate-135-frontage-oil-incom-146608",
       "status": "complete",
       "name": "65.8 Acres McPherson, Kansas – Interstate 135 Frontage, Oil Income & Tillable Farm Ground",
-      "generated": "2026-07-20T20:58:10.874Z"
+      "generated": "2026-07-21T00:54:17.485Z"
     },
     "147055": {
       "slug": "3-bed-1-bath-home-1623-n-terrace-dr-el-dorado-ks-67042-147055",
       "status": "complete",
       "name": "3 Bed 1 Bath Home: 1623 N Terrace Dr, El Dorado, KS 67042",
-      "generated": "2026-07-20T20:58:10.873Z"
+      "generated": "2026-07-21T00:54:17.484Z"
     },
     "147126": {
       "slug": "3527-acres-chase-county-kansas-cottonwood-river-tillable-pas-147126",
       "status": "complete",
       "name": "352.7 Acres Chase County, Kansas: Cottonwood River, Tillable, Pasture, Trees & Big Deer",
-      "generated": "2026-07-20T20:58:10.872Z"
+      "generated": "2026-07-21T00:54:17.483Z"
     },
     "147128": {
       "slug": "375-acres-butler-county-kansas-land-for-sale-creek-trees-bla-147128",
       "status": "complete",
       "name": "37.5 Acres Butler County, Kansas Land For Sale: Creek, Trees & Blacktop Frontage",
-      "generated": "2026-07-20T20:58:10.871Z"
+      "generated": "2026-07-21T00:54:17.482Z"
     },
     "147839": {
       "slug": "473-acres-selling-in-4-tracts-montgomery-county-ks-land-for-147839",
       "status": "complete",
       "name": "473+- Acres Selling in 4 Tracts: Montgomery County KS Land for Sale",
-      "generated": "2026-07-20T20:58:10.870Z"
+      "generated": "2026-07-21T00:54:17.481Z"
     },
     "148245": {
       "slug": "2-bed-1-bath-home-1507-moyle-st-augusta-ks-67010-148245",
       "status": "complete",
       "name": "2 Bed 1 Bath Home: 1507 Moyle St, Augusta, KS 67010",
-      "generated": "2026-07-20T20:58:10.868Z"
+      "generated": "2026-07-21T00:54:17.479Z"
     },
     "148929": {
       "slug": "550-acres-flint-hills-pasture-tillable-marion-county-ks-near-148929",
       "status": "complete",
       "name": "550 Acres Flint Hills Pasture & Tillable – Marion County, KS Near Florence",
-      "generated": "2026-07-20T20:58:10.866Z"
+      "generated": "2026-07-21T00:54:17.477Z"
     },
     "149196": {
       "slug": "baja-boat-mower-e-bikes-trailers-tools-hunting-and-home-good-149196",
       "status": "complete",
       "name": "Baja Boat, Mower, E Bikes, Trailers, Tools, Hunting and Home Goods",
-      "generated": "2026-07-20T20:58:10.869Z"
+      "generated": "2026-07-21T00:54:17.480Z"
     },
     "149925": {
       "slug": "property-of-wayne-calvin-auction-2-149925",
       "status": "complete",
       "name": "Property of Wayne Calvin Auction #2",
-      "generated": "2026-07-20T20:58:10.867Z"
+      "generated": "2026-07-21T00:54:17.478Z"
     },
     "150063": {
       "slug": "1584-acres-native-pasture-ponds-blacktop-frontage-butler-cou-150063",
       "status": "complete",
       "name": "158.4 Acres Native Pasture, Ponds, Blacktop Frontage Butler County, Kansas",
-      "generated": "2026-07-20T20:58:10.863Z"
+      "generated": "2026-07-21T00:54:17.474Z"
     },
     "150124": {
       "slug": "403-acres-butler-county-kansas-creek-river-trees-tillable-hu-150124",
       "status": "complete",
       "name": "40.3 Acres Butler County, Kansas – Creek, River, Trees, Tillable & Hunting!",
-      "generated": "2026-07-20T20:58:10.857Z"
+      "generated": "2026-07-21T00:54:17.467Z"
     },
     "150126": {
       "slug": "310-acres-greenwood-county-kansas-pasture-slate-creek-ponds-150126",
       "status": "complete",
       "name": "310+- Acres Greenwood County, Kansas – Pasture, Slate Creek, Ponds, Trees & Hunting",
-      "generated": "2026-07-20T20:58:10.855Z"
+      "generated": "2026-07-21T00:54:17.465Z"
     },
     "150337": {
       "slug": "80-acres-marion-county-ks-trees-pasture-tillable-water-meter-150337",
       "status": "complete",
       "name": "80+- Acres Marion County, KS – Trees, Pasture, Tillable, Water Meter & Electric!",
-      "generated": "2026-07-20T20:58:10.856Z"
+      "generated": "2026-07-21T00:54:17.466Z"
     },
     "150339": {
       "slug": "polaris-rzr-tractor-coins-guns-ammo-taxidermy-150339",
       "status": "complete",
       "name": "Polaris RZR, Tractor, Coins, Guns, Ammo, Taxidermy",
-      "generated": "2026-07-20T20:58:10.865Z"
+      "generated": "2026-07-21T00:54:17.476Z"
     },
     "150458": {
       "slug": "1620-montana-el-dorado-ks-residential-real-estate-auction-150458",
       "status": "complete",
       "name": "1620 Montana, El Dorado, KS – Residential Real Estate Auction",
-      "generated": "2026-07-20T20:58:10.860Z"
+      "generated": "2026-07-21T00:54:17.470Z"
     },
     "150467": {
       "slug": "estate-of-willard-j-wiebe-farm-equipment-auction-150467",
       "status": "complete",
       "name": "Estate of Willard J Wiebe: Farm Equipment Auction",
-      "generated": "2026-07-20T20:58:10.858Z"
+      "generated": "2026-07-21T00:54:17.468Z"
     },
     "150533": {
       "slug": "1288-acres-cowley-county-ks-grouse-creek-cattle-pens-brome-g-150533",
       "status": "complete",
       "name": "128.8 Acres Cowley County, KS – Grouse Creek, Cattle Pens, Brome Grass, Trees & Hunting/Fishing!",
-      "generated": "2026-07-20T20:58:10.853Z"
+      "generated": "2026-07-21T00:54:17.464Z"
     },
     "151054": {
       "slug": "131-acres-near-toronto-woodson-county-kansas-hunting-pond-pa-151054",
       "status": "complete",
       "name": "131 Acres Near Toronto, Woodson County, Kansas – Hunting, Pond, Pasture, Trees & Tower Income",
-      "generated": "2026-07-20T20:58:10.851Z"
+      "generated": "2026-07-21T00:54:17.461Z"
     },
     "151056": {
       "slug": "home-on-365-acres-southeast-of-augusta-vehicles-and-trailers-151056",
       "status": "complete",
       "name": "Home on 36.5 Acres Southeast of Augusta, Vehicles, and Trailers ",
-      "generated": "2026-07-20T20:58:10.852Z"
+      "generated": "2026-07-21T00:54:17.463Z"
     },
     "151063": {
       "slug": "charleys-appliance-inventory-reduction-auction-151063",
       "status": "complete",
       "name": "Charley's Appliance Inventory Reduction Auction",
-      "generated": "2026-07-20T20:58:10.859Z"
+      "generated": "2026-07-21T00:54:17.469Z"
     },
     "151177": {
       "slug": "mower-trailers-tools-tack-saddles-151177",
       "status": "complete",
       "name": "Mower, Trailers, Tools, Tack & Saddles",
-      "generated": "2026-07-20T20:58:10.862Z"
+      "generated": "2026-07-21T00:54:17.473Z"
     },
     "151182": {
       "slug": "guns-gold-silver-and-ammo-151182",
       "status": "complete",
       "name": "Guns, Gold, Silver and Ammo",
-      "generated": "2026-07-20T20:58:10.864Z"
+      "generated": "2026-07-21T00:54:17.475Z"
     },
     "151235": {
       "slug": "96-acres-butler-county-kansas-tillable-farm-ground-east-of-a-151235",
       "status": "complete",
       "name": "96 Acres Butler County, Kansas Tillable Farm Ground East of Augusta",
-      "generated": "2026-07-20T20:58:10.850Z"
+      "generated": "2026-07-21T00:54:17.460Z"
     },
     "151549": {
       "slug": "1443-acres-mcpherson-kansas-land-tillable-farm-ground-i135-f-151549",
       "status": "complete",
       "name": "144.3 Acres McPherson, Kansas Land – Tillable Farm Ground & I-135 Frontage",
-      "generated": "2026-07-20T20:58:10.849Z"
+      "generated": "2026-07-21T00:54:17.459Z"
     },
     "152337": {
       "slug": "1965-mustang-kubota-tractor-hustler-superz-2-ford-350-traile-152337",
       "status": "complete",
       "name": "1965 Mustang, Kubota Tractor, Hustler SuperZ, (2) Ford 350, Trailers, Tools & More",
-      "generated": "2026-07-20T20:58:10.848Z"
+      "generated": "2026-07-21T00:54:17.458Z"
     },
     "152526": {
       "slug": "64-acres-tillable-creek-trees-west-of-newton-in-harvey-count-152526",
       "status": "complete",
       "name": "64+- Acres Tillable, Creek & Trees! West of Newton in Harvey County, Kansas",
-      "generated": "2026-07-20T20:58:10.844Z"
+      "generated": "2026-07-21T00:54:17.454Z"
     },
     "152540": {
       "slug": "1615-acres-native-flint-hills-pasture-near-eureka-lake-green-152540",
       "status": "complete",
       "name": "161.5 Acres Native Flint Hills Pasture Near Eureka Lake, Greenwood County, KS",
-      "generated": "2026-07-20T20:58:10.846Z"
+      "generated": "2026-07-21T00:54:17.456Z"
     },
     "153023": {
       "slug": "estate-of-lavern-stucky-farm-equipment-auction-153023",
       "status": "complete",
       "name": "Estate of Lavern Stucky: Farm Equipment Auction",
-      "generated": "2026-07-20T20:58:10.843Z"
+      "generated": "2026-07-21T00:54:17.453Z"
     },
     "153043": {
       "slug": "huge-silver-coin-auction-400-lots-153043",
       "status": "complete",
       "name": "Huge Silver Coin Auction - 400+ Lots!",
-      "generated": "2026-07-20T20:58:10.846Z"
+      "generated": "2026-07-21T00:54:17.457Z"
     },
     "153439": {
       "slug": "constitutional-silver-silver-bars-and-ammunition-153439",
       "status": "complete",
       "name": "Constitutional Silver, Silver Bars and Ammunition",
-      "generated": "2026-07-20T20:58:10.845Z"
+      "generated": "2026-07-21T00:54:17.455Z"
     },
     "153924": {
       "slug": "80-acres-chase-county-kansas-land-for-sale-153924",
       "status": "complete",
       "name": "80+- Acres Chase County Kansas Land For Sale",
-      "generated": "2026-07-20T20:58:10.840Z"
+      "generated": "2026-07-21T00:54:17.450Z"
     },
     "154099": {
       "slug": "unique-antiques-and-constitutional-silver-154099",
       "status": "complete",
       "name": "Unique Antiques and Constitutional Silver",
-      "generated": "2026-07-20T20:58:10.842Z"
+      "generated": "2026-07-21T00:54:17.452Z"
     },
     "154322": {
       "slug": "1582-acres-montgomery-county-ks-land-verdigris-river-bottom-154322",
       "status": "complete",
       "name": "158.2 Acres Montgomery County, KS Land – Verdigris River Bottom, Pasture, Trees, House & Barn",
-      "generated": "2026-07-20T20:58:10.837Z"
+      "generated": "2026-07-21T00:54:17.448Z"
     },
     "154664": {
       "slug": "gold-and-silver-coins-bars-currency-154664",
       "status": "complete",
       "name": "Gold and Silver Coins, Bars & Currency",
-      "generated": "2026-07-20T20:58:10.841Z"
+      "generated": "2026-07-21T00:54:17.451Z"
     },
     "154707": {
       "slug": "river-valley-trees-tree-auction-154707",
       "status": "complete",
       "name": "River Valley Trees - TREE AUCTION",
-      "generated": "2026-07-20T20:58:10.838Z"
+      "generated": "2026-07-21T00:54:17.449Z"
     },
     "155188": {
       "slug": "80-acres-marion-county-kansas-tillable-farmland-near-hillsbo-155188",
       "status": "complete",
       "name": "80 Acres Marion County, Kansas Tillable Farmland Near Hillsboro",
-      "generated": "2026-07-20T20:58:10.834Z"
+      "generated": "2026-07-21T00:54:17.446Z"
     },
     "156145": {
       "slug": "tractor-guns-camper-silver-native-american-artifacts-antique-156145",
       "status": "complete",
       "name": "Tractor, Guns, Camper, Silver, Native American Artifacts, Antiques & More",
-      "generated": "2026-07-20T20:58:10.835Z"
+      "generated": "2026-07-21T00:54:17.447Z"
     },
     "156357": {
       "slug": "subaru-camper-mowers-household-items-online-only-auction-156357",
       "status": "complete",
       "name": "Subaru, Camper, Mowers, Household Items Online Only Auction",
-      "generated": "2026-07-20T20:58:10.833Z"
+      "generated": "2026-07-21T00:54:17.445Z"
     },
     "156665": {
       "slug": "1760-s-123rd-st-east-wichita-ks-67207-3-bedroom-2-bath-home-156665",
       "status": "complete",
       "name": "1760 S. 123rd St. East, Wichita, KS 67207 – 3 Bedroom 2 Bath Home on Nearly 1 Acre",
-      "generated": "2026-07-20T20:58:10.831Z"
+      "generated": "2026-07-21T00:54:17.443Z"
     },
     "156728": {
       "slug": "1565-acres-tillable-trees-wildlife-northwest-of-clearwater-s-156728",
       "status": "complete",
       "name": "156.5 Acres Tillable, Trees & Wildlife Northwest of Clearwater, Sedgwick County, Kansas",
-      "generated": "2026-07-20T20:58:10.829Z"
+      "generated": "2026-07-21T00:54:17.440Z"
     },
     "156984": {
       "slug": "1146-acres-northwest-of-wichita-near-bentley-in-sedgwick-cou-156984",
       "status": "complete",
       "name": "114.6 Acres Northwest of Wichita Near Bentley in Sedgwick County, Kansas",
-      "generated": "2026-07-20T20:58:10.830Z"
+      "generated": "2026-07-21T00:54:17.441Z"
     },
     "157092": {
       "slug": "motorcycles-tools-shop-equipment-antiques-more-157092",
       "status": "complete",
       "name": "Motorcycles, Tools, Shop Equipment, Antiques & More",
-      "generated": "2026-07-20T20:58:10.828Z"
+      "generated": "2026-07-21T00:54:17.439Z"
     },
     "157483": {
       "slug": "silver-guns-taxidermy-autographed-baseballs-sporting-goods-a-157483",
       "status": "complete",
       "name": "Silver, Guns, Taxidermy, Autographed Baseballs, Sporting Goods and More",
-      "generated": "2026-07-20T20:58:10.833Z"
+      "generated": "2026-07-21T00:54:17.444Z"
     },
     "157488": {
       "slug": "160-acres-chase-county-kansas-land-flint-hills-pasture-creek-157488",
       "status": "complete",
       "name": "160+- Acres Chase County, Kansas Land – Flint Hills Pasture, Creek & Limestone Cabin",
-      "generated": "2026-07-20T20:58:10.827Z"
+      "generated": "2026-07-21T00:54:17.438Z"
     },
     "157735": {
       "slug": "746-acres-pasture-tillable-oil-income-homesite-112-sw-50th-s-157735",
       "status": "complete",
       "name": "74.6 Acres Pasture, Tillable, Oil Income & Homesite – 112 SW 50th St., El Dorado, KS 67042",
-      "generated": "2026-07-20T20:58:10.823Z"
+      "generated": "2026-07-21T00:54:17.433Z"
     },
     "157740": {
       "slug": "185-acres-selling-in-2-tracts-on-sw-haverhill-rd-between-aug-157740",
       "status": "complete",
       "name": "185+- Acres Selling in 2 Tracts on SW Haverhill Rd Between Augusta and Douglass, Butler County Kansas",
-      "generated": "2026-07-20T20:58:10.825Z"
+      "generated": "2026-07-21T00:54:17.436Z"
     },
     "158146": {
       "slug": "1575-acres-near-andover-w-four-mile-creek-homestead-butler-c-158146",
       "status": "complete",
       "name": "157.5 Acres Near Andover w/ Four Mile Creek & Homestead, Butler County, Kansas",
-      "generated": "2026-07-20T20:58:10.822Z"
+      "generated": "2026-07-21T00:54:17.432Z"
     },
     "158488": {
       "slug": "2006-winnebago-vectra-motor-home-158488",
       "status": "complete",
       "name": "2006 Winnebago Vectra Motor Home",
-      "generated": "2026-07-20T20:58:10.826Z"
+      "generated": "2026-07-21T00:54:17.437Z"
     },
     "158557": {
       "slug": "76-acres-rose-hill-ks-watershed-lake-trees-pasture-tillable-158557",
       "status": "complete",
       "name": "76+- Acres Rose Hill, KS – Watershed Lake, Trees, Pasture & Tillable Farm Ground",
-      "generated": "2026-07-20T20:58:10.817Z"
+      "generated": "2026-07-21T00:54:17.428Z"
     },
     "158779": {
       "slug": "545-acres-bordering-el-dorado-lake-butler-county-ks-native-p-158779",
       "status": "complete",
       "name": "54.5 Acres Bordering El Dorado Lake, Butler County, KS – Native Pasture & Water Well",
-      "generated": "2026-07-20T20:58:10.818Z"
+      "generated": "2026-07-21T00:54:17.429Z"
     },
     "158875": {
       "slug": "golf-cart-trailer-jewelry-household-items-and-more-158875",
       "status": "complete",
       "name": "Golf Cart, Trailer, Jewelry, Household Items and More",
-      "generated": "2026-07-20T20:58:10.824Z"
+      "generated": "2026-07-21T00:54:17.434Z"
     },
     "159073": {
       "slug": "80-acres-between-towanda-el-dorado-ks-pasture-trees-oil-inco-159073",
       "status": "complete",
       "name": "80+- Acres Between Towanda & El Dorado, KS – Pasture, Trees & Oil Income",
-      "generated": "2026-07-20T20:58:10.812Z"
+      "generated": "2026-07-21T00:54:17.424Z"
     },
     "159138": {
       "slug": "108-acres-at-hwy-254-127th-st-east-sedgwick-county-kansas-159138",
       "status": "complete",
       "name": "108+- Acres at HWY 254 & 127th St East, Sedgwick County, Kansas",
-      "generated": "2026-07-20T20:58:10.814Z"
+      "generated": "2026-07-21T00:54:17.426Z"
     },
     "159207": {
       "slug": "29-acres-tillable-farm-ground-southeast-of-goessel-in-marion-159207",
       "status": "complete",
       "name": "29+- Acres Tillable Farm Ground Southeast of Goessel in Marion County, KS",
-      "generated": "2026-07-20T20:58:10.810Z"
+      "generated": "2026-07-21T00:54:17.421Z"
     },
     "159359": {
       "slug": "370-lots-of-gold-and-silver-coins-pins-159359",
       "status": "complete",
       "name": "370 Lots of Gold and Silver Coins & Pins",
-      "generated": "2026-07-20T20:58:10.820Z"
+      "generated": "2026-07-21T00:54:17.431Z"
     },
     "159694": {
       "slug": "river-valley-trees-tree-auction-159694",
       "status": "complete",
       "name": "River Valley Trees - TREE AUCTION",
-      "generated": "2026-07-20T20:58:10.819Z"
+      "generated": "2026-07-21T00:54:17.430Z"
     },
     "159866": {
       "slug": "4725-acres-in-cowley-county-ks-watershed-lake-pasture-trees-159866",
       "status": "complete",
       "name": "472.5 Acres in Cowley County, Ks – Watershed Lake, Pasture, Trees & Hills",
-      "generated": "2026-07-20T20:58:10.809Z"
+      "generated": "2026-07-21T00:54:17.420Z"
     },
     "159922": {
       "slug": "156-acres-greenwood-county-kansas-pasture-pond-trees-creek-h-159922",
       "status": "complete",
       "name": "156+- Acres Greenwood County, Kansas – Pasture, Pond, Trees, Creek & Hills",
-      "generated": "2026-07-20T20:58:10.808Z"
+      "generated": "2026-07-21T00:54:17.419Z"
     },
     "160247": {
       "slug": "vehicles-trailer-welder-golf-cart-silver-guns-more-160247",
       "status": "complete",
       "name": "Vehicles, Trailer, Welder, Golf Cart, Silver, Guns & More",
-      "generated": "2026-07-20T20:58:10.815Z"
+      "generated": "2026-07-21T00:54:17.427Z"
     },
     "160325": {
       "slug": "tractor-mower-boat-shop-tools-more-near-fall-river-ks-160325",
       "status": "complete",
       "name": "Tractor, Mower, Boat, Shop Tools & More - Near Fall River KS",
-      "generated": "2026-07-20T20:58:10.811Z"
+      "generated": "2026-07-21T00:54:17.422Z"
     },
     "160480": {
       "slug": "estate-of-craig-kobel-guns-antiques-collectibles-auction-1-160480",
       "status": "complete",
       "name": "Estate of Craig Kobel: Guns, Antiques & Collectibles Auction #1",
-      "generated": "2026-07-20T20:58:10.813Z"
+      "generated": "2026-07-21T00:54:17.425Z"
     },
     "160519": {
       "slug": "3-80-acre-tracts-south-of-augusta-water-meter-farm-ground-pa-160519",
       "status": "complete",
       "name": "(3) 80+- Acre Tracts South of Augusta – Water Meter, Farm Ground, Pasture, Pond, Creek & Trees",
-      "generated": "2026-07-20T20:58:10.807Z"
+      "generated": "2026-07-21T00:54:17.417Z"
     },
     "160969": {
       "slug": "158-acres-pasture-pond-trees-water-well-reno-county-kansas-160969",
       "status": "complete",
       "name": "158+- Acres Pasture, Pond, Trees & Water Well – Reno County, Kansas",
-      "generated": "2026-07-20T20:58:10.803Z"
+      "generated": "2026-07-21T00:54:17.414Z"
     },
     "161108": {
       "slug": "furniture-kitchen-living-and-household-items-el-dorado-ks-161108",
       "status": "complete",
       "name": "Furniture, Kitchen, Living and Household Items - El Dorado KS",
-      "generated": "2026-07-20T20:58:10.806Z"
+      "generated": "2026-07-21T00:54:17.416Z"
     },
     "161484": {
       "slug": "756-taxable-acres-w-elk-river-tillable-farm-ground-heavy-tim-161484",
       "status": "complete",
       "name": "75.6 Taxable Acres w/ Elk River, Tillable Farm Ground & Heavy Timber – Elk County, Kansas",
-      "generated": "2026-07-20T20:58:10.801Z"
+      "generated": "2026-07-21T00:54:17.412Z"
     },
     "161502": {
       "slug": "guns-ammo-parts-silver-bars-online-only-auction-161502",
       "status": "complete",
       "name": "Guns, Ammo, Parts & Silver Bars - Online Only Auction",
-      "generated": "2026-07-20T20:58:10.807Z"
+      "generated": "2026-07-21T00:54:17.418Z"
     },
     "162069": {
       "slug": "233-n-main-latham-ks-67072-3-bed-1-bath-home-and-outbuilding-162069",
       "status": "complete",
       "name": "233 N Main, Latham KS 67072: 3 Bed 1 Bath Home and Outbuildings on .65 Acre Lot",
-      "generated": "2026-07-20T20:58:10.800Z"
+      "generated": "2026-07-21T00:54:17.411Z"
     },
     "162080": {
       "slug": "tractor-trailer-and-implements-augusta-ks-162080",
       "status": "complete",
       "name": "Tractor, Trailer and Implements - Augusta KS",
-      "generated": "2026-07-20T20:58:10.804Z"
+      "generated": "2026-07-21T00:54:17.415Z"
     },
     "162086": {
       "slug": "estate-of-craig-kobel-2-traps-antiques-collectibles-162086",
       "status": "complete",
       "name": "Estate of Craig Kobel #2: Traps, Antiques & Collectibles",
-      "generated": "2026-07-20T20:58:10.802Z"
+      "generated": "2026-07-21T00:54:17.413Z"
     },
     "162312": {
       "slug": "chase-county-kansas-flint-hills-ranch-828-acres-pasture-pond-162312",
       "status": "complete",
       "name": "Chase County, Kansas Flint Hills Ranch – 828 Acres Pasture, Ponds, Springs & Creeks",
-      "generated": "2026-07-20T20:58:10.797Z"
+      "generated": "2026-07-21T00:54:17.408Z"
     },
     "162837": {
       "slug": "74-acres-tillable-farm-ground-near-atlanta-in-cowley-county-162837",
       "status": "complete",
       "name": "74 Acres Tillable Farm Ground Near Atlanta in Cowley County, Kansas",
-      "generated": "2026-07-20T20:58:10.795Z"
+      "generated": "2026-07-21T00:54:17.405Z"
     },
     "163116": {
       "slug": "18156-sw-tawakoni-rd-rose-hill-ks-67133-94-acres-3-bed-2-bat-163116",
       "status": "complete",
       "name": "18156 SW Tawakoni Rd, Rose Hill KS 67133 – 9.4 Acres, 3 Bed 2 Bath, Garage, Shop & Pond",
-      "generated": "2026-07-20T20:58:10.794Z"
+      "generated": "2026-07-21T00:54:17.404Z"
     },
     "163373": {
       "slug": "estate-of-craig-kobel-3-traps-ammo-antiques-collectibles-163373",
       "status": "complete",
       "name": "Estate of Craig Kobel #3: Traps, Ammo, Antiques & Collectibles",
-      "generated": "2026-07-20T20:58:10.799Z"
+      "generated": "2026-07-21T00:54:17.410Z"
     },
     "163534": {
       "slug": "estate-of-craig-kobel-live-only-auction-163534",
       "status": "complete",
       "name": "Estate of Craig Kobel: Live ONLY Auction",
-      "generated": "2026-07-20T20:58:10.798Z"
+      "generated": "2026-07-21T00:54:17.409Z"
     },
     "163788": {
       "slug": "tractor-firearms-grills-shop-equipment-tools-and-more-163788",
       "status": "complete",
       "name": "Tractor, Firearms, Grills, Shop Equipment, Tools and more",
-      "generated": "2026-07-20T20:58:10.796Z"
+      "generated": "2026-07-21T00:54:17.406Z"
     },
     "163849": {
       "slug": "18-acres-of-investment-land-in-southwest-wichita-kansas-163849",
       "status": "complete",
       "name": "18+- Acres of Investment Land in Southwest Wichita, Kansas",
-      "generated": "2026-07-20T20:58:10.791Z"
+      "generated": "2026-07-21T00:54:17.401Z"
     },
     "163852": {
       "slug": "134-acres-in-2-tracts-tillable-farm-ground-north-of-walton-h-163852",
       "status": "complete",
       "name": "134 Acres in 2 Tracts – Tillable Farm Ground North of Walton, Harvey County, KS",
-      "generated": "2026-07-20T20:58:10.790Z"
+      "generated": "2026-07-21T00:54:17.399Z"
     },
     "163866": {
       "slug": "40-acres-pond-trees-pasture-and-farm-ground-north-of-el-dora-163866",
       "status": "complete",
       "name": "40 Acres: Pond, Trees, Pasture and Farm Ground North of El Dorado, Kansas",
-      "generated": "2026-07-20T20:58:10.787Z"
+      "generated": "2026-07-21T00:54:17.398Z"
     },
     "163941": {
       "slug": "15-acres-tillable-farm-ground-south-of-newton-in-harvey-coun-163941",
       "status": "complete",
       "name": "15 Acres Tillable Farm Ground South of Newton in Harvey County, KS",
-      "generated": "2026-07-20T20:58:10.786Z"
+      "generated": "2026-07-21T00:54:17.397Z"
     },
     "164254": {
       "slug": "estate-of-craig-kobel-4-traps-antiques-collectibles-164254",
       "status": "complete",
       "name": "Estate of Craig Kobel #4: Traps, Antiques & Collectibles",
-      "generated": "2026-07-20T20:58:10.793Z"
+      "generated": "2026-07-21T00:54:17.403Z"
     },
     "164323": {
       "slug": "1139-acres-south-of-newton-in-harvey-county-kansas-2-tracts-164323",
       "status": "accepting_bids",
       "name": "113.9 Acres South of Newton in Harvey County, Kansas – 2 Tracts Tillable, Trees & Pond",
-      "generated": "2026-07-20T20:58:10.757Z"
+      "generated": "2026-07-21T00:54:17.368Z"
     },
     "164694": {
       "slug": "334-acres-near-benton-butlersedgwick-county-line-whitewater-164694",
       "status": "pending",
       "name": "33.4 Acres Near Benton, Butler/Sedgwick County Line: Whitewater Creek, Trees & Farm Ground",
-      "generated": "2026-07-20T20:58:10.779Z"
+      "generated": "2026-07-21T00:54:17.390Z"
     },
     "164750": {
       "slug": "fishing-boat-tackle-tools-household-auction-el-dorado-164750",
       "status": "complete",
       "name": "Fishing Boat, Tackle, Tools, Household Auction - El Dorado",
-      "generated": "2026-07-20T20:58:10.792Z"
+      "generated": "2026-07-21T00:54:17.402Z"
     },
     "165183": {
       "slug": "158-acres-pasture-ponds-trees-kansas-whitetail-deer-elk-coun-165183",
       "status": "pending",
       "name": "158 Acres Pasture, Ponds, Trees & Kansas Whitetail Deer – Elk County, Kansas",
-      "generated": "2026-07-20T20:58:10.781Z"
+      "generated": "2026-07-21T00:54:17.392Z"
     },
     "165218": {
       "slug": "dodge-truck-guns-trailers-tools-more-live-auction-near-augus-165218",
       "status": "complete",
       "name": "Dodge Truck, Guns, Trailers, Tools & More – Live Auction near Augusta KS",
-      "generated": "2026-07-20T20:58:10.785Z"
+      "generated": "2026-07-21T00:54:17.396Z"
     },
     "165648": {
       "slug": "108-acres-tillable-farm-ground-mcpherson-county-kansas-165648",
       "status": "pending",
       "name": "108+- Acres Tillable Farm Ground – McPherson County, Kansas",
-      "generated": "2026-07-20T20:58:10.782Z"
+      "generated": "2026-07-21T00:54:17.393Z"
     },
     "165726": {
       "slug": "estate-of-craig-kobel-live-auction-2-vintage-duck-decoys-amm-165726",
       "status": "pending",
       "name": "Estate of Craig Kobel Live Auction #2: Vintage Duck Decoys, Ammo Boxes, Traps, Fishing, Antiques & Collectibles",
-      "generated": "2026-07-20T20:58:10.780Z"
+      "generated": "2026-07-21T00:54:17.391Z"
     },
     "165887": {
       "slug": "438-e-main-st-mount-hope-ks-67108-4-bed-25-bath-classic-home-165887",
       "status": "pending",
       "name": "438 E Main St, Mount Hope, KS 67108: 4 Bed 2.5 Bath Classic Home and Shop",
-      "generated": "2026-07-20T20:58:10.784Z"
+      "generated": "2026-07-21T00:54:17.394Z"
     },
     "165931": {
       "slug": "2011-ford-edge-suv-guns-ammo-auction-el-dorado-165931",
       "status": "accepting_bids",
       "name": "2011 Ford Edge SUV, Guns, Ammo Auction - El Dorado",
-      "generated": "2026-07-20T20:58:10.777Z"
+      "generated": "2026-07-21T00:54:17.387Z"
     }
   }
 }

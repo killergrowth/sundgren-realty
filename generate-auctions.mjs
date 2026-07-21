@@ -206,7 +206,7 @@ function renderInfoCard(auction) {
   const phone   = auction.coord_phone || '316-321-7112';
 
   const cta = active
-    ? `        <a href="#sg-embed" class="btn-bid" onclick="document.getElementById('sg-embed').scrollIntoView({behavior:'smooth'});return false;">Register to Bid &rarr;</a>
+    ? `        <a href="${bwUrl}" class="btn-bid" target="_blank" rel="noopener">Register to Bid &rarr;</a>
         <a href="/auctions/" class="btn-all">&larr; All Auctions</a>`
     : `        <p style="font-size:13px;color:var(--text-light);margin-top:16px;text-align:center;">This auction has closed.</p>
         <a href="/auctions/" class="btn-bid">View Active Auctions &rarr;</a>`;
@@ -262,24 +262,7 @@ function renderAuctionPage(auction) {
   const infoCard  = renderInfoCard(auction);
   const bwUrl     = `${BW_BASE_URL}/ui/auctions/${auction.id}`;
 
-  const bwEmbed = active ? `
-    <div class="embed-wrap" id="sg-embed">
-        <div class="container">
-            <div class="section-title mb-40">
-                <span class="eyebrow">Online Bidding</span>
-                <h2>Place Your Bid</h2>
-                <hr class="divider">
-                <p>Register below to participate in this auction online. Create a free account to get started.</p>
-            </div>
-            <iframe
-                src="${esc(bwUrl)}"
-                title="${esc(auction.name)} &#8212; Online Bidding"
-                allowfullscreen
-                loading="lazy"
-                sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-top-navigation">
-            </iframe>
-        </div>
-    </div>` : '';
+  const bwEmbed = '';
 
   const schema = JSON.stringify({
     '@context': 'https://schema.org',
@@ -301,18 +284,23 @@ function renderAuctionPage(auction) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>${esc(metaTitle)}</title>
   <meta name="description" content="${esc(metaDesc)}">
-  <meta name="robots" content="noindex, nofollow">
+  <meta name="robots" content="index, follow">
   <link rel="canonical" href="${esc(canonical)}">
   <meta property="og:title" content="${esc(metaTitle)}">
   <meta property="og:description" content="${esc(metaDesc)}">
   <meta property="og:type" content="website">
   <meta property="og:url" content="${esc(canonical)}">
   ${ogImg ? `<meta property="og:image" content="${esc(ogImg)}">
+  <meta property="og:image:secure_url" content="${esc(ogImg)}">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="${esc(ogImg)}">` : `<meta name="twitter:card" content="summary">`}
+  <meta name="twitter:image" content="${esc(ogImg)}">` : `<meta property="og:image" content="https://sundgren-realty.pages.dev/images/og-preview.png">
+  <meta property="og:image:secure_url" content="https://sundgren-realty.pages.dev/images/og-preview.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://sundgren-realty.pages.dev/images/og-preview.png">`}
   <script type="application/ld+json">${schema}</script>
   <!-- SCHEMA:BreadcrumbList -->
-  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.svg">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/sundgren.css">
 </head>
@@ -444,15 +432,19 @@ ${pastCards}
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Auctions | Sundgren Realty &amp; Auction | El Dorado, KS</title>
   <meta name="description" content="Browse active and upcoming real estate auctions from Sundgren Realty &amp; Auction in South Central Kansas. Farm, land, residential, and personal property auctions.">
-  <meta name="robots" content="noindex, nofollow">
+  <meta name="robots" content="index, follow">
   <link rel="canonical" href="${SITE_DOMAIN}/auctions/">
   <meta property="og:title" content="Auctions | Sundgren Realty &amp; Auction | El Dorado, KS">
   <meta property="og:description" content="Active and upcoming real estate auctions in South Central Kansas from Sundgren Realty.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="${SITE_DOMAIN}/auctions/">
-  <meta name="twitter:card" content="summary">
+  <meta property="og:image" content="https://sundgren-realty.pages.dev/images/og-preview.png">
+  <meta property="og:image:secure_url" content="https://sundgren-realty.pages.dev/images/og-preview.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://sundgren-realty.pages.dev/images/og-preview.png">
   <!-- SCHEMA:BreadcrumbList -->
-  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.svg">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/sundgren.css">
 </head>
