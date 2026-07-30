@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -18,33 +18,15 @@
   <meta property="og:image:width" content="1536">
   <meta property="og:image:height" content="1024">
   <meta name="twitter:image" content="https://sundgren-realty.pages.dev/images/og-preview.png">
-  <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/images/favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.svg">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/sundgren.css">
   <style>
-    .idx-frame-wrap {
-      background: #fff;
-      padding: 0 0 60px;
-    }
-    .idx-frame-wrap .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
-    .idx-frame-inner {
-      background: var(--bg-light, #f8f7f4);
-      border-radius: 8px;
-      overflow: hidden;
-      box-shadow: 0 4px 20px rgba(0,0,0,.08);
-    }
-    .idx-frame-inner iframe {
-      border: none;
-      display: block;
-      width: 100%;
-      min-height: 900px;
-    }
+    .idx-widget-wrap { background: #fff; padding: 40px 0 60px; }
+    .idx-widget-wrap .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
   </style>
+
 </head>
 <body>
 
@@ -70,23 +52,15 @@
         <span class="eyebrow">Commercial Real Estate</span>
         <h2>Commercial Properties in South Central Kansas</h2>
         <hr class="divider">
-        <p>Sundgren Realty assists buyers, sellers, and investors with commercial real estate across Butler County and surrounding areas — from retail storefronts and office space to industrial and investment properties.</p>
+        <p>Sundgren Realty assists buyers, sellers, and investors with commercial real estate across Butler County and surrounding areas &mdash; from retail storefronts and office space to industrial and investment properties.</p>
       </div>
     </div>
   </section>
 
-  <div class="idx-frame-wrap">
+  <!-- IDX Listings Showcase - Commercial -->
+  <div class="idx-widget-wrap">
     <div class="container">
-      <div class="idx-frame-inner">
-        <iframe
-          src="https://realestate.sundgren.com/i/commercial-property"
-          title="Sundgren Realty Commercial Listings"
-          width="100%"
-          height="900"
-          style="border:none;display:block;"
-          loading="lazy">
-        </iframe>
-      </div>
+      <script charset="UTF-8" type="text/javascript" id="idxwidgetsrc-166191" src="//realestate.sundgren.com/idx/widgets/166191"></script>
     </div>
   </div>
 

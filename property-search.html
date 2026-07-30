@@ -18,32 +18,16 @@
   <meta property="og:image:width" content="1536">
   <meta property="og:image:height" content="1024">
   <meta name="twitter:image" content="https://sundgren-realty.pages.dev/images/og-preview.png">
-  <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/images/favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.svg">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/sundgren.css">
   <style>
-    .idx-frame-wrap {
-      background: #fff;
-      padding: 0 0 60px;
-    }
-    .idx-frame-wrap .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
-    .idx-frame-inner {
-      background: var(--bg-light, #f8f7f4);
-      border-radius: 8px;
-      overflow: hidden;
-      box-shadow: 0 4px 20px rgba(0,0,0,.08);
-    }
-    .idx-frame-inner iframe {
-      border: none;
-      display: block;
-      width: 100%;
-      min-height: 900px;
-    }
+    .idx-widget-wrap { background: #fff; padding: 40px 0 60px; }
+    .idx-widget-wrap .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+    .idx-map-wrap { background: var(--bg-light); padding: 0 0 60px; }
+    .idx-map-wrap .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+    .idx-map-wrap .section-title { padding-top: 40px; }
   </style>
 </head>
 <body>
@@ -75,18 +59,22 @@
     </div>
   </section>
 
-  <div class="idx-frame-wrap">
+  <!-- IDX Listings Showcase - Residential -->
+  <div class="idx-widget-wrap">
     <div class="container">
-      <div class="idx-frame-inner">
-        <iframe
-          src="https://realestate.sundgren.com/idx/featured"
-          title="Sundgren Realty Property Search"
-          width="100%"
-          height="900"
-          style="border:none;display:block;"
-          loading="lazy">
-        </iframe>
+      <script charset="UTF-8" type="text/javascript" id="idxwidgetsrc-166188" src="//realestate.sundgren.com/idx/widgets/166188"></script>
+    </div>
+  </div>
+
+  <!-- IDX Map Search -->
+  <div class="idx-map-wrap">
+    <div class="container">
+      <div class="section-title">
+        <span class="eyebrow">Search by Location</span>
+        <h2>Map Search</h2>
+        <hr class="divider">
       </div>
+      <script charset="UTF-8" type="text/javascript" id="idxwidgetsrc-166193" src="//realestate.sundgren.com/idx/widgets/166193"></script>
     </div>
   </div>
 
