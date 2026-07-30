@@ -79,13 +79,7 @@
         if (++attempts > 40) clearInterval(poller);
       }, 250);
     }
-    // Load after page has fully painted — keeps hero/nav snappy
-    if (document.readyState === 'complete' || document.readyState === 'interactive') {
-      setTimeout(loadIdxWidget, 100);
-    } else {
-      window.addEventListener('load', function() { setTimeout(loadIdxWidget, 100); });
-      document.addEventListener('DOMContentLoaded', loadIdxWidget);
-    }
+    setTimeout(loadIdxWidget, 150);
   })();
   </script>
 
