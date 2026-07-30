@@ -55,6 +55,31 @@
         <hr class="divider">
       </div>
       <script charset="UTF-8" type="text/javascript" id="idxwidgetsrc-166194" src="//realestate.sundgren.com/idx/widgets/166194"></script>
+      <script>
+        // Remove IDX gray header bar after widget renders
+        (function() {
+          function removeIdxBar() {
+            var widgets = document.querySelectorAll('#idxwidgetsrc-166194 ~ * [class], #idxwidgetsrc-166194 + *');
+            // Find any element containing 'Featured Listings' text with a sibling View All link
+            var all = document.querySelectorAll('*');
+            for (var i = 0; i < all.length; i++) {
+              var el = all[i];
+              if (el.childElementCount === 0 && el.textContent.trim() === 'Featured Listings') {
+                var bar = el.parentElement;
+                if (bar) { bar.style.display = 'none'; return true; }
+              }
+            }
+            return false;
+          }
+          // Try immediately then poll until found
+          if (!removeIdxBar()) {
+            var attempts = 0;
+            var interval = setInterval(function() {
+              if (removeIdxBar() || attempts++ > 20) clearInterval(interval);
+            }, 500);
+          }
+        })();
+      </script>
       <div class="idx-viewall-wrap">
         <a href="/property-search/" class="btn-primary">View All Listings <i class="fas fa-arrow-right" style="margin-left:6px;"></i></a>
       </div>
