@@ -20,18 +20,27 @@
           </a>
         </div>
       </div>
-      <div style="flex-shrink:0;">
-        <a href="/" aria-label="Sundgren Realty">
-          <div class="logo-box" style="padding:20px 24px;">
-            <span class="logo-sun" style="font-size:36px;">&#9788;</span>
-            <span class="logo-name">Sundgren</span>
-            <span class="logo-sub">Realty</span>
-          </div>
-        </a>
+      <div class="app-phone-wrap" aria-hidden="true">
+        <img src="/images/sundgren-auction-app.png" alt="Sundgren Realty mobile app" class="app-phone-img">
       </div>
     </div>
   </div>
 </div>
+
+<script>
+(function(){
+  var img = document.querySelector('.app-phone-img');
+  if (!img) return;
+  if ('IntersectionObserver' in window) {
+    var obs = new IntersectionObserver(function(entries) {
+      if (entries[0].isIntersecting) { img.classList.add('in-view'); obs.disconnect(); }
+    }, { threshold: 0.2 });
+    obs.observe(img);
+  } else {
+    img.classList.add('in-view');
+  }
+})();
+</script>
 
 <!-- Footer -->
 <footer class="site-footer" itemscope itemtype="https://schema.org/LocalBusiness">
