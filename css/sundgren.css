@@ -552,7 +552,7 @@ a:hover { color: var(--yellow-dark); }
 .breadcrumb li a { color: rgba(255,255,255,.7); }
 .breadcrumb li a:hover { color: var(--yellow); }
 .breadcrumb li.active { color: var(--yellow); }
-.breadcrumb li + li::before { content: '&#8250;'; margin-right: 8px; }
+.breadcrumb li + li::before { content: '\203A'; margin-right: 8px; }
 
 /* â”€â”€ Agents â”€â”€ */
 .agents-grid {
