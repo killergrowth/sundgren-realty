@@ -1124,22 +1124,17 @@ hr.divider-left { margin: 0 0 24px; }
   .idx-smart-search-wrap { max-width: 100%; }
 }
 
-/* --- Carousel/Showcase: hide IDX gray header bar ("Featured Listings" + their View All link) --- */
-/* IDX Vue widget renders a header row as first child of the widget root */
-.IDX-carousel-header,
-.IDX-showcaseHeader,
-.IDX-widget-header,
+/* --- IDX gray header bar: hide via CSS broad net + JS MutationObserver fallback --- */
+/* Broad CSS sweep for any IDX-injected header row */
 [class*="carousel-header"],
 [class*="showcaseHeader"],
 [class*="widgetHeader"],
 [class*="widget-header"],
 [class*="listingHeader"],
-[class*="listing-header"] {
-  display: none !important;
-}
-/* Structural fallback: first child of IDX widget wrapper that contains a "View All" link */
-.idx-widget-wrap > .container > div > div:first-child:has(a[href*="View"], a[href*="listings"]:not([href^="/"])),
-.idx-widget-wrap > .container > div:first-child:has(> a[href*="idx"]) {
+[class*="listing-header"],
+[class*="IDX-carousel"] > *:first-child,
+[class*="IDX-showcase"] > *:first-child,
+[id*="idxwidget"] ~ div > div:first-child > a {
   display: none !important;
 }
 

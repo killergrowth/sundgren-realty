@@ -20,10 +20,60 @@
   <meta name="twitter:image" content="https://sundgren-realty.pages.dev/images/og-preview.png">
   <!-- SCHEMA:BreadcrumbList -->
   <!-- SCHEMA:WebPage -->
-  <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/images/favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.svg">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/sundgren.css">
+<style>
+    /* Listing cards */
+    .listing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 24px;
+      margin-top: 32px;
+    }
+    .listing-card {
+      background: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 12px rgba(0,0,0,.08);
+      display: flex;
+      flex-direction: column;
+      transition: box-shadow .2s, transform .2s;
+    }
+    .listing-card:hover { box-shadow: 0 6px 24px rgba(0,0,0,.14); transform: translateY(-2px); }
+    .listing-card-img-wrap {
+      position: relative;
+      display: block;
+      overflow: hidden;
+      aspect-ratio: 4/3;
+      background: var(--bg-light);
+    }
+    .listing-card-img-wrap img {
+      width: 100%; height: 100%; object-fit: cover; display: block;
+      transition: transform .3s;
+    }
+    .listing-card:hover .listing-card-img-wrap img { transform: scale(1.04); }
+    .listing-badge {
+      position: absolute; top: 12px; left: 12px;
+      padding: 4px 10px; border-radius: 4px;
+      font-size: 11px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase;
+    }
+    .badge-auction { background: var(--yellow); color: var(--dark); }
+    .badge-active  { background: #22a06b; color: #fff; }
+    .badge-pending { background: #0052cc; color: #fff; }
+    .badge-sold    { background: #666; color: #fff; }
+    .listing-card-body { padding: 16px 20px 20px; display: flex; flex-direction: column; flex: 1; }
+    .listing-meta { font-size: 12px; color: var(--text-light); margin-bottom: 8px; display: block; }
+    .listing-meta i { margin-right: 5px; color: var(--yellow); }
+    .listing-card-body h3 { font-size: 16px; margin: 0 0 8px; line-height: 1.4; }
+    .listing-card-body h3 a { color: var(--dark); }
+    .listing-card-body h3 a:hover { color: var(--yellow-dark); }
+    .listing-card-body p { font-size: 13px; color: var(--text-light); line-height: 1.6; margin: 0 0 16px; flex: 1; }
+    .listing-card-link { font-size: 13px; font-weight: 700; color: var(--yellow-dark); }
+    .listing-card-link i { margin-left: 4px; font-size: 11px; }
+    .listing-view-more { text-align: center; margin-top: 32px; }
+</style>
 </head>
 <body>
 
@@ -45,44 +95,173 @@
 
   <section class="section">
     <div class="container">
-      <div class="section-title">
-        <span class="eyebrow">Farm, Ranch &amp; Acreage</span>
-        <h2>Land for Sale in South Central Kansas</h2>
-        <hr class="divider">
-        <p>Sundgren Realty specializes in the sale of farm ground, pasture, recreational land, and acreage tracts across Butler, Greenwood, Harvey, Cowley, and surrounding Kansas counties.</p>
+      <div class="listing-grid">
+
+        <div class="listing-card">
+          <a href="https://sundgren.com/33-4-acres-near-benton-butler-sedgwick-county-line-whitewater-creek-trees-farm-ground/" target="_blank" rel="noopener" class="listing-card-img-wrap">
+            <img src="https://i0.wp.com/sundgren.com/wp-content/uploads/2026/07/BeFunky-collage-57-scaled.jpeg?w=600&ssl=1" alt="33.4 Acres Near Benton" loading="lazy">
+            <span class="listing-badge badge-auction">Auction</span>
+          </a>
+          <div class="listing-card-body">
+            <span class="listing-meta"><i class="fas fa-gavel"></i> Bidding Ends July 30, 2026</span>
+            <h3><a href="https://sundgren.com/33-4-acres-near-benton-butler-sedgwick-county-line-whitewater-creek-trees-farm-ground/" target="_blank" rel="noopener">33.4 Acres Near Benton, Butler/Sedgwick County Line</a></h3>
+            <p>Whitewater Creek, trees &amp; productive farm ground near Benton, KS.</p>
+            <a href="https://sundgren.com/33-4-acres-near-benton-butler-sedgwick-county-line-whitewater-creek-trees-farm-ground/" target="_blank" rel="noopener" class="listing-card-link">More Details <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="listing-card">
+          <a href="https://sundgren.com/158-acres-pasture-ponds-trees-kansas-whitetail-deer-elk-county-kansas/" target="_blank" rel="noopener" class="listing-card-img-wrap">
+            <img src="https://i0.wp.com/sundgren.com/wp-content/uploads/2026/08/Crum-Feature.jpeg?w=600&ssl=1" alt="158 Acres Elk County" loading="lazy">
+            <span class="listing-badge badge-auction">Auction</span>
+          </a>
+          <div class="listing-card-body">
+            <span class="listing-meta"><i class="fas fa-gavel"></i> Bidding Ends Aug 5, 2026</span>
+            <h3><a href="https://sundgren.com/158-acres-pasture-ponds-trees-kansas-whitetail-deer-elk-county-kansas/" target="_blank" rel="noopener">158 Acres Pasture, Ponds, Trees &amp; Whitetail Deer &mdash; Elk County</a></h3>
+            <p>Diverse Elk County land with native hay meadow, southeast of Piedmont.</p>
+            <a href="https://sundgren.com/158-acres-pasture-ponds-trees-kansas-whitetail-deer-elk-county-kansas/" target="_blank" rel="noopener" class="listing-card-link">More Details <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="listing-card">
+          <a href="https://sundgren.com/108-acres-tillable-farm-ground-mcpherson-county-kansas/" target="_blank" rel="noopener" class="listing-card-img-wrap">
+            <img src="https://i0.wp.com/sundgren.com/wp-content/uploads/2026/08/CAREY-MAP-1.jpg?w=600&ssl=1" alt="108 Acres McPherson County" loading="lazy">
+            <span class="listing-badge badge-auction">Auction</span>
+          </a>
+          <div class="listing-card-body">
+            <span class="listing-meta"><i class="fas fa-gavel"></i> Aug 13, 2026</span>
+            <h3><a href="https://sundgren.com/108-acres-tillable-farm-ground-mcpherson-county-kansas/" target="_blank" rel="noopener">108&plusmn; Acres Tillable Farm Ground &mdash; McPherson County</a></h3>
+            <p>Highly productive McPherson County farmland, nearly 100% tillable Class II soils.</p>
+            <a href="https://sundgren.com/108-acres-tillable-farm-ground-mcpherson-county-kansas/" target="_blank" rel="noopener" class="listing-card-link">More Details <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="listing-card">
+          <a href="https://sundgren.com/8227-n-rock-rd-walton-ks-155-acres-harvey-county-farmstead/" target="_blank" rel="noopener" class="listing-card-img-wrap">
+            <img src="https://i0.wp.com/sundgren.com/wp-content/uploads/2026/07/BeFunky-collage-61-1.jpeg?w=600&ssl=1" alt="155 Acres Harvey County" loading="lazy">
+            <span class="listing-badge badge-auction">Auction</span>
+          </a>
+          <div class="listing-card-body">
+            <span class="listing-meta"><i class="fas fa-gavel"></i> Aug 29, 2026</span>
+            <h3><a href="https://sundgren.com/8227-n-rock-rd-walton-ks-155-acres-harvey-county-farmstead/" target="_blank" rel="noopener">8227 N Rock Rd., Walton, KS &mdash; 155 Acres Harvey County Farmstead</a></h3>
+            <p>Rural residence with agriculture and hunting habitat north of Walton in Harvey County.</p>
+            <a href="https://sundgren.com/8227-n-rock-rd-walton-ks-155-acres-harvey-county-farmstead/" target="_blank" rel="noopener" class="listing-card-link">More Details <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="listing-card">
+          <a href="https://sundgren.com/351-acres-near-douglass-in-butler-county-kansas-selling-in-4-tracts/" target="_blank" rel="noopener" class="listing-card-img-wrap">
+            <img src="https://i0.wp.com/sundgren.com/wp-content/uploads/2026/07/BeFunky-collage-60-1.jpeg?w=600&ssl=1" alt="351 Acres Butler County" loading="lazy">
+            <span class="listing-badge badge-auction">Auction</span>
+          </a>
+          <div class="listing-card-body">
+            <span class="listing-meta"><i class="fas fa-gavel"></i> Sept 1, 2026</span>
+            <h3><a href="https://sundgren.com/351-acres-near-douglass-in-butler-county-kansas-selling-in-4-tracts/" target="_blank" rel="noopener">351 Acres Near Douglass &mdash; 4 Tracts, Butler County</a></h3>
+            <p>House, shop, barn plus pasture and farm ground tracts near Douglass, KS.</p>
+            <a href="https://sundgren.com/351-acres-near-douglass-in-butler-county-kansas-selling-in-4-tracts/" target="_blank" rel="noopener" class="listing-card-link">More Details <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="listing-card">
+          <a href="https://sundgren.com/22-acres-near-rose-hill-kansas-build-site/" target="_blank" rel="noopener" class="listing-card-img-wrap">
+            <img src="https://i0.wp.com/sundgren.com/wp-content/uploads/2026/01/image.png?w=600&ssl=1" alt="22 Acres Rose Hill" loading="lazy">
+            <span class="listing-badge badge-active">Available</span>
+          </a>
+          <div class="listing-card-body">
+            <span class="listing-meta"><i class="fas fa-tag"></i> $299,900</span>
+            <h3><a href="https://sundgren.com/22-acres-near-rose-hill-kansas-build-site/" target="_blank" rel="noopener">22 Acres Near Rose Hill Kansas &mdash; Build Site</a></h3>
+            <p>22.1 acres south of Andover in Rose Hill School District. Rural water line on property.</p>
+            <a href="https://sundgren.com/22-acres-near-rose-hill-kansas-build-site/" target="_blank" rel="noopener" class="listing-card-link">More Details <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="listing-card">
+          <a href="https://sundgren.com/810-29th-rd-little-river-ks-67457-3-bed-3-bath-home-and-outbuildings-on-12-acres/" target="_blank" rel="noopener" class="listing-card-img-wrap">
+            <img src="https://i0.wp.com/sundgren.com/wp-content/uploads/2025/11/Central-Prairie-Co-Op-01.jpg?w=600&ssl=1" alt="810 29th Rd Little River" loading="lazy">
+            <span class="listing-badge badge-active">Available</span>
+          </a>
+          <div class="listing-card-body">
+            <span class="listing-meta"><i class="fas fa-tag"></i> $600,000</span>
+            <h3><a href="https://sundgren.com/810-29th-rd-little-river-ks-67457-3-bed-3-bath-home-and-outbuildings-on-12-acres/" target="_blank" rel="noopener">810 29th Rd, Little River, KS &mdash; 3 Bed/3 Bath on 12 Acres</a></h3>
+            <p>3-bed, 3-bath home on 12 acres with multiple outbuildings including a 60&prime;&times;90&prime; shop.</p>
+            <a href="https://sundgren.com/810-29th-rd-little-river-ks-67457-3-bed-3-bath-home-and-outbuildings-on-12-acres/" target="_blank" rel="noopener" class="listing-card-link">More Details <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="listing-card">
+          <a href="https://sundgren.com/190-acres-of-scenic-flint-hills-kansas-land-for-sale-near-severy/" target="_blank" rel="noopener" class="listing-card-img-wrap">
+            <img src="https://i0.wp.com/sundgren.com/wp-content/uploads/2025/04/b4414e9c39a757677cfbe3a181818524-uncropped_scaled_within_1536_1152.webp?w=600&ssl=1" alt="190 Acres Flint Hills" loading="lazy">
+            <span class="listing-badge badge-active">Available</span>
+          </a>
+          <div class="listing-card-body">
+            <span class="listing-meta"><i class="fas fa-tag"></i> $675,000</span>
+            <h3><a href="https://sundgren.com/190-acres-of-scenic-flint-hills-kansas-land-for-sale-near-severy/" target="_blank" rel="noopener">190&plusmn; Acres Flint Hills Kansas Land For Sale Near Severy</a></h3>
+            <p>Exceptional Flint Hills land with expansive grasslands, mature trees, and a serene pond.</p>
+            <a href="https://sundgren.com/190-acres-of-scenic-flint-hills-kansas-land-for-sale-near-severy/" target="_blank" rel="noopener" class="listing-card-link">More Details <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="listing-card">
+          <a href="https://sundgren.com/5747-sw-20th-el-dorado-ks-custom-home-on-40-acres/" target="_blank" rel="noopener" class="listing-card-img-wrap">
+            <img src="https://i0.wp.com/sundgren.com/wp-content/uploads/2026/05/5747-SW-20th-5.jpg?w=600&ssl=1" alt="5747 SW 20th El Dorado" loading="lazy">
+            <span class="listing-badge badge-active">Available</span>
+          </a>
+          <div class="listing-card-body">
+            <span class="listing-meta"><i class="fas fa-tag"></i> $1,800,000</span>
+            <h3><a href="https://sundgren.com/5747-sw-20th-el-dorado-ks-custom-home-on-40-acres/" target="_blank" rel="noopener">5747 SW 20th, El Dorado KS &mdash; Custom Home on 40 Acres</a></h3>
+            <p>Meticulously engineered custom estate on 40 acres with 6-zone radiant heat and triple-pane windows.</p>
+            <a href="https://sundgren.com/5747-sw-20th-el-dorado-ks-custom-home-on-40-acres/" target="_blank" rel="noopener" class="listing-card-link">More Details <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="listing-card">
+          <a href="https://sundgren.com/7-acre-buildable-lots-on-blacktop-near-douglass-kansas/" target="_blank" rel="noopener" class="listing-card-img-wrap">
+            <img src="https://i0.wp.com/sundgren.com/wp-content/uploads/2026/04/Ten-Oak-New-1.jpg?w=600&ssl=1" alt="7 Acre Lots Douglass" loading="lazy">
+            <span class="listing-badge badge-active">Available</span>
+          </a>
+          <div class="listing-card-body">
+            <span class="listing-meta"><i class="fas fa-tag"></i> $140,000 each</span>
+            <h3><a href="https://sundgren.com/7-acre-buildable-lots-on-blacktop-near-douglass-kansas/" target="_blank" rel="noopener">7&plusmn; Acre Buildable Lots on Blacktop Near Douglass, Kansas</a></h3>
+            <p>Buildable lots on blacktop near Douglass — no HOA, no special taxes, minutes from amenities.</p>
+            <a href="https://sundgren.com/7-acre-buildable-lots-on-blacktop-near-douglass-kansas/" target="_blank" rel="noopener" class="listing-card-link">More Details <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="listing-card">
+          <a href="https://sundgren.com/preservation-acres-9657-sw-hopkins-switch-rd-augusta-ks-67010/" target="_blank" rel="noopener" class="listing-card-img-wrap">
+            <img src="https://i0.wp.com/sundgren.com/wp-content/uploads/2026/04/9657-SW-Hopkins-Switch-82.jpg?w=600&ssl=1" alt="Preservation Acres Augusta" loading="lazy">
+            <span class="listing-badge badge-active">Available</span>
+          </a>
+          <div class="listing-card-body">
+            <span class="listing-meta"><i class="fas fa-tag"></i> $535,000</span>
+            <h3><a href="https://sundgren.com/preservation-acres-9657-sw-hopkins-switch-rd-augusta-ks-67010/" target="_blank" rel="noopener">Preservation Acres: 9657 SW Hopkins Switch Rd, Augusta, KS</a></h3>
+            <p>Unique scenic acreage just minutes east of Augusta with a completely renovated home.</p>
+            <a href="https://sundgren.com/preservation-acres-9657-sw-hopkins-switch-rd-augusta-ks-67010/" target="_blank" rel="noopener" class="listing-card-link">More Details <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="listing-card">
+          <a href="https://sundgren.com/186-acres-pasture-water-meter-trees-pond-el-dorado-kansas/" target="_blank" rel="noopener" class="listing-card-img-wrap">
+            <img src="https://i0.wp.com/sundgren.com/wp-content/uploads/2026/07/Dankert-1.jpg?w=600&ssl=1" alt="186 Acres El Dorado" loading="lazy">
+            <span class="listing-badge badge-pending">Pending</span>
+          </a>
+          <div class="listing-card-body">
+            <span class="listing-meta"><i class="fas fa-tag"></i> $3,550/acre</span>
+            <h3><a href="https://sundgren.com/186-acres-pasture-water-meter-trees-pond-el-dorado-kansas/" target="_blank" rel="noopener">186.4 Acres Pasture, Water Meter, Trees &amp; Pond &mdash; El Dorado, KS</a></h3>
+            <p>186.4 acres of pasture east of El Dorado within the city&rsquo;s 3-mile zoning jurisdiction.</p>
+            <a href="https://sundgren.com/186-acres-pasture-water-meter-trees-pond-el-dorado-kansas/" target="_blank" rel="noopener" class="listing-card-link">More Details <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
       </div>
 
-      <div id="land-listings-grid" class="cards-grid">
-        <!-- Listings injected by generate-listings.mjs or displayed as placeholder -->
-        <div style="grid-column:1/-1;text-align:center;padding:60px 0;">
-          <i class="fas fa-seedling" style="font-size:48px;color:#ddd;margin-bottom:16px;display:block;"></i>
-          <p style="color:var(--text-light);font-size:16px;">Land listings are updated regularly. <a href="/contact-us/" style="color:#c00;">Contact us</a> for the latest available properties.</p>
-          <a href="https://realestate.sundgren.com/idx/results/listings?idxID=b147&pt=1&lp=0&hp=100000000&bd=0&tb=0&ccz=city&widgetReferer=true" target="_blank" rel="noopener" class="btn-primary" style="margin-top:16px;display:inline-block;">View All Listings <i class="fas fa-external-link-alt" style="margin-left:6px;font-size:12px;"></i></a>
-        </div>
+      <div class="listing-view-more">
+        <a href="https://sundgren.com/land-listings/" target="_blank" rel="noopener" class="btn-primary">View All Land Listings on Sundgren.com <i class="fas fa-external-link-alt" style="margin-left:6px;font-size:12px;"></i></a>
       </div>
+
     </div>
   </section>
 
-  <!-- IDX embed fallback -->
-  <div class="embed-wrap" style="background:#fff;">
-    <div class="container">
-      <div class="section-title mb-40">
-        <span class="eyebrow">Live Listings</span>
-        <h2>Browse All Available Properties</h2>
-        <hr class="divider">
-      </div>
-      <div style="background:var(--bg-light);border-radius:8px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,.08);">
-        <iframe
-          src="https://realestate.sundgren.com/idx/results/listings?idxID=b147&pt=1&lp=0&hp=100000000&bd=0&tb=0&ccz=city&widgetReferer=true"
-          title="Sundgren Realty Land Listings"
-          width="100%"
-          height="800"
-          style="border:none;display:block;"
-          loading="lazy">
-        </iframe>
-      </div>
-    </div>
-  </div>
 
   <!-- CTA -->
   <section class="cta-dark">
