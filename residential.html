@@ -68,14 +68,11 @@
       s.src = '//realestate.sundgren.com/idx/widgets/166188';
       container.appendChild(s);
     }
-    if ('IntersectionObserver' in window) {
-      var observer = new IntersectionObserver(function(entries){
-        if (entries[0].isIntersecting) { loadIdxWidget(); observer.disconnect(); }
-      }, { rootMargin: '200px' });
-      observer.observe(document.getElementById('idx-residential-container'));
+    // Load after page has fully painted — keeps hero/nav snappy
+    if (document.readyState === 'complete') {
+      setTimeout(loadIdxWidget, 100);
     } else {
-      if (document.readyState === 'complete') { loadIdxWidget(); }
-      else { window.addEventListener('load', loadIdxWidget); }
+      window.addEventListener('load', function() { setTimeout(loadIdxWidget, 100); });
     }
   })();
   </script>
