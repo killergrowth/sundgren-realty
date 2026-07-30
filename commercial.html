@@ -49,8 +49,10 @@
   <!-- IDX Listings Showcase - Commercial -->
   <div class="idx-widget-wrap">
     <div class="container" id="idx-commercial-container">
-      <div id="idx-commercial-placeholder" style="min-height:300px;display:flex;align-items:center;justify-content:center;">
-        <span style="color:#aaa;font-size:14px;">Loading listings&hellip;</span>
+      <div id="idx-commercial-placeholder" style="min-height:340px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;">
+        <div style="width:44px;height:44px;border:4px solid #e0e0e0;border-top-color:#c00;border-radius:50%;animation:idx-spin 0.8s linear infinite;"></div>
+        <span style="color:#999;font-size:14px;font-family:var(--wallox-font,'Plus Jakarta Sans',sans-serif);">Loading listings&hellip;</span>
+        <style>@keyframes idx-spin{to{transform:rotate(360deg)}}</style>
       </div>
     </div>
   </div>
