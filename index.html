@@ -55,6 +55,20 @@
         <hr class="divider">
       </div>
       <script charset="UTF-8" type="text/javascript" id="idxwidgetsrc-166194" src="//realestate.sundgren.com/idx/widgets/166194"></script>
+      <script>
+      (function(){
+        var a = 0;
+        var p = setInterval(function(){
+          document.querySelectorAll('idx-listings-showcase').forEach(function(el){
+            if (el.shadowRoot) {
+              var h = el.shadowRoot.querySelector('.idx-listings-showcase__header');
+              if (h) h.style.display = 'none';
+            }
+          });
+          if (++a > 40) clearInterval(p);
+        }, 250);
+      })();
+      </script>
       <div class="idx-viewall-wrap">
         <a href="/property-search/" class="btn-primary">View All Listings <i class="fas fa-arrow-right" style="margin-left:6px;"></i></a>
       </div>

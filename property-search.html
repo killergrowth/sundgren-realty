@@ -107,6 +107,17 @@
         widgets.forEach(function(w){ loadWidget(w[0],w[1],w[2],w[3]); });
       });
     }
+    // Poll all idx-listings-showcase shadow roots and hide headers
+    var hideAttempts = 0;
+    var hidePoller = setInterval(function() {
+      document.querySelectorAll('idx-listings-showcase').forEach(function(el) {
+        if (el.shadowRoot) {
+          var hdr = el.shadowRoot.querySelector('.idx-listings-showcase__header');
+          if (hdr) hdr.style.display = 'none';
+        }
+      });
+      if (++hideAttempts > 60) clearInterval(hidePoller);
+    }, 250);
   })();
   </script>
 
