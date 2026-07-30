@@ -1070,3 +1070,45 @@ hr.divider-left { margin: 0 0 24px; }
   .cards-grid { grid-template-columns: 1fr; }
   .agents-grid { grid-template-columns: 1fr 1fr; }
 }
+
+/* ============================================================
+   IDX Broker Widget Overrides
+   ============================================================ */
+
+/* --- AI Smart Search: constrain to 50% on desktop --- */
+.idx-smart-search-wrap {
+  max-width: 560px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .idx-smart-search-wrap { max-width: 100%; }
+}
+
+/* --- Carousel: hide IDX gray header bar ("Featured Listings" + their View All link) --- */
+/* IDX renders the bar as a div before the carousel slides */
+.IDX-carousel-header,
+.IDX-showcaseHeader,
+[class*="carousel-header"],
+[class*="showcaseHeader"],
+.IDX-widget-header {
+  display: none !important;
+}
+
+/* --- Our custom View All button sits below the carousel --- */
+.idx-viewall-wrap {
+  text-align: center;
+  margin-top: 24px;
+}
+.idx-viewall-wrap .btn-primary {
+  display: inline-block;
+}
+
+/* --- Property search page AI search: left-aligned, half width --- */
+.idx-search-page-wrap {
+  max-width: 560px;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .idx-search-page-wrap { max-width: 100%; }
+}
