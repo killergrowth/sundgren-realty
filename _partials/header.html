@@ -14,21 +14,31 @@
 
 <!-- Main Nav -->
 <header class="site-header" id="site-header">
-  <div class="nav-inner">
-    <a href="/" class="logo-wrap" aria-label="Sundgren Realty Home">
-      <div class="logo-box">
-        <span class="logo-sun">&#9788;</span>
-        <span class="logo-name">Sundgren</span>
-        <span class="logo-sub">Realty</span>
+  <!-- Yellow logo badge — hangs below the nav bar -->
+  <a href="/" class="logo-badge" aria-label="Sundgren Realty Home">
+    <div class="logo-badge-inner">
+      <img src="/images/sundgren-symbol-black.png" alt="" class="logo-badge-symbol" aria-hidden="true">
+      <div class="logo-badge-text">
+        <span class="logo-badge-name">Sundgren</span>
+        <span class="logo-badge-sub">Realty</span>
       </div>
-    </a>
+    </div>
+  </a>
+  <div class="nav-inner">
+    <div class="logo-spacer"></div>
     <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
       &#9776;
     </button>
     <ul class="main-nav" id="main-nav">
-      <li><a href="/property-search/">Property Search</a></li>
-      <li><a href="/commercial/">Commercial</a></li>
-      <li><a href="/land-listings/">Land Listings</a></li>
+      <li class="has-dropdown">
+        <a href="/property-search/">Listings</a>
+        <ul class="nav-dropdown">
+          <li><a href="/commercial/">Commercial</a></li>
+          <li><a href="/property-search/">Residential</a></li>
+          <li><a href="/land-listings/">Land</a></li>
+          <li><a href="//realestate.sundgren.com/idx/search/basic" target="_blank" rel="noopener">Search MLS</a></li>
+        </ul>
+      </li>
       <li><a href="/auctions/">Auctions</a></li>
       <li><a href="/agents/">Agents</a></li>
       <li><a href="/news/">News</a></li>
@@ -47,11 +57,24 @@
       btn.setAttribute('aria-expanded', open);
     });
   }
+  // Mobile dropdown toggle (tap the top-level Listings link)
+  document.querySelectorAll('.main-nav li.has-dropdown > a').forEach(function(a) {
+    a.addEventListener('click', function(e) {
+      // Only intercept on mobile (nav is stacked)
+      if (window.innerWidth <= 900) {
+        e.preventDefault();
+        a.parentElement.classList.toggle('open');
+      }
+    });
+  });
   // Highlight active nav item
   var path = window.location.pathname;
-  document.querySelectorAll('.main-nav li a').forEach(function(a) {
+  document.querySelectorAll('.main-nav li a, .nav-dropdown li a').forEach(function(a) {
     if (a.hostname === window.location.hostname && path !== '/' && a.getAttribute('href') && a.getAttribute('href') !== '/' && path.startsWith(a.getAttribute('href'))) {
       a.classList.add('active');
+      // Also mark parent dropdown item active
+      var parent = a.closest('.has-dropdown');
+      if (parent) parent.querySelector(':scope > a').classList.add('active');
     }
   });
 })();

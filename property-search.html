@@ -36,40 +36,67 @@
 
 <main>
 
-  <section class="page-hero">
-    <div class="inner">
-      <h1>Property Search</h1>
-      <nav aria-label="Breadcrumb">
-        <ol class="breadcrumb">
-          <li><a href="/">Home</a></li>
-          <li class="active">Property Search</li>
-        </ol>
-      </nav>
-    </div>
-  </section>
-
   <!-- IDX AI Smart Search -->
   <section class="section" style="padding-bottom:20px;background:var(--bg-light);">
     <div class="container">
-      <div class="idx-search-page-wrap">
-        <script charset="UTF-8" type="text/javascript" id="idxwidgetsrc-166177" src="//realestate.sundgren.com/idx/widgets/166177"></script>
+      <div class="idx-search-page-wrap" id="idx-search-container">
+        <div id="idx-search-placeholder" style="min-height:80px;"></div>
       </div>
     </div>
   </section>
 
   <!-- IDX Listings Showcase - Residential -->
   <div class="idx-widget-wrap">
-    <div class="container">
-      <script charset="UTF-8" type="text/javascript" id="idxwidgetsrc-166188" src="//realestate.sundgren.com/idx/widgets/166188"></script>
+    <div class="container" id="idx-residential-container">
+      <div id="idx-residential-placeholder" style="min-height:300px;display:flex;align-items:center;justify-content:center;">
+        <span style="color:#aaa;font-size:14px;">Loading listings&hellip;</span>
+      </div>
     </div>
   </div>
 
   <!-- IDX Map Search -->
   <div class="idx-map-wrap">
-    <div class="container">
-      <script charset="UTF-8" type="text/javascript" id="idxwidgetsrc-166193" src="//realestate.sundgren.com/idx/widgets/166193"></script>
+    <div class="container" id="idx-map-container">
+      <div id="idx-map-placeholder" style="min-height:300px;display:flex;align-items:center;justify-content:center;">
+        <span style="color:#aaa;font-size:14px;">Loading map&hellip;</span>
+      </div>
     </div>
   </div>
+
+  <script>
+  (function(){
+    function loadWidget(containerId, placeholderId, widgetId, widgetSrc){
+      var container = document.getElementById(containerId);
+      var placeholder = document.getElementById(placeholderId);
+      if (!container || container.dataset.loaded) return;
+      container.dataset.loaded = '1';
+      if (placeholder) placeholder.remove();
+      var s = document.createElement('script');
+      s.charset = 'UTF-8'; s.type = 'text/javascript';
+      s.id = widgetId; s.src = widgetSrc;
+      container.appendChild(s);
+    }
+    var widgets = [
+      ['idx-search-container',     'idx-search-placeholder',      'idxwidgetsrc-166177', '//realestate.sundgren.com/idx/widgets/166177'],
+      ['idx-residential-container','idx-residential-placeholder',  'idxwidgetsrc-166188', '//realestate.sundgren.com/idx/widgets/166188'],
+      ['idx-map-container',        'idx-map-placeholder',          'idxwidgetsrc-166193', '//realestate.sundgren.com/idx/widgets/166193'],
+    ];
+    if ('IntersectionObserver' in window) {
+      widgets.forEach(function(w){
+        var el = document.getElementById(w[0]);
+        if (!el) return;
+        var obs = new IntersectionObserver(function(entries, o){
+          if (entries[0].isIntersecting) { loadWidget(w[0],w[1],w[2],w[3]); o.disconnect(); }
+        }, { rootMargin: '200px' });
+        obs.observe(el);
+      });
+    } else {
+      window.addEventListener('load', function(){
+        widgets.forEach(function(w){ loadWidget(w[0],w[1],w[2],w[3]); });
+      });
+    }
+  })();
+  </script>
 
   <section class="cta-dark">
     <div class="container">

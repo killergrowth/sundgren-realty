@@ -48,10 +48,39 @@
 
   <!-- IDX Listings Showcase - Commercial -->
   <div class="idx-widget-wrap">
-    <div class="container">
-      <script charset="UTF-8" type="text/javascript" id="idxwidgetsrc-166191" src="//realestate.sundgren.com/idx/widgets/166191"></script>
+    <div class="container" id="idx-commercial-container">
+      <div id="idx-commercial-placeholder" style="min-height:300px;display:flex;align-items:center;justify-content:center;">
+        <span style="color:#aaa;font-size:14px;">Loading listings&hellip;</span>
+      </div>
     </div>
   </div>
+  <script>
+  (function(){
+    function loadIdxWidget(){
+      var container = document.getElementById('idx-commercial-container');
+      var placeholder = document.getElementById('idx-commercial-placeholder');
+      if (!container || container.dataset.loaded) return;
+      container.dataset.loaded = '1';
+      if (placeholder) placeholder.remove();
+      var s = document.createElement('script');
+      s.charset = 'UTF-8';
+      s.type = 'text/javascript';
+      s.id = 'idxwidgetsrc-166191';
+      s.src = '//realestate.sundgren.com/idx/widgets/166191';
+      container.appendChild(s);
+    }
+    if ('IntersectionObserver' in window) {
+      var observer = new IntersectionObserver(function(entries){
+        if (entries[0].isIntersecting) { loadIdxWidget(); observer.disconnect(); }
+      }, { rootMargin: '200px' });
+      observer.observe(document.getElementById('idx-commercial-container'));
+    } else {
+      // Fallback: load after page ready
+      if (document.readyState === 'complete') { loadIdxWidget(); }
+      else { window.addEventListener('load', loadIdxWidget); }
+    }
+  })();
+  </script>
 
   <section class="cta-dark">
     <div class="container">
