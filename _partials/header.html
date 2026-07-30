@@ -30,6 +30,7 @@
       &#9776;
     </button>
     <ul class="main-nav" id="main-nav">
+      <li id="nav-home-link"><a href="/">Home</a></li>
       <li class="has-dropdown">
         <a href="/property-search/">Listings</a>
         <ul class="nav-dropdown">
@@ -57,29 +58,9 @@
       btn.setAttribute('aria-expanded', open);
     });
   }
-  // Hide IDX gray "Featured Listings" / "View All" header bar injected by widgets
-  (function(){
-    function hideIdxBars(root) {
-      // IDX injects a header row as first visible child containing "View All" or "Featured"
-      var candidates = (root || document).querySelectorAll(
-        '[class*="carousel"] > *:first-child, [class*="showcase"] > *:first-child, ' +
-        '[class*="widget"] > *:first-child, [class*="Showcase"] > *:first-child, ' +
-        '[class*="Carousel"] > *:first-child'
-      );
-      candidates.forEach(function(el) {
-        var txt = el.textContent || '';
-        if (txt.match(/Featured|View All|Listings/i) && el.children.length <= 3) {
-          el.style.display = 'none';
-        }
-      });
-    }
-    // Run once DOM is ready, then watch for IDX widget injection
-    document.addEventListener('DOMContentLoaded', function() {
-      hideIdxBars();
-      var obs = new MutationObserver(function() { hideIdxBars(); });
-      obs.observe(document.body, { childList: true, subtree: true });
-    });
-  })();
+  // Hide Home link on homepage
+  var homeLink = document.getElementById('nav-home-link');
+  if (homeLink && window.location.pathname === '/') homeLink.style.display = 'none';
 
   // Mobile dropdown toggle (tap the top-level Listings link)
   document.querySelectorAll('.main-nav li.has-dropdown > a').forEach(function(a) {
