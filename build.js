@@ -40,13 +40,16 @@ function write(destPath, content) {
 
 // Pages: [source, dest-path-in-dist]
 const PAGES = [
-  ['index.html',          'index.html'],
-  ['land-listings.html',  'land-listings/index.html'],
-  ['agents.html',         'agents/index.html'],
-  ['news.html',           'news/index.html'],
-  ['contact-us.html',     'contact-us/index.html'],
-  ['privacy-policy.html', 'privacy-policy/index.html'],
-  ['404.html',            '404.html'],
+  ['index.html',           'index.html'],
+  ['land-listings.html',   'land-listings/index.html'],
+  ['property-search.html', 'property-search/index.html'],
+  ['commercial.html',      'commercial/index.html'],
+  ['residential.html',     'residential/index.html'],
+  ['agents.html',          'agents/index.html'],
+  ['news.html',            'news/index.html'],
+  ['contact-us.html',      'contact-us/index.html'],
+  ['privacy-policy.html',  'privacy-policy/index.html'],
+  ['404.html',             '404.html'],
 ];
 
 function discoverAuctionPages() {
@@ -75,6 +78,7 @@ function buildSitemap() {
   const staticUrls = [
     { url: '/', priority: '1.0', freq: 'monthly' },
     { url: '/land-listings/', priority: '0.8', freq: 'monthly' },
+  { url: '/residential/',   priority: '0.8', freq: 'weekly' },
     { url: '/auctions/', priority: '0.9', freq: 'daily' },
     { url: '/agents/', priority: '0.7', freq: 'monthly' },
     { url: '/news/', priority: '0.7', freq: 'weekly' },

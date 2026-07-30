@@ -208,7 +208,7 @@ a:hover { color: var(--yellow-dark); }
 .main-nav li a {
   display: block;
   padding: 28px 14px;
-  font-size: 14px;
+  font-size: 21px;
   font-weight: 600;
   color: var(--text);
   transition: color .2s;
@@ -1089,7 +1089,7 @@ hr.divider-left { margin: 0 0 24px; }
     padding: 0;
   }
   .main-nav li.has-dropdown.open .nav-dropdown { display: block; }
-  .nav-dropdown li a { padding: 10px 16px; font-size: 13px; }
+  .nav-dropdown li a { padding: 10px 16px; font-size: 16px; }
   .nav-toggle { display: block; }
   .site-header { position: relative; }
   .hero { min-height: 360px; padding-bottom: 48px; }
