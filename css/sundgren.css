@@ -1151,6 +1151,8 @@ hr.divider-left { margin: 0 0 24px; }
 .idx-search-page-wrap {
   max-width: 560px;
   width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media (max-width: 768px) {
   .idx-search-page-wrap { max-width: 100%; }
