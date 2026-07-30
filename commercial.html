@@ -70,16 +70,6 @@
       s.id = 'idxwidgetsrc-166191';
       s.src = '//realestate.sundgren.com/idx/widgets/166191';
       container.appendChild(s);
-      // Poll until shadow DOM renders, then hide the header bar
-      var attempts = 0;
-      var poller = setInterval(function() {
-        var el = document.querySelector('idx-listings-showcase');
-        if (el && el.shadowRoot) {
-          var hdr = el.shadowRoot.querySelector('.idx-listings-showcase__header');
-          if (hdr) { hdr.style.display = 'none'; clearInterval(poller); }
-        }
-        if (++attempts > 40) clearInterval(poller);
-      }, 250);
     }
     setTimeout(loadIdxWidget, 150);
   })();
