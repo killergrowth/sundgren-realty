@@ -1,12 +1,66 @@
 /* ============================================================
    Sundgren Realty â€” Main Stylesheet
    KillerGrowth Build | 2026-07
-   Colors: #FFD700 (yellow), #1a1a1a (dark), #fff (white)
+   Colors: #fdf132 (yellow), #000000 (black), #1a1a1a (dark), #fff (white)
+   Fonts: Trajan Pro 3 Semibold (headings), SF New Republic SC Bold (body/nav)
    ============================================================ */
 
+/* Self-hosted brand fonts */
+@font-face {
+  font-family: 'Trajan Pro';
+  src: url('/fonts/Trajan Pro Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Trajan Pro';
+  src: url('/fonts/Trajan Pro Bold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Trajan Pro';
+  src: url('/fonts/Trajan Pro Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SF New Republic SC';
+  src: url('/fonts/SF New Republic SC.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SF New Republic SC';
+  src: url('/fonts/SF New Republic SC Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SF New Republic SC';
+  src: url('/fonts/SF New Republic SC Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SF New Republic SC';
+  src: url('/fonts/SF New Republic SC Bold Italic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+
+
 :root {
-  --yellow: #FFD700;
-  --yellow-dark: #e6c200;
+  --yellow: #fdf132;
+  --yellow-dark: #d9ac00;
   --dark: #1a1a1a;
   --dark2: #2c2c2c;
   --text: #333;
@@ -19,7 +73,7 @@
 
 body {
   margin: 0;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'SF New Republic SC', 'Helvetica Neue', Arial, sans-serif;
   font-size: 16px;
   color: var(--text);
   background: #fff;
@@ -27,6 +81,17 @@ body {
 }
 
 img { max-width: 100%; height: auto; }
+
+/* Brand typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Trajan Pro', Georgia, 'Times New Roman', serif;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.main-nav li a, .logo-badge-name, .logo-badge-sub, .app-store-btn {
+  font-family: 'SF New Republic SC', 'Helvetica Neue', Arial, sans-serif;
+}
 a { color: inherit; text-decoration: none; }
 a:hover { color: var(--yellow-dark); }
 
@@ -65,6 +130,8 @@ a:hover { color: var(--yellow-dark); }
   position: sticky;
   top: 0;
   z-index: 1000;
+  /* allow badge to hang below without clipping */
+  overflow: visible;
 }
 .nav-inner {
   display: flex;
@@ -74,34 +141,61 @@ a:hover { color: var(--yellow-dark); }
   max-width: 1200px;
   margin: 0 auto;
 }
-.logo-wrap {
-  display: flex;
-  align-items: center;
-  flex-shrink: 0;
+/* Logo badge — hangs below the sticky nav */
+.logo-badge {
+  position: absolute;
+  left: 24px;
+  top: 0;
+  z-index: 1100;
+  text-decoration: none;
+  display: block;
 }
-.logo-box {
+.logo-badge-inner {
   background: var(--yellow);
-  padding: 14px 18px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 10px 16px 14px;
+  box-shadow: 0 4px 16px rgba(0,0,0,.18);
+  /* clip the top edge flush with the header top, hang below */
+  border-radius: 0 0 6px 6px;
+  min-width: 110px;
   line-height: 1;
 }
-.logo-box .logo-sun { font-size: 28px; margin-bottom: 4px; }
-.logo-box .logo-name {
-  font-size: 18px;
-  font-weight: 900;
+.logo-badge-symbol {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  display: block;
+  margin-bottom: 6px;
+}
+.logo-badge-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+.logo-badge-name {
+  font-family: 'Trajan Pro', Georgia, 'Times New Roman', serif;
+  font-size: 13px;
+  font-weight: 700;
   letter-spacing: .08em;
   color: var(--dark);
   text-transform: uppercase;
+  white-space: nowrap;
 }
-.logo-box .logo-sub {
-  font-size: 10px;
-  font-weight: 600;
-  letter-spacing: .2em;
+.logo-badge-sub {
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: .18em;
   color: var(--dark);
   text-transform: uppercase;
-  margin-top: 2px;
+  white-space: nowrap;
+}
+/* Spacer so nav links don't overlap the badge area */
+.logo-spacer {
+  width: 160px;
+  flex-shrink: 0;
 }
 .main-nav {
   display: flex;
@@ -173,7 +267,7 @@ a:hover { color: var(--yellow-dark); }
 }
 .hero h1 {
   color: #fff;
-  font-size: clamp(28px, 5vw, 52px);
+  font-size: clamp(20px, 2.8vw, 32px);
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: .04em;
@@ -182,7 +276,7 @@ a:hover { color: var(--yellow-dark); }
 }
 .hero p {
   color: rgba(255,255,255,.92);
-  font-size: clamp(15px, 2.5vw, 20px);
+  font-size: clamp(13px, 1.8vw, 17px);
   margin: 0 0 28px;
 }
 .hero-search {
@@ -949,6 +1043,11 @@ hr.divider-left { margin: 0 0 24px; }
 }
 @media (max-width: 768px) {
   .nav-inner { padding: 0 16px; }
+  .logo-spacer { width: 90px; }
+  .logo-badge-inner { min-width: 80px; padding: 8px 10px 12px; }
+  .logo-badge-symbol { width: 36px; height: 36px; }
+  .logo-badge-name { font-size: 10px; }
+  .logo-badge-sub { font-size: 7px; letter-spacing: .12em; }
   .main-nav { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: #fff; border-top: 1px solid var(--border); padding: 12px 0; box-shadow: 0 8px 24px rgba(0,0,0,.1); }
   .main-nav.open { display: flex; }
   .main-nav li a { padding: 12px 24px; }
