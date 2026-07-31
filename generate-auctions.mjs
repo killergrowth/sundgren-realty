@@ -259,21 +259,13 @@ function parseDescription(raw) {
     .lot-table tr:nth-child(even) td { background:#f9f9f9; }
   </style>`;
 
-  // 4. Split on ALL section-heading patterns found in Sundgren descriptions:
-  //    "PROPERTY DESCRIPTION:", "LEGAL DESCRIPTION:", "LAND LOCATION FROM X:",
-  //    "TERMS:", "REAL ESTATE TAXES:", "PICKUP:", "REMOVAL:", "PAYMENT:",
-  //    "PREVIEW:", "INSPECTION:", "BIDDING:", "SHIPPING:", "NOTE:", "NOTES:"
+  // 4. Split on ALL section-heading patterns found in Sundgren descriptions.
   //    Also "Auction Date:" and "Auction Location:" as top-level key-facts.
-  const SECTION_PATTERN = /(?:^|\s)(PROPERTY DESCRIPTION|LEGAL DESCRIPTION|LAND LOCATION[^:]*|REAL ESTATE TAXES|TERMS|PICKUP|REMOVAL|PAYMENT|PREVIEW|INSPECTION|BIDDING|SHIPPING|NOTES?|DIRECTIONS?):/g;
-
-  // 5. Split text into segments
-  const segments = [];
-  let lastIndex = 0;
-  let m;
-  const re = /(?:(?:^|(?<=\s)))(PROPERTY DESCRIPTION|LEGAL DESCRIPTION|LAND LOCATION[^:]*?|REAL ESTATE TAXES|TERMS|PICKUP|REMOVAL|PAYMENT|PREVIEW|INSPECTION|BIDDING|SHIPPING|NOTES?|DIRECTIONS?):/g;
+  //    NOTE: LAND LOCATION FROM X: uses a greedy match captured separately.
 
   // Use a simple split approach: find all section markers
-  const markerRe = /(PROPERTY DESCRIPTION|LEGAL DESCRIPTION|LAND LOCATION[^:]{0,40}?|REAL ESTATE TAXES|TERMS|PICKUP|REMOVAL|PAYMENT|PREVIEW|INSPECTION|BIDDING|SHIPPING|NOTES?|DIRECTIONS?):/g;
+  // Order matters — longer/more-specific patterns first
+  const markerRe = /(PROPERTY DESCRIPTION|PROPERTY ADDRESS|LEGAL DESCRIPTION|LAND FEATURES|LAND LOCATION FROM[^:]{0,60}|LAND LOCATION[^:]{0,40}|REAL ESTATE TAXES|MANNER OF AUCTION|PERSONAL PROPERTY AUCTION|TRACTS?\s+[\d,&\s]+LOCATION FROM[^:]{0,40}|TRACT \d+[^:]{0,30}|TERMS|PICKUP|REMOVAL|PAYMENT|PREVIEW|INSPECTION|BIDDING|SHIPPING|NOTES?|DIRECTIONS?):/g;
   const parts = text.split(markerRe);
   // parts alternates: [preText, LABEL, body, LABEL, body, ...]
 
@@ -282,6 +274,15 @@ function parseDescription(raw) {
   for (let j = 1; j < parts.length; j += 2) {
     namedSections.push({ title: parts[j].trim(), body: (parts[j+1] || '').trim() });
   }
+
+  // 5b. Extract OPEN HOUSE entries from preText (before further parsing)
+  // Flat text: split on each "OPEN HOUSE" boundary, stop before the next one or a section keyword
+  const openHouseLines = [];
+  preText = preText.replace(/OPEN HOUSE\s+[^O][^P]?[^E]?[^N]?(?:(?!OPEN HOUSE|PROPERTY|LEGAL|LAND|TERMS|TRACT|MANNER|PERSONAL).)*?(?=OPEN HOUSE|PROPERTY|LEGAL|LAND|TERMS|TRACT|MANNER|PERSONAL|$)/gi, (match) => {
+    const clean = match.trim();
+    if (clean) openHouseLines.push(clean);
+    return '';
+  });
 
   // 6. Parse preText: extract "Auction Date: X" and "Auction Location: Y"
   //    Then detect online-only note and sellers line.
@@ -317,26 +318,21 @@ function parseDescription(raw) {
     auctionLocation = auctionLocation.replace(/^ONLINE ONLY AUCTION[:\s]*/i, '').trim();
   }
 
-  // Extract sellers line from cleaned location string OR freeText
-  // Pattern: "HF X and Y, Sellers" or "John Smith, Seller"
-  const sellersInLoc = auctionLocation.match(/^(.+?),\s*Sellers?\s*$/i);
-  if (sellersInLoc) {
-    sellers = sellersInLoc[1].trim() + ', Sellers';
-    auctionLocation = ''; // was just a sellers line, no actual location
+  // Extract sellers line from auctionLocation or freeText.
+  // Pattern: "Estate of X, Seller" or "JBAR LLC, Seller" at END of the location string,
+  // OR as standalone text in freeText. Use an end-anchor to avoid swallowing the full address.
+  // Narrow seller name: ends with LLC, Inc, Trust, or is "Estate of ...", or is a short name.
+  const sellerRe = /\b((?:Estate of [A-Za-z .'-]+|[A-Z][A-Za-z .'-]+(?:\s+(?:LLC|Inc|Trust|Co))?)),\s*Sellers?\s*$/i;
+  const sellersAtEnd = auctionLocation.match(sellerRe);
+  if (sellersAtEnd) {
+    sellers = sellersAtEnd[1].trim() + ', Sellers';
+    auctionLocation = auctionLocation.slice(0, sellersAtEnd.index).trim();
   } else {
-    // Try extracting sellers from auctionLocation if mixed
-    const selMixed = auctionLocation.match(/(.+),\s*Sellers?/i);
-    if (selMixed) {
-      sellers = selMixed[1].trim() + ', Sellers';
-      auctionLocation = auctionLocation.replace(selMixed[0], '').trim();
-    }
-  }
-  // Also check freeText
-  if (!sellers) {
-    const sellersMatch = freeText.match(/([A-Z][^,]+(?:,\s*[A-Z][^,]+)*),\s*Sellers?/i);
-    if (sellersMatch) {
-      sellers = sellersMatch[1].trim() + ', Sellers';
-      freeText = freeText.replace(sellersMatch[0], '').trim();
+    // Try in freeText (sellers sometimes appear there)
+    const sellersInFree = freeText.match(sellerRe);
+    if (sellersInFree) {
+      sellers = sellersInFree[1].trim() + ', Sellers';
+      freeText = freeText.replace(sellersInFree[0], '').trim();
     }
   }
   freeText = freeText.replace(/\s{2,}/g, ' ').trim();
@@ -354,8 +350,23 @@ function parseDescription(raw) {
     html += `\n<p class="desc-sellers"><i class="fas fa-user" style="margin-right:6px;color:var(--yellow-dark);"></i>${escH(sellers)}</p>`;
   }
 
-  // Auction Date key-fact (if not already in info card — still useful in desc for context)
-  // We skip duplicating date here since the info card already has it; only show Location if meaningful
+  // Open Houses (if any)
+  if (openHouseLines.length > 0) {
+    if (openHouseLines.length === 1) {
+      html += `\n<div class="desc-section">
+  <h3 class="desc-section-title"><i class="fas fa-door-open"></i> Open House</h3>
+  <p>${escH(openHouseLines[0].replace(/^OPEN HOUSE\s*/i, ''))}</p>
+</div>`;
+    } else {
+      const items = openHouseLines.map(l => `<li>${escH(l.replace(/^OPEN HOUSE\s*/i, ''))}</li>`).join('\n      ');
+      html += `\n<div class="desc-section">
+  <h3 class="desc-section-title"><i class="fas fa-door-open"></i> Open Houses</h3>
+  <ul>\n      ${items}\n    </ul>
+</div>`;
+    }
+  }
+
+  // Auction Location (only if meaningful — not just a sellers line or empty)
   if (auctionLocation && !/^online only$/i.test(auctionLocation)) {
     html += `\n<div class="desc-section" style="margin-bottom:18px;">
   <h3 class="desc-section-title"><i class="fas fa-map-marker-alt"></i> Auction Location</h3>
@@ -371,8 +382,13 @@ function parseDescription(raw) {
   // 8. Icon map for named sections
   const iconMap = {
     'PROPERTY DESCRIPTION': 'fa-home',
+    'PROPERTY ADDRESS': 'fa-map-marker-alt',
     'LEGAL DESCRIPTION': 'fa-file-alt',
+    'LAND FEATURES': 'fa-seedling',
     'REAL ESTATE TAXES': 'fa-receipt',
+    'MANNER OF AUCTION': 'fa-gavel',
+    'PERSONAL PROPERTY AUCTION': 'fa-boxes',
+    'TRACT': 'fa-map',
     'TERMS': 'fa-file-contract',
     'PICKUP': 'fa-box-open', 'REMOVAL': 'fa-box-open',
     'PAYMENT': 'fa-credit-card',
@@ -381,6 +397,7 @@ function parseDescription(raw) {
     'SHIPPING': 'fa-truck',
     'NOTE': 'fa-info-circle', 'NOTES': 'fa-info-circle',
     'DIRECTIONS': 'fa-road',
+    'LAND LOCATION': 'fa-directions',
   };
 
   // Title display (Title Case for multi-word, sentence case otherwise)
@@ -388,23 +405,54 @@ function parseDescription(raw) {
     return s.split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1).toLowerCase()).join(' ');
   }
 
-  // 9. Named sections
-  for (const sec of namedSections) {
+  // 9. Group sections: TRACT N = tract overview, TRACTS X LOCATION FROM Y = direction, LAND LOCATION FROM X = direction
+  const tractSections = namedSections.filter(s => /^TRACT \d/i.test(s.title));
+  const landLocSections = namedSections.filter(s =>
+    /^LAND LOCATION FROM/i.test(s.title) || /^TRACTS?\s+[\d,&\s]+LOCATION FROM/i.test(s.title)
+  );
+  const regularSections = namedSections.filter(s =>
+    !tractSections.includes(s) && !landLocSections.includes(s)
+  );
+
+  // Render LAND LOCATION FROM sections as a single grouped card
+  if (landLocSections.length > 0) {
+    const items = landLocSections.map(s =>
+      `<li><strong>${escH(titleCase(s.title.replace(/_/g,' ')))}</strong> &mdash; ${escH(s.body)}</li>`
+    ).join('\n      ');
+    html += `\n<div class="desc-section">
+  <h3 class="desc-section-title"><i class="fas fa-directions"></i> Directions</h3>
+  <ul>\n      ${items}\n    </ul>
+</div>`;
+  }
+
+  // Render TRACT sections as a single grouped card
+  if (tractSections.length > 0) {
+    const items = tractSections.map(s =>
+      `<li><strong>${escH(titleCase(s.title.replace(/_/g,' ')))}</strong> &mdash; ${escH(s.body)}</li>`
+    ).join('\n      ');
+    html += `\n<div class="desc-section">
+  <h3 class="desc-section-title"><i class="fas fa-map"></i> Tract Overview</h3>
+  <ul>\n      ${items}\n    </ul>
+</div>`;
+  }
+
+  // 10. Render remaining named sections
+  for (const sec of regularSections) {
     const body = sec.body.trim();
     if (!body) continue;
 
     // Determine icon
-    const iconKey = Object.keys(iconMap).find(k => sec.title.toUpperCase().startsWith(k)) || null;
+    const titleUpper = sec.title.toUpperCase();
+    const iconKey = Object.keys(iconMap).find(k => titleUpper.startsWith(k)) || null;
     const icon = iconKey ? iconMap[iconKey] : 'fa-info-circle';
     const titleDisplay = titleCase(sec.title.replace(/_/g,' '));
 
-    // For "LAND LOCATION FROM X" sections, accumulate them
-    // For PROPERTY DESCRIPTION, format as paragraph prose
-    // For TERMS, format as paragraph
-    // For LEGAL DESCRIPTION, format as paragraph in smaller text
-    const isLegal = sec.title.toUpperCase().includes('LEGAL');
-    const isTax = sec.title.toUpperCase().includes('TAX');
-    const isLandLoc = sec.title.toUpperCase().startsWith('LAND LOCATION');
+    // Skip PROPERTY ADDRESS — duplicates the page title
+    if (titleUpper === 'PROPERTY ADDRESS') continue;
+
+    // Classify section
+    const isLegal = titleUpper.includes('LEGAL');
+    const isTax = titleUpper.includes('TAX');
 
     let bodyHtml;
     if (isLegal) {
