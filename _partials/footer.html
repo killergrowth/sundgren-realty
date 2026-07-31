@@ -79,3 +79,122 @@
 </footer>
 
 <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
+
+<!-- Podium-Style Text Chat Widget (demo) -->
+<style>
+  .sg-chat-widget {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+    font-family: var(--wallox-font, 'Plus Jakarta Sans', sans-serif);
+  }
+  .sg-chat-bubble {
+    background: #fff;
+    border-radius: 16px 16px 4px 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,.18);
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    max-width: 240px;
+    opacity: 0;
+    transform: translateY(8px) scale(.95);
+    transition: opacity .3s ease, transform .3s ease;
+    pointer-events: none;
+  }
+  .sg-chat-bubble.visible {
+    opacity: 1;
+    transform: none;
+    pointer-events: auto;
+  }
+  .sg-chat-bubble img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+    border: 2px solid #FFD700;
+  }
+  .sg-chat-bubble-text {
+    font-size: 13px;
+    line-height: 1.45;
+    color: #1a1a1a;
+    font-weight: 500;
+  }
+  .sg-chat-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #FFD700;
+    color: #1a1a1a;
+    font-weight: 800;
+    font-size: 14px;
+    padding: 11px 20px;
+    border-radius: 999px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(0,0,0,.18);
+    text-decoration: none;
+    transition: transform .15s ease, box-shadow .15s ease;
+  }
+  .sg-chat-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,.22);
+  }
+  .sg-chat-btn i {
+    font-size: 16px;
+  }
+  .sg-chat-close {
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    font-size: 16px;
+    color: #999;
+    cursor: pointer;
+    background: none;
+    border: none;
+    line-height: 1;
+    padding: 0;
+  }
+  .sg-chat-close:hover { color: #333; }
+</style>
+
+<div class="sg-chat-widget" id="sg-chat-widget">
+  <div class="sg-chat-bubble" id="sg-chat-bubble" style="position:relative;">
+    <button class="sg-chat-close" id="sg-chat-close" aria-label="Close">&times;</button>
+    <img src="/images/from-live-site/agents/agent-36.jpg" alt="Phillip Solorio - Sundgren Realty">
+    <div class="sg-chat-bubble-text">Hi there, have a question? Text us here.</div>
+  </div>
+  <a href="sms:3163217112" class="sg-chat-btn" aria-label="Text us">
+    <i class="fas fa-comment-dots"></i> Text us
+  </a>
+</div>
+
+<script>
+(function(){
+  var bubble = document.getElementById('sg-chat-bubble');
+  var close = document.getElementById('sg-chat-close');
+  var widget = document.getElementById('sg-chat-widget');
+  if (!bubble || !close || !widget) return;
+  // Show bubble after 1.5s
+  setTimeout(function() { bubble.classList.add('visible'); }, 1500);
+  // Dismiss bubble on close button
+  close.addEventListener('click', function(e) {
+    e.stopPropagation();
+    bubble.classList.remove('visible');
+    // Don't show again this session
+    try { sessionStorage.setItem('sg-chat-dismissed','1'); } catch(e){}
+  });
+  // If dismissed earlier this session, don't show
+  try {
+    if (sessionStorage.getItem('sg-chat-dismissed')) {
+      bubble.style.display = 'none';
+    }
+  } catch(e){}
+})();
+</script>

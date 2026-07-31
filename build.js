@@ -70,6 +70,22 @@ function discoverAuctionPages() {
   return pages;
 }
 
+function discoverListingPages() {
+  const pages = [];
+  // Discover commercial subpages
+  const commercialDir = path.join(ROOT, 'commercial');
+  if (fs.existsSync(commercialDir)) {
+    fs.readdirSync(commercialDir, { withFileTypes: true }).forEach(entry => {
+      if (!entry.isDirectory()) return;
+      const slugIndex = path.join(commercialDir, entry.name, 'index.html');
+      if (fs.existsSync(slugIndex)) {
+        pages.push([slugIndex, path.join(DIST, 'commercial', entry.name, 'index.html')]);
+      }
+    });
+  }
+  return pages;
+}
+
 function buildSitemap() {
   const today = new Date().toISOString().split('T')[0];
   const baseUrl = 'https://sundgrenrealty.com';
@@ -96,7 +112,18 @@ function buildSitemap() {
     });
   }
 
-  const allUrls = [...staticUrls, ...auctionUrls];
+  // Collect commercial listing pages from dist
+  const commercialUrls = [];
+  const commercialDistDir = path.join(DIST, 'commercial');
+  if (fs.existsSync(commercialDistDir)) {
+    fs.readdirSync(commercialDistDir, { withFileTypes: true }).forEach(entry => {
+      if (entry.isDirectory()) {
+        commercialUrls.push({ url: `/commercial/${entry.name}/`, priority: '0.8', freq: 'weekly' });
+      }
+    });
+  }
+
+  const allUrls = [...staticUrls, ...auctionUrls, ...commercialUrls];
   const urlEntries = allUrls.map(u =>
     `  <url>\n    <loc>${baseUrl}${u.url}</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>${u.freq}</changefreq>\n    <priority>${u.priority}</priority>\n  </url>`
   ).join('\n');
@@ -132,6 +159,15 @@ function main() {
     const html = assemble(read(srcPath), header, footer);
     write(destPath, html);
     console.log(`  Built: auctions/${path.relative(path.join(DIST, 'auctions'), destPath)}`);
+    count++;
+  }
+
+  // Commercial listing subpages discovered from commercial/
+  const listingPages = discoverListingPages();
+  for (const [srcPath, destPath] of listingPages) {
+    const html = assemble(read(srcPath), header, footer);
+    write(destPath, html);
+    console.log(`  Built: commercial/${path.relative(path.join(DIST, 'commercial'), destPath)}`);
     count++;
   }
 
