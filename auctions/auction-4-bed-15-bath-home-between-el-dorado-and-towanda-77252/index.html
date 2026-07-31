@@ -17,8 +17,9 @@
   <meta name="twitter:image" content="retrievePhoto.html">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Event","name":"AUCTION: 4 Bed 1.5 Bath Home Between El Dorado and Towanda","startDate":"2022-03-22T17:00:00.000Z","endDate":"2022-03-29T21:00:00.000Z","eventAttendanceMode":"https://schema.org/MixedEventAttendanceMode","eventStatus":"https://schema.org/EventEnded","image":["retrievePhoto.html"],"description":"*AUCTION WILL BE ONLINE ONLY* Bidding will begin on March 22 PROPERTY ADDRESS: 4390 SW Highway 254, El Dorado, Kansas 67042 PROPERTY DESCRIPTION: Calling all...","organizer":{"@type":"Organization","name":"Sundgren Realty &amp; Auction","url":"https://sundgrenrealty.com"}}</script>
   <!-- SCHEMA:BreadcrumbList -->
-  <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="/images/apple-touch-icon.svg">
+  <link rel="icon" href="/images/favicon-black.png" type="image/png" media="(prefers-color-scheme: light)">
+  <link rel="icon" href="/images/favicon.png" type="image/png" media="(prefers-color-scheme: dark)">
+  <link rel="apple-touch-icon" href="/images/favicon.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/sundgren.css">
 </head>
@@ -56,9 +57,6 @@
             <div class="auction-detail-grid">
                 <div>
                     <h2 style="font-size:20px;font-weight:800;color:var(--dark);margin:0 0 16px;padding-bottom:10px;border-bottom:2px solid #FFD700;">About This Auction</h2>
-                    <div style="color:var(--text);line-height:1.8;">
-                        *AUCTION WILL BE ONLINE ONLY* Bidding will begin on March 22 PROPERTY ADDRESS: 4390 SW Highway 254, El Dorado, Kansas 67042 PROPERTY DESCRIPTION: Calling all investors, contractors, and owner-occupants looking for instant equity! 2021 Butler County valuation is 169,900! This 4 bedroom 1.5 bathroom home is located just minutes west of El Dorado and is ready for your TLC. The 1981 built home is 54′ x 28′ and offers a full basement for additional living space. Property also features a detached 2 car garage, covered back deck and fenced in backyard. LEGAL DESCRIPTION: Surface Only: Beginning 552.5 feet East of the Southwest Corner of the Northeast Quarter of Section 6, Township 26 South, Range 5 East of the 6th P.M., Butler County, Kansas; thence North parallel to the West line of the Northeast Quarter, 160 feet; thence East parallel to the South line of said Northeast Quarter,135 feet; thence South 160 feet; thence West 135 feet to the point of beginning. 2021 REAL ESTATE TAXES: $2135.14 TERMS: Bidding will close at 4:00 PM on Tuesday March 29, 2022 or once no additional bids have been placed for 2 minutes. There will be a 10% buyers premium added to the high bid to determine the contract price. The successful high bidder shall be required to sign the real estate purchase contract linked above and be purchasing the property subject to the preliminary title search report also linked above. Non refundable earnest money is $5,000 due within 24 hours after the conclusion of the auction via check delivered to 218 E Central Ave, El Dorado Kansas unless other arrangements have been made by Buyer prior to bidding. The balance shall be due upon Sellers submission of merchantable title and closing. Closing date shall be on or before April 29, 2022. Closing fee and title Insurance fee will be split 50/50 between Seller and Buyer. Selling subject to easements, restrictions, roadways and rights of way. This property is not selling subject to financing, inspections, or appraisal. Interested buyers need to view the property prior to the date of the auction and have financing available and any inspections performed prior to bidding. All pertinent information is available upon request.
-                    </div>
                     
     <div class="photo-grid">
         <img src="retrievePhoto.html" alt="Property photo 1" loading="lazy" data-idx="0" class="sg-gallery-thumb" tabindex="0">
@@ -95,6 +93,43 @@
       document.addEventListener('keydown',function(e){if(!lb.classList.contains('open'))return;if(e.key==='Escape')close();if(e.key==='ArrowLeft')show(cur-1);if(e.key==='ArrowRight')show(cur+1);});
     })();
     </script>
+                    <div style="color:var(--text);line-height:1.8;margin-top:24px">
+                        <style>
+    .desc-section { margin-bottom:18px; padding:16px 20px; background:var(--bg-light); border-radius:8px; border-left:4px solid var(--yellow); }
+    .desc-section:last-child { margin-bottom:0; }
+    .desc-section-title { font-size:13px; font-weight:700; text-transform:uppercase; letter-spacing:.06em; color:var(--dark); margin:0 0 10px; display:flex; align-items:center; gap:8px; }
+    .desc-section-title i { color:var(--yellow-dark); font-size:13px; }
+    .desc-section p { font-size:14px; line-height:1.75; color:var(--text); margin:0; }
+    .desc-section ul { margin:0; padding-left:0; list-style:none; display:flex; flex-direction:column; gap:6px; }
+    .desc-section ul li { display:flex; align-items:flex-start; gap:8px; font-size:14px; line-height:1.6; color:var(--text); }
+    .desc-section ul li::before { content:''; display:inline-block; width:8px; height:8px; border-radius:50%; background:var(--yellow); flex-shrink:0; margin-top:6px; }
+    .desc-sellers { font-size:13px; color:var(--text-light); margin:0 0 16px; font-style:italic; }
+    .desc-online-note { display:flex; align-items:center; gap:8px; background:#fff8e1; border:1px solid var(--yellow); border-radius:6px; padding:10px 14px; font-size:13px; color:var(--dark); margin-bottom:16px; }
+    .desc-online-note i { color:var(--yellow-dark); }
+    .lot-table { width:100%; border-collapse:collapse; font-size:14px; }
+    .lot-table th { background:var(--dark); color:#fff; padding:8px 12px; text-align:left; font-size:12px; text-transform:uppercase; letter-spacing:.05em; }
+    .lot-table td { padding:8px 12px; border-bottom:1px solid var(--border); color:var(--text); vertical-align:top; }
+    .lot-table tr:last-child td { border-bottom:none; }
+    .lot-table tr:nth-child(even) td { background:#f9f9f9; }
+  </style>
+<p style="margin-bottom:14px;font-size:14px;line-height:1.75;color:var(--text);">*AUCTION WILL BE ONLINE ONLY* Bidding will begin on March 22 PROPERTY ADDRESS: 4390 SW Highway 254, El Dorado, Kansas 67042</p>
+<div class="desc-section">
+  <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
+  <p>Calling all investors, contractors, and owner-occupants looking for instant equity! 2021 Butler County valuation is 169,900! This 4 bedroom 1.5 bathroom home is located just minutes west of El Dorado and is ready for your TLC. The 1981 built home is 54′ x 28′ and offers a full basement for additional living space. Property also features a detached 2 car garage, covered back deck and fenced in backyard.</p>
+</div>
+<div class="desc-section">
+  <h3 class="desc-section-title"><i class="fas fa-file-alt"></i> Legal Description</h3>
+  <p style="font-size:13px;color:var(--text-light);line-height:1.7;">Surface Only: Beginning 552.5 feet East of the Southwest Corner of the Northeast Quarter of Section 6, Township 26 South, Range 5 East of the 6th P.M., Butler County, Kansas; thence North parallel to the West line of the Northeast Quarter, 160 feet; thence East parallel to the South line of said Northeast Quarter,135 feet; thence South 160 feet; thence West 135 feet to the point of beginning. 2021</p>
+</div>
+<div class="desc-section">
+  <h3 class="desc-section-title"><i class="fas fa-receipt"></i> Real Estate Taxes</h3>
+  <p style="font-size:15px;font-weight:700;color:var(--dark);">$2135.14</p>
+</div>
+<div class="desc-section">
+  <h3 class="desc-section-title"><i class="fas fa-file-contract"></i> Terms</h3>
+  <p>Bidding will close at 4:00 PM on Tuesday March 29, 2022 or once no additional bids have been placed for 2 minutes. There will be a 10% buyers premium added to the high bid to determine the contract price. The successful high bidder shall be required to sign the real estate purchase contract linked above and be purchasing the property subject to the preliminary title search report also linked above. Non refundable earnest money is $5,000 due within 24 hours after the conclusion of the auction via check delivered to 218 E Central Ave, El Dorado Kansas unless other arrangements have been made by Buyer prior to bidding. The balance shall be due upon Sellers submission of merchantable title and closing. Closing date shall be on or before April 29, 2022. Closing fee and title Insurance fee will be split 50/50 between Seller and Buyer. Selling subject to easements, restrictions, roadways and rights of way. This property is not selling subject to financing, inspections, or appraisal. Interested buyers need to view the property prior to the date of the auction and have financing available and any inspections performed prior to bidding. All pertinent information is available upon request.</p>
+</div>
+                    </div>
                 </div>
                 <div>
     <div class="info-card">
