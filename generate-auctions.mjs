@@ -11,8 +11,8 @@
  * State is tracked in auctions/_state.json
  *
  * Usage:
- *   node generate-auctions.mjs            (source mode — writes to auctions/, run build.js after)
- *   node generate-auctions.mjs --direct   (direct mode — writes assembled pages to dist/)
+ *   node generate-auctions.mjs            (source mode â€” writes to auctions/, run build.js after)
+ *   node generate-auctions.mjs --direct   (direct mode â€” writes assembled pages to dist/)
  */
 
 import fs   from 'fs';
@@ -21,7 +21,7 @@ import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-// ── Config ────────────────────────────────────────────────────────────────
+// â”€â”€ Config â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const BW_BASE_URL = 'https://sundgrenrealty.bidwrangler.com';
 const BW_FEED_URL = `${BW_BASE_URL}/api/feed/all`;
 const BW_FIELDS   = [
@@ -41,7 +41,7 @@ const DIRECT_MODE = process.argv.includes('--direct');
 // Brand colors (Sundgren)
 const YELLOW = '#FFD700';
 
-// ── Helpers ──────────────────────────────────────────────────────────────
+// â”€â”€ Helpers â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function slugify(name, id) {
   const base = String(name || '')
     .toLowerCase()
@@ -110,7 +110,7 @@ function bestImage(images, size = 'lg') {
   return img[size] || img.sm || img.xs || '';
 }
 
-// ── API ───────────────────────────────────────────────────────────────────
+// â”€â”€ API â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 async function fetchAllAuctions() {
   const url = `${BW_FEED_URL}?fields=${BW_FIELDS}&page=1&per_page=100&include_syndicated=true&version=2`;
   const res  = await fetch(url, { headers: { Accept: 'application/json' } });
@@ -144,7 +144,7 @@ async function fetchAllAuctions() {
   return all;
 }
 
-// ── State ─────────────────────────────────────────────────────────────────
+// â”€â”€ State â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function loadState() {
   if (fs.existsSync(STATE_FILE)) {
     try { return JSON.parse(fs.readFileSync(STATE_FILE, 'utf8')); } catch {}
@@ -157,7 +157,7 @@ function saveState(state) {
   fs.writeFileSync(STATE_FILE, JSON.stringify(state, null, 2), 'utf8');
 }
 
-// ── Photo Grid + Lightbox ────────────────────────────────────────────────
+// â”€â”€ Photo Grid + Lightbox â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function renderPhotoGrid(images) {
   if (!images || images.length === 0) return '';
   const srcs = images.slice(0, 20).map(img => img.xl || img.lg || img.sm || img.xs || '').filter(Boolean);
@@ -197,7 +197,7 @@ function renderPhotoGrid(images) {
   return `\n    <div class="photo-grid">\n${thumbs}\n    </div>${lightbox}${script}`;
 }
 
-// ── Info Card ─────────────────────────────────────────────────────────────
+// â”€â”€ Info Card â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function renderInfoCard(auction) {
   const active  = isActive(auction.status);
   const startDt = formatDateTime(auction.starts_at);
@@ -224,18 +224,18 @@ ${cta}
     </div>`;
 }
 
-// ── Description Parser ──────────────────────────────────────────────────────
+// â”€â”€ Description Parser â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function parseDescription(raw) {
   // 1. Strip HTML tags from formatted descriptions
   let text = String(raw || '').replace(/<[^>]+>/g, ' ');
-  // 2. Fix encoding artifacts: Â + NBSP (\u00c2\u00a0) and similar
+  // 2. Fix encoding artifacts: Ã‚ + NBSP (\u00c2\u00a0) and similar
   text = text
     .replace(/\u00c2\u00a0/g, ' ')
     .replace(/\u00c2/g, '')
     .replace(/\u00a0/g, ' ')
-    .replace(/A,A[\u00b0\u00a0°\s]/g, ' ')
-    .replace(/Â /g, ' ')
-    .replace(/Â/g, '')
+    .replace(/A,A[\u00b0\u00a0Â°\s]/g, ' ')
+    .replace(/Ã‚ /g, ' ')
+    .replace(/Ã‚/g, '')
     .replace(/&amp;/g, '&')
     .replace(/&lt;/g, '<')
     .replace(/&gt;/g, '>')
@@ -262,7 +262,7 @@ function parseDescription(raw) {
   let preLot = '';
   let lotBlock = '';
 
-  // Walk parts — odd indexes are section names, even are content
+  // Walk parts â€” odd indexes are section names, even are content
   let i = 0;
   // If parts[0] is non-empty content before first keyword
   let preContent = parts[0].trim();
@@ -335,7 +335,7 @@ function parseDescription(raw) {
           ${lotHtml}
         </div>`;
     } else {
-      // No section title — render as plain intro paragraph
+      // No section title â€” render as plain intro paragraph
       if (bodyText) html += `<p style="margin-bottom:16px;">${esc(bodyText)}</p>`;
       if (lotHtml) html += lotHtml;
     }
@@ -358,7 +358,7 @@ function parseDescription(raw) {
   return css + html;
 }
 
-// ── Individual Auction Page ───────────────────────────────────────────────
+// â”€â”€ Individual Auction Page â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function renderAuctionPage(auction) {
   const slug      = slugify(auction.name, auction.id);
   const heroImg   = bestImage(auction.featured_images, 'lg');
@@ -426,8 +426,9 @@ function renderAuctionPage(auction) {
   <meta name="twitter:image" content="https://sundgren-realty.pages.dev/images/og-preview.png">`}
   <script type="application/ld+json">${schema}</script>
   <!-- SCHEMA:BreadcrumbList -->
-  <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="/images/apple-touch-icon.svg">
+  <link rel="icon" href="/images/favicon-black.png" type="image/png" media="(prefers-color-scheme: light)">
+  <link rel="icon" href="/images/favicon.png" type="image/png" media="(prefers-color-scheme: dark)">
+  <link rel="apple-touch-icon" href="/images/favicon.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/sundgren.css">
 </head>
@@ -492,7 +493,7 @@ ${bwEmbed}
 `;
 }
 
-// ── Auction Index Page ────────────────────────────────────────────────────
+// â”€â”€ Auction Index Page â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function renderCard(auction, slug) {
   const imgUrl   = bestImage(auction.featured_images, 'sm');
   const startDt  = formatDateTime(auction.starts_at);
@@ -570,8 +571,9 @@ ${pastCards}
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://sundgren-realty.pages.dev/images/og-preview.png">
   <!-- SCHEMA:BreadcrumbList -->
-  <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="/images/apple-touch-icon.svg">
+  <link rel="icon" href="/images/favicon-black.png" type="image/png" media="(prefers-color-scheme: light)">
+  <link rel="icon" href="/images/favicon.png" type="image/png" media="(prefers-color-scheme: dark)">
+  <link rel="apple-touch-icon" href="/images/favicon.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/sundgren.css">
 </head>
@@ -625,7 +627,7 @@ ${pastSection}
 `;
 }
 
-// ── Direct Mode Helpers ───────────────────────────────────────────────────
+// â”€â”€ Direct Mode Helpers â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function loadPartials() {
   const headerPath = path.join(__dirname, '_partials', 'header.html');
   const footerPath = path.join(__dirname, '_partials', 'footer.html');
@@ -638,7 +640,7 @@ function assemblePage(html, header, footer) {
   return html.replace('<!-- HEADER -->', header).replace('<!-- FOOTER -->', footer);
 }
 
-// ── Main ──────────────────────────────────────────────────────────────────
+// â”€â”€ Main â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 async function main() {
   console.log(`generate-auctions.mjs starting... (mode: ${DIRECT_MODE ? 'direct -> dist/' : 'source -> auctions/'})`);
 
@@ -657,7 +659,7 @@ async function main() {
   auctions = auctions.filter(a => a.name && !a.name.includes('WWW.SUNDGREN.COM'));
 
   if (!auctions.length) {
-    console.warn('No auctions returned — aborting.');
+    console.warn('No auctions returned â€” aborting.');
     process.exit(0);
   }
 
