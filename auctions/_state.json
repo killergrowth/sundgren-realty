@@ -1,5 +1,5 @@
 {
-  "lastFetch": "2026-07-21T00:54:17.367Z",
+  "lastFetch": "2026-07-31T19:12:20.770Z",
   "auctions": {
     "24096": {
       "slug": "test-auction-24096",
@@ -2757,15 +2757,17 @@
     },
     "164323": {
       "slug": "1139-acres-south-of-newton-in-harvey-county-kansas-2-tracts-164323",
-      "status": "accepting_bids",
+      "status": "complete",
       "name": "113.9 Acres South of Newton in Harvey County, Kansas – 2 Tracts Tillable, Trees & Pond",
-      "generated": "2026-07-21T00:54:17.368Z"
+      "generated": "2026-07-21T00:54:17.368Z",
+      "updated": "2026-07-31T19:12:20.801Z"
     },
     "164694": {
       "slug": "334-acres-near-benton-butlersedgwick-county-line-whitewater-164694",
-      "status": "pending",
+      "status": "complete",
       "name": "33.4 Acres Near Benton, Butler/Sedgwick County Line: Whitewater Creek, Trees & Farm Ground",
-      "generated": "2026-07-21T00:54:17.390Z"
+      "generated": "2026-07-21T00:54:17.390Z",
+      "updated": "2026-07-31T19:12:20.799Z"
     },
     "164750": {
       "slug": "fishing-boat-tackle-tools-household-auction-el-dorado-164750",
@@ -2775,9 +2777,10 @@
     },
     "165183": {
       "slug": "158-acres-pasture-ponds-trees-kansas-whitetail-deer-elk-coun-165183",
-      "status": "pending",
+      "status": "accepting_bids",
       "name": "158 Acres Pasture, Ponds, Trees & Kansas Whitetail Deer – Elk County, Kansas",
-      "generated": "2026-07-21T00:54:17.392Z"
+      "generated": "2026-07-21T00:54:17.392Z",
+      "updated": "2026-07-31T19:12:20.771Z"
     },
     "165218": {
       "slug": "dodge-truck-guns-trailers-tools-more-live-auction-near-augus-165218",
@@ -2805,9 +2808,34 @@
     },
     "165931": {
       "slug": "2011-ford-edge-suv-guns-ammo-auction-el-dorado-165931",
-      "status": "accepting_bids",
+      "status": "complete",
       "name": "2011 Ford Edge SUV, Guns, Ammo Auction - El Dorado",
-      "generated": "2026-07-21T00:54:17.387Z"
+      "generated": "2026-07-21T00:54:17.387Z",
+      "updated": "2026-07-31T19:12:20.800Z"
+    },
+    "166309": {
+      "slug": "chevy-truck-hustler-mower-tools-antique-furniture-john-deere-166309",
+      "status": "pending",
+      "name": "Chevy Truck, Hustler Mower, Tools, Antique Furniture, John Deere Memorabilia & Household Items – Live Auction in Mount Hope, KS",
+      "generated": "2026-07-31T19:12:20.794Z"
+    },
+    "166314": {
+      "slug": "john-deere-tractors-mower-side-by-side-guns-tools-household-166314",
+      "status": "accepting_bids",
+      "name": "John Deere Tractors, Mower, Side by Side, Guns, Tools & Household Items – Near Douglass, KS",
+      "generated": "2026-07-31T19:12:20.792Z"
+    },
+    "166365": {
+      "slug": "8227-n-rock-rd-walton-ks-155-acres-harvey-county-farmstead-166365",
+      "status": "pending",
+      "name": "8227 N Rock Rd., Walton, KS – 155 Acres – Harvey County Farmstead",
+      "generated": "2026-07-31T19:12:20.795Z"
+    },
+    "166378": {
+      "slug": "351-acres-near-douglass-in-butler-county-kansas-selling-in-4-166378",
+      "status": "pending",
+      "name": "351 Acres Near Douglass in Butler County, Kansas Selling in 4 Tracts",
+      "generated": "2026-07-31T19:12:20.796Z"
     }
   }
 }

@@ -1,0 +1,18 @@
+  Built agent: /agents/joe-sundgren/
+  Built agent: /agents/jeremy-sundgren/
+  Built agent: /agents/phillip-solorio/
+  Built agent: /agents/deanne-woodard/
+  Built agent: /agents/kelsey-sundgren/
+  Built agent: /agents/rick-remsberg/
+  Built agent: /agents/barrett-simon/
+  Built agent: /agents/audrey-reese/
+  Built agent: /agents/ashleigh-casper/
+  Built agent: /agents/yousef-jesri/
+  Built agent: /agents/tad-woodard/
+  Built agent: /agents/erin-jones/
+  Built agent: /agents/steven-hall/
+  Built agent: /agents/susan-sundgren-worrell/
+  Built agent: /agents/tyler-nordman/
+
+Done. 15 agent pages written.
+Now run: node build.js to rebuild dist/

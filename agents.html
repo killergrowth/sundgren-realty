@@ -3,14 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Agents | Sundgren Realty &amp; Auction | El Dorado, KS</title>
-  <meta name="description" content="Meet the experienced real estate agents and auctioneers at Sundgren Realty in El Dorado, KS. Specialists in farm, land, residential, and commercial property in South Central Kansas.">
+  <title>Our Agents | Sundgren Realty &amp; Auction | El Dorado, KS</title>
+  <meta name="description" content="Meet the experienced real estate agents and auctioneers at Sundgren Realty &amp; Auction in El Dorado, KS. Over 40 years serving South Central Kansas.">
   <meta name="robots" content="noindex, nofollow">
   <link rel="canonical" href="https://sundgrenrealty.com/agents/">
-  <meta property="og:title" content="Agents | Sundgren Realty &amp; Auction | El Dorado, KS">
-  <meta property="og:description" content="Meet the experienced real estate agents and auctioneers at Sundgren Realty.">
+  <meta property="og:title" content="Our Agents | Sundgren Realty &amp; Auction | El Dorado, KS">
+  <meta property="og:description" content="Meet the experienced real estate agents and auctioneers at Sundgren Realty &amp; Auction.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://sundgrenrealty.com/agents/">
+  <meta property="og:site_name" content="Sundgren Realty &amp; Auction">
   <meta name="twitter:card" content="summary_large_image">
   <meta property="og:image" content="https://sundgren-realty.pages.dev/images/og-preview.png">
   <meta property="og:image:secure_url" content="https://sundgren-realty.pages.dev/images/og-preview.png">
@@ -18,11 +19,102 @@
   <meta property="og:image:height" content="1152">
   <meta name="twitter:image" content="https://sundgren-realty.pages.dev/images/og-preview.png">
   <!-- SCHEMA:BreadcrumbList -->
-  <!-- SCHEMA:WebPage -->
-  <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/images/favicon.png" type="image/png" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="/images/sun-favicon-dark.png" type="image/png" media="(prefers-color-scheme: light)">
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.svg">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/sundgren.css">
+  <style>
+    .agents-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 28px;
+      margin-top: 40px;
+    }
+    .agent-card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 16px rgba(0,0,0,.08);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: box-shadow .2s;
+    }
+    .agent-card:hover { box-shadow: 0 6px 28px rgba(0,0,0,.14); }
+    .agent-card-photo {
+      width: 100%;
+      aspect-ratio: 3/4;
+      object-fit: cover;
+      object-position: top;
+      display: block;
+    }
+    .agent-card-photo-placeholder {
+      width: 100%;
+      aspect-ratio: 3/4;
+      background: var(--bg-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .agent-card-photo-placeholder i { font-size: 64px; color: #ccc; }
+    .agent-card-body {
+      padding: 20px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .agent-card-name {
+      font-family: var(--font-serif);
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--dark);
+      margin: 0 0 4px;
+    }
+    .agent-card-title {
+      font-size: 13px;
+      color: var(--text-light);
+      margin: 0 0 14px;
+      font-style: italic;
+    }
+    .agent-card-contacts {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .agent-card-contacts li {
+      font-size: 13px;
+      color: var(--dark);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .agent-card-contacts li i { color: var(--yellow); font-size: 13px; width: 14px; flex-shrink: 0; }
+    .agent-card-contacts a { color: var(--dark); text-decoration: none; }
+    .agent-card-contacts a:hover { color: var(--primary); text-decoration: underline; }
+    .agent-card-excerpt {
+      font-size: 13px;
+      color: var(--text-light);
+      line-height: 1.6;
+      margin: 0 0 16px;
+      flex: 1;
+    }
+    .agent-card-footer { margin-top: auto; }
+    @media (max-width: 640px) {
+      .agents-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+      }
+      .agent-card-contacts { display: none; }
+      .agent-card-excerpt { display: none; }
+      .agent-card-name { font-size: 14px; }
+      .agent-card-title { font-size: 12px; margin-bottom: 10px; }
+      .agent-card-body { padding: 12px; }
+      .agent-card-footer .btn-primary { font-size: 12px; padding: 8px 12px; display: block; text-align: center; }
+    }
+  </style>
 </head>
 <body>
 
@@ -44,185 +136,285 @@
 
   <section class="section">
     <div class="container">
-
+      <div class="section-title">
+        <span class="eyebrow">The Team</span>
+        <h2>Meet Our Agents</h2>
+        <hr class="divider">
+        <p style="max-width:640px;margin:0 auto;">Over 40 years of expertise in residential, land, farm, ranch, commercial, and auction real estate across South Central Kansas.</p>
+      </div>
 
       <div class="agents-grid">
 
         <!-- Joe Sundgren -->
         <div class="agent-card">
-          <img src="/images/agents/joe-sundgren.jpg" alt="Joe Sundgren" class="agent-photo">
-          <div class="agent-info">
-            <h2 class="agent-name">Joe Sundgren</h2>
-            <p class="agent-title">Founder &amp; Broker | Auctioneer</p>
-            <p class="agent-bio">In the auction, real estate and appraisal business since 1977. Founder and broker of Sundgren Realty &amp; Auction. Missouri Auction School 1976, Kansas State University 1977.</p>
-            <a href="/contact-us/" class="agent-btn">Contact</a>
+          <img src="/images/from-live-site/agents/agent-52.jpg" alt="Joe Sundgren - Broker, Auctioneer" class="agent-card-photo">
+          <div class="agent-card-body">
+            <h2 class="agent-card-name">Joe Sundgren</h2>
+            <p class="agent-card-title">Founder &amp; Broker | Auctioneer</p>
+            <ul class="agent-card-contacts">
+              <li><i class="fas fa-phone"></i><a href="tel:3163777112">Cell: (316) 377-7112</a></li>
+              <li><i class="fas fa-building"></i><a href="tel:3163217112">Office: (316) 321-7112</a></li>
+              <li><i class="fas fa-envelope"></i><a href="mailto:joe@sundgren.com">joe@sundgren.com</a></li>
+            </ul>
+            <p class="agent-card-excerpt">Founder and broker of Sundgren Realty &amp; Auction since 1977. Licensed auctioneer (Missouri Auction School 1976, KSU 1977) with decades of premier land, ranch, and property auction experience across South Central Kansas.</p>
+            <div class="agent-card-footer">
+              <a href="/agents/joe-sundgren/" class="btn-primary" style="display:inline-block;padding:10px 20px;font-size:13px;">View Profile <i class="fas fa-arrow-right" style="margin-left:6px;"></i></a>
+            </div>
           </div>
         </div>
 
         <!-- Jeremy Sundgren -->
         <div class="agent-card">
-          <img src="/images/agents/jeremy-sundgren.jpg" alt="Jeremy Sundgren" class="agent-photo">
-          <div class="agent-info">
-            <h2 class="agent-name">Jeremy Sundgren</h2>
-            <p class="agent-title">Broker | Auctioneer | 2025 Land Star Top Producer</p>
-            <p class="agent-bio">#1 agent by sales volume in South Central Kansas 2022&#8211;2024. Over 160,000 acres and nearly $1 Billion in sales volume. Licensed Broker &amp; Auctioneer.</p>
-            <a href="/contact-us/" class="agent-btn">Contact</a>
+          <img src="/images/from-live-site/agents/agent-27.jpg" alt="Jeremy Sundgren - Broker, Auctioneer" class="agent-card-photo">
+          <div class="agent-card-body">
+            <h2 class="agent-card-name">Jeremy Sundgren</h2>
+            <p class="agent-card-title">Broker | Auctioneer | 2025 Land Star Top Producer</p>
+            <ul class="agent-card-contacts">
+              <li><i class="fas fa-phone"></i><a href="tel:3163770013">Cell: (316) 377-0013</a></li>
+              <li><i class="fas fa-building"></i><a href="tel:3163217112">Office: (316) 321-7112</a></li>
+              <li><i class="fas fa-envelope"></i><a href="mailto:jeremy@sundgren.com">jeremy@sundgren.com</a></li>
+            </ul>
+            <p class="agent-card-excerpt">#1 agent by sales volume in South Central Kansas 2022&#8211;2024. Over 160,000 acres and nearly $1 billion in sales volume. Licensed Broker &amp; Auctioneer.</p>
+            <div class="agent-card-footer">
+              <a href="/agents/jeremy-sundgren/" class="btn-primary" style="display:inline-block;padding:10px 20px;font-size:13px;">View Profile <i class="fas fa-arrow-right" style="margin-left:6px;"></i></a>
+            </div>
           </div>
         </div>
 
         <!-- Phillip Solorio -->
         <div class="agent-card">
-          <img src="/images/agents/phillip-solorio.jpg" alt="Phillip Solorio" class="agent-photo">
-          <div class="agent-info">
-            <h2 class="agent-name">Phillip Solorio</h2>
-            <p class="agent-title">Real Estate Agent</p>
-            <p class="agent-bio">Lifelong El Dorado resident. BS in Business Administration from Wichita State University. Specializes in local residential and land sales.</p>
-            <a href="/contact-us/" class="agent-btn">Contact</a>
+          <img src="/images/from-live-site/agents/agent-36.jpg" alt="Phillip Solorio - Real Estate Agent" class="agent-card-photo">
+          <div class="agent-card-body">
+            <h2 class="agent-card-name">Phillip Solorio</h2>
+            <p class="agent-card-title">Real Estate Agent</p>
+            <ul class="agent-card-contacts">
+              <li><i class="fas fa-phone"></i><a href="tel:3163230218">Cell: (316) 323-0218</a></li>
+              <li><i class="fas fa-building"></i><a href="tel:3163217112">Office: (316) 321-7112</a></li>
+              <li><i class="fas fa-envelope"></i><a href="mailto:phillip@sundgren.com">phillip@sundgren.com</a></li>
+            </ul>
+            <p class="agent-card-excerpt">Lifelong El Dorado resident. BS in Business Administration from Wichita State University. Specializes in local residential and land sales.</p>
+            <div class="agent-card-footer">
+              <a href="/agents/phillip-solorio/" class="btn-primary" style="display:inline-block;padding:10px 20px;font-size:13px;">View Profile <i class="fas fa-arrow-right" style="margin-left:6px;"></i></a>
+            </div>
           </div>
         </div>
 
         <!-- Deanne Woodard -->
         <div class="agent-card">
-          <img src="/images/agents/deanne-woodard.jpg" alt="Deanne Woodard" class="agent-photo">
-          <div class="agent-info">
-            <h2 class="agent-name">Deanne Woodard</h2>
-            <p class="agent-title">Associate Broker | Team Lead &#8211; Deanne Woodard Team</p>
-            <p class="agent-bio">El Dorado native helping clients find their slice of Kansas. Associate Broker and Team Lead at the Deanne Woodard Team of Sundgren Realty.</p>
-            <a href="/contact-us/" class="agent-btn">Contact</a>
+          <img src="/images/from-live-site/agents/agent-18.jpg" alt="Deanne Woodard - Associate Broker" class="agent-card-photo">
+          <div class="agent-card-body">
+            <h2 class="agent-card-name">Deanne Woodard</h2>
+            <p class="agent-card-title">Associate Broker | Team Lead &#8211; Deanne Woodard Team</p>
+            <ul class="agent-card-contacts">
+              <li><i class="fas fa-phone"></i><a href="tel:3163239238">Cell: (316) 323-9238</a></li>
+              <li><i class="fas fa-building"></i><a href="tel:3163217112">Office: (316) 321-7112</a></li>
+              <li><i class="fas fa-envelope"></i><a href="mailto:deanne@sundgren.com">deanne@sundgren.com</a></li>
+            </ul>
+            <p class="agent-card-excerpt">El Dorado native helping clients find their slice of Kansas. Associate Broker and Team Lead of the Deanne Woodard Team of Sundgren Realty.</p>
+            <div class="agent-card-footer">
+              <a href="/agents/deanne-woodard/" class="btn-primary" style="display:inline-block;padding:10px 20px;font-size:13px;">View Profile <i class="fas fa-arrow-right" style="margin-left:6px;"></i></a>
+            </div>
           </div>
         </div>
 
         <!-- Kelsey Sundgren -->
         <div class="agent-card">
-          <img src="/images/agents/kelsey-sundgren.jpg" alt="Kelsey Sundgren" class="agent-photo">
-          <div class="agent-info">
-            <h2 class="agent-name">Kelsey Sundgren</h2>
-            <p class="agent-title">Real Estate Agent</p>
-            <p class="agent-bio">El Dorado native with over 10 years in residential sales. Specializes in Butler, Sedgwick, and Greenwood Counties.</p>
-            <a href="/contact-us/" class="agent-btn">Contact</a>
+          <img src="/images/from-live-site/agents/agent-13.jpg" alt="Kelsey Sundgren - Realtor" class="agent-card-photo">
+          <div class="agent-card-body">
+            <h2 class="agent-card-name">Kelsey Sundgren</h2>
+            <p class="agent-card-title">Realtor</p>
+            <ul class="agent-card-contacts">
+              <li><i class="fas fa-phone"></i><a href="tel:3162449567">Cell: (316) 244-9567</a></li>
+              <li><i class="fas fa-building"></i><a href="tel:3163217112">Office: (316) 321-7112</a></li>
+              <li><i class="fas fa-envelope"></i><a href="mailto:kelsey@sundgren.com">kelsey@sundgren.com</a></li>
+            </ul>
+            <p class="agent-card-excerpt">El Dorado native with 10+ years in residential sales across Butler, Sedgwick, and Greenwood Counties. 2011 BCBR Rookie of the Year. President&#8217;s Club member.</p>
+            <div class="agent-card-footer">
+              <a href="/agents/kelsey-sundgren/" class="btn-primary" style="display:inline-block;padding:10px 20px;font-size:13px;">View Profile <i class="fas fa-arrow-right" style="margin-left:6px;"></i></a>
+            </div>
           </div>
         </div>
 
         <!-- Rick Remsberg -->
         <div class="agent-card">
-          <img src="/images/agents/rick-remsberg.jpg" alt="Rick Remsberg" class="agent-photo">
-          <div class="agent-info">
-            <h2 class="agent-name">Rick Remsberg</h2>
-            <p class="agent-title">Auctioneer | Real Estate Agent</p>
-            <p class="agent-bio">Auctioneer and real estate agent since 1999. Experienced in rural and residential markets, livestock, estate, and farm machinery auctions.</p>
-            <a href="/contact-us/" class="agent-btn">Contact</a>
+          <img src="/images/from-live-site/agents/agent-43.jpg" alt="Rick Remsberg - Auctioneer & Realtor" class="agent-card-photo">
+          <div class="agent-card-body">
+            <h2 class="agent-card-name">Rick Remsberg</h2>
+            <p class="agent-card-title">Auctioneer &amp; Realtor</p>
+            <ul class="agent-card-contacts">
+              <li><i class="fas fa-phone"></i><a href="tel:3163225391">Cell: (316) 322-5391</a></li>
+              <li><i class="fas fa-building"></i><a href="tel:3163217112">Office: (316) 321-7112</a></li>
+              <li><i class="fas fa-envelope"></i><a href="mailto:rick@sundgren.com">rick@sundgren.com</a></li>
+            </ul>
+            <p class="agent-card-excerpt">Auctioneer &amp; Realtor since 1999. Lifelong Butler County rancher with deep experience in livestock, estate, farm machinery, and charity auctions.</p>
+            <div class="agent-card-footer">
+              <a href="/agents/rick-remsberg/" class="btn-primary" style="display:inline-block;padding:10px 20px;font-size:13px;">View Profile <i class="fas fa-arrow-right" style="margin-left:6px;"></i></a>
+            </div>
           </div>
         </div>
 
         <!-- Barrett Simon -->
         <div class="agent-card">
-          <img src="/images/agents/barrett-simon.jpg" alt="Barrett Simon" class="agent-photo">
-          <div class="agent-info">
-            <h2 class="agent-name">Barrett Simon</h2>
-            <p class="agent-title">Real Estate Agent</p>
-            <p class="agent-bio">Butler County native. Animal Science degrees from Butler Community College and Kansas State University. Competed nationally in livestock judging.</p>
-            <a href="/contact-us/" class="agent-btn">Contact</a>
+          <img src="/images/from-live-site/agents/agent-39.jpg" alt="Barrett Simon - Auctioneer & Realtor" class="agent-card-photo">
+          <div class="agent-card-body">
+            <h2 class="agent-card-name">Barrett Simon</h2>
+            <p class="agent-card-title">Auctioneer &amp; Realtor</p>
+            <ul class="agent-card-contacts">
+              <li><i class="fas fa-phone"></i><a href="tel:3164521792">Cell: (316) 452-1792</a></li>
+              <li><i class="fas fa-building"></i><a href="tel:3163217112">Office: (316) 321-7112</a></li>
+              <li><i class="fas fa-envelope"></i><a href="mailto:barrett@sundgren.com">barrett@sundgren.com</a></li>
+            </ul>
+            <p class="agent-card-excerpt">Butler County native with KSU Animal Science degrees. Multi-generation Flint Hills rancher with passion for grazing land, ranchland, and rural property sales.</p>
+            <div class="agent-card-footer">
+              <a href="/agents/barrett-simon/" class="btn-primary" style="display:inline-block;padding:10px 20px;font-size:13px;">View Profile <i class="fas fa-arrow-right" style="margin-left:6px;"></i></a>
+            </div>
           </div>
         </div>
 
         <!-- Audrey Reese -->
         <div class="agent-card">
-          <img src="/images/agents/audrey-reese.jpg" alt="Audrey Reese" class="agent-photo">
-          <div class="agent-info">
-            <h2 class="agent-name">Audrey Reese</h2>
-            <p class="agent-title">Realtor</p>
-            <p class="agent-bio">Office Manager turned Realtor. Responsive, client-focused, and dedicated to making the home buying and selling process a great experience.</p>
-            <a href="/contact-us/" class="agent-btn">Contact</a>
+          <img src="/images/from-live-site/agents/agent-44.jpg" alt="Audrey Reese - Office Manager/Realtor" class="agent-card-photo">
+          <div class="agent-card-body">
+            <h2 class="agent-card-name">Audrey Reese</h2>
+            <p class="agent-card-title">Office Manager / Realtor</p>
+            <ul class="agent-card-contacts">
+              <li><i class="fas fa-phone"></i><a href="tel:3167081587">Cell: (316) 708-1587</a></li>
+              <li><i class="fas fa-building"></i><a href="tel:3163217112">Office: (316) 321-7112</a></li>
+              <li><i class="fas fa-envelope"></i><a href="mailto:realty@sundgren.com">realty@sundgren.com</a></li>
+            </ul>
+            <p class="agent-card-excerpt">Office Manager turned Realtor, dedicated to making the home buying and selling process as seamless as possible for every client.</p>
+            <div class="agent-card-footer">
+              <a href="/agents/audrey-reese/" class="btn-primary" style="display:inline-block;padding:10px 20px;font-size:13px;">View Profile <i class="fas fa-arrow-right" style="margin-left:6px;"></i></a>
+            </div>
           </div>
         </div>
 
         <!-- Ashleigh Casper -->
         <div class="agent-card">
-          <img src="/images/agents/ashleigh-casper.jpg" alt="Ashleigh Casper" class="agent-photo">
-          <div class="agent-info">
-            <h2 class="agent-name">Ashleigh Casper</h2>
-            <p class="agent-title">Real Estate Agent</p>
-            <p class="agent-bio">Greenwood County native. BS in Business Marketing and Management from Wichita State University. Driven and client-focused.</p>
-            <a href="/contact-us/" class="agent-btn">Contact</a>
+          <img src="/images/from-live-site/agents/agent-thumbnail_69.jpg" alt="Ashleigh Casper - Realtor" class="agent-card-photo">
+          <div class="agent-card-body">
+            <h2 class="agent-card-name">Ashleigh Casper</h2>
+            <p class="agent-card-title">Realtor</p>
+            <ul class="agent-card-contacts">
+              <li><i class="fas fa-phone"></i><a href="tel:6205839879">Cell: (620) 583-9879</a></li>
+              <li><i class="fas fa-building"></i><a href="tel:3163217112">Office: (316) 321-7112</a></li>
+              <li><i class="fas fa-envelope"></i><a href="mailto:ashleigh@sundgren.com">ashleigh@sundgren.com</a></li>
+            </ul>
+            <p class="agent-card-excerpt">Greenwood County native and Flint Hills rancher&#8217;s daughter. BS in Business Marketing from Wichita State University. Licensed since 2022.</p>
+            <div class="agent-card-footer">
+              <a href="/agents/ashleigh-casper/" class="btn-primary" style="display:inline-block;padding:10px 20px;font-size:13px;">View Profile <i class="fas fa-arrow-right" style="margin-left:6px;"></i></a>
+            </div>
           </div>
         </div>
 
         <!-- Yousef Jesri -->
         <div class="agent-card">
-          <img src="/images/agents/yousef-jesri.jpg" alt="Yousef Jesri" class="agent-photo">
-          <div class="agent-info">
-            <h2 class="agent-name">Yousef Jesri</h2>
-            <p class="agent-title">Real Estate Agent</p>
-            <p class="agent-bio">Wichita native and Sedgwick County resident. Business background and currently attending Wichita State University.</p>
-            <a href="/contact-us/" class="agent-btn">Contact</a>
+          <img src="/images/from-live-site/agents/agent-Yousef.jpg" alt="Yousef Jesri - Realtor" class="agent-card-photo">
+          <div class="agent-card-body">
+            <h2 class="agent-card-name">Yousef Jesri</h2>
+            <p class="agent-card-title">Realtor</p>
+            <ul class="agent-card-contacts">
+              <li><i class="fas fa-phone"></i><a href="tel:3166861593">Cell: (316) 686-1593</a></li>
+              <li><i class="fas fa-building"></i><a href="tel:3163217112">Office: (316) 321-7112</a></li>
+              <li><i class="fas fa-envelope"></i><a href="mailto:yousef@sundgren.com">yousef@sundgren.com</a></li>
+            </ul>
+            <p class="agent-card-excerpt">Wichita native with deep Sedgwick County roots. Wichita State University student with a family business background and a passion for real estate.</p>
+            <div class="agent-card-footer">
+              <a href="/agents/yousef-jesri/" class="btn-primary" style="display:inline-block;padding:10px 20px;font-size:13px;">View Profile <i class="fas fa-arrow-right" style="margin-left:6px;"></i></a>
+            </div>
           </div>
         </div>
 
         <!-- Tad Woodard -->
         <div class="agent-card">
-          <img src="/images/agents/tad-woodard.jpg" alt="Tad Woodard" class="agent-photo">
-          <div class="agent-info">
-            <h2 class="agent-name">Tad Woodard</h2>
-            <p class="agent-title">Real Estate Agent</p>
-            <p class="agent-bio">Butler County native and Bluestem High School graduate. 18 years with Westar/Evergy. Entrepreneur and owner of 5W LandWerx, LLC.</p>
-            <a href="/contact-us/" class="agent-btn">Contact</a>
+          <img src="/images/from-live-site/agents/agent-Head-shots-new-8.jpg" alt="Tad Woodard - Realtor" class="agent-card-photo">
+          <div class="agent-card-body">
+            <h2 class="agent-card-name">Tad Woodard</h2>
+            <p class="agent-card-title">Realtor</p>
+            <ul class="agent-card-contacts">
+              <li><i class="fas fa-phone"></i><a href="tel:3163237225">Cell: (316) 323-7225</a></li>
+              <li><i class="fas fa-building"></i><a href="tel:3163217112">Office: (316) 321-7112</a></li>
+              <li><i class="fas fa-envelope"></i><a href="mailto:tad@sundgren.com">tad@sundgren.com</a></li>
+            </ul>
+            <p class="agent-card-excerpt">Butler County native and Bluestem High School graduate. 18 years with Westar/Evergy before pursuing real estate. Founder of 5W LandWerx, LLC.</p>
+            <div class="agent-card-footer">
+              <a href="/agents/tad-woodard/" class="btn-primary" style="display:inline-block;padding:10px 20px;font-size:13px;">View Profile <i class="fas fa-arrow-right" style="margin-left:6px;"></i></a>
+            </div>
           </div>
         </div>
 
         <!-- Erin Jones -->
         <div class="agent-card">
-          <img src="/images/agents/erin-jones.jpg" alt="Erin Jones" class="agent-photo">
-          <div class="agent-info">
-            <h2 class="agent-name">Erin Jones</h2>
-            <p class="agent-title">Real Estate Agent</p>
-            <p class="agent-bio">Greenwood County native passionate about helping clients achieve homeownership. AAS from Labette Community College.</p>
-            <a href="/contact-us/" class="agent-btn">Contact</a>
+          <img src="/images/from-live-site/agents/agent-Erin-Headshot-1.jpg" alt="Erin Jones - Realtor" class="agent-card-photo">
+          <div class="agent-card-body">
+            <h2 class="agent-card-name">Erin Jones</h2>
+            <p class="agent-card-title">Realtor</p>
+            <ul class="agent-card-contacts">
+              <li><i class="fas fa-phone"></i><a href="tel:6205832775">Cell: (620) 583-2775</a></li>
+              <li><i class="fas fa-building"></i><a href="tel:3163217112">Office: (316) 321-7112</a></li>
+              <li><i class="fas fa-envelope"></i><a href="mailto:erin@sundgren.com">erin@sundgren.com</a></li>
+            </ul>
+            <p class="agent-card-excerpt">Proud Greenwood County native passionate about helping people achieve homeownership. Committed to making every step of the process smooth and enjoyable.</p>
+            <div class="agent-card-footer">
+              <a href="/agents/erin-jones/" class="btn-primary" style="display:inline-block;padding:10px 20px;font-size:13px;">View Profile <i class="fas fa-arrow-right" style="margin-left:6px;"></i></a>
+            </div>
           </div>
         </div>
 
         <!-- Steven Hall -->
         <div class="agent-card">
-          <img src="/images/agents/steven-hall.jpg" alt="Steven Hall" class="agent-photo">
-          <div class="agent-info">
-            <h2 class="agent-name">Steven Hall</h2>
-            <p class="agent-title">Real Estate Agent</p>
-            <p class="agent-bio">Passionate real estate professional with a deep understanding of the local market and a love for helping clients find their perfect home.</p>
-            <a href="/contact-us/" class="agent-btn">Contact</a>
+          <img src="/images/from-live-site/agents/agent-thumbnail_66.jpg" alt="Steven Hall - Realtor" class="agent-card-photo">
+          <div class="agent-card-body">
+            <h2 class="agent-card-name">Steven Hall</h2>
+            <p class="agent-card-title">Realtor</p>
+            <ul class="agent-card-contacts">
+              <li><i class="fas fa-phone"></i><a href="tel:3162525409">Cell: (316) 252-5409</a></li>
+              <li><i class="fas fa-building"></i><a href="tel:3163217112">Office: (316) 321-7112</a></li>
+              <li><i class="fas fa-envelope"></i><a href="mailto:steven@sundgren.com">steven@sundgren.com</a></li>
+            </ul>
+            <p class="agent-card-excerpt">Passionate real estate professional with a lifelong love for homes and deep understanding of the local market. Dedicated to personalized guidance for every client.</p>
+            <div class="agent-card-footer">
+              <a href="/agents/steven-hall/" class="btn-primary" style="display:inline-block;padding:10px 20px;font-size:13px;">View Profile <i class="fas fa-arrow-right" style="margin-left:6px;"></i></a>
+            </div>
           </div>
         </div>
 
         <!-- Susan Sundgren Worrell -->
         <div class="agent-card">
-          <img src="/images/agents/susan-sundgren-worrell.jpg" alt="Susan Sundgren Worrell" class="agent-photo">
-          <div class="agent-info">
-            <h2 class="agent-name">Susan Sundgren Worrell</h2>
-            <p class="agent-title">Kansas Broker</p>
-            <p class="agent-bio">Selling real estate since 2002. Kansas broker&#39;s license. Personal interest in every buyer and seller, from first-time homeowners to experienced landowners.</p>
-            <a href="/contact-us/" class="agent-btn">Contact</a>
+          <img src="/images/from-live-site/agents/agent-susan.jpg" alt="Susan Sundgren Worrell - Associate Broker" class="agent-card-photo">
+          <div class="agent-card-body">
+            <h2 class="agent-card-name">Susan Sundgren Worrell</h2>
+            <p class="agent-card-title">Associate Broker</p>
+            <ul class="agent-card-contacts">
+              <li><i class="fas fa-phone"></i><a href="tel:3168418469">Cell: (316) 841-8469</a></li>
+              <li><i class="fas fa-building"></i><a href="tel:3163217112">Office: (316) 321-7112</a></li>
+              <li><i class="fas fa-envelope"></i><a href="mailto:susan@sundgren.com">susan@sundgren.com</a></li>
+            </ul>
+            <p class="agent-card-excerpt">Selling real estate since 2002 with a Kansas Broker&#8217;s license. Works all areas from urban to rural, taking a personal interest in every buyer and seller.</p>
+            <div class="agent-card-footer">
+              <a href="/agents/susan-sundgren-worrell/" class="btn-primary" style="display:inline-block;padding:10px 20px;font-size:13px;">View Profile <i class="fas fa-arrow-right" style="margin-left:6px;"></i></a>
+            </div>
           </div>
         </div>
 
         <!-- Tyler Nordman -->
         <div class="agent-card">
-          <img src="/images/agents/tyler-nordman.jpg" alt="Tyler Nordman" class="agent-photo">
-          <div class="agent-info">
-            <h2 class="agent-name">Tyler Nordman</h2>
-            <p class="agent-title">Real Estate Agent</p>
-            <p class="agent-bio">Background in college sports administration and creative media. Passionate about storytelling and brand development in real estate.</p>
-            <a href="/contact-us/" class="agent-btn">Contact</a>
+          <img src="/images/from-live-site/agents/agent-Nordman-Tyler.jpg" alt="Tyler Nordman - Director of Marketing" class="agent-card-photo">
+          <div class="agent-card-body">
+            <h2 class="agent-card-name">Tyler Nordman</h2>
+            <p class="agent-card-title">Director of Marketing</p>
+            <ul class="agent-card-contacts">
+              <li><i class="fas fa-phone"></i><a href="tel:3163217112">Office: (316) 321-7112</a></li>
+              <li><i class="fas fa-envelope"></i><a href="mailto:tyler@sundgren.com">tyler@sundgren.com</a></li>
+            </ul>
+            <p class="agent-card-excerpt">12 years in higher education media, including Director of Creative Media at Butler Community College. Passionate about storytelling and brand development.</p>
+            <div class="agent-card-footer">
+              <a href="/agents/tyler-nordman/" class="btn-primary" style="display:inline-block;padding:10px 20px;font-size:13px;">View Profile <i class="fas fa-arrow-right" style="margin-left:6px;"></i></a>
+            </div>
           </div>
         </div>
 
       </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="cta-dark">
-    <div class="container">
-      <h2>Ready to Buy or Sell?</h2>
-      <p>Our team of experienced agents is ready to guide you through your next real estate transaction in South Central Kansas.</p>
-      <a href="/contact-us/" class="btn-yellow">Get in Touch</a>
     </div>
   </section>
 

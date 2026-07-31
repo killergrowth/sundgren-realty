@@ -224,6 +224,140 @@ ${cta}
     </div>`;
 }
 
+// ── Description Parser ──────────────────────────────────────────────────────
+function parseDescription(raw) {
+  // 1. Strip HTML tags from formatted descriptions
+  let text = String(raw || '').replace(/<[^>]+>/g, ' ');
+  // 2. Fix encoding artifacts: Â + NBSP (\u00c2\u00a0) and similar
+  text = text
+    .replace(/\u00c2\u00a0/g, ' ')
+    .replace(/\u00c2/g, '')
+    .replace(/\u00a0/g, ' ')
+    .replace(/A,A[\u00b0\u00a0°\s]/g, ' ')
+    .replace(/Â /g, ' ')
+    .replace(/Â/g, '')
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/\s{2,}/g, ' ')
+    .trim();
+
+  // 3. Split into named sections on known keywords
+  const sectionKeys = ['PICKUP', 'TERMS', 'LOCATION', 'NOTE', 'NOTES', 'PREVIEW', 'REMOVAL', 'PAYMENT', 'BIDDING', 'SHIPPING', 'INSPECTION'];
+  const sectionRegex = new RegExp(`(${sectionKeys.join('|')}):`, 'g');
+
+  // 4. Detect lot list pattern: "Lot # Name\n1 Item desc\n2 Item desc"
+  //    or inline: "Lot # Name 1 Item 2 Item"
+  const lotRegex = /Lot\s*#?\s*Name\s*(\d+.+)/i;
+  const inlineLotRegex = /Lot\s*#?\s*Name\s+((?:\d+\s+.+?\s*)+)$/i;
+
+  let html = '';
+
+  // Split on section keywords
+  const parts = text.split(sectionRegex);
+  // parts: ['pre-text', 'PICKUP', 'pickup text', 'TERMS', 'terms text', ...]
+
+  let preLot = '';
+  let lotBlock = '';
+
+  // Walk parts — odd indexes are section names, even are content
+  let i = 0;
+  // If parts[0] is non-empty content before first keyword
+  let preContent = parts[0].trim();
+
+  const sections = [];
+  if (preContent) sections.push({ title: null, body: preContent });
+  for (let j = 1; j < parts.length; j += 2) {
+    const title = parts[j];
+    const body = (parts[j + 1] || '').trim();
+    sections.push({ title, body });
+  }
+
+  // If no sections found, treat entire text as one block
+  if (sections.length === 0) sections.push({ title: null, body: text });
+
+  // Render each section
+  for (const sec of sections) {
+    // Detect lot table inside body
+    const lotMatch = sec.body.match(/Lot\s*#?\s*Name\s+(.+)/i);
+    let bodyText = sec.body;
+    let lotHtml = '';
+
+    if (lotMatch) {
+      bodyText = sec.body.substring(0, sec.body.search(/Lot\s*#?\s*Name/i)).trim();
+      const lotRaw = lotMatch[1];
+      // Parse "1 Item desc 2 Item desc 3 ..." pattern
+      const lotItems = [];
+      const lotItemRegex = /(\d+)\s+(.+?)(?=\s+\d+\s+|$)/g;
+      let m;
+      while ((m = lotItemRegex.exec(lotRaw)) !== null) {
+        lotItems.push({ num: m[1], name: m[2].trim() });
+      }
+      if (lotItems.length > 0) {
+        lotHtml = `
+          <div class="lot-table-wrap" style="margin-top:20px;">
+            <h3 style="font-size:16px;font-weight:700;color:var(--dark);margin:0 0 12px;display:flex;align-items:center;gap:8px;">
+              <i class="fas fa-list" style="color:var(--yellow-dark);"></i> Lot List
+            </h3>
+            <div style="overflow-x:auto;">
+            <table class="lot-table">
+              <thead><tr><th style="width:50px;">#</th><th>Item</th></tr></thead>
+              <tbody>
+                ${lotItems.map(l => `<tr><td style="font-weight:700;color:var(--dark);">${esc(l.num)}</td><td>${esc(l.name)}</td></tr>`).join('\n                ')}
+              </tbody>
+            </table>
+            </div>
+          </div>`;
+      }
+    }
+
+    if (sec.title) {
+      // Icon map
+      const icons = {
+        PICKUP: 'fa-box-open', REMOVAL: 'fa-box-open',
+        TERMS: 'fa-file-contract',
+        LOCATION: 'fa-map-marker-alt',
+        PAYMENT: 'fa-credit-card',
+        PREVIEW: 'fa-eye', INSPECTION: 'fa-eye',
+        BIDDING: 'fa-gavel',
+        SHIPPING: 'fa-truck',
+        NOTE: 'fa-info-circle', NOTES: 'fa-info-circle',
+      };
+      const icon = icons[sec.title] || 'fa-info-circle';
+      html += `
+        <div class="desc-section">
+          <h3 class="desc-section-title">
+            <i class="fas ${icon}"></i> ${sec.title.charAt(0) + sec.title.slice(1).toLowerCase()}
+          </h3>
+          ${bodyText ? `<p>${esc(bodyText)}</p>` : ''}
+          ${lotHtml}
+        </div>`;
+    } else {
+      // No section title — render as plain intro paragraph
+      if (bodyText) html += `<p style="margin-bottom:16px;">${esc(bodyText)}</p>`;
+      if (lotHtml) html += lotHtml;
+    }
+  }
+
+  // Add lot table CSS inline (injected once per page)
+  const css = `<style>
+    .desc-section { margin-bottom:24px; padding:18px 20px; background:var(--bg-light); border-radius:8px; border-left:4px solid var(--yellow); }
+    .desc-section:last-child { margin-bottom:0; }
+    .desc-section-title { font-size:14px; font-weight:700; text-transform:uppercase; letter-spacing:.06em; color:var(--dark); margin:0 0 10px; display:flex; align-items:center; gap:8px; }
+    .desc-section-title i { color:var(--yellow-dark); font-size:14px; }
+    .desc-section p { font-size:14px; line-height:1.75; color:var(--text); margin:0; }
+    .lot-table { width:100%; border-collapse:collapse; font-size:14px; }
+    .lot-table th { background:var(--dark); color:#fff; padding:8px 12px; text-align:left; font-size:12px; text-transform:uppercase; letter-spacing:.05em; }
+    .lot-table td { padding:8px 12px; border-bottom:1px solid var(--border); color:var(--text); vertical-align:top; }
+    .lot-table tr:last-child td { border-bottom:none; }
+    .lot-table tr:nth-child(even) td { background:#f9f9f9; }
+  </style>`;
+
+  return css + html;
+}
+
 // ── Individual Auction Page ───────────────────────────────────────────────
 function renderAuctionPage(auction) {
   const slug      = slugify(auction.name, auction.id);
@@ -247,16 +381,9 @@ function renderAuctionPage(auction) {
         <a href="/auctions/" class="btn-go">View Active Auctions &rarr;</a>
     </div>` : '';
 
-  let descHtml = '';
-  if (auction.formatted_simple_description) {
-    descHtml = auction.formatted_simple_description;
-  } else if (auction.simple_description) {
-    descHtml = `<p>${esc(auction.simple_description)}</p>`;
-  } else if (auction.description) {
-    descHtml = `<p>${esc(auction.description)}</p>`;
-  } else {
-    descHtml = '<p>Contact Sundgren Realty for more information about this property.</p>';
-  }
+  // Use structured parser for all description sources
+  const rawDesc = auction.simple_description || auction.description || '';
+  const descHtml = rawDesc ? parseDescription(rawDesc) : '<p>Contact Sundgren Realty for more information about this auction.</p>';
 
   const photoGrid = renderPhotoGrid(auction.featured_images);
   const infoCard  = renderInfoCard(auction);
