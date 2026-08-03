@@ -921,6 +921,30 @@ a:hover { color: var(--yellow-dark); }
 }
 .btn-all:hover { background: var(--bg-light); }
 
+/* Document links in info card */
+.info-card-docs { margin-top: 4px; }
+.doc-link {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 9px 12px;
+  margin-bottom: 6px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--dark);
+  background: var(--bg-light);
+  text-decoration: none;
+  transition: background .15s, border-color .15s;
+}
+.doc-link:hover { background: #fff8e1; border-color: var(--yellow); color: var(--dark); }
+.doc-link .fa-file-pdf { color: #d32f2f; }
+.doc-link .fa-file-word { color: #1565c0; }
+.doc-link .fa-file-excel { color: #2e7d32; }
+.doc-link .fa-file-alt { color: var(--yellow-dark); }
+.doc-link span { flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
 .photo-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
