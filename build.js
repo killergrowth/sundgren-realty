@@ -72,6 +72,21 @@ function discoverAuctionPages() {
 
 function discoverListingPages() {
   const pages = [];
+
+  // Discover listings/ index + subpages
+  const listingsDir = path.join(ROOT, 'listings');
+  if (fs.existsSync(listingsDir)) {
+    const listingsIndex = path.join(listingsDir, 'index.html');
+    if (fs.existsSync(listingsIndex)) pages.push([listingsIndex, path.join(DIST, 'listings', 'index.html')]);
+    fs.readdirSync(listingsDir, { withFileTypes: true }).forEach(entry => {
+      if (!entry.isDirectory()) return;
+      const slugIndex = path.join(listingsDir, entry.name, 'index.html');
+      if (fs.existsSync(slugIndex)) {
+        pages.push([slugIndex, path.join(DIST, 'listings', entry.name, 'index.html')]);
+      }
+    });
+  }
+
   // Discover commercial subpages
   const commercialDir = path.join(ROOT, 'commercial');
   if (fs.existsSync(commercialDir)) {
@@ -99,7 +114,19 @@ function buildSitemap() {
     { url: '/agents/', priority: '0.7', freq: 'monthly' },
     { url: '/news/', priority: '0.7', freq: 'weekly' },
     { url: '/contact-us/', priority: '0.7', freq: 'monthly' },
+    { url: '/listings/', priority: '0.8', freq: 'weekly' },
   ];
+
+  // Collect listing subpages from dist
+  const listingsUrls = [];
+  const listingsDistDir = path.join(DIST, 'listings');
+  if (fs.existsSync(listingsDistDir)) {
+    fs.readdirSync(listingsDistDir, { withFileTypes: true }).forEach(entry => {
+      if (entry.isDirectory()) {
+        listingsUrls.push({ url: `/listings/${entry.name}/`, priority: '0.8', freq: 'weekly' });
+      }
+    });
+  }
 
   // Collect auction pages from dist
   const auctionUrls = [];
@@ -123,7 +150,7 @@ function buildSitemap() {
     });
   }
 
-  const allUrls = [...staticUrls, ...auctionUrls, ...commercialUrls];
+  const allUrls = [...staticUrls, ...auctionUrls, ...commercialUrls, ...listingsUrls];
   const urlEntries = allUrls.map(u =>
     `  <url>\n    <loc>${baseUrl}${u.url}</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>${u.freq}</changefreq>\n    <priority>${u.priority}</priority>\n  </url>`
   ).join('\n');
