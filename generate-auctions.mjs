@@ -610,7 +610,7 @@ ${bwEmbed}
 // â”€â”€ Auction Index Page â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function renderCard(auction, slug) {
   const imgUrl   = bestImage(auction.featured_images, 'sm');
-  const startDt  = formatDateTime(auction.starts_at);
+  const endDt    = formatDateTime(auction.scheduled_end_time);
   const active   = isActive(auction.status);
   const status   = (auction.status || '').toLowerCase();
   const badgeCls = active ? (status === 'accepting_bids' || status === 'active' ? 'active' : 'upcoming') : 'sold';
@@ -629,7 +629,7 @@ function renderCard(auction, slug) {
                     </div>
                     <div class="auction-card-body">
                         <p class="auction-card-title">${esc(auction.name || 'Auction')}</p>
-                        ${startDt ? `<p class="auction-card-meta"><i class="fas fa-calendar-alt"></i>${esc(startDt)}</p>` : ''}
+                        ${endDt ? `<p class="auction-card-meta"><i class="fas fa-calendar-alt"></i>Auction Ends: ${esc(endDt)}</p>` : ''}
                         ${auction.online_only ? `<p class="auction-card-meta"><i class="fas fa-laptop"></i>Online Only</p>` : ''}
                         <span class="auction-card-more">View Details &rarr;</span>
                     </div>
