@@ -140,13 +140,51 @@
 
     <section class="section" style="background:var(--bg-light);padding-top:0;">
         <div class="container">
-            <h2 style="font-size:18px;font-weight:800;color:var(--dark);margin:0 0 16px;padding-bottom:10px;border-bottom:2px solid #FFD700;"><i class="fas fa-gavel" style="color:#FFD700;margin-right:8px;"></i>Live Bidding</h2>
-            <div style="position:relative;padding-bottom:75%;height:0;overflow:hidden;border-radius:10px;box-shadow:0 4px 24px rgba(0,0,0,.1);">
-                <iframe src="https://sundgrenrealty.bidwrangler.com/ui/auctions/92834" style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;" loading="lazy" title="BidWrangler Auction — Tools, Fishing, Antiques, Collectibles, Furniture and MORE! Online Auction ONLY!" allow="payment"></iframe>
+            <h2 style="font-size:18px;font-weight:800;color:var(--dark);margin:0 0 16px;padding-bottom:10px;border-bottom:2px solid #FFD700;"><i class="fas fa-gavel" style="color:#FFD700;margin-right:8px;"></i>Online Bidding</h2>
+            <div style="border-radius:10px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,.1);background:#fff;">
+                <!-- BW mock header -->
+                <div style="background:#FFD700;padding:10px 18px;display:flex;align-items:center;justify-content:space-between;">
+                    <span style="font-weight:900;font-size:16px;letter-spacing:.04em;color:#1a1a1a;">SUNDGREN REALTY<span style="font-size:10px;vertical-align:super;">&trade;</span></span>
+                    <span style="font-size:12px;color:#1a1a1a;opacity:.7;">powered by BidWrangler</span>
+                </div>
+                <!-- BW mock body -->
+                <div style="display:flex;gap:0;flex-wrap:wrap;">
+                    <!-- Photo col -->
+                    <div style="flex:0 0 45%;min-width:280px;background:#111;">
+                        <div style="position:relative;height:260px;overflow:hidden;background:#1a1a1a;">
+                            <img id="bw-main-img" src="https://d37cbsn538t2ha.cloudfront.net/eyJidWNrZXQiOiJid3BhcGVyY2xpcC1wcm9kdWN0aW9uIiwia2V5IjoiYXVjdGlvbl9pbWFnZXMvYXNzZXRzL2NvbXBhbnlfMjE4LzA0NC82NjEvOTY2L29yaWdpbmFsLzZDRjQzMkNDLTlFQjktNEQzQy05Mjc2LUUyMzM3QUI5MjA1OS5qcGVnIiwidiI6MTY3MDIyNDkzNiwiZWRpdHMiOnsicmVzaXplIjp7InciOjEyMDAsImgiOjc1Nn0sImF2aWYiOnsicSI6NzAsInN0eWxlIjoibGcifSwianBlZyI6eyJxIjo4NX19fQ==?signature=401942f51e88ed985370b4bcad99b8b26bfe58bea7f7e32f30a53a2bed8426e2" style="width:100%;height:100%;object-fit:cover;">
+                        </div>
+                        <div style="display:flex;gap:6px;padding:8px;overflow-x:auto;background:#111;"><div style="width:80px;height:54px;flex-shrink:0;border-radius:4px;overflow:hidden;border:2px solid transparent;cursor:pointer;" onclick="setBwMain('https://d37cbsn538t2ha.cloudfront.net/eyJidWNrZXQiOiJid3BhcGVyY2xpcC1wcm9kdWN0aW9uIiwia2V5IjoiYXVjdGlvbl9pbWFnZXMvYXNzZXRzL2NvbXBhbnlfMjE4LzA0NC82NjEvOTY2L29yaWdpbmFsLzZDRjQzMkNDLTlFQjktNEQzQy05Mjc2LUUyMzM3QUI5MjA1OS5qcGVnIiwidiI6MTY3MDIyNDkzNiwiZWRpdHMiOnsicmVzaXplIjp7InciOjc1MCwiaCI6NDczfSwiYXZpZiI6eyJxIjo3MCwic3R5bGUiOiJzbSJ9LCJqcGVnIjp7InEiOjg1fX19?signature=6fa302255f608d41ed71ea79d0cca7612a617120b765208939fdcfcdd4b0eb80')"><img src="https://d37cbsn538t2ha.cloudfront.net/eyJidWNrZXQiOiJid3BhcGVyY2xpcC1wcm9kdWN0aW9uIiwia2V5IjoiYXVjdGlvbl9pbWFnZXMvYXNzZXRzL2NvbXBhbnlfMjE4LzA0NC82NjEvOTY2L29yaWdpbmFsLzZDRjQzMkNDLTlFQjktNEQzQy05Mjc2LUUyMzM3QUI5MjA1OS5qcGVnIiwidiI6MTY3MDIyNDkzNiwiZWRpdHMiOnsicmVzaXplIjp7InciOjc1MCwiaCI6NDczfSwiYXZpZiI6eyJxIjo3MCwic3R5bGUiOiJzbSJ9LCJqcGVnIjp7InEiOjg1fX19?signature=6fa302255f608d41ed71ea79d0cca7612a617120b765208939fdcfcdd4b0eb80" style="width:100%;height:100%;object-fit:cover;"></div><div style="width:80px;height:54px;flex-shrink:0;border-radius:4px;overflow:hidden;border:2px solid transparent;cursor:pointer;" onclick="setBwMain('https://d37cbsn538t2ha.cloudfront.net/eyJidWNrZXQiOiJid3BhcGVyY2xpcC1wcm9kdWN0aW9uIiwia2V5IjoiYXVjdGlvbl9pbWFnZXMvYXNzZXRzL2NvbXBhbnlfMjE4LzA0NC82NjEvOTY3L29yaWdpbmFsLzMxMzQyNTJDLUNENkMtNDREMi04NUNFLThDNTY0RUFGRURDQi5qcGVnIiwidiI6MTY3MDIyNDkzNywiZWRpdHMiOnsicmVzaXplIjp7InciOjc1MCwiaCI6NDczfSwiYXZpZiI6eyJxIjo3MCwic3R5bGUiOiJzbSJ9LCJqcGVnIjp7InEiOjg1fX19?signature=ed67628674528534d9848cced8c177f49affbf18ddc166a98883be1c5f5da955')"><img src="https://d37cbsn538t2ha.cloudfront.net/eyJidWNrZXQiOiJid3BhcGVyY2xpcC1wcm9kdWN0aW9uIiwia2V5IjoiYXVjdGlvbl9pbWFnZXMvYXNzZXRzL2NvbXBhbnlfMjE4LzA0NC82NjEvOTY3L29yaWdpbmFsLzMxMzQyNTJDLUNENkMtNDREMi04NUNFLThDNTY0RUFGRURDQi5qcGVnIiwidiI6MTY3MDIyNDkzNywiZWRpdHMiOnsicmVzaXplIjp7InciOjc1MCwiaCI6NDczfSwiYXZpZiI6eyJxIjo3MCwic3R5bGUiOiJzbSJ9LCJqcGVnIjp7InEiOjg1fX19?signature=ed67628674528534d9848cced8c177f49affbf18ddc166a98883be1c5f5da955" style="width:100%;height:100%;object-fit:cover;"></div><div style="width:80px;height:54px;flex-shrink:0;border-radius:4px;overflow:hidden;border:2px solid transparent;cursor:pointer;" onclick="setBwMain('https://d37cbsn538t2ha.cloudfront.net/eyJidWNrZXQiOiJid3BhcGVyY2xpcC1wcm9kdWN0aW9uIiwia2V5IjoiYXVjdGlvbl9pbWFnZXMvYXNzZXRzL2NvbXBhbnlfMjE4LzA0NC82NjEvOTY0L29yaWdpbmFsLzNCQkI1OTI3LTdGMDgtNDNDMC1BMzVDLTg5Q0I1NkM1MzI3QS5qcGVnIiwidiI6MTY3MDIyNDkzNSwiZWRpdHMiOnsicmVzaXplIjp7InciOjc1MCwiaCI6NDczfSwiYXZpZiI6eyJxIjo3MCwic3R5bGUiOiJzbSJ9LCJqcGVnIjp7InEiOjg1fX19?signature=4d20bc10d5db6fff245c8dd34024297d72b71370b3196bc372f3a7513397dfba')"><img src="https://d37cbsn538t2ha.cloudfront.net/eyJidWNrZXQiOiJid3BhcGVyY2xpcC1wcm9kdWN0aW9uIiwia2V5IjoiYXVjdGlvbl9pbWFnZXMvYXNzZXRzL2NvbXBhbnlfMjE4LzA0NC82NjEvOTY0L29yaWdpbmFsLzNCQkI1OTI3LTdGMDgtNDNDMC1BMzVDLTg5Q0I1NkM1MzI3QS5qcGVnIiwidiI6MTY3MDIyNDkzNSwiZWRpdHMiOnsicmVzaXplIjp7InciOjc1MCwiaCI6NDczfSwiYXZpZiI6eyJxIjo3MCwic3R5bGUiOiJzbSJ9LCJqcGVnIjp7InEiOjg1fX19?signature=4d20bc10d5db6fff245c8dd34024297d72b71370b3196bc372f3a7513397dfba" style="width:100%;height:100%;object-fit:cover;"></div><div style="width:80px;height:54px;flex-shrink:0;border-radius:4px;overflow:hidden;border:2px solid transparent;cursor:pointer;" onclick="setBwMain('https://d37cbsn538t2ha.cloudfront.net/eyJidWNrZXQiOiJid3BhcGVyY2xpcC1wcm9kdWN0aW9uIiwia2V5IjoiYXVjdGlvbl9pbWFnZXMvYXNzZXRzL2NvbXBhbnlfMjE4LzA0NC82NjEvOTU4L29yaWdpbmFsL0Q4MDc1MjExLTdGMzEtNEJEOC1BOEU3LUM0NzZGNEE2QTlGRi5qcGVnIiwidiI6MTY3MDIyNDkyOSwiZWRpdHMiOnsicmVzaXplIjp7InciOjc1MCwiaCI6NDczfSwiYXZpZiI6eyJxIjo3MCwic3R5bGUiOiJzbSJ9LCJqcGVnIjp7InEiOjg1fX19?signature=4e78ec43232973ff78591ecdcdc6edde4769370858055d74a9bd74d48ca0d931')"><img src="https://d37cbsn538t2ha.cloudfront.net/eyJidWNrZXQiOiJid3BhcGVyY2xpcC1wcm9kdWN0aW9uIiwia2V5IjoiYXVjdGlvbl9pbWFnZXMvYXNzZXRzL2NvbXBhbnlfMjE4LzA0NC82NjEvOTU4L29yaWdpbmFsL0Q4MDc1MjExLTdGMzEtNEJEOC1BOEU3LUM0NzZGNEE2QTlGRi5qcGVnIiwidiI6MTY3MDIyNDkyOSwiZWRpdHMiOnsicmVzaXplIjp7InciOjc1MCwiaCI6NDczfSwiYXZpZiI6eyJxIjo3MCwic3R5bGUiOiJzbSJ9LCJqcGVnIjp7InEiOjg1fX19?signature=4e78ec43232973ff78591ecdcdc6edde4769370858055d74a9bd74d48ca0d931" style="width:100%;height:100%;object-fit:cover;"></div></div>
+                    </div>
+                    <!-- Info col -->
+                    <div style="flex:1;min-width:280px;padding:20px 24px;">
+                        <p style="font-size:12px;color:#888;margin:0 0 6px;">by Sundgren Auction &amp; Realty</p>
+                        <h3 style="font-size:17px;font-weight:800;color:#1a1a1a;margin:0 0 12px;line-height:1.3;">Tools, Fishing, Antiques, Collectibles, Furniture and MORE! Online Auction ONLY!</h3>
+                        <div style="display:inline-block;background:#f0f4ff;border-radius:20px;padding:5px 14px;font-size:13px;font-weight:700;color:#1a3a8a;margin-bottom:14px;"><i class="fas fa-clock" style="margin-right:6px;"></i>Ends Dec 19, 2022, 2:00 PM</div>
+                        <a href="https://sundgrenrealty.bidwrangler.com/ui/auctions/92834" target="_blank" rel="noopener"
+                           style="display:block;width:100%;background:#1a3a8a;color:#fff;text-align:center;padding:14px;border-radius:6px;font-size:15px;font-weight:800;text-decoration:none;letter-spacing:.03em;margin-bottom:16px;">
+                            REGISTER TO BID
+                        </a>
+                        <div style="display:flex;gap:0;border-bottom:2px solid #eee;margin-bottom:14px;">
+                            <span style="padding:8px 16px;font-size:13px;font-weight:700;color:#1a3a8a;border-bottom:2px solid #1a3a8a;margin-bottom:-2px;">DETAILS</span>
+                            <span style="padding:8px 16px;font-size:13px;font-weight:600;color:#888;">CONTACT</span>
+                            
+                        </div>
+                        <div style="font-size:13px;color:#444;line-height:1.7;">
+                            <p style="margin:0 0 4px;"><i class="fas fa-user" style="color:#888;width:16px;margin-right:6px;"></i>Annie Jesseph</p>
+                            <p style="margin:0 0 4px;"><i class="fas fa-phone" style="color:#888;width:16px;margin-right:6px;"></i>(316) 452.1628</p>
+                            <p style="margin:0;"><i class="fas fa-envelope" style="color:#888;width:16px;margin-right:6px;"></i>auctions@sundgrens.com</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- BW mock footer -->
+                <div style="padding:10px 18px;background:#f7f7f7;border-top:1px solid #eee;text-align:center;">
+                    <a href="https://sundgrenrealty.bidwrangler.com/ui/auctions/92834" target="_blank" rel="noopener" style="font-size:13px;color:#1a3a8a;font-weight:700;text-decoration:none;">Open full bidding experience on BidWrangler &rarr;</a>
+                </div>
             </div>
-            <p style="margin-top:12px;font-size:13px;color:var(--text-light);">Having trouble with the bidding widget? <a href="https://sundgrenrealty.bidwrangler.com/ui/auctions/92834" target="_blank" rel="noopener" style="color:var(--dark);font-weight:700;">Open directly on BidWrangler &rarr;</a></p>
         </div>
     </section>
+    <script>function setBwMain(src){var el=document.getElementById('bw-main-img');if(el)el.src=src;}</script>
 
     <section class="cta-dark">
         <div class="container">
