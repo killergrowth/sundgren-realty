@@ -967,7 +967,14 @@ function initMap() {
 
   if (bounds.length > 1) map.fitBounds(bounds, { padding:[50,50] });
   else if (bounds.length === 1) map.setView(bounds[0], 10);
-  else map.setView([37.82, -97.7], 8);
+  else {
+    map.setView([37.82, -97.7], 8);
+    // No pins — show a notice
+    var noPin = document.createElement('div');
+    noPin.style.cssText = 'position:absolute;bottom:16px;left:50%;transform:translateX(-50%);background:rgba(255,255,255,.92);border:1px solid #ddd;border-radius:6px;padding:8px 16px;font-size:13px;color:#555;z-index:999;pointer-events:none;white-space:nowrap;';
+    noPin.textContent = 'No map locations available for current auctions';
+    document.getElementById('sg-map').appendChild(noPin);
+  }
 }
 
 function highlightCard(cardId) {
@@ -998,7 +1005,7 @@ function setView(mode) {
       });
     });
   } else {
-    gc.style.display = '';
+    gc.style.display = 'grid';
     ml.classList.remove('visible');
     document.getElementById('btn-grid').classList.add('active');
     document.getElementById('btn-map').classList.remove('active');
