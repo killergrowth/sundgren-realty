@@ -21,6 +21,29 @@
   <link rel="apple-touch-icon" href="/images/favicon.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/sundgren.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""/>
+  <style>
+    .sg-view-toggle { display:flex; gap:8px; justify-content:flex-end; margin-bottom:24px; }
+    .sg-view-btn { display:inline-flex; align-items:center; gap:7px; padding:8px 20px; border-radius:6px; font-size:13px; font-weight:700; cursor:pointer; border:2px solid var(--dark); background:#fff; color:var(--dark); transition:all .15s; text-decoration:none; }
+    .sg-view-btn.active { background:var(--dark); color:#FFD700; border-color:var(--dark); }
+    .sg-view-btn:hover:not(.active) { background:var(--bg-light); color:var(--dark); text-decoration:none; }
+    .sg-map-layout { display:none; }
+    .sg-map-layout.visible { display:flex; gap:0; align-items:flex-start; }
+    .sg-map-col { position:sticky; top:84px; flex:0 0 45%; height:calc(100vh - 110px); max-height:680px; border-radius:10px; overflow:hidden; box-shadow:0 4px 24px rgba(0,0,0,.12); }
+    #sg-map { height:100%; min-height:400px; width:100%; display:block; }
+    .leaflet-container img { max-width:none !important; max-height:none !important; }
+    .leaflet-tile { max-width:none !important; width:256px !important; height:256px !important; }
+    .sg-grid-col { flex:1; overflow-y:auto; max-height:calc(100vh - 110px); padding-left:24px; }
+    .sg-grid-col::-webkit-scrollbar { width:5px; }
+    .sg-grid-col::-webkit-scrollbar-thumb { background:#FFD700; border-radius:3px; }
+    .auction-card-wrap.pin-active .auction-card { outline:3px solid #FFD700; outline-offset:2px; box-shadow:0 8px 32px rgba(255,215,0,.3) !important; }
+    .sg-past-hidden { display:none !important; }
+    @media(max-width:900px) {
+      .sg-map-layout.visible { flex-direction:column; }
+      .sg-map-col { position:static; flex:none; width:100%; height:320px; max-height:320px; }
+      .sg-grid-col { padding-left:0; max-height:none; overflow-y:visible; }
+    }
+  </style>
 </head>
 <body>
 
@@ -40,7 +63,7 @@
         </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="active-section">
         <div class="container">
             <div class="section-title">
                 <span class="eyebrow">Active &amp; Upcoming</span>
@@ -48,23 +71,24 @@
                 <hr class="divider">
                 <p>Browse live auction opportunities from Sundgren Realty &amp; Auction. Click any listing for full details, photos, and online bidding.</p>
             </div>
-            <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:24px;">
-        <div class="col-4">
-            <a href="/auctions/158-acres-pasture-ponds-trees-kansas-whitetail-deer-elk-coun-165183/" class="auction-card-wrap">
-                <div class="auction-card">
-                    <div class="auction-card-img" style="background-image:url('https://d37cbsn538t2ha.cloudfront.net/eyJidWNrZXQiOiJid3BhcGVyY2xpcC1wcm9kdWN0aW9uIiwia2V5IjoiYXVjdGlvbl9pbWFnZXMvYXNzZXRzL2NvbXBhbnlfMjE4LzE1Ny8zNzIvNTkxL29yaWdpbmFsL0NydW1fRmVhdHVyZS5qcGVnIiwidiI6MTc4MzUyNTA4NiwiZWRpdHMiOnsicmVzaXplIjp7InciOjc1MCwiaCI6NDczfSwiYXZpZiI6eyJxIjo3MCwic3R5bGUiOiJzbSJ9LCJqcGVnIjp7InEiOjg1fX19?signature=c5a0849235e9557e1a09a2ea856f36b89ffb3c4da02a5a297927f7de4cdf38f1')">
-                        <span class="auction-card-badge active">ACTIVE</span>
-                        
-                    </div>
-                    <div class="auction-card-body">
-                        <p class="auction-card-title">158 Acres Pasture, Ponds, Trees &amp; Kansas Whitetail Deer – Elk County, Kansas</p>
-                        <p class="auction-card-meta"><i class="fas fa-calendar-alt"></i>Auction Ends: August 5, 2026 at 4:00 PM CDT</p>
-                        <p class="auction-card-meta"><i class="fas fa-laptop"></i>Online Only</p>
-                        <span class="auction-card-more">View Details &rarr;</span>
-                    </div>
+
+            <!-- Grid / Map toggle -->
+            <div class="sg-view-toggle">
+                <button class="sg-view-btn active" id="btn-grid" onclick="setView('grid')">
+                    <i class="fas fa-th"></i> Grid
+                </button>
+                <button class="sg-view-btn" id="btn-map" onclick="setView('map')">
+                    <i class="fas fa-map-marker-alt"></i> Map
+                </button>
+            </div>
+
+            <!-- Map layout (hidden until map mode) -->
+            <div class="sg-map-layout" id="map-layout">
+                <div class="sg-map-col">
+                    <div id="sg-map"></div>
                 </div>
-            </a>
-        </div>
+                <div class="sg-grid-col">
+                    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:24px;" id="map-grid-cards">
         <div class="col-4">
             <a href="/auctions/john-deere-tractors-mower-side-by-side-guns-tools-household-166314/" class="auction-card-wrap">
                 <div class="auction-card">
@@ -74,7 +98,109 @@
                     </div>
                     <div class="auction-card-body">
                         <p class="auction-card-title">John Deere Tractors, Mower, Side by Side, Guns, Tools &amp; Household Items – Near Douglass, KS</p>
-                        <p class="auction-card-meta"><i class="fas fa-calendar-alt"></i>Auction Ends: August 6, 2026 at 6:00 PM CDT</p>
+                        <p class="auction-card-meta"><i class="fas fa-calendar-alt"></i>Auction Ends: August 6, 2026 at 5:30 PM CDT</p>
+                        <p class="auction-card-meta"><i class="fas fa-laptop"></i>Online Only</p>
+                        <span class="auction-card-more">View Details &rarr;</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-4">
+            <a href="/auctions/108-acres-tillable-farm-ground-mcpherson-county-kansas-165648/" class="auction-card-wrap">
+                <div class="auction-card">
+                    <div class="auction-card-img" style="background-image:url('https://d37cbsn538t2ha.cloudfront.net/eyJidWNrZXQiOiJid3BhcGVyY2xpcC1wcm9kdWN0aW9uIiwia2V5IjoiaXRlbV9pbWFnZXMvYXNzZXRzL2NvbXBhbnlfMjE4LzE1Ny83MzQvMjU1L29yaWdpbmFsL2ltYWdlLmpwZWciLCJ2IjoxNzgzOTExMTA0LCJlZGl0cyI6eyJyZXNpemUiOnsidyI6NzUwLCJoIjo0NzN9LCJhdmlmIjp7InEiOjcwLCJzdHlsZSI6InNtIn0sImpwZWciOnsicSI6ODV9fX0=?signature=6fbb034f8561dadf117f8c13d59dc1b51c08eadd9ab3e10c97ce4db3e736e7ea')">
+                        <span class="auction-card-badge upcoming">UPCOMING</span>
+                        
+                    </div>
+                    <div class="auction-card-body">
+                        <p class="auction-card-title">108+- Acres Tillable Farm Ground – McPherson County, Kansas</p>
+                        <p class="auction-card-meta"><i class="fas fa-calendar-alt"></i>Auction Ends: August 13, 2026 at 4:00 PM CDT</p>
+                        <p class="auction-card-meta"><i class="fas fa-laptop"></i>Online Only</p>
+                        <span class="auction-card-more">View Details &rarr;</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-4">
+            <a href="/auctions/chevy-truck-hustler-mower-tools-antique-furniture-john-deere-166309/" class="auction-card-wrap">
+                <div class="auction-card">
+                    <div class="auction-card-img" style="background-image:url('https://d37cbsn538t2ha.cloudfront.net/eyJidWNrZXQiOiJid3BhcGVyY2xpcC1wcm9kdWN0aW9uIiwia2V5IjoiYXVjdGlvbl9pbWFnZXMvYXNzZXRzL2NvbXBhbnlfMjE4LzE1OC83MDcvMjczL29yaWdpbmFsL2ZlYXR1cmVfZGljay5qcGciLCJ2IjoxNzg0NzQ5MzEyLCJlZGl0cyI6eyJyZXNpemUiOnsidyI6NzUwLCJoIjo0NzN9LCJhdmlmIjp7InEiOjcwLCJzdHlsZSI6InNtIn0sImpwZWciOnsicSI6ODV9fX0=?signature=77e22eb60fdf2fe552acabb504d0ed4b895392a77fb74b1cb70cc7473c69dc42')">
+                        <span class="auction-card-badge upcoming">UPCOMING</span>
+                        
+                    </div>
+                    <div class="auction-card-body">
+                        <p class="auction-card-title">Chevy Truck, Hustler Mower, Tools, Antique Furniture, John Deere Memorabilia &amp; Household Items – Live Auction in Mount Hope, KS</p>
+                        
+                        
+                        <span class="auction-card-more">View Details &rarr;</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-4">
+            <a href="/auctions/438-e-main-st-mount-hope-ks-67108-4-bed-25-bath-classic-home-165887/" class="auction-card-wrap">
+                <div class="auction-card">
+                    <div class="auction-card-img" style="background-image:url('https://d37cbsn538t2ha.cloudfront.net/eyJidWNrZXQiOiJid3BhcGVyY2xpcC1wcm9kdWN0aW9uIiwia2V5IjoiaXRlbV9pbWFnZXMvYXNzZXRzL2NvbXBhbnlfMjE4LzE1OC8wOTYvNDQyL29yaWdpbmFsL2ltYWdlLmpwZWciLCJ2IjoxNzg0MTUzNjMzLCJlZGl0cyI6eyJyZXNpemUiOnsidyI6NzUwLCJoIjo0NzN9LCJhdmlmIjp7InEiOjcwLCJzdHlsZSI6InNtIn0sImpwZWciOnsicSI6ODV9fX0=?signature=fcf7248b4141fd179b02df0f8654f57dbc37a9ebb0e831a1f4a5883fd863b064')">
+                        <span class="auction-card-badge upcoming">UPCOMING</span>
+                        
+                    </div>
+                    <div class="auction-card-body">
+                        <p class="auction-card-title">438 E Main St, Mount Hope, KS 67108: 4 Bed 2.5 Bath Classic Home and Shop</p>
+                        <p class="auction-card-meta"><i class="fas fa-calendar-alt"></i>Auction Ends: August 21, 2026 at 12:00 PM CDT</p>
+                        <p class="auction-card-meta"><i class="fas fa-laptop"></i>Online Only</p>
+                        <span class="auction-card-more">View Details &rarr;</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-4">
+            <a href="/auctions/8227-n-rock-rd-walton-ks-155-acres-harvey-county-farmstead-166365/" class="auction-card-wrap">
+                <div class="auction-card">
+                    <div class="auction-card-img" style="background-image:url('https://d37cbsn538t2ha.cloudfront.net/eyJidWNrZXQiOiJid3BhcGVyY2xpcC1wcm9kdWN0aW9uIiwia2V5IjoiaXRlbV9pbWFnZXMvYXNzZXRzL2NvbXBhbnlfMjE4LzE1OC83NjcvMTQ0L29yaWdpbmFsL2ltYWdlLmpwZWciLCJ2IjoxNzg0ODE0MTI0LCJlZGl0cyI6eyJyZXNpemUiOnsidyI6NzUwLCJoIjo0NzN9LCJhdmlmIjp7InEiOjcwLCJzdHlsZSI6InNtIn0sImpwZWciOnsicSI6ODV9fX0=?signature=2c2350a7cf02f3b2e601b5f3b25bf0e995eb57be07f509978413553cb5d43c20')">
+                        <span class="auction-card-badge upcoming">UPCOMING</span>
+                        
+                    </div>
+                    <div class="auction-card-body">
+                        <p class="auction-card-title">8227 N Rock Rd., Walton, KS – 155 Acres – Harvey County Farmstead</p>
+                        <p class="auction-card-meta"><i class="fas fa-calendar-alt"></i>Auction Ends: August 29, 2026 at 11:00 AM CDT</p>
+                        <p class="auction-card-meta"><i class="fas fa-laptop"></i>Online Only</p>
+                        <span class="auction-card-more">View Details &rarr;</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-4">
+            <a href="/auctions/351-acres-near-douglass-in-butler-county-kansas-selling-in-4-166378/" class="auction-card-wrap">
+                <div class="auction-card">
+                    <div class="auction-card-img" style="background-image:url('https://d37cbsn538t2ha.cloudfront.net/eyJidWNrZXQiOiJid3BhcGVyY2xpcC1wcm9kdWN0aW9uIiwia2V5IjoiYXVjdGlvbl9pbWFnZXMvYXNzZXRzL2NvbXBhbnlfMjE4LzE1OC83OTIvODQ3L29yaWdpbmFsL2ltYWdlLmpwZWciLCJ2IjoxNzg0ODIxNDc1LCJlZGl0cyI6eyJyZXNpemUiOnsidyI6NzUwLCJoIjo0NzN9LCJhdmlmIjp7InEiOjcwLCJzdHlsZSI6InNtIn0sImpwZWciOnsicSI6ODV9fX0=?signature=e6c50a48cab48256cffdb2293a1a214da5edb70775f01100a884c11ac3ad32c0')">
+                        <span class="auction-card-badge upcoming">UPCOMING</span>
+                        
+                    </div>
+                    <div class="auction-card-body">
+                        <p class="auction-card-title">351 Acres Near Douglass in Butler County, Kansas Selling in 4 Tracts</p>
+                        <p class="auction-card-meta"><i class="fas fa-calendar-alt"></i>Auction Ends: September 1, 2026 at 4:00 PM CDT</p>
+                        <p class="auction-card-meta"><i class="fas fa-laptop"></i>Online Only</p>
+                        <span class="auction-card-more">View Details &rarr;</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grid layout (default) -->
+            <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:24px;" id="grid-cards">
+        <div class="col-4">
+            <a href="/auctions/john-deere-tractors-mower-side-by-side-guns-tools-household-166314/" class="auction-card-wrap">
+                <div class="auction-card">
+                    <div class="auction-card-img" style="background-image:url('https://d37cbsn538t2ha.cloudfront.net/eyJidWNrZXQiOiJid3BhcGVyY2xpcC1wcm9kdWN0aW9uIiwia2V5IjoiYXVjdGlvbl9pbWFnZXMvYXNzZXRzL2NvbXBhbnlfMjE4LzE1OC83MTAvNDg5L29yaWdpbmFsL2Jyb2FuX2ZlYXR1cmVfMi5qcGciLCJ2IjoxNzg0NzUwNzMwLCJlZGl0cyI6eyJyZXNpemUiOnsidyI6NzUwLCJoIjo0NzN9LCJhdmlmIjp7InEiOjcwLCJzdHlsZSI6InNtIn0sImpwZWciOnsicSI6ODV9fX0=?signature=0647b81b36ca198428ae4aa748b6c578be9880c0700e861aca4d03daf7a63415')">
+                        <span class="auction-card-badge active">ACTIVE</span>
+                        
+                    </div>
+                    <div class="auction-card-body">
+                        <p class="auction-card-title">John Deere Tractors, Mower, Side by Side, Guns, Tools &amp; Household Items – Near Douglass, KS</p>
+                        <p class="auction-card-meta"><i class="fas fa-calendar-alt"></i>Auction Ends: August 6, 2026 at 5:30 PM CDT</p>
                         <p class="auction-card-meta"><i class="fas fa-laptop"></i>Online Only</p>
                         <span class="auction-card-more">View Details &rarr;</span>
                     </div>
@@ -174,6 +300,22 @@
                 <p>Sold properties below. Each page includes property details, photos, and description.</p>
             </div>
             <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:24px;">
+        <div class="col-4">
+            <a href="/auctions/158-acres-pasture-ponds-trees-kansas-whitetail-deer-elk-coun-165183/" class="auction-card-wrap">
+                <div class="auction-card">
+                    <div class="auction-card-img" style="background-image:url('https://d37cbsn538t2ha.cloudfront.net/eyJidWNrZXQiOiJid3BhcGVyY2xpcC1wcm9kdWN0aW9uIiwia2V5IjoiYXVjdGlvbl9pbWFnZXMvYXNzZXRzL2NvbXBhbnlfMjE4LzE1Ny8zNzIvNTkxL29yaWdpbmFsL0NydW1fRmVhdHVyZS5qcGVnIiwidiI6MTc4MzUyNTA4NiwiZWRpdHMiOnsicmVzaXplIjp7InciOjc1MCwiaCI6NDczfSwiYXZpZiI6eyJxIjo3MCwic3R5bGUiOiJzbSJ9LCJqcGVnIjp7InEiOjg1fX19?signature=c5a0849235e9557e1a09a2ea856f36b89ffb3c4da02a5a297927f7de4cdf38f1')">
+                        <span class="auction-card-badge sold">SOLD</span>
+                        <div class="sold-overlay"><span>SOLD</span></div>
+                    </div>
+                    <div class="auction-card-body">
+                        <p class="auction-card-title">158 Acres Pasture, Ponds, Trees &amp; Kansas Whitetail Deer – Elk County, Kansas</p>
+                        <p class="auction-card-meta"><i class="fas fa-calendar-alt"></i>Auction Ends: August 5, 2026 at 4:00 PM CDT</p>
+                        <p class="auction-card-meta"><i class="fas fa-laptop"></i>Online Only</p>
+                        <span class="auction-card-more">View Details &rarr;</span>
+                    </div>
+                </div>
+            </a>
+        </div>
         <div class="col-4">
             <a href="/auctions/estate-of-craig-kobel-live-auction-2-vintage-duck-decoys-amm-165726/" class="auction-card-wrap">
                 <div class="auction-card">
@@ -542,22 +684,6 @@
                 </div>
             </a>
         </div>
-        <div class="col-4">
-            <a href="/auctions/3-80-acre-tracts-south-of-augusta-water-meter-farm-ground-pa-160519/" class="auction-card-wrap">
-                <div class="auction-card">
-                    <div class="auction-card-img" style="background-image:url('https://d37cbsn538t2ha.cloudfront.net/eyJidWNrZXQiOiJid3BhcGVyY2xpcC1wcm9kdWN0aW9uIiwia2V5IjoiYXVjdGlvbl9pbWFnZXMvYXNzZXRzL2NvbXBhbnlfMjE4LzE0OS85NjkvODg4L29yaWdpbmFsL2ltYWdlLnBuZyIsInYiOjE3NzYyNzcxNzksImVkaXRzIjp7InJlc2l6ZSI6eyJ3Ijo3NTAsImgiOjQ3M30sImF2aWYiOnsicSI6NzAsInN0eWxlIjoic20ifSwicG5nIjp7InEiOjg1fX19?signature=d800396619bafdee837fb059ee5ae8d020ecd479bcb64d8db3685d203631801c')">
-                        <span class="auction-card-badge sold">SOLD</span>
-                        <div class="sold-overlay"><span>SOLD</span></div>
-                    </div>
-                    <div class="auction-card-body">
-                        <p class="auction-card-title">(3) 80+- Acre Tracts South of Augusta – Water Meter, Farm Ground, Pasture, Pond, Creek &amp; Trees</p>
-                        
-                        
-                        <span class="auction-card-more">View Details &rarr;</span>
-                    </div>
-                </div>
-            </a>
-        </div>
             </div>
         </div>
     </section>
@@ -573,6 +699,93 @@
 </main>
 
 <!-- FOOTER -->
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script>
+const AUCTION_PINS = [];
+let map = null, markers = {}, activeMarker = null;
+
+function goldIcon() {
+  return L.divIcon({ className:'', html:'<div style="width:34px;height:34px;background:#1a1a1a;border:3px solid #FFD700;border-radius:50% 50% 50% 0;transform:rotate(-45deg);box-shadow:0 2px 8px rgba(0,0,0,.3);"></div>', iconSize:[34,34], iconAnchor:[17,34], popupAnchor:[0,-36] });
+}
+function goldIconActive() {
+  return L.divIcon({ className:'', html:'<div style="width:40px;height:40px;background:#FFD700;border:3px solid #1a1a1a;border-radius:50% 50% 50% 0;transform:rotate(-45deg);box-shadow:0 2px 12px rgba(255,215,0,.6);"></div>', iconSize:[40,40], iconAnchor:[20,40], popupAnchor:[0,-42] });
+}
+
+function initMap() {
+  if (map) return;
+  map = L.map('sg-map', { zoomControl:true, scrollWheelZoom:false });
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+    attribution:'&copy; <a href="https://carto.com/">CARTO</a> &copy; <a href="https://www.openstreetmap.org/copyright">OSM</a>',
+    subdomains:'abcd', maxZoom:19
+  }).addTo(map);
+
+  var bounds = [];
+  AUCTION_PINS.forEach(function(pin) {
+    var gi = goldIcon();
+    var m = L.marker([pin.lat, pin.lng], { icon: gi })
+      .bindPopup(
+        '<div style="min-width:190px;">'
+        + '<strong style="font-size:13px;display:block;margin-bottom:4px;">' + pin.title + '</strong>'
+        + (pin.city ? '<span style="color:#6b7280;font-size:12px;">' + pin.city + ', ' + pin.state + '</span>' : '')
+        + (pin.date ? '<br><span style="color:#b8960a;font-size:12px;font-weight:700;margin-top:4px;display:block;">&#128197; Ends ' + pin.date + '</span>' : '')
+        + '<br><a href="' + pin.url + '" target="_blank" style="display:inline-block;margin-top:8px;background:#FFD700;color:#1a1a1a;padding:5px 12px;border-radius:4px;font-size:12px;font-weight:700;text-decoration:none;">View Details &#x2192;</a>'
+        + '</div>',
+        { maxWidth: 260 }
+      )
+      .addTo(map);
+
+    m.on('click', function() {
+      highlightCard(pin.id);
+      if (activeMarker) { activeMarker.m.setIcon(activeMarker.gi); }
+      m.setIcon(goldIconActive());
+      activeMarker = { m: m, gi: gi };
+    });
+
+    markers[pin.id] = m;
+    bounds.push([pin.lat, pin.lng]);
+  });
+
+  if (bounds.length > 1) map.fitBounds(bounds, { padding:[50,50] });
+  else if (bounds.length === 1) map.setView(bounds[0], 10);
+  else map.setView([37.82, -97.7], 8);
+}
+
+function highlightCard(cardId) {
+  document.querySelectorAll('.auction-card-wrap.pin-active').forEach(function(el) { el.classList.remove('pin-active'); });
+  document.querySelectorAll('#' + cardId).forEach(function(card) {
+    card.classList.add('pin-active');
+    var col = card.closest('.sg-grid-col');
+    if (col) col.scrollTo({ top: card.offsetTop - 16, behavior:'smooth' });
+  });
+}
+
+function setView(mode) {
+  var gc = document.getElementById('grid-cards');
+  var ml = document.getElementById('map-layout');
+  var pastSec = document.querySelector('.section:not(#active-section)');
+  if (mode === 'map') {
+    gc.style.display = 'none';
+    ml.classList.add('visible');
+    document.getElementById('btn-grid').classList.remove('active');
+    document.getElementById('btn-map').classList.add('active');
+    if (pastSec) pastSec.classList.add('sg-past-hidden');
+    requestAnimationFrame(function() {
+      requestAnimationFrame(function() {
+        initMap();
+        setTimeout(function() { if (map) map.invalidateSize(true); }, 100);
+        setTimeout(function() { if (map) map.invalidateSize(true); }, 500);
+      });
+    });
+  } else {
+    gc.style.display = '';
+    ml.classList.remove('visible');
+    document.getElementById('btn-grid').classList.add('active');
+    document.getElementById('btn-map').classList.remove('active');
+    if (pastSec) pastSec.classList.remove('sg-past-hidden');
+  }
+}
+</script>
 
 </body>
 </html>

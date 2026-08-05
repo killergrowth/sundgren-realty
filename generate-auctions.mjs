@@ -1,4 +1,4 @@
-/**
+﻿/**
  * generate-auctions.mjs - Sundgren Realty Auctions
  *
  * Fetches live auction data from the BidWrangler API and generates:
@@ -559,7 +559,16 @@ function renderAuctionPage(auction) {
   const infoCard  = renderInfoCard(auction, auction._detail || null);
   const bwUrl     = `${BW_BASE_URL}/ui/auctions/${auction.id}`;
 
-  const bwEmbed = '';
+  const bwEmbed = `
+    <section class="section" style="background:var(--bg-light);padding-top:0;">
+        <div class="container">
+            <h2 style="font-size:18px;font-weight:800;color:var(--dark);margin:0 0 16px;padding-bottom:10px;border-bottom:2px solid ${YELLOW};"><i class="fas fa-gavel" style="color:${YELLOW};margin-right:8px;"></i>Live Bidding</h2>
+            <div style="position:relative;padding-bottom:75%;height:0;overflow:hidden;border-radius:10px;box-shadow:0 4px 24px rgba(0,0,0,.1);">
+                <iframe src="${bwUrl}" style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;" loading="lazy" title="BidWrangler Auction \u2014 ${esc(auction.name || 'Auction')}" allow="payment"></iframe>
+            </div>
+            <p style="margin-top:12px;font-size:13px;color:var(--text-light);">Having trouble with the bidding widget? <a href="${bwUrl}" target="_blank" rel="noopener" style="color:var(--dark);font-weight:700;">Open directly on BidWrangler &rarr;</a></p>
+        </div>
+    </section>`;
 
   const schema = JSON.stringify({
     '@context': 'https://schema.org',
@@ -698,8 +707,31 @@ function renderIndexPage(auctions, stateAuctions) {
   const active = auctions.filter(a => isActive(a.status));
   const past   = auctions.filter(a => !isActive(a.status));
 
+  // Build map pin data for active auctions
+  const mapPins = active
+    .map((a, i) => {
+      const loc = a.location;
+      if (!loc || !loc.lat || !loc.lng) return null;
+      const slug = stateAuctions[String(a.id)]?.slug || slugify(a.name, a.id);
+      const endDt = a.scheduled_end_time ? new Date(a.scheduled_end_time).toLocaleDateString('en-US', { month:'short', day:'numeric', year:'numeric', timeZone:'America/Chicago' }) : '';
+      return {
+        id: `card-${a.id}`,
+        lat: parseFloat(loc.lat),
+        lng: parseFloat(loc.lng),
+        title: a.name,
+        city: loc.city || '',
+        state: loc.state || '',
+        date: endDt,
+        url: `/auctions/${slug}/`,
+        index: i
+      };
+    })
+    .filter(Boolean);
+
+  const mapPinsJson = JSON.stringify(mapPins);
+
   const activeCards = active.length
-    ? active.map(a => renderCard(a, stateAuctions[String(a.id)]?.slug || slugify(a.name, a.id))).join('\n')
+    ? active.map((a, i) => renderCard(a, stateAuctions[String(a.id)]?.slug || slugify(a.name, a.id))).join('\n')
     : `        <div style="grid-column:1/-1;text-align:center;padding:48px 0;">
             <i class="fas fa-gavel" style="font-size:48px;color:#ddd;margin-bottom:16px;display:block;"></i>
             <p style="color:var(--text-light);">No active auctions at this time. <a href="/contact-us/" style="color:#c00;">Contact us</a> to be notified of upcoming opportunities.</p>
@@ -746,6 +778,29 @@ ${pastCards}
   <link rel="apple-touch-icon" href="/images/favicon.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/sundgren.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""/>
+  <style>
+    .sg-view-toggle { display:flex; gap:8px; justify-content:flex-end; margin-bottom:24px; }
+    .sg-view-btn { display:inline-flex; align-items:center; gap:7px; padding:8px 20px; border-radius:6px; font-size:13px; font-weight:700; cursor:pointer; border:2px solid var(--dark); background:#fff; color:var(--dark); transition:all .15s; text-decoration:none; }
+    .sg-view-btn.active { background:var(--dark); color:#FFD700; border-color:var(--dark); }
+    .sg-view-btn:hover:not(.active) { background:var(--bg-light); color:var(--dark); text-decoration:none; }
+    .sg-map-layout { display:none; }
+    .sg-map-layout.visible { display:flex; gap:0; align-items:flex-start; }
+    .sg-map-col { position:sticky; top:84px; flex:0 0 45%; height:calc(100vh - 110px); max-height:680px; border-radius:10px; overflow:hidden; box-shadow:0 4px 24px rgba(0,0,0,.12); }
+    #sg-map { height:100%; min-height:400px; width:100%; display:block; }
+    .leaflet-container img { max-width:none !important; max-height:none !important; }
+    .leaflet-tile { max-width:none !important; width:256px !important; height:256px !important; }
+    .sg-grid-col { flex:1; overflow-y:auto; max-height:calc(100vh - 110px); padding-left:24px; }
+    .sg-grid-col::-webkit-scrollbar { width:5px; }
+    .sg-grid-col::-webkit-scrollbar-thumb { background:#FFD700; border-radius:3px; }
+    .auction-card-wrap.pin-active .auction-card { outline:3px solid #FFD700; outline-offset:2px; box-shadow:0 8px 32px rgba(255,215,0,.3) !important; }
+    .sg-past-hidden { display:none !important; }
+    @media(max-width:900px) {
+      .sg-map-layout.visible { flex-direction:column; }
+      .sg-map-col { position:static; flex:none; width:100%; height:320px; max-height:320px; }
+      .sg-grid-col { padding-left:0; max-height:none; overflow-y:visible; }
+    }
+  </style>
 </head>
 <body>
 
@@ -765,7 +820,7 @@ ${pastCards}
         </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="active-section">
         <div class="container">
             <div class="section-title">
                 <span class="eyebrow">Active &amp; Upcoming</span>
@@ -773,7 +828,31 @@ ${pastCards}
                 <hr class="divider">
                 <p>Browse live auction opportunities from Sundgren Realty &amp; Auction. Click any listing for full details, photos, and online bidding.</p>
             </div>
-            <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:24px;">
+
+            <!-- Grid / Map toggle -->
+            <div class="sg-view-toggle">
+                <button class="sg-view-btn active" id="btn-grid" onclick="setView('grid')">
+                    <i class="fas fa-th"></i> Grid
+                </button>
+                <button class="sg-view-btn" id="btn-map" onclick="setView('map')">
+                    <i class="fas fa-map-marker-alt"></i> Map
+                </button>
+            </div>
+
+            <!-- Map layout (hidden until map mode) -->
+            <div class="sg-map-layout" id="map-layout">
+                <div class="sg-map-col">
+                    <div id="sg-map"></div>
+                </div>
+                <div class="sg-grid-col">
+                    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:24px;" id="map-grid-cards">
+${activeCards}
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grid layout (default) -->
+            <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:24px;" id="grid-cards">
 ${activeCards}
             </div>
         </div>
@@ -791,6 +870,93 @@ ${pastSection}
 </main>
 
 <!-- FOOTER -->
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script>
+const AUCTION_PINS = ${mapPinsJson};
+let map = null, markers = {}, activeMarker = null;
+
+function goldIcon() {
+  return L.divIcon({ className:'', html:'<div style="width:34px;height:34px;background:#1a1a1a;border:3px solid #FFD700;border-radius:50% 50% 50% 0;transform:rotate(-45deg);box-shadow:0 2px 8px rgba(0,0,0,.3);"></div>', iconSize:[34,34], iconAnchor:[17,34], popupAnchor:[0,-36] });
+}
+function goldIconActive() {
+  return L.divIcon({ className:'', html:'<div style="width:40px;height:40px;background:#FFD700;border:3px solid #1a1a1a;border-radius:50% 50% 50% 0;transform:rotate(-45deg);box-shadow:0 2px 12px rgba(255,215,0,.6);"></div>', iconSize:[40,40], iconAnchor:[20,40], popupAnchor:[0,-42] });
+}
+
+function initMap() {
+  if (map) return;
+  map = L.map('sg-map', { zoomControl:true, scrollWheelZoom:false });
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+    attribution:'&copy; <a href="https://carto.com/">CARTO</a> &copy; <a href="https://www.openstreetmap.org/copyright">OSM</a>',
+    subdomains:'abcd', maxZoom:19
+  }).addTo(map);
+
+  var bounds = [];
+  AUCTION_PINS.forEach(function(pin) {
+    var gi = goldIcon();
+    var m = L.marker([pin.lat, pin.lng], { icon: gi })
+      .bindPopup(
+        '<div style="min-width:190px;">'
+        + '<strong style="font-size:13px;display:block;margin-bottom:4px;">' + pin.title + '</strong>'
+        + (pin.city ? '<span style="color:#6b7280;font-size:12px;">' + pin.city + ', ' + pin.state + '</span>' : '')
+        + (pin.date ? '<br><span style="color:#b8960a;font-size:12px;font-weight:700;margin-top:4px;display:block;">&#128197; Ends ' + pin.date + '</span>' : '')
+        + '<br><a href="' + pin.url + '" target="_blank" style="display:inline-block;margin-top:8px;background:#FFD700;color:#1a1a1a;padding:5px 12px;border-radius:4px;font-size:12px;font-weight:700;text-decoration:none;">View Details &#x2192;</a>'
+        + '</div>',
+        { maxWidth: 260 }
+      )
+      .addTo(map);
+
+    m.on('click', function() {
+      highlightCard(pin.id);
+      if (activeMarker) { activeMarker.m.setIcon(activeMarker.gi); }
+      m.setIcon(goldIconActive());
+      activeMarker = { m: m, gi: gi };
+    });
+
+    markers[pin.id] = m;
+    bounds.push([pin.lat, pin.lng]);
+  });
+
+  if (bounds.length > 1) map.fitBounds(bounds, { padding:[50,50] });
+  else if (bounds.length === 1) map.setView(bounds[0], 10);
+  else map.setView([37.82, -97.7], 8);
+}
+
+function highlightCard(cardId) {
+  document.querySelectorAll('.auction-card-wrap.pin-active').forEach(function(el) { el.classList.remove('pin-active'); });
+  document.querySelectorAll('#' + cardId).forEach(function(card) {
+    card.classList.add('pin-active');
+    var col = card.closest('.sg-grid-col');
+    if (col) col.scrollTo({ top: card.offsetTop - 16, behavior:'smooth' });
+  });
+}
+
+function setView(mode) {
+  var gc = document.getElementById('grid-cards');
+  var ml = document.getElementById('map-layout');
+  var pastSec = document.querySelector('.section:not(#active-section)');
+  if (mode === 'map') {
+    gc.style.display = 'none';
+    ml.classList.add('visible');
+    document.getElementById('btn-grid').classList.remove('active');
+    document.getElementById('btn-map').classList.add('active');
+    if (pastSec) pastSec.classList.add('sg-past-hidden');
+    requestAnimationFrame(function() {
+      requestAnimationFrame(function() {
+        initMap();
+        setTimeout(function() { if (map) map.invalidateSize(true); }, 100);
+        setTimeout(function() { if (map) map.invalidateSize(true); }, 500);
+      });
+    });
+  } else {
+    gc.style.display = '';
+    ml.classList.remove('visible');
+    document.getElementById('btn-grid').classList.add('active');
+    document.getElementById('btn-map').classList.remove('active');
+    if (pastSec) pastSec.classList.remove('sg-past-hidden');
+  }
+}
+</script>
 
 </body>
 </html>

@@ -1,5 +1,5 @@
 {
-  "lastFetch": "2026-08-03T18:20:14.968Z",
+  "lastFetch": "2026-08-05T21:45:39.364Z",
   "auctions": {
     "24096": {
       "slug": "test-auction-24096",
@@ -2775,9 +2775,10 @@
     },
     "165183": {
       "slug": "158-acres-pasture-ponds-trees-kansas-whitetail-deer-elk-coun-165183",
-      "status": "accepting_bids",
+      "status": "complete",
       "name": "158 Acres Pasture, Ponds, Trees & Kansas Whitetail Deer – Elk County, Kansas",
-      "generated": "2026-07-31T19:28:16.732Z"
+      "generated": "2026-07-31T19:28:16.732Z",
+      "updated": "2026-08-05T21:45:40.699Z"
     },
     "165218": {
       "slug": "dodge-truck-guns-trailers-tools-more-live-auction-near-augus-165218",
@@ -2795,8 +2796,7 @@
       "slug": "estate-of-craig-kobel-live-auction-2-vintage-duck-decoys-amm-165726",
       "status": "complete",
       "name": "Estate of Craig Kobel Live Auction #2: Vintage Duck Decoys, Ammo Boxes, Traps, Fishing, Antiques & Collectibles",
-      "generated": "2026-07-31T19:28:16.731Z",
-      "updated": "2026-08-03T18:20:14.998Z"
+      "generated": "2026-07-31T19:28:16.731Z"
     },
     "165887": {
       "slug": "438-e-main-st-mount-hope-ks-67108-4-bed-25-bath-classic-home-165887",
