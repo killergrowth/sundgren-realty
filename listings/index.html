@@ -4,33 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Property Listings | Sundgren Realty &amp; Auction | El Dorado, KS</title>
-  <meta name="description" content="Browse active property listings from Sundgren Realty &amp; Auction in South Central Kansas. Homes, acreage, land, and investment properties in Butler County and surrounding areas.">
+  <meta name="description" content="Browse active property listings from Sundgren Realty &amp; Auction in South Central Kansas. Homes, acreage, land, and commercial properties in Butler County and surrounding areas.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://sundgrenrealty.com/listings/">
   <meta property="og:title" content="Property Listings | Sundgren Realty &amp; Auction">
-  <meta property="og:description" content="Active residential, land, and commercial listings from Sundgren Realty in South Central Kansas.">
+  <meta property="og:description" content="Active residential, land, and commercial listings from Sundgren Realty agents in South Central Kansas.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://sundgrenrealty.com/listings/">
-  <meta property="og:image" content="https://sundgren-realty.pages.dev/images/og-preview.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://sundgren-realty.pages.dev/images/og-preview.png">
+  <meta property="og:image" content="/images/og-preview.png">
   <link rel="icon" href="/images/favicon-black.png" type="image/png" media="(prefers-color-scheme: light)">
   <link rel="icon" href="/images/favicon.png" type="image/png" media="(prefers-color-scheme: dark)">
   <link rel="apple-touch-icon" href="/images/favicon.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/sundgren.css">
+  
   <style>
     .listing-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 24px;
     }
-    @media (max-width: 900px) {
-      .listing-grid { grid-template-columns: repeat(2, 1fr); }
-    }
-    @media (max-width: 580px) {
-      .listing-grid { grid-template-columns: 1fr; }
-    }
+    @media (max-width: 900px) { .listing-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 580px) { .listing-grid { grid-template-columns: 1fr; } }
     .listing-card {
       border-radius: 10px;
       overflow: hidden;
@@ -42,64 +37,15 @@
       flex-direction: column;
       transition: transform .2s, box-shadow .2s;
     }
-    .listing-card:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 8px 24px rgba(0,0,0,.13);
-    }
-    .listing-card-img {
-      width: 100%;
-      aspect-ratio: 4/3;
-      object-fit: cover;
-      display: block;
-    }
-    .listing-card-body {
-      padding: 18px 20px 20px;
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-    }
-    .listing-card-badge {
-      display: inline-block;
-      font-size: 10px;
-      font-weight: 800;
-      letter-spacing: .08em;
-      text-transform: uppercase;
-      background: #22c55e;
-      color: #fff;
-      border-radius: 4px;
-      padding: 3px 8px;
-      margin-bottom: 10px;
-      width: fit-content;
-    }
-    .listing-card-address {
-      font-size: 15px;
-      font-weight: 800;
-      color: var(--dark);
-      margin: 0 0 8px;
-      line-height: 1.3;
-    }
-    .listing-card-meta {
-      font-size: 13px;
-      color: var(--text-light);
-      margin: 0 0 4px;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
+    .listing-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,.13); }
+    .listing-card-img { width: 100%; aspect-ratio: 4/3; object-fit: cover; display: block; }
+    .listing-card-body { padding: 18px 20px 20px; flex: 1; display: flex; flex-direction: column; }
+    .listing-card-badge { display: inline-block; font-size: 10px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: #fff; border-radius: 4px; padding: 3px 8px; width: fit-content; }
+    .listing-card-address { font-size: 15px; font-weight: 800; color: var(--dark); margin: 0 0 8px; line-height: 1.3; }
+    .listing-card-meta { font-size: 13px; color: var(--text-light); margin: 0 0 4px; display: flex; align-items: center; gap: 6px; }
     .listing-card-meta i { color: var(--yellow-dark); font-size: 12px; }
-    .listing-card-price {
-      font-size: 20px;
-      font-weight: 900;
-      color: var(--dark);
-      margin: 12px 0 0;
-    }
-    .listing-card-more {
-      display: inline-block;
-      margin-top: 14px;
-      font-size: 13px;
-      font-weight: 700;
-      color: var(--red);
-    }
+    .listing-card-price { font-size: 20px; font-weight: 900; color: var(--dark); margin: 12px 0 0; }
+    .listing-card-more { display: inline-block; margin-top: 14px; font-size: 13px; font-weight: 700; color: var(--red); }
   </style>
 </head>
 <body>
@@ -124,69 +70,837 @@
     <div class="container">
       <div class="section-title">
         <span class="eyebrow">Active Listings</span>
-        <h2>Featured Properties</h2>
+        <h2>Properties Listed by Sundgren Realty</h2>
         <hr class="divider">
-        <p>Properties listed directly by Sundgren Realty agents across South Central Kansas.</p>
+        <p>Showing 45 active properties listed directly by Sundgren Realty agents across South Central Kansas. Residential, commercial, and land.</p>
+      </div>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:28px;">
+        <a href="/listings/" style="display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:700;padding:8px 16px;border-radius:6px;background:var(--dark);color:#fff;text-decoration:none;">All (45)</a>
+        <a href="/residential/" style="display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:700;padding:8px 16px;border-radius:6px;background:var(--bg-light);color:var(--dark);text-decoration:none;border:1px solid var(--border);">Residential</a>
+        <a href="/commercial/" style="display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:700;padding:8px 16px;border-radius:6px;background:var(--bg-light);color:var(--dark);text-decoration:none;border:1px solid var(--border);">Commercial</a>
+        <a href="/land-listings/" style="display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:700;padding:8px 16px;border-radius:6px;background:var(--bg-light);color:var(--dark);text-decoration:none;border:1px solid var(--border);">Land</a>
       </div>
       <div class="listing-grid">
-
+        
         <a href="/listings/5747-sw-20th-el-dorado-ks-4bed-10acres/" class="listing-card">
           <img class="listing-card-img"
                src="https://s3.amazonaws.com/mlsphotos.idxbroker.com/photos/15c4/4c51959f20c51f8fcc45064c0fa1e175/c147"
-               alt="5747 SW 20th St, El Dorado, KS &#8212; 4-Bedroom Home on 10 Acres"
+               alt="5747 SW 20th St, El Dorado, KS 67042"
                loading="lazy">
           <div class="listing-card-body">
-            <span class="listing-card-badge">Active</span>
+            <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+              <span class="listing-card-badge" style="background:#22c55e;">Active</span>
+              
+            </div>
             <p class="listing-card-address">5747 SW 20th St, El Dorado, KS 67042</p>
             <p class="listing-card-meta"><i class="fas fa-bed"></i>4 Beds &bull; 4 Baths &bull; 5,467 sq ft</p>
             <p class="listing-card-meta"><i class="fas fa-expand-arrows-alt"></i>10 Acres</p>
-            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>El Dorado, Butler County</p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>El Dorado, KS</p>
             <p class="listing-card-price">$1,650,000</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-
         <a href="/listings/10608-sw-90th-augusta-ks-4bed-14acres/" class="listing-card">
           <img class="listing-card-img"
                src="https://s3.amazonaws.com/mlsphotos.idxbroker.com/photos/e28e/e82e570e0389bb905b15622e837ca8be/c147"
-               alt="10608 SW 90th St, Augusta, KS &#8212; Barndominium on 14.2 Acres"
+               alt="10608 SW 90th St, Augusta, KS 67010"
                loading="lazy">
           <div class="listing-card-body">
-            <span class="listing-card-badge">Active</span>
+            <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+              <span class="listing-card-badge" style="background:#22c55e;">Active</span>
+              
+            </div>
             <p class="listing-card-address">10608 SW 90th St, Augusta, KS 67010</p>
             <p class="listing-card-meta"><i class="fas fa-bed"></i>4 Beds &bull; 3 Baths &bull; 2,904 sq ft</p>
             <p class="listing-card-meta"><i class="fas fa-expand-arrows-alt"></i>14.2 Acres</p>
-            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Augusta, Butler County</p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Augusta, KS</p>
             <p class="listing-card-price">$750,000</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-
         <a href="/listings/0000-10th-st-severy-ks-189acres-land/" class="listing-card">
           <img class="listing-card-img"
                src="/images/hero-aerial.jpg"
-               alt="189.22 Acres near Severy, KS &#8212; Greenwood County Land"
+               alt="10th St, Severy, KS 67137"
                loading="lazy">
           <div class="listing-card-body">
-            <span class="listing-card-badge">Active</span>
+            <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+              <span class="listing-card-badge" style="background:#22c55e;">Active</span>
+              <span class="listing-card-badge" style="background:var(--dark);">Land</span>
+            </div>
             <p class="listing-card-address">10th St, Severy, KS 67137</p>
-            <p class="listing-card-meta"><i class="fas fa-tractor"></i>189.22 Acres &bull; Pasture/Land</p>
-            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Severy, Greenwood County</p>
-            <div style="height:20px;"></div>
+            
+            <p class="listing-card-meta"><i class="fas fa-expand-arrows-alt"></i>189.22 Acres</p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Severy, KS</p>
             <p class="listing-card-price">$675,000</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-
+        <a href="/listings/9657-sw-hopkins-switch-rd-augusta-ks/" class="listing-card">
+          <img class="listing-card-img"
+               src="https://s3.amazonaws.com/mlsphotos.idxbroker.com/photos/774a/a47747ce73a9d9574f805bec2692d3b6/c147"
+               alt="9657 SW Hopkins Switch Rd, Augusta, KS 67010"
+               loading="lazy">
+          <div class="listing-card-body">
+            <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+              <span class="listing-card-badge" style="background:#22c55e;">Active</span>
+              
+            </div>
+            <p class="listing-card-address">9657 SW Hopkins Switch Rd, Augusta, KS 67010</p>
+            <p class="listing-card-meta"><i class="fas fa-bed"></i>2 Beds &bull; 2 Baths &bull; 1,400 sq ft</p>
+            <p class="listing-card-meta"><i class="fas fa-expand-arrows-alt"></i>3.6 Acres</p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Augusta, KS</p>
+            <p class="listing-card-price">$497,500</p>
+            <span class="listing-card-more">View Details &rarr;</span>
+          </div>
+        </a>
+        <a href="/listings/1910-n-jason-dr-el-dorado-ks/" class="listing-card">
+          <img class="listing-card-img"
+               src="https://s3.amazonaws.com/mlsphotos.idxbroker.com/photos/52af/fa2556433939552c5b994a9c56727d70/c147"
+               alt="1910 N Jason Dr, El Dorado, KS 67042"
+               loading="lazy">
+          <div class="listing-card-body">
+            <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+              <span class="listing-card-badge" style="background:#22c55e;">Active</span>
+              
+            </div>
+            <p class="listing-card-address">1910 N Jason Dr, El Dorado, KS 67042</p>
+            <p class="listing-card-meta"><i class="fas fa-bed"></i>5 Beds &bull; 3 Baths &bull; 3,688 sq ft</p>
+            <p class="listing-card-meta"><i class="fas fa-expand-arrows-alt"></i>0.33 Acres</p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>El Dorado, KS</p>
+            <p class="listing-card-price">$455,000</p>
+            <span class="listing-card-more">View Details &rarr;</span>
+          </div>
+        </a>
+        <a href="/listings/120-s-lexington-ct-andover-ks/" class="listing-card">
+          <img class="listing-card-img"
+               src="https://s3.amazonaws.com/mlsphotos.idxbroker.com/photos/efa1/1afecc3450c681841c4274856bdc128e/c147"
+               alt="120 S Lexington Ct, Andover, KS 67002"
+               loading="lazy">
+          <div class="listing-card-body">
+            <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+              <span class="listing-card-badge" style="background:#22c55e;">Active</span>
+              
+            </div>
+            <p class="listing-card-address">120 S Lexington Ct, Andover, KS 67002</p>
+            <p class="listing-card-meta"><i class="fas fa-bed"></i>3 Beds &bull; 4 Baths &bull; 3,025 sq ft</p>
+            <p class="listing-card-meta"><i class="fas fa-expand-arrows-alt"></i>0.46 Acres</p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Andover, KS</p>
+            <p class="listing-card-price">$320,000</p>
+            <span class="listing-card-more">View Details &rarr;</span>
+          </div>
+        </a>
+        <a href="/listings/1214-mccaskey-dr-rose-hill-ks/" class="listing-card">
+          <img class="listing-card-img"
+               src="https://s3.amazonaws.com/mlsphotos.idxbroker.com/photos/03b5/5b3048047b4ffbd1d628a86f6a22e9af/c147"
+               alt="1214 McCaskey Dr, Rose Hill, KS 67133"
+               loading="lazy">
+          <div class="listing-card-body">
+            <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+              <span class="listing-card-badge" style="background:#22c55e;">Active</span>
+              
+            </div>
+            <p class="listing-card-address">1214 McCaskey Dr, Rose Hill, KS 67133</p>
+            <p class="listing-card-meta"><i class="fas fa-bed"></i>5 Beds &bull; 4 Baths &bull; 2,478 sq ft</p>
+            <p class="listing-card-meta"><i class="fas fa-expand-arrows-alt"></i>0.23 Acres</p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Rose Hill, KS</p>
+            <p class="listing-card-price">$310,000</p>
+            <span class="listing-card-more">View Details &rarr;</span>
+          </div>
+        </a>
+        <a href="/listings/211-s-commercial-ave-sedgwick-ks/" class="listing-card">
+          <img class="listing-card-img"
+               src="https://s3.amazonaws.com/mlsphotos.idxbroker.com/photos/f5a0/0a5f39a3e9e737fcb97902135ae1eed4/c147"
+               alt="211 S Commercial Ave, Sedgwick, KS 67135"
+               loading="lazy">
+          <div class="listing-card-body">
+            <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+              <span class="listing-card-badge" style="background:#22c55e;">Active</span>
+              
+            </div>
+            <p class="listing-card-address">211 S Commercial Ave, Sedgwick, KS 67135</p>
+            <p class="listing-card-meta"><i class="fas fa-bed"></i>3 Beds &bull; 4 Baths &bull; 2,556 sq ft</p>
+            <p class="listing-card-meta"><i class="fas fa-expand-arrows-alt"></i>0.94 Acres</p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Sedgwick, KS</p>
+            <p class="listing-card-price">$300,000</p>
+            <span class="listing-card-more">View Details &rarr;</span>
+          </div>
+        </a>
+        <a href="/listings/2325-n-gentry-lane-el-dorado-ks/" class="listing-card">
+          <img class="listing-card-img"
+               src="https://s3.amazonaws.com/mlsphotos.idxbroker.com/photos/0e44/44e0946cd4cc3c1821b9a739487e5db8/c147"
+               alt="2325 N Gentry Lane, El Dorado, KS 67042"
+               loading="lazy">
+          <div class="listing-card-body">
+            <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+              <span class="listing-card-badge" style="background:#22c55e;">Active</span>
+              
+            </div>
+            <p class="listing-card-address">2325 N Gentry Lane, El Dorado, KS 67042</p>
+            <p class="listing-card-meta"><i class="fas fa-bed"></i>5 Beds &bull; 3 Baths &bull; 2,214 sq ft</p>
+            <p class="listing-card-meta"><i class="fas fa-expand-arrows-alt"></i>0.28 Acres</p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>El Dorado, KS</p>
+            <p class="listing-card-price">$295,000</p>
+            <span class="listing-card-more">View Details &rarr;</span>
+          </div>
+        </a>
+        <a href="/listings/5473-se-hwy-54-el-dorado-ks/" class="listing-card">
+          <img class="listing-card-img"
+               src="https://s3.amazonaws.com/mlsphotos.idxbroker.com/photos/0373/373052e2b82271326d9a4e7a240ceb71/c147"
+               alt="5473 SE Hwy 54, El Dorado, KS 67042"
+               loading="lazy">
+          <div class="listing-card-body">
+            <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+              <span class="listing-card-badge" style="background:#f59e0b;">Pending</span>
+              
+            </div>
+            <p class="listing-card-address">5473 SE Hwy 54, El Dorado, KS 67042</p>
+            <p class="listing-card-meta"><i class="fas fa-bed"></i>3 Beds &bull; 1 Baths &bull; 1,704 sq ft</p>
+            <p class="listing-card-meta"><i class="fas fa-expand-arrows-alt"></i>4.8 Acres</p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>El Dorado, KS</p>
+            <p class="listing-card-price">$275,000</p>
+            <span class="listing-card-more">View Details &rarr;</span>
+          </div>
+        </a>
+        <a href="/listings/19421-us-highway-160-winfield-ks/" class="listing-card">
+          <img class="listing-card-img"
+               src="https://s3.amazonaws.com/mlsphotos.idxbroker.com/photos/83e2/2e381831cbdbcecf228bc33ca61fb249/c147"
+               alt="19421 US Highway 160, Winfield, KS 67156"
+               loading="lazy">
+          <div class="listing-card-body">
+            <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+              <span class="listing-card-badge" style="background:#22c55e;">Active</span>
+              
+            </div>
+            <p class="listing-card-address">19421 US Highway 160, Winfield, KS 67156</p>
+            <p class="listing-card-meta"><i class="fas fa-bed"></i>2 Beds &bull; 3 Baths &bull; 2,688 sq ft</p>
+            <p class="listing-card-meta"><i class="fas fa-expand-arrows-alt"></i>14.69 Acres</p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Winfield, KS</p>
+            <p class="listing-card-price">$255,000</p>
+            <span class="listing-card-more">View Details &rarr;</span>
+          </div>
+        </a>
+        <a href="/listings/215-e-post-rd-el-dorado-ks/" class="listing-card">
+          <img class="listing-card-img"
+               src="https://s3.amazonaws.com/mlsphotos.idxbroker.com/photos/203d/d3027db8411c888cbe963cd5b25869cb/c147"
+               alt="215 E Post Rd, El Dorado, KS 67042"
+               loading="lazy">
+          <div class="listing-card-body">
+            <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+              <span class="listing-card-badge" style="background:#f59e0b;">Pending</span>
+              
+            </div>
+            <p class="listing-card-address">215 E Post Rd, El Dorado, KS 67042</p>
+            <p class="listing-card-meta"><i class="fas fa-bed"></i>3 Beds &bull; 2 Baths &bull; 1,296 sq ft</p>
+            <p class="listing-card-meta"><i class="fas fa-expand-arrows-alt"></i>0.27 Acres</p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>El Dorado, KS</p>
+            <p class="listing-card-price">$249,900</p>
+            <span class="listing-card-more">View Details &rarr;</span>
+          </div>
+        </a>
+        <a href="/listings/1025-s-high-st-el-dorado-ks/" class="listing-card">
+          <img class="listing-card-img"
+               src="https://s3.amazonaws.com/mlsphotos.idxbroker.com/photos/7fc4/4cf7e1e8cd27d797fb1d36f4a324d6ed/c147"
+               alt="1025 S High St, El Dorado, KS 67042"
+               loading="lazy">
+          <div class="listing-card-body">
+            <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+              <span class="listing-card-badge" style="background:#f59e0b;">Pending</span>
+              
+            </div>
+            <p class="listing-card-address">1025 S High St, El Dorado, KS 67042</p>
+            <p class="listing-card-meta"><i class="fas fa-bed"></i>2 Beds &bull; 3 Baths &bull; 1,734 sq ft</p>
+            <p class="listing-card-meta"><i class="fas fa-expand-arrows-alt"></i>0.41 Acres</p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>El Dorado, KS</p>
+            <p class="listing-card-price">$220,000</p>
+            <span class="listing-card-more">View Details &rarr;</span>
+          </div>
+        </a>
+        <a href="/listings/1305-w-park-ave-el-dorado-ks/" class="listing-card">
+          <img class="listing-card-img"
+               src="https://s3.amazonaws.com/mlsphotos.idxbroker.com/photos/ee86/68ee9c6f13983ff425aac2735f479ebf/c147"
+               alt="1305 W Park Ave, El Dorado, KS 67042"
+               loading="lazy">
+          <div class="listing-card-body">
+            <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+              <span class="listing-card-badge" style="background:#f59e0b;">Pending</span>
+              
+            </div>
+            <p class="listing-card-address">1305 W Park Ave, El Dorado, KS 67042</p>
+            <p class="listing-card-meta"><i class="fas fa-bed"></i>5 Beds &bull; 2 Baths &bull; 2,285 sq ft</p>
+            <p class="listing-card-meta"><i class="fas fa-expand-arrows-alt"></i>0.31 Acres</p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>El Dorado, KS</p>
+            <p class="listing-card-price">$214,900</p>
+            <span class="listing-card-more">View Details &rarr;</span>
+          </div>
+        </a>
+        <a href="/listings/1673-n-lawndale-ave-el-dorado-ks/" class="listing-card">
+          <img class="listing-card-img"
+               src="https://s3.amazonaws.com/mlsphotos.idxbroker.com/photos/ea51/15ae4acf9445342319cbeb54b0b2ed6c/c147"
+               alt="1673 N Lawndale Ave, El Dorado, KS 67042"
+               loading="lazy">
+          <div class="listing-card-body">
+            <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+              <span class="listing-card-badge" style="background:#22c55e;">Active</span>
+              
+            </div>
+            <p class="listing-card-address">1673 N Lawndale Ave, El Dorado, KS 67042</p>
+            <p class="listing-card-meta"><i class="fas fa-bed"></i>3 Beds &bull; 2 Baths &bull; 1,344 sq ft</p>
+            <p class="listing-card-meta"><i class="fas fa-expand-arrows-alt"></i>0.23 Acres</p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>El Dorado, KS</p>
+            <p class="listing-card-price">$199,900</p>
+            <span class="listing-card-more">View Details &rarr;</span>
+          </div>
+        </a>
+        <a href="/listings/1009-country-club-dr-eureka-ks/" class="listing-card">
+          <img class="listing-card-img"
+               src="https://s3.amazonaws.com/mlsphotos.idxbroker.com/photos/1f7d/d7f1adaa1537131d813fb0d815975cb9/c147"
+               alt="1009 Country Club Dr, Eureka, KS 67045"
+               loading="lazy">
+          <div class="listing-card-body">
+            <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+              <span class="listing-card-badge" style="background:#22c55e;">Active</span>
+              
+            </div>
+            <p class="listing-card-address">1009 Country Club Dr, Eureka, KS 67045</p>
+            <p class="listing-card-meta"><i class="fas fa-bed"></i>3 Beds &bull; 2 Baths &bull; 1,641 sq ft</p>
+            <p class="listing-card-meta"><i class="fas fa-expand-arrows-alt"></i>0.6 Acres</p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Eureka, KS</p>
+            <p class="listing-card-price">$189,900</p>
+            <span class="listing-card-more">View Details &rarr;</span>
+          </div>
+        </a>
+        <a href="/listings/1126-w-1st-ave-el-dorado-ks/" class="listing-card">
+          <img class="listing-card-img"
+               src="https://s3.amazonaws.com/mlsphotos.idxbroker.com/photos/2d4d/d4d24ae3e19c985fcf43b094afa7f570/c147"
+               alt="1126 W 1st Ave, El Dorado, KS 67042"
+               loading="lazy">
+          <div class="listing-card-body">
+            <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+              <span class="listing-card-badge" style="background:#22c55e;">Active</span>
+              
+            </div>
+            <p class="listing-card-address">1126 W 1st Ave, El Dorado, KS 67042</p>
+            <p class="listing-card-meta"><i class="fas fa-bed"></i>3 Beds &bull; 2 Baths &bull; 1,383 sq ft</p>
+            <p class="listing-card-meta"><i class="fas fa-expand-arrows-alt"></i>0.16 Acres</p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>El Dorado, KS</p>
+            <p class="listing-card-price">$169,000</p>
+            <span class="listing-card-more">View Details &rarr;</span>
+          </div>
+        </a>
+        <a href="/listings/319-s-6th-st-towanda-ks/" class="listing-card">
+          <img class="listing-card-img"
+               src="https://s3.amazonaws.com/mlsphotos.idxbroker.com/photos/2523/3252b8b151895a5e660b4647c4594559/c147"
+               alt="319 S 6th St., Towanda, KS 67144"
+               loading="lazy">
+          <div class="listing-card-body">
+            <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+              <span class="listing-card-badge" style="background:#22c55e;">Active</span>
+              
+            </div>
+            <p class="listing-card-address">319 S 6th St., Towanda, KS 67144</p>
+            <p class="listing-card-meta"><i class="fas fa-bed"></i>3 Beds &bull; 2 Baths &bull; 1,440 sq ft</p>
+            <p class="listing-card-meta"><i class="fas fa-expand-arrows-alt"></i>0.84 Acres</p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Towanda, KS</p>
+            <p class="listing-card-price">$139,000</p>
+            <span class="listing-card-more">View Details &rarr;</span>
+          </div>
+        </a>
+        <a href="/listings/111-s-jefferson-st-eureka-ks/" class="listing-card">
+          <img class="listing-card-img"
+               src="https://s3.amazonaws.com/mlsphotos.idxbroker.com/photos/b47f/f74bba4114b758c10b7e1c4b48f2e6d9/c147"
+               alt="111 S Jefferson St, Eureka, KS 67045"
+               loading="lazy">
+          <div class="listing-card-body">
+            <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+              <span class="listing-card-badge" style="background:#f59e0b;">Pending</span>
+              
+            </div>
+            <p class="listing-card-address">111 S Jefferson St, Eureka, KS 67045</p>
+            <p class="listing-card-meta"><i class="fas fa-bed"></i>2 Beds &bull; 2 Baths &bull; 1,410 sq ft</p>
+            <p class="listing-card-meta"><i class="fas fa-expand-arrows-alt"></i>0.34 Acres</p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Eureka, KS</p>
+            <p class="listing-card-price">$135,000</p>
+            <span class="listing-card-more">View Details &rarr;</span>
+          </div>
+        </a>
+        <a href="/listings/320-n-maple-eureka-ks/" class="listing-card">
+          <img class="listing-card-img"
+               src="https://s3.amazonaws.com/mlsphotos.idxbroker.com/photos/9c88/88c95cc12291717a0432f509b8168846/c147"
+               alt="320 N Maple, Eureka, KS 67045"
+               loading="lazy">
+          <div class="listing-card-body">
+            <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+              <span class="listing-card-badge" style="background:#22c55e;">Active</span>
+              
+            </div>
+            <p class="listing-card-address">320 N Maple, Eureka, KS 67045</p>
+            <p class="listing-card-meta"><i class="fas fa-bed"></i>4 Beds &bull; 1 Baths &bull; 1,690 sq ft</p>
+            <p class="listing-card-meta"><i class="fas fa-expand-arrows-alt"></i>0.34 Acres</p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Eureka, KS</p>
+            <p class="listing-card-price">$85,000</p>
+            <span class="listing-card-more">View Details &rarr;</span>
+          </div>
+        </a>
+        <a href="/listings/330-w-central-el-dorado-ks/" class="listing-card">
+          <img class="listing-card-img"
+               src="https://s3.amazonaws.com/mlsphotos.idxbroker.com/photos/3148/841310214ebda6d9d435a7045d86aaa1/c147"
+               alt="330 W Central, El Dorado, KS 67042"
+               loading="lazy">
+          <div class="listing-card-body">
+            <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+              <span class="listing-card-badge" style="background:#f59e0b;">Pending</span>
+              
+            </div>
+            <p class="listing-card-address">330 W Central, El Dorado, KS 67042</p>
+            <p class="listing-card-meta"><i class="fas fa-bed"></i>2 Beds &bull; 1 Baths &bull; 1,119 sq ft</p>
+            
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>El Dorado, KS</p>
+            <p class="listing-card-price">$82,500</p>
+            <span class="listing-card-more">View Details &rarr;</span>
+          </div>
+        </a>
+        <a href="/listings/1208-w-6th-ave-el-dorado-ks/" class="listing-card">
+          <img class="listing-card-img"
+               src="https://s3.amazonaws.com/mlsphotos.idxbroker.com/photos/4550/055430119432243d1794fca44029623b/c147"
+               alt="1208 W 6th Ave, El Dorado, KS 67042"
+               loading="lazy">
+          <div class="listing-card-body">
+            <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+              <span class="listing-card-badge" style="background:#22c55e;">Active</span>
+              
+            </div>
+            <p class="listing-card-address">1208 W 6th Ave, El Dorado, KS 67042</p>
+            <p class="listing-card-meta"><i class="fas fa-bed"></i>3 Beds &bull; 1 Baths &bull; 985 sq ft</p>
+            <p class="listing-card-meta"><i class="fas fa-expand-arrows-alt"></i>0.38 Acres</p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>El Dorado, KS</p>
+            <p class="listing-card-price">$80,000</p>
+            <span class="listing-card-more">View Details &rarr;</span>
+          </div>
+        </a>
+        <a href="/listings/410-e-ohio-eureka-ks/" class="listing-card">
+          <img class="listing-card-img"
+               src="https://s3.amazonaws.com/mlsphotos.idxbroker.com/photos/070f/f0700b9ca4a979c00729ae75ffc5e36c/c147"
+               alt="410 E Ohio, Eureka, KS 67045"
+               loading="lazy">
+          <div class="listing-card-body">
+            <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+              <span class="listing-card-badge" style="background:#22c55e;">Active</span>
+              
+            </div>
+            <p class="listing-card-address">410 E Ohio, Eureka, KS 67045</p>
+            <p class="listing-card-meta"><i class="fas fa-bed"></i>2 Beds &bull; 2 Baths &bull; 1,648 sq ft</p>
+            <p class="listing-card-meta"><i class="fas fa-expand-arrows-alt"></i>0.1 Acres</p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Eureka, KS</p>
+            <p class="listing-card-price">$79,000</p>
+            <span class="listing-card-more">View Details &rarr;</span>
+          </div>
+        </a>
+        <a href="/listings/1121-n-osage-st-el-dorado-ks/" class="listing-card">
+          <img class="listing-card-img"
+               src="https://s3.amazonaws.com/mlsphotos.idxbroker.com/photos/f8e3/3e8f1224c336da7c9e8046eed9321294/c147"
+               alt="1121 N Osage St, El Dorado, KS 67042"
+               loading="lazy">
+          <div class="listing-card-body">
+            <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+              <span class="listing-card-badge" style="background:#f59e0b;">Pending</span>
+              
+            </div>
+            <p class="listing-card-address">1121 N Osage St, El Dorado, KS 67042</p>
+            <p class="listing-card-meta"><i class="fas fa-bed"></i>1 Beds &bull; 1 Baths &bull; 1,224 sq ft</p>
+            <p class="listing-card-meta"><i class="fas fa-expand-arrows-alt"></i>0.32 Acres</p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>El Dorado, KS</p>
+            <p class="listing-card-price">$70,000</p>
+            <span class="listing-card-more">View Details &rarr;</span>
+          </div>
+        </a>
+        <a href="/listings/330-w-central-ave-el-dorado-ks/" class="listing-card">
+          <img class="listing-card-img"
+               src="https://s3.amazonaws.com/mlsphotos.idxbroker.com/photos/4caa/aac44663e7ad8f7cb7776f04995e0278/c147"
+               alt="330 W Central Ave, El Dorado, KS 67042"
+               loading="lazy">
+          <div class="listing-card-body">
+            <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+              <span class="listing-card-badge" style="background:#22c55e;">Active</span>
+              
+            </div>
+            <p class="listing-card-address">330 W Central Ave, El Dorado, KS 67042</p>
+            <p class="listing-card-meta"><i class="fas fa-bed"></i>1 Beds &bull; 1 Baths &bull; 1,039 sq ft</p>
+            
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>El Dorado, KS</p>
+            <p class="listing-card-price">$69,000</p>
+            <span class="listing-card-more">View Details &rarr;</span>
+          </div>
+        </a>
+        <a href="/listings/521-n-mulberry-st-eureka-ks/" class="listing-card">
+          <img class="listing-card-img"
+               src="https://s3.amazonaws.com/mlsphotos.idxbroker.com/photos/a5d0/0d5a4b1e8b590146fe9567a0197e69cd/c147"
+               alt="521 N Mulberry St, Eureka, KS 67045"
+               loading="lazy">
+          <div class="listing-card-body">
+            <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+              <span class="listing-card-badge" style="background:#22c55e;">Active</span>
+              
+            </div>
+            <p class="listing-card-address">521 N Mulberry St, Eureka, KS 67045</p>
+            <p class="listing-card-meta"><i class="fas fa-bed"></i>4 Beds &bull; 2 Baths &bull; 1,747 sq ft</p>
+            <p class="listing-card-meta"><i class="fas fa-expand-arrows-alt"></i>0.17 Acres</p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Eureka, KS</p>
+            <p class="listing-card-price">$65,000</p>
+            <span class="listing-card-more">View Details &rarr;</span>
+          </div>
+        </a>
+        <a href="/listings/330-w-central-ave-el-dorado-ks/" class="listing-card">
+          <img class="listing-card-img"
+               src="https://s3.amazonaws.com/mlsphotos.idxbroker.com/photos/a1ff/ff1a801491542e67b9d3fcfa7090bc7c/c147"
+               alt="330 W Central Ave, El Dorado, KS 67042"
+               loading="lazy">
+          <div class="listing-card-body">
+            <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+              <span class="listing-card-badge" style="background:#f59e0b;">Pending</span>
+              
+            </div>
+            <p class="listing-card-address">330 W Central Ave, El Dorado, KS 67042</p>
+            <p class="listing-card-meta"><i class="fas fa-bed"></i>1 Beds &bull; 1 Baths &bull; 1,039 sq ft</p>
+            
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>El Dorado, KS</p>
+            <p class="listing-card-price">$64,900</p>
+            <span class="listing-card-more">View Details &rarr;</span>
+          </div>
+        </a>
+        <a href="/listings/9423-e-cross-creek-st-wichita-ks/" class="listing-card">
+          <img class="listing-card-img"
+               src="https://s3.amazonaws.com/mlsphotos.idxbroker.com/photos/ff31/13ff86a00f09a435e013c803460311c8/c147"
+               alt="9423 E Cross Creek St, Wichita, KS 67206"
+               loading="lazy">
+          <div class="listing-card-body">
+            <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+              <span class="listing-card-badge" style="background:#f59e0b;">Pending</span>
+              
+            </div>
+            <p class="listing-card-address">9423 E Cross Creek St, Wichita, KS 67206</p>
+            <p class="listing-card-meta"><i class="fas fa-bed"></i>5 Beds &bull; 5 Baths &bull; 5,907 sq ft</p>
+            <p class="listing-card-meta"><i class="fas fa-expand-arrows-alt"></i>1 Acres</p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Wichita, KS</p>
+            <p class="listing-card-price">$1,400,000</p>
+            <span class="listing-card-more">View Details &rarr;</span>
+          </div>
+        </a>
+        <a href="/listings/2012-n-veranda-cir-wichita-ks/" class="listing-card">
+          <img class="listing-card-img"
+               src="https://s3.amazonaws.com/mlsphotos.idxbroker.com/photos/b04d/d40b78557bb4373412dd50868690502c/c147"
+               alt="2012 N Veranda Cir, Wichita, KS 67206"
+               loading="lazy">
+          <div class="listing-card-body">
+            <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+              <span class="listing-card-badge" style="background:#f59e0b;">Pending</span>
+              
+            </div>
+            <p class="listing-card-address">2012 N Veranda Cir, Wichita, KS 67206</p>
+            <p class="listing-card-meta"><i class="fas fa-bed"></i>4 Beds &bull; 4 Baths &bull; 3,657 sq ft</p>
+            <p class="listing-card-meta"><i class="fas fa-expand-arrows-alt"></i>0.35 Acres</p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Wichita, KS</p>
+            <p class="listing-card-price">$1,100,000</p>
+            <span class="listing-card-more">View Details &rarr;</span>
+          </div>
+        </a>
+        <a href="/listings/23-n-scottsdale-st-wichita-ks/" class="listing-card">
+          <img class="listing-card-img"
+               src="https://s3.amazonaws.com/mlsphotos.idxbroker.com/photos/d827/728de19fe9b27d2d8ceae07d76db4634/c147"
+               alt="23 N Scottsdale St, Wichita, KS 67230"
+               loading="lazy">
+          <div class="listing-card-body">
+            <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+              <span class="listing-card-badge" style="background:#22c55e;">Active</span>
+              
+            </div>
+            <p class="listing-card-address">23 N Scottsdale St, Wichita, KS 67230</p>
+            <p class="listing-card-meta"><i class="fas fa-bed"></i>5 Beds &bull; 5 Baths &bull; 5,991 sq ft</p>
+            <p class="listing-card-meta"><i class="fas fa-expand-arrows-alt"></i>0.58 Acres</p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Wichita, KS</p>
+            <p class="listing-card-price">$950,000</p>
+            <span class="listing-card-more">View Details &rarr;</span>
+          </div>
+        </a>
+        <a href="/listings/16681-w-hickory-st-wichita-ks/" class="listing-card">
+          <img class="listing-card-img"
+               src="https://s3.amazonaws.com/mlsphotos.idxbroker.com/photos/b889/988b1d83fc1fe21507809cf25c21fb6d/c147"
+               alt="16681 W Hickory St, Wichita, KS 67052"
+               loading="lazy">
+          <div class="listing-card-body">
+            <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+              <span class="listing-card-badge" style="background:#22c55e;">Active</span>
+              
+            </div>
+            <p class="listing-card-address">16681 W Hickory St, Wichita, KS 67052</p>
+            <p class="listing-card-meta"><i class="fas fa-bed"></i>3 Beds &bull; 3 Baths &bull; 2,798 sq ft</p>
+            <p class="listing-card-meta"><i class="fas fa-expand-arrows-alt"></i>1.22 Acres</p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Wichita, KS</p>
+            <p class="listing-card-price">$850,000</p>
+            <span class="listing-card-more">View Details &rarr;</span>
+          </div>
+        </a>
+        <a href="/listings/9286-292nd-road-arkansas-city-ks/" class="listing-card">
+          <img class="listing-card-img"
+               src="https://s3.amazonaws.com/mlsphotos.idxbroker.com/photos/de21/12ed4c92c8dcf9ca5d8367cc28fc0f28/c147"
+               alt="9286 292nd Road, Arkansas City, KS 67005"
+               loading="lazy">
+          <div class="listing-card-body">
+            <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+              <span class="listing-card-badge" style="background:#f59e0b;">Pending</span>
+              
+            </div>
+            <p class="listing-card-address">9286 292nd Road, Arkansas City, KS 67005</p>
+            <p class="listing-card-meta"><i class="fas fa-bed"></i>4 Beds &bull; 4 Baths &bull; 6,976 sq ft</p>
+            <p class="listing-card-meta"><i class="fas fa-expand-arrows-alt"></i>20.18 Acres</p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Arkansas City, KS</p>
+            <p class="listing-card-price">$799,000</p>
+            <span class="listing-card-more">View Details &rarr;</span>
+          </div>
+        </a>
+        <a href="/listings/2486-maclean-circle-salina-ks/" class="listing-card">
+          <img class="listing-card-img"
+               src="https://s3.amazonaws.com/mlsphotos.idxbroker.com/photos/2c71/17c20b8fb96317a049eb804e4a7327ac/c147"
+               alt="2486 Maclean Circle, Salina, KS 67401"
+               loading="lazy">
+          <div class="listing-card-body">
+            <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+              <span class="listing-card-badge" style="background:#f59e0b;">Pending</span>
+              
+            </div>
+            <p class="listing-card-address">2486 Maclean Circle, Salina, KS 67401</p>
+            <p class="listing-card-meta"><i class="fas fa-bed"></i>5 Beds &bull; 6 Baths &bull; 7,465 sq ft</p>
+            <p class="listing-card-meta"><i class="fas fa-expand-arrows-alt"></i>0.5 Acres</p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Salina, KS</p>
+            <p class="listing-card-price">$759,900</p>
+            <span class="listing-card-more">View Details &rarr;</span>
+          </div>
+        </a>
+        <a href="/listings/13104-e-mainsgate-cir-wichita-ks/" class="listing-card">
+          <img class="listing-card-img"
+               src="/images/og-preview.png"
+               alt="13104 E Mainsgate Cir, Wichita, KS 67228"
+               loading="lazy">
+          <div class="listing-card-body">
+            <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+              <span class="listing-card-badge" style="background:#22c55e;">Active</span>
+              
+            </div>
+            <p class="listing-card-address">13104 E Mainsgate Cir, Wichita, KS 67228</p>
+            <p class="listing-card-meta"><i class="fas fa-bed"></i>4 Beds &bull; 5 Baths &bull; 4,397 sq ft</p>
+            <p class="listing-card-meta"><i class="fas fa-expand-arrows-alt"></i>0.3 Acres</p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Wichita, KS</p>
+            <p class="listing-card-price">$749,000</p>
+            <span class="listing-card-more">View Details &rarr;</span>
+          </div>
+        </a>
+        <a href="/listings/3997-n-estancia-ct-wichita-ks/" class="listing-card">
+          <img class="listing-card-img"
+               src="https://s3.amazonaws.com/mlsphotos.idxbroker.com/photos/9e23/32e9a8fe456841b3fd64d15d61be4e3e/c147"
+               alt="3997 N Estancia Ct, Wichita, KS 67205"
+               loading="lazy">
+          <div class="listing-card-body">
+            <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+              <span class="listing-card-badge" style="background:#22c55e;">Active</span>
+              
+            </div>
+            <p class="listing-card-address">3997 N Estancia Ct, Wichita, KS 67205</p>
+            <p class="listing-card-meta"><i class="fas fa-bed"></i>6 Beds &bull; 5 Baths &bull; 3,436 sq ft</p>
+            <p class="listing-card-meta"><i class="fas fa-expand-arrows-alt"></i>0.23 Acres</p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Wichita, KS</p>
+            <p class="listing-card-price">$669,000</p>
+            <span class="listing-card-more">View Details &rarr;</span>
+          </div>
+        </a>
+        <a href="/listings/1834-s-horseback-wichita-ks/" class="listing-card">
+          <img class="listing-card-img"
+               src="https://s3.amazonaws.com/mlsphotos.idxbroker.com/photos/383c/c3831ec6bbc0459489d108132f1dc0e5/c147"
+               alt="1834 S Horseback, Wichita, KS 67230"
+               loading="lazy">
+          <div class="listing-card-body">
+            <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+              <span class="listing-card-badge" style="background:#f59e0b;">Pending</span>
+              
+            </div>
+            <p class="listing-card-address">1834 S Horseback, Wichita, KS 67230</p>
+            <p class="listing-card-meta"><i class="fas fa-bed"></i>5 Beds &bull; 3 Baths &bull; 3,900 sq ft</p>
+            <p class="listing-card-meta"><i class="fas fa-expand-arrows-alt"></i>0.37 Acres</p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Wichita, KS</p>
+            <p class="listing-card-price">$631,317</p>
+            <span class="listing-card-more">View Details &rarr;</span>
+          </div>
+        </a>
+        <a href="/listings/522-n-150th-road-bennington-ks/" class="listing-card">
+          <img class="listing-card-img"
+               src="https://s3.amazonaws.com/mlsphotos.idxbroker.com/photos/de27/72edf8bd57db2a73981ee48e7b2c0aaa/c147"
+               alt="522 N 150th Road, Bennington, KS 67422"
+               loading="lazy">
+          <div class="listing-card-body">
+            <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+              <span class="listing-card-badge" style="background:#f59e0b;">Pending</span>
+              
+            </div>
+            <p class="listing-card-address">522 N 150th Road, Bennington, KS 67422</p>
+            <p class="listing-card-meta"><i class="fas fa-bed"></i>3 Beds &bull; 2 Baths &bull; 1,500 sq ft</p>
+            <p class="listing-card-meta"><i class="fas fa-expand-arrows-alt"></i>43 Acres</p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Bennington, KS</p>
+            <p class="listing-card-price">$610,000</p>
+            <span class="listing-card-more">View Details &rarr;</span>
+          </div>
+        </a>
+        <a href="/listings/1613-w-rockhill-pl-andover-ks/" class="listing-card">
+          <img class="listing-card-img"
+               src="https://s3.amazonaws.com/mlsphotos.idxbroker.com/photos/2d59/95d2f2cd72c4b26ea856db40d3b6c14d/c147"
+               alt="1613 W Rockhill Pl, Andover, KS 67002"
+               loading="lazy">
+          <div class="listing-card-body">
+            <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+              <span class="listing-card-badge" style="background:#22c55e;">Active</span>
+              
+            </div>
+            <p class="listing-card-address">1613 W Rockhill Pl, Andover, KS 67002</p>
+            <p class="listing-card-meta"><i class="fas fa-bed"></i>3 Beds &bull; 3 Baths &bull; 2,289 sq ft</p>
+            <p class="listing-card-meta"><i class="fas fa-expand-arrows-alt"></i>0.2 Acres</p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Andover, KS</p>
+            <p class="listing-card-price">$595,000</p>
+            <span class="listing-card-more">View Details &rarr;</span>
+          </div>
+        </a>
+        <a href="/listings/9801-s-103rd-st-w-clearwater-ks/" class="listing-card">
+          <img class="listing-card-img"
+               src="https://s3.amazonaws.com/mlsphotos.idxbroker.com/photos/2345/5432369d61fcb5e07f8c9ed9ce0a800c/c147"
+               alt="9801 S 103rd St W, Clearwater, KS 67026"
+               loading="lazy">
+          <div class="listing-card-body">
+            <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+              <span class="listing-card-badge" style="background:#22c55e;">Active</span>
+              
+            </div>
+            <p class="listing-card-address">9801 S 103rd St W, Clearwater, KS 67026</p>
+            <p class="listing-card-meta"><i class="fas fa-bed"></i>3 Beds &bull; 3 Baths &bull; 2,704 sq ft</p>
+            <p class="listing-card-meta"><i class="fas fa-expand-arrows-alt"></i>12.12 Acres</p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Clearwater, KS</p>
+            <p class="listing-card-price">$575,000</p>
+            <span class="listing-card-more">View Details &rarr;</span>
+          </div>
+        </a>
+        <a href="/listings/1325-n-covington-cir-wichita-ks/" class="listing-card">
+          <img class="listing-card-img"
+               src="https://s3.amazonaws.com/mlsphotos.idxbroker.com/photos/7763/367741cb5da85eeeaee1c1eb576fd58c/c147"
+               alt="1325 N Covington Cir, Wichita, KS 67212"
+               loading="lazy">
+          <div class="listing-card-body">
+            <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+              <span class="listing-card-badge" style="background:#22c55e;">Active</span>
+              
+            </div>
+            <p class="listing-card-address">1325 N Covington Cir, Wichita, KS 67212</p>
+            <p class="listing-card-meta"><i class="fas fa-bed"></i>5 Beds &bull; 4 Baths &bull; 3,893 sq ft</p>
+            <p class="listing-card-meta"><i class="fas fa-expand-arrows-alt"></i>0.29 Acres</p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Wichita, KS</p>
+            <p class="listing-card-price">$564,700</p>
+            <span class="listing-card-more">View Details &rarr;</span>
+          </div>
+        </a>
+        <a href="/listings/701-wedgewood-dr-newton-ks/" class="listing-card">
+          <img class="listing-card-img"
+               src="https://s3.amazonaws.com/mlsphotos.idxbroker.com/photos/c215/512c5f6b44f6b7620cb8e5254e67521e/c147"
+               alt="701 Wedgewood Dr, Newton, KS 67114"
+               loading="lazy">
+          <div class="listing-card-body">
+            <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+              <span class="listing-card-badge" style="background:#22c55e;">Active</span>
+              
+            </div>
+            <p class="listing-card-address">701 Wedgewood Dr, Newton, KS 67114</p>
+            <p class="listing-card-meta"><i class="fas fa-bed"></i>4 Beds &bull; 5 Baths &bull; 4,225 sq ft</p>
+            <p class="listing-card-meta"><i class="fas fa-expand-arrows-alt"></i>0.42 Acres</p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Newton, KS</p>
+            <p class="listing-card-price">$550,000</p>
+            <span class="listing-card-more">View Details &rarr;</span>
+          </div>
+        </a>
+        <a href="/listings/12915-e-spring-valley-st-wichita-ks/" class="listing-card">
+          <img class="listing-card-img"
+               src="https://s3.amazonaws.com/mlsphotos.idxbroker.com/photos/33db/bd33c3993dc9370f62b6b6cea695ee05/c147"
+               alt="12915 E Spring Valley St., Wichita, KS 67230"
+               loading="lazy">
+          <div class="listing-card-body">
+            <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+              <span class="listing-card-badge" style="background:#22c55e;">Active</span>
+              
+            </div>
+            <p class="listing-card-address">12915 E Spring Valley St., Wichita, KS 67230</p>
+            <p class="listing-card-meta"><i class="fas fa-bed"></i>5 Beds &bull; 3 Baths &bull; 3,144 sq ft</p>
+            <p class="listing-card-meta"><i class="fas fa-expand-arrows-alt"></i>0.4 Acres</p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Wichita, KS</p>
+            <p class="listing-card-price">$536,000</p>
+            <span class="listing-card-more">View Details &rarr;</span>
+          </div>
+        </a>
+        <a href="/listings/219-s-haverhill-rd-el-dorado-ks/" class="listing-card">
+          <img class="listing-card-img"
+               src="https://s3.amazonaws.com/mlsphotos.idxbroker.com/photos/f7b7/7b7f8a0db7bcd1d8259ffb5f5bb4891b/c147"
+               alt="219 S Haverhill Rd, El Dorado, KS 67042"
+               loading="lazy">
+          <div class="listing-card-body">
+            <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+              <span class="listing-card-badge" style="background:#22c55e;">Active</span>
+              <span class="listing-card-badge" style="background:var(--dark);">Commercial</span>
+            </div>
+            <p class="listing-card-address">219 S Haverhill Rd, El Dorado, KS 67042</p>
+            <p class="listing-card-meta">3,220 sq ft</p>
+            <p class="listing-card-meta"><i class="fas fa-expand-arrows-alt"></i>0.73 Acres</p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>El Dorado, KS</p>
+            <p class="listing-card-price">$99,000</p>
+            <span class="listing-card-more">View Details &rarr;</span>
+          </div>
+        </a>
+        <a href="/listings/117-w-2nd-ave-el-dorado-ks/" class="listing-card">
+          <img class="listing-card-img"
+               src="https://s3.amazonaws.com/mlsphotos.idxbroker.com/photos/4b95/59b4f649e6eb880ed5a9a9a5c1c37f06/c147"
+               alt="117 W 2nd Ave, El Dorado, KS 67042"
+               loading="lazy">
+          <div class="listing-card-body">
+            <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+              <span class="listing-card-badge" style="background:#22c55e;">Active</span>
+              <span class="listing-card-badge" style="background:var(--dark);">Commercial</span>
+            </div>
+            <p class="listing-card-address">117 W 2nd Ave, El Dorado, KS 67042</p>
+            <p class="listing-card-meta">560 sq ft</p>
+            <p class="listing-card-meta"><i class="fas fa-expand-arrows-alt"></i>0.11 Acres</p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>El Dorado, KS</p>
+            <p class="listing-card-price">$90,000</p>
+            <span class="listing-card-more">View Details &rarr;</span>
+          </div>
+        </a>
+        <a href="/listings/4774-w-maple-wichita-ks/" class="listing-card">
+          <img class="listing-card-img"
+               src="https://s3.amazonaws.com/mlsphotos.idxbroker.com/photos/e451/154e57d57fcb6fb051c34e5d3fd5a767/c147"
+               alt="4774 W Maple, Wichita, KS 67209"
+               loading="lazy">
+          <div class="listing-card-body">
+            <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+              <span class="listing-card-badge" style="background:#22c55e;">Active</span>
+              <span class="listing-card-badge" style="background:var(--dark);">Commercial</span>
+            </div>
+            <p class="listing-card-address">4774 W Maple, Wichita, KS 67209</p>
+            <p class="listing-card-meta">15,056 sq ft</p>
+            <p class="listing-card-meta"><i class="fas fa-expand-arrows-alt"></i>0.35 Acres</p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Wichita, KS</p>
+            <p class="listing-card-price">$68,000</p>
+            <span class="listing-card-more">View Details &rarr;</span>
+          </div>
+        </a>
       </div>
     </div>
   </section>
 
   <section class="cta-dark">
     <div class="container">
-      <h2>Looking for Something Specific?</h2>
-      <p>Search our full MLS listings or reach out to a Sundgren agent directly for personalized help finding your next property.</p>
-      <a href="/property-search/" class="btn-yellow">Search All Listings</a>
+      <h2>Don't See What You're Looking For?</h2>
+      <p>Search the full MLS or reach out to a Sundgren agent directly — we know South Central Kansas real estate inside and out.</p>
+      <a href="/property-search/" class="btn-yellow">Search All MLS Listings</a>
       <a href="/contact-us/" class="btn-outline-white">Contact Our Team</a>
     </div>
   </section>

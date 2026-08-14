@@ -23,10 +23,7 @@
   <link rel="apple-touch-icon" href="/images/favicon.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/sundgren.css">
-  <style>
-    .idx-widget-wrap { background: #fff; padding: 40px 0 60px; }
-    .idx-widget-wrap .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-  </style>
+  <style></style>
 
 </head>
 <body>
@@ -47,111 +44,106 @@
     </div>
   </section>
 
-  <!-- Featured Listings -->
-  <section class="section" style="padding-bottom:0;">
+<!-- Listings Grid -->
+  <section class="section">
     <div class="container">
-      <h2 style="font-size:22px;font-weight:800;color:var(--dark);margin:0 0 8px;">Featured Listings</h2>
-      <p style="color:var(--text-light);font-size:14px;margin:0 0 24px;">Active properties listed by Sundgren Realty agents across South Central Kansas</p>
-      <style>
-        .featured-listing-grid {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          gap: 24px;
-          margin-bottom: 40px;
-        }
-        @media (max-width: 900px) { .featured-listing-grid { grid-template-columns: repeat(2,1fr); } }
-        @media (max-width: 580px) { .featured-listing-grid { grid-template-columns: 1fr; } }
-        .featured-listing-card {
-          border-radius: 10px;
-          overflow: hidden;
-          background: #fff;
-          box-shadow: 0 2px 12px rgba(0,0,0,.08);
-          text-decoration: none;
-          color: inherit;
-          display: flex;
-          flex-direction: column;
-          transition: transform .2s, box-shadow .2s;
-        }
-        .featured-listing-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,.13); }
-        .featured-listing-card img { width:100%; aspect-ratio:4/3; object-fit:cover; display:block; }
-        .featured-listing-card-body { padding:16px 18px 18px; flex:1; display:flex; flex-direction:column; }
-        .featured-listing-badge { display:inline-block; font-size:10px; font-weight:800; letter-spacing:.08em; text-transform:uppercase; background:#22c55e; color:#fff; border-radius:4px; padding:3px 8px; margin-bottom:8px; width:fit-content; }
-        .featured-listing-addr { font-size:14px; font-weight:800; color:var(--dark); margin:0 0 6px; line-height:1.3; }
-        .featured-listing-meta { font-size:12px; color:var(--text-light); margin:0 0 3px; display:flex; align-items:center; gap:5px; }
-        .featured-listing-meta i { color:var(--yellow-dark); font-size:11px; }
-        .featured-listing-price { font-size:19px; font-weight:900; color:var(--dark); margin:10px 0 0; }
-        .featured-listing-more { display:inline-block; margin-top:12px; font-size:12px; font-weight:700; color:var(--red); }
-      </style>
-      <div class="featured-listing-grid">
-        <a href="/listings/5747-sw-20th-el-dorado-ks-4bed-10acres/" class="featured-listing-card">
-          <img src="https://s3.amazonaws.com/mlsphotos.idxbroker.com/photos/15c4/4c51959f20c51f8fcc45064c0fa1e175/c147"
-               alt="5747 SW 20th St, El Dorado KS &mdash; 4BD Home on 10 Acres" loading="lazy">
-          <div class="featured-listing-card-body">
-            <span class="featured-listing-badge">Active</span>
-            <p class="featured-listing-addr">5747 SW 20th St, El Dorado, KS 67042</p>
-            <p class="featured-listing-meta"><i class="fas fa-bed"></i>4 Beds &bull; 4 Baths &bull; 5,467 sq ft</p>
-            <p class="featured-listing-meta"><i class="fas fa-expand-arrows-alt"></i>10 Acres</p>
-            <p class="featured-listing-price">$1,650,000</p>
-            <span class="featured-listing-more">View Details &rarr;</span>
+      <div class="section-title">
+        <span class="eyebrow">Agent Listings</span>
+        <h2>Sundgren Commercial Listings</h2>
+        <hr class="divider">
+        <p>Active commercial properties listed directly by Sundgren Realty agents in South Central Kansas.</p>
+      </div>
+      
+  <style>
+    .listing-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    @media (max-width: 900px) { .listing-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 580px) { .listing-grid { grid-template-columns: 1fr; } }
+    .listing-card {
+      border-radius: 10px;
+      overflow: hidden;
+      background: #fff;
+      box-shadow: 0 2px 12px rgba(0,0,0,.08);
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      transition: transform .2s, box-shadow .2s;
+    }
+    .listing-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,.13); }
+    .listing-card-img { width: 100%; aspect-ratio: 4/3; object-fit: cover; display: block; }
+    .listing-card-body { padding: 18px 20px 20px; flex: 1; display: flex; flex-direction: column; }
+    .listing-card-badge { display: inline-block; font-size: 10px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: #fff; border-radius: 4px; padding: 3px 8px; width: fit-content; }
+    .listing-card-address { font-size: 15px; font-weight: 800; color: var(--dark); margin: 0 0 8px; line-height: 1.3; }
+    .listing-card-meta { font-size: 13px; color: var(--text-light); margin: 0 0 4px; display: flex; align-items: center; gap: 6px; }
+    .listing-card-meta i { color: var(--yellow-dark); font-size: 12px; }
+    .listing-card-price { font-size: 20px; font-weight: 900; color: var(--dark); margin: 12px 0 0; }
+    .listing-card-more { display: inline-block; margin-top: 14px; font-size: 13px; font-weight: 700; color: var(--red); }
+  </style>
+      <div class="listing-grid">
+        
+        <a href="/listings/219-s-haverhill-rd-el-dorado-ks/" class="listing-card">
+          <img class="listing-card-img"
+               src="https://s3.amazonaws.com/mlsphotos.idxbroker.com/photos/f7b7/7b7f8a0db7bcd1d8259ffb5f5bb4891b/c147"
+               alt="219 S Haverhill Rd, El Dorado, KS 67042"
+               loading="lazy">
+          <div class="listing-card-body">
+            <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+              <span class="listing-card-badge" style="background:#22c55e;">Active</span>
+              <span class="listing-card-badge" style="background:var(--dark);">Commercial</span>
+            </div>
+            <p class="listing-card-address">219 S Haverhill Rd, El Dorado, KS 67042</p>
+            <p class="listing-card-meta">3,220 sq ft</p>
+            <p class="listing-card-meta"><i class="fas fa-expand-arrows-alt"></i>0.73 Acres</p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>El Dorado, KS</p>
+            <p class="listing-card-price">$99,000</p>
+            <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/10608-sw-90th-augusta-ks-4bed-14acres/" class="featured-listing-card">
-          <img src="https://s3.amazonaws.com/mlsphotos.idxbroker.com/photos/e28e/e82e570e0389bb905b15622e837ca8be/c147"
-               alt="10608 SW 90th St, Augusta KS &mdash; Barndominium on 14.2 Acres" loading="lazy">
-          <div class="featured-listing-card-body">
-            <span class="featured-listing-badge">Active</span>
-            <p class="featured-listing-addr">10608 SW 90th St, Augusta, KS 67010</p>
-            <p class="featured-listing-meta"><i class="fas fa-bed"></i>4 Beds &bull; 3 Baths &bull; 2,904 sq ft</p>
-            <p class="featured-listing-meta"><i class="fas fa-expand-arrows-alt"></i>14.2 Acres</p>
-            <p class="featured-listing-price">$750,000</p>
-            <span class="featured-listing-more">View Details &rarr;</span>
+        <a href="/listings/117-w-2nd-ave-el-dorado-ks/" class="listing-card">
+          <img class="listing-card-img"
+               src="https://s3.amazonaws.com/mlsphotos.idxbroker.com/photos/4b95/59b4f649e6eb880ed5a9a9a5c1c37f06/c147"
+               alt="117 W 2nd Ave, El Dorado, KS 67042"
+               loading="lazy">
+          <div class="listing-card-body">
+            <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+              <span class="listing-card-badge" style="background:#22c55e;">Active</span>
+              <span class="listing-card-badge" style="background:var(--dark);">Commercial</span>
+            </div>
+            <p class="listing-card-address">117 W 2nd Ave, El Dorado, KS 67042</p>
+            <p class="listing-card-meta">560 sq ft</p>
+            <p class="listing-card-meta"><i class="fas fa-expand-arrows-alt"></i>0.11 Acres</p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>El Dorado, KS</p>
+            <p class="listing-card-price">$90,000</p>
+            <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/0000-10th-st-severy-ks-189acres-land/" class="featured-listing-card">
-          <img src="/images/hero-aerial.jpg"
-               alt="189.22 Acres, Severy KS &mdash; Greenwood County Land" loading="lazy">
-          <div class="featured-listing-card-body">
-            <span class="featured-listing-badge">Active</span>
-            <p class="featured-listing-addr">10th St, Severy, KS 67137</p>
-            <p class="featured-listing-meta"><i class="fas fa-tractor"></i>189.22 Acres &bull; Land/Pasture</p>
-            <p class="featured-listing-meta"><i class="fas fa-map-marker-alt"></i>Greenwood County</p>
-            <p class="featured-listing-price">$675,000</p>
-            <span class="featured-listing-more">View Details &rarr;</span>
+        <a href="/listings/4774-w-maple-wichita-ks/" class="listing-card">
+          <img class="listing-card-img"
+               src="https://s3.amazonaws.com/mlsphotos.idxbroker.com/photos/e451/154e57d57fcb6fb051c34e5d3fd5a767/c147"
+               alt="4774 W Maple, Wichita, KS 67209"
+               loading="lazy">
+          <div class="listing-card-body">
+            <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+              <span class="listing-card-badge" style="background:#22c55e;">Active</span>
+              <span class="listing-card-badge" style="background:var(--dark);">Commercial</span>
+            </div>
+            <p class="listing-card-address">4774 W Maple, Wichita, KS 67209</p>
+            <p class="listing-card-meta">15,056 sq ft</p>
+            <p class="listing-card-meta"><i class="fas fa-expand-arrows-alt"></i>0.35 Acres</p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Wichita, KS</p>
+            <p class="listing-card-price">$68,000</p>
+            <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
       </div>
-      <hr style="border:none;border-top:1px solid var(--border);margin:0 0 0;">
     </div>
   </section>
 
-  <!-- IDX Listings Showcase - Commercial (All MLS Listings) -->
-  <div class="idx-widget-wrap">
-    <div class="container" id="idx-commercial-container">
-      <div id="idx-commercial-placeholder" style="min-height:340px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;">
-        <div style="width:44px;height:44px;border:4px solid #e0e0e0;border-top-color:#c00;border-radius:50%;animation:idx-spin 0.8s linear infinite;"></div>
-        <span style="color:#999;font-size:14px;font-family:var(--wallox-font,'Plus Jakarta Sans',sans-serif);">Loading listings&hellip;</span>
-        <style>@keyframes idx-spin{to{transform:rotate(360deg)}}</style>
-      </div>
-    </div>
-  </div>
-  <script>
-  (function(){
-    function loadIdxWidget(){
-      var container = document.getElementById('idx-commercial-container');
-      var placeholder = document.getElementById('idx-commercial-placeholder');
-      if (!container || container.dataset.loaded) return;
-      container.dataset.loaded = '1';
-      if (placeholder) placeholder.remove();
-      var s = document.createElement('script');
-      s.charset = 'UTF-8';
-      s.type = 'text/javascript';
-      s.id = 'idxwidgetsrc-166191';
-      s.src = '//realestate.sundgren.com/idx/widgets/166191';
-      container.appendChild(s);
-    }
-    setTimeout(loadIdxWidget, 150);
-  })();
-  </script>
+
 
   <section class="cta-dark">
     <div class="container">
