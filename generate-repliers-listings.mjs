@@ -124,20 +124,45 @@ function fullAddress(addr) {
   return parts.join(', ');
 }
 
-// ── Photo Grid + Lightbox ────────────────────────────────────────────────────
+// ── Photo Mosaic + Lightbox ───────────────────────────────────────────────────
+// Shows: 1 hero image (large) + up to 4 thumbnails in a strip.
+// "View all N photos" button opens the full lightbox.
 function renderPhotoGrid(images) {
   if (!images || !images.length) return '';
   const srcs = images.slice(0, 20).map(imgUrl).filter(Boolean);
   if (!srcs.length) return '';
 
-  const thumbs = srcs.map((src, i) =>
-    `        <img src="${esc(src)}" alt="Property photo ${i + 1}" loading="${i === 0 ? 'eager' : 'lazy'}" data-idx="${i}" class="sg-gallery-thumb" tabindex="0">`
-  ).join('\n');
+  const hero   = srcs[0];
+  const thumbs = srcs.slice(1, 5); // max 4 visible side thumbnails
+  const total  = srcs.length;
+
+  // Thumb cells — last one gets a "+N more" overlay if there are photos beyond visible
+  const extraCount = total - 5; // photos not visible (hero=1, thumbs=4)
+  const thumbCells = thumbs.map((src, i) => {
+    const isLast = i === thumbs.length - 1 && extraCount > 0;
+    const overlay = isLast
+      ? `<div class="sg-mosaic-more" aria-hidden="true">+${extraCount} more</div>`
+      : '';
+    return `      <button class="sg-mosaic-thumb" data-idx="${i + 1}" aria-label="View photo ${i + 2}" type="button">
+        <img src="${esc(src)}" alt="Property photo ${i + 2}" loading="lazy">
+        ${overlay}
+      </button>`;
+  }).join('\n');
 
   return `
-  <section class="photo-gallery-section" style="padding:0 0 0;">
-    <div class="sg-gallery-grid">
-${thumbs}
+  <section class="photo-gallery-section" style="margin-bottom:24px;">
+    <div class="sg-mosaic">
+      <button class="sg-mosaic-hero" data-idx="0" aria-label="View photo 1" type="button">
+        <img src="${esc(hero)}" alt="Primary property photo" loading="eager">
+      </button>
+      <div class="sg-mosaic-strip">
+${thumbCells}
+      </div>
+    </div>
+    <div class="sg-gallery-bar">
+      <button class="sg-gallery-all-btn" id="sg-view-all" type="button">
+        <i class="fas fa-images"></i> View all ${total} photo${total !== 1 ? 's' : ''}
+      </button>
     </div>
   </section>
 
@@ -158,7 +183,11 @@ ${thumbs}
     var cur = 0;
     function open(i){ cur=i; lbImg.src=srcs[i]; lbCtr.textContent=(i+1)+' / '+srcs.length; lb.classList.add('active'); document.body.style.overflow='hidden'; }
     function close(){ lb.classList.remove('active'); document.body.style.overflow=''; }
-    document.querySelectorAll('.sg-gallery-thumb').forEach(function(img,i){ img.addEventListener('click',function(){ open(i); }); img.addEventListener('keydown',function(e){ if(e.key==='Enter'||e.key===' ') open(i); }); });
+    document.querySelectorAll('.sg-mosaic-hero, .sg-mosaic-thumb').forEach(function(btn){
+      btn.addEventListener('click',function(){ open(parseInt(btn.dataset.idx,10)); });
+    });
+    var viewAll = document.getElementById('sg-view-all');
+    if (viewAll) viewAll.addEventListener('click', function(){ open(0); });
     document.getElementById('sg-lightbox-close').addEventListener('click',close);
     document.getElementById('sg-lightbox-prev').addEventListener('click',function(){ open((cur-1+srcs.length)%srcs.length); });
     document.getElementById('sg-lightbox-next').addEventListener('click',function(){ open((cur+1)%srcs.length); });

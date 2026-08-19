@@ -1,0 +1,830 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Value My Land | Free Land Valuation Tool | Sundgren Realty &amp; Auction</title>
+  <meta name="description" content="Get a free land value estimate for your farm, ranch, or acreage in South Central Kansas. Sundgren Realty's land valuation calculator factors in acreage, soil quality, water access, and more.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="canonical" href="https://sundgrenrealty.com/value-my-land/">
+  <meta property="og:title" content="Value My Land | Sundgren Realty &amp; Auction">
+  <meta property="og:description" content="Free land valuation tool for South Central Kansas. Find out what your farm, ranch, or acreage is worth.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sundgrenrealty.com/value-my-land/">
+  <meta property="og:image" content="https://sundgren-realty.pages.dev/images/og-preview.png">
+  <link rel="icon" href="/images/favicon.png" type="image/png" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="/images/favicon-black.png" type="image/png" media="(prefers-color-scheme: light)">
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.svg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/sundgren.css">
+  <style>
+    /* -- Value My Land Page -- */
+    .vml-hero {
+      background: linear-gradient(to bottom, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.72) 100%),
+                  url('/images/home-land.jpg') center/cover no-repeat;
+      padding: 80px 0 60px;
+      text-align: center;
+    }
+    .vml-hero h1 {
+      font-family: 'Trajan Pro', serif;
+      font-size: clamp(26px, 4vw, 48px);
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      margin: 0 0 14px;
+      text-shadow: 0 2px 16px rgba(0,0,0,.5);
+    }
+    .vml-hero p {
+      color: rgba(255,255,255,.88);
+      font-size: clamp(15px, 2vw, 18px);
+      max-width: 560px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+    .vml-hero .eyebrow {
+      display: inline-block;
+      color: var(--yellow);
+      font-family: 'SF New Republic SC', sans-serif;
+      font-size: 11px;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    /* -- Calculator Card -- */
+    .vml-wrap {
+      max-width: 820px;
+      margin: -40px auto 60px;
+      padding: 0 20px;
+      position: relative;
+      z-index: 10;
+    }
+    .vml-card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 8px 48px rgba(0,0,0,.14);
+      overflow: hidden;
+    }
+
+    /* Progress bar */
+    .vml-progress {
+      display: flex;
+      background: var(--bg-light);
+      border-bottom: 1px solid var(--border);
+    }
+    .vml-progress-step {
+      flex: 1;
+      padding: 14px 10px;
+      text-align: center;
+      font-size: 12px;
+      font-family: 'SF New Republic SC', sans-serif;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      color: var(--text-light);
+      border-bottom: 3px solid transparent;
+      transition: color .2s, border-color .2s;
+      cursor: default;
+      user-select: none;
+    }
+    .vml-progress-step.active {
+      color: var(--dark);
+      border-bottom-color: var(--yellow);
+      font-weight: 700;
+    }
+    .vml-progress-step.done {
+      color: var(--dark);
+      border-bottom-color: var(--dark);
+    }
+    .vml-progress-step i { margin-right: 5px; }
+
+    /* Step panels */
+    .vml-step {
+      display: none;
+      padding: 36px 40px 40px;
+    }
+    .vml-step.active { display: block; }
+    .vml-step-title {
+      font-family: 'Trajan Pro', serif;
+      font-size: 20px;
+      color: var(--dark);
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      margin: 0 0 6px;
+    }
+    .vml-step-sub {
+      font-size: 14px;
+      color: var(--text-light);
+      margin: 0 0 28px;
+    }
+
+    /* Form elements */
+    .vml-field-group { margin-bottom: 22px; }
+    .vml-field-group label {
+      display: block;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--dark);
+      margin-bottom: 7px;
+      letter-spacing: .02em;
+    }
+    .vml-field-group label span { font-weight: 400; color: var(--text-light); }
+    .vml-input {
+      width: 100%;
+      padding: 12px 16px;
+      border: 1.5px solid var(--border);
+      border-radius: 4px;
+      font-size: 15px;
+      color: var(--dark);
+      background: #fff;
+      transition: border-color .2s;
+      box-sizing: border-box;
+    }
+    .vml-input:focus { outline: none; border-color: var(--yellow); }
+    select.vml-input { cursor: pointer; }
+
+    /* Tile picker */
+    .vml-tiles {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 12px;
+    }
+    .vml-tile { position: relative; }
+    .vml-tile input[type="radio"] { position: absolute; opacity: 0; width: 0; }
+    .vml-tile label {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 18px 12px;
+      border: 1.5px solid var(--border);
+      border-radius: 6px;
+      cursor: pointer;
+      text-align: center;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--dark);
+      letter-spacing: .02em;
+      transition: border-color .2s, background .2s;
+      min-height: 80px;
+    }
+    .vml-tile label i { font-size: 22px; color: var(--text-light); transition: color .2s; }
+    .vml-tile input:checked + label { border-color: var(--yellow); background: #fffce8; }
+    .vml-tile input:checked + label i { color: var(--dark); }
+    .vml-tile label small { font-size: 11px; font-weight: 400; color: var(--text-light); display: block; }
+
+    /* Slider */
+    .vml-slider {
+      -webkit-appearance: none;
+      width: 100%;
+      height: 6px;
+      border-radius: 3px;
+      background: linear-gradient(to right, var(--yellow) 0%, var(--yellow) 50%, var(--border) 50%, var(--border) 100%);
+      outline: none;
+    }
+    .vml-slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 22px; height: 22px;
+      border-radius: 50%;
+      background: var(--dark);
+      cursor: pointer;
+      border: 3px solid var(--yellow);
+      box-shadow: 0 2px 6px rgba(0,0,0,.2);
+    }
+    .vml-slider::-moz-range-thumb {
+      width: 22px; height: 22px;
+      border-radius: 50%;
+      background: var(--dark);
+      cursor: pointer;
+      border: 3px solid var(--yellow);
+    }
+    .vml-slider-labels {
+      display: flex;
+      justify-content: space-between;
+      font-size: 11px;
+      color: var(--text-light);
+      margin-top: 6px;
+    }
+    .vml-slider-val {
+      font-size: 24px;
+      font-weight: 800;
+      color: var(--dark);
+      margin-bottom: 10px;
+    }
+    .vml-slider-val span { font-size: 14px; font-weight: 400; color: var(--text-light); margin-left: 4px; }
+
+    /* Toggle row */
+    .vml-toggle-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--bg-light);
+    }
+    .vml-toggle-row:last-child { border-bottom: none; }
+    .vml-toggle-info { flex: 1; }
+    .vml-toggle-info strong { display: block; font-size: 14px; color: var(--dark); }
+    .vml-toggle-info small { font-size: 12px; color: var(--text-light); }
+    .vml-toggle { position: relative; width: 44px; height: 24px; flex-shrink: 0; }
+    .vml-toggle input { opacity: 0; width: 0; height: 0; }
+    .vml-toggle-slider {
+      position: absolute;
+      inset: 0;
+      background: var(--border);
+      border-radius: 24px;
+      cursor: pointer;
+      transition: background .2s;
+    }
+    .vml-toggle-slider::before {
+      content: '';
+      position: absolute;
+      width: 18px; height: 18px;
+      left: 3px; top: 3px;
+      background: #fff;
+      border-radius: 50%;
+      transition: transform .2s;
+      box-shadow: 0 1px 4px rgba(0,0,0,.2);
+    }
+    .vml-toggle input:checked + .vml-toggle-slider { background: var(--dark); }
+    .vml-toggle input:checked + .vml-toggle-slider::before { transform: translateX(20px); }
+
+    /* Two-col grid */
+    .vml-grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    @media (max-width: 560px) { .vml-grid-2 { grid-template-columns: 1fr; } }
+
+    /* Nav buttons */
+    .vml-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 32px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+    }
+    .vml-btn-back {
+      background: none;
+      border: 1.5px solid var(--border);
+      color: var(--text);
+      padding: 12px 24px;
+      border-radius: 4px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: border-color .2s, color .2s;
+    }
+    .vml-btn-back:hover { border-color: var(--dark); color: var(--dark); }
+    .vml-btn-next {
+      background: var(--yellow);
+      border: none;
+      color: var(--dark);
+      padding: 13px 32px;
+      border-radius: 4px;
+      font-family: 'SF New Republic SC', sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: background .2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .vml-btn-next:hover { background: var(--yellow-dark); }
+
+    /* Results panel */
+    #vml-results { display: none; }
+    .vml-results-header {
+      background: var(--dark);
+      padding: 32px 40px;
+      text-align: center;
+    }
+    .vml-results-header .eyebrow {
+      display: block;
+      color: var(--yellow);
+      font-family: 'SF New Republic SC', sans-serif;
+      font-size: 11px;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    .vml-results-header h2 {
+      font-family: 'Trajan Pro', serif;
+      font-size: clamp(18px, 3vw, 26px);
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      margin: 0 0 8px;
+    }
+    .vml-results-header p { color: rgba(255,255,255,.7); font-size: 13px; margin: 0; }
+
+    .vml-estimate-box {
+      background: var(--yellow);
+      padding: 28px 40px;
+      text-align: center;
+    }
+    .vml-estimate-label {
+      font-size: 12px;
+      font-family: 'SF New Republic SC', sans-serif;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--dark);
+      opacity: .7;
+      margin-bottom: 6px;
+    }
+    .vml-estimate-range {
+      font-size: clamp(28px, 5vw, 46px);
+      font-weight: 900;
+      color: var(--dark);
+      line-height: 1.1;
+      margin-bottom: 4px;
+    }
+    .vml-estimate-per { font-size: 14px; color: var(--dark); opacity: .7; }
+
+    .vml-results-body { padding: 36px 40px; }
+    .vml-factors-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 14px;
+      margin-bottom: 32px;
+    }
+    .vml-factor-card {
+      background: var(--bg-light);
+      border-radius: 6px;
+      padding: 16px;
+      text-align: center;
+    }
+    .vml-factor-card i { font-size: 20px; color: var(--yellow-dark); margin-bottom: 8px; display: block; }
+    .vml-factor-card strong { font-size: 13px; color: var(--dark); display: block; margin-bottom: 2px; }
+    .vml-factor-card span { font-size: 12px; color: var(--text-light); }
+
+    .vml-cta-box {
+      background: var(--dark);
+      border-radius: 6px;
+      padding: 28px 32px;
+      display: flex;
+      align-items: flex-start;
+      gap: 24px;
+      margin-bottom: 28px;
+    }
+    .vml-cta-box i { font-size: 32px; color: var(--yellow); flex-shrink: 0; margin-top: 4px; }
+    .vml-cta-box-text h3 { color: #fff; font-size: 16px; margin: 0 0 6px; }
+    .vml-cta-box-text p { color: rgba(255,255,255,.7); font-size: 13px; margin: 0 0 14px; line-height: 1.6; }
+
+    .vml-btn-restart {
+      display: block;
+      width: 100%;
+      text-align: center;
+      background: none;
+      border: 1.5px solid var(--border);
+      color: var(--text-light);
+      padding: 12px 20px;
+      border-radius: 4px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: border-color .2s, color .2s;
+      margin-bottom: 28px;
+    }
+    .vml-btn-restart:hover { border-color: var(--dark); color: var(--dark); }
+
+    /* Disclaimer */
+    .vml-disclaimer {
+      background: #f9f9f9;
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--yellow-dark);
+      border-radius: 4px;
+      padding: 20px 24px;
+      font-size: 12.5px;
+      color: var(--text-light);
+      line-height: 1.75;
+    }
+    .vml-disclaimer strong {
+      display: block;
+      font-size: 13px;
+      color: var(--dark);
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+    }
+    .vml-disclaimer p { margin: 0 0 8px; }
+    .vml-disclaimer p:last-child { margin-bottom: 0; }
+
+    @media (max-width: 600px) {
+      .vml-step { padding: 24px 20px 28px; }
+      .vml-results-header, .vml-estimate-box, .vml-results-body { padding-left: 20px; padding-right: 20px; }
+      .vml-tiles { grid-template-columns: 1fr 1fr; }
+      .vml-cta-box { flex-direction: column; gap: 14px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+
+<main>
+
+  <!-- Hero -->
+  <div class="vml-hero">
+    <div class="container">
+      <span class="eyebrow">Free Estimate</span>
+      <h1>Value My Land</h1>
+      <p>Find out what your farm, ranch, or acreage is worth in South Central Kansas &#8212; in under 2 minutes.</p>
+    </div>
+  </div>
+
+  <!-- Calculator -->
+  <div class="vml-wrap" id="vml-anchor">
+    <div class="vml-card">
+
+      <!-- Progress Steps -->
+      <div class="vml-progress" id="vml-progress">
+        <div class="vml-progress-step active" data-step="1"><i class="fas fa-seedling"></i>Land Type</div>
+        <div class="vml-progress-step" data-step="2"><i class="fas fa-ruler-combined"></i>Size</div>
+        <div class="vml-progress-step" data-step="3"><i class="fas fa-map-marker-alt"></i>Location</div>
+        <div class="vml-progress-step" data-step="4"><i class="fas fa-sliders-h"></i>Features</div>
+        <div class="vml-progress-step" data-step="5"><i class="fas fa-chart-line"></i>Results</div>
+      </div>
+
+      <!-- Step 1: Land Type -->
+      <div class="vml-step active" id="step-1">
+        <h2 class="vml-step-title">What type of land do you own?</h2>
+        <p class="vml-step-sub">Select the best description for your property.</p>
+        <div class="vml-tiles">
+          <div class="vml-tile">
+            <input type="radio" name="landType" id="lt-tillable" value="tillable">
+            <label for="lt-tillable">
+              <i class="fas fa-tractor"></i>
+              Tillable Farmland
+              <small>Row crops, grain</small>
+            </label>
+          </div>
+          <div class="vml-tile">
+            <input type="radio" name="landType" id="lt-pasture" value="pasture">
+            <label for="lt-pasture">
+              <i class="fas fa-horse"></i>
+              Pasture / Ranch
+              <small>Grass, grazing land</small>
+            </label>
+          </div>
+          <div class="vml-tile">
+            <input type="radio" name="landType" id="lt-recreational" value="recreational">
+            <label for="lt-recreational">
+              <i class="fas fa-tree"></i>
+              Recreational
+              <small>Hunting, timber, CRP</small>
+            </label>
+          </div>
+          <div class="vml-tile">
+            <input type="radio" name="landType" id="lt-residential" value="residential">
+            <label for="lt-residential">
+              <i class="fas fa-home"></i>
+              Rural Residential
+              <small>Home site, acreage</small>
+            </label>
+          </div>
+          <div class="vml-tile">
+            <input type="radio" name="landType" id="lt-mixed" value="mixed">
+            <label for="lt-mixed">
+              <i class="fas fa-layer-group"></i>
+              Mixed Use
+              <small>Combination</small>
+            </label>
+          </div>
+          <div class="vml-tile">
+            <input type="radio" name="landType" id="lt-commercial" value="commercial">
+            <label for="lt-commercial">
+              <i class="fas fa-building"></i>
+              Commercial Land
+              <small>Lots, development</small>
+            </label>
+          </div>
+        </div>
+        <div class="vml-nav">
+          <span></span>
+          <button class="vml-btn-next" onclick="nextStep(1)">Next <i class="fas fa-arrow-right"></i></button>
+        </div>
+      </div>
+
+      <!-- Step 2: Acreage -->
+      <div class="vml-step" id="step-2">
+        <h2 class="vml-step-title">How many acres do you have?</h2>
+        <p class="vml-step-sub">Drag the slider or type an exact number.</p>
+        <div class="vml-field-group">
+          <div class="vml-slider-val"><span id="acreage-display">160</span> <span>acres</span></div>
+          <input type="range" class="vml-slider" id="acreage-slider" min="1" max="2000" value="160" step="1"
+            oninput="updateSlider(this, 'acreage-display', 'acreage-input')">
+          <div class="vml-slider-labels"><span>1 acre</span><span>500</span><span>1,000</span><span>2,000+ acres</span></div>
+        </div>
+        <div class="vml-field-group" style="margin-top:20px;">
+          <label for="acreage-input">Or enter exact acreage</label>
+          <input type="number" class="vml-input" id="acreage-input" value="160" min="1" max="99999"
+            oninput="updateFromInput(this, 'acreage-slider', 'acreage-display', 2000)">
+        </div>
+        <div class="vml-nav">
+          <button class="vml-btn-back" onclick="prevStep(2)"><i class="fas fa-arrow-left"></i> Back</button>
+          <button class="vml-btn-next" onclick="nextStep(2)">Next <i class="fas fa-arrow-right"></i></button>
+        </div>
+      </div>
+
+      <!-- Step 3: Location -->
+      <div class="vml-step" id="step-3">
+        <h2 class="vml-step-title">Where is your property located?</h2>
+        <p class="vml-step-sub">County and proximity to town affect value significantly.</p>
+        <div class="vml-grid-2">
+          <div class="vml-field-group">
+            <label for="county">County</label>
+            <select class="vml-input" id="county">
+              <option value="butler" selected>Butler County</option>
+              <option value="sedgwick">Sedgwick County</option>
+              <option value="harvey">Harvey County</option>
+              <option value="greenwood">Greenwood County</option>
+              <option value="elk">Elk County</option>
+              <option value="chase">Chase County</option>
+              <option value="marion">Marion County</option>
+              <option value="mcpherson">McPherson County</option>
+              <option value="other">Other Kansas County</option>
+            </select>
+          </div>
+          <div class="vml-field-group">
+            <label for="proximity">Distance to nearest town <span>(miles)</span></label>
+            <select class="vml-input" id="proximity">
+              <option value="0">Less than 5 miles</option>
+              <option value="1" selected>5&#8211;15 miles</option>
+              <option value="2">15&#8211;30 miles</option>
+              <option value="3">30+ miles</option>
+            </select>
+          </div>
+        </div>
+        <div class="vml-field-group">
+          <label>Terrain / Topography</label>
+          <div class="vml-tiles" style="grid-template-columns: repeat(3, 1fr);">
+            <div class="vml-tile">
+              <input type="radio" name="terrain" id="terrain-flat" value="flat" checked>
+              <label for="terrain-flat"><i class="fas fa-grip-lines"></i>Flat / Level<small>Easy to work</small></label>
+            </div>
+            <div class="vml-tile">
+              <input type="radio" name="terrain" id="terrain-rolling" value="rolling">
+              <label for="terrain-rolling"><i class="fas fa-wave-square"></i>Rolling<small>Moderate slopes</small></label>
+            </div>
+            <div class="vml-tile">
+              <input type="radio" name="terrain" id="terrain-rough" value="rough">
+              <label for="terrain-rough"><i class="fas fa-mountain"></i>Rough / Steep<small>Limited access</small></label>
+            </div>
+          </div>
+        </div>
+        <div class="vml-nav">
+          <button class="vml-btn-back" onclick="prevStep(3)"><i class="fas fa-arrow-left"></i> Back</button>
+          <button class="vml-btn-next" onclick="nextStep(3)">Next <i class="fas fa-arrow-right"></i></button>
+        </div>
+      </div>
+
+      <!-- Step 4: Features -->
+      <div class="vml-step" id="step-4">
+        <h2 class="vml-step-title">What features does your land have?</h2>
+        <p class="vml-step-sub">These factors can significantly affect your land&#8217;s value. Toggle everything that applies.</p>
+
+        <div class="vml-toggle-row">
+          <div class="vml-toggle-info">
+            <strong><i class="fas fa-road" style="color:var(--yellow-dark);margin-right:6px;"></i> Paved Road Frontage</strong>
+            <small>Access via paved county or state road &#8212; adds 15&#8211;25% premium</small>
+          </div>
+          <label class="vml-toggle"><input type="checkbox" id="feat-road"><span class="vml-toggle-slider"></span></label>
+        </div>
+        <div class="vml-toggle-row">
+          <div class="vml-toggle-info">
+            <strong><i class="fas fa-tint" style="color:var(--yellow-dark);margin-right:6px;"></i> Water / Pond / Creek</strong>
+            <small>Ponds, seasonal creeks, or live water on the property</small>
+          </div>
+          <label class="vml-toggle"><input type="checkbox" id="feat-water"><span class="vml-toggle-slider"></span></label>
+        </div>
+        <div class="vml-toggle-row">
+          <div class="vml-toggle-info">
+            <strong><i class="fas fa-bolt" style="color:var(--yellow-dark);margin-right:6px;"></i> Utilities at Road</strong>
+            <small>Electric and/or rural water available at the property line</small>
+          </div>
+          <label class="vml-toggle"><input type="checkbox" id="feat-utilities"><span class="vml-toggle-slider"></span></label>
+        </div>
+        <div class="vml-toggle-row">
+          <div class="vml-toggle-info">
+            <strong><i class="fas fa-home" style="color:var(--yellow-dark);margin-right:6px;"></i> Existing Structures</strong>
+            <small>Home, barn, shop, or other outbuildings on the property</small>
+          </div>
+          <label class="vml-toggle"><input type="checkbox" id="feat-structures"><span class="vml-toggle-slider"></span></label>
+        </div>
+        <div class="vml-toggle-row">
+          <div class="vml-toggle-info">
+            <strong><i class="fas fa-leaf" style="color:var(--yellow-dark);margin-right:6px;"></i> CRP Enrollment</strong>
+            <small>Land in Conservation Reserve Program generates annual income</small>
+          </div>
+          <label class="vml-toggle"><input type="checkbox" id="feat-crp"><span class="vml-toggle-slider"></span></label>
+        </div>
+        <div class="vml-toggle-row">
+          <div class="vml-toggle-info">
+            <strong><i class="fas fa-seedling" style="color:var(--yellow-dark);margin-right:6px;"></i> High-Quality Soil</strong>
+            <small>Class I or II soils with high productivity (prime tillable ground)</small>
+          </div>
+          <label class="vml-toggle"><input type="checkbox" id="feat-soil"><span class="vml-toggle-slider"></span></label>
+        </div>
+
+        <div class="vml-nav">
+          btn-back" onclick="prevStep(4)"><i class="fas fa-arrow-left"></i> Back</button>
+          <button class="vml-btn-next" onclick="calculateValue()">Get My Estimate <i class="fas fa-chart-line"></i></button>
+        </div>
+      </div>
+
+      <!-- Step 5: Results -->
+      <div id="vml-results">
+        <div class="vml-results-header">
+          <span class="eyebrow">Your Estimate</span>
+          <h2>Land Value Estimate</h2>
+          <p>Based on current South Central Kansas market conditions</p>
+        </div>
+        <div class="vml-estimate-box">
+          <div class="vml-estimate-label">Estimated Value Range</div>
+          <div class="vml-estimate-range" id="result-range">&#8212;</div>
+          <div class="vml-estimate-per" id="result-per-acre">&#8212;</div>
+        </div>
+        <div class="vml-results-body">
+          <div class="vml-factors-grid" id="result-factors"></div>
+
+          <div class="vml-cta-box">
+            <i class="fas fa-phone"></i>
+            <div class="vml-cta-box-text">
+              <h3>Want a Real Number? Talk to an Agent.</h3>
+              <p>This calculator gives you a solid ballpark &#8212; but your land has specific characteristics that only a local expert can account for. Our agents have sold hundreds of acres across Butler County and South Central Kansas. A conversation with one of them costs you nothing and could be worth thousands.</p>
+              <a href="/contact-us/" class="vml-btn-next" style="text-decoration:none;display:inline-flex;">Talk to an Agent <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <button class="vml-btn-restart" onclick="restartCalc()"><i class="fas fa-redo" style="margin-right:6px;"></i> Start Over with New Numbers</button>
+
+          <div class="vml-disclaimer">
+            <strong>Important: This Is an Estimate, Not an Appraisal</strong>
+            <p>The value range shown above is a general estimate based on publicly available market data, regional land sale trends, and the inputs you provided. It is intended for informational and educational purposes only. It is <em>not</em> a certified appraisal, a broker price opinion (BPO), or a formal opinion of value under any professional standard.</p>
+            <p>Land values in South Central Kansas vary significantly based on factors this tool cannot fully account for &#8212; including exact parcel location, legally verified access and easements, USDA soil surveys and productivity indices, environmental conditions, floodplain or wetland status, mineral rights, current lease agreements, nearby comparable sales within the last 90 days, and individual buyer demand at the time of listing.</p>
+            <p>This estimate should not be used to make buy or sell decisions, set a listing price, support a loan application, settle an estate, or resolve a legal dispute. For any of those purposes, you need a licensed Kansas real estate appraiser or a licensed broker with demonstrated experience in rural and agricultural land.</p>
+            <p>Sundgren Realty &amp; Auction makes no warranty, expressed or implied, regarding the accuracy, completeness, or fitness of this estimate for any particular purpose. Actual market value may be materially higher or lower than the range shown. Market conditions change. Always consult a licensed professional before acting on any valuation.</p>
+            <p style="font-style:italic;">Ready to find out what your land is <em>actually</em> worth? Our agents will give you a straight answer &#8212; no fluff, no pressure. <a href="/contact-us/" style="color:var(--dark);font-weight:600;">Contact us today.</a></p>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /.vml-card -->
+  </div><!-- /.vml-wrap -->
+
+</main>
+
+<!-- FOOTER -->
+
+<script>
+// -- Value My Land Calculator --
+
+const BASE_RATES = {
+  tillable:    { low: 3200,  high: 6500,  label: 'Tillable Farmland' },
+  pasture:     { low: 1400,  high: 3200,  label: 'Pasture / Ranch' },
+  recreational:{ low: 1200,  high: 2800,  label: 'Recreational Land' },
+  residential: { low: 4500,  high: 12000, label: 'Rural Residential' },
+  mixed:       { low: 2000,  high: 5000,  label: 'Mixed Use' },
+  commercial:  { low: 8000,  high: 35000, label: 'Commercial Land' },
+};
+
+const COUNTY_MULT = {
+  butler: 1.00, sedgwick: 1.18, harvey: 0.95, greenwood: 0.72,
+  elk: 0.65, chase: 0.78, marion: 0.88, mcpherson: 0.92, other: 0.85
+};
+
+const PROX_MULT = [1.15, 1.0, 0.90, 0.80];
+const TERRAIN_MULT = { flat: 1.0, rolling: 0.92, rough: 0.78 };
+
+const FEATURE_ADDS = {
+  road: 0.18, water: 0.12, utilities: 0.10,
+  structures: 0.15, crp: 0.08, soil: 0.14,
+};
+
+let currentStep = 1;
+
+function scrollToCard() {
+  document.getElementById('vml-anchor').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function updateSlider(slider, displayId, inputId) {
+  const val = parseInt(slider.value);
+  document.getElementById(displayId).textContent = val.toLocaleString();
+  if (inputId) document.getElementById(inputId).value = val;
+  const pct = (val / parseInt(slider.max)) * 100;
+  slider.style.background = 'linear-gradient(to right, var(--yellow) 0%, var(--yellow) ' + pct + '%, var(--border) ' + pct + '%, var(--border) 100%)';
+}
+
+function updateFromInput(input, sliderId, displayId, maxVal) {
+  let val = parseInt(input.value) || 1;
+  val = Math.min(val, maxVal);
+  document.getElementById(displayId).textContent = val.toLocaleString();
+  const slider = document.getElementById(sliderId);
+  slider.value = Math.min(val, parseInt(slider.max));
+  updateSlider(slider, displayId, null);
+}
+
+function nextStep(from) {
+  if (from === 1) {
+    const picked = document.querySelector('input[name="landType"]:checked');
+    if (!picked) { alert('Please select a land type to continue.'); return; }
+  }
+  goToStep(from + 1);
+}
+
+function prevStep(from) {
+  goToStep(from - 1);
+}
+
+function goToStep(n) {
+  const current = document.getElementById('step-' + currentStep);
+  if (current) current.classList.remove('active');
+  document.getElementById('vml-results').style.display = 'none';
+  currentStep = n;
+  if (n <= 4) {
+    document.getElementById('step-' + n).classList.add('active');
+  }
+  document.querySelectorAll('.vml-progress-step').forEach(function(el, i) {
+    el.classList.remove('active', 'done');
+    var s = i + 1;
+    if (s < n) el.classList.add('done');
+    else if (s === n) el.classList.add('active');
+  });
+  scrollToCard();
+}
+
+function calculateValue() {
+  const landType = (document.querySelector('input[name="landType"]:checked') || {}).value || 'pasture';
+  const acreage = parseInt(document.getElementById('acreage-input').value) || 160;
+  const county = document.getElementById('county').value;
+  const proximity = parseInt(document.getElementById('proximity').value);
+  const terrain = (document.querySelector('input[name="terrain"]:checked') || {}).value || 'flat';
+
+  const features = {
+    road: document.getElementById('feat-road').checked,
+    water: document.getElementById('feat-water').checked,
+    utilities: document.getElementById('feat-utilities').checked,
+    structures: document.getElementById('feat-structures').checked,
+    crp: document.getElementById('feat-crp').checked,
+    soil: document.getElementById('feat-soil').checked,
+  };
+
+  const base = BASE_RATES[landType];
+  const cMult = COUNTY_MULT[county] || 1.0;
+  const pMult = PROX_MULT[proximity] || 1.0;
+  const tMult = TERRAIN_MULT[terrain] || 1.0;
+
+  let featureBonus = 0;
+  Object.keys(features).forEach(function(k) { if (features[k]) featureBonus += FEATURE_ADDS[k]; });
+
+  const totalMult = cMult * pMult * tMult * (1 + featureBonus);
+  const lowPerAcre  = Math.round(base.low  * totalMult / 50) * 50;
+  const highPerAcre = Math.round(base.high * totalMult / 50) * 50;
+  const lowTotal    = lowPerAcre  * acreage;
+  const highTotal   = highPerAcre * acreage;
+
+  function fmt(n) {
+    if (n >= 1000000) return '$' + (n / 1000000).toFixed(2).replace(/\.?0+$/, '') + 'M';
+    return '$' + n.toLocaleString();
+  }
+
+  document.getElementById('result-range').textContent = fmt(lowTotal) + ' \u2013 ' + fmt(highTotal);
+  document.getElementById('result-per-acre').textContent =
+    '$' + lowPerAcre.toLocaleString() + ' \u2013 $' + highPerAcre.toLocaleString() + ' per acre \u00b7 ' + acreage.toLocaleString() + ' acres';
+
+  const countySelect = document.getElementById('county');
+  const countyLabel = countySelect.options[countySelect.selectedIndex].text;
+  const featureLabels = { road:'Paved Road', water:'Water Access', utilities:'Utilities', structures:'Structures', crp:'CRP', soil:'Prime Soil' };
+  const enabledFeatures = Object.keys(features).filter(function(k) { return features[k]; }).map(function(k) { return featureLabels[k]; });
+
+  document.getElementById('result-factors').innerHTML =
+    '<div class="vml-factor-card"><i class="fas fa-seedling"></i><strong>' + base.label + '</strong><span>Land type</span></div>' +
+    '<div class="vml-factor-card"><i class="fas fa-ruler-combined"></i><strong>' + acreage.toLocaleString() + ' acres</strong><span>Total size</span></div>' +
+    '<div class="vml-factor-card"><i class="fas fa-map-marker-alt"></i><strong>' + countyLabel + '</strong><span>County</span></div>' +
+    '<div class="vml-factor-card"><i class="fas fa-mountain"></i><strong>' + terrain.charAt(0).toUpperCase() + terrain.slice(1) + ' terrain</strong><span>Topography</span></div>' +
+    '<div class="vml-factor-card"><i class="fas fa-check-circle"></i><strong>' + (enabledFeatures.length || 'None') + ' feature' + (enabledFeatures.length !== 1 ? 's' : '') + '</strong><span>' + (enabledFeatures.join(', ') || 'No extras selected') + '</span></div>' +
+    '<div class="vml-factor-card"><i class="fas fa-percent"></i><strong>+' + Math.round(featureBonus * 100) + '% premium</strong><span>From features</span></div>';
+
+  document.getElementById('step-4').classList.remove('active');
+  document.getElementById('vml-results').style.display = 'block';
+  document.querySelectorAll('.vml-progress-step').forEach(function(el) { el.classList.remove('active'); el.classList.add('done'); });
+  document.querySelector('.vml-progress-step[data-step="5"]').classList.remove('done');
+  document.querySelector('.vml-progress-step[data-step="5"]').classList.add('active');
+  scrollToCard();
+}
+
+function restartCalc() {
+  document.getElementById('vml-results').style.display = 'none';
+  document.querySelectorAll('input[type="radio"]').forEach(function(r) { r.checked = false; });
+  document.querySelectorAll('input[type="checkbox"]').forEach(function(c) { c.checked = false; });
+  document.getElementById('acreage-slider').value = 160;
+  document.getElementById('acreage-input').value = 160;
+  document.getElementById('acreage-display').textContent = '160';
+  updateSlider(document.getElementById('acreage-slider'), 'acreage-display', null);
+  document.getElementById('terrain-flat').checked = true;
+  goToStep(1);
+}
+</script>
+
+</body>
+</html>

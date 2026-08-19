@@ -33,18 +33,48 @@
 
 <main>
 
-  <!-- Hero -->
-  <section class="hero" style="background-image:url('/images/home-land.jpg')">
-    <div class="hero-content">
-      <div class="container">
-        <h1>Own the ground beneath your dreams.</h1>
-        <p>Your Premier agents for homes, land &amp; auctions in South Central Kansas</p>
-        <!-- IDX AI Smart Search Widget -->
-        <div class="idx-smart-search-wrap">
-          <script charset="UTF-8" type="text/javascript" id="idxwidgetsrc-166177" src="//realestate.sundgren.com/idx/widgets/166177"></script>
-        </div>
+  <!-- Hero: Three-Panel Expanding -->
+  <section class="hero-split" aria-label="Our Services">
+
+    <!-- Panel 1: Auctions -->
+    <a href="/auctions/" class="hero-panel" id="hero-panel-auctions"
+       style="background-image:url('/images/hero-auctions.jpg')"
+       aria-label="Auctions">
+      <div class="hero-panel-overlay"></div>
+      <div class="hero-panel-content">
+        <span class="hero-panel-eyebrow">Live &amp; Online</span>
+        <h1 class="hero-panel-title">Auctions</h1>
+        <p class="hero-panel-sub">Hundreds of active auctions &#8212; real estate, equipment, personal property &amp; more</p>
+        <span class="hero-panel-btn">Browse Auctions <i class="fas fa-arrow-right"></i></span>
       </div>
-    </div>
+    </a>
+
+    <!-- Panel 2: Listings -->
+    <a href="/property-search/" class="hero-panel" id="hero-panel-listings"
+       style="background-image:url('/images/home-land.jpg');background-position:center 60%"
+       aria-label="Listings">
+      <div class="hero-panel-overlay"></div>
+      <div class="hero-panel-content">
+        <span class="hero-panel-eyebrow">Homes &amp; Properties</span>
+        <h2 class="hero-panel-title">Listings</h2>
+        <p class="hero-panel-sub">Search residential, commercial &amp; land listings across South Central Kansas</p>
+        <span class="hero-panel-btn">Search Listings <i class="fas fa-arrow-right"></i></span>
+      </div>
+    </a>
+
+    <!-- Panel 3: Value My Land -->
+    <a href="/value-my-land/" class="hero-panel" id="hero-panel-valueland"
+       style="background-image:url('/images/hero-aerial.jpg')"
+       aria-label="Value My Land">
+      <div class="hero-panel-overlay"></div>
+      <div class="hero-panel-content">
+        <span class="hero-panel-eyebrow">Free Estimate</span>
+        <h2 class="hero-panel-title">Value My Land</h2>
+        <p class="hero-panel-sub">Find out what your farm, ranch, or acreage is worth from experts who know Butler County</p>
+        <span class="hero-panel-btn">Get My Value <i class="fas fa-arrow-right"></i></span>
+      </div>
+    </a>
+
   </section>
 
   <!-- Featured Listings Carousel -->
@@ -125,6 +155,30 @@
   </section>
 
 </main>
+
+<script>
+(function() {
+  var split = document.querySelector('.hero-split');
+  if (!split) return;
+  var panels = split.querySelectorAll('.hero-panel');
+  panels.forEach(function(panel) {
+    panel.addEventListener('mouseenter', function() {
+      split.classList.add('hero-split--active');
+      panels.forEach(function(p) { p.classList.remove('hero-panel--hovered'); });
+      panel.classList.add('hero-panel--hovered');
+    });
+    panel.addEventListener('mouseleave', function() {
+      panel.classList.remove('hero-panel--hovered');
+      // Small delay so transition completes before resetting
+      setTimeout(function() {
+        if (!split.querySelector('.hero-panel--hovered')) {
+          split.classList.remove('hero-split--active');
+        }
+      }, 50);
+    });
+  });
+})();
+</script>
 
 <!-- FOOTER -->
 

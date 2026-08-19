@@ -242,6 +242,98 @@ function renderPhotoGrid(images) {
 }
 
 // â”€â”€ Info Card â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+// === App Ad =============================================================
+function renderAppAd() {
+  return [
+    '<div class="app-ad">',
+    '  <div class="app-ad__eyebrow"><i class="fas fa-mobile-alt"></i> Bid From Your Phone</div>',
+    '  <p class="app-ad__body">Download the free Sundgren Realty app to bid, track auctions, and get outbid alerts — right from your pocket.</p>',
+    '  <div class="app-ad__badges">',
+    '    <a href="https://apps.apple.com/us/app/id1344894378" target="_blank" rel="noopener" class="app-ad__badge app-ad__badge--apple" aria-label="Download on the App Store">',
+    '      <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>',
+    '      <span><small>Download on the</small>App Store</span>',
+    '    </a>',
+    '    <a href="https://play.google.com/store/apps/details?id=com.bidwrangler.sundgrenrealty&hl=en_US" target="_blank" rel="noopener" class="app-ad__badge app-ad__badge--google" aria-label="Get it on Google Play">',
+    '      <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M3 20.5v-17c0-.83 1-.83 1.5-.5l15 8.5-15 8.5c-.5.33-1.5.33-1.5-.5z"/></svg>',
+    '      <span><small>Get it on</small>Google Play</span>',
+    '    </a>',
+    '  </div>',
+    '</div>'
+  ].join('\n');
+}
+
+// === Calendar Helpers ====================================================
+function toIcsDate(isoStr) {
+  if (!isoStr) return '';
+  return new Date(isoStr).toISOString().replace(/[-:]/g, '').replace(/\.\d{3}/, '');
+}
+
+function renderCalendarButtons(auction) {
+  if (!auction.starts_at) return '';
+
+  const titleEnc  = encodeURIComponent(auction.name || 'Sundgren Auction');
+  const locationE = encodeURIComponent(auction.location || 'sundgrenrealty.com');
+  const descE     = encodeURIComponent('Sundgren Realty & Auction — Register to bid at sundgrenrealty.com/auctions/');
+
+  const startIcs = toIcsDate(auction.starts_at);
+  const endIcs   = auction.scheduled_end_time ? toIcsDate(auction.scheduled_end_time) : startIcs;
+
+  const startGcal = new Date(auction.starts_at).toISOString().replace(/[-:]/g,'').replace(/\.\d{3}/,'');
+  const endGcal   = auction.scheduled_end_time
+    ? new Date(auction.scheduled_end_time).toISOString().replace(/[-:]/g,'').replace(/\.\d{3}/,'')
+    : startGcal;
+
+  const gcalUrl    = 'https://calendar.google.com/calendar/render?action=TEMPLATE'
+    + '&text=' + titleEnc
+    + '&dates=' + startGcal + '/' + endGcal
+    + '&details=' + descE
+    + '&location=' + locationE;
+
+  const outlookUrl = 'https://outlook.live.com/calendar/0/deeplink/compose'
+    + '?subject=' + titleEnc
+    + '&startdt=' + encodeURIComponent(auction.starts_at)
+    + '&enddt='   + encodeURIComponent(auction.scheduled_end_time || auction.starts_at)
+    + '&body='    + descE
+    + '&location='+ locationE;
+
+  const icsLines = [
+    'BEGIN:VCALENDAR',
+    'VERSION:2.0',
+    'PRODID:-//Sundgren Realty//Auction//EN',
+    'BEGIN:VEVENT',
+    'DTSTART:' + startIcs,
+    'DTEND:'   + endIcs,
+    'SUMMARY:' + (auction.name || 'Sundgren Auction'),
+    'DESCRIPTION:Register to bid at sundgrenrealty.com/auctions/',
+    'LOCATION:' + (auction.location || 'sundgrenrealty.com'),
+    'END:VEVENT',
+    'END:VCALENDAR'
+  ].join('\r\n');
+
+  const icsEncoded = encodeURIComponent(icsLines);
+
+  return [
+    '<div class="cal-buttons">',
+    '  <p><i class="fas fa-calendar-plus"></i>Add to Calendar</p>',
+    '  <div class="cal-btn-row">',
+    '    <a href="' + gcalUrl + '" target="_blank" rel="noopener" class="cal-btn cal-btn--google">',
+    '      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>',
+    '      Google',
+    '    </a>',
+    '    <a href="' + outlookUrl + '" target="_blank" rel="noopener" class="cal-btn cal-btn--outlook">',
+    '      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zm-7 14a5 5 0 1 1 0-10 5 5 0 0 1 0 10z"/></svg>',
+    '      Outlook',
+    '    </a>',
+    '    <a href="data:text/calendar;charset=utf-8,' + icsEncoded + '" download="sundgren-auction.ics" class="cal-btn cal-btn--ics">',
+    '      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17 2v1H7V2H5v1H4a2 2 0 0 0-2 2v15a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V2h-2zm3 7H4V5h1v1h2V5h10v1h2V5h1v4zM6 13h2v2H6zm4 0h2v2h-2zm4 0h2v2h-2z"/></svg>',
+    '      Apple / iCal',
+    '    </a>',
+    '  </div>',
+    '</div>'
+  ].join('\n');
+}
+
 function renderInfoCard(auction, detail) {
   const active  = isActive(auction.status);
   const startDt = formatDateTime(auction.starts_at);
@@ -276,6 +368,8 @@ function renderInfoCard(auction, detail) {
             <li><i class="fas fa-phone"></i><div><span class="mlabel">Questions?</span><a href="tel:${phone.replace(/\D/g,'')}" style="color:var(--yellow-dark);">${esc(phone)}</a></div></li>
         </ul>
 ${cta}
+${active ? renderCalendarButtons(auction) : ''}
+${renderAppAd()}
 ${docsHtml}
     </div>`;
 }
@@ -905,6 +999,30 @@ ${activeCards}
             </div>
         </div>
     </section>
+
+    <section style="background:var(--dark);padding:48px 0;">
+      <div class="container">
+        <div style="display:flex;align-items:center;gap:48px;flex-wrap:wrap;justify-content:center;">
+          <div style="flex:0 1 420px;">
+            <p style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--yellow);margin:0 0 8px;"><i class="fas fa-mobile-alt" style="margin-right:6px;"></i>Bid From Your Phone</p>
+            <h2 style="font-family:'Trajan Pro',serif;font-size:22px;font-weight:700;color:#fff;margin:0 0 8px;text-transform:uppercase;letter-spacing:.04em;">Download the Sundgren Realty App</h2>
+            <p style="font-size:14px;color:rgba(255,255,255,.75);margin:0 0 24px;line-height:1.6;">Bid on auctions, track properties, and get outbid alerts &mdash; right from your pocket. Free on iOS and Android.</p>
+            <img src="/images/sundgren-app-mockup.png" alt="Sundgren Realty app on mobile" style="display:block;max-width:180px;width:100%;margin:0 0 24px;filter:drop-shadow(0 8px 24px rgba(0,0,0,.5));">
+            <div style="display:flex;gap:12px;flex-wrap:wrap;">
+              <a href="https://apps.apple.com/us/app/id1344894378" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px;background:#fff;color:var(--dark);padding:10px 18px;border-radius:8px;font-size:13px;font-weight:700;text-decoration:none;">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                <span style="display:flex;flex-direction:column;line-height:1.2;"><small style="font-size:10px;font-weight:400;opacity:.7;">Download on the</small>App Store</span>
+              </a>
+              <a href="https://play.google.com/store/apps/details?id=com.bidwrangler.sundgrenrealty&hl=en_US" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px;background:#fff;color:var(--dark);padding:10px 18px;border-radius:8px;font-size:13px;font-weight:700;text-decoration:none;">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M3 20.5v-17c0-.83 1-.83 1.5-.5l15 8.5-15 8.5c-.5.33-1.5.33-1.5-.5z"/></svg>
+                <span style="display:flex;flex-direction:column;line-height:1.2;"><small style="font-size:10px;font-weight:400;opacity:.7;">Get it on</small>Google Play</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
 ${pastSection}
 
     <section class="cta-dark">

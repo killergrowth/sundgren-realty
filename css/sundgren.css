@@ -480,16 +480,14 @@ a:hover { color: var(--yellow-dark); }
 /* App phone mockup */
 .app-phone-wrap {
   flex-shrink: 0;
-  overflow: hidden;
+  overflow: visible;
 }
 .app-phone-img {
   display: block;
   max-width: 220px;
   width: 100%;
   height: auto;
-  border-radius: 16px;
-  box-shadow: 0 16px 48px rgba(0,0,0,0.28);
-  /* Slide in from right on scroll */
+  /* no border-radius or box-shadow — image already has phone frame baked in */
   transform: translateX(80px);
   opacity: 0;
   transition: transform 0.7s cubic-bezier(0.22,1,0.36,1), opacity 0.6s ease;
@@ -497,11 +495,6 @@ a:hover { color: var(--yellow-dark); }
 .app-phone-img.in-view {
   transform: translateX(0);
   opacity: 1;
-}
-
-@keyframes slideInRight {
-  from { transform: translateX(80px); opacity: 0; }
-  to   { transform: translateX(0);    opacity: 1; }
 }
 .app-store-btn {
   background: var(--dark);
@@ -961,6 +954,83 @@ a:hover { color: var(--yellow-dark); }
 }
 .photo-grid img:hover { opacity: .88; transform: scale(1.02); }
 
+/* ── Photo Mosaic (listing detail pages) ── */
+.sg-mosaic {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 6px;
+  border-radius: 10px;
+  overflow: hidden;
+  max-height: 420px;
+}
+.sg-mosaic-hero {
+  grid-row: 1;
+  padding: 0; border: none; cursor: pointer;
+  overflow: hidden; display: block;
+  background: #111;
+}
+.sg-mosaic-hero img {
+  width: 100%; height: 100%;
+  object-fit: cover; display: block;
+  transition: transform .3s ease;
+}
+.sg-mosaic-hero:hover img { transform: scale(1.03); }
+.sg-mosaic-strip {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.sg-mosaic-thumb {
+  position: relative;
+  flex: 1;
+  padding: 0; border: none; cursor: pointer;
+  overflow: hidden; background: #111;
+}
+.sg-mosaic-thumb img {
+  width: 100%; height: 100%;
+  object-fit: cover; display: block;
+  transition: transform .3s ease;
+}
+.sg-mosaic-thumb:hover img { transform: scale(1.05); }
+.sg-mosaic-more {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.52);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.sg-gallery-bar {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+.sg-gallery-all-btn {
+  background: var(--dark);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 18px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  transition: background .15s;
+}
+.sg-gallery-all-btn:hover { background: #333; }
+@media (max-width: 600px) {
+  .sg-mosaic { grid-template-columns: 1fr; max-height: none; }
+  .sg-mosaic-strip { flex-direction: row; }
+  .sg-mosaic-thumb { height: 80px; }
+  .sg-mosaic-hero { height: 240px; }
+}
+
 /* Lightbox */
 #sg-lightbox {
   display: none;
@@ -971,7 +1041,7 @@ a:hover { color: var(--yellow-dark); }
   align-items: center;
   justify-content: center;
 }
-#sg-lightbox.open { display: flex; }
+#sg-lightbox.open, #sg-lightbox.active { display: flex; }
 #sg-lightbox-img { max-width: 90vw; max-height: 88vh; object-fit: contain; border-radius: 4px; }
 #sg-lightbox-close {
   position: absolute; top: 18px; right: 24px;
@@ -1231,3 +1301,217 @@ hr.divider-left { margin: 0 0 24px; }
 @media (max-width: 768px) {
   .idx-search-page-wrap { max-width: 100%; }
 }
+
+/* -- Hero: Three-Panel Expanding -- */
+.hero-split {
+  display: flex;
+  width: 100%;
+  height: 90vh;
+  min-height: 500px;
+  max-height: 860px;
+  overflow: hidden;
+}
+
+.hero-panel {
+  position: relative;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  cursor: pointer;
+  text-decoration: none;
+  transition: flex 0.55s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* JS adds .hero-split--active when any panel is hovered.
+   Active panel expands to 2x, inactive panels shrink to 0.5x */
+.hero-split--active .hero-panel {
+  flex: 0.5;
+}
+.hero-split--active .hero-panel--hovered {
+  flex: 2;
+}
+
+/* Dark overlay -- deepens slightly on hover */
+.hero-panel-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.80) 0%, rgba(0,0,0,0.25) 55%, rgba(0,0,0,0.10) 100%);
+  transition: background 0.4s ease;
+}
+.hero-panel:hover .hero-panel-overlay {
+  background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.35) 55%, rgba(0,0,0,0.15) 100%);
+}
+
+/* Vertical divider between panels */
+.hero-panel + .hero-panel::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: rgba(253,241,50,0.35);
+  z-index: 3;
+  transition: background 0.3s ease;
+}
+.hero-panel:hover + .hero-panel::before,
+.hero-panel + .hero-panel:hover::before {
+  background: rgba(253,241,50,0.6);
+}
+
+/* Content anchored to bottom of each panel */
+.hero-panel-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  padding: 36px 40px;
+  transform: translateY(8px);
+  transition: transform 0.4s ease;
+}
+.hero-panel:hover .hero-panel-content {
+  transform: translateY(0);
+}
+
+/* Eyebrow -- fades in on hover */
+.hero-panel-eyebrow {
+  display: block;
+  font-family: 'SF New Republic SC', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--yellow);
+  margin-bottom: 8px;
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 0.3s ease 0.05s, transform 0.3s ease 0.05s;
+}
+.hero-panel:hover .hero-panel-eyebrow {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Title -- always visible, clips when panel is narrow */
+.hero-panel-title {
+  font-family: 'Trajan Pro', serif;
+  font-size: clamp(22px, 2.4vw, 38px);
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  line-height: 1.1;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.5);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Subtext -- fades in on hover */
+.hero-panel-sub {
+  font-size: 14px;
+  color: rgba(255,255,255,0.88);
+  line-height: 1.5;
+  margin: 0 0 20px;
+  max-width: 340px;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.3s ease 0.1s, transform 0.3s ease 0.1s;
+}
+.hero-panel:hover .hero-panel-sub {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* CTA button -- fades in on hover */
+.hero-panel-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--yellow);
+  color: var(--dark);
+  font-family: 'SF New Republic SC', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 11px 22px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.3s ease 0.15s, transform 0.3s ease 0.15s, background 0.2s ease;
+}
+.hero-panel:hover .hero-panel-btn {
+  opacity: 1;
+  transform: translateY(0);
+}
+.hero-panel-btn:hover {
+  background: var(--yellow-dark);
+}
+
+/* Mobile: stack panels vertically, always show content */
+@media (max-width: 768px) {
+  .hero-split {
+    flex-direction: column;
+    height: auto;
+    max-height: none;
+  }
+  .hero-panel {
+    flex: none !important;
+    height: 300px;
+    width: 100%;
+    transition: none;
+  }
+  .hero-split--active .hero-panel { flex: none; }
+  .hero-panel-eyebrow,
+  .hero-panel-sub,
+  .hero-panel-btn {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .hero-panel-content {
+    transform: none;
+    padding: 24px 20px;
+  }
+  .hero-panel-title {
+    font-size: 22px;
+    white-space: normal;
+  }
+  .hero-panel + .hero-panel::before {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    width: 100%;
+    height: 2px;
+  }
+}
+
+
+/* ── Add to Calendar buttons ──────────────────────────────────────── */
+.cal-buttons { margin-top: 16px; border-top: 1px solid var(--border); padding-top: 16px; }
+.cal-buttons > p { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--text-light); margin: 0 0 10px; display: flex; align-items: center; gap: 6px; }
+.cal-buttons > p i { color: var(--yellow-dark); }
+.cal-btn-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.cal-btn { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 600; padding: 7px 13px; border-radius: 6px; text-decoration: none; transition: opacity .15s; border: 1px solid transparent; }
+.cal-btn:hover { opacity: .82; }
+.cal-btn--google  { background: #fff; border-color: #dadce0; color: #3c4043; }
+.cal-btn--outlook { background: #0078d4; color: #fff; border-color: #0078d4; }
+.cal-btn--ics     { background: var(--dark); color: #fff; border-color: var(--dark); }
+
+/* ── App Ad (sidebar + listing card) ──────────────────────────────── */
+.app-ad { margin-top: 16px; border-top: 1px solid var(--border); padding-top: 16px; }
+.app-ad__eyebrow { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--yellow-dark); margin-bottom: 8px; display: flex; align-items: center; gap: 6px; }
+.app-ad__eyebrow i { font-size: 13px; }
+.app-ad__body { font-size: 13px; color: var(--text-light); line-height: 1.6; margin: 0 0 12px; }
+.app-ad__badges { display: flex; flex-direction: column; gap: 8px; }
+.app-ad__badge { display: inline-flex; align-items: center; gap: 10px; background: var(--dark); color: #fff; padding: 9px 14px; border-radius: 8px; font-size: 12px; font-weight: 600; text-decoration: none; transition: background .15s; border: 1px solid rgba(255,255,255,.1); }
+.app-ad__badge:hover { background: #333; color: #fff; }
+.app-ad__badge span { display: flex; flex-direction: column; line-height: 1.2; }
+.app-ad__badge small { font-size: 10px; font-weight: 400; opacity: .75; }
+.app-ad__badge svg { flex-shrink: 0; }

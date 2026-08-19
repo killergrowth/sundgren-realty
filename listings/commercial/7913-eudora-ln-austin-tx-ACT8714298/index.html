@@ -61,28 +61,34 @@
       <div class="auction-main">
 
         
-  <section class="photo-gallery-section" style="padding:0 0 0;">
-    <div class="sg-gallery-grid">
-        <img src="https://cdn.repliers.io/sample/IMG-ACT8714298_0.jpg" alt="Property photo 1" loading="eager" data-idx="0" class="sg-gallery-thumb" tabindex="0">
-        <img src="https://cdn.repliers.io/sample/IMG-ACT8714298_1.jpg" alt="Property photo 2" loading="lazy" data-idx="1" class="sg-gallery-thumb" tabindex="0">
-        <img src="https://cdn.repliers.io/sample/IMG-ACT8714298_2.jpg" alt="Property photo 3" loading="lazy" data-idx="2" class="sg-gallery-thumb" tabindex="0">
-        <img src="https://cdn.repliers.io/sample/IMG-ACT8714298_3.jpg" alt="Property photo 4" loading="lazy" data-idx="3" class="sg-gallery-thumb" tabindex="0">
-        <img src="https://cdn.repliers.io/sample/IMG-ACT8714298_4.jpg" alt="Property photo 5" loading="lazy" data-idx="4" class="sg-gallery-thumb" tabindex="0">
-        <img src="https://cdn.repliers.io/sample/IMG-ACT8714298_5.jpg" alt="Property photo 6" loading="lazy" data-idx="5" class="sg-gallery-thumb" tabindex="0">
-        <img src="https://cdn.repliers.io/sample/IMG-ACT8714298_6.jpg" alt="Property photo 7" loading="lazy" data-idx="6" class="sg-gallery-thumb" tabindex="0">
-        <img src="https://cdn.repliers.io/sample/IMG-ACT8714298_7.jpg" alt="Property photo 8" loading="lazy" data-idx="7" class="sg-gallery-thumb" tabindex="0">
-        <img src="https://cdn.repliers.io/sample/IMG-ACT8714298_8.jpg" alt="Property photo 9" loading="lazy" data-idx="8" class="sg-gallery-thumb" tabindex="0">
-        <img src="https://cdn.repliers.io/sample/IMG-ACT8714298_9.jpg" alt="Property photo 10" loading="lazy" data-idx="9" class="sg-gallery-thumb" tabindex="0">
-        <img src="https://cdn.repliers.io/sample/IMG-ACT8714298_10.jpg" alt="Property photo 11" loading="lazy" data-idx="10" class="sg-gallery-thumb" tabindex="0">
-        <img src="https://cdn.repliers.io/sample/IMG-ACT8714298_11.jpg" alt="Property photo 12" loading="lazy" data-idx="11" class="sg-gallery-thumb" tabindex="0">
-        <img src="https://cdn.repliers.io/sample/IMG-ACT8714298_12.jpg" alt="Property photo 13" loading="lazy" data-idx="12" class="sg-gallery-thumb" tabindex="0">
-        <img src="https://cdn.repliers.io/sample/IMG-ACT8714298_13.jpg" alt="Property photo 14" loading="lazy" data-idx="13" class="sg-gallery-thumb" tabindex="0">
-        <img src="https://cdn.repliers.io/sample/IMG-ACT8714298_14.jpg" alt="Property photo 15" loading="lazy" data-idx="14" class="sg-gallery-thumb" tabindex="0">
-        <img src="https://cdn.repliers.io/sample/IMG-ACT8714298_15.jpg" alt="Property photo 16" loading="lazy" data-idx="15" class="sg-gallery-thumb" tabindex="0">
-        <img src="https://cdn.repliers.io/sample/IMG-ACT8714298_16.jpg" alt="Property photo 17" loading="lazy" data-idx="16" class="sg-gallery-thumb" tabindex="0">
-        <img src="https://cdn.repliers.io/sample/IMG-ACT8714298_17.jpg" alt="Property photo 18" loading="lazy" data-idx="17" class="sg-gallery-thumb" tabindex="0">
-        <img src="https://cdn.repliers.io/sample/IMG-ACT8714298_18.jpg" alt="Property photo 19" loading="lazy" data-idx="18" class="sg-gallery-thumb" tabindex="0">
-        <img src="https://cdn.repliers.io/sample/IMG-ACT8714298_19.jpg" alt="Property photo 20" loading="lazy" data-idx="19" class="sg-gallery-thumb" tabindex="0">
+  <section class="photo-gallery-section" style="margin-bottom:24px;">
+    <div class="sg-mosaic">
+      <button class="sg-mosaic-hero" data-idx="0" aria-label="View photo 1" type="button">
+        <img src="https://cdn.repliers.io/sample/IMG-ACT8714298_0.jpg" alt="Primary property photo" loading="eager">
+      </button>
+      <div class="sg-mosaic-strip">
+      <button class="sg-mosaic-thumb" data-idx="1" aria-label="View photo 2" type="button">
+        <img src="https://cdn.repliers.io/sample/IMG-ACT8714298_1.jpg" alt="Property photo 2" loading="lazy">
+        
+      </button>
+      <button class="sg-mosaic-thumb" data-idx="2" aria-label="View photo 3" type="button">
+        <img src="https://cdn.repliers.io/sample/IMG-ACT8714298_2.jpg" alt="Property photo 3" loading="lazy">
+        
+      </button>
+      <button class="sg-mosaic-thumb" data-idx="3" aria-label="View photo 4" type="button">
+        <img src="https://cdn.repliers.io/sample/IMG-ACT8714298_3.jpg" alt="Property photo 4" loading="lazy">
+        
+      </button>
+      <button class="sg-mosaic-thumb" data-idx="4" aria-label="View photo 5" type="button">
+        <img src="https://cdn.repliers.io/sample/IMG-ACT8714298_4.jpg" alt="Property photo 5" loading="lazy">
+        <div class="sg-mosaic-more" aria-hidden="true">+15 more</div>
+      </button>
+      </div>
+    </div>
+    <div class="sg-gallery-bar">
+      <button class="sg-gallery-all-btn" id="sg-view-all" type="button">
+        <i class="fas fa-images"></i> View all 20 photos
+      </button>
     </div>
   </section>
 
@@ -103,7 +109,11 @@
     var cur = 0;
     function open(i){ cur=i; lbImg.src=srcs[i]; lbCtr.textContent=(i+1)+' / '+srcs.length; lb.classList.add('active'); document.body.style.overflow='hidden'; }
     function close(){ lb.classList.remove('active'); document.body.style.overflow=''; }
-    document.querySelectorAll('.sg-gallery-thumb').forEach(function(img,i){ img.addEventListener('click',function(){ open(i); }); img.addEventListener('keydown',function(e){ if(e.key==='Enter'||e.key===' ') open(i); }); });
+    document.querySelectorAll('.sg-mosaic-hero, .sg-mosaic-thumb').forEach(function(btn){
+      btn.addEventListener('click',function(){ open(parseInt(btn.dataset.idx,10)); });
+    });
+    var viewAll = document.getElementById('sg-view-all');
+    if (viewAll) viewAll.addEventListener('click', function(){ open(0); });
     document.getElementById('sg-lightbox-close').addEventListener('click',close);
     document.getElementById('sg-lightbox-prev').addEventListener('click',function(){ open((cur-1+srcs.length)%srcs.length); });
     document.getElementById('sg-lightbox-next').addEventListener('click',function(){ open((cur+1)%srcs.length); });
