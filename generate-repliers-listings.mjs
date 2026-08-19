@@ -291,6 +291,58 @@ function renderFeatures(listing) {
   </div>`;
 }
 
+// ── Similar Listings ────────────────────────────────────────────────────────
+function renderSimilarListings(currentMls, allListings, typeInfo) {
+  // Same type, exclude current, up to 3
+  const similar = allListings
+    .filter(l => l.mlsNumber !== currentMls && l.type === typeInfo.type)
+    .slice(0, 3);
+  if (!similar.length) {
+    // Fall back to any other type if none of same type
+    const fallback = allListings.filter(l => l.mlsNumber !== currentMls).slice(0, 3);
+    if (!fallback.length) return '';
+    similar.push(...fallback);
+  }
+  const typeBadgeColor = t => t === 'residential' ? '#0ea5e9' : t === 'land' ? '#16a34a' : '#6366f1';
+  const cards = similar.map(l => {
+    const priceStr = l.price ? '$' + parseInt(l.price).toLocaleString() : 'Contact for Price';
+    const meta = l.beds ? `${l.beds} Bd · ${l.baths} Ba · ${parseInt(l.sqft||0).toLocaleString()} sq ft` :
+                 l.acres ? `${parseFloat(l.acres).toFixed(2)} acres` : '';
+    return `
+      <a href="/listings/${l.type}/${l.slug}/" class="listing-card">
+        <img class="listing-card-img" src="${esc(l.image)}" alt="${esc(l.address)}" loading="lazy">
+        <div class="listing-card-body">
+          <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+            <span class="listing-card-badge" style="background:#22c55e;">Active</span>
+            <span class="listing-card-badge" style="background:${typeBadgeColor(l.type)};">${l.type.charAt(0).toUpperCase()+l.type.slice(1)}</span>
+          </div>
+          <p class="listing-card-address">${esc(l.address.split(',')[0])}</p>
+          <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>${esc(l.city)}, ${esc(l.state)}</p>
+          ${meta ? `<p class="listing-card-meta"><i class="fas fa-ruler-combined"></i>${esc(meta)}</p>` : ''}
+          <p class="listing-card-price">${priceStr}</p>
+          <span class="listing-card-more">View Details &rarr;</span>
+        </div>
+      </a>`;
+  }).join('');
+
+  return `
+<section class="section" style="padding:48px 0;background:var(--bg-light);">
+  <div class="container">
+    <div class="section-title" style="margin-bottom:32px;">
+      <span class="eyebrow">More Like This</span>
+      <h2 style="font-size:22px;">Similar ${typeInfo.label} Listings</h2>
+      <hr class="divider">
+    </div>
+    <div class="listing-grid">
+      ${cards}
+    </div>
+    <div style="text-align:center;margin-top:32px;">
+      <a href="/listings/" class="btn-bid">View All Listings &rarr;</a>
+    </div>
+  </div>
+</section>`;
+}
+
 // ── Map Embed ────────────────────────────────────────────────────────────────
 function renderMap(listing) {
   const addr = listing.address;
@@ -352,7 +404,7 @@ function renderStatsRow(listing) {
 }
 
 // ── Full Page HTML ────────────────────────────────────────────────────────────
-function buildPage(listing, typeInfo, slug) {
+function buildPage(listing, typeInfo, slug, allListings) {
   const addr = listing.address;
   const fullAddr = fullAddress(addr);
   const d = listing.details || {};
@@ -380,6 +432,7 @@ function buildPage(listing, typeInfo, slug) {
   const mapHtml      = renderMap(listing);
   const statsRow     = renderStatsRow(listing);
   const infoCard     = renderInfoCard(listing, typeInfo);
+  const similarHtml  = renderSimilarListings(listing.mlsNumber, allListings || [], typeInfo);
 
   // Breadcrumb
   const breadcrumb = `
@@ -471,6 +524,8 @@ ${breadcrumb}
   </div>
 </main>
 
+${similarHtml}
+
 <!-- CTA -->
 <section class="section section-dark" style="padding:48px 0;text-align:center;">
   <div class="container">
@@ -525,16 +580,11 @@ async function main() {
   // Track index data for each type
   const index = { commercial: [], residential: [], land: [] };
 
+  // First pass: build the index/summary data for all listings
   for (let i = 0; i < listings.length; i++) {
     const listing = listings[i];
     const typeInfo = TYPE_MAP[i] || TYPE_MAP[TYPE_MAP.length - 1];
     const slug = buildListingSlug(listing);
-
-    console.log(`\n  [${i+1}/9] ${listing.mlsNumber} → ${typeInfo.type}/${slug}`);
-
-    const html = buildPage(listing, typeInfo, slug);
-    writePage(html, [typeInfo.dir, slug]);
-
     index[typeInfo.type].push({
       slug,
       mlsNumber: listing.mlsNumber,
@@ -555,10 +605,24 @@ async function main() {
     });
   }
 
-  // Write index data for use by future index page generator
+  // Flatten all listings into one array for similar listings widget
+  const allListings = Object.values(index).flat();
+
+  // Second pass: build full pages now that we have all listing data
+  console.log('\n  Building pages...');
+  for (let i = 0; i < listings.length; i++) {
+    const listing = listings[i];
+    const typeInfo = TYPE_MAP[i] || TYPE_MAP[TYPE_MAP.length - 1];
+    const slug = buildListingSlug(listing);
+    console.log(`\n  [${i+1}/${listings.length}] ${listing.mlsNumber} → ${typeInfo.type}/${slug}`);
+    const html = buildPage(listing, typeInfo, slug, allListings);
+    writePage(html, [typeInfo.dir, slug]);
+  }
+
+  // Write index data
   const dataDir = path.join(__dirname, 'data');
   fs.mkdirSync(dataDir, { recursive: true });
-  fs.writeFileSync(path.join(dataDir, 'repliers-listings.json'), JSON.stringify(index, null, 2), 'utf8');
+  fs.writeFileSync(path.join(dataDir, 'repliers-listings.json'), JSON.stringify(allListings, null, 2), 'utf8');
   console.log('\n  📄 Wrote data/repliers-listings.json');
 
   console.log('\n✅ Done. Listing pages generated:');
