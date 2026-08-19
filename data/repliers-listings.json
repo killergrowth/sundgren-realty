@@ -1,0 +1,125 @@
+{
+  "commercial": [
+    {
+      "slug": "7913-eudora-ln-austin-tx-ACT8714298",
+      "mlsNumber": "ACT8714298",
+      "address": "7913 Eudora LN, Austin, TX, 78747",
+      "price": 369000,
+      "beds": 4,
+      "baths": 2,
+      "sqft": "1752",
+      "acres": 0.185,
+      "status": "A",
+      "image": "https://cdn.repliers.io/sample/IMG-ACT8714298_0.jpg",
+      "style": "Single Family Residence"
+    },
+    {
+      "slug": "18802-nicklaus-dr-lago-vista-tx-ACT3679485",
+      "mlsNumber": "ACT3679485",
+      "address": "18802 Nicklaus DR, Lago Vista, TX, 78645",
+      "price": 279000,
+      "beds": 3,
+      "baths": 3,
+      "sqft": "1153",
+      "acres": 0.0137,
+      "status": "A",
+      "image": "https://cdn.repliers.io/sample/IMG-ACT3679485_0.jpg",
+      "style": "Townhouse"
+    },
+    {
+      "slug": "8543-castle-pine-court-charlotte-nc-CAR4102438",
+      "mlsNumber": "CAR4102438",
+      "address": "8543 Castle Pine Court, Charlotte, NC, 28226",
+      "price": 249900,
+      "beds": 3,
+      "baths": 2,
+      "sqft": "1184",
+      "acres": null,
+      "status": "A",
+      "image": "https://cdn.repliers.io/sample/IMG-CAR4102438_0.jpg",
+      "style": "Condominium"
+    }
+  ],
+  "residential": [
+    {
+      "slug": "3282-n-senseney-cir-clarksville-tn-RTC2789606",
+      "mlsNumber": "RTC2789606",
+      "address": "3282 N Senseney Cir, Clarksville, TN, 37042",
+      "price": 265000,
+      "beds": 3,
+      "baths": 3,
+      "sqft": "1694",
+      "acres": 0.21,
+      "status": "A",
+      "image": "https://cdn.repliers.io/sample/IMG-RTC2789606_0.jpg",
+      "style": "Single Family Residence"
+    },
+    {
+      "slug": "6303-bexton-cir-austin-tx-ACT4778118",
+      "mlsNumber": "ACT4778118",
+      "address": "6303 Bexton CIR, Austin, TX, 78745",
+      "price": 719900,
+      "beds": 3,
+      "baths": 2,
+      "sqft": "1834",
+      "acres": 0.258,
+      "status": "A",
+      "image": "https://cdn.repliers.io/sample/IMG-ACT4778118_0.jpg",
+      "style": "Single Family Residence"
+    },
+    {
+      "slug": "5325-bridgemore-blvd-murfreesboro-tn-RTC2767768",
+      "mlsNumber": "RTC2767768",
+      "address": "5325 Bridgemore Blvd, Murfreesboro, TN, 37129",
+      "price": 599900,
+      "beds": 3,
+      "baths": 3,
+      "sqft": "2488",
+      "acres": null,
+      "status": "A",
+      "image": "https://cdn.repliers.io/sample/IMG-RTC2767768_0.jpg",
+      "style": "Single Family Residence"
+    }
+  ],
+  "land": [
+    {
+      "slug": "2913-constitution-sq-lago-vista-tx-ACT7129956",
+      "mlsNumber": "ACT7129956",
+      "address": "2913 Constitution SQ, Lago Vista, TX, 78645",
+      "price": 199000,
+      "beds": null,
+      "baths": null,
+      "sqft": null,
+      "acres": 0.3003,
+      "status": "A",
+      "image": "https://cdn.repliers.io/sample/IMG-ACT7129956_0.jpg",
+      "style": "Lot"
+    },
+    {
+      "slug": "620-davis-ranch-road-bellvue-co-RECIR1016723",
+      "mlsNumber": "RECIR1016723",
+      "address": "620 Davis Ranch Road, Bellvue, CO, 80512",
+      "price": 245000,
+      "beds": null,
+      "baths": null,
+      "sqft": null,
+      "acres": 6.79,
+      "status": "A",
+      "image": "https://cdn.repliers.io/sample/IMG-RECIR1016723_0.jpg",
+      "style": "Unimproved Land"
+    },
+    {
+      "slug": "1195-allison-bluff-trail-rock-hill-sc-CAR4218843",
+      "mlsNumber": "CAR4218843",
+      "address": "1195 Allison Bluff Trail, Rock Hill, SC, 29732",
+      "price": 295000,
+      "beds": 3,
+      "baths": 2,
+      "sqft": "1043",
+      "acres": null,
+      "status": "A",
+      "image": "https://cdn.repliers.io/sample/IMG-CAR4218843_0.jpg",
+      "style": "Single Family Residence"
+    }
+  ]
+}

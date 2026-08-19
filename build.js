@@ -48,6 +48,7 @@ const PAGES = [
   ['agents.html',          'agents/index.html'],
   ['news.html',            'news/index.html'],
   ['contact-us.html',      'contact-us/index.html'],
+  ['value-my-land.html',   'value-my-land/index.html'],
   ['privacy-policy.html',  'privacy-policy/index.html'],
   ['404.html',             '404.html'],
 ];
@@ -73,17 +74,27 @@ function discoverAuctionPages() {
 function discoverListingPages() {
   const pages = [];
 
-  // Discover listings/ index + subpages
+  // Discover listings/ index + type subdirs + slug subdirs (two levels deep)
   const listingsDir = path.join(ROOT, 'listings');
   if (fs.existsSync(listingsDir)) {
     const listingsIndex = path.join(listingsDir, 'index.html');
     if (fs.existsSync(listingsIndex)) pages.push([listingsIndex, path.join(DIST, 'listings', 'index.html')]);
-    fs.readdirSync(listingsDir, { withFileTypes: true }).forEach(entry => {
-      if (!entry.isDirectory()) return;
-      const slugIndex = path.join(listingsDir, entry.name, 'index.html');
-      if (fs.existsSync(slugIndex)) {
-        pages.push([slugIndex, path.join(DIST, 'listings', entry.name, 'index.html')]);
+    fs.readdirSync(listingsDir, { withFileTypes: true }).forEach(typeEntry => {
+      if (!typeEntry.isDirectory()) return;
+      const typeDir = path.join(listingsDir, typeEntry.name);
+      // Check for type-level index (e.g. listings/commercial/index.html)
+      const typeIndex = path.join(typeDir, 'index.html');
+      if (fs.existsSync(typeIndex)) {
+        pages.push([typeIndex, path.join(DIST, 'listings', typeEntry.name, 'index.html')]);
       }
+      // Recurse into slug subdirs
+      fs.readdirSync(typeDir, { withFileTypes: true }).forEach(slugEntry => {
+        if (!slugEntry.isDirectory()) return;
+        const slugIndex = path.join(typeDir, slugEntry.name, 'index.html');
+        if (fs.existsSync(slugIndex)) {
+          pages.push([slugIndex, path.join(DIST, 'listings', typeEntry.name, slugEntry.name, 'index.html')]);
+        }
+      });
     });
   }
 
@@ -150,7 +161,22 @@ function buildSitemap() {
     });
   }
 
-  const allUrls = [...staticUrls, ...auctionUrls, ...commercialUrls, ...listingsUrls];
+  // Collect Repliers listing pages (listings/{type}/{slug}/)
+  const repliersUrls = [];
+  const repliersDistDir = path.join(DIST, 'listings');
+  if (fs.existsSync(repliersDistDir)) {
+    fs.readdirSync(repliersDistDir, { withFileTypes: true }).forEach(typeEntry => {
+      if (!typeEntry.isDirectory()) return;
+      const typeDir = path.join(repliersDistDir, typeEntry.name);
+      fs.readdirSync(typeDir, { withFileTypes: true }).forEach(slugEntry => {
+        if (slugEntry.isDirectory()) {
+          repliersUrls.push({ url: `/listings/${typeEntry.name}/${slugEntry.name}/`, priority: '0.8', freq: 'weekly' });
+        }
+      });
+    });
+  }
+
+  const allUrls = [...staticUrls, ...auctionUrls, ...commercialUrls, ...listingsUrls, ...repliersUrls];
   const urlEntries = allUrls.map(u =>
     `  <url>\n    <loc>${baseUrl}${u.url}</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>${u.freq}</changefreq>\n    <priority>${u.priority}</priority>\n  </url>`
   ).join('\n');
@@ -189,12 +215,12 @@ function main() {
     count++;
   }
 
-  // Commercial listing subpages discovered from commercial/
+  // Listing pages discovered from listings/ (commercial/residential/land subdirs)
   const listingPages = discoverListingPages();
   for (const [srcPath, destPath] of listingPages) {
     const html = assemble(read(srcPath), header, footer);
     write(destPath, html);
-    console.log(`  Built: commercial/${path.relative(path.join(DIST, 'commercial'), destPath)}`);
+    console.log(`  Built: ${path.relative(DIST, destPath)}`);
     count++;
   }
 
