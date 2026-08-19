@@ -122,6 +122,39 @@
   })();
   </script>
 
+        <div class="stat-row">
+    <div class="stat-cell">
+      <i class="fas fa-tag"></i>
+      <div class="stat-val">$265,000</div>
+      <div class="stat-label">List Price</div>
+    </div>
+    <div class="stat-cell">
+      <i class="fas fa-bed"></i>
+      <div class="stat-val">3</div>
+      <div class="stat-label">Bedrooms</div>
+    </div>
+    <div class="stat-cell">
+      <i class="fas fa-bath"></i>
+      <div class="stat-val">3</div>
+      <div class="stat-label">Bathrooms</div>
+    </div>
+    <div class="stat-cell">
+      <i class="fas fa-ruler-combined"></i>
+      <div class="stat-val">1,694</div>
+      <div class="stat-label">Sq Ft</div>
+    </div>
+    <div class="stat-cell">
+      <i class="fas fa-expand-arrows-alt"></i>
+      <div class="stat-val">0.21 ac</div>
+      <div class="stat-label">Lot Size</div>
+    </div>
+    <div class="stat-cell">
+      <i class="fas fa-calendar-alt"></i>
+      <div class="stat-val">1998</div>
+      <div class="stat-label">Year Built</div>
+    </div>
+  </div>
+
         <div style="margin-top:32px;">
           <div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
@@ -130,14 +163,46 @@
           
   <div class="desc-section" style="margin-top:24px;">
     <h3 class="desc-section-title"><i class="fas fa-list-ul"></i> Property Features</h3>
-    <ul class="meta-list" style="margin:0;">
-      <li><i class="fas fa-fire"></i><div><span class="mlabel">Heating</span>Central</div></li>
-        <li><i class="fas fa-snowflake"></i><div><span class="mlabel">Cooling</span>Central Air</div></li>
-        <li><i class="fas fa-border-all"></i><div><span class="mlabel">Flooring</span>Carpet, Finished Wood</div></li>
-        <li><i class="fas fa-building"></i><div><span class="mlabel">Exterior</span>Brick, Vinyl Siding</div></li>
-        <li><i class="fas fa-tint"></i><div><span class="mlabel">Water</span>Public</div></li>
-        <li><i class="fas fa-recycle"></i><div><span class="mlabel">Sewer</span>Public Sewer</div></li>
-    </ul>
+    <div class="feat-grid">
+    <div class="feat-cell">
+      <i class="fas fa-fire"></i>
+      <div><span class="mlabel">Heating</span>Central</div>
+    </div>
+    <div class="feat-cell">
+      <i class="fas fa-snowflake"></i>
+      <div><span class="mlabel">Cooling</span>Central Air</div>
+    </div>
+    <div class="feat-cell">
+      <i class="fas fa-border-all"></i>
+      <div><span class="mlabel">Flooring</span>Carpet, Finished Wood</div>
+    </div>
+    <div class="feat-cell">
+      <i class="fas fa-building"></i>
+      <div><span class="mlabel">Exterior</span>Brick, Vinyl Siding</div>
+    </div>
+    <div class="feat-cell">
+      <i class="fas fa-tint"></i>
+      <div><span class="mlabel">Water</span>Public</div>
+    </div>
+    <div class="feat-cell">
+      <i class="fas fa-recycle"></i>
+      <div><span class="mlabel">Sewer</span>Public Sewer</div>
+    </div>
+    </div>
+  </div>
+          
+  <div class="desc-section" style="margin-top:24px;">
+    <h3 class="desc-section-title"><i class="fas fa-map-marker-alt"></i> Location</h3>
+    <div id="sg-map" style="height:300px;border-radius:10px;overflow:hidden;border:1px solid var(--border);"></div>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+    (function(){
+      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([36.62298184,-87.38177399],15);
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap contributors',maxZoom:19}).addTo(map);
+      L.marker([36.62298184,-87.38177399]).addTo(map).bindPopup('3282 N Senseney Cir , Clarksville, TN 37042').openPopup();
+    })();
+    </script>
   </div>
         </div>
 

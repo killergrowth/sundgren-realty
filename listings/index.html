@@ -74,6 +74,70 @@
         <hr class="divider">
         <p>Showing 45 active properties listed directly by Sundgren Realty agents across South Central Kansas. Residential, commercial, and land.</p>
       </div>
+      <!-- View Toggle -->
+      <div style="display:flex;justify-content:flex-end;align-items:center;gap:8px;margin-bottom:24px;">
+        <button id="view-grid-btn" onclick="setView('grid')" style="display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:700;padding:8px 14px;border-radius:6px;border:2px solid var(--dark);background:var(--dark);color:#fff;cursor:pointer;">
+          <i class="fas fa-th"></i> Grid
+        </button>
+        <button id="view-map-btn" onclick="setView('map')" style="display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:700;padding:8px 14px;border-radius:6px;border:2px solid var(--border);background:#fff;color:var(--dark);cursor:pointer;">
+          <i class="fas fa-map-marked-alt"></i> Map
+        </button>
+      </div>
+
+      <!-- Map View -->
+      <div id="listings-map-view" style="display:none;margin-bottom:48px;">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+        <div id="listings-map" style="height:520px;border-radius:12px;border:1px solid var(--border);overflow:hidden;"></div>
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"><\/script>
+        <script>
+        var _mapInitialized = false;
+        function initListingsMap() {
+          if (_mapInitialized) return;
+          _mapInitialized = true;
+          var listings = [
+            {lat:30.384234,lng:-98.001321,addr:"18802 Nicklaus DR, Lago Vista, TX",price:"$279,000",url:"/listings/commercial/18802-nicklaus-dr-lago-vista-tx-ACT3679485/",badge:"Commercial"},
+            {lat:35.086579,lng:-80.862774,addr:"8543 Castle Pine Court, Charlotte, NC",price:"$249,900",url:"/listings/commercial/8543-castle-pine-court-charlotte-nc-CAR4102438/",badge:"Commercial"},
+            {lat:36.62298184,lng:-87.38177399,addr:"3282 N Senseney Cir, Clarksville, TN",price:"$265,000",url:"/listings/residential/3282-n-senseney-cir-clarksville-tn-RTC2789606/",badge:"Residential"},
+            {lat:30.214901,lng:-97.814802,addr:"6303 Bexton CIR, Austin, TX",price:"$719,900",url:"/listings/residential/6303-bexton-cir-austin-tx-ACT4778118/",badge:"Residential"},
+            {lat:35.88309719,lng:-86.48930234,addr:"5325 Bridgemore Blvd, Murfreesboro, TN",price:"$599,900",url:"/listings/residential/5325-bridgemore-blvd-murfreesboro-tn-RTC2767768/",badge:"Residential"},
+            {lat:30.418957,lng:-97.994766,addr:"2913 Constitution SQ, Lago Vista, TX",price:"$199,000",url:"/listings/land/2913-constitution-sq-lago-vista-tx-ACT7129956/",badge:"Land"},
+            {lat:40.62446,lng:-105.25974,addr:"620 Davis Ranch Road, Bellvue, CO",price:"$245,000",url:"/listings/land/620-davis-ranch-road-bellvue-co-RECIR1016723/",badge:"Land"},
+            {lat:35.013005,lng:-81.031198,addr:"1195 Allison Bluff Trail, Rock Hill, SC",price:"$295,000",url:"/listings/land/1195-allison-bluff-trail-rock-hill-sc-CAR4218843/",badge:"Land"}
+          ];
+          var bounds = [];
+          var map = L.map('listings-map',{scrollWheelZoom:false});
+          L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'&copy; OpenStreetMap contributors',maxZoom:19}).addTo(map);
+          listings.forEach(function(l){
+            bounds.push([l.lat,l.lng]);
+            var color = l.badge==='Residential' ? '#0ea5e9' : l.badge==='Land' ? '#16a34a' : '#6366f1';
+            var icon = L.divIcon({className:'',html:'<div style="width:14px;height:14px;border-radius:50%;background:'+color+';border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.4);"></div>',iconSize:[14,14],iconAnchor:[7,7]});
+            L.marker([l.lat,l.lng],{icon:icon}).addTo(map)
+              .bindPopup('<div style="min-width:180px;"><strong>'+l.addr+'</strong><br><span style="font-size:13px;color:#555;">'+l.badge+'</span><br><strong style="font-size:16px;">'+l.price+'</strong><br><a href="'+l.url+'" style="color:#b7791f;font-weight:700;font-size:13px;">View Details &rarr;</a></div>');
+          });
+          if (bounds.length) map.fitBounds(bounds, {padding:[40,40]});
+        }
+        function setView(v) {
+          var grid = document.getElementById('listings-grid-view');
+          var mapEl = document.getElementById('listings-map-view');
+          var gb = document.getElementById('view-grid-btn');
+          var mb = document.getElementById('view-map-btn');
+          if (v==='map') {
+            grid.style.display='none'; mapEl.style.display='block';
+            gb.style.background='#fff'; gb.style.color='var(--dark)'; gb.style.borderColor='var(--border)';
+            mb.style.background='var(--dark)'; mb.style.color='#fff'; mb.style.borderColor='var(--dark)';
+            initListingsMap();
+          } else {
+            mapEl.style.display='none'; grid.style.display='block';
+            mb.style.background='#fff'; mb.style.color='var(--dark)'; mb.style.borderColor='var(--border)';
+            gb.style.background='var(--dark)'; gb.style.color='#fff'; gb.style.borderColor='var(--dark)';
+          }
+        }
+        <\/script>
+      </div>
+
+      <!-- Grid View -->
+      <div id="listings-grid-view">
+
       <!-- REPLIERS SAMPLE LISTINGS -->
       <div style="background:#fffbea;border:1px solid #ffe066;border-radius:10px;padding:20px 24px;margin-bottom:36px;">
         <p style="margin:0 0 6px;font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#b45309;">⚠️ Sample Data — Pending SCKMLS Verification</p>
@@ -992,6 +1056,7 @@
         </a>
       </div>
     </div>
+      </div><!-- /listings-grid-view -->
   </section>
 
   <section class="cta-dark">

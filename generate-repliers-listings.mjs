@@ -274,16 +274,80 @@ function renderFeatures(listing) {
   if ((listing.nearby && listing.nearby.amenities || []).length) {
     features.push({ icon: 'fa-star', label: 'Nearby', val: listing.nearby.amenities.join(', ') });
   }
+  if (d.basement)              features.push({ icon: 'fa-layer-group',   label: 'Basement',    val: d.basement });
+  if (d.fireplace)             features.push({ icon: 'fa-fire-alt',      label: 'Fireplace',   val: d.fireplace });
+  if (d.pool)                  features.push({ icon: 'fa-swimming-pool', label: 'Pool',        val: d.pool });
   if (!features.length) return '';
-  const items = features.map(f =>
-    `<li><i class="fas ${f.icon}"></i><div><span class="mlabel">${f.label}</span>${esc(String(f.val))}</div></li>`
-  ).join('\n        ');
+  const cells = features.map(f => `
+    <div class="feat-cell">
+      <i class="fas ${f.icon}"></i>
+      <div><span class="mlabel">${f.label}</span>${esc(String(f.val))}</div>
+    </div>`).join('');
   return `
   <div class="desc-section" style="margin-top:24px;">
     <h3 class="desc-section-title"><i class="fas fa-list-ul"></i> Property Features</h3>
-    <ul class="meta-list" style="margin:0;">
-      ${items}
-    </ul>
+    <div class="feat-grid">${cells}
+    </div>
+  </div>`;
+}
+
+// ── Map Embed ────────────────────────────────────────────────────────────────
+function renderMap(listing) {
+  const addr = listing.address;
+  const lat = listing.map ? listing.map.latitude : null;
+  const lng = listing.map ? listing.map.longitude : null;
+  const fullAddr = `${addr.streetNumber || ''} ${addr.streetName || ''} ${addr.streetSuffix || ''}, ${addr.city || ''}, ${addr.state || ''} ${addr.zip || ''}`.trim();
+  if (lat && lng) {
+    return `
+  <div class="desc-section" style="margin-top:24px;">
+    <h3 class="desc-section-title"><i class="fas fa-map-marker-alt"></i> Location</h3>
+    <div id="sg-map" style="height:300px;border-radius:10px;overflow:hidden;border:1px solid var(--border);"></div>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"><\/script>
+    <script>
+    (function(){
+      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([${lat},${lng}],15);
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'\u00a9 OpenStreetMap contributors',maxZoom:19}).addTo(map);
+      L.marker([${lat},${lng}]).addTo(map).bindPopup('${esc(fullAddr)}').openPopup();
+    })();
+    <\/script>
+  </div>`;
+  } else {
+    const q = encodeURIComponent(fullAddr);
+    return `
+  <div class="desc-section" style="margin-top:24px;">
+    <h3 class="desc-section-title"><i class="fas fa-map-marker-alt"></i> Location</h3>
+    <iframe
+      src="https://www.openstreetmap.org/search?query=${q}"
+      width="100%" height="300"
+      style="border:none;border-radius:10px;border:1px solid var(--border);"
+      loading="lazy" title="Property location map"
+    ></iframe>
+    <p style="font-size:12px;color:var(--text-light);margin-top:8px;"><i class="fas fa-map-marker-alt" style="color:var(--yellow-dark);"></i> ${esc(fullAddr)}</p>
+  </div>`;
+  }
+}
+
+// ── Stats Row (quick facts bar) ──────────────────────────────────────────────
+function renderStatsRow(listing) {
+  const d = listing.details || {};
+  const lot = listing.lot || {};
+  const stats = [];
+  if (listing.listPrice)        stats.push({ icon: 'fa-tag',                label: 'List Price',     val: formatPrice(listing.listPrice) });
+  if (d.numBedrooms)            stats.push({ icon: 'fa-bed',                label: 'Bedrooms',       val: d.numBedrooms });
+  if (d.numBathrooms)           stats.push({ icon: 'fa-bath',               label: 'Bathrooms',      val: d.numBathrooms });
+  if (d.sqft)                   stats.push({ icon: 'fa-ruler-combined',     label: 'Sq Ft',          val: parseInt(d.sqft).toLocaleString() });
+  if (lot.acres)                stats.push({ icon: 'fa-expand-arrows-alt',  label: 'Lot Size',       val: `${parseFloat(lot.acres).toFixed(2)} ac` });
+  if (d.yearBuilt)              stats.push({ icon: 'fa-calendar-alt',       label: 'Year Built',     val: d.yearBuilt });
+  if (d.daysOnMarket != null)   stats.push({ icon: 'fa-clock',              label: 'Days on Market', val: d.daysOnMarket });
+  if (!stats.length) return '';
+  const cells = stats.map(s => `
+    <div class="stat-cell">
+      <i class="fas ${s.icon}"></i>
+      <div class="stat-val">${esc(String(s.val))}</div>
+      <div class="stat-label">${s.label}</div>
+    </div>`).join('');
+  return `<div class="stat-row">${cells}
   </div>`;
 }
 
@@ -310,10 +374,12 @@ function buildPage(listing, typeInfo, slug) {
   const heroImg = listing.images && listing.images.length ? imgUrl(listing.images[0]) : '';
   const ogImg   = heroImg || `${SITE_DOMAIN}/images/og-image.jpg`;
 
-  const photoGrid   = renderPhotoGrid(listing.images || []);
-  const descHtml    = renderDescription(d.description || '');
+  const photoGrid    = renderPhotoGrid(listing.images || []);
+  const descHtml     = renderDescription(d.description || '');
   const featuresHtml = renderFeatures(listing);
-  const infoCard    = renderInfoCard(listing, typeInfo);
+  const mapHtml      = renderMap(listing);
+  const statsRow     = renderStatsRow(listing);
+  const infoCard     = renderInfoCard(listing, typeInfo);
 
   // Breadcrumb
   const breadcrumb = `
@@ -382,9 +448,12 @@ ${breadcrumb}
 
         ${photoGrid}
 
+        ${statsRow}
+
         <div style="margin-top:${photoGrid ? '32px' : '0'};">
           ${descHtml}
           ${featuresHtml}
+          ${mapHtml}
         </div>
 
         <!-- Disclaimer -->
@@ -469,7 +538,12 @@ async function main() {
     index[typeInfo.type].push({
       slug,
       mlsNumber: listing.mlsNumber,
+      type: typeInfo.type,
       address: fullAddress(listing.address),
+      city: listing.address.city || '',
+      state: listing.address.state || '',
+      lat: listing.map ? (listing.map.latitude || null) : null,
+      lng: listing.map ? (listing.map.longitude || null) : null,
       price: listing.listPrice,
       beds: listing.details.numBedrooms,
       baths: listing.details.numBathrooms,

@@ -122,12 +122,39 @@
   })();
   </script>
 
+        <div class="stat-row">
+    <div class="stat-cell">
+      <i class="fas fa-tag"></i>
+      <div class="stat-val">$245,000</div>
+      <div class="stat-label">List Price</div>
+    </div>
+    <div class="stat-cell">
+      <i class="fas fa-expand-arrows-alt"></i>
+      <div class="stat-val">6.79 ac</div>
+      <div class="stat-label">Lot Size</div>
+    </div>
+  </div>
+
         <div style="margin-top:32px;">
           <div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Looking for the perfect spot for your mountain retreat? This nearly 7 acre vacant lot is available for your dream home. Offering both privacy and an immersive outdoor experience, this lot is close to town with convenient access off Davis Ranch Road. Electric in place. Looking for a builder? Seller is the owner of EarthBuilt and has renderings available if Buyer would like to see. Plans have been thoughtfully designed to include a stunning, sustainability built, net-zero energy, modern dwelling. Floor to ceiling glass walls and rammed earth structural monoliths create a truly unique home environment. Buyer and Buyer Agent to verify all information.</p>
     </div>
           
+          
+  <div class="desc-section" style="margin-top:24px;">
+    <h3 class="desc-section-title"><i class="fas fa-map-marker-alt"></i> Location</h3>
+    <div id="sg-map" style="height:300px;border-radius:10px;overflow:hidden;border:1px solid var(--border);"></div>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+    (function(){
+      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([40.62446,-105.25974],15);
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap contributors',maxZoom:19}).addTo(map);
+      L.marker([40.62446,-105.25974]).addTo(map).bindPopup('620 Davis Ranch Road, Bellvue, CO 80512').openPopup();
+    })();
+    </script>
+  </div>
         </div>
 
         <!-- Disclaimer -->
