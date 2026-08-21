@@ -1,5 +1,5 @@
 {
-  "lastFetch": "2026-08-21T15:34:19.494Z",
+  "lastFetch": "2026-08-21T18:37:01.650Z",
   "auctions": {
     "24096": {
       "slug": "test-auction-24096",
@@ -2799,9 +2799,10 @@
     },
     "165887": {
       "slug": "438-e-main-st-mount-hope-ks-67108-4-bed-25-bath-classic-home-165887",
-      "status": "accepting_bids",
+      "status": "complete",
       "name": "438 E Main St, Mount Hope, KS 67108: 4 Bed 2.5 Bath Classic Home and Shop",
-      "generated": "2026-07-31T19:28:16.733Z"
+      "generated": "2026-07-31T19:28:16.733Z",
+      "updated": "2026-08-21T18:37:03.174Z"
     },
     "165931": {
       "slug": "2011-ford-edge-suv-guns-ammo-auction-el-dorado-165931",
@@ -2811,9 +2812,10 @@
     },
     "166309": {
       "slug": "chevy-truck-hustler-mower-tools-antique-furniture-john-deere-166309",
-      "status": "pending",
+      "status": "complete",
       "name": "Chevy Truck, Hustler Mower, Tools, Antique Furniture, John Deere Memorabilia & Household Items – Live Auction in Mount Hope, KS",
-      "generated": "2026-07-31T19:28:16.732Z"
+      "generated": "2026-07-31T19:28:16.732Z",
+      "updated": "2026-08-21T18:37:03.174Z"
     },
     "166314": {
       "slug": "john-deere-tractors-mower-side-by-side-guns-tools-household-166314",
