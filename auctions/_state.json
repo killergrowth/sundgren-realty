@@ -1,5 +1,5 @@
 {
-  "lastFetch": "2026-08-10T16:29:19.558Z",
+  "lastFetch": "2026-08-21T14:49:47.920Z",
   "auctions": {
     "24096": {
       "slug": "test-auction-24096",
@@ -2787,9 +2787,10 @@
     },
     "165648": {
       "slug": "108-acres-tillable-farm-ground-mcpherson-county-kansas-165648",
-      "status": "accepting_bids",
+      "status": "complete",
       "name": "108+- Acres Tillable Farm Ground – McPherson County, Kansas",
-      "generated": "2026-07-31T19:28:16.732Z"
+      "generated": "2026-07-31T19:28:16.732Z",
+      "updated": "2026-08-21T14:49:50.083Z"
     },
     "165726": {
       "slug": "estate-of-craig-kobel-live-auction-2-vintage-duck-decoys-amm-165726",
@@ -2799,9 +2800,10 @@
     },
     "165887": {
       "slug": "438-e-main-st-mount-hope-ks-67108-4-bed-25-bath-classic-home-165887",
-      "status": "pending",
+      "status": "accepting_bids",
       "name": "438 E Main St, Mount Hope, KS 67108: 4 Bed 2.5 Bath Classic Home and Shop",
-      "generated": "2026-07-31T19:28:16.733Z"
+      "generated": "2026-07-31T19:28:16.733Z",
+      "updated": "2026-08-21T14:49:50.078Z"
     },
     "165931": {
       "slug": "2011-ford-edge-suv-guns-ammo-auction-el-dorado-165931",
@@ -2832,6 +2834,18 @@
       "status": "pending",
       "name": "351 Acres Near Douglass in Butler County, Kansas Selling in 4 Tracts",
       "generated": "2026-07-31T19:28:16.734Z"
+    },
+    "167478": {
+      "slug": "16-guns-tons-of-ammo-accessories-old-ammo-boxes-el-dorado-ks-167478",
+      "status": "accepting_bids",
+      "name": "16 Guns, Tons of Ammo, Accessories, Old Ammo Boxes - El Dorado KS",
+      "generated": "2026-08-21T14:49:50.080Z"
+    },
+    "167485": {
+      "slug": "160-acres-lincoln-county-kansas-pasture-tillable-ponds-water-167485",
+      "status": "pending",
+      "name": "160 Acres Lincoln County, Kansas – Pasture, Tillable, Ponds & Water Well",
+      "generated": "2026-08-21T14:49:50.082Z"
     }
   }
 }
