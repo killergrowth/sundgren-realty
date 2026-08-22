@@ -1,5 +1,5 @@
 {
-  "lastFetch": "2026-08-22T15:21:20.591Z",
+  "lastFetch": "2026-08-22T18:31:13.414Z",
   "auctions": {
     "24096": {
       "slug": "test-auction-24096",
@@ -2825,8 +2825,7 @@
       "slug": "8227-n-rock-rd-walton-ks-155-acres-harvey-county-farmstead-166365",
       "status": "accepting_bids",
       "name": "8227 N Rock Rd., Walton, KS – 155 Acres – Harvey County Farmstead",
-      "generated": "2026-07-31T19:28:16.733Z",
-      "updated": "2026-08-22T15:21:22.149Z"
+      "generated": "2026-07-31T19:28:16.733Z"
     },
     "166378": {
       "slug": "351-acres-near-douglass-in-butler-county-kansas-selling-in-4-166378",
