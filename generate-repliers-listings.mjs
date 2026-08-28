@@ -1,18 +1,15 @@
 ﻿/**
  * generate-repliers-listings.mjs - Sundgren Realty
  *
- * Fetches listings from the Repliers API and generates:
- *   - listings/commercial/{slug}/index.html   (3 commercial)
- *   - listings/residential/{slug}/index.html  (3 residential)
- *   - listings/land/{slug}/index.html         (3 land)
+ * Fetches Jeremy Sundgren's active MLS listings via Repliers API and generates
+ * individual detail pages under listings/{type}/{slug}/
  *
  * Pages use <!-- HEADER --> and <!-- FOOTER --> placeholders.
- * Run: node generate-repliers-listings.mjs
+ * Run: REPLIERS_API_KEY=<key> node generate-repliers-listings.mjs
  * Then: node build.js
  *
- * NOTE: Currently using Repliers sample data (boardId 110).
- *       When SCKMLS access is live, remove the per_page=9 limit
- *       and add officeName filter for Sundgren listings.
+ * Agent: Jeremy Sundgren | boardAgentId: SUNDGJER
+ * Source: SCKMLS via Repliers API (agent=Jeremy+Sundgren)
  */
 
 import fs   from 'fs';
@@ -22,7 +19,7 @@ import { fileURLToPath } from 'url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 // ── Config ──────────────────────────────────────────────────────────────────
-const REPLIERS_API_KEY = process.env.REPLIERS_API_KEY || '6OlTrbJFWoCUuzkqn5V9mwKgQPjLq6';
+const REPLIERS_API_KEY = process.env.REPLIERS_API_KEY || process.env.REPLIERS_KEY;
 const REPLIERS_API_URL = 'https://api.repliers.io/listings';
 const IMG_CDN_BASE     = 'https://cdn.repliers.io';
 const SITE_DOMAIN      = 'https://sundgrenrealty.com';
@@ -36,20 +33,30 @@ const DIST_DIR     = path.join(__dirname, 'dist');
 
 const DIRECT_MODE = process.argv.includes('--direct');
 
-// ── How we designate listing types from sample data ──────────────────────────
-// When real SCKMLS data is live, these map to actual MLS property types.
-// For sample data we manually assign: first 3 = commercial, next 3 = residential, last 3 = land
-const TYPE_MAP = [
-  { type: 'commercial', label: 'Commercial', dir: 'commercial', backLink: '/commercial/', backLabel: 'All Commercial' },
-  { type: 'commercial', label: 'Commercial', dir: 'commercial', backLink: '/commercial/', backLabel: 'All Commercial' },
-  { type: 'commercial', label: 'Commercial', dir: 'commercial', backLink: '/commercial/', backLabel: 'All Commercial' },
-  { type: 'residential', label: 'Residential', dir: 'residential', backLink: '/residential/', backLabel: 'All Residential' },
-  { type: 'residential', label: 'Residential', dir: 'residential', backLink: '/residential/', backLabel: 'All Residential' },
-  { type: 'residential', label: 'Residential', dir: 'residential', backLink: '/residential/', backLabel: 'All Residential' },
-  { type: 'land', label: 'Land', dir: 'land', backLink: '/land-listings/', backLabel: 'All Land Listings' },
-  { type: 'land', label: 'Land', dir: 'land', backLink: '/land-listings/', backLabel: 'All Land Listings' },
-  { type: 'land', label: 'Land', dir: 'land', backLink: '/land-listings/', backLabel: 'All Land Listings' },
-];
+// ── Classify listing type from Repliers propertyType field ──────────────────
+// MLS property types for Jeremy's listings:
+//   'Residential'        → residential
+//   'Land'               → land
+//   'Vacant Land/Acreage'→ land
+//   'Farm'               → land
+//   'Commercial Sale'    → commercial
+//   anything else        → residential (safe default)
+const LAND_TYPES = new Set(['land', 'farm', 'unimproved land', 'vacant land/acreage', 'vacant land', 'acreage']);
+const COMMERCIAL_TYPES = new Set(['commercial sale', 'commercial', 'industrial', 'office']);
+
+const TYPE_DEFS = {
+  residential: { type: 'residential', label: 'Residential', dir: 'residential', backLink: '/residential/', backLabel: 'All Residential' },
+  land:        { type: 'land',        label: 'Land',        dir: 'land',        backLink: '/land-listings/',  backLabel: 'All Land Listings' },
+  commercial:  { type: 'commercial',  label: 'Commercial',  dir: 'commercial',  backLink: '/commercial/',     backLabel: 'All Commercial' },
+};
+
+function classifyListing(listing) {
+  const propType = ((listing.details && listing.details.propertyType) || '').toLowerCase().trim();
+  const style    = ((listing.details && listing.details.style)        || '').toLowerCase().trim();
+  if (COMMERCIAL_TYPES.has(propType)) return TYPE_DEFS.commercial;
+  if (LAND_TYPES.has(propType) || LAND_TYPES.has(style)) return TYPE_DEFS.land;
+  return TYPE_DEFS.residential;
+}
 
 // ── Helpers ──────────────────────────────────────────────────────────────────
 function slugify(str) {
@@ -274,21 +281,137 @@ function renderFeatures(listing) {
   if ((listing.nearby && listing.nearby.amenities || []).length) {
     features.push({ icon: 'fa-star', label: 'Nearby', val: listing.nearby.amenities.join(', ') });
   }
+  if (d.basement)              features.push({ icon: 'fa-layer-group',   label: 'Basement',    val: d.basement });
+  if (d.fireplace)             features.push({ icon: 'fa-fire-alt',      label: 'Fireplace',   val: d.fireplace });
+  if (d.pool)                  features.push({ icon: 'fa-swimming-pool', label: 'Pool',        val: d.pool });
   if (!features.length) return '';
-  const items = features.map(f =>
-    `<li><i class="fas ${f.icon}"></i><div><span class="mlabel">${f.label}</span>${esc(String(f.val))}</div></li>`
-  ).join('\n        ');
+  const cells = features.map(f => `
+    <div class="feat-cell">
+      <i class="fas ${f.icon}"></i>
+      <div><span class="mlabel">${f.label}</span>${esc(String(f.val))}</div>
+    </div>`).join('');
   return `
   <div class="desc-section" style="margin-top:24px;">
     <h3 class="desc-section-title"><i class="fas fa-list-ul"></i> Property Features</h3>
-    <ul class="meta-list" style="margin:0;">
-      ${items}
-    </ul>
+    <div class="feat-grid">${cells}
+    </div>
+  </div>`;
+}
+
+// ── Similar Listings ────────────────────────────────────────────────────────
+function renderSimilarListings(currentMls, allListings, typeInfo) {
+  // Same type, exclude current, up to 3
+  const similar = allListings
+    .filter(l => l.mlsNumber !== currentMls && l.type === typeInfo.type)
+    .slice(0, 3);
+  if (!similar.length) {
+    // Fall back to any other type if none of same type
+    const fallback = allListings.filter(l => l.mlsNumber !== currentMls).slice(0, 3);
+    if (!fallback.length) return '';
+    similar.push(...fallback);
+  }
+  const typeBadgeColor = t => t === 'residential' ? '#0ea5e9' : t === 'land' ? '#16a34a' : '#6366f1';
+  const cards = similar.map(l => {
+    const priceStr = l.price ? '$' + parseInt(l.price).toLocaleString() : 'Contact for Price';
+    const meta = l.beds ? `${l.beds} Bd · ${l.baths} Ba · ${parseInt(l.sqft||0).toLocaleString()} sq ft` :
+                 l.acres ? `${parseFloat(l.acres).toFixed(2)} acres` : '';
+    return `
+      <a href="/listings/${l.type}/${l.slug}/" class="listing-card">
+        <img class="listing-card-img" src="${esc(l.image)}" alt="${esc(l.address)}" loading="lazy">
+        <div class="listing-card-body">
+          <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+            <span class="listing-card-badge" style="background:#22c55e;">Active</span>
+            <span class="listing-card-badge" style="background:${typeBadgeColor(l.type)};">${l.type.charAt(0).toUpperCase()+l.type.slice(1)}</span>
+          </div>
+          <p class="listing-card-address">${esc(l.address.split(',')[0])}</p>
+          <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>${esc(l.city)}, ${esc(l.state)}</p>
+          ${meta ? `<p class="listing-card-meta"><i class="fas fa-ruler-combined"></i>${esc(meta)}</p>` : ''}
+          <p class="listing-card-price">${priceStr}</p>
+          <span class="listing-card-more">View Details &rarr;</span>
+        </div>
+      </a>`;
+  }).join('');
+
+  return `
+<section class="section" style="padding:48px 0;background:var(--bg-light);">
+  <div class="container">
+    <div class="section-title" style="margin-bottom:32px;">
+      <span class="eyebrow">More Like This</span>
+      <h2 style="font-size:22px;">Similar ${typeInfo.label} Listings</h2>
+      <hr class="divider">
+    </div>
+    <div class="listing-grid">
+      ${cards}
+    </div>
+    <div style="text-align:center;margin-top:32px;">
+      <a href="/listings/" class="btn-bid">View All Listings &rarr;</a>
+    </div>
+  </div>
+</section>`;
+}
+
+// ── Map Embed ────────────────────────────────────────────────────────────────
+function renderMap(listing) {
+  const addr = listing.address;
+  const lat = listing.map ? listing.map.latitude : null;
+  const lng = listing.map ? listing.map.longitude : null;
+  const fullAddr = `${addr.streetNumber || ''} ${addr.streetName || ''} ${addr.streetSuffix || ''}, ${addr.city || ''}, ${addr.state || ''} ${addr.zip || ''}`.trim();
+  if (lat && lng) {
+    return `
+  <div class="desc-section" style="margin-top:24px;">
+    <h3 class="desc-section-title"><i class="fas fa-map-marker-alt"></i> Location</h3>
+    <div id="sg-map" style="height:300px;border-radius:10px;overflow:hidden;border:1px solid var(--border);"></div>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"><\/script>
+    <script>
+    (function(){
+      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([${lat},${lng}],15);
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'\u00a9 OpenStreetMap contributors',maxZoom:19}).addTo(map);
+      L.marker([${lat},${lng}]).addTo(map).bindPopup('${esc(fullAddr)}').openPopup();
+    })();
+    <\/script>
+  </div>`;
+  } else {
+    const q = encodeURIComponent(fullAddr);
+    return `
+  <div class="desc-section" style="margin-top:24px;">
+    <h3 class="desc-section-title"><i class="fas fa-map-marker-alt"></i> Location</h3>
+    <iframe
+      src="https://www.openstreetmap.org/search?query=${q}"
+      width="100%" height="300"
+      style="border:none;border-radius:10px;border:1px solid var(--border);"
+      loading="lazy" title="Property location map"
+    ></iframe>
+    <p style="font-size:12px;color:var(--text-light);margin-top:8px;"><i class="fas fa-map-marker-alt" style="color:var(--yellow-dark);"></i> ${esc(fullAddr)}</p>
+  </div>`;
+  }
+}
+
+// ── Stats Row (quick facts bar) ──────────────────────────────────────────────
+function renderStatsRow(listing) {
+  const d = listing.details || {};
+  const lot = listing.lot || {};
+  const stats = [];
+  if (listing.listPrice)        stats.push({ icon: 'fa-tag',                label: 'List Price',     val: formatPrice(listing.listPrice) });
+  if (d.numBedrooms)            stats.push({ icon: 'fa-bed',                label: 'Bedrooms',       val: d.numBedrooms });
+  if (d.numBathrooms)           stats.push({ icon: 'fa-bath',               label: 'Bathrooms',      val: d.numBathrooms });
+  if (d.sqft)                   stats.push({ icon: 'fa-ruler-combined',     label: 'Sq Ft',          val: parseInt(d.sqft).toLocaleString() });
+  if (lot.acres)                stats.push({ icon: 'fa-expand-arrows-alt',  label: 'Lot Size',       val: `${parseFloat(lot.acres).toFixed(2)} ac` });
+  if (d.yearBuilt)              stats.push({ icon: 'fa-calendar-alt',       label: 'Year Built',     val: d.yearBuilt });
+  if (d.daysOnMarket != null)   stats.push({ icon: 'fa-clock',              label: 'Days on Market', val: d.daysOnMarket });
+  if (!stats.length) return '';
+  const cells = stats.map(s => `
+    <div class="stat-cell">
+      <i class="fas ${s.icon}"></i>
+      <div class="stat-val">${esc(String(s.val))}</div>
+      <div class="stat-label">${s.label}</div>
+    </div>`).join('');
+  return `<div class="stat-row">${cells}
   </div>`;
 }
 
 // ── Full Page HTML ────────────────────────────────────────────────────────────
-function buildPage(listing, typeInfo, slug) {
+function buildPage(listing, typeInfo, slug, allListings) {
   const addr = listing.address;
   const fullAddr = fullAddress(addr);
   const d = listing.details || {};
@@ -310,10 +433,13 @@ function buildPage(listing, typeInfo, slug) {
   const heroImg = listing.images && listing.images.length ? imgUrl(listing.images[0]) : '';
   const ogImg   = heroImg || `${SITE_DOMAIN}/images/og-image.jpg`;
 
-  const photoGrid   = renderPhotoGrid(listing.images || []);
-  const descHtml    = renderDescription(d.description || '');
+  const photoGrid    = renderPhotoGrid(listing.images || []);
+  const descHtml     = renderDescription(d.description || '');
   const featuresHtml = renderFeatures(listing);
-  const infoCard    = renderInfoCard(listing, typeInfo);
+  const mapHtml      = renderMap(listing);
+  const statsRow     = renderStatsRow(listing);
+  const infoCard     = renderInfoCard(listing, typeInfo);
+  const similarHtml  = renderSimilarListings(listing.mlsNumber, allListings || [], typeInfo);
 
   // Breadcrumb
   const breadcrumb = `
@@ -382,9 +508,12 @@ ${breadcrumb}
 
         ${photoGrid}
 
+        ${statsRow}
+
         <div style="margin-top:${photoGrid ? '32px' : '0'};">
           ${descHtml}
           ${featuresHtml}
+          ${mapHtml}
         </div>
 
         <!-- Disclaimer -->
@@ -402,6 +531,8 @@ ${breadcrumb}
   </div>
 </main>
 
+${similarHtml}
+
 <!-- CTA -->
 <section class="section section-dark" style="padding:48px 0;text-align:center;">
   <div class="container">
@@ -416,18 +547,20 @@ ${breadcrumb}
 </html>`;
 }
 
-// ── Fetch Listings from Repliers ──────────────────────────────────────────────
+// ── Fetch Jeremy Sundgren's listings from Repliers ───────────────────────────
 async function fetchListings() {
-  // Fetch 9 sample listings (3 per type)
-  // When real SCKMLS data is available, add: &class=CommercialProperty etc.
-  const url = `${REPLIERS_API_URL}?resultsPerPage=9&status=A`;
+  const url = `${REPLIERS_API_URL}?agent=Jeremy+Sundgren&status=A&resultsPerPage=50`;
   console.log(`  Fetching: ${url}`);
   const res = await fetch(url, {
-    headers: { 'REPLIERS-API-KEY': REPLIERS_API_KEY }
+    headers: { 'repliers-api-key': REPLIERS_API_KEY }
   });
   if (!res.ok) throw new Error(`Repliers API error: ${res.status} ${res.statusText}`);
   const data = await res.json();
-  console.log(`  Repliers: ${data.count} total listings, using ${data.listings.length}`);
+  if (data.unrecognizedParams && data.unrecognizedParams.length) {
+    console.warn('  ⚠️  Unrecognized params:', data.unrecognizedParams);
+  }
+  console.log(`  Repliers: ${data.count} Jeremy Sundgren listings found`);
+  if (!data.listings || !data.listings.length) throw new Error('No listings returned — check agent name or API key');
   return data.listings;
 }
 
@@ -456,20 +589,21 @@ async function main() {
   // Track index data for each type
   const index = { commercial: [], residential: [], land: [] };
 
-  for (let i = 0; i < listings.length; i++) {
-    const listing = listings[i];
-    const typeInfo = TYPE_MAP[i] || TYPE_MAP[TYPE_MAP.length - 1];
+  // First pass: classify all listings and build index summary
+  for (const listing of listings) {
+    const typeInfo = classifyListing(listing);
     const slug = buildListingSlug(listing);
-
-    console.log(`\n  [${i+1}/9] ${listing.mlsNumber} → ${typeInfo.type}/${slug}`);
-
-    const html = buildPage(listing, typeInfo, slug);
-    writePage(html, [typeInfo.dir, slug]);
-
+    const propType = (listing.details && listing.details.propertyType) || '';
+    console.log(`  classify: MLS ${listing.mlsNumber} — propType="${propType}" → ${typeInfo.type}`);
     index[typeInfo.type].push({
       slug,
       mlsNumber: listing.mlsNumber,
+      type: typeInfo.type,
       address: fullAddress(listing.address),
+      city: listing.address.city || '',
+      state: listing.address.state || '',
+      lat: listing.map ? (listing.map.latitude || null) : null,
+      lng: listing.map ? (listing.map.longitude || null) : null,
       price: listing.listPrice,
       beds: listing.details.numBedrooms,
       baths: listing.details.numBathrooms,
@@ -481,10 +615,23 @@ async function main() {
     });
   }
 
-  // Write index data for use by future index page generator
+  // Flatten all listings into one array for similar listings widget
+  const allListings = Object.values(index).flat();
+
+  // Second pass: build full pages now that we have all listing data
+  console.log('\n  Building pages...');
+  for (const listing of listings) {
+    const typeInfo = classifyListing(listing);
+    const slug = buildListingSlug(listing);
+    console.log(`\n  MLS ${listing.mlsNumber} → ${typeInfo.type}/${slug}`);
+    const html = buildPage(listing, typeInfo, slug, allListings);
+    writePage(html, [typeInfo.dir, slug]);
+  }
+
+  // Write index data
   const dataDir = path.join(__dirname, 'data');
   fs.mkdirSync(dataDir, { recursive: true });
-  fs.writeFileSync(path.join(dataDir, 'repliers-listings.json'), JSON.stringify(index, null, 2), 'utf8');
+  fs.writeFileSync(path.join(dataDir, 'repliers-listings.json'), JSON.stringify(allListings, null, 2), 'utf8');
   console.log('\n  📄 Wrote data/repliers-listings.json');
 
   console.log('\n✅ Done. Listing pages generated:');
@@ -492,6 +639,7 @@ async function main() {
     console.log(`   ${type}: ${items.length} pages`);
     items.forEach(l => console.log(`     /listings/${type}/${l.slug}/`));
   });
+  console.log(`\n   Total: ${allListings.length} pages across ${Object.keys(index).filter(k => index[k].length).length} categories`);
   if (!DIRECT_MODE) {
     console.log('\n  Next: run `node build.js` to assemble into dist/');
   }
