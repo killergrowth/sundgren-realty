@@ -36,20 +36,21 @@ const DIST_DIR     = path.join(__dirname, 'dist');
 
 const DIRECT_MODE = process.argv.includes('--direct');
 
-// ── How we designate listing types from sample data ──────────────────────────
-// When real SCKMLS data is live, these map to actual MLS property types.
-// For sample data we manually assign: first 3 = commercial, next 3 = residential, last 3 = land
-const TYPE_MAP = [
-  { type: 'commercial', label: 'Commercial', dir: 'commercial', backLink: '/commercial/', backLabel: 'All Commercial' },
-  { type: 'commercial', label: 'Commercial', dir: 'commercial', backLink: '/commercial/', backLabel: 'All Commercial' },
-  { type: 'commercial', label: 'Commercial', dir: 'commercial', backLink: '/commercial/', backLabel: 'All Commercial' },
-  { type: 'residential', label: 'Residential', dir: 'residential', backLink: '/residential/', backLabel: 'All Residential' },
-  { type: 'residential', label: 'Residential', dir: 'residential', backLink: '/residential/', backLabel: 'All Residential' },
-  { type: 'residential', label: 'Residential', dir: 'residential', backLink: '/residential/', backLabel: 'All Residential' },
-  { type: 'land', label: 'Land', dir: 'land', backLink: '/land-listings/', backLabel: 'All Land Listings' },
-  { type: 'land', label: 'Land', dir: 'land', backLink: '/land-listings/', backLabel: 'All Land Listings' },
-  { type: 'land', label: 'Land', dir: 'land', backLink: '/land-listings/', backLabel: 'All Land Listings' },
-];
+// ── Classify listing type from Repliers propertyType / style ─────────────────
+const LAND_TYPES = new Set(['land','farm','unimproved land','vacant land/acreage','vacant land','acreage','lot']);
+const COMMERCIAL_TYPES = new Set(['commercial','office','retail','industrial','multi-family','mixed use']);
+
+function classifyListing(listing) {
+  const propType = ((listing.details && listing.details.propertyType) || '').toLowerCase().trim();
+  const style    = ((listing.details && listing.details.style)        || '').toLowerCase().trim();
+  if (COMMERCIAL_TYPES.has(propType) || COMMERCIAL_TYPES.has(style)) {
+    return { type: 'commercial', label: 'Commercial', dir: 'commercial', backLink: '/commercial/', backLabel: 'All Commercial' };
+  }
+  if (LAND_TYPES.has(propType) || LAND_TYPES.has(style)) {
+    return { type: 'land', label: 'Land', dir: 'land', backLink: '/land-listings/', backLabel: 'All Land Listings' };
+  }
+  return { type: 'residential', label: 'Residential', dir: 'residential', backLink: '/listings/residential/', backLabel: 'All Residential' };
+}
 
 // ── Helpers ──────────────────────────────────────────────────────────────────
 function slugify(str) {
@@ -542,9 +543,8 @@ ${similarHtml}
 
 // ── Fetch Listings from Repliers ──────────────────────────────────────────────
 async function fetchListings() {
-  // Fetch 9 sample listings (3 per type)
-  // When real SCKMLS data is available, add: &class=CommercialProperty etc.
-  const url = `${REPLIERS_API_URL}?resultsPerPage=9&status=A`;
+  // Fetch all of Jeremy Sundgren's active listings
+  const url = `${REPLIERS_API_URL}?agent=Jeremy+Sundgren&status=A&resultsPerPage=50`;
   console.log(`  Fetching: ${url}`);
   const res = await fetch(url, {
     headers: { 'REPLIERS-API-KEY': REPLIERS_API_KEY }
@@ -583,7 +583,7 @@ async function main() {
   // First pass: build the index/summary data for all listings
   for (let i = 0; i < listings.length; i++) {
     const listing = listings[i];
-    const typeInfo = TYPE_MAP[i] || TYPE_MAP[TYPE_MAP.length - 1];
+    const typeInfo = classifyListing(listing);
     const slug = buildListingSlug(listing);
     index[typeInfo.type].push({
       slug,
@@ -612,7 +612,7 @@ async function main() {
   console.log('\n  Building pages...');
   for (let i = 0; i < listings.length; i++) {
     const listing = listings[i];
-    const typeInfo = TYPE_MAP[i] || TYPE_MAP[TYPE_MAP.length - 1];
+    const typeInfo = classifyListing(listing);
     const slug = buildListingSlug(listing);
     console.log(`\n  [${i+1}/${listings.length}] ${listing.mlsNumber} → ${typeInfo.type}/${slug}`);
     const html = buildPage(listing, typeInfo, slug, allListings);

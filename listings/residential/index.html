@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Residential Listings | Sundgren Realty &amp; Auction</title>
+  <meta name="description" content="5 active residential properties in South Central Kansas. Homes on acreage, rural estates, and country properties in Butler County and surrounding areas.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://sundgrenrealty.com/listings/residential/">
+  <meta property="og:title" content="Residential Listings | Sundgren Realty &amp; Auction">
+  <meta property="og:description" content="5 active residential properties in South Central Kansas. Homes on acreage, rural estates, and country properties in Butler County and surrounding areas.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sundgrenrealty.com/listings/residential/">
+  <meta property="og:image" content="/images/og-preview.png">
+  <link rel="icon" href="/images/favicon-black.png" type="image/png" media="(prefers-color-scheme: light)">
+  <link rel="icon" href="/images/favicon.png" type="image/png" media="(prefers-color-scheme: dark)">
+  <link rel="apple-touch-icon" href="/images/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/sundgren.css">
+</head>
+<body>
+
+<!-- HEADER -->
+
+<main>
+
+  <section class="page-hero">
+    <div class="inner">
+      <h1>Residential Listings</h1>
+      <nav aria-label="Breadcrumb">
+        <ol class="breadcrumb">
+          <li><a href="/">Home</a></li>
+          <li><a href="/listings/">Listings</a></li>
+          <li class="active">Residential</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <span class="eyebrow">Residential Listings</span>
+        <h2>Homes Listed by Jeremy Sundgren</h2>
+        <hr class="divider">
+        <p>5 active residential properties in South Central Kansas. Homes on acreage, rural estates, and country properties in Butler County and surrounding areas.</p>
+      </div>
+
+      <!-- View Toggle -->
+      <div style="display:flex;justify-content:flex-end;align-items:center;gap:8px;margin-bottom:24px;">
+        <button id="view-grid-btn" onclick="setView('grid')" style="display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:700;padding:8px 14px;border-radius:6px;border:2px solid var(--dark);background:var(--dark);color:#fff;cursor:pointer;">
+          <i class="fas fa-th"></i> Grid
+        </button>
+        <button id="view-map-btn" onclick="setView('map')" style="display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:700;padding:8px 14px;border-radius:6px;border:2px solid var(--border);background:#fff;color:var(--dark);cursor:pointer;">
+          <i class="fas fa-map-marked-alt"></i> Map
+        </button>
+      </div>
+
+      <!-- Map View -->
+      <div id="listings-map-view" style="display:none;margin-bottom:48px;">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+        <div id="listings-map" style="height:520px;border-radius:12px;border:1px solid var(--border);overflow:hidden;"></div>
+        <script>
+        var _mapInitialized = false;
+        function initListingsMap() {
+          if (_mapInitialized) return;
+          _mapInitialized = true;
+          var listings = [
+            {lat:37.533878,lng:-96.986691,addr:"7805 200th St, Douglass, KS",price:"Contact for Price",url:"/listings/residential/7805-200th-st-douglass-ks-676815/",badge:"Residential"},
+            {lat:38.144542,lng:-97.246271,addr:"8227 Rock Rd, Walton, KS",price:"Contact for Price",url:"/listings/residential/8227-rock-rd-walton-ks-676745/",badge:"Residential"},
+            {lat:37.695711,lng:-97.036416,addr:"10608 90th ST, Augusta, KS",price:"$740,000",url:"/listings/residential/10608-90th-st-augusta-ks-676431/",badge:"Residential"},
+            {lat:37.684498,lng:-96.936253,addr:"9657 Hopkins Switch Rd, Augusta, KS",price:"$435,000",url:"/listings/residential/9657-hopkins-switch-rd-augusta-ks-672322/",badge:"Residential"},
+            {lat:37.792926,lng:-96.94785,addr:"5747 20th St, El Dorado, KS",price:"$1,650,000",url:"/listings/residential/5747-20th-st-el-dorado-ks-672300/",badge:"Residential"}
+          ];
+          var bounds = [];
+          var map = L.map('listings-map',{scrollWheelZoom:false});
+          L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'&copy; OpenStreetMap contributors',maxZoom:19}).addTo(map);
+          listings.forEach(function(l){
+            bounds.push([l.lat,l.lng]);
+            var icon = L.divIcon({className:'',html:'<div style="width:14px;height:14px;border-radius:50%;background:#0ea5e9;border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.4);"></div>',iconSize:[14,14],iconAnchor:[7,7]});
+            L.marker([l.lat,l.lng],{icon:icon}).addTo(map)
+              .bindPopup('<div style="min-width:180px;"><strong>'+l.addr+'</strong><br><strong style="font-size:16px;">'+l.price+'</strong><br><a href="'+l.url+'" style="color:#b7791f;font-weight:700;font-size:13px;">View Details &rarr;</a></div>');
+          });
+          if (bounds.length) map.fitBounds(bounds, {padding:[40,40]});
+        }
+        function setView(v) {
+          var grid = document.getElementById('listings-grid-view');
+          var mapEl = document.getElementById('listings-map-view');
+          var gb = document.getElementById('view-grid-btn');
+          var mb = document.getElementById('view-map-btn');
+          if (v==='map') {
+            grid.style.display='none'; mapEl.style.display='block';
+            gb.style.background='#fff'; gb.style.color='var(--dark)'; gb.style.borderColor='var(--border)';
+            mb.style.background='var(--dark)'; mb.style.color='#fff'; mb.style.borderColor='var(--dark)';
+            initListingsMap();
+          } else {
+            mapEl.style.display='none'; grid.style.display='block';
+            mb.style.background='#fff'; mb.style.color='var(--dark)'; mb.style.borderColor='var(--border)';
+            gb.style.background='var(--dark)'; gb.style.color='#fff'; gb.style.borderColor='var(--dark)';
+          }
+        }
+        </script>
+      </div>
+
+      <!-- Grid View -->
+      <div id="listings-grid-view">
+        <div class="listing-grid" style="margin-bottom:48px;">
+        <a href="/listings/residential/7805-200th-st-douglass-ks-676815/" class="listing-card">
+          <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-676815_6703077200587776326.jpg" alt="7805 200th St" loading="lazy">
+          <div class="listing-card-body">
+            <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+              <span class="listing-card-badge" style="background:#22c55e;">Active</span>
+              <span class="listing-card-badge" style="background:#0ea5e9">Residential</span>
+            </div>
+            <p class="listing-card-address">7805 200th St</p>
+            <p class="listing-card-meta"><i class="fas fa-bed"></i>3 Bd &bull; 2 Ba &bull; 2,310 sq ft &bull; 5.0 Acres</p>
+            <p class="listing-card-price">Contact for Price</p>
+            <span class="listing-card-more">View Details &rarr;</span>
+          </div>
+        </a>
+        <a href="/listings/residential/8227-rock-rd-walton-ks-676745/" class="listing-card">
+          <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-676745_6705232591717967992.jpg" alt="8227 Rock Rd" loading="lazy">
+          <div class="listing-card-body">
+            <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+              <span class="listing-card-badge" style="background:#22c55e;">Active</span>
+              <span class="listing-card-badge" style="background:#0ea5e9">Residential</span>
+            </div>
+            <p class="listing-card-address">8227 Rock Rd</p>
+            <p class="listing-card-meta"><i class="fas fa-bed"></i>4 Bd &bull; 2 Ba &bull; 1,878 sq ft &bull; 155.0 Acres</p>
+            <p class="listing-card-price">Contact for Price</p>
+            <span class="listing-card-more">View Details &rarr;</span>
+          </div>
+        </a>
+        <a href="/listings/residential/10608-90th-st-augusta-ks-676431/" class="listing-card">
+          <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-676431_6706346247435258080.jpg" alt="10608 90th ST" loading="lazy">
+          <div class="listing-card-body">
+            <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+              <span class="listing-card-badge" style="background:#22c55e;">Active</span>
+              <span class="listing-card-badge" style="background:#0ea5e9">Residential</span>
+            </div>
+            <p class="listing-card-address">10608 90th ST</p>
+            <p class="listing-card-meta"><i class="fas fa-bed"></i>4 Bd &bull; 3 Ba &bull; 2,904 sq ft &bull; 14.2 Acres</p>
+            <p class="listing-card-price">$740,000</p>
+            <span class="listing-card-more">View Details &rarr;</span>
+          </div>
+        </a>
+        <a href="/listings/residential/9657-hopkins-switch-rd-augusta-ks-672322/" class="listing-card">
+          <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-672322_6703474283770854438.jpg" alt="9657 Hopkins Switch Rd" loading="lazy">
+          <div class="listing-card-body">
+            <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+              <span class="listing-card-badge" style="background:#22c55e;">Active</span>
+              <span class="listing-card-badge" style="background:#0ea5e9">Residential</span>
+            </div>
+            <p class="listing-card-address">9657 Hopkins Switch Rd</p>
+            <p class="listing-card-meta"><i class="fas fa-bed"></i>2 Bd &bull; 2 Ba &bull; 1,400 sq ft &bull; 3.6 Acres</p>
+            <p class="listing-card-price">$435,000</p>
+            <span class="listing-card-more">View Details &rarr;</span>
+          </div>
+        </a>
+        <a href="/listings/residential/5747-20th-st-el-dorado-ks-672300/" class="listing-card">
+          <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-672300_6709676626880812299.jpg" alt="5747 20th St" loading="lazy">
+          <div class="listing-card-body">
+            <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+              <span class="listing-card-badge" style="background:#22c55e;">Active</span>
+              <span class="listing-card-badge" style="background:#0ea5e9">Residential</span>
+            </div>
+            <p class="listing-card-address">5747 20th St</p>
+            <p class="listing-card-meta"><i class="fas fa-bed"></i>4 Bd &bull; 4 Ba &bull; 5,467 sq ft &bull; 10.0 Acres</p>
+            <p class="listing-card-price">$1,650,000</p>
+            <span class="listing-card-more">View Details &rarr;</span>
+          </div>
+        </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+</body>
+</html>
