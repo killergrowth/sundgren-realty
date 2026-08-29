@@ -9,7 +9,9 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-const listings = JSON.parse(fs.readFileSync(path.join(__dirname, 'data/repliers-listings.json'), 'utf8'));
+const allJson = path.join(__dirname, 'data/all-listings.json');
+const repliersJson = path.join(__dirname, 'data/repliers-listings.json');
+const listings = JSON.parse(fs.readFileSync(fs.existsSync(allJson) ? allJson : repliersJson, 'utf8'));
 
 function esc(s) {
   return String(s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
