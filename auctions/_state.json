@@ -1,5 +1,5 @@
 {
-  "lastFetch": "2026-08-29T23:00:36.415Z",
+  "lastFetch": "2026-08-30T04:04:16.320Z",
   "auctions": {
     "24096": {
       "slug": "test-auction-24096",
@@ -2850,6 +2850,12 @@
       "status": "pending",
       "name": "(2) 20+- Acre Land Tracts in Northeast Sedgwick County, Kansas",
       "generated": "2026-08-29T06:56:34.462Z"
+    },
+    "168676": {
+      "slug": "535-acres-of-native-pasture-and-a-large-pond-near-el-dorado-168676",
+      "status": "pending",
+      "name": "53.5 Acres of Native Pasture and a Large Pond near El Dorado Lake",
+      "generated": "2026-08-30T04:04:17.220Z"
     }
   }
 }
