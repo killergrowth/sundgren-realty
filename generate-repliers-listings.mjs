@@ -267,7 +267,7 @@ function renderInfoCard(listing, typeInfo, fullAddr) {
   const statusHtml = `<span class="${statusPillClass(listing.status)} pill" style="display:inline-block;margin-bottom:16px;">${statusLabel(listing.status)}</span>`;
 
   return `
-    <div class="info-card">
+    <div class="info-card info-card--sticky">
       <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
       <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we'll reach out to schedule a showing.</p>
 

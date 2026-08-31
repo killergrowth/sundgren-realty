@@ -883,9 +883,11 @@ a:hover { color: var(--yellow-dark); }
   border: 1px solid var(--border);
   border-radius: 8px;
   padding: 24px;
+  box-shadow: 0 4px 20px rgba(0,0,0,.08);
+}
+.info-card--sticky {
   position: sticky;
   top: 80px;
-  box-shadow: 0 4px 20px rgba(0,0,0,.08);
 }
 .info-card h4 {
   font-size: 14px;
