@@ -1071,14 +1071,15 @@ a:hover { color: var(--yellow-dark); }
   border-radius: 10px;
   overflow: hidden;
   align-items: stretch;
+  max-height: 480px;
 }
 .sg-mosaic-hero {
   grid-row: 1;
   padding: 0; border: none; cursor: pointer;
   overflow: hidden; display: block;
   background: #111;
-  aspect-ratio: 4 / 5;
   width: 100%;
+  height: 100%;
 }
 .sg-mosaic-hero img {
   width: 100%; height: 100%;
@@ -1097,7 +1098,6 @@ a:hover { color: var(--yellow-dark); }
   flex: 1;
   padding: 0; border: none; cursor: pointer;
   overflow: hidden; background: #111;
-  aspect-ratio: 4 / 5;
   width: 100%;
   min-height: 0;
 }
