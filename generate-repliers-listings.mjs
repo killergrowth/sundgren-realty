@@ -356,8 +356,8 @@ function renderFeatures(listing) {
       <div><span class="mlabel">${f.label}</span>${esc(String(f.val))}</div>
     </div>`).join('');
   return `
-  <div class="desc-section" style="margin-top:24px;">
-    <h3 class="desc-section-title"><i class="fas fa-list-ul"></i> Property Features</h3>
+  <div class="info-card" style="margin-top:24px;">
+    <h4 style="margin:0 0 16px;font-size:15px;display:flex;align-items:center;gap:8px;"><i class="fas fa-list-ul" style="color:var(--yellow-dark);"></i> Property Features</h4>
     <div class="feat-grid">${cells}
     </div>
   </div>`;
@@ -423,8 +423,8 @@ function renderMap(listing) {
   const fullAddr = `${addr.streetNumber || ''} ${addr.streetName || ''} ${addr.streetSuffix || ''}, ${addr.city || ''}, ${addr.state || ''} ${addr.zip || ''}`.trim();
   if (lat && lng) {
     return `
-  <div class="desc-section" style="margin-top:24px;">
-    <h3 class="desc-section-title"><i class="fas fa-map-marker-alt"></i> Location</h3>
+  <div class="info-card" style="height:100%;box-sizing:border-box;">
+    <h4 style="margin:0 0 14px;font-size:15px;display:flex;align-items:center;gap:8px;"><i class="fas fa-map-marker-alt" style="color:var(--yellow-dark);"></i> Location</h4>
     <div id="sg-map" style="height:300px;border-radius:10px;overflow:hidden;border:1px solid var(--border);"></div>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"><\/script>
@@ -439,8 +439,8 @@ function renderMap(listing) {
   } else {
     const q = encodeURIComponent(fullAddr);
     return `
-  <div class="desc-section" style="margin-top:24px;">
-    <h3 class="desc-section-title"><i class="fas fa-map-marker-alt"></i> Location</h3>
+  <div class="info-card" style="height:100%;box-sizing:border-box;">
+    <h4 style="margin:0 0 14px;font-size:15px;display:flex;align-items:center;gap:8px;"><i class="fas fa-map-marker-alt" style="color:var(--yellow-dark);"></i> Location</h4>
     <iframe
       src="https://www.openstreetmap.org/search?query=${q}"
       width="100%" height="300"
@@ -584,7 +584,6 @@ ${breadcrumb}
         <!-- Map + Contact row -->
         <div class="sg-map-contact-row">
           <div class="sg-map-col">
-            <h3 class="desc-section-title" style="margin-bottom:14px;"><i class="fas fa-map-marker-alt"></i> Location</h3>
             ${mapHtml}
           </div>
           <div class="sg-contact-col">
@@ -600,7 +599,7 @@ ${breadcrumb}
 
       <!-- Right Column (Sidebar) -->
       <aside class="auction-sidebar">
-        ${infoCard}
+        <a href="${esc(typeInfo.backLink)}" class="btn-all">&larr; ${esc(typeInfo.backLabel)}</a>
       </aside>
 
     </div>

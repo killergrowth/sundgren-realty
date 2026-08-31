@@ -131,10 +131,9 @@
         <!-- Map + Contact row -->
         <div class="sg-map-contact-row">
           <div class="sg-map-col">
-            <h3 class="desc-section-title" style="margin-bottom:14px;"><i class="fas fa-map-marker-alt"></i> Location</h3>
             
-  <div class="desc-section" style="margin-top:24px;">
-    <h3 class="desc-section-title"><i class="fas fa-map-marker-alt"></i> Location</h3>
+  <div class="info-card" style="height:100%;box-sizing:border-box;">
+    <h4 style="margin:0 0 14px;font-size:15px;display:flex;align-items:center;gap:8px;"><i class="fas fa-map-marker-alt" style="color:var(--yellow-dark);"></i> Location</h4>
     <div id="sg-map" style="height:300px;border-radius:10px;overflow:hidden;border:1px solid var(--border);"></div>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -221,68 +220,7 @@
 
       <!-- Right Column (Sidebar) -->
       <aside class="auction-sidebar">
-        
-    <div class="info-card">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we'll reach out to schedule a showing.</p>
-
-      <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
-        <i class="fas fa-phone"></i> (316) 321-7112
-      </a>
-
-      <div style="text-align:center;font-size:12px;color:var(--text-light);margin-bottom:14px;letter-spacing:.04em;text-transform:uppercase;">or</div>
-
-      <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
-        <input type="hidden" name="interest" value="000 17th Ave, McPherson, KS, 67460">
-        <input type="hidden" name="message" value="I am interested in the property at 000 17th Ave, McPherson, KS, 67460 (MLS# 675892). Please contact me to schedule a showing.">
-        <input type="text" name="name" placeholder="Your Name" required
-          style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
-        <input type="email" name="email" placeholder="Email Address" required
-          style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
-        <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me
-        </button>
-        <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
-      </form>
-    </div>
-
-    <script>
-    (function(){
-      var form = document.getElementById('sg-contact-form');
-      var msg  = document.getElementById('sg-form-msg');
-      if (!form) return;
-      form.addEventListener('submit', function(e){
-        e.preventDefault();
-        var btn = form.querySelector('button[type=submit]');
-        btn.disabled = true;
-        btn.textContent = 'Sending...';
-        var data = new FormData(form);
-        fetch('/submit', { method: 'POST', body: data })
-          .then(function(r){ return r.json(); })
-          .then(function(res){
-            if (res.ok) {
-              form.style.display = 'none';
-              msg.style.display = 'block';
-              msg.style.color = '#16a34a';
-              msg.textContent = "Got it! We'll be in touch soon.";
-            } else {
-              btn.disabled = false;
-              btn.textContent = 'Contact Me';
-              msg.style.display = 'block';
-              msg.style.color = '#dc2626';
-              msg.textContent = res.error || 'Something went wrong. Please try again.';
-            }
-          })
-          .catch(function(){
-            btn.disabled = false;
-            btn.textContent = 'Contact Me';
-            msg.style.display = 'block';
-            msg.style.color = '#dc2626';
-            msg.textContent = 'Something went wrong. Please try again.';
-          });
-      });
-    })();
-    </script>
+        <a href="/land-listings/" class="btn-all">&larr; All Land Listings</a>
       </aside>
 
     </div>

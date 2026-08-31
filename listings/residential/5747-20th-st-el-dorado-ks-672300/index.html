@@ -157,8 +157,8 @@
       <p>This meticulously engineered custom estate offers exceptional construction quality, extensive storage, and a full property ecosystem designed for comfort, efficiency, and real operational use. Built with 2x6 spray-insulated walls, Pella triple-pane windows with internal blinds, radiant heat (6 zones), multi-zone mechanical systems, reinforced concrete systems, and 20-amp electrical throughout, the home reflects craftsmanship and durability rarely found in residential builds. The main level features 10’ ceilings, engineered hand-hewn hickory flooring, custom alder cabinetry, and a spacious open kitchen with an enormous island, Jenn-Air 6-burner gas stove with pot filler, dual refrigerators, granite counters, quarry tile flooring, and a large walk-in pantry. The hearth room includes skylights and a see-through gas fireplace with dual sitting areas. A sunroom with a wall of windows expands the main floor living space. The private primary suite includes a sitting room with antique stove, coffered ceilings, and an expansive custom walk-in closet. The primary bath offers a wheelchair-accessible shower, jetted tub with mounted TV, dual vanities, and a hot-water loop system. Bedrooms 2 and 3 feature sound-insulated walls and a large shared bath with dual vanities and oversized tub/shower. The lower level includes a custom illuminated onyx bar, concealed custom wine cellar with gorgeous arched cherry doorway, wood-burning stove, recreation space, additional bedroom and bath, multi-purpose room with built-ins, and a secure safe room with an original bank vault door. Outbuildings include a heated 3-car garage with hot/cold water, an 18x18 well house with 1,000-gallon storage tank and hydrant system, and a fully equipped 6,000 sq ft metal building with office, bathroom, radiant heat, wood stove, multiple overhead doors, washroom with floor drain and hot/cold water, and standby generator. The property also features a functional feedlot with concrete bunks, pens, loafing shed, and lighted alleyway. A rare opportunity to own a one-of-a-kind, fully integrated residential and operational estate built to an exceptional standard.</p>
     </div>
           
-  <div class="desc-section" style="margin-top:24px;">
-    <h3 class="desc-section-title"><i class="fas fa-list-ul"></i> Property Features</h3>
+  <div class="info-card" style="margin-top:24px;">
+    <h4 style="margin:0 0 16px;font-size:15px;display:flex;align-items:center;gap:8px;"><i class="fas fa-list-ul" style="color:var(--yellow-dark);"></i> Property Features</h4>
     <div class="feat-grid">
     <div class="feat-cell">
       <i class="fas fa-fire"></i>
@@ -191,10 +191,9 @@
         <!-- Map + Contact row -->
         <div class="sg-map-contact-row">
           <div class="sg-map-col">
-            <h3 class="desc-section-title" style="margin-bottom:14px;"><i class="fas fa-map-marker-alt"></i> Location</h3>
             
-  <div class="desc-section" style="margin-top:24px;">
-    <h3 class="desc-section-title"><i class="fas fa-map-marker-alt"></i> Location</h3>
+  <div class="info-card" style="height:100%;box-sizing:border-box;">
+    <h4 style="margin:0 0 14px;font-size:15px;display:flex;align-items:center;gap:8px;"><i class="fas fa-map-marker-alt" style="color:var(--yellow-dark);"></i> Location</h4>
     <div id="sg-map" style="height:300px;border-radius:10px;overflow:hidden;border:1px solid var(--border);"></div>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -281,68 +280,7 @@
 
       <!-- Right Column (Sidebar) -->
       <aside class="auction-sidebar">
-        
-    <div class="info-card">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we'll reach out to schedule a showing.</p>
-
-      <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
-        <i class="fas fa-phone"></i> (316) 321-7112
-      </a>
-
-      <div style="text-align:center;font-size:12px;color:var(--text-light);margin-bottom:14px;letter-spacing:.04em;text-transform:uppercase;">or</div>
-
-      <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
-        <input type="hidden" name="interest" value="5747 20th St, El Dorado, KS, 67042">
-        <input type="hidden" name="message" value="I am interested in the property at 5747 20th St, El Dorado, KS, 67042 (MLS# 672300). Please contact me to schedule a showing.">
-        <input type="text" name="name" placeholder="Your Name" required
-          style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
-        <input type="email" name="email" placeholder="Email Address" required
-          style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
-        <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me
-        </button>
-        <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
-      </form>
-    </div>
-
-    <script>
-    (function(){
-      var form = document.getElementById('sg-contact-form');
-      var msg  = document.getElementById('sg-form-msg');
-      if (!form) return;
-      form.addEventListener('submit', function(e){
-        e.preventDefault();
-        var btn = form.querySelector('button[type=submit]');
-        btn.disabled = true;
-        btn.textContent = 'Sending...';
-        var data = new FormData(form);
-        fetch('/submit', { method: 'POST', body: data })
-          .then(function(r){ return r.json(); })
-          .then(function(res){
-            if (res.ok) {
-              form.style.display = 'none';
-              msg.style.display = 'block';
-              msg.style.color = '#16a34a';
-              msg.textContent = "Got it! We'll be in touch soon.";
-            } else {
-              btn.disabled = false;
-              btn.textContent = 'Contact Me';
-              msg.style.display = 'block';
-              msg.style.color = '#dc2626';
-              msg.textContent = res.error || 'Something went wrong. Please try again.';
-            }
-          })
-          .catch(function(){
-            btn.disabled = false;
-            btn.textContent = 'Contact Me';
-            msg.style.display = 'block';
-            msg.style.color = '#dc2626';
-            msg.textContent = 'Something went wrong. Please try again.';
-          });
-      });
-    })();
-    </script>
+        <a href="/listings/residential/" class="btn-all">&larr; All Residential</a>
       </aside>
 
     </div>
