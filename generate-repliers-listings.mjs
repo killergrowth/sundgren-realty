@@ -268,13 +268,6 @@ function renderInfoCard(listing, typeInfo) {
 
   return `
     <div class="info-card">
-      ${statusHtml}
-      <h4>Listing Details</h4>
-      <ul class="meta-list">
-        ${metaHtml}
-        <li><i class="fas fa-phone"></i><div><span class="mlabel">Questions?</span><a href="tel:${PHONE_LINK}" style="color:var(--yellow-dark);">${PHONE}</a></div></li>
-      </ul>
-      <p style="font-size:12px;color:var(--text-light);margin:12px 0 16px;font-style:italic;">Listed by ${esc(agentName)}</p>
       <a href="/contact-us/" class="btn-bid" style="margin-bottom:10px;">Schedule a Showing &rarr;</a>
       <a href="${esc(typeInfo.backLink)}" class="btn-all">&larr; ${esc(typeInfo.backLabel)}</a>
     </div>`;
@@ -507,7 +500,7 @@ ${breadcrumb}
   <div class="auction-hero-content">
     <div class="auction-hero-meta">
       <span class="${statusPillClass(resolved)} pill">${statusLabel(resolved)}</span>
-      <span class="pill" style="background:rgba(255,255,255,.15);color:#fff;">${esc(typeInfo.label)}</span>
+      <span class="pill" style="background:rgba(0,0,0,.45);color:#fff;border:1px solid rgba(255,255,255,.25);">${esc(typeInfo.label)}</span>
     </div>
     <h1 class="auction-hero-title">${esc(fullAddr)}</h1>
     <p class="auction-hero-sub">${esc(price)}${specsLabel ? ' &nbsp;·&nbsp; ' + esc(specsLabel) : ''}</p>

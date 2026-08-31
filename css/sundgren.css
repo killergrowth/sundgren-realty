@@ -808,7 +808,7 @@ a:hover { color: var(--yellow-dark); }
   justify-content: center;
 }
 .listing-hero-solid::before {
-  background: radial-gradient(ellipse at center, transparent 30%, rgba(0,0,0,.55) 100%) !important;
+  background: radial-gradient(ellipse at center, transparent 40%, rgba(0,0,0,.28) 100%) !important;
 }
 .listing-hero-solid .auction-hero-content {
   text-align: center;
