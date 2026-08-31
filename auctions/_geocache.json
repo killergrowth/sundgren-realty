@@ -1,0 +1,113 @@
+{
+  "walton,ks": {
+    "lat": 38.1177891,
+    "lng": -97.2567001,
+    "city": "Walton",
+    "state": "KS"
+  },
+  "mount-hope,ks": {
+    "lat": 37.8686224,
+    "lng": -97.665047,
+    "city": "Mount Hope",
+    "state": "KS"
+  },
+  "near-douglass,ks": null,
+  "harvey-county,ks": {
+    "lat": 38.0352315,
+    "lng": -97.4486267,
+    "city": "Harvey County",
+    "state": "KS"
+  },
+  "marion-county,ks": {
+    "lat": 38.3734544,
+    "lng": -97.1305937,
+    "city": "Marion County",
+    "state": "KS"
+  },
+  "el-dorado,ks": {
+    "lat": 37.8173015,
+    "lng": -96.8537388,
+    "city": "El Dorado",
+    "state": "KS"
+  },
+  "acres-rose-hill,ks": null,
+  "butler-county,ks": {
+    "lat": 37.77924,
+    "lng": -96.8456342,
+    "city": "Butler County",
+    "state": "KS"
+  },
+  "wichita,ks": {
+    "lat": 37.6922361,
+    "lng": -97.3375448,
+    "city": "Wichita",
+    "state": "KS"
+  },
+  "acres-montgomery-county,ks": {
+    "lat": 32.3570833,
+    "lng": -86.2471894,
+    "city": "Acres Montgomery County",
+    "state": "KS"
+  },
+  "greenwood-county,ks": {
+    "lat": 37.8709542,
+    "lng": -96.2471338,
+    "city": "Greenwood County",
+    "state": "KS"
+  },
+  "acres-cowley-county,ks": null,
+  "acres-marion-county,ks": {
+    "lat": 39.8764293,
+    "lng": -86.136654,
+    "city": "Acres Marion County",
+    "state": "KS"
+  },
+  "augusta,ks": {
+    "lat": 37.6809165,
+    "lng": -96.9771177,
+    "city": "Augusta",
+    "state": "KS"
+  },
+  "whitewater,ks": {
+    "lat": 37.9647365,
+    "lng": -97.1475347,
+    "city": "Whitewater",
+    "state": "KS"
+  },
+  "valley-center,ks": {
+    "lat": 37.8347342,
+    "lng": -97.3733759,
+    "city": "Valley Center",
+    "state": "KS"
+  },
+  "potwin,ks": {
+    "lat": 37.9389063,
+    "lng": -97.0197557,
+    "city": "Potwin",
+    "state": "KS"
+  },
+  "lehigh,ks": {
+    "lat": 38.3727872,
+    "lng": -97.3030858,
+    "city": "Lehigh",
+    "state": "KS"
+  },
+  "acres-chase-county,ks": {
+    "lat": 44.7636336,
+    "lng": -88.1409674,
+    "city": "Acres Chase County",
+    "state": "KS"
+  },
+  "winfield,ks": {
+    "lat": 37.2397486,
+    "lng": -96.9955919,
+    "city": "Winfield",
+    "state": "KS"
+  },
+  "grenola,ks": {
+    "lat": 37.3486427,
+    "lng": -96.4505641,
+    "city": "Grenola",
+    "state": "KS"
+  }
+}

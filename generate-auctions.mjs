@@ -155,6 +155,81 @@ function renderDocuments(docs) {
     </div>`;
 }
 
+// ── Geocoding ────────────────────────────────────────────────────────────────
+// Nominatim (OSM) geocoder — used when BidWrangler location.lat/lng is null.
+// Parses "City, ST" from the auction name and resolves to coordinates.
+// Results cached in auctions/_geocache.json so we don't re-hit on every run.
+
+const GEOCACHE_FILE = path.join(AUCTIONS_DIR, '_geocache.json');
+
+function loadGeoCache() {
+  if (fs.existsSync(GEOCACHE_FILE)) {
+    try { return JSON.parse(fs.readFileSync(GEOCACHE_FILE, 'utf8')); } catch {}
+  }
+  return {};
+}
+
+function saveGeoCache(cache) {
+  fs.mkdirSync(AUCTIONS_DIR, { recursive: true });
+  fs.writeFileSync(GEOCACHE_FILE, JSON.stringify(cache, null, 2), 'utf8');
+}
+
+function extractCityState(name) {
+  if (!name) return null;
+  let m = name.match(/^([A-Za-z][A-Za-z\s\.]+),\s*([A-Z]{2})(?:\s|\||$)/);
+  if (m) return { city: m[1].trim(), state: m[2] };
+  m = name.match(/\bin\s+([A-Za-z][A-Za-z\s\.]+),\s*([A-Z]{2})(?:\s|$|!|,)/);
+  if (m) return { city: m[1].trim(), state: m[2] };
+  m = name.match(/([A-Za-z][A-Za-z\s\.]{1,30}),\s*([A-Z]{2})(?:\s|\||$|!|,)/);
+  if (m) return { city: m[1].trim(), state: m[2] };
+  return null;
+}
+
+async function geocodeCityState(city, state, cache) {
+  const key = `${city},${state}`.toLowerCase().replace(/\s+/g, '-');
+  if (cache[key] !== undefined) return cache[key];
+  const query = encodeURIComponent(`${city}, ${state}, USA`);
+  const url = `https://nominatim.openstreetmap.org/search?q=${query}&format=json&limit=1&countrycodes=us`;
+  try {
+    const res = await fetch(url, {
+      headers: { 'User-Agent': 'KillerGrowth-AuctionSite/1.0 (notifications@killergrowth.com)' }
+    });
+    const data = await res.json();
+    if (data && data[0] && data[0].lat && data[0].lon) {
+      const result = { lat: parseFloat(data[0].lat), lng: parseFloat(data[0].lon), city, state };
+      cache[key] = result;
+      console.log(`  Geocoded: ${city}, ${state} → ${result.lat}, ${result.lng}`);
+      await new Promise(r => setTimeout(r, 1100));
+      return result;
+    }
+  } catch (e) {
+    console.warn(`  Geocode failed for ${city}, ${state}:`, e.message);
+  }
+  cache[key] = null;
+  return null;
+}
+
+async function enrichLocations(auctions) {
+  const cache = loadGeoCache();
+  let changed = false;
+  for (const a of auctions) {
+    if (a.location && a.location.lat && a.location.lng) continue;
+    const parsed = extractCityState(a.name);
+    if (!parsed) continue;
+    const geo = await geocodeCityState(parsed.city, parsed.state, cache);
+    if (geo) {
+      a.location = a.location || {};
+      a.location.lat   = String(geo.lat);
+      a.location.lng   = String(geo.lng);
+      a.location.city  = a.location.city  || geo.city;
+      a.location.state = a.location.state || geo.state;
+      changed = true;
+    }
+  }
+  if (changed) saveGeoCache(cache);
+  return auctions;
+}
+
 async function fetchAllAuctions() {
   const url = `${BW_FEED_URL}?fields=${BW_FIELDS}&page=1&per_page=100&include_syndicated=true&version=2`;
   const res  = await fetch(url, { headers: { Accept: 'application/json' } });
@@ -1167,6 +1242,9 @@ async function main() {
 
   // Filter out dummy/placeholder entries
   auctions = auctions.filter(a => a.name && !a.name.includes('WWW.SUNDGREN.COM'));
+
+  // Geocode auctions missing lat/lng using city/state parsed from name
+  auctions = await enrichLocations(auctions);
 
   if (!auctions.length) {
     console.warn('No auctions returned â€” aborting.');
