@@ -155,11 +155,11 @@ function renderPhotoGrid(images) {
   if (!srcs.length) return '';
 
   const hero   = srcs[0];
-  const thumbs = srcs.slice(1, 5); // max 4 visible side thumbnails
+  const thumbs = srcs.slice(1, 4); // 3 stacked thumbs on the right
   const total  = srcs.length;
 
   // Thumb cells — last one gets a "+N more" overlay if there are photos beyond visible
-  const extraCount = total - 5; // photos not visible (hero=1, thumbs=4)
+  const extraCount = total - 4; // photos not visible (hero=1, thumbs=3)
   const thumbCells = thumbs.map((src, i) => {
     const isLast = i === thumbs.length - 1 && extraCount > 0;
     const overlay = isLast
@@ -502,7 +502,7 @@ function buildPage(listing, typeInfo, slug, allListings) {
 ${breadcrumb}
 
 <!-- Hero -->
-<section class="auction-hero" style="${heroImg ? `background-image:url('${esc(heroImg)}');` : 'background:#1a1a1a;'}">
+<section class="auction-hero listing-hero-solid">
   <div class="auction-hero-overlay"></div>
   <div class="auction-hero-content">
     <div class="auction-hero-meta">
