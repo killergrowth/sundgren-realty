@@ -271,6 +271,7 @@ function renderInfoCard(listing, typeInfo, fullAddr) {
       <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
       <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we'll reach out to schedule a showing.</p>
 
+      <div style="max-width:360px;margin:0 auto;">
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
       </a>
@@ -289,8 +290,9 @@ function renderInfoCard(listing, typeInfo, fullAddr) {
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
+      </div>
 
-      <a href="${esc(typeInfo.backLink)}" class="btn-all" style="margin-top:14px;">&larr; ${esc(typeInfo.backLabel)}</a>
+      <a href="${esc(typeInfo.backLink)}" class="btn-all" style="margin-top:14px;display:block;text-align:center;">&larr; ${esc(typeInfo.backLabel)}</a>
     </div>
 
     <script>
