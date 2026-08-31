@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Land &amp; Acreage Listings | Sundgren Realty &amp; Auction</title>
-  <meta name="description" content="85 active land and acreage listings in South Central Kansas — farms, unimproved land, and rural tracts in Butler, Harvey, Lincoln, and surrounding counties.">
+  <meta name="description" content="Browse 85 land and acreage listings from Sundgren Realty in South Central Kansas — farms, rural tracts, and unimproved land in Butler, Harvey, Lincoln, and surrounding counties.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://sundgrenrealty.com/listings/land/">
   <meta property="og:title" content="Land &amp; Acreage Listings | Sundgren Realty &amp; Auction">
-  <meta property="og:description" content="85 active land and acreage listings in South Central Kansas — farms, unimproved land, and rural tracts in Butler, Harvey, Lincoln, and surrounding counties.">
+  <meta property="og:description" content="Browse 85 land and acreage listings from Sundgren Realty in South Central Kansas — farms, rural tracts, and unimproved land in Butler, Harvey, Lincoln, and surrounding counties.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://sundgrenrealty.com/listings/land/">
   <meta property="og:image" content="/images/og-preview.png">
@@ -17,6 +17,119 @@
   <link rel="apple-touch-icon" href="/images/favicon.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/sundgren.css">
+  <style>
+    /* ── Search + Filter Toolbar ─────────────────────────────── */
+    .listing-toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 28px;
+    }
+    .listing-search-wrap {
+      position: relative;
+      flex: 1;
+      min-width: 220px;
+      max-width: 400px;
+    }
+    .listing-search-wrap i {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #aaa;
+      font-size: 14px;
+      pointer-events: none;
+    }
+    #listing-search {
+      width: 100%;
+      padding: 10px 14px 10px 38px;
+      border: 1.5px solid var(--border);
+      border-radius: 8px;
+      font-size: 14px;
+      outline: none;
+      background: #fff;
+      box-sizing: border-box;
+      transition: border-color .2s;
+    }
+    #listing-search:focus { border-color: var(--yellow-dark); }
+    #search-autocomplete {
+      position: absolute;
+      top: calc(100% + 4px);
+      left: 0;
+      right: 0;
+      background: #fff;
+      border: 1.5px solid var(--border);
+      border-radius: 8px;
+      box-shadow: 0 8px 24px rgba(0,0,0,.12);
+      z-index: 200;
+      overflow: hidden;
+      display: none;
+    }
+    #search-autocomplete li {
+      list-style: none;
+      padding: 10px 16px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background .1s;
+    }
+    #search-autocomplete li:hover,
+    #search-autocomplete li.active { background: #fef9ec; }
+    #search-autocomplete li mark {
+      background: none;
+      color: var(--yellow-dark);
+      font-weight: 800;
+    }
+    /* ── Filter Pills ────────────────────────────────────────── */
+    .filter-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .filter-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 14px;
+      border-radius: 999px;
+      border: 1.5px solid var(--border);
+      background: #fff;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--dark);
+      cursor: pointer;
+      transition: background .15s, border-color .15s, color .15s;
+      white-space: nowrap;
+      user-select: none;
+    }
+    .filter-pill:hover { border-color: var(--yellow-dark); }
+    .filter-pill.active {
+      background: var(--dark);
+      color: #fff;
+      border-color: var(--dark);
+    }
+    .filter-pill .pill-dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    /* ── Results count ───────────────────────────────────────── */
+    .listing-results-count {
+      font-size: 13px;
+      color: var(--text-light);
+      margin-bottom: 20px;
+    }
+    .listing-results-count strong { color: var(--dark); }
+    /* ── No results ──────────────────────────────────────────── */
+    #no-results {
+      display: none;
+      text-align: center;
+      padding: 60px 20px;
+      color: var(--text-light);
+      font-size: 15px;
+    }
+    #no-results i { font-size: 32px; display:block; margin-bottom:12px; color: #ccc; }
+  </style>
 </head>
 <body>
 
@@ -39,12 +152,41 @@
 
   <section class="section">
     <div class="container">
-      <div class="section-title">
-        <span class="eyebrow">Land &amp; Acreage</span>
-        <h2>Land Listed by Jeremy Sundgren</h2>
-        <hr class="divider">
-        <p>85 active land and acreage listings in South Central Kansas — farms, unimproved land, and rural tracts in Butler, Harvey, Lincoln, and surrounding counties.</p>
+
+      <!-- Subtitle -->
+      <p style="font-size:15px;color:var(--text-light);margin-bottom:24px;">85 land listings — farms, rural tracts, and unimproved acreage in Butler, Harvey, and surrounding counties.</p>
+
+      <!-- Search + Filter Toolbar -->
+      <div class="listing-toolbar">
+
+        <!-- Search -->
+        <div class="listing-search-wrap">
+          <i class="fas fa-search"></i>
+          <input id="listing-search" type="text" placeholder="Search by address, city, or type…" autocomplete="off" aria-label="Search listings" aria-autocomplete="list" aria-controls="search-autocomplete">
+          <ul id="search-autocomplete" role="listbox"></ul>
+        </div>
+
+        <!-- Filter Pills -->
+        <div class="filter-pills" role="group" aria-label="Filter listings">
+          <button class="filter-pill active" data-filter="all">All <span id="pill-count-all"></span></button>
+          <button class="filter-pill" data-filter="active">
+            <span class="pill-dot" style="background:#22c55e;"></span>Active <span id="pill-count-active"></span>
+          </button>
+          <button class="filter-pill" data-filter="pending">
+            <span class="pill-dot" style="background:#2563eb;"></span>Pending <span id="pill-count-pending"></span>
+          </button>
+          <button class="filter-pill" data-filter="residential">
+            <span class="pill-dot" style="background:#0ea5e9;"></span>Residential <span id="pill-count-residential"></span>
+          </button>
+          <button class="filter-pill" data-filter="land">
+            <span class="pill-dot" style="background:#22c55e;"></span>Land <span id="pill-count-land"></span>
+          </button>
+        </div>
+
       </div>
+
+      <!-- Results count -->
+      <p class="listing-results-count" id="results-count"></p>
 
       <!-- View Toggle -->
       <div style="display:flex;justify-content:flex-end;align-items:center;gap:8px;margin-bottom:24px;">
@@ -66,99 +208,97 @@
         function initListingsMap() {
           if (_mapInitialized) return;
           _mapInitialized = true;
-          var listings = [
-            {lat:37.59078924,lng:-97.07987375,addr:"0 161st St, Rose Hill, KS",price:"$115,000",url:"/listings/land/0-161st-st-rose-hill-ks-678195/",badge:"Land"},
-            {lat:37.59092526,lng:-97.0791871,addr:"0 161st St, Rose Hill, KS",price:"$140,000",url:"/listings/land/0-161st-st-rose-hill-ks-678196/",badge:"Land"},
-            {lat:37.5911973,lng:-97.07841462,addr:"0 161st St, Rose Hill, KS",price:"$140,000",url:"/listings/land/0-161st-st-rose-hill-ks-678197/",badge:"Land"},
-            {lat:37.58925897,lng:-97.07661218,addr:"0 161st St, Rose Hill, KS",price:"$150,000",url:"/listings/land/0-161st-st-rose-hill-ks-678198/",badge:"Land"},
-            {lat:37.5911973,lng:-97.07661218,addr:"0 161st St, Rose Hill, KS",price:"$140,000",url:"/listings/land/0-161st-st-rose-hill-ks-678199/",badge:"Land"},
-            {lat:37.59095926,lng:-97.07566804,addr:"0 161st St, Rose Hill, KS",price:"$130,000",url:"/listings/land/0-161st-st-rose-hill-ks-678202/",badge:"Land"},
-            {lat:37.59095926,lng:-97.07669801,addr:"0 161st St, Rose Hill, KS",price:"$130,000",url:"/listings/land/0-161st-st-rose-hill-ks-678206/",badge:"Land"},
-            {lat:37.59150335,lng:-97.07841462,addr:"0 161st St, Rose Hill, KS",price:"$125,000",url:"/listings/land/0-161st-st-rose-hill-ks-678213/",badge:"Land"},
-            {lat:37.78651602,lng:-97.13544695,addr:"0 Butler Rd, Benton, KS",price:"$135,000",url:"/listings/land/0-butler-rd-benton-ks-678320/",badge:"Land"},
-            {lat:37.54798585,lng:-97.12196521,addr:"0 Creekside Cr, Rose Hill, KS",price:"$149,500",url:"/listings/land/0-creekside-cr-rose-hill-ks-654814/",badge:"Land"},
-            {lat:37.61614902,lng:-97.10728348,addr:"0 Mulberry Road, Rose Hill, KS",price:"$299,900",url:"/listings/land/0-mulberry-road-rose-hill-ks-666333/",badge:"Land"},
-            {lat:37.82003041,lng:-96.95604228,addr:"0 Parallel St, El Dorado, KS",price:"$564,000",url:"/listings/land/0-parallel-st-el-dorado-ks-673084/",badge:"Land"},
-            {lat:37.7374,lng:-96.9558,addr:"0 Purity Springs Rd, El Dorado, KS",price:"$400,000",url:"/listings/land/0-purity-springs-rd-el-dorado-ks-677871/",badge:"Land"},
-            {lat:37.54786459,lng:-97.12516224,addr:"0 Timber Circle, Rose Hill, KS",price:"$149,500",url:"/listings/land/0-timber-circle-rose-hill-ks-649018/",badge:"Land"},
-            {lat:37.54695777,lng:-97.12227685,addr:"00 Creekside Cr, Rose Hill, KS",price:"$149,500",url:"/listings/land/00-creekside-cr-rose-hill-ks-654815/",badge:"Land"},
-            {lat:37.67891745,lng:-97.02834925,addr:"00 Hwy 54, Augusta, KS",price:"$399,900",url:"/listings/land/00-hwy-54-augusta-ks-676583/",badge:"Land"},
-            {lat:37.77078976,lng:-96.6575186,addr:"00 Satchell Creek Rd, Rosalia, KS",price:"$609,900",url:"/listings/land/00-satchell-creek-rd-rosalia-ks-667171/",badge:"Land"},
-            {lat:37.62082175,lng:-97.1071699,addr:"000 140th St, Rose Hill, KS",price:"$215,000",url:"/listings/land/000-140th-st-rose-hill-ks-671741/",badge:"Land"},
-            {lat:37.87116101,lng:-97.1735367,addr:"000-143rd-st-e-valley-center-ks-678080, , KS",price:"Contact for Price",url:"/listings/land/000-143rd-st-e-valley-center-ks-678080/",badge:"Land"},
-            {lat:37.87106332,lng:-97.17195654,addr:"000-143rd-st-e-valley-center-ks-678082, , KS",price:"Contact for Price",url:"/listings/land/000-143rd-st-e-valley-center-ks-678082/",badge:"Land"},
-            {lat:37.87685339,lng:-97.17188489,addr:"000-143rd-st-east-valley-center-ks-678311, , KS",price:"Contact for Price",url:"/listings/land/000-143rd-st-east-valley-center-ks-678311/",badge:"Land"},
-            {lat:37.532788,lng:-96.847004,addr:"000-200th-st-douglass-ks-676819, , KS",price:"Contact for Price",url:"/listings/land/000-200th-st-douglass-ks-676819/",badge:"Land"},
-            {lat:37.5224,lng:-96.9923,addr:"000 51st Road, Douglass, KS",price:"$200,000",url:"/listings/land/000-51st-road-douglass-ks-677334/",badge:"Land"},
-            {lat:37.53752299,lng:-96.98588501,addr:"000-hunter-rd-douglass-ks-676820, , KS",price:"Contact for Price",url:"/listings/land/000-hunter-rd-douglass-ks-676820/",badge:"Land"},
-            {lat:37.67875315,lng:-97.02824488,addr:"000 Hwy 54, Augusta, KS",price:"$550,000",url:"/listings/land/000-hwy-54-augusta-ks-676587/",badge:"Land"},
-            {lat:37.623246,lng:-97.336753,addr:"000 MacArthur RD, Wichita, KS",price:"$968,000",url:"/listings/land/000-macarthur-rd-wichita-ks-667111/",badge:"Land"},
-            {lat:37.82496355,lng:-96.70220508,addr:"000 Parallel, El Dorado, KS",price:"$499,000",url:"/listings/land/000-parallel-el-dorado-ks-653576/",badge:"Land"},
-            {lat:39.10343832,lng:-98.1643541,addr:"000-quartz-dr-lincoln-ks-677564, , KS",price:"Contact for Price",url:"/listings/land/000-quartz-dr-lincoln-ks-677564/",badge:"Land"},
-            {lat:37.50105731,lng:-96.9559648,addr:"000-shumway-rd-douglass-ks-676823, , KS",price:"Contact for Price",url:"/listings/land/000-shumway-rd-douglass-ks-676823/",badge:"Land"},
-            {lat:37.47773223,lng:-97.22031485,addr:"0000 119th St. S, Mulvane, KS",price:"$651,000",url:"/listings/land/0000-119th-st-s-mulvane-ks-675352/",badge:"Land"},
-            {lat:37.682731,lng:-97.481057,addr:"0000 119th St W ST, Wichita, KS",price:"$2,005,661",url:"/listings/land/0000-119th-st-w-st-wichita-ks-665496/",badge:"Land"},
-            {lat:37.687806,lng:-97.553597,addr:"0000 183rd St W ST, Goddard, KS",price:"$5,033,000",url:"/listings/land/0000-183rd-st-w-st-goddard-ks-672913/",badge:"Land"},
-            {lat:37.64891821,lng:-97.57237859,addr:"0000 199th St W, Goddard, KS",price:"$2,745,000",url:"/listings/land/0000-199th-st-w-goddard-ks-673571/",badge:"Land"},
-            {lat:37.75135898,lng:-97.43723703,addr:"0000 37th St N, Wichita, KS",price:"$2,870,000",url:"/listings/land/0000-37th-st-n-wichita-ks-648628/",badge:"Land"},
-            {lat:37.82439706,lng:-97.39113938,addr:"0000 77th St &amp;amp; Hoover/West, Valley Center, KS",price:"$3,750,000",url:"/listings/land/0000-77th-st-hooverwest-valley-center-ks-674942/",badge:"Land"},
-            {lat:38.26295486,lng:-96.96908319,addr:"0000 Cr, Florence, KS",price:"$857,500",url:"/listings/land/0000-cr-florence-ks-670452/",badge:"Land"},
-            {lat:38.42453102,lng:-97.33284323,addr:"0000 Cr, Lehigh, KS",price:"$327,250",url:"/listings/land/0000-cr-lehigh-ks-676450/",badge:"Land"},
-            {lat:37.84493,lng:-97.36973999,addr:"0000 Meridian, Valley Center, KS",price:"$1,750,000",url:"/listings/land/0000-meridian-valley-center-ks-662344/",badge:"Land"},
-            {lat:37.15707816,lng:-96.83360322,addr:"00000 222nd Rd, Winfield, KS",price:"$725,000",url:"/listings/land/00000-222nd-rd-winfield-ks-672088/",badge:"Land"},
-            {lat:37.99939779,lng:-97.29052113,addr:"00000 36th, Newton, KS",price:"$215,000",url:"/listings/land/00000-36th-newton-ks-673269/",badge:"Land"},
-            {lat:37.65956249,lng:-97.78473116,addr:"00000 383rd, Cheney, KS",price:"$1,195,000",url:"/listings/land/00000-383rd-cheney-ks-676513/",badge:"Land"},
-            {lat:38.244222,lng:-96.92537,addr:"00000 7th ST, Florence, KS",price:"$28,000",url:"/listings/land/00000-7th-st-florence-ks-676606/",badge:"Land"},
-            {lat:38.24524,lng:-96.92371811,addr:"00000 Barker, Florence, KS",price:"$28,000",url:"/listings/land/00000-barker-florence-ks-676607/",badge:"Land"},
-            {lat:37.59059302,lng:-97.15168169,addr:"00000 County Line Rd, Rose Hill, KS",price:"$150,000",url:"/listings/land/00000-county-line-rd-rose-hill-ks-676096/",badge:"Land"},
-            {lat:38.36371316,lng:-97.19802123,addr:"00000 Cr, Hillsboro, KS",price:"$280,000",url:"/listings/land/00000-cr-hillsboro-ks-676247/",badge:"Land"},
-            {lat:37.816641,lng:-96.850382,addr:"00000 Payne Ct Lot 2 AVE, Augusta, KS",price:"$100,000",url:"/listings/land/00000-payne-ct-lot-2-ave-augusta-ks-676770/",badge:"Land"},
-            {lat:37.678703,lng:-97.028346,addr:"10035 Diamond Rd, Augusta, KS",price:"$199,900",url:"/listings/land/10035-diamond-rd-augusta-ks-676591/",badge:"Land"},
-            {lat:37.51209398,lng:-97.24421399,addr:"10100 Rock Rd, Mulvane, KS",price:"$1,260,000",url:"/listings/land/10100-rock-rd-mulvane-ks-661793/",badge:"Land"},
-            {lat:37.648816,lng:-97.118673,addr:"1133 Flint Hills National Pkwy, Andover, KS",price:"$235,000",url:"/listings/land/1133-flint-hills-national-pkwy-andover-ks-649026/",badge:"Land"},
-            {lat:37.703151,lng:-97.053824,addr:"11467 Shore Dr, Augusta, KS",price:"$539,000",url:"/listings/land/11467-shore-dr-augusta-ks-669162/",badge:"Land"},
-            {lat:37.638019,lng:-97.122393,addr:"1209 Bluestem Ct, Andover, KS",price:"$365,000",url:"/listings/land/1209-bluestem-ct-andover-ks-676167/",badge:"Land"},
-            {lat:37.717282,lng:-97.353273,addr:"1212-18th-st-n-st-wichita-ks-678140, , KS",price:"Contact for Price",url:"/listings/land/1212-18th-st-n-st-wichita-ks-678140/",badge:"Land"},
-            {lat:37.67862687,lng:-97.06543648,addr:"12155 Hwy 54, Augusta, KS",price:"$399,000",url:"/listings/land/12155-hwy-54-augusta-ks-667337/",badge:"Land"},
-            {lat:37.648198,lng:-97.11889097,addr:"1219 Flint Hills National Pkwy, Andover, KS",price:"$235,000",url:"/listings/land/1219-flint-hills-national-pkwy-andover-ks-649023/",badge:"Land"},
-            {lat:37.64654601,lng:-97.11780803,addr:"1406 Flint Hills National Pkwy, Andover, KS",price:"$215,000",url:"/listings/land/1406-flint-hills-national-pkwy-andover-ks-649014/",badge:"Land"},
-            {lat:37.864181,lng:-97.358727,addr:"1501 101st St N St, Valley Center, KS",price:"$2,561,900",url:"/listings/land/1501-101st-st-n-st-valley-center-ks-672177/",badge:"Land"},
-            {lat:37.688186,lng:-97.31982,addr:"1518 1st Street N ST, Wichita, KS",price:"$699,000",url:"/listings/land/1518-1st-street-n-st-wichita-ks-674584/",badge:"Land"},
-            {lat:37.644968,lng:-97.117891,addr:"1524 Flint Hills National Pkwy, Andover, KS",price:"$215,000",url:"/listings/land/1524-flint-hills-national-pkwy-andover-ks-649008/",badge:"Land"},
-            {lat:37.746662,lng:-97.360507,addr:"1610-34th-st-n-st-wichita-ks-678193, , KS",price:"Contact for Price",url:"/listings/land/1610-34th-st-n-st-wichita-ks-678193/",badge:"Land"},
-            {lat:37.798718,lng:-97.074173,addr:"1782 Indianola Rd, Benton, KS",price:"$720,000",url:"/listings/land/1782-indianola-rd-benton-ks-669924/",badge:"Land"},
-            {lat:37.2149343,lng:-96.94157048,addr:"182nd, Winfield, KS",price:"$262,500",url:"/listings/land/182nd-winfield-ks-665660/",badge:"Land"},
-            {lat:37.720419,lng:-97.477728,addr:"2045-parkridge-ct-wichita-ks-678120, , KS",price:"Contact for Price",url:"/listings/land/2045-parkridge-ct-wichita-ks-678120/",badge:"Land"},
-            {lat:37.663385,lng:-97.57881,addr:"20611 Kellogg St, Goddard, KS",price:"$990,000",url:"/listings/land/20611-kellogg-st-goddard-ks-659644/",badge:"Land"},
-            {lat:37.8194,lng:-96.886201,addr:"222 Millheisler Rd, El Dorado, KS",price:"$220,000",url:"/listings/land/222-millheisler-rd-el-dorado-ks-669272/",badge:"Land"},
-            {lat:37.72796,lng:-97.402573,addr:"2412 Doris Cir, Wichita, KS",price:"$800,000",url:"/listings/land/2412-doris-cir-wichita-ks-614521/",badge:"Land"},
-            {lat:37.662689,lng:-97.673462,addr:"28719 Harry St, Garden Plain, KS",price:"$5,541,800",url:"/listings/land/28719-harry-st-garden-plain-ks-669036/",badge:"Land"},
-            {lat:37.69554817,lng:-97.44028667,addr:"3.67 +/-Acres W. Central Ave &amp;amp; N. Tyler Rd, Wichita, KS",price:"$630,000",url:"/listings/land/367-acres-w-central-ave-n-tyler-rd-wichita-ks-657181/",badge:"Land"},
-            {lat:37.679057,lng:-97.139361,addr:"413 Hwy 54, Andover, KS",price:"$750,000",url:"/listings/land/413-hwy-54-andover-ks-666200/",badge:"Land"},
-            {lat:37.76678881,lng:-97.37909254,addr:"4583 Portwest St, Wichita, KS",price:"$850,000",url:"/listings/land/4583-portwest-st-wichita-ks-675347/",badge:"Land"},
-            {lat:37.758122,lng:-97.134057,addr:"4608 Butler Rd, Benton, KS",price:"$369,000",url:"/listings/land/4608-butler-rd-benton-ks-666366/",badge:"Land"},
-            {lat:37.622189,lng:-97.407058,addr:"5500 MacArthur, Wichita, KS",price:"$960,000",url:"/listings/land/5500-macarthur-wichita-ks-677246/",badge:"Land"},
-            {lat:37.584931,lng:-97.370651,addr:"5900 Meridian, Wichita, KS",price:"$3,120,000",url:"/listings/land/5900-meridian-wichita-ks-678333/",badge:"Land"},
-            {lat:37.817099,lng:-96.857765,addr:"635 Central Ave, El Dorado, KS",price:"$350,000",url:"/listings/land/635-central-ave-el-dorado-ks-675644/",badge:"Land"},
-            {lat:37.779669,lng:-97.42995,addr:"7501 53rd St N St, Maize, KS",price:"$875,000",url:"/listings/land/7501-53rd-st-n-st-maize-ks-654462/",badge:"Land"},
-            {lat:37.679019,lng:-97.143611,addr:"809 Hwy 54, Andover, KS",price:"$2,650,000",url:"/listings/land/809-hwy-54-andover-ks-675817/",badge:"Land"},
-            {lat:38.144542,lng:-97.246271,addr:"8227-rock-rd-walton-ks-676747, , KS",price:"Contact for Price",url:"/listings/land/8227-rock-rd-walton-ks-676747/",badge:"Land"},
-            {lat:37.92637,lng:-97.244507,addr:"9815 Rock Rd, Valley Center, KS",price:"$365,000",url:"/listings/land/9815-rock-rd-valley-center-ks-675628/",badge:"Land"},
-            {lat:37.864713,lng:-97.242779,addr:"9950 Rock Rd, Valley Center, KS",price:"$250,000",url:"/listings/land/9950-rock-rd-valley-center-ks-675917/",badge:"Land"},
-            {lat:37.924821,lng:-97.244521,addr:"9975 Rock Rd, Valley Center, KS",price:"$250,000",url:"/listings/land/9975-rock-rd-valley-center-ks-675918/",badge:"Land"},
-            {lat:37.75214675,lng:-97.12969132,addr:"E of Butler Rd &amp;amp; SW 50th St, Benton, KS",price:"$1,350,000",url:"/listings/land/e-of-butler-rd-sw-50th-st-benton-ks-673086/",badge:"Land"},
-            {lat:37.75850294,lng:-97.4285735,addr:"LOT 7 Village Circle, Wichita, KS",price:"$799,000",url:"/listings/land/lot-7-village-circle-wichita-ks-656030/",badge:"Land"},
-            {lat:37.78652152,lng:-97.13922494,addr:"N &amp;amp; W of Butler Rd and SW 30th St, Benton, KS",price:"$1,183,370",url:"/listings/land/n-w-of-butler-rd-and-sw-30th-st-benton-ks-673552/",badge:"Land"},
-            {lat:37.58981904,lng:-97.38540883,addr:"SE/c of 55th St S &amp;amp; S West St, Haysville, KS",price:"$1,093,735",url:"/listings/land/sec-of-55th-st-s-s-west-st-haysville-ks-657130/",badge:"Land"},
-            {lat:37.5880447866214,lng:-97.3678093704224,addr:"TBD Meridian, Wichita, KS",price:"$2,964,000",url:"/listings/land/tbd-meridian-wichita-ks-664542/",badge:"Land"},
-            {lat:37.248,lng:-96.9785,addr:"TBD Simpson &amp;amp; Ames Ave, Winfield, KS",price:"$125,000",url:"/listings/land/tbd-simpson-ames-ave-winfield-ks-669196/",badge:"Land"}
-          ];
+          var listings = [{lat:37.59078924,lng:-97.07987375,addr:"0 161st St, Rose Hill, KS",price:"$115,000",url:"/listings/land/0-161st-st-rose-hill-ks-678195/",color:"#16a34a"},
+            {lat:37.59092526,lng:-97.0791871,addr:"0 161st St, Rose Hill, KS",price:"$140,000",url:"/listings/land/0-161st-st-rose-hill-ks-678196/",color:"#16a34a"},
+            {lat:37.5911973,lng:-97.07841462,addr:"0 161st St, Rose Hill, KS",price:"$140,000",url:"/listings/land/0-161st-st-rose-hill-ks-678197/",color:"#16a34a"},
+            {lat:37.58925897,lng:-97.07661218,addr:"0 161st St, Rose Hill, KS",price:"$150,000",url:"/listings/land/0-161st-st-rose-hill-ks-678198/",color:"#16a34a"},
+            {lat:37.5911973,lng:-97.07661218,addr:"0 161st St, Rose Hill, KS",price:"$140,000",url:"/listings/land/0-161st-st-rose-hill-ks-678199/",color:"#16a34a"},
+            {lat:37.59095926,lng:-97.07566804,addr:"0 161st St, Rose Hill, KS",price:"$130,000",url:"/listings/land/0-161st-st-rose-hill-ks-678202/",color:"#16a34a"},
+            {lat:37.59095926,lng:-97.07669801,addr:"0 161st St, Rose Hill, KS",price:"$130,000",url:"/listings/land/0-161st-st-rose-hill-ks-678206/",color:"#16a34a"},
+            {lat:37.59150335,lng:-97.07841462,addr:"0 161st St, Rose Hill, KS",price:"$125,000",url:"/listings/land/0-161st-st-rose-hill-ks-678213/",color:"#16a34a"},
+            {lat:37.78651602,lng:-97.13544695,addr:"0 Butler Rd, Benton, KS",price:"$135,000",url:"/listings/land/0-butler-rd-benton-ks-678320/",color:"#16a34a"},
+            {lat:37.54798585,lng:-97.12196521,addr:"0 Creekside Cr, Rose Hill, KS",price:"$149,500",url:"/listings/land/0-creekside-cr-rose-hill-ks-654814/",color:"#16a34a"},
+            {lat:37.61614902,lng:-97.10728348,addr:"0 Mulberry Road, Rose Hill, KS",price:"$299,900",url:"/listings/land/0-mulberry-road-rose-hill-ks-666333/",color:"#16a34a"},
+            {lat:37.82003041,lng:-96.95604228,addr:"0 Parallel St, El Dorado, KS",price:"$564,000",url:"/listings/land/0-parallel-st-el-dorado-ks-673084/",color:"#16a34a"},
+            {lat:37.7374,lng:-96.9558,addr:"0 Purity Springs Rd, El Dorado, KS",price:"$400,000",url:"/listings/land/0-purity-springs-rd-el-dorado-ks-677871/",color:"#16a34a"},
+            {lat:37.54786459,lng:-97.12516224,addr:"0 Timber Circle, Rose Hill, KS",price:"$149,500",url:"/listings/land/0-timber-circle-rose-hill-ks-649018/",color:"#16a34a"},
+            {lat:37.54695777,lng:-97.12227685,addr:"00 Creekside Cr, Rose Hill, KS",price:"$149,500",url:"/listings/land/00-creekside-cr-rose-hill-ks-654815/",color:"#16a34a"},
+            {lat:37.67891745,lng:-97.02834925,addr:"00 Hwy 54, Augusta, KS",price:"$399,900",url:"/listings/land/00-hwy-54-augusta-ks-676583/",color:"#16a34a"},
+            {lat:37.77078976,lng:-96.6575186,addr:"00 Satchell Creek Rd, Rosalia, KS",price:"$609,900",url:"/listings/land/00-satchell-creek-rd-rosalia-ks-667171/",color:"#16a34a"},
+            {lat:37.62082175,lng:-97.1071699,addr:"000 140th St, Rose Hill, KS",price:"$215,000",url:"/listings/land/000-140th-st-rose-hill-ks-671741/",color:"#16a34a"},
+            {lat:37.87116101,lng:-97.1735367,addr:"000-143rd-st-e-valley-center-ks-678080, , KS",price:"Contact for Price",url:"/listings/land/000-143rd-st-e-valley-center-ks-678080/",color:"#16a34a"},
+            {lat:37.87106332,lng:-97.17195654,addr:"000-143rd-st-e-valley-center-ks-678082, , KS",price:"Contact for Price",url:"/listings/land/000-143rd-st-e-valley-center-ks-678082/",color:"#16a34a"},
+            {lat:37.87685339,lng:-97.17188489,addr:"000-143rd-st-east-valley-center-ks-678311, , KS",price:"Contact for Price",url:"/listings/land/000-143rd-st-east-valley-center-ks-678311/",color:"#16a34a"},
+            {lat:37.532788,lng:-96.847004,addr:"000-200th-st-douglass-ks-676819, , KS",price:"Contact for Price",url:"/listings/land/000-200th-st-douglass-ks-676819/",color:"#16a34a"},
+            {lat:37.5224,lng:-96.9923,addr:"000 51st Road, Douglass, KS",price:"$200,000",url:"/listings/land/000-51st-road-douglass-ks-677334/",color:"#16a34a"},
+            {lat:37.53752299,lng:-96.98588501,addr:"000-hunter-rd-douglass-ks-676820, , KS",price:"Contact for Price",url:"/listings/land/000-hunter-rd-douglass-ks-676820/",color:"#16a34a"},
+            {lat:37.67875315,lng:-97.02824488,addr:"000 Hwy 54, Augusta, KS",price:"$550,000",url:"/listings/land/000-hwy-54-augusta-ks-676587/",color:"#16a34a"},
+            {lat:37.623246,lng:-97.336753,addr:"000 MacArthur RD, Wichita, KS",price:"$968,000",url:"/listings/land/000-macarthur-rd-wichita-ks-667111/",color:"#16a34a"},
+            {lat:37.82496355,lng:-96.70220508,addr:"000 Parallel, El Dorado, KS",price:"$499,000",url:"/listings/land/000-parallel-el-dorado-ks-653576/",color:"#16a34a"},
+            {lat:39.10343832,lng:-98.1643541,addr:"000-quartz-dr-lincoln-ks-677564, , KS",price:"Contact for Price",url:"/listings/land/000-quartz-dr-lincoln-ks-677564/",color:"#16a34a"},
+            {lat:37.50105731,lng:-96.9559648,addr:"000-shumway-rd-douglass-ks-676823, , KS",price:"Contact for Price",url:"/listings/land/000-shumway-rd-douglass-ks-676823/",color:"#16a34a"},
+            {lat:37.47773223,lng:-97.22031485,addr:"0000 119th St. S, Mulvane, KS",price:"$651,000",url:"/listings/land/0000-119th-st-s-mulvane-ks-675352/",color:"#16a34a"},
+            {lat:37.682731,lng:-97.481057,addr:"0000 119th St W ST, Wichita, KS",price:"$2,005,661",url:"/listings/land/0000-119th-st-w-st-wichita-ks-665496/",color:"#16a34a"},
+            {lat:37.687806,lng:-97.553597,addr:"0000 183rd St W ST, Goddard, KS",price:"$5,033,000",url:"/listings/land/0000-183rd-st-w-st-goddard-ks-672913/",color:"#16a34a"},
+            {lat:37.64891821,lng:-97.57237859,addr:"0000 199th St W, Goddard, KS",price:"$2,745,000",url:"/listings/land/0000-199th-st-w-goddard-ks-673571/",color:"#16a34a"},
+            {lat:37.75135898,lng:-97.43723703,addr:"0000 37th St N, Wichita, KS",price:"$2,870,000",url:"/listings/land/0000-37th-st-n-wichita-ks-648628/",color:"#16a34a"},
+            {lat:37.82439706,lng:-97.39113938,addr:"0000 77th St &amp;amp; Hoover/West, Valley Center, KS",price:"$3,750,000",url:"/listings/land/0000-77th-st-hooverwest-valley-center-ks-674942/",color:"#16a34a"},
+            {lat:38.26295486,lng:-96.96908319,addr:"0000 Cr, Florence, KS",price:"$857,500",url:"/listings/land/0000-cr-florence-ks-670452/",color:"#16a34a"},
+            {lat:38.42453102,lng:-97.33284323,addr:"0000 Cr, Lehigh, KS",price:"$327,250",url:"/listings/land/0000-cr-lehigh-ks-676450/",color:"#16a34a"},
+            {lat:37.84493,lng:-97.36973999,addr:"0000 Meridian, Valley Center, KS",price:"$1,750,000",url:"/listings/land/0000-meridian-valley-center-ks-662344/",color:"#16a34a"},
+            {lat:37.15707816,lng:-96.83360322,addr:"00000 222nd Rd, Winfield, KS",price:"$725,000",url:"/listings/land/00000-222nd-rd-winfield-ks-672088/",color:"#16a34a"},
+            {lat:37.99939779,lng:-97.29052113,addr:"00000 36th, Newton, KS",price:"$215,000",url:"/listings/land/00000-36th-newton-ks-673269/",color:"#16a34a"},
+            {lat:37.65956249,lng:-97.78473116,addr:"00000 383rd, Cheney, KS",price:"$1,195,000",url:"/listings/land/00000-383rd-cheney-ks-676513/",color:"#16a34a"},
+            {lat:38.244222,lng:-96.92537,addr:"00000 7th ST, Florence, KS",price:"$28,000",url:"/listings/land/00000-7th-st-florence-ks-676606/",color:"#16a34a"},
+            {lat:38.24524,lng:-96.92371811,addr:"00000 Barker, Florence, KS",price:"$28,000",url:"/listings/land/00000-barker-florence-ks-676607/",color:"#16a34a"},
+            {lat:37.59059302,lng:-97.15168169,addr:"00000 County Line Rd, Rose Hill, KS",price:"$150,000",url:"/listings/land/00000-county-line-rd-rose-hill-ks-676096/",color:"#16a34a"},
+            {lat:38.36371316,lng:-97.19802123,addr:"00000 Cr, Hillsboro, KS",price:"$280,000",url:"/listings/land/00000-cr-hillsboro-ks-676247/",color:"#16a34a"},
+            {lat:37.816641,lng:-96.850382,addr:"00000 Payne Ct Lot 2 AVE, Augusta, KS",price:"$100,000",url:"/listings/land/00000-payne-ct-lot-2-ave-augusta-ks-676770/",color:"#16a34a"},
+            {lat:37.678703,lng:-97.028346,addr:"10035 Diamond Rd, Augusta, KS",price:"$199,900",url:"/listings/land/10035-diamond-rd-augusta-ks-676591/",color:"#16a34a"},
+            {lat:37.51209398,lng:-97.24421399,addr:"10100 Rock Rd, Mulvane, KS",price:"$1,260,000",url:"/listings/land/10100-rock-rd-mulvane-ks-661793/",color:"#16a34a"},
+            {lat:37.648816,lng:-97.118673,addr:"1133 Flint Hills National Pkwy, Andover, KS",price:"$235,000",url:"/listings/land/1133-flint-hills-national-pkwy-andover-ks-649026/",color:"#16a34a"},
+            {lat:37.703151,lng:-97.053824,addr:"11467 Shore Dr, Augusta, KS",price:"$539,000",url:"/listings/land/11467-shore-dr-augusta-ks-669162/",color:"#16a34a"},
+            {lat:37.638019,lng:-97.122393,addr:"1209 Bluestem Ct, Andover, KS",price:"$365,000",url:"/listings/land/1209-bluestem-ct-andover-ks-676167/",color:"#16a34a"},
+            {lat:37.717282,lng:-97.353273,addr:"1212-18th-st-n-st-wichita-ks-678140, , KS",price:"Contact for Price",url:"/listings/land/1212-18th-st-n-st-wichita-ks-678140/",color:"#16a34a"},
+            {lat:37.67862687,lng:-97.06543648,addr:"12155 Hwy 54, Augusta, KS",price:"$399,000",url:"/listings/land/12155-hwy-54-augusta-ks-667337/",color:"#16a34a"},
+            {lat:37.648198,lng:-97.11889097,addr:"1219 Flint Hills National Pkwy, Andover, KS",price:"$235,000",url:"/listings/land/1219-flint-hills-national-pkwy-andover-ks-649023/",color:"#16a34a"},
+            {lat:37.64654601,lng:-97.11780803,addr:"1406 Flint Hills National Pkwy, Andover, KS",price:"$215,000",url:"/listings/land/1406-flint-hills-national-pkwy-andover-ks-649014/",color:"#16a34a"},
+            {lat:37.864181,lng:-97.358727,addr:"1501 101st St N St, Valley Center, KS",price:"$2,561,900",url:"/listings/land/1501-101st-st-n-st-valley-center-ks-672177/",color:"#16a34a"},
+            {lat:37.688186,lng:-97.31982,addr:"1518 1st Street N ST, Wichita, KS",price:"$699,000",url:"/listings/land/1518-1st-street-n-st-wichita-ks-674584/",color:"#16a34a"},
+            {lat:37.644968,lng:-97.117891,addr:"1524 Flint Hills National Pkwy, Andover, KS",price:"$215,000",url:"/listings/land/1524-flint-hills-national-pkwy-andover-ks-649008/",color:"#16a34a"},
+            {lat:37.746662,lng:-97.360507,addr:"1610-34th-st-n-st-wichita-ks-678193, , KS",price:"Contact for Price",url:"/listings/land/1610-34th-st-n-st-wichita-ks-678193/",color:"#16a34a"},
+            {lat:37.798718,lng:-97.074173,addr:"1782 Indianola Rd, Benton, KS",price:"$720,000",url:"/listings/land/1782-indianola-rd-benton-ks-669924/",color:"#16a34a"},
+            {lat:37.2149343,lng:-96.94157048,addr:"182nd, Winfield, KS",price:"$262,500",url:"/listings/land/182nd-winfield-ks-665660/",color:"#16a34a"},
+            {lat:37.720419,lng:-97.477728,addr:"2045-parkridge-ct-wichita-ks-678120, , KS",price:"Contact for Price",url:"/listings/land/2045-parkridge-ct-wichita-ks-678120/",color:"#16a34a"},
+            {lat:37.663385,lng:-97.57881,addr:"20611 Kellogg St, Goddard, KS",price:"$990,000",url:"/listings/land/20611-kellogg-st-goddard-ks-659644/",color:"#16a34a"},
+            {lat:37.8194,lng:-96.886201,addr:"222 Millheisler Rd, El Dorado, KS",price:"$220,000",url:"/listings/land/222-millheisler-rd-el-dorado-ks-669272/",color:"#16a34a"},
+            {lat:37.72796,lng:-97.402573,addr:"2412 Doris Cir, Wichita, KS",price:"$800,000",url:"/listings/land/2412-doris-cir-wichita-ks-614521/",color:"#16a34a"},
+            {lat:37.662689,lng:-97.673462,addr:"28719 Harry St, Garden Plain, KS",price:"$5,541,800",url:"/listings/land/28719-harry-st-garden-plain-ks-669036/",color:"#16a34a"},
+            {lat:37.69554817,lng:-97.44028667,addr:"3.67 +/-Acres W. Central Ave &amp;amp; N. Tyler Rd, Wichita, KS",price:"$630,000",url:"/listings/land/367-acres-w-central-ave-n-tyler-rd-wichita-ks-657181/",color:"#16a34a"},
+            {lat:37.679057,lng:-97.139361,addr:"413 Hwy 54, Andover, KS",price:"$750,000",url:"/listings/land/413-hwy-54-andover-ks-666200/",color:"#16a34a"},
+            {lat:37.76678881,lng:-97.37909254,addr:"4583 Portwest St, Wichita, KS",price:"$850,000",url:"/listings/land/4583-portwest-st-wichita-ks-675347/",color:"#16a34a"},
+            {lat:37.758122,lng:-97.134057,addr:"4608 Butler Rd, Benton, KS",price:"$369,000",url:"/listings/land/4608-butler-rd-benton-ks-666366/",color:"#16a34a"},
+            {lat:37.622189,lng:-97.407058,addr:"5500 MacArthur, Wichita, KS",price:"$960,000",url:"/listings/land/5500-macarthur-wichita-ks-677246/",color:"#16a34a"},
+            {lat:37.584931,lng:-97.370651,addr:"5900 Meridian, Wichita, KS",price:"$3,120,000",url:"/listings/land/5900-meridian-wichita-ks-678333/",color:"#16a34a"},
+            {lat:37.817099,lng:-96.857765,addr:"635 Central Ave, El Dorado, KS",price:"$350,000",url:"/listings/land/635-central-ave-el-dorado-ks-675644/",color:"#16a34a"},
+            {lat:37.779669,lng:-97.42995,addr:"7501 53rd St N St, Maize, KS",price:"$875,000",url:"/listings/land/7501-53rd-st-n-st-maize-ks-654462/",color:"#16a34a"},
+            {lat:37.679019,lng:-97.143611,addr:"809 Hwy 54, Andover, KS",price:"$2,650,000",url:"/listings/land/809-hwy-54-andover-ks-675817/",color:"#16a34a"},
+            {lat:38.144542,lng:-97.246271,addr:"8227-rock-rd-walton-ks-676747, , KS",price:"Contact for Price",url:"/listings/land/8227-rock-rd-walton-ks-676747/",color:"#16a34a"},
+            {lat:37.92637,lng:-97.244507,addr:"9815 Rock Rd, Valley Center, KS",price:"$365,000",url:"/listings/land/9815-rock-rd-valley-center-ks-675628/",color:"#16a34a"},
+            {lat:37.864713,lng:-97.242779,addr:"9950 Rock Rd, Valley Center, KS",price:"$250,000",url:"/listings/land/9950-rock-rd-valley-center-ks-675917/",color:"#16a34a"},
+            {lat:37.924821,lng:-97.244521,addr:"9975 Rock Rd, Valley Center, KS",price:"$250,000",url:"/listings/land/9975-rock-rd-valley-center-ks-675918/",color:"#16a34a"},
+            {lat:37.75214675,lng:-97.12969132,addr:"E of Butler Rd &amp;amp; SW 50th St, Benton, KS",price:"$1,350,000",url:"/listings/land/e-of-butler-rd-sw-50th-st-benton-ks-673086/",color:"#16a34a"},
+            {lat:37.75850294,lng:-97.4285735,addr:"LOT 7 Village Circle, Wichita, KS",price:"$799,000",url:"/listings/land/lot-7-village-circle-wichita-ks-656030/",color:"#16a34a"},
+            {lat:37.78652152,lng:-97.13922494,addr:"N &amp;amp; W of Butler Rd and SW 30th St, Benton, KS",price:"$1,183,370",url:"/listings/land/n-w-of-butler-rd-and-sw-30th-st-benton-ks-673552/",color:"#16a34a"},
+            {lat:37.58981904,lng:-97.38540883,addr:"SE/c of 55th St S &amp;amp; S West St, Haysville, KS",price:"$1,093,735",url:"/listings/land/sec-of-55th-st-s-s-west-st-haysville-ks-657130/",color:"#16a34a"},
+            {lat:37.5880447866214,lng:-97.3678093704224,addr:"TBD Meridian, Wichita, KS",price:"$2,964,000",url:"/listings/land/tbd-meridian-wichita-ks-664542/",color:"#16a34a"},
+            {lat:37.248,lng:-96.9785,addr:"TBD Simpson &amp;amp; Ames Ave, Winfield, KS",price:"$125,000",url:"/listings/land/tbd-simpson-ames-ave-winfield-ks-669196/",color:"#16a34a"}];
           var bounds = [];
           var map = L.map('listings-map',{scrollWheelZoom:false});
           L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'&copy; OpenStreetMap contributors',maxZoom:19}).addTo(map);
           listings.forEach(function(l){
             bounds.push([l.lat,l.lng]);
-            var icon = L.divIcon({className:'',html:'<div style="width:14px;height:14px;border-radius:50%;background:#16a34a;border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.4);"></div>',iconSize:[14,14],iconAnchor:[7,7]});
+            var icon = L.divIcon({className:'',html:'<div style="width:14px;height:14px;border-radius:50%;background:'+l.color+';border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.4);"></div>',iconSize:[14,14],iconAnchor:[7,7]});
             L.marker([l.lat,l.lng],{icon:icon}).addTo(map)
               .bindPopup('<div style="min-width:180px;"><strong>'+l.addr+'</strong><br><strong style="font-size:16px;">'+l.price+'</strong><br><a href="'+l.url+'" style="color:#b7791f;font-weight:700;font-size:13px;">View Details &rarr;</a></div>');
           });
@@ -185,1112 +325,1626 @@
 
       <!-- Grid View -->
       <div id="listings-grid-view">
-        <div class="listing-grid" style="margin-bottom:48px;">
-        <a href="/listings/land/0-161st-st-rose-hill-ks-678195/" class="listing-card">
+        <div class="listing-grid" id="listing-grid" style="margin-bottom:48px;">
+        <a href="/listings/land/0-161st-st-rose-hill-ks-678195/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="rose hill"
+           data-search="0 161st st rose hill $115,000 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-678195_6706797801032704858.jpg" alt="0 161st St" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">0 161st St</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i></p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Rose Hill, KS</p>
             <p class="listing-card-price">$115,000</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/0-161st-st-rose-hill-ks-678196/" class="listing-card">
+        <a href="/listings/land/0-161st-st-rose-hill-ks-678196/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="rose hill"
+           data-search="0 161st st rose hill $140,000 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-678196_6702806048409827303.jpg" alt="0 161st St" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">0 161st St</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i></p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Rose Hill, KS</p>
             <p class="listing-card-price">$140,000</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/0-161st-st-rose-hill-ks-678197/" class="listing-card">
+        <a href="/listings/land/0-161st-st-rose-hill-ks-678197/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="rose hill"
+           data-search="0 161st st rose hill $140,000 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-678197_6700636808947172739.jpg" alt="0 161st St" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">0 161st St</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i></p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Rose Hill, KS</p>
             <p class="listing-card-price">$140,000</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/0-161st-st-rose-hill-ks-678198/" class="listing-card">
+        <a href="/listings/land/0-161st-st-rose-hill-ks-678198/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="rose hill"
+           data-search="0 161st st rose hill $150,000 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-678198_6704250581666851461.jpg" alt="0 161st St" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">0 161st St</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i></p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Rose Hill, KS</p>
             <p class="listing-card-price">$150,000</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/0-161st-st-rose-hill-ks-678199/" class="listing-card">
+        <a href="/listings/land/0-161st-st-rose-hill-ks-678199/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="rose hill"
+           data-search="0 161st st rose hill $140,000 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-678199_6709628374189062705.jpg" alt="0 161st St" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">0 161st St</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i></p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Rose Hill, KS</p>
             <p class="listing-card-price">$140,000</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/0-161st-st-rose-hill-ks-678202/" class="listing-card">
+        <a href="/listings/land/0-161st-st-rose-hill-ks-678202/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="rose hill"
+           data-search="0 161st st rose hill $130,000 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-678202_6703863548841284678.jpg" alt="0 161st St" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">0 161st St</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i></p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Rose Hill, KS</p>
             <p class="listing-card-price">$130,000</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/0-161st-st-rose-hill-ks-678206/" class="listing-card">
+        <a href="/listings/land/0-161st-st-rose-hill-ks-678206/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="rose hill"
+           data-search="0 161st st rose hill $130,000 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-678206_6701130231125204820.jpg" alt="0 161st St" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">0 161st St</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i></p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Rose Hill, KS</p>
             <p class="listing-card-price">$130,000</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/0-161st-st-rose-hill-ks-678213/" class="listing-card">
+        <a href="/listings/land/0-161st-st-rose-hill-ks-678213/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="rose hill"
+           data-search="0 161st st rose hill $125,000 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-678213_6707026314114289931.jpg" alt="0 161st St" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">0 161st St</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i></p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Rose Hill, KS</p>
             <p class="listing-card-price">$125,000</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/0-butler-rd-benton-ks-678320/" class="listing-card">
+        <a href="/listings/land/0-butler-rd-benton-ks-678320/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="benton"
+           data-search="0 butler rd benton $135,000 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-678320_6707024654043434648.jpg" alt="0 Butler Rd" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">0 Butler Rd</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i></p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Benton, KS</p>
             <p class="listing-card-price">$135,000</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/0-creekside-cr-rose-hill-ks-654814/" class="listing-card">
+        <a href="/listings/land/0-creekside-cr-rose-hill-ks-654814/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="rose hill"
+           data-search="0 creekside cr rose hill $149,500 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-654814_6705717890140448041.jpg" alt="0 Creekside Cr" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">0 Creekside Cr</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i>5.0 Acres</p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Rose Hill, KS</p>
             <p class="listing-card-price">$149,500</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/0-mulberry-road-rose-hill-ks-666333/" class="listing-card">
+        <a href="/listings/land/0-mulberry-road-rose-hill-ks-666333/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="rose hill"
+           data-search="0 mulberry road rose hill $299,900 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-666333_6706213168884832207.jpg" alt="0 Mulberry Road" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">0 Mulberry Road</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i></p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Rose Hill, KS</p>
             <p class="listing-card-price">$299,900</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/0-parallel-st-el-dorado-ks-673084/" class="listing-card">
+        <a href="/listings/land/0-parallel-st-el-dorado-ks-673084/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="el dorado"
+           data-search="0 parallel st el dorado $564,000 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-673084_6709946295629291670.jpg" alt="0 Parallel St" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">0 Parallel St</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i>161.2 Acres</p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>El Dorado, KS</p>
             <p class="listing-card-price">$564,000</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/0-purity-springs-rd-el-dorado-ks-677871/" class="listing-card">
+        <a href="/listings/land/0-purity-springs-rd-el-dorado-ks-677871/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="el dorado"
+           data-search="0 purity springs rd el dorado $400,000 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-677871_6701896298679050382.jpg" alt="0 Purity Springs Rd" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">0 Purity Springs Rd</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i></p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>El Dorado, KS</p>
             <p class="listing-card-price">$400,000</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/0-timber-circle-rose-hill-ks-649018/" class="listing-card">
+        <a href="/listings/land/0-timber-circle-rose-hill-ks-649018/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="rose hill"
+           data-search="0 timber circle rose hill $149,500 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-649018_6702474718223406297.jpg" alt="0 Timber Circle" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">0 Timber Circle</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i>5.1 Acres</p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Rose Hill, KS</p>
             <p class="listing-card-price">$149,500</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/00-creekside-cr-rose-hill-ks-654815/" class="listing-card">
+        <a href="/listings/land/00-creekside-cr-rose-hill-ks-654815/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="rose hill"
+           data-search="00 creekside cr rose hill $149,500 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-654815_6706134493722007323.jpg" alt="00 Creekside Cr" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">00 Creekside Cr</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i>5.0 Acres</p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Rose Hill, KS</p>
             <p class="listing-card-price">$149,500</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/00-hwy-54-augusta-ks-676583/" class="listing-card">
+        <a href="/listings/land/00-hwy-54-augusta-ks-676583/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="augusta"
+           data-search="00 hwy 54 augusta $399,900 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-676583_6702469356758140651.jpg" alt="00 Hwy 54" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">00 Hwy 54</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i></p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Augusta, KS</p>
             <p class="listing-card-price">$399,900</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/00-satchell-creek-rd-rosalia-ks-667171/" class="listing-card">
+        <a href="/listings/land/00-satchell-creek-rd-rosalia-ks-667171/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="rosalia"
+           data-search="00 satchell creek rd rosalia $609,900 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-667171_6702245512226406452.jpg" alt="00 Satchell Creek Rd" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">00 Satchell Creek Rd</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i>160.5 Acres</p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Rosalia, KS</p>
             <p class="listing-card-price">$609,900</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/000-140th-st-rose-hill-ks-671741/" class="listing-card">
+        <a href="/listings/land/000-140th-st-rose-hill-ks-671741/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="rose hill"
+           data-search="000 140th st rose hill $215,000 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-671741_6701725732390227176.jpg" alt="000 140th St" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">000 140th St</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i>15.0 Acres</p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Rose Hill, KS</p>
             <p class="listing-card-price">$215,000</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/000-143rd-st-e-valley-center-ks-678080/" class="listing-card">
+        <a href="/listings/land/000-143rd-st-e-valley-center-ks-678080/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city=""
+           data-search="000-143rd-st-e-valley-center-ks-678080  contact for price land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-678080_6701631779865553418.jpg" alt="000-143rd-st-e-valley-center-ks-678080" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">000-143rd-st-e-valley-center-ks-678080</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i></p>
+            
             <p class="listing-card-price">Contact for Price</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/000-143rd-st-e-valley-center-ks-678082/" class="listing-card">
+        <a href="/listings/land/000-143rd-st-e-valley-center-ks-678082/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city=""
+           data-search="000-143rd-st-e-valley-center-ks-678082  contact for price land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-678082_6706232999037049292.jpg" alt="000-143rd-st-e-valley-center-ks-678082" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">000-143rd-st-e-valley-center-ks-678082</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i></p>
+            
             <p class="listing-card-price">Contact for Price</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/000-143rd-st-east-valley-center-ks-678311/" class="listing-card">
+        <a href="/listings/land/000-143rd-st-east-valley-center-ks-678311/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city=""
+           data-search="000-143rd-st-east-valley-center-ks-678311  contact for price land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-678311_6709948303422968879.jpg" alt="000-143rd-st-east-valley-center-ks-678311" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">000-143rd-st-east-valley-center-ks-678311</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i></p>
+            
             <p class="listing-card-price">Contact for Price</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/000-200th-st-douglass-ks-676819/" class="listing-card">
+        <a href="/listings/land/000-200th-st-douglass-ks-676819/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city=""
+           data-search="000-200th-st-douglass-ks-676819  contact for price land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-676819_6705957967456419442.jpg" alt="000-200th-st-douglass-ks-676819" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">000-200th-st-douglass-ks-676819</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i></p>
+            
             <p class="listing-card-price">Contact for Price</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/000-51st-road-douglass-ks-677334/" class="listing-card">
+        <a href="/listings/land/000-51st-road-douglass-ks-677334/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="douglass"
+           data-search="000 51st road douglass $200,000 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-677334_6704150824003191578.jpg" alt="000 51st Road" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">000 51st Road</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i></p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Douglass, KS</p>
             <p class="listing-card-price">$200,000</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/000-hunter-rd-douglass-ks-676820/" class="listing-card">
+        <a href="/listings/land/000-hunter-rd-douglass-ks-676820/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city=""
+           data-search="000-hunter-rd-douglass-ks-676820  contact for price land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-676820_6706491022825774459.jpg" alt="000-hunter-rd-douglass-ks-676820" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">000-hunter-rd-douglass-ks-676820</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i></p>
+            
             <p class="listing-card-price">Contact for Price</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/000-hwy-54-augusta-ks-676587/" class="listing-card">
+        <a href="/listings/land/000-hwy-54-augusta-ks-676587/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="augusta"
+           data-search="000 hwy 54 augusta $550,000 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-676587_6705383920736731530.jpg" alt="000 Hwy 54" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">000 Hwy 54</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i></p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Augusta, KS</p>
             <p class="listing-card-price">$550,000</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/000-macarthur-rd-wichita-ks-667111/" class="listing-card">
+        <a href="/listings/land/000-macarthur-rd-wichita-ks-667111/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="wichita"
+           data-search="000 macarthur rd wichita $968,000 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-667111_6703775422688593514.jpg" alt="000 MacArthur RD" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">000 MacArthur RD</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i>68.0 Acres</p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Wichita, KS</p>
             <p class="listing-card-price">$968,000</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/000-parallel-el-dorado-ks-653576/" class="listing-card">
+        <a href="/listings/land/000-parallel-el-dorado-ks-653576/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="el dorado"
+           data-search="000 parallel el dorado $499,000 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-653576_6705006573601785451.jpg" alt="000 Parallel" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">000 Parallel</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i>80.0 Acres</p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>El Dorado, KS</p>
             <p class="listing-card-price">$499,000</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/000-quartz-dr-lincoln-ks-677564/" class="listing-card">
+        <a href="/listings/land/000-quartz-dr-lincoln-ks-677564/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city=""
+           data-search="000-quartz-dr-lincoln-ks-677564  contact for price land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-677564_6709984864486755302.jpg" alt="000-quartz-dr-lincoln-ks-677564" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">000-quartz-dr-lincoln-ks-677564</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i></p>
+            
             <p class="listing-card-price">Contact for Price</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/000-shumway-rd-douglass-ks-676823/" class="listing-card">
+        <a href="/listings/land/000-shumway-rd-douglass-ks-676823/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city=""
+           data-search="000-shumway-rd-douglass-ks-676823  contact for price land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-676823_6705053854053180618.jpg" alt="000-shumway-rd-douglass-ks-676823" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">000-shumway-rd-douglass-ks-676823</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i></p>
+            
             <p class="listing-card-price">Contact for Price</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/0000-119th-st-s-mulvane-ks-675352/" class="listing-card">
+        <a href="/listings/land/0000-119th-st-s-mulvane-ks-675352/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="mulvane"
+           data-search="0000 119th st. s mulvane $651,000 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-675352_6709256027204605340.jpg" alt="0000 119th St. S" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">0000 119th St. S</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i></p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Mulvane, KS</p>
             <p class="listing-card-price">$651,000</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/0000-119th-st-w-st-wichita-ks-665496/" class="listing-card">
+        <a href="/listings/land/0000-119th-st-w-st-wichita-ks-665496/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="wichita"
+           data-search="0000 119th st w st wichita $2,005,661 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-665496_6701099435784331128.jpg" alt="0000 119th St W ST" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">0000 119th St W ST</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i>69.7 Acres</p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Wichita, KS</p>
             <p class="listing-card-price">$2,005,661</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/0000-183rd-st-w-st-goddard-ks-672913/" class="listing-card">
+        <a href="/listings/land/0000-183rd-st-w-st-goddard-ks-672913/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="goddard"
+           data-search="0000 183rd st w st goddard $5,033,000 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-672913_6707744813357498211.jpg" alt="0000 183rd St W ST" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">0000 183rd St W ST</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i></p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Goddard, KS</p>
             <p class="listing-card-price">$5,033,000</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/0000-199th-st-w-goddard-ks-673571/" class="listing-card">
+        <a href="/listings/land/0000-199th-st-w-goddard-ks-673571/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="goddard"
+           data-search="0000 199th st w goddard $2,745,000 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-673571_6706257730582136077.jpg" alt="0000 199th St W" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">0000 199th St W</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i></p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Goddard, KS</p>
             <p class="listing-card-price">$2,745,000</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/0000-37th-st-n-wichita-ks-648628/" class="listing-card">
+        <a href="/listings/land/0000-37th-st-n-wichita-ks-648628/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="wichita"
+           data-search="0000 37th st n wichita $2,870,000 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-648628_6705009316479215695.jpg" alt="0000 37th St N" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">0000 37th St N</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i></p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Wichita, KS</p>
             <p class="listing-card-price">$2,870,000</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/0000-77th-st-hooverwest-valley-center-ks-674942/" class="listing-card">
+        <a href="/listings/land/0000-77th-st-hooverwest-valley-center-ks-674942/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="valley center"
+           data-search="0000 77th st &amp;amp; hoover/west valley center $3,750,000 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-674942_6702350174478779048.jpg" alt="0000 77th St &amp;amp; Hoover/West" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">0000 77th St &amp;amp; Hoover/West</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i></p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Valley Center, KS</p>
             <p class="listing-card-price">$3,750,000</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/0000-cr-florence-ks-670452/" class="listing-card">
+        <a href="/listings/land/0000-cr-florence-ks-670452/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="florence"
+           data-search="0000 cr florence $857,500 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-670452_6709725053658804530.jpg" alt="0000 Cr" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">0000 Cr</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i></p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Florence, KS</p>
             <p class="listing-card-price">$857,500</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/0000-cr-lehigh-ks-676450/" class="listing-card">
+        <a href="/listings/land/0000-cr-lehigh-ks-676450/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="lehigh"
+           data-search="0000 cr lehigh $327,250 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-676450_6704188518560205148.jpg" alt="0000 Cr" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">0000 Cr</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i></p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Lehigh, KS</p>
             <p class="listing-card-price">$327,250</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/0000-meridian-valley-center-ks-662344/" class="listing-card">
+        <a href="/listings/land/0000-meridian-valley-center-ks-662344/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="valley center"
+           data-search="0000 meridian valley center $1,750,000 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-662344_6708305248957681841.jpg" alt="0000 Meridian" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">0000 Meridian</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i>83.4 Acres</p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Valley Center, KS</p>
             <p class="listing-card-price">$1,750,000</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/00000-222nd-rd-winfield-ks-672088/" class="listing-card">
+        <a href="/listings/land/00000-222nd-rd-winfield-ks-672088/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="winfield"
+           data-search="00000 222nd rd winfield $725,000 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-672088_6701373277125791089.jpg" alt="00000 222nd Rd" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">00000 222nd Rd</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i>161.5 Acres</p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Winfield, KS</p>
             <p class="listing-card-price">$725,000</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/00000-36th-newton-ks-673269/" class="listing-card">
+        <a href="/listings/land/00000-36th-newton-ks-673269/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="newton"
+           data-search="00000 36th newton $215,000 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-673269_6708861854040528424.jpg" alt="00000 36th" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">00000 36th</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i>4.1 Acres</p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Newton, KS</p>
             <p class="listing-card-price">$215,000</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/00000-383rd-cheney-ks-676513/" class="listing-card">
+        <a href="/listings/land/00000-383rd-cheney-ks-676513/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="cheney"
+           data-search="00000 383rd cheney $1,195,000 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-676513_6709885233054978818.jpg" alt="00000 383rd" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">00000 383rd</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i></p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Cheney, KS</p>
             <p class="listing-card-price">$1,195,000</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/00000-7th-st-florence-ks-676606/" class="listing-card">
+        <a href="/listings/land/00000-7th-st-florence-ks-676606/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="florence"
+           data-search="00000 7th st florence $28,000 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-676606_6703252691351602041.jpg" alt="00000 7th ST" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">00000 7th ST</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i></p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Florence, KS</p>
             <p class="listing-card-price">$28,000</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/00000-barker-florence-ks-676607/" class="listing-card">
+        <a href="/listings/land/00000-barker-florence-ks-676607/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="florence"
+           data-search="00000 barker florence $28,000 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-676607_6708554191658281334.jpg" alt="00000 Barker" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">00000 Barker</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i></p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Florence, KS</p>
             <p class="listing-card-price">$28,000</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/00000-county-line-rd-rose-hill-ks-676096/" class="listing-card">
+        <a href="/listings/land/00000-county-line-rd-rose-hill-ks-676096/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="rose hill"
+           data-search="00000 county line rd rose hill $150,000 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-676096_6705826162092421540.jpg" alt="00000 County Line Rd" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">00000 County Line Rd</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i></p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Rose Hill, KS</p>
             <p class="listing-card-price">$150,000</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/00000-cr-hillsboro-ks-676247/" class="listing-card">
+        <a href="/listings/land/00000-cr-hillsboro-ks-676247/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="hillsboro"
+           data-search="00000 cr hillsboro $280,000 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-676247_6700365812454995613.jpg" alt="00000 Cr" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">00000 Cr</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i></p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Hillsboro, KS</p>
             <p class="listing-card-price">$280,000</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/00000-payne-ct-lot-2-ave-augusta-ks-676770/" class="listing-card">
+        <a href="/listings/land/00000-payne-ct-lot-2-ave-augusta-ks-676770/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="augusta"
+           data-search="00000 payne ct lot 2 ave augusta $100,000 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-676770_6708608146516446458.jpg" alt="00000 Payne Ct Lot 2 AVE" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">00000 Payne Ct Lot 2 AVE</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i></p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Augusta, KS</p>
             <p class="listing-card-price">$100,000</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/10035-diamond-rd-augusta-ks-676591/" class="listing-card">
+        <a href="/listings/land/10035-diamond-rd-augusta-ks-676591/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="augusta"
+           data-search="10035 diamond rd augusta $199,900 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-676591_6707239738842474844.jpg" alt="10035 Diamond Rd" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">10035 Diamond Rd</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i></p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Augusta, KS</p>
             <p class="listing-card-price">$199,900</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/10100-rock-rd-mulvane-ks-661793/" class="listing-card">
+        <a href="/listings/land/10100-rock-rd-mulvane-ks-661793/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="mulvane"
+           data-search="10100 rock rd mulvane $1,260,000 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-661793_6700132284026313541.jpg" alt="10100 Rock Rd" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">10100 Rock Rd</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i></p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Mulvane, KS</p>
             <p class="listing-card-price">$1,260,000</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/1133-flint-hills-national-pkwy-andover-ks-649026/" class="listing-card">
+        <a href="/listings/land/1133-flint-hills-national-pkwy-andover-ks-649026/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="andover"
+           data-search="1133 flint hills national pkwy andover $235,000 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-649026_6704440427179825189.jpg" alt="1133 Flint Hills National Pkwy" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">1133 Flint Hills National Pkwy</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i>1.2 Acres</p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Andover, KS</p>
             <p class="listing-card-price">$235,000</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/11467-shore-dr-augusta-ks-669162/" class="listing-card">
+        <a href="/listings/land/11467-shore-dr-augusta-ks-669162/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="augusta"
+           data-search="11467 shore dr augusta $539,000 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-669162_6701683046668858126.jpg" alt="11467 Shore Dr" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">11467 Shore Dr</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i></p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Augusta, KS</p>
             <p class="listing-card-price">$539,000</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/1209-bluestem-ct-andover-ks-676167/" class="listing-card">
+        <a href="/listings/land/1209-bluestem-ct-andover-ks-676167/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="andover"
+           data-search="1209 bluestem ct andover $365,000 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-676167_6700532708240038806.jpg" alt="1209 Bluestem Ct" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">1209 Bluestem Ct</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i></p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Andover, KS</p>
             <p class="listing-card-price">$365,000</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/1212-18th-st-n-st-wichita-ks-678140/" class="listing-card">
+        <a href="/listings/land/1212-18th-st-n-st-wichita-ks-678140/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city=""
+           data-search="1212-18th-st-n-st-wichita-ks-678140  contact for price land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-678140_6703163444983619378.jpg" alt="1212-18th-st-n-st-wichita-ks-678140" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">1212-18th-st-n-st-wichita-ks-678140</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i></p>
+            
             <p class="listing-card-price">Contact for Price</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/12155-hwy-54-augusta-ks-667337/" class="listing-card">
+        <a href="/listings/land/12155-hwy-54-augusta-ks-667337/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="augusta"
+           data-search="12155 hwy 54 augusta $399,000 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-667337_6706311598868789981.jpg" alt="12155 Hwy 54" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">12155 Hwy 54</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i></p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Augusta, KS</p>
             <p class="listing-card-price">$399,000</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/1219-flint-hills-national-pkwy-andover-ks-649023/" class="listing-card">
+        <a href="/listings/land/1219-flint-hills-national-pkwy-andover-ks-649023/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="andover"
+           data-search="1219 flint hills national pkwy andover $235,000 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-649023_6705785947911249250.jpg" alt="1219 Flint Hills National Pkwy" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">1219 Flint Hills National Pkwy</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i>1.0 Acres</p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Andover, KS</p>
             <p class="listing-card-price">$235,000</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/1406-flint-hills-national-pkwy-andover-ks-649014/" class="listing-card">
+        <a href="/listings/land/1406-flint-hills-national-pkwy-andover-ks-649014/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="andover"
+           data-search="1406 flint hills national pkwy andover $215,000 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-649014_6708432610074052163.jpg" alt="1406 Flint Hills National Pkwy" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">1406 Flint Hills National Pkwy</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i>1.0 Acres</p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Andover, KS</p>
             <p class="listing-card-price">$215,000</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/1501-101st-st-n-st-valley-center-ks-672177/" class="listing-card">
+        <a href="/listings/land/1501-101st-st-n-st-valley-center-ks-672177/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="valley center"
+           data-search="1501 101st st n st valley center $2,561,900 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-672177_6702727324352841969.jpg" alt="1501 101st St N St" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">1501 101st St N St</p>
             <p class="listing-card-meta"><i class="fas fa-bed"></i>2 Bd &bull; 150.7 Acres</p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Valley Center, KS</p>
             <p class="listing-card-price">$2,561,900</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/1518-1st-street-n-st-wichita-ks-674584/" class="listing-card">
+        <a href="/listings/land/1518-1st-street-n-st-wichita-ks-674584/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="wichita"
+           data-search="1518 1st street n st wichita $699,000 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-674584_6703787772136527995.jpg" alt="1518 1st Street N ST" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">1518 1st Street N ST</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i>0.5 Acres</p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Wichita, KS</p>
             <p class="listing-card-price">$699,000</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/1524-flint-hills-national-pkwy-andover-ks-649008/" class="listing-card">
+        <a href="/listings/land/1524-flint-hills-national-pkwy-andover-ks-649008/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="andover"
+           data-search="1524 flint hills national pkwy andover $215,000 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-649008_6703848073471244207.jpg" alt="1524 Flint Hills National Pkwy" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">1524 Flint Hills National Pkwy</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i>1.0 Acres</p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Andover, KS</p>
             <p class="listing-card-price">$215,000</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/1610-34th-st-n-st-wichita-ks-678193/" class="listing-card">
+        <a href="/listings/land/1610-34th-st-n-st-wichita-ks-678193/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city=""
+           data-search="1610-34th-st-n-st-wichita-ks-678193  contact for price land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-678193_6700617346103096498.jpg" alt="1610-34th-st-n-st-wichita-ks-678193" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">1610-34th-st-n-st-wichita-ks-678193</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i></p>
+            
             <p class="listing-card-price">Contact for Price</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/1782-indianola-rd-benton-ks-669924/" class="listing-card">
+        <a href="/listings/land/1782-indianola-rd-benton-ks-669924/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="benton"
+           data-search="1782 indianola rd benton $720,000 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-669924_6706942066269200246.jpg" alt="1782 Indianola Rd" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">1782 Indianola Rd</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i></p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Benton, KS</p>
             <p class="listing-card-price">$720,000</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/182nd-winfield-ks-665660/" class="listing-card">
+        <a href="/listings/land/182nd-winfield-ks-665660/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="winfield"
+           data-search="182nd winfield $262,500 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-665660_6705776185838719110.jpg" alt="182nd" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">182nd</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i></p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Winfield, KS</p>
             <p class="listing-card-price">$262,500</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/2045-parkridge-ct-wichita-ks-678120/" class="listing-card">
+        <a href="/listings/land/2045-parkridge-ct-wichita-ks-678120/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city=""
+           data-search="2045-parkridge-ct-wichita-ks-678120  contact for price land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-678120_6704932576920038783.jpg" alt="2045-parkridge-ct-wichita-ks-678120" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">2045-parkridge-ct-wichita-ks-678120</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i></p>
+            
             <p class="listing-card-price">Contact for Price</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/20611-kellogg-st-goddard-ks-659644/" class="listing-card">
+        <a href="/listings/land/20611-kellogg-st-goddard-ks-659644/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="goddard"
+           data-search="20611 kellogg st goddard $990,000 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-659644_6702010566529262229.jpg" alt="20611 Kellogg St" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">20611 Kellogg St</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i></p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Goddard, KS</p>
             <p class="listing-card-price">$990,000</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/222-millheisler-rd-el-dorado-ks-669272/" class="listing-card">
+        <a href="/listings/land/222-millheisler-rd-el-dorado-ks-669272/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="el dorado"
+           data-search="222 millheisler rd el dorado $220,000 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-669272_6700092273823843643.jpg" alt="222 Millheisler Rd" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">222 Millheisler Rd</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i></p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>El Dorado, KS</p>
             <p class="listing-card-price">$220,000</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/2412-doris-cir-wichita-ks-614521/" class="listing-card">
+        <a href="/listings/land/2412-doris-cir-wichita-ks-614521/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="wichita"
+           data-search="2412 doris cir wichita $800,000 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-614521_6703608446885.jpg" alt="2412 Doris Cir" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">2412 Doris Cir</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i>1.9 Acres</p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Wichita, KS</p>
             <p class="listing-card-price">$800,000</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/28719-harry-st-garden-plain-ks-669036/" class="listing-card">
+        <a href="/listings/land/28719-harry-st-garden-plain-ks-669036/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="garden plain"
+           data-search="28719 harry st garden plain $5,541,800 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-669036_6703955381284590331.jpg" alt="28719 Harry St" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">28719 Harry St</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i>251.0 Acres</p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Garden Plain, KS</p>
             <p class="listing-card-price">$5,541,800</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/367-acres-w-central-ave-n-tyler-rd-wichita-ks-657181/" class="listing-card">
+        <a href="/listings/land/367-acres-w-central-ave-n-tyler-rd-wichita-ks-657181/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="wichita"
+           data-search="3.67 +/-acres w. central ave &amp;amp; n. tyler rd wichita $630,000 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-657181_6706151908652529235.jpg" alt="3.67 +/-Acres W. Central Ave &amp;amp; N. Tyler Rd" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">3.67 +/-Acres W. Central Ave &amp;amp; N. Tyler Rd</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i>3.7 Acres</p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Wichita, KS</p>
             <p class="listing-card-price">$630,000</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/413-hwy-54-andover-ks-666200/" class="listing-card">
+        <a href="/listings/land/413-hwy-54-andover-ks-666200/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="andover"
+           data-search="413 hwy 54 andover $750,000 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-666200_6703276881841068434.jpg" alt="413 Hwy 54" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">413 Hwy 54</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i>1.9 Acres</p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Andover, KS</p>
             <p class="listing-card-price">$750,000</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/4583-portwest-st-wichita-ks-675347/" class="listing-card">
+        <a href="/listings/land/4583-portwest-st-wichita-ks-675347/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="wichita"
+           data-search="4583 portwest st wichita $850,000 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-675347_6706900872257351327.jpg" alt="4583 Portwest St" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">4583 Portwest St</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i></p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Wichita, KS</p>
             <p class="listing-card-price">$850,000</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/4608-butler-rd-benton-ks-666366/" class="listing-card">
+        <a href="/listings/land/4608-butler-rd-benton-ks-666366/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="benton"
+           data-search="4608 butler rd benton $369,000 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-666366_6708687368523719309.jpg" alt="4608 Butler Rd" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">4608 Butler Rd</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i>6.9 Acres</p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Benton, KS</p>
             <p class="listing-card-price">$369,000</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/5500-macarthur-wichita-ks-677246/" class="listing-card">
+        <a href="/listings/land/5500-macarthur-wichita-ks-677246/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="wichita"
+           data-search="5500 macarthur wichita $960,000 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-677246_6705793718010324321.jpg" alt="5500 MacArthur" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">5500 MacArthur</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i></p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Wichita, KS</p>
             <p class="listing-card-price">$960,000</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/5900-meridian-wichita-ks-678333/" class="listing-card">
+        <a href="/listings/land/5900-meridian-wichita-ks-678333/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="wichita"
+           data-search="5900 meridian wichita $3,120,000 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-678333_6707174941190268172.jpg" alt="5900 Meridian" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">5900 Meridian</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i></p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Wichita, KS</p>
             <p class="listing-card-price">$3,120,000</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/635-central-ave-el-dorado-ks-675644/" class="listing-card">
+        <a href="/listings/land/635-central-ave-el-dorado-ks-675644/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="el dorado"
+           data-search="635 central ave el dorado $350,000 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-675644_6705453227354360259.jpg" alt="635 Central Ave" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">635 Central Ave</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i></p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>El Dorado, KS</p>
             <p class="listing-card-price">$350,000</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/7501-53rd-st-n-st-maize-ks-654462/" class="listing-card">
+        <a href="/listings/land/7501-53rd-st-n-st-maize-ks-654462/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="maize"
+           data-search="7501 53rd st n st maize $875,000 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-654462_6701457230521529880.jpg" alt="7501 53rd St N St" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">7501 53rd St N St</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i></p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Maize, KS</p>
             <p class="listing-card-price">$875,000</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/809-hwy-54-andover-ks-675817/" class="listing-card">
+        <a href="/listings/land/809-hwy-54-andover-ks-675817/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="andover"
+           data-search="809 hwy 54 andover $2,650,000 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-675817_6704153402081687101.jpg" alt="809 Hwy 54" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">809 Hwy 54</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i>16.6 Acres</p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Andover, KS</p>
             <p class="listing-card-price">$2,650,000</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/8227-rock-rd-walton-ks-676747/" class="listing-card">
+        <a href="/listings/land/8227-rock-rd-walton-ks-676747/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city=""
+           data-search="8227-rock-rd-walton-ks-676747  contact for price land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-676747_6707827302707425831.jpg" alt="8227-rock-rd-walton-ks-676747" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">8227-rock-rd-walton-ks-676747</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i></p>
+            
             <p class="listing-card-price">Contact for Price</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/9815-rock-rd-valley-center-ks-675628/" class="listing-card">
+        <a href="/listings/land/9815-rock-rd-valley-center-ks-675628/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="valley center"
+           data-search="9815 rock rd valley center $365,000 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-675628_6701903141697726039.jpg" alt="9815 Rock Rd" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">9815 Rock Rd</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i></p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Valley Center, KS</p>
             <p class="listing-card-price">$365,000</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/9950-rock-rd-valley-center-ks-675917/" class="listing-card">
+        <a href="/listings/land/9950-rock-rd-valley-center-ks-675917/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="valley center"
+           data-search="9950 rock rd valley center $250,000 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-675917_6701510573444124159.jpg" alt="9950 Rock Rd" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">9950 Rock Rd</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i></p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Valley Center, KS</p>
             <p class="listing-card-price">$250,000</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/9975-rock-rd-valley-center-ks-675918/" class="listing-card">
+        <a href="/listings/land/9975-rock-rd-valley-center-ks-675918/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="valley center"
+           data-search="9975 rock rd valley center $250,000 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-675918_6706764868701394205.jpg" alt="9975 Rock Rd" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">9975 Rock Rd</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i></p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Valley Center, KS</p>
             <p class="listing-card-price">$250,000</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/e-of-butler-rd-sw-50th-st-benton-ks-673086/" class="listing-card">
+        <a href="/listings/land/e-of-butler-rd-sw-50th-st-benton-ks-673086/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="benton"
+           data-search="e of butler rd &amp;amp; sw 50th st benton $1,350,000 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-673086_6708058173960626654.jpg" alt="E of Butler Rd &amp;amp; SW 50th St" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">E of Butler Rd &amp;amp; SW 50th St</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i></p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Benton, KS</p>
             <p class="listing-card-price">$1,350,000</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/lot-7-village-circle-wichita-ks-656030/" class="listing-card">
+        <a href="/listings/land/lot-7-village-circle-wichita-ks-656030/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="wichita"
+           data-search="lot 7 village circle wichita $799,000 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-656030_6705678110134268049.jpg" alt="LOT 7 Village Circle" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">LOT 7 Village Circle</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i>4.4 Acres</p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Wichita, KS</p>
             <p class="listing-card-price">$799,000</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/n-w-of-butler-rd-and-sw-30th-st-benton-ks-673552/" class="listing-card">
+        <a href="/listings/land/n-w-of-butler-rd-and-sw-30th-st-benton-ks-673552/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="benton"
+           data-search="n &amp;amp; w of butler rd and sw 30th st benton $1,183,370 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-673552_6706824932815242761.jpg" alt="N &amp;amp; W of Butler Rd and SW 30th St" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">N &amp;amp; W of Butler Rd and SW 30th St</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i></p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Benton, KS</p>
             <p class="listing-card-price">$1,183,370</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/sec-of-55th-st-s-s-west-st-haysville-ks-657130/" class="listing-card">
+        <a href="/listings/land/sec-of-55th-st-s-s-west-st-haysville-ks-657130/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="haysville"
+           data-search="se/c of 55th st s &amp;amp; s west st haysville $1,093,735 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-657130_6703172928205014891.jpg" alt="SE/c of 55th St S &amp;amp; S West St" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">SE/c of 55th St S &amp;amp; S West St</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i>115.1 Acres</p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Haysville, KS</p>
             <p class="listing-card-price">$1,093,735</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/tbd-meridian-wichita-ks-664542/" class="listing-card">
+        <a href="/listings/land/tbd-meridian-wichita-ks-664542/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="wichita"
+           data-search="tbd meridian wichita $2,964,000 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-664542_6701796894883699821.jpg" alt="TBD Meridian" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">TBD Meridian</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i>156.0 Acres</p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Wichita, KS</p>
             <p class="listing-card-price">$2,964,000</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
-        <a href="/listings/land/tbd-simpson-ames-ave-winfield-ks-669196/" class="listing-card">
+        <a href="/listings/land/tbd-simpson-ames-ave-winfield-ks-669196/"
+           class="listing-card"
+           data-status="active"
+           data-type="land"
+           data-city="winfield"
+           data-search="tbd simpson &amp;amp; ames ave winfield $125,000 land active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-669196_6706695204083372512.jpg" alt="TBD Simpson &amp;amp; Ames Ave" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-              <span class="listing-card-badge" style="background:#16a34a">Land</span>
+              <span class="listing-card-badge" style="background:#16a34a;">Land</span>
             </div>
             <p class="listing-card-address">TBD Simpson &amp;amp; Ames Ave</p>
             <p class="listing-card-meta"><i class="fas fa-map"></i>1.2 Acres</p>
+            <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Winfield, KS</p>
             <p class="listing-card-price">$125,000</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
+        </div>
+        <div id="no-results">
+          <i class="fas fa-search"></i>
+          No listings match your search. <a href="#" onclick="clearFilters();return false;" style="color:var(--yellow-dark);font-weight:700;">Clear filters</a>
         </div>
       </div>
 
@@ -1300,5 +1954,156 @@
 </main>
 
 <!-- FOOTER -->
+
+<script>
+(function(){
+  // ── Autocomplete data ──────────────────────────────────────────────────────
+  var SUGGESTIONS = ["0 161st St","0 Butler Rd","0 Creekside Cr","0 Mulberry Road","0 Parallel St","0 Purity Springs Rd","0 Timber Circle","00 Creekside Cr","00 Hwy 54","00 Satchell Creek Rd","000 140th St","000 51st Road","000 Hwy 54","000 MacArthur RD","000 Parallel","000-143rd-st-e-valley-center-ks-678080","000-143rd-st-e-valley-center-ks-678082","000-143rd-st-east-valley-center-ks-678311","000-200th-st-douglass-ks-676819","000-hunter-rd-douglass-ks-676820","000-quartz-dr-lincoln-ks-677564","000-shumway-rd-douglass-ks-676823","0000 119th St W ST","0000 119th St. S","0000 183rd St W ST","0000 199th St W","0000 37th St N","0000 77th St &amp; Hoover/West","0000 Cr","0000 Meridian","00000 222nd Rd","00000 36th","00000 383rd","00000 7th ST","00000 Barker","00000 County Line Rd","00000 Cr","00000 Payne Ct Lot 2 AVE","10035 Diamond Rd","10100 Rock Rd","1133 Flint Hills National Pkwy","11467 Shore Dr","1209 Bluestem Ct","1212-18th-st-n-st-wichita-ks-678140","12155 Hwy 54","1219 Flint Hills National Pkwy","1406 Flint Hills National Pkwy","1501 101st St N St","1518 1st Street N ST","1524 Flint Hills National Pkwy","1610-34th-st-n-st-wichita-ks-678193","1782 Indianola Rd","182nd","2045-parkridge-ct-wichita-ks-678120","20611 Kellogg St","222 Millheisler Rd","2412 Doris Cir","28719 Harry St","3.67 +/-Acres W. Central Ave &amp; N. Tyler Rd","413 Hwy 54","4583 Portwest St","4608 Butler Rd","5500 MacArthur","5900 Meridian","635 Central Ave","7501 53rd St N St","809 Hwy 54","8227-rock-rd-walton-ks-676747","9815 Rock Rd","9950 Rock Rd","9975 Rock Rd","Active","Andover","Augusta","Benton","Cheney","Douglass","E of Butler Rd &amp; SW 50th St","El Dorado","Florence","Garden Plain","Goddard","Haysville","Hillsboro","LOT 7 Village Circle","Land","Lehigh","Maize","Mulvane","N &amp; W of Butler Rd and SW 30th St","Newton","Rosalia","Rose Hill","SE/c of 55th St S &amp; S West St","TBD Meridian","TBD Simpson &amp; Ames Ave","Valley Center","Wichita","Winfield"];
+
+  var searchInput  = document.getElementById('listing-search');
+  var acList       = document.getElementById('search-autocomplete');
+  var cards        = Array.from(document.querySelectorAll('.listing-card'));
+  var countEl      = document.getElementById('results-count');
+  var noResults    = document.getElementById('no-results');
+  var grid         = document.getElementById('listing-grid');
+  var pills        = Array.from(document.querySelectorAll('.filter-pill'));
+
+  var activeFilter = 'all';
+  var activeSearch = '';
+  var acActiveIdx  = -1;
+
+  // ── Pill counts ────────────────────────────────────────────────────────────
+  function updatePillCounts() {
+    var filters = ['all','active','pending','residential','land'];
+    filters.forEach(function(f) {
+      var el = document.getElementById('pill-count-' + f);
+      if (!el) return;
+      var n = cards.filter(function(c) {
+        if (f === 'all') return true;
+        return c.dataset.status === f || c.dataset.type === f;
+      }).length;
+      el.textContent = '(' + n + ')';
+    });
+  }
+
+  // ── Filter + search ────────────────────────────────────────────────────────
+  function applyFilters() {
+    var q = activeSearch.trim().toLowerCase();
+    var visible = 0;
+    cards.forEach(function(c) {
+      var matchFilter = true;
+      if (activeFilter !== 'all') {
+        matchFilter = c.dataset.status === activeFilter || c.dataset.type === activeFilter;
+      }
+      var matchSearch = !q || c.dataset.search.indexOf(q) !== -1;
+      var show = matchFilter && matchSearch;
+      c.style.display = show ? '' : 'none';
+      if (show) visible++;
+    });
+    countEl.innerHTML = '<strong>' + visible + '</strong> listing' + (visible !== 1 ? 's' : '') + ' shown';
+    noResults.style.display = visible === 0 ? 'block' : 'none';
+    grid.style.display = visible === 0 ? 'none' : '';
+  }
+
+  // ── Pills ──────────────────────────────────────────────────────────────────
+  pills.forEach(function(pill) {
+    pill.addEventListener('click', function() {
+      pills.forEach(function(p) { p.classList.remove('active'); });
+      pill.classList.add('active');
+      activeFilter = pill.dataset.filter;
+      applyFilters();
+    });
+  });
+
+  // ── Search input ───────────────────────────────────────────────────────────
+  searchInput.addEventListener('input', function() {
+    activeSearch = searchInput.value;
+    applyFilters();
+    showAutocomplete(searchInput.value);
+  });
+
+  searchInput.addEventListener('keydown', function(e) {
+    var items = acList.querySelectorAll('li');
+    if (e.key === 'ArrowDown') {
+      acActiveIdx = Math.min(acActiveIdx + 1, items.length - 1);
+      updateAcActive(items);
+      e.preventDefault();
+    } else if (e.key === 'ArrowUp') {
+      acActiveIdx = Math.max(acActiveIdx - 1, -1);
+      updateAcActive(items);
+      e.preventDefault();
+    } else if (e.key === 'Enter' && acActiveIdx >= 0 && items[acActiveIdx]) {
+      selectSuggestion(items[acActiveIdx].dataset.value);
+      e.preventDefault();
+    } else if (e.key === 'Escape') {
+      hideAutocomplete();
+    }
+  });
+
+  function updateAcActive(items) {
+    items.forEach(function(li, i) {
+      li.classList.toggle('active', i === acActiveIdx);
+    });
+  }
+
+  function showAutocomplete(q) {
+    acActiveIdx = -1;
+    if (!q || q.length < 2) { hideAutocomplete(); return; }
+    var ql = q.toLowerCase();
+    var matches = SUGGESTIONS.filter(function(s) {
+      return s.toLowerCase().indexOf(ql) !== -1;
+    }).slice(0, 7);
+    if (!matches.length) { hideAutocomplete(); return; }
+    acList.innerHTML = matches.map(function(m) {
+      // Bold the matching portion
+      var li2 = m.toLowerCase().indexOf(ql);
+      var highlighted = li2 >= 0 ? m.slice(0,li2) + "<mark>" + m.slice(li2,li2+ql.length) + "</mark>" + m.slice(li2+ql.length) : m; data-value="' + esc(m) + '">' + highlighted + '</li>';
+    }).join('');
+    acList.querySelectorAll('li').forEach(function(li) {
+      li.addEventListener('mousedown', function(e) {
+        e.preventDefault();
+        selectSuggestion(li.dataset.value);
+      });
+    });
+    acList.style.display = 'block';
+  }
+
+  function hideAutocomplete() {
+    acList.style.display = 'none';
+    acList.innerHTML = '';
+    acActiveIdx = -1;
+  }
+
+  function selectSuggestion(val) {
+    searchInput.value = val;
+    activeSearch = val;
+    hideAutocomplete();
+    applyFilters();
+  }
+
+  function esc(s) {
+    return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+
+  document.addEventListener('click', function(e) {
+    if (!searchInput.contains(e.target) && !acList.contains(e.target)) hideAutocomplete();
+  });
+
+  // ── Clear all filters ──────────────────────────────────────────────────────
+  window.clearFilters = function() {
+    searchInput.value = '';
+    activeSearch = '';
+    activeFilter = 'all';
+    pills.forEach(function(p) { p.classList.remove('active'); });
+    document.querySelector('[data-filter="all"]').classList.add('active');
+    applyFilters();
+    hideAutocomplete();
+  };
+
+  // ── Init ───────────────────────────────────────────────────────────────────
+  updatePillCounts();
+  applyFilters();
+})();
+</script>
 </body>
 </html>
