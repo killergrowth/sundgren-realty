@@ -1085,8 +1085,6 @@ a:hover { color: var(--yellow-dark); }
 }
 .sg-contact-col .info-card {
   margin: 0;
-  box-shadow: none;
-  border: 1px solid var(--border);
   border-radius: 10px;
   padding: 24px;
 }
