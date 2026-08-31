@@ -1063,6 +1063,38 @@ a:hover { color: var(--yellow-dark); }
 .feat-cell .mlabel { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: .06em; color: var(--text-light); margin-bottom: 1px; }
 @media (max-width: 580px) { .feat-grid { grid-template-columns: 1fr; } }
 
+/* ── Map + Contact row ── */
+.sg-map-contact-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-top: 32px;
+  align-items: start;
+}
+.sg-map-col .sg-map-inner,
+.sg-map-col .sg-map-inner > div {
+  width: 100%;
+}
+.sg-map-col #sg-map {
+  height: 340px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+.sg-contact-col .info-card {
+  margin: 0;
+  box-shadow: none;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 24px;
+}
+@media (max-width: 700px) {
+  .sg-map-contact-row {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
 /* ── Photo Mosaic (listing detail pages) ── */
 .sg-mosaic {
   display: grid;
