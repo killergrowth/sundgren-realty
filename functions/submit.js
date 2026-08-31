@@ -36,9 +36,9 @@ export async function onRequestPost({ request, env }) {
     }
 
     // Build email
-    const toEmail   = 'realty@sundgren.com';
-    const fromEmail = 'openclaw-agent@killergrowth.iam.gserviceaccount.com';
-    const subject   = `New Website Inquiry from ${name}`;
+    const toEmail   = env.TO_EMAIL || 'tylerbrickley@killergrowth.com';
+    const fromEmail = 'notifications@killergrowth.com';
+    const subject   = `[Sundgren Realty] Contact Form: ${name}`;
     const body = [
       `New contact form submission from sundgrenrealty.com`,
       ``,
@@ -80,7 +80,7 @@ export async function onRequestPost({ request, env }) {
     const jwtHeader  = btoa(JSON.stringify({ alg: 'RS256', typ: 'JWT' })).replace(/=/g, '').replace(/\+/g, '-').replace(/\//g, '_');
     const jwtPayload = btoa(JSON.stringify({
       iss:   'openclaw-agent@killergrowth.iam.gserviceaccount.com',
-      sub:   'tylerbrickley@killergrowth.com',
+      sub:   'notifications@killergrowth.com',
       scope: 'https://www.googleapis.com/auth/gmail.send',
       aud:   'https://oauth2.googleapis.com/token',
       iat:   now,
@@ -116,7 +116,7 @@ export async function onRequestPost({ request, env }) {
 
     // Send email
     const gmailRes = await fetch(
-      `https://gmail.googleapis.com/gmail/v1/users/me/messages/send`,
+      `https://gmail.googleapis.com/gmail/v1/users/notifications%40killergrowth.com/messages/send`,
       {
         method: 'POST',
         headers: {
