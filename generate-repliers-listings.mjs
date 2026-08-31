@@ -101,18 +101,39 @@ function imgUrl(imgPath) {
   return `${IMG_CDN_BASE}/${imgPath}`;
 }
 
-function statusPillClass(status) {
-  const s = (status || '').toUpperCase();
-  if (s === 'A' || s === 'ACTIVE') return 'pill-active';
-  if (s === 'U') return 'pill-upcoming';
-  return 'pill-sold';
+// Status resolution per SOP-REPLIERS-API.md sec 8 (locked 2026-08-31)
+function resolveStatus(listing) {
+  if (!listing) return 'sold';
+  if (listing.status === 'A') return 'active';
+  if (listing.status === 'U') {
+    const last = (listing.lastStatus || '').toLowerCase();
+    if (last === 'sc' || last === 'cs') return 'pending';
+    if (last === 'ter') return 'terminated';
+    return 'terminated';
+  }
+  return 'terminated';
 }
 
-function statusLabel(status) {
-  const s = (status || '').toUpperCase();
-  if (s === 'A' || s === 'ACTIVE') return 'ACTIVE';
-  if (s === 'U') return 'PENDING';
-  return 'CLOSED';
+const STATUS_PILL_CLASS = {
+  active:     'pill-active',
+  pending:    'pill-pending',
+  terminated: 'pill-terminated',
+  sold:       'pill-sold',
+};
+
+const STATUS_LABEL = {
+  active:     'Active',
+  pending:    'Pending',
+  terminated: 'Inactive',
+  sold:       'Sold',
+};
+
+function statusPillClass(resolvedStatus) {
+  return STATUS_PILL_CLASS[resolvedStatus] || 'pill-sold';
+}
+
+function statusLabel(resolvedStatus) {
+  return STATUS_LABEL[resolvedStatus] || 'Sold';
 }
 
 function fullAddress(addr) {
@@ -406,6 +427,7 @@ function renderStatsRow(listing) {
 
 // ── Full Page HTML ────────────────────────────────────────────────────────────
 function buildPage(listing, typeInfo, slug, allListings) {
+  const resolved = listing._resolved || resolveStatus(listing);
   const addr = listing.address;
   const fullAddr = fullAddress(addr);
   const d = listing.details || {};
@@ -484,7 +506,7 @@ ${breadcrumb}
   <div class="auction-hero-overlay"></div>
   <div class="auction-hero-content">
     <div class="auction-hero-meta">
-      <span class="${statusPillClass(listing.status)} pill">${statusLabel(listing.status)}</span>
+      <span class="${statusPillClass(resolved)} pill">${statusLabel(resolved)}</span>
       <span class="pill" style="background:rgba(255,255,255,.15);color:#fff;">${esc(typeInfo.label)}</span>
     </div>
     <h1 class="auction-hero-title">${esc(fullAddr)}</h1>
@@ -542,17 +564,34 @@ ${similarHtml}
 }
 
 // ── Fetch Listings from Repliers ──────────────────────────────────────────────
+async function fetchAllPages(params) {
+  const allListings = [];
+  let page = 1;
+  while (true) {
+    const qs = Object.entries({ ...params, pageNum: page, resultsPerPage: 100 })
+      .map(([k, v]) => encodeURIComponent(k) + '=' + encodeURIComponent(v)).join('&');
+    const url = `${REPLIERS_API_URL}?${qs}`;
+    console.log(`  Fetching page ${page}: ${url}`);
+    const res = await fetch(url, { headers: { 'REPLIERS-API-KEY': REPLIERS_API_KEY } });
+    if (!res.ok) throw new Error(`Repliers API error: ${res.status} ${res.statusText}`);
+    const data = await res.json();
+    allListings.push(...(data.listings || []));
+    if (page >= (data.numPages || 1)) break;
+    page++;
+  }
+  return allListings;
+}
+
 async function fetchListings() {
-  // Fetch all of Jeremy Sundgren's active listings
-  const url = `${REPLIERS_API_URL}?agent=Jeremy+Sundgren&status=A&resultsPerPage=50`;
-  console.log(`  Fetching: ${url}`);
-  const res = await fetch(url, {
-    headers: { 'REPLIERS-API-KEY': REPLIERS_API_KEY }
-  });
-  if (!res.ok) throw new Error(`Repliers API error: ${res.status} ${res.statusText}`);
-  const data = await res.json();
-  console.log(`  Repliers: ${data.count} total listings, using ${data.listings.length}`);
-  return data.listings;
+  console.log('\n  Fetching active listings (status=A)...');
+  const active = await fetchAllPages({ officeId: '6701463544931', status: 'A' });
+  console.log(`  -> ${active.length} active`);
+
+  console.log('  Fetching unavailable listings (status=U)...');
+  const unavail = await fetchAllPages({ officeId: '6701463544931', status: 'U' });
+  console.log(`  -> ${unavail.length} unavailable (pending/terminated)`);
+
+  return [...active, ...unavail];
 }
 
 // ── Write Page ────────────────────────────────────────────────────────────────
@@ -636,3 +675,4 @@ async function main() {
 }
 
 main().catch(err => { console.error('Error:', err); process.exit(1); });
+

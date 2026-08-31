@@ -109,5 +109,167 @@
     "lng": -96.4505641,
     "city": "Grenola",
     "state": "KS"
+  },
+  "lincoln,ks": {
+    "lat": 39.0343606,
+    "lng": -98.2155504,
+    "city": "Lincoln",
+    "state": "KS"
+  },
+  "el-dorado-lake,unknown": {
+    "lat": 37.8896144,
+    "lng": -96.7908675,
+    "city": "El Dorado Lake",
+    "state": null
+  },
+  "mcpherson,ks": {
+    "lat": 38.3659015,
+    "lng": -97.6575171,
+    "city": "McPherson",
+    "state": "KS"
+  },
+  "howard,ks": {
+    "lat": 37.4703117,
+    "lng": -96.2636066,
+    "city": "Howard",
+    "state": "KS"
+  },
+  "benton,unknown": {
+    "lat": 42.0599693,
+    "lng": -92.0776319,
+    "city": "Benton",
+    "state": null
+  },
+  "newton,ks": {
+    "lat": 38.0469166,
+    "lng": -97.3447244,
+    "city": "Newton",
+    "state": "KS"
+  },
+  "augusta-ks,unknown": {
+    "lat": 37.6809165,
+    "lng": -96.9771177,
+    "city": "Augusta KS",
+    "state": null
+  },
+  "cottonwood-falls,ks": {
+    "lat": 38.3722364,
+    "lng": -96.5427845,
+    "city": "Cottonwood Falls",
+    "state": "KS"
+  },
+  "hutchinson,ks": {
+    "lat": 38.0608444,
+    "lng": -97.9297743,
+    "city": "Hutchinson",
+    "state": "KS"
+  },
+  "eureka,ks": {
+    "lat": 37.8216366,
+    "lng": -96.2905851,
+    "city": "Eureka",
+    "state": "KS"
+  },
+  "fall-river-ks,unknown": {
+    "lat": 37.6078166,
+    "lng": -96.0280426,
+    "city": "Fall River KS",
+    "state": null
+  },
+  "marion,ks": {
+    "lat": 38.3734544,
+    "lng": -97.1305937,
+    "city": "Marion",
+    "state": "KS"
+  },
+  "woodson-county,ks": {
+    "lat": 37.8811369,
+    "lng": -95.7517113,
+    "city": "Woodson County",
+    "state": "KS"
+  },
+  "kingman,ks": {
+    "lat": 37.5420937,
+    "lng": -98.122172,
+    "city": "Kingman",
+    "state": "KS"
+  },
+  "wellington,ks": {
+    "lat": 37.2675076,
+    "lng": -97.3999395,
+    "city": "Wellington",
+    "state": "KS"
+  },
+  "sedan,ks": {
+    "lat": 37.1267196,
+    "lng": -96.1869361,
+    "city": "Sedan",
+    "state": "KS"
+  },
+  "el-dorado-kansas,unknown": {
+    "lat": 37.8173015,
+    "lng": -96.8537388,
+    "city": "El Dorado Kansas",
+    "state": null
+  },
+  "winfield-kansas,unknown": {
+    "lat": 37.2397486,
+    "lng": -96.9955919,
+    "city": "Winfield Kansas",
+    "state": null
+  },
+  "douglas-county,ks": {
+    "lat": 38.8838392,
+    "lng": -95.2874559,
+    "city": "Douglas County",
+    "state": "KS"
+  },
+  "moline,unknown": {
+    "lat": 41.5066112,
+    "lng": -90.5149988,
+    "city": "Moline",
+    "state": null
+  },
+  "fredonia,ks": {
+    "lat": 37.5339386,
+    "lng": -95.8266483,
+    "city": "Fredonia",
+    "state": "KS"
+  },
+  "toronto,unknown": {
+    "lat": 41.9048584,
+    "lng": -90.8640346,
+    "city": "Toronto",
+    "state": null
+  },
+  "whitewater,unknown": {
+    "lat": 37.9647365,
+    "lng": -97.1475347,
+    "city": "Whitewater",
+    "state": null
+  },
+  "scott-county,ks": {
+    "lat": 38.4584915,
+    "lng": -100.9336244,
+    "city": "Scott County",
+    "state": "KS"
+  },
+  "andover,unknown": {
+    "lat": 42.65717,
+    "lng": -71.1408776,
+    "city": "Andover",
+    "state": null
+  },
+  "rosalia,unknown": {
+    "lat": 47.2360047,
+    "lng": -117.369813,
+    "city": "Rosalia",
+    "state": null
+  },
+  "independence,ks": {
+    "lat": 37.2242358,
+    "lng": -95.7083131,
+    "city": "Independence",
+    "state": "KS"
   }
 }

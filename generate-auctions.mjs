@@ -174,22 +174,47 @@ function saveGeoCache(cache) {
   fs.writeFileSync(GEOCACHE_FILE, JSON.stringify(cache, null, 2), 'utf8');
 }
 
+const STATE_ABBR = { Kansas:'KS', Missouri:'MO', Oklahoma:'OK', Colorado:'CO', Nebraska:'NE', Texas:'TX', Iowa:'IA', Arkansas:'AR' };
+
+const COUNTY_SEATS = {
+  'Butler,KS':'El Dorado','Lincoln,KS':'Lincoln','Sedgwick,KS':'Wichita',
+  'Cowley,KS':'Winfield','Greenwood,KS':'Eureka','Wilson,KS':'Fredonia',
+  'Montgomery,KS':'Independence','Harper,KS':'Anthony','Sumner,KS':'Wellington',
+  'Harvey,KS':'Newton','Marion,KS':'Marion','Reno,KS':'Hutchinson',
+  'Elk,KS':'Howard','Chautauqua,KS':'Sedan','Lyon,KS':'Emporia',
+  'Chase,KS':'Cottonwood Falls','Osage,KS':'Lyndon','Wabaunsee,KS':'Alma',
+  'McPherson,KS':'McPherson','Barton,KS':'Great Bend','Kingman,KS':'Kingman',
+};
+
 function extractCityState(name) {
   if (!name) return null;
+  // Pattern 1: "City, ST" at start
   let m = name.match(/^([A-Za-z][A-Za-z\s\.]+),\s*([A-Z]{2})(?:\s|\||$)/);
   if (m) return { city: m[1].trim(), state: m[2] };
+  // Pattern 2: "in City, ST"
   m = name.match(/\bin\s+([A-Za-z][A-Za-z\s\.]+),\s*([A-Z]{2})(?:\s|$|!|,)/);
   if (m) return { city: m[1].trim(), state: m[2] };
+  // Pattern 3: "City, ST" anywhere
   m = name.match(/([A-Za-z][A-Za-z\s\.]{1,30}),\s*([A-Z]{2})(?:\s|\||$|!|,)/);
   if (m) return { city: m[1].trim(), state: m[2] };
+  // Pattern 4: "X County, StateName" — look up county seat
+  m = name.match(/([A-Za-z]+)\s+County,\s*(Kansas|Missouri|Oklahoma|Colorado|Nebraska|Texas|Iowa|Arkansas)/i);
+  if (m) {
+    const st = STATE_ABBR[m[2]] || null;
+    const seat = st ? (COUNTY_SEATS[`${m[1]},${st}`] || m[1] + ' County') : null;
+    if (seat && st) return { city: seat, state: st };
+  }
+  // Pattern 5: "near CityName" (skip if followed by Lake/River/Creek)
+  m = name.match(/\bnear\s+([A-Za-z][A-Za-z\s]{2,20})(?=,|\s+in\s|\s*$)(?!\s+Lake|\s+River|\s+Creek)/i);
+  if (m) return { city: m[1].trim(), state: null };
   return null;
 }
 
 async function geocodeCityState(city, state, cache) {
-  const key = `${city},${state}`.toLowerCase().replace(/\s+/g, '-');
+  const key = `${city},${state || 'unknown'}`.toLowerCase().replace(/\s+/g, '-');
   if (cache[key] !== undefined) return cache[key];
-  const query = encodeURIComponent(`${city}, ${state}, USA`);
-  const url = `https://nominatim.openstreetmap.org/search?q=${query}&format=json&limit=1&countrycodes=us`;
+  const q = state ? `${city}, ${state}, USA` : `${city}, USA`;
+  const url = `https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(q)}&format=json&limit=1&countrycodes=us`;
   try {
     const res = await fetch(url, {
       headers: { 'User-Agent': 'KillerGrowth-AuctionSite/1.0 (notifications@killergrowth.com)' }

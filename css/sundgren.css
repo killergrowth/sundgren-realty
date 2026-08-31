@@ -815,9 +815,11 @@ a:hover { color: var(--yellow-dark); }
   text-transform: uppercase;
   margin-bottom: 12px;
 }
-.pill-active   { background: #16a34a; color: #fff; }
-.pill-upcoming { background: var(--yellow); color: var(--dark); }
-.pill-sold     { background: rgba(255,255,255,.2); color: #fff; border: 1px solid rgba(255,255,255,.4); }
+.pill-active     { background: #16a34a; color: #fff; }
+.pill-upcoming   { background: var(--yellow); color: var(--dark); }
+.pill-sold       { background: rgba(255,255,255,.2); color: #fff; border: 1px solid rgba(255,255,255,.4); }
+.pill-pending    { background: #2563eb; color: #fff; }
+.pill-terminated { background: #6b7280; color: #fff; }
 
 .sold-banner {
   background: var(--dark2);
