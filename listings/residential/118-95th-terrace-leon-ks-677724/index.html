@@ -208,9 +208,68 @@
       <aside class="auction-sidebar">
         
     <div class="info-card">
-      <a href="/contact-us/" class="btn-bid" style="margin-bottom:10px;">Schedule a Showing &rarr;</a>
-      <a href="/listings/residential/" class="btn-all">&larr; All Residential</a>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we'll reach out to schedule a showing.</p>
+
+      <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
+        <i class="fas fa-phone"></i> (316) 321-7112
+      </a>
+
+      <div style="text-align:center;font-size:12px;color:var(--text-light);margin-bottom:14px;letter-spacing:.04em;text-transform:uppercase;">or</div>
+
+      <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
+        <input type="hidden" name="interest" value="118 95th Terrace, Leon, KS, 67074">
+        <input type="hidden" name="message" value="I am interested in the property at 118 95th Terrace, Leon, KS, 67074 (MLS# 677724). Please contact me to schedule a showing.">
+        <input type="text" name="name" placeholder="Your Name" required
+          style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
+        <input type="email" name="email" placeholder="Email Address" required
+          style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
+        <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
+          Contact Me
+        </button>
+        <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
+      </form>
+
+      <a href="/listings/residential/" class="btn-all" style="margin-top:14px;">&larr; All Residential</a>
     </div>
+
+    <script>
+    (function(){
+      var form = document.getElementById('sg-contact-form');
+      var msg  = document.getElementById('sg-form-msg');
+      if (!form) return;
+      form.addEventListener('submit', function(e){
+        e.preventDefault();
+        var btn = form.querySelector('button[type=submit]');
+        btn.disabled = true;
+        btn.textContent = 'Sending...';
+        var data = new FormData(form);
+        fetch('/submit', { method: 'POST', body: data })
+          .then(function(r){ return r.json(); })
+          .then(function(res){
+            if (res.ok) {
+              form.style.display = 'none';
+              msg.style.display = 'block';
+              msg.style.color = '#16a34a';
+              msg.textContent = "Got it! We'll be in touch soon.";
+            } else {
+              btn.disabled = false;
+              btn.textContent = 'Contact Me';
+              msg.style.display = 'block';
+              msg.style.color = '#dc2626';
+              msg.textContent = res.error || 'Something went wrong. Please try again.';
+            }
+          })
+          .catch(function(){
+            btn.disabled = false;
+            btn.textContent = 'Contact Me';
+            msg.style.display = 'block';
+            msg.style.color = '#dc2626';
+            msg.textContent = 'Something went wrong. Please try again.';
+          });
+      });
+    })();
+    </script>
       </aside>
 
     </div>
@@ -276,14 +335,7 @@
   </div>
 </section>
 
-<!-- CTA -->
-<section class="section section-dark" style="padding:48px 0;text-align:center;">
-  <div class="container">
-    <h2 style="font-size:24px;font-weight:800;color:#fff;margin:0 0 12px;">Ready to See This Property?</h2>
-    <p style="font-size:16px;color:rgba(255,255,255,.75);margin:0 0 24px;">Contact our team and we'll schedule a showing at your convenience.</p>
-    <a href="/contact-us/" class="btn-bid" style="font-size:16px;padding:14px 32px;">Contact Sundgren Realty &rarr;</a>
-  </div>
-</section>
+
 
 <!-- FOOTER -->
 </body>
