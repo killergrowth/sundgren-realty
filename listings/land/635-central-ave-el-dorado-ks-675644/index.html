@@ -43,10 +43,6 @@
 <section class="auction-hero listing-hero-solid">
   <div class="auction-hero-overlay"></div>
   <div class="auction-hero-content">
-    <div class="auction-hero-meta">
-      <span class="pill-active pill">Active</span>
-      <span class="pill" style="background:rgba(0,0,0,.45);color:#fff;border:1px solid rgba(255,255,255,.25);">Land</span>
-    </div>
     <h1 class="auction-hero-title">635 Central Ave, El Dorado, KS, 67042</h1>
     <p class="auction-hero-sub">$350,000</p>
   </div>
@@ -60,7 +56,7 @@
       <!-- Left Column -->
       <div class="auction-main">
 
-        
+        <div class="sg-photo-pill-wrap">
   <section class="photo-gallery-section" style="margin-bottom:24px;">
     <div class="sg-mosaic">
       <button class="sg-mosaic-hero" data-idx="0" aria-label="View photo 1" type="button">
@@ -116,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script>
+  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Land</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">

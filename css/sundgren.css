@@ -1118,6 +1118,22 @@ a:hover { color: var(--yellow-dark); }
   object-fit: cover; display: block;
   transition: transform .3s ease;
 }
+.sg-photo-pill-wrap { position: relative; }
+.sg-photo-pills {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  z-index: 10;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  pointer-events: none;
+}
+.sg-type-pill {
+  background: rgba(0,0,0,0.52) !important;
+  color: #fff !important;
+  border: 1px solid rgba(255,255,255,0.28) !important;
+}
 .sg-mosaic-hero:hover img { transform: scale(1.03); }
 .sg-mosaic-strip {
   display: flex;

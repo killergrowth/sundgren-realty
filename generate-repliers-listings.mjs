@@ -555,10 +555,6 @@ ${breadcrumb}
 <section class="auction-hero listing-hero-solid">
   <div class="auction-hero-overlay"></div>
   <div class="auction-hero-content">
-    <div class="auction-hero-meta">
-      <span class="${statusPillClass(resolved)} pill">${statusLabel(resolved)}</span>
-      <span class="pill" style="background:rgba(0,0,0,.45);color:#fff;border:1px solid rgba(255,255,255,.25);">${esc(typeInfo.label)}</span>
-    </div>
     <h1 class="auction-hero-title">${esc(fullAddr)}</h1>
     <p class="auction-hero-sub">${esc(price)}${specsLabel ? ' &nbsp;·&nbsp; ' + esc(specsLabel) : ''}</p>
   </div>
@@ -572,7 +568,7 @@ ${breadcrumb}
       <!-- Left Column -->
       <div class="auction-main">
 
-        ${photoGrid}
+        ${photoGrid ? `<div class="sg-photo-pill-wrap">${photoGrid}<div class="sg-photo-pills"><span class="${statusPillClass(resolved)} pill">${statusLabel(resolved)}</span><span class="pill sg-type-pill">${esc(typeInfo.label)}</span></div></div>` : ''}
 
         ${statsRow}
 
