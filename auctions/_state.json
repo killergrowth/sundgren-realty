@@ -1,5 +1,5 @@
 {
-  "lastFetch": "2026-09-01T18:12:21.878Z",
+  "lastFetch": "2026-09-01T23:04:58.213Z",
   "auctions": {
     "24096": {
       "slug": "test-auction-24096",
@@ -2829,9 +2829,10 @@
     },
     "166378": {
       "slug": "351-acres-near-douglass-in-butler-county-kansas-selling-in-4-166378",
-      "status": "accepting_bids",
+      "status": "complete",
       "name": "351 Acres Near Douglass in Butler County, Kansas Selling in 4 Tracts",
-      "generated": "2026-07-31T19:28:16.734Z"
+      "generated": "2026-07-31T19:28:16.734Z",
+      "updated": "2026-09-01T23:04:59.476Z"
     },
     "167478": {
       "slug": "16-guns-tons-of-ammo-accessories-old-ammo-boxes-el-dorado-ks-167478",
