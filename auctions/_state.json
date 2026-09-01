@@ -1,5 +1,5 @@
 {
-  "lastFetch": "2026-08-31T20:41:08.763Z",
+  "lastFetch": "2026-09-01T00:25:08.031Z",
   "auctions": {
     "24096": {
       "slug": "test-auction-24096",
@@ -2851,6 +2851,12 @@
       "name": "(2) 20+- Acre Land Tracts in Northeast Sedgwick County, Kansas",
       "generated": "2026-08-29T06:56:34.462Z"
     },
+    "168675": {
+      "slug": "240-acres-2-tracts-bird-creek-tillable-pasture-pond-trees-ho-168675",
+      "status": "pending",
+      "name": "240+- Acres, 2 Tracts – Bird Creek, Tillable, Pasture, Pond, Trees, House & Hunting – Butler County, Kansas",
+      "generated": "2026-09-01T00:25:09.437Z"
+    },
     "168676": {
       "slug": "535-acres-of-native-pasture-and-a-large-pond-near-el-dorado-168676",
       "status": "pending",
@@ -2862,6 +2868,12 @@
       "status": "pending",
       "name": "376+- Acres, 3 Tracts - Tillable, Pasture, Oil Income & Hunting – Cowley County, Kansas",
       "generated": "2026-08-30T16:12:09.640Z"
+    },
+    "168773": {
+      "slug": "203-n-3rd-st-towanda-ks-67144-5-bed-2-bath-classic-home-on-l-168773",
+      "status": "pending",
+      "name": "203 N 3rd St, Towanda KS 67144: 5 Bed 2 Bath Classic Home on Large Corner Lot",
+      "generated": "2026-09-01T00:25:09.436Z"
     }
   }
 }
