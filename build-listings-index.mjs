@@ -63,7 +63,7 @@ const cards = listings.map(l => {
   const addrStr  = streetOnly(l.address);
   const priceStr = price(l.price);
   return `        <a href="/listings/${l.type}/${l.slug}/"
-           class="listing-card"
+           class="listing-card${l.isSundgren ? ' listing-card--sundgren' : ''}"
            data-status="${sl.toLowerCase()}"
            data-type="${l.type}"
            data-city="${esc(city.toLowerCase())}"
@@ -109,7 +109,7 @@ const suggestions = [...new Set(
 const total       = listings.length;
 const residential = listings.filter(l => l.type === 'residential').length;
 const land        = listings.filter(l => l.type === 'land').length;
-const subhead     = `${total} active properties listed by Jeremy Sundgren in South Central Kansas — ${residential} residential, ${land} land.`;
+const subhead     = `${total} active South Central Kansas MLS listings — ${residential} residential, ${land} land. Sundgren Realty listings shown first.`;
 
 const html = `<!DOCTYPE html>
 <html lang="en">
