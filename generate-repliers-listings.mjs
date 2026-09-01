@@ -589,7 +589,7 @@ ${breadcrumb}
 
         <!-- Disclaimer -->
         <p style="font-size:12px;color:var(--text-light);line-height:1.7;margin-top:32px;border-top:1px solid var(--border);padding-top:16px;">
-          MLS# ${esc(listing.mlsNumber)}. Listed by ${esc(agentName)} with ${esc(SITE_NAME)}. Data provided by SCKMLS. All information deemed reliable but not guaranteed and should be independently verified. Subject to prior sale, change, or withdrawal.
+          MLS# ${esc(listing.mlsNumber)}. Listed by ${esc(agentName)}${listing._isSundgren ? ' with ' + esc(SITE_NAME) : ''}. Data provided by SCKMLS. All information deemed reliable but not guaranteed and should be independently verified. Subject to prior sale, change, or withdrawal.
         </p>
       </div>
 
