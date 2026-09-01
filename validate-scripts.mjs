@@ -1,17 +1,11 @@
 import fs from 'fs';
 import { execSync } from 'child_process';
 
-const pages = [
-  'dist/listings/index.html',
-  'dist/listings/residential/index.html',
-  'dist/listings/land/index.html',
-];
-
-// need to build first — just validate source files
 const sources = [
   'listings/index.html',
   'listings/residential/index.html',
   'listings/land/index.html',
+  'property-search.html',
 ];
 
 for (const src of sources) {
