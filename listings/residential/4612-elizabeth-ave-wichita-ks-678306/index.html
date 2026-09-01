@@ -33,20 +33,16 @@
     <nav aria-label="Breadcrumb" style="font-size:13px;color:var(--text-light);">
       <a href="/" style="color:var(--yellow-dark);">Home</a>
       <span style="margin:0 6px;">/</span>
-      <a href="/residential/" style="color:var(--yellow-dark);">Residential</a>
+      <a href="/listings/residential/" style="color:var(--yellow-dark);">Residential</a>
       <span style="margin:0 6px;">/</span>
       <span>4612 Elizabeth</span>
     </nav>
   </div>
 
 <!-- Hero -->
-<section class="auction-hero" style="background-image:url('https://cdn.repliers.io/southcentralkansas/IMG-678306_6707150926419592123.jpg');">
+<section class="auction-hero listing-hero-solid">
   <div class="auction-hero-overlay"></div>
   <div class="auction-hero-content">
-    <div class="auction-hero-meta">
-      <span class="pill-active pill">ACTIVE</span>
-      <span class="pill" style="background:rgba(255,255,255,.15);color:#fff;">Residential</span>
-    </div>
     <h1 class="auction-hero-title">4612 Elizabeth AVE, Wichita, KS, 67217</h1>
     <p class="auction-hero-sub">$210,000 &nbsp;·&nbsp; 4BD/2BA</p>
   </div>
@@ -60,7 +56,7 @@
       <!-- Left Column -->
       <div class="auction-main">
 
-        
+        <div class="sg-photo-pill-wrap">
   <section class="photo-gallery-section" style="margin-bottom:24px;">
     <div class="sg-mosaic">
       <button class="sg-mosaic-hero" data-idx="0" aria-label="View photo 1" type="button">
@@ -105,7 +101,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script>
+  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -146,8 +142,8 @@
       <p>Completely remodeled and ready to impress! Welcome to 4612 S Elizabeth Ave, a beautifully updated 4-bedroom, 1.5-bath bi-level offering fresh style, plenty of space, and a layout designed for everyday living. Step inside to find updated flooring, trim, doors, and finishes throughout, along with a refreshed kitchen that gives the home a clean, modern feel. The lower level provides additional living space with endless possibilities—movie nights, a game room, home office, or extra room to spread out. Outside, the brand-new deck is ready for summer evenings, weekend cookouts, and entertaining overlooking the fenced backyard. With the updates already done, all that’s left to do is move in and make it yours. Don’t wait—schedule your private showing today!</p>
     </div>
           
-  <div class="desc-section" style="margin-top:24px;">
-    <h3 class="desc-section-title"><i class="fas fa-list-ul"></i> Property Features</h3>
+  <div class="info-card" style="margin-top:24px;">
+    <h4 style="margin:0 0 16px;font-size:15px;display:flex;align-items:center;gap:8px;"><i class="fas fa-list-ul" style="color:var(--yellow-dark);"></i> Property Features</h4>
     <div class="feat-grid">
     <div class="feat-cell">
       <i class="fas fa-fire"></i>
@@ -171,9 +167,14 @@
     </div>
     </div>
   </div>
-          
-  <div class="desc-section" style="margin-top:24px;">
-    <h3 class="desc-section-title"><i class="fas fa-map-marker-alt"></i> Location</h3>
+        </div>
+
+        <!-- Map + Contact row -->
+        <div class="sg-map-contact-row">
+          <div class="sg-map-col">
+            
+  <div class="info-card" style="height:100%;box-sizing:border-box;">
+    <h4 style="margin:0 0 14px;font-size:15px;display:flex;align-items:center;gap:8px;"><i class="fas fa-map-marker-alt" style="color:var(--yellow-dark);"></i> Location</h4>
     <div id="sg-map" style="height:300px;border-radius:10px;overflow:hidden;border:1px solid var(--border);"></div>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -185,6 +186,71 @@
     })();
     </script>
   </div>
+          </div>
+          <div class="sg-contact-col">
+            
+    <div class="info-card info-card--sticky">
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we'll reach out to schedule a showing.</p>
+
+      <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
+        <i class="fas fa-phone"></i> (316) 321-7112
+      </a>
+
+      <div style="text-align:center;font-size:12px;color:var(--text-light);margin-bottom:14px;letter-spacing:.04em;text-transform:uppercase;">or</div>
+
+      <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
+        <input type="hidden" name="interest" value="4612 Elizabeth AVE, Wichita, KS, 67217">
+        <input type="hidden" name="message" value="I am interested in the property at 4612 Elizabeth AVE, Wichita, KS, 67217 (MLS# 678306). Please contact me to schedule a showing.">
+        <input type="text" name="name" placeholder="Your Name" required
+          style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
+        <input type="email" name="email" placeholder="Email Address" required
+          style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
+        <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
+          Contact Me About This Listing
+        </button>
+        <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
+      </form>
+    </div>
+
+    <script>
+    (function(){
+      var form = document.getElementById('sg-contact-form');
+      var msg  = document.getElementById('sg-form-msg');
+      if (!form) return;
+      form.addEventListener('submit', function(e){
+        e.preventDefault();
+        var btn = form.querySelector('button[type=submit]');
+        btn.disabled = true;
+        btn.textContent = 'Sending...';
+        var data = new FormData(form);
+        fetch('/submit', { method: 'POST', body: data })
+          .then(function(r){ return r.json(); })
+          .then(function(res){
+            if (res.ok) {
+              form.style.display = 'none';
+              msg.style.display = 'block';
+              msg.style.color = '#16a34a';
+              msg.textContent = "Got it! We'll be in touch soon.";
+            } else {
+              btn.disabled = false;
+              btn.textContent = 'Contact Me';
+              msg.style.display = 'block';
+              msg.style.color = '#dc2626';
+              msg.textContent = res.error || 'Something went wrong. Please try again.';
+            }
+          })
+          .catch(function(){
+            btn.disabled = false;
+            btn.textContent = 'Contact Me';
+            msg.style.display = 'block';
+            msg.style.color = '#dc2626';
+            msg.textContent = 'Something went wrong. Please try again.';
+          });
+      });
+    })();
+    </script>
+          </div>
         </div>
 
         <!-- Disclaimer -->
@@ -195,26 +261,7 @@
 
       <!-- Right Column (Sidebar) -->
       <aside class="auction-sidebar">
-        
-    <div class="info-card">
-      <span class="pill-active pill" style="display:inline-block;margin-bottom:16px;">ACTIVE</span>
-      <h4>Listing Details</h4>
-      <ul class="meta-list">
-        <li><i class="fas fa-tag"></i><div><span class="mlabel">Price</span>$210,000</div></li>
-        <li><i class="fas fa-bed"></i><div><span class="mlabel">Bedrooms</span>4</div></li>
-        <li><i class="fas fa-bath"></i><div><span class="mlabel">Bathrooms</span>2</div></li>
-        <li><i class="fas fa-ruler-combined"></i><div><span class="mlabel">Sq Ft</span>1,311</div></li>
-        <li><i class="fas fa-map"></i><div><span class="mlabel">Acres</span>0.20</div></li>
-        <li><i class="fas fa-calendar-alt"></i><div><span class="mlabel">Year Built</span>1986</div></li>
-        <li><i class="fas fa-building"></i><div><span class="mlabel">Style</span>Single Family Residence</div></li>
-        <li><i class="fas fa-map-marker-alt"></i><div><span class="mlabel">Location</span>Wichita, KS</div></li>
-        <li><i class="fas fa-hashtag"></i><div><span class="mlabel">MLS#</span>678306</div></li>
-        <li><i class="fas fa-phone"></i><div><span class="mlabel">Questions?</span><a href="tel:3163217112" style="color:var(--yellow-dark);">316-321-7112</a></div></li>
-      </ul>
-      <p style="font-size:12px;color:var(--text-light);margin:12px 0 16px;font-style:italic;">Listed by Amanda Zorn</p>
-      <a href="/contact-us/" class="btn-bid" style="margin-bottom:10px;">Schedule a Showing &rarr;</a>
-      <a href="/residential/" class="btn-all">&larr; All Residential</a>
-    </div>
+        <a href="/listings/residential/" class="btn-all">&larr; All Residential</a>
       </aside>
 
     </div>
@@ -231,31 +278,45 @@
     </div>
     <div class="listing-grid">
       
-      <a href="/listings/residential/10-flanigan-dr-augusta-ks-678247/" class="listing-card">
-        <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-678247_6705519071026337900.jpg" alt="10 Flanigan Dr, Augusta, KS, 67010" loading="lazy">
+      <a href="/listings/residential/5747-20th-st-el-dorado-ks-672300/" class="listing-card">
+        <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-672300_6709676626880812299.jpg" alt="5747 20th St, El Dorado, KS, 67042" loading="lazy">
         <div class="listing-card-body">
           <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
             <span class="listing-card-badge" style="background:#22c55e;">Active</span>
             <span class="listing-card-badge" style="background:#0ea5e9;">Residential</span>
           </div>
-          <p class="listing-card-address">10 Flanigan Dr</p>
-          <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Augusta, KS</p>
-          <p class="listing-card-meta"><i class="fas fa-ruler-combined"></i>5 Bd · 3 Ba · 3,126 sq ft</p>
-          <p class="listing-card-price">$400,000</p>
+          <p class="listing-card-address">5747 20th St</p>
+          <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>El Dorado, KS</p>
+          <p class="listing-card-meta"><i class="fas fa-ruler-combined"></i>4 Bd · 4 Ba · 5,467 sq ft</p>
+          <p class="listing-card-price">$1,650,000</p>
           <span class="listing-card-more">View Details &rarr;</span>
         </div>
       </a>
-      <a href="/listings/residential/1100-forrest-glenn-dr-arkansas-city-ks-678095/" class="listing-card">
-        <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-678095_6702377993051079323.jpg" alt="1100 Forrest Glenn DR, Arkansas City, KS, 67005" loading="lazy">
+      <a href="/listings/residential/10608-90th-st-augusta-ks-676431/" class="listing-card">
+        <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-676431_6706346247435258080.jpg" alt="10608 90th ST, Augusta, KS, 67010" loading="lazy">
         <div class="listing-card-body">
           <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
             <span class="listing-card-badge" style="background:#22c55e;">Active</span>
             <span class="listing-card-badge" style="background:#0ea5e9;">Residential</span>
           </div>
-          <p class="listing-card-address">1100 Forrest Glenn DR</p>
-          <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Arkansas City, KS</p>
-          <p class="listing-card-meta"><i class="fas fa-ruler-combined"></i>5 Bd · 3 Ba · 2,506 sq ft</p>
-          <p class="listing-card-price">$304,900</p>
+          <p class="listing-card-address">10608 90th ST</p>
+          <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Augusta, KS</p>
+          <p class="listing-card-meta"><i class="fas fa-ruler-combined"></i>4 Bd · 3 Ba · 2,904 sq ft</p>
+          <p class="listing-card-price">$740,000</p>
+          <span class="listing-card-more">View Details &rarr;</span>
+        </div>
+      </a>
+      <a href="/listings/residential/118-95th-terrace-leon-ks-677724/" class="listing-card">
+        <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-677724_6703840748336612397.jpg" alt="118 95th Terrace, Leon, KS, 67074" loading="lazy">
+        <div class="listing-card-body">
+          <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+            <span class="listing-card-badge" style="background:#22c55e;">Active</span>
+            <span class="listing-card-badge" style="background:#0ea5e9;">Residential</span>
+          </div>
+          <p class="listing-card-address">118 95th Terrace</p>
+          <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Leon, KS</p>
+          <p class="listing-card-meta"><i class="fas fa-ruler-combined"></i>2 Bd · 3 Ba · 2,838 sq ft</p>
+          <p class="listing-card-price">$495,000</p>
           <span class="listing-card-more">View Details &rarr;</span>
         </div>
       </a>
@@ -266,14 +327,7 @@
   </div>
 </section>
 
-<!-- CTA -->
-<section class="section section-dark" style="padding:48px 0;text-align:center;">
-  <div class="container">
-    <h2 style="font-size:24px;font-weight:800;color:#fff;margin:0 0 12px;">Ready to See This Property?</h2>
-    <p style="font-size:16px;color:rgba(255,255,255,.75);margin:0 0 24px;">Contact our team and we'll schedule a showing at your convenience.</p>
-    <a href="/contact-us/" class="btn-bid" style="font-size:16px;padding:14px 32px;">Contact Sundgren Realty &rarr;</a>
-  </div>
-</section>
+
 
 <!-- FOOTER -->
 </body>

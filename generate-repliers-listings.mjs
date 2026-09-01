@@ -630,16 +630,43 @@ async function fetchAllPages(params) {
   return allListings;
 }
 
+// Sundgren agent names — used to tag "our" listings across the full board
+const SUNDGREN_AGENTS = new Set([
+  'Ashley Chastain','Jeremy Sundgren','Kelsey Sundgren','Ashleigh Casper',
+  'Audrey Reese','Deanne Woodard','Phillip Solorio','Steven Hall',
+  'Tamara Cooley','Yousef Jesri','Barrett Simon','Erin Jones',
+  'Rick Remsberg','Joe Sundgren','Susan Sundgren-Worrell',
+]);
+
 async function fetchListings() {
-  console.log('\n  Fetching active listings (status=A)...');
-  const active = await fetchAllPages({ officeId: '6701463544931', status: 'A' });
+  console.log('\n  Fetching ALL active SCK MLS listings (boardId=254, status=A)...');
+  const active = await fetchAllPages({ boardId: 254, status: 'A' });
   console.log(`  -> ${active.length} active`);
 
-  console.log('  Fetching unavailable listings (status=U)...');
-  const unavail = await fetchAllPages({ officeId: '6701463544931', status: 'U' });
+  console.log('  Fetching unavailable/pending listings (boardId=254, status=U)...');
+  const unavail = await fetchAllPages({ boardId: 254, status: 'U' });
   console.log(`  -> ${unavail.length} unavailable (pending/terminated)`);
 
-  return [...active, ...unavail];
+  const all = [...active, ...unavail];
+
+  // Tag Sundgren listings by agent name
+  all.forEach(l => {
+    const agentName = l.agents && l.agents[0] ? l.agents[0].name : '';
+    l._isSundgren = SUNDGREN_AGENTS.has(agentName);
+    l._agentName  = agentName;
+    l._agentPhone = l.agents && l.agents[0] && l.agents[0].phones ? l.agents[0].phones[0] : '';
+    l._agentEmail = l.agents && l.agents[0] && l.agents[0].emails ? l.agents[0].emails[0] : '';
+  });
+
+  // Sort: Sundgren first, then everyone else by price desc
+  all.sort((a, b) => {
+    if (a._isSundgren && !b._isSundgren) return -1;
+    if (!a._isSundgren && b._isSundgren) return 1;
+    return (b.listPrice || 0) - (a.listPrice || 0);
+  });
+
+  console.log(`  -> ${all.filter(l => l._isSundgren).length} Sundgren listings pinned first`);
+  return all;
 }
 
 // ── Write Page ────────────────────────────────────────────────────────────────
@@ -687,8 +714,22 @@ async function main() {
       sqft: listing.details.sqft,
       acres: listing.lot ? listing.lot.acres : null,
       status: listing.status,
+      lastStatus: listing.lastStatus || '',
       image: listing.images && listing.images.length ? imgUrl(listing.images[0]) : '',
       style: listing.details.style || '',
+      isSundgren: listing._isSundgren || false,
+      agentName:  listing._agentName  || '',
+      agentPhone: listing._agentPhone || '',
+      agentEmail: listing._agentEmail || '',
+    });
+  }
+
+  // Sort: Sundgren listings first, then everyone else by price desc
+  for (const type of Object.keys(index)) {
+    index[type].sort((a, b) => {
+      if (a.isSundgren && !b.isSundgren) return -1;
+      if (!a.isSundgren && b.isSundgren) return 1;
+      return (b.price || 0) - (a.price || 0);
     });
   }
 
