@@ -1,0 +1,54 @@
+name: Refresh Listings
+
+on:
+  schedule:
+    # Every 3 hours
+    - cron: '0 */3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Fetch fresh listings from Repliers API
+        run: node generate-repliers-listings.mjs
+        env:
+          REPLIERS_API_KEY: ${{ secrets.REPLIERS_API_KEY }}
+
+      - name: Rebuild listing index pages
+        run: |
+          node build-listings-index.mjs
+          node build-type-index-pages.mjs
+          node build-property-search.mjs
+
+      - name: Build full site
+        run: node build.js
+
+      - name: Deploy to Cloudflare Pages (staging)
+        run: npx wrangler pages deploy ./dist --project-name sundgren-realty --branch staging --commit-dirty=true
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: 27cafbbee6f8e1db0d9499405d4755c1
+
+      - name: Deploy to Cloudflare Pages (main)
+        run: npx wrangler pages deploy ./dist --project-name sundgren-realty --branch main --commit-dirty=true
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: 27cafbbee6f8e1db0d9499405d4755c1
+
+      - name: Commit updated listing data
+        run: |
+          git config user.name "KillerGrowth"
+          git config user.email "notifications@killergrowth.com"
+          git add data/repliers-listings.json data/all-listings.json listings/ property-search.html
+          git diff --staged --quiet || git commit -m "chore: refresh listings data [skip ci]"
+          git push
