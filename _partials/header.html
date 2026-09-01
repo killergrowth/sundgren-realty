@@ -76,9 +76,14 @@
   // Highlight active nav item
   var path = window.location.pathname;
   document.querySelectorAll('.main-nav li a, .nav-dropdown li a').forEach(function(a) {
-    if (a.hostname === window.location.hostname && path !== '/' && a.getAttribute('href') && a.getAttribute('href') !== '/' && path.startsWith(a.getAttribute('href'))) {
+    var href = a.getAttribute('href');
+    if (!href || href === '/' || a.hostname !== window.location.hostname) return;
+    // Use exact match for index-style paths that are prefixes of others (e.g. /listings/)
+    // Use startsWith only for paths that won't greedily match child pages
+    var isExact = path === href || path === href.replace(/\/$/, '') + '/';
+    var isPrefix = !isExact && path.startsWith(href) && href !== '/listings/';
+    if (isExact || isPrefix) {
       a.classList.add('active');
-      // Also mark parent dropdown item active
       var parent = a.closest('.has-dropdown');
       if (parent) parent.querySelector(':scope > a').classList.add('active');
     }
