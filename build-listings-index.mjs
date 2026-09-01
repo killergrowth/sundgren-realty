@@ -109,7 +109,7 @@ const suggestions = [...new Set(
 const total       = listings.length;
 const residential = listings.filter(l => l.type === 'residential').length;
 const land        = listings.filter(l => l.type === 'land').length;
-const subhead     = `${total} active South Central Kansas MLS listings — ${residential} residential, ${land} land. Sundgren Realty listings shown first.`;
+const subhead     = `${total} active South Central Kansas MLS listings - ${residential} residential, ${land} land.`;
 
 const html = `<!DOCTYPE html>
 <html lang="en">
