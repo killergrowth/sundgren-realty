@@ -2057,9 +2057,11 @@ document.addEventListener('DOMContentLoaded', function(){
     }).slice(0, 7);
     if (!matches.length) { hideAutocomplete(); return; }
     acList.innerHTML = matches.map(function(m) {
-      // Bold the matching portion
       var li2 = m.toLowerCase().indexOf(ql);
-      var highlighted = li2 >= 0 ? m.slice(0,li2) + "<mark>" + m.slice(li2,li2+ql.length) + "</mark>" + m.slice(li2+ql.length) : m; data-value="' + esc(m) + '">' + highlighted + '</li>';
+      var highlighted = li2 >= 0
+        ? m.slice(0, li2) + '<mark>' + m.slice(li2, li2 + ql.length) + '</mark>' + m.slice(li2 + ql.length)
+        : m;
+      return '<li data-value="' + esc(m) + '">' + highlighted + '</li>';
     }).join('');
     acList.querySelectorAll('li').forEach(function(li) {
       li.addEventListener('mousedown', function(e) {
