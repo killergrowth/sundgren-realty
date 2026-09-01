@@ -111,7 +111,14 @@ function buildPage({ type, title, desc, crumbLabel, canonicalPath, listings }) {
       cityOf(l).trim(),
       statusLabel(l),
       l.type.charAt(0).toUpperCase() + l.type.slice(1),
-    ]).filter(Boolean)
+    ]).filter(v => {
+      if (!v) return false;
+      // Skip slug-style strings (hyphens between alphanumeric segments)
+      if (/^[a-z0-9]+-[a-z0-9]+-[a-z0-9]+/i.test(v)) return false;
+      // Skip HTML entities left from escaping
+      if (v.includes('&amp;') || v.includes('&lt;')) return false;
+      return true;
+    })
   )].sort();
 
   const heroLabel = type === 'residential' ? 'Residential Listings'
@@ -377,8 +384,10 @@ ${cards}
 
 <!-- FOOTER -->
 
+
 <script>
-(function(){
+document.addEventListener('DOMContentLoaded', function(){
+  function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
   // ── Autocomplete data ──────────────────────────────────────────────────────
   var SUGGESTIONS = ${JSON.stringify(suggestions)};
 
@@ -525,8 +534,9 @@ ${cards}
   // ── Init ───────────────────────────────────────────────────────────────────
   updatePillCounts();
   applyFilters();
-})();
+}); // end DOMContentLoaded
 </script>
+
 </body>
 </html>`;
 }

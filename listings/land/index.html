@@ -1955,10 +1955,12 @@
 
 <!-- FOOTER -->
 
+
 <script>
-(function(){
+document.addEventListener('DOMContentLoaded', function(){
+  function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
   // ── Autocomplete data ──────────────────────────────────────────────────────
-  var SUGGESTIONS = ["0 161st St","0 Butler Rd","0 Creekside Cr","0 Mulberry Road","0 Parallel St","0 Purity Springs Rd","0 Timber Circle","00 Creekside Cr","00 Hwy 54","00 Satchell Creek Rd","000 140th St","000 51st Road","000 Hwy 54","000 MacArthur RD","000 Parallel","000-143rd-st-e-valley-center-ks-678080","000-143rd-st-e-valley-center-ks-678082","000-143rd-st-east-valley-center-ks-678311","000-200th-st-douglass-ks-676819","000-hunter-rd-douglass-ks-676820","000-quartz-dr-lincoln-ks-677564","000-shumway-rd-douglass-ks-676823","0000 119th St W ST","0000 119th St. S","0000 183rd St W ST","0000 199th St W","0000 37th St N","0000 77th St &amp; Hoover/West","0000 Cr","0000 Meridian","00000 222nd Rd","00000 36th","00000 383rd","00000 7th ST","00000 Barker","00000 County Line Rd","00000 Cr","00000 Payne Ct Lot 2 AVE","10035 Diamond Rd","10100 Rock Rd","1133 Flint Hills National Pkwy","11467 Shore Dr","1209 Bluestem Ct","1212-18th-st-n-st-wichita-ks-678140","12155 Hwy 54","1219 Flint Hills National Pkwy","1406 Flint Hills National Pkwy","1501 101st St N St","1518 1st Street N ST","1524 Flint Hills National Pkwy","1610-34th-st-n-st-wichita-ks-678193","1782 Indianola Rd","182nd","2045-parkridge-ct-wichita-ks-678120","20611 Kellogg St","222 Millheisler Rd","2412 Doris Cir","28719 Harry St","3.67 +/-Acres W. Central Ave &amp; N. Tyler Rd","413 Hwy 54","4583 Portwest St","4608 Butler Rd","5500 MacArthur","5900 Meridian","635 Central Ave","7501 53rd St N St","809 Hwy 54","8227-rock-rd-walton-ks-676747","9815 Rock Rd","9950 Rock Rd","9975 Rock Rd","Active","Andover","Augusta","Benton","Cheney","Douglass","E of Butler Rd &amp; SW 50th St","El Dorado","Florence","Garden Plain","Goddard","Haysville","Hillsboro","LOT 7 Village Circle","Land","Lehigh","Maize","Mulvane","N &amp; W of Butler Rd and SW 30th St","Newton","Rosalia","Rose Hill","SE/c of 55th St S &amp; S West St","TBD Meridian","TBD Simpson &amp; Ames Ave","Valley Center","Wichita","Winfield"];
+  var SUGGESTIONS = ["0 161st St","0 Butler Rd","0 Creekside Cr","0 Mulberry Road","0 Parallel St","0 Purity Springs Rd","0 Timber Circle","00 Creekside Cr","00 Hwy 54","00 Satchell Creek Rd","000 140th St","000 51st Road","000 Hwy 54","000 MacArthur RD","000 Parallel","0000 119th St W ST","0000 119th St. S","0000 183rd St W ST","0000 199th St W","0000 37th St N","0000 Cr","0000 Meridian","00000 222nd Rd","00000 36th","00000 383rd","00000 7th ST","00000 Barker","00000 County Line Rd","00000 Cr","00000 Payne Ct Lot 2 AVE","10035 Diamond Rd","10100 Rock Rd","1133 Flint Hills National Pkwy","11467 Shore Dr","1209 Bluestem Ct","12155 Hwy 54","1219 Flint Hills National Pkwy","1406 Flint Hills National Pkwy","1501 101st St N St","1518 1st Street N ST","1524 Flint Hills National Pkwy","1782 Indianola Rd","182nd","20611 Kellogg St","222 Millheisler Rd","2412 Doris Cir","28719 Harry St","413 Hwy 54","4583 Portwest St","4608 Butler Rd","5500 MacArthur","5900 Meridian","635 Central Ave","7501 53rd St N St","809 Hwy 54","9815 Rock Rd","9950 Rock Rd","9975 Rock Rd","Active","Andover","Augusta","Benton","Cheney","Douglass","El Dorado","Florence","Garden Plain","Goddard","Haysville","Hillsboro","LOT 7 Village Circle","Land","Lehigh","Maize","Mulvane","Newton","Rosalia","Rose Hill","TBD Meridian","Valley Center","Wichita","Winfield"];
 
   var searchInput  = document.getElementById('listing-search');
   var acList       = document.getElementById('search-autocomplete');
@@ -2103,7 +2105,8 @@
   // ── Init ───────────────────────────────────────────────────────────────────
   updatePillCounts();
   applyFilters();
-})();
+}); // end DOMContentLoaded
 </script>
+
 </body>
 </html>
