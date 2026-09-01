@@ -11,14 +11,14 @@
   <link rel="apple-touch-icon" href="/images/favicon.png">
   <meta property="og:title" content="3240 Country Club Pl, Wichita, KS, 67208 – 4BD/2BA | Sundgren Realty &amp; Auction">
   <meta property="og:description" content="Residential property at 3240 Country Club Pl, Wichita, KS, 67208. 3240 E Country Club Place, Wichita Online Pre-Bidding Opens: Saturday, September 19, 2026...">
-  <meta property="og:image" content="https://sundgrenrealty.com/images/og-image.jpg">
+  <meta property="og:image" content="https://cdn.repliers.io/southcentralkansas/IMG-676326_6700060538912711331.jpg">
   <meta property="og:url" content="https://sundgrenrealty.com/listings/residential/3240-country-club-pl-wichita-ks-676326/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Sundgren Realty &amp; Auction">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="3240 Country Club Pl, Wichita, KS, 67208 – 4BD/2BA | Sundgren Realty &amp; Auction">
   <meta name="twitter:description" content="Residential property at 3240 Country Club Pl, Wichita, KS, 67208. 3240 E Country Club Place, Wichita Online Pre-Bidding Opens: Saturday, September 19, 2026...">
-  <meta name="twitter:image" content="https://sundgrenrealty.com/images/og-image.jpg">
+  <meta name="twitter:image" content="https://cdn.repliers.io/southcentralkansas/IMG-676326_6700060538912711331.jpg">
   <meta name="robots" content="noindex, nofollow">
   <!-- SCHEMA:BreadcrumbList -->
   <!-- SCHEMA:WebPage -->
@@ -56,7 +56,63 @@
       <!-- Left Column -->
       <div class="auction-main">
 
+        <div class="sg-photo-pill-wrap">
+  <section class="photo-gallery-section" style="margin-bottom:24px;">
+    <div class="sg-mosaic">
+      <button class="sg-mosaic-hero" data-idx="0" aria-label="View photo 1" type="button">
+        <img src="https://cdn.repliers.io/southcentralkansas/IMG-676326_6700060538912711331.jpg" alt="Primary property photo" loading="eager">
+      </button>
+      <div class="sg-mosaic-strip">
+      <button class="sg-mosaic-thumb" data-idx="1" aria-label="View photo 2" type="button">
+        <img src="https://cdn.repliers.io/southcentralkansas/IMG-676326_6701110981959926618.jpg" alt="Property photo 2" loading="lazy">
         
+      </button>
+      <button class="sg-mosaic-thumb" data-idx="2" aria-label="View photo 3" type="button">
+        <img src="https://cdn.repliers.io/southcentralkansas/IMG-676326_6707397736154727043.jpg" alt="Property photo 3" loading="lazy">
+        
+      </button>
+      <button class="sg-mosaic-thumb" data-idx="3" aria-label="View photo 4" type="button">
+        <img src="https://cdn.repliers.io/southcentralkansas/IMG-676326_6705822201642396203.jpg" alt="Property photo 4" loading="lazy">
+        <div class="sg-mosaic-more" aria-hidden="true">+16 more</div>
+      </button>
+      </div>
+    </div>
+    <div class="sg-gallery-bar">
+      <button class="sg-gallery-all-btn" id="sg-view-all" type="button">
+        <i class="fas fa-images"></i> View all 20 photos
+      </button>
+    </div>
+  </section>
+
+  <div id="sg-lightbox" role="dialog" aria-modal="true" aria-label="Photo gallery">
+    <button id="sg-lightbox-close" aria-label="Close">&times;</button>
+    <button id="sg-lightbox-prev" aria-label="Previous">&#8249;</button>
+    <img id="sg-lightbox-img" src="" alt="Property photo">
+    <button id="sg-lightbox-next" aria-label="Next">&#8250;</button>
+    <span id="sg-lightbox-counter"></span>
+  </div>
+
+  <script>
+  (function(){
+    var srcs = ["https://cdn.repliers.io/southcentralkansas/IMG-676326_6700060538912711331.jpg","https://cdn.repliers.io/southcentralkansas/IMG-676326_6701110981959926618.jpg","https://cdn.repliers.io/southcentralkansas/IMG-676326_6707397736154727043.jpg","https://cdn.repliers.io/southcentralkansas/IMG-676326_6705822201642396203.jpg","https://cdn.repliers.io/southcentralkansas/IMG-676326_6704636078494215561.jpg","https://cdn.repliers.io/southcentralkansas/IMG-676326_6705562840132204360.jpg","https://cdn.repliers.io/southcentralkansas/IMG-676326_6708104475250138844.jpg","https://cdn.repliers.io/southcentralkansas/IMG-676326_6708721122808977916.jpg","https://cdn.repliers.io/southcentralkansas/IMG-676326_6706278786293091327.jpg","https://cdn.repliers.io/southcentralkansas/IMG-676326_6701062679328721269.jpg","https://cdn.repliers.io/southcentralkansas/IMG-676326_6705637225601685156.jpg","https://cdn.repliers.io/southcentralkansas/IMG-676326_6701311394448991159.jpg","https://cdn.repliers.io/southcentralkansas/IMG-676326_6707163892528397027.jpg","https://cdn.repliers.io/southcentralkansas/IMG-676326_6709317726257414320.jpg","https://cdn.repliers.io/southcentralkansas/IMG-676326_6707289075010957072.jpg","https://cdn.repliers.io/southcentralkansas/IMG-676326_6703770290933875018.jpg","https://cdn.repliers.io/southcentralkansas/IMG-676326_6701237111721679113.jpg","https://cdn.repliers.io/southcentralkansas/IMG-676326_6704749221533239659.jpg","https://cdn.repliers.io/southcentralkansas/IMG-676326_6702500842550022350.jpg","https://cdn.repliers.io/southcentralkansas/IMG-676326_6707261147534455064.jpg"];
+    var lb = document.getElementById('sg-lightbox');
+    var lbImg = document.getElementById('sg-lightbox-img');
+    var lbCtr = document.getElementById('sg-lightbox-counter');
+    var cur = 0;
+    function open(i){ cur=i; lbImg.src=srcs[i]; lbCtr.textContent=(i+1)+' / '+srcs.length; lb.classList.add('active'); document.body.style.overflow='hidden'; }
+    function close(){ lb.classList.remove('active'); document.body.style.overflow=''; }
+    document.querySelectorAll('.sg-mosaic-hero, .sg-mosaic-thumb').forEach(function(btn){
+      btn.addEventListener('click',function(){ open(parseInt(btn.dataset.idx,10)); });
+    });
+    var viewAll = document.getElementById('sg-view-all');
+    if (viewAll) viewAll.addEventListener('click', function(){ open(0); });
+    document.getElementById('sg-lightbox-close').addEventListener('click',close);
+    document.getElementById('sg-lightbox-prev').addEventListener('click',function(){ open((cur-1+srcs.length)%srcs.length); });
+    document.getElementById('sg-lightbox-next').addEventListener('click',function(){ open((cur+1)%srcs.length); });
+    lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
+    document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
+  })();
+  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -86,7 +142,7 @@
     </div>
   </div>
 
-        <div style="margin-top:0;">
+        <div style="margin-top:32px;">
           <div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>3240 E Country Club Place, Wichita Online Pre-Bidding Opens: Saturday, September 19, 2026, at 2:00 PM Live Onsite &amp; Simulcast Finale: Saturday, September 26, 2026, at 2:00 PM Don&#39;t miss this incredible opportunity to buy into one of Wichita&#39;s most established character neighborhoods. Located at 3240 E Country Club Place, this 1910-built home offers 4 bedrooms, 2 bathrooms, a classic fireplace, a partially finished basement, and a detached garage. Whether you are looking for a high-demand rental near WSU and Wesley Medical Center, or a classic restoration project in the College Hill area, the potential here is unmatched! AUCTION DISCLOSURE: THIS PROPERTY IS BEING OFFERED VIA LIVE AUCTION on September 26, 2026, with ONLINE BIDDING available. TOTAL PURCHASE PRICE WILL INCLUDE A 10% BUYER’S PREMIUM WHICH WILL BE ADDED TO THE FINAL BID. This is a Reserve Auction. Pre-auction bidding will be allowed online starting September 19, 2026, at 2:00 PM. Bidding will end as a LIVE Onsite Auction, simulcast online starting at 11:00 AM on September 26, 2026. The property is being sold &quot;AS-IS, WHERE-IS&quot; and without warranty or guarantee of any kind. Each potential buyer is encouraged to perform his/her own independent inspections, investigations and due diligence concerning the described property. It is the buyer’s responsibility to have any and all desired inspections completed prior to bidding. Descriptions are believed to be accurate but are not guaranteed. All announcements made the day of sale supersede any and all printed material. The seller is offering no other terms or contingencies. You&#39;re encouraged to seek financing, just understand your bidding is not contingent on financing or inspections. A non-refundable deposit of $2,500 is due the day of auction and upon the execution of the purchase agreement. Deposit may be in the form of a Cashier&#39;s Check, Personal Check, ACH Deposit or Cash.</p>
