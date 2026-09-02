@@ -194,13 +194,22 @@ function main() {
 
   fs.mkdirSync(DIST, { recursive: true });
 
+  // Load Sundgren featured listings data for homepage injection
+  const allListings = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'all-listings.json'), 'utf8'));
+  const sundgrenFeatured = allListings.filter(l => l.isSundgren && l.status === 'A' && l.image);
+  const sundgrenFeaturedJSON = JSON.stringify(sundgrenFeatured);
+
   // Static pages
   let count = 0;
   for (const [src, dest] of PAGES) {
     const srcPath  = path.join(ROOT, src);
     const destPath = path.join(DIST, dest);
     if (!fs.existsSync(srcPath)) { console.warn(`  SKIP (missing): ${src}`); continue; }
-    const html = assemble(read(srcPath), header, footer);
+    let html = assemble(read(srcPath), header, footer);
+    // Inject Sundgren featured data into homepage
+    if (src === 'index.html') {
+      html = html.replace('__SUNDGREN_FEATURED__', sundgrenFeaturedJSON);
+    }
     write(destPath, html);
     console.log(`  Built: ${dest}`);
     count++;

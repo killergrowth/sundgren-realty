@@ -27,13 +27,21 @@
   <link rel="stylesheet" href="/css/sundgren.css">
 
   <style>
-    /* ── Homepage-only: hide top-bar and nav on load, reveal on scroll ── */
+    /* ── Homepage-only: fix nav off-screen on load so it takes no space ── */
     body.home-page .top-bar,
     body.home-page .site-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
       opacity: 0;
       pointer-events: none;
       transform: translateY(-100%);
       transition: opacity 0.35s ease, transform 0.35s ease;
+      z-index: 1000;
+    }
+    body.home-page .site-header {
+      z-index: 1001;
     }
     body.home-page.nav-visible .top-bar,
     body.home-page.nav-visible .site-header {
@@ -41,7 +49,7 @@
       pointer-events: auto;
       transform: translateY(0);
     }
-    /* Logo badge stays visible at all times, rides above everything */
+    /* Logo badge stays visible at all times, rides above nav */
     body.home-page .logo-badge {
       opacity: 1 !important;
       pointer-events: auto !important;
@@ -101,32 +109,32 @@
     /* headline */
     .home-hero-title {
       font-family: 'Trajan Pro', Georgia, serif;
-      font-size: clamp(32px, 5.5vw, 68px);
+      font-size: clamp(26px, 3.6vw, 46px);
       font-weight: 700;
       color: #fff;
       text-transform: uppercase;
       letter-spacing: 0.04em;
-      line-height: 1.1;
-      margin: 0 0 44px;
+      line-height: 1.15;
+      margin: 0 0 36px;
       text-shadow: 0 3px 18px rgba(0,0,0,0.45);
     }
 
     /* button row */
     .home-hero-btns {
       display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
+      flex-wrap: nowrap;
+      gap: 10px;
       justify-content: center;
       margin-bottom: 28px;
     }
     .home-hero-btn {
       display: inline-flex;
       align-items: center;
-      gap: 9px;
-      padding: 15px 28px;
+      gap: 7px;
+      padding: 12px 20px;
       border-radius: 999px;
       font-family: 'SF New Republic SC', 'Helvetica Neue', Arial, sans-serif;
-      font-size: 14px;
+      font-size: 12px;
       font-weight: 700;
       letter-spacing: 0.06em;
       text-transform: uppercase;
@@ -191,11 +199,77 @@
       50%       { transform: translateX(-50%) translateY(7px); }
     }
 
+    /* ── Featured Sundgren cards ── */
+    .sg-featured-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 32px;
+    }
+    @media (max-width: 860px) { .sg-featured-grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 560px) { .sg-featured-grid { grid-template-columns: 1fr; } }
+    .sg-feat-card {
+      border-radius: 10px;
+      overflow: hidden;
+      background: #fff;
+      box-shadow: 0 2px 12px rgba(0,0,0,.09);
+      border: 2px solid rgba(212,175,55,.4);
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      transition: transform .2s, box-shadow .2s;
+    }
+    .sg-feat-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,.14); border-color: rgba(212,175,55,.75); }
+    .sg-feat-card-img {
+      width: 100%;
+      aspect-ratio: 16/9;
+      object-fit: cover;
+      display: block;
+      background: var(--bg-light);
+    }
+    .sg-feat-card-body { padding: 18px 20px 20px; flex: 1; display: flex; flex-direction: column; }
+    .sg-feat-card-type {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: #fff;
+      border-radius: 4px;
+      padding: 3px 9px;
+      margin-bottom: 10px;
+      width: fit-content;
+    }
+    .sg-feat-card-type.residential { background: #1a6b3a; }
+    .sg-feat-card-type.land        { background: #7c5c1a; }
+    .sg-feat-card-address { font-size: 15px; font-weight: 800; color: var(--dark); margin: 0 0 6px; line-height: 1.3; }
+    .sg-feat-card-meta { font-size: 13px; color: var(--text-light); margin: 0 0 4px; display: flex; align-items: center; gap: 6px; }
+    .sg-feat-card-meta i { color: var(--yellow-dark); font-size: 12px; }
+    .sg-feat-card-price { font-size: 20px; font-weight: 900; color: var(--dark); margin: 10px 0 0; }
+    .sg-feat-card-agent { font-size: 12px; color: var(--text-light); margin-top: auto; padding-top: 12px; display: flex; align-items: center; gap: 5px; }
+    .sg-feat-card-agent i { color: var(--yellow-dark); }
+    .sg-feat-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      background: var(--yellow);
+      color: var(--dark);
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      padding: 3px 10px 3px 8px;
+      border-radius: 20px;
+      margin-bottom: 16px;
+    }
+    .sg-feat-badge i { font-size: 9px; }
+
     /* ── Mobile ── */
     @media (max-width: 640px) {
-      .home-hero-title { margin-bottom: 32px; }
-      .home-hero-btns { gap: 10px; }
-      .home-hero-btn { padding: 13px 20px; font-size: 12px; }
+      .home-hero-title { margin-bottom: 28px; }
+      .home-hero-btns { flex-wrap: wrap; gap: 8px; }
+      .home-hero-btn { padding: 11px 16px; font-size: 11px; }
       body.home-page .logo-badge { left: 12px; }
     }
   </style>
@@ -242,34 +316,80 @@
 
   </section>
 
-  <!-- Featured Listings Carousel -->
-  <section class="section" style="background:#fff;">
+  <!-- Featured Sundgren Listings -->
+  <section class="section" style="background:#fff;" id="featured-section">
     <div class="container">
       <div class="section-title">
-        <span class="eyebrow">Listings</span>
+        <span class="eyebrow">Sundgren Listings</span>
         <h2>Featured Properties</h2>
         <hr class="divider">
+        <p style="color:var(--text-light);font-size:14px;margin-top:8px;">Active Sundgren Realty listings — refreshed on every visit</p>
       </div>
-      <script charset="UTF-8" type="text/javascript" id="idxwidgetsrc-166194" src="//realestate.sundgren.com/idx/widgets/166194"></script>
-      <script>
-      (function(){
-        var a = 0;
-        var p = setInterval(function(){
-          document.querySelectorAll('idx-listings-showcase').forEach(function(el){
-            if (el.shadowRoot) {
-              var h = el.shadowRoot.querySelector('.idx-listings-showcase__header');
-              if (h) h.style.display = 'none';
-            }
-          });
-          if (++a > 40) clearInterval(p);
-        }, 250);
-      })();
-      </script>
-      <div class="idx-viewall-wrap">
-        <a href="/property-search/" class="btn-primary">View All Listings <i class="fas fa-arrow-right" style="margin-left:6px;"></i></a>
+      <div class="sg-featured-grid" id="sg-featured-grid">
+        <!-- JS populated -->
+      </div>
+      <div class="idx-viewall-wrap" style="margin-top:36px;">
+        <a href="/listings/" class="btn-primary">View All Listings <i class="fas fa-arrow-right" style="margin-left:6px;"></i></a>
       </div>
     </div>
   </section>
+
+  <script>
+  (function() {
+    var listings = __SUNDGREN_FEATURED__;
+
+    function fmt(n) {
+      if (!n && n !== 0) return null;
+      return '$' + Number(n).toLocaleString();
+    }
+
+    function pick(arr) {
+      return arr[Math.floor(Math.random() * arr.length)];
+    }
+
+    var res  = listings.filter(function(l){ return l.type === 'residential'; });
+    var land = listings.filter(function(l){ return l.type === 'land'; });
+
+    // Pick 2 residential + 1 land (or 1 each if short supply)
+    var chosen = [];
+    if (res.length)  chosen.push(pick(res));
+    if (land.length) chosen.push(pick(land));
+    if (res.length > 1) {
+      var second;
+      do { second = pick(res); } while (second === chosen[0] && res.length > 1);
+      chosen.push(second);
+    }
+    // Shuffle so order varies
+    chosen.sort(function(){ return Math.random() - 0.5; });
+
+    var grid = document.getElementById('sg-featured-grid');
+    if (!grid || !chosen.length) return;
+
+    chosen.forEach(function(l) {
+      var price = fmt(l.price) || 'Price on Request';
+      var meta = [];
+      if (l.beds)  meta.push('<span class="sg-feat-card-meta"><i class="fas fa-bed"></i> ' + l.beds + ' bed</span>');
+      if (l.baths) meta.push('<span class="sg-feat-card-meta"><i class="fas fa-bath"></i> ' + l.baths + ' bath</span>');
+      if (l.sqft)  meta.push('<span class="sg-feat-card-meta"><i class="fas fa-ruler-combined"></i> ' + Number(l.sqft).toLocaleString() + ' sqft</span>');
+      if (l.acres) meta.push('<span class="sg-feat-card-meta"><i class="fas fa-seedling"></i> ' + l.acres + ' acres</span>');
+
+      var card = document.createElement('a');
+      card.href = '/listings/' + l.slug + '/';
+      card.className = 'sg-feat-card';
+      card.innerHTML =
+        '<img class="sg-feat-card-img" src="' + l.image + '" alt="' + l.address + '" loading="lazy">' +
+        '<div class="sg-feat-card-body">' +
+          '<span class="sg-feat-badge"><i class="fas fa-star"></i> Sundgren Listing</span>' +
+          '<span class="sg-feat-card-type ' + l.type + '">' + (l.type === 'residential' ? 'Residential' : 'Land') + '</span>' +
+          '<div class="sg-feat-card-address">' + l.address + '</div>' +
+          meta.join('') +
+          '<div class="sg-feat-card-price">' + price + '</div>' +
+          (l.agentName ? '<div class="sg-feat-card-agent"><i class="fas fa-user-tie"></i> ' + l.agentName + '</div>' : '') +
+        '</div>';
+      grid.appendChild(card);
+    });
+  })();
+  </script>
 
   <!-- Who We Are -->
   <section class="section about-section">
