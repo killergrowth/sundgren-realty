@@ -18,6 +18,71 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/sundgren.css">
   <style>
+    /* ── Sort & Filter Panel ─────────────────────────────────────────── */
+    .sg-filter-toggle {
+      display: inline-flex; align-items: center; gap: 7px;
+      padding: 9px 18px; border-radius: 8px; font-size: 13px; font-weight: 700;
+      border: 1.5px solid var(--border); background: #fff; color: var(--dark);
+      cursor: pointer; transition: all .15s; white-space: nowrap;
+    }
+    .sg-filter-toggle:hover, .sg-filter-toggle.open {
+      border-color: var(--yellow-dark); background: #fffbea;
+    }
+    .sg-filter-panel {
+      display: none; background: #fff; border: 1.5px solid var(--border);
+      border-radius: 12px; padding: 24px 28px; margin-bottom: 20px;
+      box-shadow: 0 4px 20px rgba(0,0,0,.07);
+    }
+    .sg-filter-panel.open { display: block; }
+    .sg-filter-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+      gap: 24px 32px;
+    }
+    .sg-filter-group label.group-label {
+      display: block; font-size: 11px; font-weight: 800; letter-spacing: .08em;
+      text-transform: uppercase; color: var(--text-light); margin-bottom: 10px;
+    }
+    .sg-filter-group .cb-row {
+      display: flex; align-items: center; gap: 8px;
+      margin-bottom: 7px; font-size: 13px; cursor: pointer;
+    }
+    .sg-filter-group .cb-row input[type=checkbox] {
+      accent-color: var(--yellow-dark); width: 15px; height: 15px; cursor: pointer;
+    }
+    .sg-range-row { display: flex; align-items: center; gap: 8px; }
+    .sg-range-row input[type=number] {
+      width: 100%; padding: 7px 10px; border: 1.5px solid var(--border);
+      border-radius: 6px; font-size: 13px; outline: none;
+      transition: border-color .2s; box-sizing: border-box;
+    }
+    .sg-range-row input[type=number]:focus { border-color: var(--yellow-dark); }
+    .sg-range-sep { font-size: 12px; color: var(--text-light); flex-shrink: 0; }
+    .sg-filter-actions {
+      display: flex; align-items: center; justify-content: flex-end;
+      gap: 12px; margin-top: 20px; padding-top: 16px;
+      border-top: 1px solid var(--border);
+    }
+    .sg-filter-apply {
+      padding: 9px 22px; border-radius: 8px; font-size: 13px; font-weight: 700;
+      background: var(--yellow); border: 2px solid var(--yellow-dark);
+      color: var(--dark); cursor: pointer;
+    }
+    .sg-filter-apply:hover { background: var(--yellow-dark); }
+    .sg-filter-clear {
+      padding: 9px 16px; border-radius: 8px; font-size: 13px; font-weight: 600;
+      background: #fff; border: 1.5px solid var(--border); color: var(--dark);
+      cursor: pointer;
+    }
+    .sg-filter-clear:hover { border-color: #aaa; }
+    .sg-active-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
+    .sg-active-tag {
+      display: inline-flex; align-items: center; gap: 5px;
+      padding: 4px 10px; background: #fffbea; border: 1px solid var(--yellow-dark);
+      border-radius: 20px; font-size: 12px; font-weight: 600; color: var(--dark);
+    }
+    .sg-active-tag button { background: none; border: none; cursor: pointer; font-size: 13px; color: #888; line-height: 1; padding: 0; }
+    .sg-active-tag button:hover { color: #c00; }
     .listing-toolbar {
       display: flex;
       flex-wrap: wrap;
@@ -151,6 +216,67 @@
       <p style="font-size:15px;color:var(--text-light);margin-bottom:24px;">5809 active South Central Kansas MLS listings - 4273 residential, 1468 land.</p>
 
       <!-- Search + Filter Toolbar -->
+      <!-- Filters Button + Panel -->
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;">
+        <button class="sg-filter-toggle" id="sg-filter-btn" onclick="toggleFilterPanel()">
+          <i class="fas fa-sliders-h"></i> Filters
+          <span id="sg-filter-badge" style="display:none;background:var(--yellow-dark);color:#000;border-radius:20px;padding:1px 7px;font-size:11px;"></span>
+        </button>
+      </div>
+
+      <div id="sg-active-tags" class="sg-active-tags"></div>
+
+      <div class="sg-filter-panel" id="sg-filter-panel">
+        <div class="sg-filter-grid">
+
+          <div class="sg-filter-group">
+            <label class="group-label"><i class="fas fa-tag" style="margin-right:5px;"></i>Price Range</label>
+            <div class="sg-range-row">
+              <input type="number" id="sg-price-min" placeholder="Min $" min="0" step="10000">
+              <span class="sg-range-sep">&ndash;</span>
+              <input type="number" id="sg-price-max" placeholder="Max $" min="0" step="10000">
+            </div>
+          </div>
+
+          <div class="sg-filter-group">
+            <label class="group-label"><i class="fas fa-bed" style="margin-right:5px;"></i>Bedrooms</label>
+            <label class="cb-row"><input type="checkbox" class="sg-cb-beds" value="1"> 1 Bed</label>
+            <label class="cb-row"><input type="checkbox" class="sg-cb-beds" value="2"> 2 Beds</label>
+            <label class="cb-row"><input type="checkbox" class="sg-cb-beds" value="3"> 3 Beds</label>
+            <label class="cb-row"><input type="checkbox" class="sg-cb-beds" value="4"> 4 Beds</label>
+            <label class="cb-row"><input type="checkbox" class="sg-cb-beds" value="5"> 5+ Beds</label>
+          </div>
+
+          <div class="sg-filter-group">
+            <label class="group-label"><i class="fas fa-map" style="margin-right:5px;"></i>Acreage</label>
+            <label class="cb-row"><input type="checkbox" class="sg-cb-acres" value="0-1"> Under 1 Acre</label>
+            <label class="cb-row"><input type="checkbox" class="sg-cb-acres" value="1-5"> 1&ndash;5 Acres</label>
+            <label class="cb-row"><input type="checkbox" class="sg-cb-acres" value="5-20"> 5&ndash;20 Acres</label>
+            <label class="cb-row"><input type="checkbox" class="sg-cb-acres" value="20-100"> 20&ndash;100 Acres</label>
+            <label class="cb-row"><input type="checkbox" class="sg-cb-acres" value="100+"> 100+ Acres</label>
+          </div>
+
+          <div class="sg-filter-group">
+            <label class="group-label"><i class="fas fa-circle" style="margin-right:5px;"></i>Status</label>
+            <label class="cb-row"><input type="checkbox" class="sg-cb-status" value="active"> Active</label>
+            <label class="cb-row"><input type="checkbox" class="sg-cb-status" value="pending"> Pending</label>
+            <label class="cb-row"><input type="checkbox" class="sg-cb-status" value="sold"> Sold</label>
+          </div>
+
+          <div class="sg-filter-group">
+            <label class="group-label"><i class="fas fa-home" style="margin-right:5px;"></i>Type</label>
+            <label class="cb-row"><input type="checkbox" class="sg-cb-type" value="residential"> Residential</label>
+            <label class="cb-row"><input type="checkbox" class="sg-cb-type" value="land"> Land</label>
+            <label class="cb-row"><input type="checkbox" class="sg-cb-type" value="commercial"> Commercial</label>
+          </div>
+
+        </div>
+        <div class="sg-filter-actions">
+          <button class="sg-filter-clear" onclick="clearSgFilters()">Clear Filters</button>
+          <button class="sg-filter-apply" onclick="applySgFilters()">Apply Filters</button>
+        </div>
+      </div>
+
       <div class="listing-toolbar">
         <div class="listing-search-wrap">
           <i class="fas fa-search"></i>
@@ -116658,10 +116784,131 @@ document.addEventListener('DOMContentLoaded', function(){
     document.querySelector('[data-filter="all"]').classList.add('active');
     if (citySelect)  citySelect.value  = '';
     if (sortSelect)  sortSelect.value  = 'default';
-    sortCards(); // reset to original order
+    sortCards();
+    clearSgFilters(false);
     applyFilters();
     hideAutocomplete();
   };
+
+  // ── Advanced Filter Panel ────────────────────────────────────────────────
+
+  function cardPrice(card) {
+    var el = card.querySelector('.listing-card-price');
+    if (!el) return null;
+    var t = el.textContent.replace(/[^0-9]/g,'');
+    return t ? parseInt(t,10) : null;
+  }
+  function cardBeds(card) {
+    var el = card.querySelector('.listing-card-meta');
+    if (!el) return null;
+    var m = el.textContent.match(/(\d+)\s*Bd/);
+    return m ? parseInt(m[1],10) : null;
+  }
+  function cardAcres(card) {
+    var el = card.querySelector('.listing-card-meta');
+    if (!el) return null;
+    var m = el.textContent.match(/([\d,.]+)\s*Acres/);
+    return m ? parseFloat(m[1].replace(/,/g,'')) : null;
+  }
+  function acresInRange(acres, range) {
+    if (acres === null) return false;
+    if (range==='0-1')    return acres < 1;
+    if (range==='1-5')    return acres >= 1  && acres < 5;
+    if (range==='5-20')   return acres >= 5  && acres < 20;
+    if (range==='20-100') return acres >= 20 && acres < 100;
+    if (range==='100+')   return acres >= 100;
+    return false;
+  }
+
+  var sgFilters = { priceMin:'', priceMax:'', beds:[], acres:[], status:[], type:[] };
+
+  window.toggleFilterPanel = function() {
+    document.getElementById('sg-filter-panel').classList.toggle('open');
+    document.getElementById('sg-filter-btn').classList.toggle('open');
+  };
+
+  window.applySgFilters = function() {
+    sgFilters.priceMin = document.getElementById('sg-price-min').value;
+    sgFilters.priceMax = document.getElementById('sg-price-max').value;
+    sgFilters.beds   = Array.from(document.querySelectorAll('.sg-cb-beds:checked')).map(function(c){return parseInt(c.value,10);});
+    sgFilters.acres  = Array.from(document.querySelectorAll('.sg-cb-acres:checked')).map(function(c){return c.value;});
+    sgFilters.status = Array.from(document.querySelectorAll('.sg-cb-status:checked')).map(function(c){return c.value;});
+    sgFilters.type   = Array.from(document.querySelectorAll('.sg-cb-type:checked')).map(function(c){return c.value;});
+    document.getElementById('sg-filter-panel').classList.remove('open');
+    document.getElementById('sg-filter-btn').classList.remove('open');
+    renderActiveTags();
+    applyFilters();
+  };
+
+  window.clearSgFilters = function(rerender) {
+    sgFilters = { priceMin:'', priceMax:'', beds:[], acres:[], status:[], type:[] };
+    var pmin = document.getElementById('sg-price-min');
+    var pmax = document.getElementById('sg-price-max');
+    if (pmin) pmin.value = '';
+    if (pmax) pmax.value = '';
+    document.querySelectorAll('.sg-cb-beds,.sg-cb-acres,.sg-cb-status,.sg-cb-type').forEach(function(c){c.checked=false;});
+    if (rerender !== false) { renderActiveTags(); applyFilters(); }
+  };
+
+  // Wrap the existing applyFilters to also apply sg checkbox filters
+  var _origApply = applyFilters;
+  applyFilters = function() {
+    _origApply();
+    var hasExtra = sgFilters.priceMin || sgFilters.priceMax ||
+      sgFilters.beds.length || sgFilters.acres.length ||
+      sgFilters.status.length || sgFilters.type.length;
+    if (!hasExtra) return;
+    cards.forEach(function(card) {
+      if (card.style.display === 'none') return;
+      var price  = cardPrice(card);
+      var beds   = cardBeds(card);
+      var acres  = cardAcres(card);
+      var status = (card.dataset.status||'').toLowerCase();
+      var type   = (card.dataset.type||'').toLowerCase();
+      var pass = true;
+      if (sgFilters.priceMin && price !== null && price < parseInt(sgFilters.priceMin,10)) pass = false;
+      if (sgFilters.priceMax && price !== null && price > parseInt(sgFilters.priceMax,10)) pass = false;
+      if (sgFilters.beds.length) {
+        var bedOk = sgFilters.beds.some(function(b){ return b===5 ? (beds!==null&&beds>=5) : beds===b; });
+        if (!bedOk) pass = false;
+      }
+      if (sgFilters.acres.length) {
+        var acreOk = sgFilters.acres.some(function(r){ return acresInRange(acres,r); });
+        if (!acreOk) pass = false;
+      }
+      if (sgFilters.status.length && sgFilters.status.indexOf(status)===-1) pass = false;
+      if (sgFilters.type.length   && sgFilters.type.indexOf(type)===-1)     pass = false;
+      if (!pass) card.style.display = 'none';
+    });
+    var shown = cards.filter(function(c){ return c.style.display!=='none'; }).length;
+    var countEl = document.getElementById('results-count');
+    if (countEl) countEl.textContent = shown + ' listing' + (shown!==1?'s':'') + ' found';
+    var badge = document.getElementById('sg-filter-badge');
+    if (badge) {
+      var n = sgFilters.beds.length+sgFilters.acres.length+sgFilters.status.length+sgFilters.type.length+
+        (sgFilters.priceMin?1:0)+(sgFilters.priceMax?1:0);
+      badge.textContent = n; badge.style.display = n ? 'inline' : 'none';
+    }
+  };
+
+  function renderActiveTags() {
+    var wrap = document.getElementById('sg-active-tags');
+    if (!wrap) return;
+    wrap.innerHTML = '';
+    function tag(label, clearFn) {
+      var d = document.createElement('span');
+      d.className = 'sg-active-tag';
+      d.innerHTML = label + ' <button onclick="'+clearFn+'" title="Remove">✕</button>';
+      wrap.appendChild(d);
+    }
+    if (sgFilters.priceMin) tag('Min $'+Number(sgFilters.priceMin).toLocaleString(),"(function(){document.getElementById('sg-price-min').value='';sgFilters.priceMin='';renderActiveTags();applyFilters();})()");
+    if (sgFilters.priceMax) tag('Max $'+Number(sgFilters.priceMax).toLocaleString(),"(function(){document.getElementById('sg-price-max').value='';sgFilters.priceMax='';renderActiveTags();applyFilters();})()");
+    sgFilters.beds.forEach(function(b){ tag((b===5?'5+':b)+' Bed'+(b===1?'':'s'),"(function(){sgFilters.beds=sgFilters.beds.filter(function(x){return x!=="+b+";});document.querySelectorAll('.sg-cb-beds').forEach(function(c){if(parseInt(c.value)==="+b+")c.checked=false;});renderActiveTags();applyFilters();})()"); });
+    var acreLabels={'0-1':'<1 Acre','1-5':'1-5 Acres','5-20':'5-20 Acres','20-100':'20-100 Acres','100+':'100+ Acres'};
+    sgFilters.acres.forEach(function(r){ tag(acreLabels[r]||r,"(function(){sgFilters.acres=sgFilters.acres.filter(function(x){return x!=='"+r+"';});document.querySelectorAll('.sg-cb-acres').forEach(function(c){if(c.value==='"+r+"')c.checked=false;});renderActiveTags();applyFilters();})()"); });
+    sgFilters.status.forEach(function(s){ tag(s.charAt(0).toUpperCase()+s.slice(1),"(function(){sgFilters.status=sgFilters.status.filter(function(x){return x!=='"+s+"';});document.querySelectorAll('.sg-cb-status').forEach(function(c){if(c.value==='"+s+"')c.checked=false;});renderActiveTags();applyFilters();})()"); });
+    sgFilters.type.forEach(function(t){ tag(t.charAt(0).toUpperCase()+t.slice(1),"(function(){sgFilters.type=sgFilters.type.filter(function(x){return x!=='"+t+"';});document.querySelectorAll('.sg-cb-type').forEach(function(c){if(c.value==='"+t+"')c.checked=false;});renderActiveTags();applyFilters();})()"); });
+  }
 
   updatePillCounts();
   applyFilters();
