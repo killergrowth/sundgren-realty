@@ -402,7 +402,7 @@
       if (l.acres) meta.push('<span class="sg-feat-card-meta"><i class="fas fa-wheat-awn"></i> ' + l.acres + ' acres</span>');
 
       var card = document.createElement('a');
-      card.href = '/listings/' + l.slug + '/';
+      card.href = '/listings/' + l.type + '/' + l.slug + '/';
       card.className = 'sg-feat-card';
       card.innerHTML =
         '<img class="sg-feat-card-img" src="' + l.image + '" alt="' + l.address + '" loading="lazy">' +
