@@ -22,58 +22,223 @@
   <meta name="twitter:description" content="Your premier agents for homes, land &amp; auctions in South Central Kansas.">
   <!-- SCHEMA:LocalBusiness -->
   <link rel="icon" href="/images/favicon.png" type="image/png" media="(prefers-color-scheme: dark)">
-  
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.svg">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/sundgren.css">
-</head>
-<body>
 
+  <style>
+    /* ── Homepage-only: hide top-bar and nav on load, reveal on scroll ── */
+    body.home-page .top-bar,
+    body.home-page .site-header {
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(-100%);
+      transition: opacity 0.35s ease, transform 0.35s ease;
+    }
+    body.home-page.nav-visible .top-bar,
+    body.home-page.nav-visible .site-header {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0);
+    }
+    /* Logo badge stays visible at all times, rides above everything */
+    body.home-page .logo-badge {
+      opacity: 1 !important;
+      pointer-events: auto !important;
+      transform: none !important;
+      z-index: 1200;
+      position: fixed;
+      top: 0;
+      left: 24px;
+    }
+
+    /* ── Full-bleed hero ── */
+    .home-hero {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      min-height: 560px;
+      background: url('/images/home-land.jpg') center 60% / cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .home-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.45) 0%,
+        rgba(0,0,0,0.52) 60%,
+        rgba(0,0,0,0.62) 100%
+      );
+    }
+    .home-hero-content {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      max-width: 900px;
+      padding: 0 24px;
+      /* push content down slightly so logo badge doesn't overlap */
+      margin-top: 40px;
+    }
+
+    /* eyebrow */
+    .home-hero-eyebrow {
+      display: block;
+      font-family: 'SF New Republic SC', 'Helvetica Neue', Arial, sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.20em;
+      text-transform: uppercase;
+      color: var(--yellow);
+      margin-bottom: 20px;
+      opacity: 0.9;
+    }
+
+    /* headline */
+    .home-hero-title {
+      font-family: 'Trajan Pro', Georgia, serif;
+      font-size: clamp(32px, 5.5vw, 68px);
+      font-weight: 700;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      line-height: 1.1;
+      margin: 0 0 44px;
+      text-shadow: 0 3px 18px rgba(0,0,0,0.45);
+    }
+
+    /* button row */
+    .home-hero-btns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      justify-content: center;
+      margin-bottom: 28px;
+    }
+    .home-hero-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      padding: 15px 28px;
+      border-radius: 999px;
+      font-family: 'SF New Republic SC', 'Helvetica Neue', Arial, sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
+      cursor: pointer;
+    }
+    .home-hero-btn:hover {
+      transform: translateY(-2px);
+    }
+    /* Primary: yellow fill */
+    .home-hero-btn--primary {
+      background: var(--yellow);
+      color: var(--dark);
+      border: 2px solid var(--yellow);
+    }
+    .home-hero-btn--primary:hover {
+      background: var(--yellow-dark);
+      border-color: var(--yellow-dark);
+      color: var(--dark);
+    }
+    /* Ghost: white outline */
+    .home-hero-btn--ghost {
+      background: transparent;
+      color: #fff;
+      border: 2px solid rgba(255,255,255,0.7);
+    }
+    .home-hero-btn--ghost:hover {
+      background: rgba(255,255,255,0.12);
+      border-color: #fff;
+      color: #fff;
+    }
+
+    /* subtext */
+    .home-hero-sub {
+      font-size: 14px;
+      color: rgba(255,255,255,0.72);
+      letter-spacing: 0.02em;
+    }
+    .home-hero-sub a {
+      color: rgba(255,255,255,0.72);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      transition: color 0.2s;
+    }
+    .home-hero-sub a:hover { color: var(--yellow); }
+
+    /* scroll-down caret */
+    .home-hero-caret {
+      position: absolute;
+      bottom: 28px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+      color: rgba(255,255,255,0.5);
+      font-size: 22px;
+      animation: heroCaretBounce 2s ease-in-out infinite;
+    }
+    @keyframes heroCaretBounce {
+      0%, 100% { transform: translateX(-50%) translateY(0); }
+      50%       { transform: translateX(-50%) translateY(7px); }
+    }
+
+    /* ── Mobile ── */
+    @media (max-width: 640px) {
+      .home-hero-title { margin-bottom: 32px; }
+      .home-hero-btns { gap: 10px; }
+      .home-hero-btn { padding: 13px 20px; font-size: 12px; }
+      body.home-page .logo-badge { left: 12px; }
+    }
+  </style>
+</head>
+<body class="home-page">
+
+<!-- HEADER (hidden on load, slides in on scroll) -->
 <!-- HEADER -->
 
 <main>
 
-  <!-- Hero: Three-Panel Expanding -->
-  <section class="hero-split" aria-label="Our Services">
+  <!-- Full-bleed hero -->
+  <section class="home-hero" aria-label="Sundgren Realty &amp; Auction">
 
-    <!-- Panel 1: Auctions -->
-    <a href="/auctions/" class="hero-panel" id="hero-panel-auctions"
-       style="background-image:url('/images/hero-auctions.jpg')"
-       aria-label="Auctions">
-      <div class="hero-panel-overlay"></div>
-      <div class="hero-panel-content">
-        <span class="hero-panel-eyebrow">Live &amp; Online</span>
-        <h1 class="hero-panel-title">Auctions</h1>
-        <p class="hero-panel-sub">Hundreds of active auctions &#8212; real estate, equipment, personal property &amp; more</p>
-        <span class="hero-panel-btn">Browse Auctions <i class="fas fa-arrow-right"></i></span>
-      </div>
-    </a>
+    <div class="home-hero-content">
+      <span class="home-hero-eyebrow">South Central Kansas &mdash; Est. 40+ Years</span>
 
-    <!-- Panel 2: Listings -->
-    <a href="/property-search/" class="hero-panel" id="hero-panel-listings"
-       style="background-image:url('/images/home-land.jpg');background-position:center 60%"
-       aria-label="Listings">
-      <div class="hero-panel-overlay"></div>
-      <div class="hero-panel-content">
-        <span class="hero-panel-eyebrow">Homes &amp; Properties</span>
-        <h2 class="hero-panel-title">Listings</h2>
-        <p class="hero-panel-sub">Search residential, commercial &amp; land listings across South Central Kansas</p>
-        <span class="hero-panel-btn">Search Listings <i class="fas fa-arrow-right"></i></span>
-      </div>
-    </a>
+      <h1 class="home-hero-title">Your Home.<br>Your Land.<br>Your Auction.</h1>
 
-    <!-- Panel 3: Value My Land -->
-    <a href="/value-my-land/" class="hero-panel" id="hero-panel-valueland"
-       style="background-image:url('/images/hero-aerial.jpg')"
-       aria-label="Value My Land">
-      <div class="hero-panel-overlay"></div>
-      <div class="hero-panel-content">
-        <span class="hero-panel-eyebrow">Free Estimate</span>
-        <h2 class="hero-panel-title">Value My Land</h2>
-        <p class="hero-panel-sub">Find out what your farm, ranch, or acreage is worth from experts who know Butler County</p>
-        <span class="hero-panel-btn">Get My Value <i class="fas fa-arrow-right"></i></span>
+      <div class="home-hero-btns">
+        <a href="/listings/" class="home-hero-btn home-hero-btn--primary">
+          <i class="fas fa-home"></i> Browse Listings
+        </a>
+        <a href="/auctions/" class="home-hero-btn home-hero-btn--ghost">
+          <i class="fas fa-gavel"></i> Browse Auctions
+        </a>
+        <a href="/value-my-land/" class="home-hero-btn home-hero-btn--ghost">
+          <i class="fas fa-seedling"></i> Value My Land
+        </a>
+        <a href="/contact-us/" class="home-hero-btn home-hero-btn--ghost">
+          <i class="fas fa-envelope"></i> Contact Us
+        </a>
       </div>
-    </a>
+
+      <p class="home-hero-sub">
+        Over 5,800 MLS listings &nbsp;&bull;&nbsp; 470+ auctions &nbsp;&bull;&nbsp;
+        <a href="/agents/">Meet our agents</a>
+      </p>
+    </div>
+
+    <div class="home-hero-caret" aria-hidden="true">
+      <i class="fas fa-chevron-down"></i>
+    </div>
 
   </section>
 
@@ -156,31 +321,35 @@
 
 </main>
 
+<!-- FOOTER -->
+
 <script>
+// ── Scroll-reveal nav (homepage only) ──
 (function() {
-  var split = document.querySelector('.hero-split');
-  if (!split) return;
-  var panels = split.querySelectorAll('.hero-panel');
-  panels.forEach(function(panel) {
-    panel.addEventListener('mouseenter', function() {
-      split.classList.add('hero-split--active');
-      panels.forEach(function(p) { p.classList.remove('hero-panel--hovered'); });
-      panel.classList.add('hero-panel--hovered');
-    });
-    panel.addEventListener('mouseleave', function() {
-      panel.classList.remove('hero-panel--hovered');
-      // Small delay so transition completes before resetting
-      setTimeout(function() {
-        if (!split.querySelector('.hero-panel--hovered')) {
-          split.classList.remove('hero-split--active');
-        }
-      }, 50);
-    });
-  });
+  if (!document.body.classList.contains('home-page')) return;
+
+  var threshold = 80; // px from top before nav appears
+  var ticking = false;
+
+  function checkScroll() {
+    if (window.scrollY > threshold) {
+      document.body.classList.add('nav-visible');
+    } else {
+      document.body.classList.remove('nav-visible');
+    }
+    ticking = false;
+  }
+
+  window.addEventListener('scroll', function() {
+    if (!ticking) {
+      requestAnimationFrame(checkScroll);
+      ticking = true;
+    }
+  }, { passive: true });
+
+  checkScroll(); // run once on load
 })();
 </script>
-
-<!-- FOOTER -->
 
 </body>
 </html>
