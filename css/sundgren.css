@@ -588,21 +588,25 @@ a:hover { color: var(--yellow-dark); }
 
 /* Ã¢â€â‚¬Ã¢â€â‚¬ Breadcrumb Hero (inner pages) Ã¢â€â‚¬Ã¢â€â‚¬ */
 .page-hero {
-  background: var(--dark) url('/images/hero-land.jpg') center/cover no-repeat;
-  background-blend-mode: multiply;
-  padding: 72px 0 56px;
+  background: #fdf132;
+  min-height: 220px;
+  padding: 56px 0 48px;
   text-align: center;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .page-hero::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,.55);
+  background: radial-gradient(ellipse at center, transparent 40%, rgba(0,0,0,.28) 100%);
 }
 .page-hero .inner { position: relative; z-index: 2; }
 .page-hero h1 {
-  color: #fff;
+  color: #000;
+  text-shadow: none;
   font-size: clamp(26px, 4vw, 42px);
   font-weight: 900;
   text-transform: uppercase;
@@ -618,10 +622,10 @@ a:hover { color: var(--yellow-dark); }
   padding: 0;
   margin: 0;
 }
-.breadcrumb li { font-size: 13px; color: rgba(255,255,255,.7); }
-.breadcrumb li a { color: rgba(255,255,255,.7); }
-.breadcrumb li a:hover { color: var(--yellow); }
-.breadcrumb li.active { color: var(--yellow); }
+.breadcrumb li { font-size: 13px; color: rgba(0,0,0,.6); }
+.breadcrumb li a { color: rgba(0,0,0,.6); }
+.breadcrumb li a:hover { color: #000; }
+.breadcrumb li.active { color: #000; font-weight: 700; }
 .breadcrumb li + li::before { content: '\203A'; margin-right: 8px; }
 
 /* Ã¢â€â‚¬Ã¢â€â‚¬ Agents Ã¢â€â‚¬Ã¢â€â‚¬ */
