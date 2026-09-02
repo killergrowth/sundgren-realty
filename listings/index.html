@@ -171,7 +171,56 @@
           <button class="filter-pill" data-filter="land">
             <span class="pill-dot" style="background:#22c55e;"></span>Land <span id="pill-count-land"></span>
           </button>
+          <button class="filter-pill" data-filter="sundgren" style="border-color:rgba(212,175,55,.6);">
+            <span class="pill-dot" style="background:rgba(212,175,55,.9);"></span>Sundgren Only <span id="pill-count-sundgren"></span>
+          </button>
         </div>
+      </div>
+
+      <!-- City + Sort row -->
+      <div style="display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-bottom:20px;">
+        <div style="position:relative;">
+          <select id="city-filter" aria-label="Filter by city" style="appearance:none;-webkit-appearance:none;padding:9px 36px 9px 14px;border:1.5px solid var(--border);border-radius:8px;font-size:13px;font-weight:700;color:var(--dark);background:#fff;cursor:pointer;outline:none;transition:border-color .2s;">
+            <option value="">All Cities</option>
+            <option value="wichita">Wichita</option>
+            <option value="goddard">Goddard</option>
+            <option value="derby">Derby</option>
+            <option value="salina">Salina</option>
+            <option value="andover">Andover</option>
+            <option value="valley center">Valley Center</option>
+            <option value="newton">Newton</option>
+            <option value="park city">Park City</option>
+            <option value="maize">Maize</option>
+            <option value="bel aire">Bel Aire</option>
+            <option value="winfield">Winfield</option>
+            <option value="haysville">Haysville</option>
+            <option value="el dorado">El Dorado</option>
+            <option value="arkansas city">Arkansas City</option>
+            <option value="mulvane">Mulvane</option>
+            <option value="wellington">Wellington</option>
+            <option value="augusta">Augusta</option>
+            <option value="rose hill">Rose Hill</option>
+            <option value="clearwater">Clearwater</option>
+            <option value="cheney">Cheney</option>
+            <option value="garden plain">Garden Plain</option>
+            <option value="hutchinson">Hutchinson</option>
+            <option value="lindsborg">Lindsborg</option>
+            <option value="mcpherson">Mcpherson</option>
+            <option value="douglass">Douglass</option>
+          </select>
+          <i class="fas fa-chevron-down" style="position:absolute;right:12px;top:50%;transform:translateY(-50%);color:#aaa;font-size:11px;pointer-events:none;"></i>
+        </div>
+        <div style="position:relative;">
+          <select id="sort-select" aria-label="Sort listings" style="appearance:none;-webkit-appearance:none;padding:9px 36px 9px 14px;border:1.5px solid var(--border);border-radius:8px;font-size:13px;font-weight:700;color:var(--dark);background:#fff;cursor:pointer;outline:none;transition:border-color .2s;">
+            <option value="default">Sundgren First</option>
+            <option value="price-asc">Price: Low to High</option>
+            <option value="price-desc">Price: High to Low</option>
+            <option value="newest">Newest First</option>
+            <option value="type">Type (Residential / Land)</option>
+          </select>
+          <i class="fas fa-chevron-down" style="position:absolute;right:12px;top:50%;transform:translateY(-50%);color:#aaa;font-size:11px;pointer-events:none;"></i>
+        </div>
+        <a href="#" onclick="clearFilters();return false;" id="clear-filters-link" style="font-size:13px;color:var(--text-light);text-decoration:none;display:none;">&#x2715; Clear filters</a>
       </div>
 
       <p class="listing-results-count" id="results-count"></p>
@@ -116438,34 +116487,75 @@ document.addEventListener('DOMContentLoaded', function(){
   var pills       = Array.from(document.querySelectorAll('.filter-pill'));
 
   var activeFilter = 'all';
+  var activeCity   = '';
+  var activeSort   = 'default';
   var activeSearch = '';
   var acActiveIdx  = -1;
 
+  var citySelect  = document.getElementById('city-filter');
+  var sortSelect  = document.getElementById('sort-select');
+  var clearLink   = document.getElementById('clear-filters-link');
+
+  // Store original DOM order for reset
+  var originalOrder = Array.from(cards);
+
   function updatePillCounts() {
-    ['all','active','pending','residential','land'].forEach(function(f) {
+    ['all','active','pending','residential','land','sundgren'].forEach(function(f) {
       var el = document.getElementById('pill-count-' + f);
       if (!el) return;
       var n = cards.filter(function(c) {
         if (f === 'all') return true;
+        if (f === 'sundgren') return c.classList.contains('listing-card--sundgren');
         return c.dataset.status === f || c.dataset.type === f;
       }).length;
       el.textContent = '(' + n + ')';
     });
   }
 
+  function getCardPrice(c) {
+    var txt = c.querySelector('.listing-card-price') ? c.querySelector('.listing-card-price').textContent.replace(/[^0-9]/g,'') : '';
+    return txt ? parseInt(txt) : 0;
+  }
+  function getCardDate(c) {
+    return c.dataset.listed ? parseInt(c.dataset.listed) : 0;
+  }
+
+  function sortCards() {
+    var sorted;
+    if (activeSort === 'price-asc') {
+      sorted = cards.slice().sort(function(a,b){ return getCardPrice(a)-getCardPrice(b); });
+    } else if (activeSort === 'price-desc') {
+      sorted = cards.slice().sort(function(a,b){ return getCardPrice(b)-getCardPrice(a); });
+    } else if (activeSort === 'newest') {
+      sorted = cards.slice().sort(function(a,b){ return getCardDate(b)-getCardDate(a); });
+    } else if (activeSort === 'type') {
+      sorted = cards.slice().sort(function(a,b){ return a.dataset.type.localeCompare(b.dataset.type); });
+    } else {
+      sorted = originalOrder.slice(); // default: Sundgren first (already DOM order from build)
+    }
+    sorted.forEach(function(c){ grid.appendChild(c); });
+  }
+
   function applyFilters() {
     var q = activeSearch.trim().toLowerCase();
     var visible = 0;
     cards.forEach(function(c) {
-      var matchFilter = activeFilter === 'all' || c.dataset.status === activeFilter || c.dataset.type === activeFilter;
+      var matchFilter = activeFilter === 'all'
+        || c.dataset.status === activeFilter
+        || c.dataset.type === activeFilter
+        || (activeFilter === 'sundgren' && c.classList.contains('listing-card--sundgren'));
+      var matchCity   = !activeCity || c.dataset.city === activeCity;
       var matchSearch = !q || c.dataset.search.indexOf(q) !== -1;
-      var show = matchFilter && matchSearch;
+      var show = matchFilter && matchCity && matchSearch;
       c.style.display = show ? '' : 'none';
       if (show) visible++;
     });
     countEl.innerHTML = '<strong>' + visible + '</strong> listing' + (visible !== 1 ? 's' : '') + ' shown';
     noResults.style.display = visible === 0 ? 'block' : 'none';
     grid.style.display = visible === 0 ? 'none' : '';
+    // Show/hide clear link
+    var dirty = activeFilter !== 'all' || activeCity || activeSearch || activeSort !== 'default';
+    if (clearLink) clearLink.style.display = dirty ? 'inline' : 'none';
   }
 
   pills.forEach(function(pill) {
@@ -116476,6 +116566,21 @@ document.addEventListener('DOMContentLoaded', function(){
       applyFilters();
     });
   });
+
+  if (citySelect) {
+    citySelect.addEventListener('change', function() {
+      activeCity = citySelect.value;
+      applyFilters();
+    });
+  }
+
+  if (sortSelect) {
+    sortSelect.addEventListener('change', function() {
+      activeSort = sortSelect.value;
+      sortCards();
+      applyFilters();
+    });
+  }
 
   searchInput.addEventListener('input', function() {
     activeSearch = searchInput.value;
@@ -116547,8 +116652,13 @@ document.addEventListener('DOMContentLoaded', function(){
     searchInput.value = '';
     activeSearch = '';
     activeFilter = 'all';
+    activeCity   = '';
+    activeSort   = 'default';
     pills.forEach(function(p) { p.classList.remove('active'); });
     document.querySelector('[data-filter="all"]').classList.add('active');
+    if (citySelect)  citySelect.value  = '';
+    if (sortSelect)  sortSelect.value  = 'default';
+    sortCards(); // reset to original order
     applyFilters();
     hideAutocomplete();
   };
