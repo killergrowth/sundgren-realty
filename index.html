@@ -66,11 +66,29 @@
       width: 100%;
       height: 100vh;
       min-height: 560px;
-      background: url('/images/home-land.jpg') center 60% / cover no-repeat;
+      background: #1a1a1a;
       display: flex;
       align-items: center;
       justify-content: center;
       text-align: center;
+      overflow: hidden;
+    }
+    /* Hero video — sits behind everything, fades out when done */
+    .hero-video {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 60%;
+      z-index: 0;
+      opacity: 1;
+      transition: opacity 1.2s ease;
+      pointer-events: none;
+    }
+    /* video stays visible when done — frozen on last frame, no swap */
+    .hero-video.hero-video--done {
+      opacity: 1;
     }
     .home-hero::before {
       content: '';
@@ -82,6 +100,7 @@
         rgba(0,0,0,0.52) 60%,
         rgba(0,0,0,0.62) 100%
       );
+      z-index: 1;
     }
     .home-hero-content {
       position: relative;
@@ -284,6 +303,9 @@
 
   <!-- Full-bleed hero -->
   <section class="home-hero" aria-label="Sundgren Realty &amp; Auction">
+    <video class="hero-video" id="hero-video" autoplay muted playsinline preload="auto" aria-hidden="true">
+      <source src="/images/hero-video.mp4" type="video/mp4">
+    </video>
 
     <div class="home-hero-content">
       <span class="home-hero-eyebrow">South Central Kansas &mdash; Est. 40+ Years</span>
@@ -394,6 +416,27 @@
         '</div>';
       grid.appendChild(card);
     });
+  })();
+  </script>
+
+  <!-- Hero video: plays once, freezes on last frame -->
+  <script>
+  (function() {
+    var vid = document.getElementById('hero-video');
+    if (!vid) return;
+    // On error or if video never loads, show fallback background
+    function showFallback() {
+      var hero = vid.closest('.home-hero');
+      if (hero) hero.style.backgroundImage = "url('/images/home-land.jpg')";
+      hero.style.backgroundPosition = 'center 60%';
+      hero.style.backgroundSize = 'cover';
+      vid.style.display = 'none';
+    }
+    vid.addEventListener('error', showFallback);
+    // Safety net: video hasn't played after 4s — show fallback
+    var safetyTimer = setTimeout(showFallback, 4000);
+    vid.addEventListener('playing', function() { clearTimeout(safetyTimer); });
+    // On end: video stays visible, frozen on last frame. Nothing to do.
   })();
   </script>
 
