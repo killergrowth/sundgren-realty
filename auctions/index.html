@@ -67,9 +67,17 @@
         <div class="container">
             <div class="section-title">
                 <span class="eyebrow">Active &amp; Upcoming</span>
-                <h2>Current Auctions</h2>
+                <p style="max-width:600px;margin:8px auto 16px;color:var(--text-light);font-size:16px;">Browse live auction opportunities from Sundgren Realty &amp; Auction. Click any listing for full details, photos, and online bidding.</p>
                 <hr class="divider">
-                <p>Browse live auction opportunities from Sundgren Realty &amp; Auction. Click any listing for full details, photos, and online bidding.</p>
+            </div>
+
+            <!-- Auction Search -->
+            <div style="max-width:520px;margin:0 auto 32px;position:relative;">
+              <i class="fas fa-search" style="position:absolute;left:16px;top:50%;transform:translateY(-50%);color:#aaa;pointer-events:none;"></i>
+              <input type="text" id="auction-search" placeholder="Search auctions&hellip;" autocomplete="off"
+                style="width:100%;padding:12px 16px 12px 44px;border:2px solid #e5e5e5;border-radius:8px;font-size:15px;outline:none;transition:border-color .2s;box-sizing:border-box;"
+                onfocus="this.style.borderColor='var(--yellow-dark)'" onblur="this.style.borderColor='#e5e5e5'">
+              <span id="auction-search-count" style="display:none;position:absolute;right:14px;top:50%;transform:translateY(-50%);font-size:12px;color:#aaa;font-weight:600;"></span>
             </div>
 
             <!-- Grid / Map toggle -->
@@ -691,6 +699,35 @@ function highlightCard(cardId) {
     if (col) col.scrollTo({ top: card.offsetTop - 16, behavior:'smooth' });
   }
 }
+
+// Auction search
+(function() {
+  var searchInput = document.getElementById('auction-search');
+  var countEl = document.getElementById('auction-search-count');
+  if (!searchInput) return;
+  searchInput.addEventListener('input', function() {
+    var q = this.value.trim().toLowerCase();
+    var grids = [document.getElementById('grid-cards'), document.getElementById('map-grid-cards')];
+    var shown = 0;
+    grids.forEach(function(grid) {
+      if (!grid) return;
+      var cards = grid.querySelectorAll('.auction-card-wrap');
+      cards.forEach(function(card) {
+        var title = (card.querySelector('.auction-card-title') || {}).textContent || '';
+        var meta  = (card.querySelector('.auction-card-meta')  || {}).textContent || '';
+        var match = !q || (title + ' ' + meta).toLowerCase().indexOf(q) !== -1;
+        card.style.display = match ? '' : 'none';
+        if (match) shown++;
+      });
+    });
+    if (q) {
+      countEl.textContent = shown + ' result' + (shown !== 1 ? 's' : '');
+      countEl.style.display = 'block';
+    } else {
+      countEl.style.display = 'none';
+    }
+  });
+})();
 
 function setView(mode) {
   var gc = document.getElementById('grid-cards');
