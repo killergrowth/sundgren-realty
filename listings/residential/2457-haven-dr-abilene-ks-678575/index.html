@@ -11,14 +11,14 @@
   <link rel="apple-touch-icon" href="/images/favicon.png">
   <meta property="og:title" content="2457 Haven Dr, Abilene, KS, 67410 – 4BD/4BA 3.6 Acres | Sundgren Realty &amp; Auction">
   <meta property="og:description" content="Residential property at 2457 Haven Dr, Abilene, KS, 67410. Custom-Built Brick Home on 3.6 Acres Just Outside Abilene! Quality, space, privacy and thoughtfu...">
-  <meta property="og:image" content="https://sundgrenrealty.com/images/og-image.jpg">
+  <meta property="og:image" content="https://cdn.repliers.io/southcentralkansas/IMG-678575_6703945434286028672.jpg">
   <meta property="og:url" content="https://sundgrenrealty.com/listings/residential/2457-haven-dr-abilene-ks-678575/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Sundgren Realty &amp; Auction">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="2457 Haven Dr, Abilene, KS, 67410 – 4BD/4BA 3.6 Acres | Sundgren Realty &amp; Auction">
   <meta name="twitter:description" content="Residential property at 2457 Haven Dr, Abilene, KS, 67410. Custom-Built Brick Home on 3.6 Acres Just Outside Abilene! Quality, space, privacy and thoughtfu...">
-  <meta name="twitter:image" content="https://sundgrenrealty.com/images/og-image.jpg">
+  <meta name="twitter:image" content="https://cdn.repliers.io/southcentralkansas/IMG-678575_6703945434286028672.jpg">
   <meta name="robots" content="noindex, nofollow">
   <!-- SCHEMA:BreadcrumbList -->
   <!-- SCHEMA:WebPage -->
@@ -56,7 +56,63 @@
       <!-- Left Column -->
       <div class="auction-main">
 
+        <div class="sg-photo-pill-wrap">
+  <section class="photo-gallery-section" style="margin-bottom:24px;">
+    <div class="sg-mosaic">
+      <button class="sg-mosaic-hero" data-idx="0" aria-label="View photo 1" type="button">
+        <img src="https://cdn.repliers.io/southcentralkansas/IMG-678575_6703945434286028672.jpg" alt="Primary property photo" loading="eager">
+      </button>
+      <div class="sg-mosaic-strip">
+      <button class="sg-mosaic-thumb" data-idx="1" aria-label="View photo 2" type="button">
+        <img src="https://cdn.repliers.io/southcentralkansas/IMG-678575_6701063104176020007.jpg" alt="Property photo 2" loading="lazy">
         
+      </button>
+      <button class="sg-mosaic-thumb" data-idx="2" aria-label="View photo 3" type="button">
+        <img src="https://cdn.repliers.io/southcentralkansas/IMG-678575_6702190712569776193.jpg" alt="Property photo 3" loading="lazy">
+        
+      </button>
+      <button class="sg-mosaic-thumb" data-idx="3" aria-label="View photo 4" type="button">
+        <img src="https://cdn.repliers.io/southcentralkansas/IMG-678575_6706571205566654206.jpg" alt="Property photo 4" loading="lazy">
+        <div class="sg-mosaic-more" aria-hidden="true">+16 more</div>
+      </button>
+      </div>
+    </div>
+    <div class="sg-gallery-bar">
+      <button class="sg-gallery-all-btn" id="sg-view-all" type="button">
+        <i class="fas fa-images"></i> View all 20 photos
+      </button>
+    </div>
+  </section>
+
+  <div id="sg-lightbox" role="dialog" aria-modal="true" aria-label="Photo gallery">
+    <button id="sg-lightbox-close" aria-label="Close">&times;</button>
+    <button id="sg-lightbox-prev" aria-label="Previous">&#8249;</button>
+    <img id="sg-lightbox-img" src="" alt="Property photo">
+    <button id="sg-lightbox-next" aria-label="Next">&#8250;</button>
+    <span id="sg-lightbox-counter"></span>
+  </div>
+
+  <script>
+  (function(){
+    var srcs = ["https://cdn.repliers.io/southcentralkansas/IMG-678575_6703945434286028672.jpg","https://cdn.repliers.io/southcentralkansas/IMG-678575_6701063104176020007.jpg","https://cdn.repliers.io/southcentralkansas/IMG-678575_6702190712569776193.jpg","https://cdn.repliers.io/southcentralkansas/IMG-678575_6706571205566654206.jpg","https://cdn.repliers.io/southcentralkansas/IMG-678575_6706895262919876463.jpg","https://cdn.repliers.io/southcentralkansas/IMG-678575_6702664423051208277.jpg","https://cdn.repliers.io/southcentralkansas/IMG-678575_6706495933007849078.jpg","https://cdn.repliers.io/southcentralkansas/IMG-678575_6709820936655212855.jpg","https://cdn.repliers.io/southcentralkansas/IMG-678575_6707462033848181430.jpg","https://cdn.repliers.io/southcentralkansas/IMG-678575_6705143839679595427.jpg","https://cdn.repliers.io/southcentralkansas/IMG-678575_6709259464155936847.jpg","https://cdn.repliers.io/southcentralkansas/IMG-678575_6702941383909415084.jpg","https://cdn.repliers.io/southcentralkansas/IMG-678575_6704070256734778375.jpg","https://cdn.repliers.io/southcentralkansas/IMG-678575_6701694998941352116.jpg","https://cdn.repliers.io/southcentralkansas/IMG-678575_6706745976653437950.jpg","https://cdn.repliers.io/southcentralkansas/IMG-678575_6701780421393725080.jpg","https://cdn.repliers.io/southcentralkansas/IMG-678575_6702819113113207905.jpg","https://cdn.repliers.io/southcentralkansas/IMG-678575_6707779934792359607.jpg","https://cdn.repliers.io/southcentralkansas/IMG-678575_6701705290344035293.jpg","https://cdn.repliers.io/southcentralkansas/IMG-678575_6708616222076301253.jpg"];
+    var lb = document.getElementById('sg-lightbox');
+    var lbImg = document.getElementById('sg-lightbox-img');
+    var lbCtr = document.getElementById('sg-lightbox-counter');
+    var cur = 0;
+    function open(i){ cur=i; lbImg.src=srcs[i]; lbCtr.textContent=(i+1)+' / '+srcs.length; lb.classList.add('active'); document.body.style.overflow='hidden'; }
+    function close(){ lb.classList.remove('active'); document.body.style.overflow=''; }
+    document.querySelectorAll('.sg-mosaic-hero, .sg-mosaic-thumb').forEach(function(btn){
+      btn.addEventListener('click',function(){ open(parseInt(btn.dataset.idx,10)); });
+    });
+    var viewAll = document.getElementById('sg-view-all');
+    if (viewAll) viewAll.addEventListener('click', function(){ open(0); });
+    document.getElementById('sg-lightbox-close').addEventListener('click',close);
+    document.getElementById('sg-lightbox-prev').addEventListener('click',function(){ open((cur-1+srcs.length)%srcs.length); });
+    document.getElementById('sg-lightbox-next').addEventListener('click',function(){ open((cur+1)%srcs.length); });
+    lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
+    document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
+  })();
+  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -91,7 +147,7 @@
     </div>
   </div>
 
-        <div style="margin-top:0;">
+        <div style="margin-top:32px;">
           <div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Custom-Built Brick Home on 3.6 Acres Just Outside Abilene! Quality, space, privacy and thoughtful design come together in this exceptional all-brick home offering over 5,000 sq ft of living space. The main floor features vaulted ceilings, fireplace, formal dining, and a spacious living area with sliding door to the deck. The updated kitchen offers new appliances, granite counters, marble backsplash, island, walk-in pantry, eating area and breakfast bar. The primary suite includes a walk-in closet, ensuite bath and private deck access. A second main-floor bedroom, full bath, laundry and loft ideal for an office or study complete the main level. The walk-out basement provides two additional bedrooms, two baths, family room with fireplace, daylight windows, storage and two bonus rooms. The 3-car garage includes a bonus room for hobbies or storage, plus additional finished space below with walk-out access—perfect for gardening and yard equipment. Beautifully landscaped grounds offer mature trees, shade and privacy, along with a greenhouse, tank room, pergola, deck and multiple patio spaces. This is a rare opportunity to enjoy expansive living, abundant storage and peaceful acreage while remaining just minutes from Abilene!</p>
