@@ -1,5 +1,5 @@
 {
-  "lastFetch": "2026-09-08T10:45:06.504Z",
+  "lastFetch": "2026-09-08T16:09:01.677Z",
   "auctions": {
     "24096": {
       "slug": "test-auction-24096",
@@ -2841,9 +2841,10 @@
     },
     "167485": {
       "slug": "160-acres-lincoln-county-kansas-pasture-tillable-ponds-water-167485",
-      "status": "pending",
+      "status": "accepting_bids",
       "name": "160 Acres Lincoln County, Kansas – Pasture, Tillable, Ponds & Water Well",
-      "generated": "2026-08-29T06:56:34.460Z"
+      "generated": "2026-08-29T06:56:34.460Z",
+      "updated": "2026-09-08T16:09:03.461Z"
     },
     "168254": {
       "slug": "2-20-acre-land-tracts-in-northeast-sedgwick-county-kansas-168254",
