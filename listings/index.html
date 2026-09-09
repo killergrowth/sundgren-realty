@@ -225,8 +225,10 @@
 
       <p class="listing-results-count" id="results-count"></p>
 
-            <!-- Map — always visible -->
-      <div id="listings-map-view" style="margin-bottom:32px;position:sticky;top:0;z-index:10;">
+            <!-- Listings split layout: cards left, map right -->
+      <div style="display:flex;gap:24px;align-items:flex-start;">
+      <!-- Map sidebar (right, sticky) -->
+      <div id="listings-map-view" style="width:420px;flex-shrink:0;position:sticky;top:16px;z-index:5;">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
         <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
         <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css">
@@ -6075,7 +6077,9 @@
         </script>
       </div>
 
-      <!-- Listing Grid (always visible) -->
+      </div><!-- /listings-map sidebar -->
+      <!-- Cards column (left, scrollable) -->
+      <div id="listings-cards-col" style="flex:1;min-width:0;order:-1;">
       <div id="listings-grid-view">
         <div class="listing-grid" id="listing-grid" style="margin-bottom:48px;">
         <a href="/listings/residential/5747-20th-st-el-dorado-ks-672300/"
@@ -116456,6 +116460,9 @@
         </div>
       </div>
 
+    </div><!-- /listings-grid-view -->
+      </div><!-- /listings-cards-col -->
+      </div><!-- /listings split layout -->
     </div>
   </section>
 

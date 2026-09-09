@@ -194,9 +194,9 @@ function main() {
 
   fs.mkdirSync(DIST, { recursive: true });
 
-  // Load Sundgren featured listings data for homepage injection
+  // Load all active listings data for homepage map injection
   const allListings = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'all-listings.json'), 'utf8'));
-  const sundgrenFeatured = allListings.filter(l => l.isSundgren && l.status === 'A' && l.image);
+  const sundgrenFeatured = allListings.filter(l => l.status === 'A' && l.lat && l.lng);
   const sundgrenFeaturedJSON = JSON.stringify(sundgrenFeatured);
 
   // Static pages
