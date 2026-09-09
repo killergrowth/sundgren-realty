@@ -6054,38 +6054,16 @@
             {lat:38.140741,lng:-97.22797,addr:"7997 N Webb Rd, Walton, KS",price:"Contact for Price",url:"/listings/land/7997-n-webb-rd-walton-ks-675984/",color:"#16a34a"},
             {lat:37.2469,lng:-96.9788,addr:"72nd, Winfield, KS",price:"Contact for Price",url:"/listings/land/72nd-winfield-ks-676539/",color:"#16a34a"},
             {lat:37.88405137,lng:-97.38429438,addr:"0000 109th St. N, Valley Center, KS",price:"Contact for Price",url:"/listings/land/0000-109th-st-n-valley-center-ks-676681/",color:"#16a34a"}];
-          // Butler County, KS center — default zoom 10
-          var map = L.map('listings-map',{scrollWheelZoom:true});
-          map.setView([37.8, -96.85], 10);
+          var bounds = [];
+          var map = L.map('listings-map',{scrollWheelZoom:false});
           L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'&copy; OpenStreetMap contributors',maxZoom:19}).addTo(map);
-
-          // Marker size by zoom level
-          function markerSize(z) {
-            if (z >= 13) return 16;
-            if (z >= 11) return 12;
-            if (z >= 9)  return 9;
-            if (z >= 7)  return 7;
-            return 5;
-          }
-          function makeIcon(color, z) {
-            var s = markerSize(z);
-            return L.divIcon({className:'',html:'<div style="width:'+s+'px;height:'+s+'px;border-radius:50%;background:'+color+';border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.4);"></div>',iconSize:[s,s],iconAnchor:[s/2,s/2]});
-          }
-
-          var markers = [];
           listings.forEach(function(l){
-            var m = L.marker([l.lat,l.lng],{icon:makeIcon(l.color, map.getZoom())}).addTo(map)
+            bounds.push([l.lat,l.lng]);
+            var icon = L.divIcon({className:'',html:'<div style="width:14px;height:14px;border-radius:50%;background:'+l.color+';border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.4);"></div>',iconSize:[14,14],iconAnchor:[7,7]});
+            L.marker([l.lat,l.lng],{icon:icon}).addTo(map)
               .bindPopup('<div style="min-width:180px;"><strong>'+l.addr+'</strong><br><strong style="font-size:16px;">'+l.price+'</strong><br><a href="'+l.url+'" style="color:#b7791f;font-weight:700;font-size:13px;">View Details &rarr;</a></div>');
-            markers.push({marker:m, color:l.color});
           });
-
-          // Resize all markers on zoom
-          map.on('zoomend', function() {
-            var z = map.getZoom();
-            markers.forEach(function(item){
-              item.marker.setIcon(makeIcon(item.color, z));
-            });
-          });
+          if (bounds.length) map.fitBounds(bounds, {padding:[40,40]});
         }
         function setView(v) {
           var grid = document.getElementById('listings-grid-view');
