@@ -400,6 +400,21 @@
   </section>
 
 
+  <!-- Nav scroll-in -->
+  <script>
+  (function() {
+    function checkNav() {
+      if (window.scrollY > 60) {
+        document.body.classList.add('nav-visible');
+      } else {
+        document.body.classList.remove('nav-visible');
+      }
+    }
+    window.addEventListener('scroll', checkNav, {passive: true});
+    checkNav();
+  })();
+  </script>
+
   <!-- Hero video: plays once, freezes on last frame -->
   <script>
   (function() {
