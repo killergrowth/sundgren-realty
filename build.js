@@ -206,8 +206,8 @@ function main() {
     const destPath = path.join(DIST, dest);
     if (!fs.existsSync(srcPath)) { console.warn(`  SKIP (missing): ${src}`); continue; }
     let html = assemble(read(srcPath), header, footer);
-    // Inject Sundgren featured data into homepage
-    if (src === 'index.html') {
+    // Inject listings data into homepage and listings/index.html
+    if (destPath === path.join(DIST, 'index.html') || destPath === path.join(DIST, 'listings', 'index.html')) {
       html = html.replace('__SUNDGREN_FEATURED__', sundgrenFeaturedJSON);
     }
     write(destPath, html);
@@ -227,7 +227,10 @@ function main() {
   // Listing pages discovered from listings/ (commercial/residential/land subdirs)
   const listingPages = discoverListingPages();
   for (const [srcPath, destPath] of listingPages) {
-    const html = assemble(read(srcPath), header, footer);
+    let html = assemble(read(srcPath), header, footer);
+    if (destPath === path.join(DIST, 'listings', 'index.html')) {
+      html = html.replace('__SUNDGREN_FEATURED__', sundgrenFeaturedJSON);
+    }
     write(destPath, html);
     console.log(`  Built: ${path.relative(DIST, destPath)}`);
     count++;
