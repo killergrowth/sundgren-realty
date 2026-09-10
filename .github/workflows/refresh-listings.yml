@@ -27,6 +27,22 @@ jobs:
       - name: Build full site
         run: node build.js
 
+      - name: Sync all-listings.json prices from Repliers data
+        # Repliers is the authoritative price source. Merge fresh prices into
+        # all-listings.json so the grid index always reflects current MLS prices.
+        run: |
+          node -e "
+          const fs = require('fs');
+          const repliers = JSON.parse(fs.readFileSync('data/repliers-listings.json','utf8'));
+          const all = JSON.parse(fs.readFileSync('data/all-listings.json','utf8'));
+          const map = {};
+          for (const l of repliers) { if (l.mlsNumber) map[l.mlsNumber] = l; }
+          let n = 0;
+          for (const l of all) { const r = map[l.mlsNumber]; if (r && r.price !== l.price) { l.price = r.price; n++; } }
+          fs.writeFileSync('data/all-listings.json', JSON.stringify(all, null, 2), 'utf8');
+          console.log('Synced', n, 'prices');
+          "
+
       - name: Rebuild listing index pages (must run AFTER build.js)
         # build.js copies listings/index.html from source — overwriting the fresh
         # index built by the generator. These scripts write directly to dist/ and
@@ -52,6 +68,6 @@ jobs:
         run: |
           git config user.name "KillerGrowth"
           git config user.email "notifications@killergrowth.com"
-          git add data/repliers-listings.json data/all-listings.json listings/ property-search.html
+          git add data/repliers-listings.json data/all-listings.json listings/ listings/index.html property-search.html
           git diff --staged --quiet || git commit -m "chore: refresh listings data [skip ci]"
           git push
