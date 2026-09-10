@@ -38,7 +38,7 @@ function streetOnly(addr) { return addr.split(',')[0]; }
 function statusLabel(l) {
   if (l.status === 'A') return 'Active';
   const ls = (l.lastStatus || '').toLowerCase();
-  if (ls === 'sc' || ls === 'cs') return 'Pending';
+  if (ls === 'sc' || ls === 'cs' || ls === 'lc') return 'Pending';
   return 'Inactive';
 }
 function statusColor(l) {
@@ -46,6 +46,9 @@ function statusColor(l) {
   if (s === 'Active')  return '#22c55e';
   if (s === 'Pending') return '#2563eb';
   return '#6b7280';
+}
+function isPriceReduced(l) {
+  return l.previousPrice && l.previousPrice > l.price && l.price > 0;
 }
 function cityOf(l) {
   return l.city || (l.address ? l.address.split(',')[1] : '') || '';
@@ -62,22 +65,28 @@ const cards = listings.map(l => {
   const city     = cityOf(l).trim();
   const addrStr  = streetOnly(l.address);
   const priceStr = price(l.price);
+  const reduced  = isPriceReduced(l);
+  const priceHtml = reduced
+    ? `<p class="listing-card-price"><span style="text-decoration:line-through;color:#9ca3af;font-size:0.85em;margin-right:6px;">${price(l.previousPrice)}</span>${priceStr}</p>`
+    : `<p class="listing-card-price">${priceStr}</p>`;
   return `        <a href="/listings/${l.type}/${l.slug}/"
            class="listing-card${l.isSundgren ? ' listing-card--sundgren' : ''}"
            data-status="${sl.toLowerCase()}"
            data-type="${l.type}"
            data-city="${esc(city.toLowerCase())}"
+           data-reduced="${reduced ? 'true' : 'false'}"
            data-search="${esc((addrStr + ' ' + city + ' ' + priceStr + ' ' + typeDisp + ' ' + sl).toLowerCase())}">
           <img class="listing-card-img" src="${esc(l.image)}" alt="${esc(addrStr)}" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
               <span class="listing-card-badge" style="background:${sc};">${sl}</span>
               <span class="listing-card-badge" style="background:${tc};">${typeDisp}</span>
+              ${reduced ? '<span class="listing-card-badge" style="background:#f59e0b;">Price Reduced</span>' : ''}
             </div>
             <p class="listing-card-address">${esc(addrStr)}</p>
             <p class="listing-card-meta"><i class="fas ${icon}"></i>${meta}</p>
             ${city ? `<p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>${esc(city)}, KS</p>` : ''}
-            <p class="listing-card-price">${priceStr}</p>
+            ${priceHtml}
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>`;
@@ -301,6 +310,9 @@ const html = `<!DOCTYPE html>
           <button class="filter-pill" data-filter="sundgren" style="border-color:rgba(212,175,55,.6);">
             <span class="pill-dot" style="background:rgba(212,175,55,.9);"></span>Sundgren Only <span id="pill-count-sundgren"></span>
           </button>
+          <button class="filter-pill" data-filter="price-reduced" style="border-color:rgba(245,158,11,.6);">
+            <span class="pill-dot" style="background:#f59e0b;"></span>Price Reduced <span id="pill-count-price-reduced"></span>
+          </button>
         </div>
       </div>
 
@@ -417,12 +429,13 @@ document.addEventListener('DOMContentLoaded', function(){
   var originalOrder = Array.from(cards);
 
   function updatePillCounts() {
-    ['all','active','pending','residential','land','sundgren'].forEach(function(f) {
+    ['all','active','pending','residential','land','sundgren','price-reduced'].forEach(function(f) {
       var el = document.getElementById('pill-count-' + f);
       if (!el) return;
       var n = cards.filter(function(c) {
         if (f === 'all') return true;
         if (f === 'sundgren') return c.classList.contains('listing-card--sundgren');
+        if (f === 'price-reduced') return c.dataset.reduced === 'true';
         return c.dataset.status === f || c.dataset.type === f;
       }).length;
       el.textContent = '(' + n + ')';
@@ -488,7 +501,8 @@ document.addEventListener('DOMContentLoaded', function(){
       var matchFilter = activeFilter === 'all'
         || c.dataset.status === activeFilter
         || c.dataset.type === activeFilter
-        || (activeFilter === 'sundgren' && c.classList.contains('listing-card--sundgren'));
+        || (activeFilter === 'sundgren' && c.classList.contains('listing-card--sundgren'))
+        || (activeFilter === 'price-reduced' && c.dataset.reduced === 'true');
       var matchCity   = !activeCity || c.dataset.city === activeCity;
       var matchSearch = !q || c.dataset.search.indexOf(q) !== -1;
       if (matchFilter && matchCity && matchSearch) matched.push(c);
@@ -624,10 +638,15 @@ document.addEventListener('DOMContentLoaded', function(){
 // Write to source (for git tracking + local build.js runs)
 fs.writeFileSync(path.join(__dirname, 'listings/index.html'), html, 'utf8');
 // Write directly to dist/ so CI deploys always have fresh card data
-// (build.js copies from source first; this overwrites with the live version)
+// Inject header/footer partials so dist version isn't missing nav/footer
+const headerHtml = fs.existsSync(path.join(__dirname, '_partials/header.html'))
+  ? fs.readFileSync(path.join(__dirname, '_partials/header.html'), 'utf8') : '';
+const footerHtml = fs.existsSync(path.join(__dirname, '_partials/footer.html'))
+  ? fs.readFileSync(path.join(__dirname, '_partials/footer.html'), 'utf8') : '';
+const distHtml = html.replace('<!-- HEADER -->', headerHtml).replace('<!-- FOOTER -->', footerHtml);
 const distListingsDir = path.join(__dirname, 'dist/listings');
 if (fs.existsSync(distListingsDir)) {
-  fs.writeFileSync(path.join(distListingsDir, 'index.html'), html, 'utf8');
+  fs.writeFileSync(path.join(distListingsDir, 'index.html'), distHtml, 'utf8');
   console.log('Done. listings/index.html rebuilt with', total, 'listings (source + dist).');
 } else {
   console.log('Done. listings/index.html rebuilt with', total, 'listings (source only — dist/ not found).');

@@ -38,7 +38,20 @@ jobs:
           const map = {};
           for (const l of repliers) { if (l.mlsNumber) map[l.mlsNumber] = l; }
           let n = 0;
-          for (const l of all) { const r = map[l.mlsNumber]; if (r && r.price !== l.price) { l.price = r.price; n++; } }
+          for (const l of all) {
+            const r = map[l.mlsNumber];
+            if (r && r.price !== l.price) {
+              // Track price reduction: only set previousPrice when price drops
+              if (r.price < l.price && l.price > 0) {
+                l.previousPrice = l.price;
+              } else {
+                // Price went up or unchanged direction — clear previousPrice
+                delete l.previousPrice;
+              }
+              l.price = r.price;
+              n++;
+            }
+          }
           fs.writeFileSync('data/all-listings.json', JSON.stringify(all, null, 2), 'utf8');
           console.log('Synced', n, 'prices');
           "
