@@ -3883,7 +3883,7 @@
     "state": "KS",
     "lat": 37.749821,
     "lng": -97.201886,
-    "price": 1160000,
+    "price": 1150000,
     "beds": 5,
     "baths": 3,
     "sqft": "3640",
@@ -3895,7 +3895,8 @@
     "isSundgren": false,
     "agentName": "Gretchen Benjamin",
     "agentPhone": "3607911853",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 1160000
   },
   {
     "slug": "7550-327th-st-w-st-cheney-ks-678158",
@@ -14947,7 +14948,7 @@
     "state": "KS",
     "lat": 37.679918,
     "lng": -97.527968,
-    "price": 510000,
+    "price": 500000,
     "beds": 5,
     "baths": 3,
     "sqft": "2891",
@@ -14959,7 +14960,8 @@
     "isSundgren": false,
     "agentName": "Jessica Holle",
     "agentPhone": "3163906312",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 510000
   },
   {
     "slug": "12915-spring-valley-st-wichita-ks-672984",
@@ -36735,7 +36737,7 @@
     "state": "KS",
     "lat": 37.746662,
     "lng": -97.360507,
-    "price": 339000,
+    "price": 333000,
     "beds": 4,
     "baths": 3,
     "sqft": "4012",
@@ -36747,7 +36749,8 @@
     "isSundgren": false,
     "agentName": "Alyson M Assaf",
     "agentPhone": "3162533921",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 339000
   },
   {
     "slug": "5911-plumthicket-st-bel-aire-ks-675867",
@@ -60030,7 +60033,7 @@
     "state": "KS",
     "lat": 38.90811,
     "lng": -97.101828,
-    "price": 237000,
+    "price": 227000,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -60042,7 +60045,8 @@
     "isSundgren": false,
     "agentName": "Samantha Swearingen",
     "agentPhone": "7855779878",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 237000
   },
   {
     "slug": "12008-arvada-blvd-maize-ks-677674",
@@ -62244,7 +62248,7 @@
     "state": "KS",
     "lat": 37.561079,
     "lng": -97.263748,
-    "price": 229900,
+    "price": 224900,
     "beds": 3,
     "baths": 2,
     "sqft": "1652",
@@ -62256,7 +62260,8 @@
     "isSundgren": false,
     "agentName": "Jeff A Blubaugh",
     "agentPhone": "3166400656",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 229900
   },
   {
     "slug": "4829-vassar-avenue-wichita-ks-664270",
@@ -83935,7 +83940,7 @@
     "state": "KS",
     "lat": 39.279137,
     "lng": -97.765721,
-    "price": 159000,
+    "price": 145000,
     "beds": 3,
     "baths": 3,
     "sqft": "1581",
@@ -83947,7 +83952,8 @@
     "isSundgren": false,
     "agentName": "Monte Nelson",
     "agentPhone": "7853927481",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 159000
   },
   {
     "slug": "901-11th-ave-winfield-ks-675944",
@@ -90736,7 +90742,7 @@
     "state": "KS",
     "lat": 37.689001,
     "lng": -97.385388,
-    "price": 135000,
+    "price": 129000,
     "beds": 3,
     "baths": 1,
     "sqft": "1028",
@@ -90748,7 +90754,8 @@
     "isSundgren": false,
     "agentName": "Jacob Henderson",
     "agentPhone": "3166500372",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 135000
   },
   {
     "slug": "3344-vine-st-wichita-ks-677986",
@@ -93642,7 +93649,7 @@
     "state": "KS",
     "lat": 37.660853,
     "lng": -97.3334,
-    "price": 129000,
+    "price": 126000,
     "beds": 2,
     "baths": 1,
     "sqft": "721",
@@ -93654,7 +93661,8 @@
     "isSundgren": false,
     "agentName": "Edna Martinez",
     "agentPhone": "3165595325",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 129000
   },
   {
     "slug": "115-2nd-st-moline-ks-676234",

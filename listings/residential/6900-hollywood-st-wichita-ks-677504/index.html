@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Welcome home to 6900 Hollywood! If you have been looking for a little more room to spread out without giving up the conveniences of town, this may be the one. Situated on a generous .62 acre lot with mature trees, an attached two car garage, and an impressive detached 3 plus car garage, this property offers the kind of space and flexibility that is increasingly difficult to find. From the moment you arrive, the neatly manicured landscaping, fresh mulch, clean brick, and mature trees create a welcoming first impression. The exterior was freshly painted approximately one year ago and features substantial six inch gutters and downspouts, new storm windows, and a Class 4 high impact roof that is only about a year old. There is even a covered front porch that might just become your favorite place to sit and watch a Kansas storm roll in. Inside, you will find an agreeable and open floor plan with neutral paint, real wood floors, new light fixtures, and abundant natural light pouring through the large picture window at the front of the home. The kitchen is equally inviting with generous countertop space, a convenient center island with seating for two, a dedicated coffee nook, and adjacent pantry cabinetry for additional storage. Toward the back of the home is a second living and hearth room full of character, anchored by a floor to ceiling brick fireplace flanked by substantial wood built ins. A large picture window provides a pleasant view of the backyard, while a nearby exterior door gives convenient access outside. Add a fire and a cool fall evening and this may be the coziest room in the house. The hallway bathroom offers double sinks and generous countertop space while also conveniently incorporating the main floor laundry, and as an added bonus, the washer and dryer stay! Downstairs, the space continues with another large family room and a flexible area currently being used as a workout space. There is also a full bathroom and an additional finished bonus room that could make a comfortable guest room, office, hobby room, or other flexible space, although it does not have an egress window. Two additional unfinished areas provide plenty of room for storage. Out back, an expansive deck and fire pit area provide plenty of space for grilling, entertaining, or simply enjoying the outdoors. But for anyone who likes cars, projects, tools, or simply having room for their stuff, the detached three plus car garage may be the real gem. It features a new 16 foot insulated garage door along with convenient additional side access for a riding mower, lawn equipment, or other toys, creating all kinds of possibilities for the space. Add the attached two car garage, storage shed, and room for RV parking, and you may finally have enough room for everything. The property also benefits from a recently inspected well system and a new well pump with a three year warranty for additional peace of mind. With 0.62 acres, mature trees, tremendous garage and hobby space, thoughtful updates, and a comfortable home to enjoy it all from, it is pretty hard not to see a little piece of the American dream here. Come see it for yourself!</p>
     </div>
@@ -201,8 +203,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -212,13 +214,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="6900 Hollywood ST, Wichita, KS, 67215">
-        <input type="hidden" name="message" value="I am interested in the property at 6900 Hollywood ST, Wichita, KS, 67215 (MLS# 677504). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 6900 Hollywood ST, Wichita, KS, 67215 (MLS# 677504). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
