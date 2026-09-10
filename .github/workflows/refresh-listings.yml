@@ -24,14 +24,17 @@ jobs:
         env:
           REPLIERS_API_KEY: ${{ secrets.REPLIERS_API_KEY }}
 
-      - name: Rebuild listing index pages
+      - name: Build full site
+        run: node build.js
+
+      - name: Rebuild listing index pages (must run AFTER build.js)
+        # build.js copies listings/index.html from source — overwriting the fresh
+        # index built by the generator. These scripts write directly to dist/ and
+        # must run last so card prices/status always match the live Repliers data.
         run: |
           node build-listings-index.mjs
           node build-type-index-pages.mjs
           node build-property-search.mjs
-
-      - name: Build full site
-        run: node build.js
 
       - name: Deploy to Cloudflare Pages (staging)
         run: npx wrangler pages deploy ./dist --project-name sundgren-realty --branch staging --commit-dirty=true

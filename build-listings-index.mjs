@@ -595,5 +595,14 @@ document.addEventListener('DOMContentLoaded', function(){
 </body>
 </html>`;
 
+// Write to source (for git tracking + local build.js runs)
 fs.writeFileSync(path.join(__dirname, 'listings/index.html'), html, 'utf8');
-console.log('Done. listings/index.html rebuilt with', total, 'listings.');
+// Write directly to dist/ so CI deploys always have fresh card data
+// (build.js copies from source first; this overwrites with the live version)
+const distListingsDir = path.join(__dirname, 'dist/listings');
+if (fs.existsSync(distListingsDir)) {
+  fs.writeFileSync(path.join(distListingsDir, 'index.html'), html, 'utf8');
+  console.log('Done. listings/index.html rebuilt with', total, 'listings (source + dist).');
+} else {
+  console.log('Done. listings/index.html rebuilt with', total, 'listings (source only — dist/ not found).');
+}

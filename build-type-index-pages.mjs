@@ -574,3 +574,13 @@ fs.writeFileSync(path.join(landDir, 'index.html'), landHtml, 'utf8');
 console.log('Built listings/land/index.html —', land.length, 'listings');
 
 console.log('Done. Run node build.js next.');
+
+// Also write to dist/ so CI deploys always have fresh data.
+// build.js runs before this script in CI and would otherwise serve stale source copies.
+const distListings = path.join(__dirname, 'dist/listings');
+if (fs.existsSync(distListings)) {
+  const distRes  = path.join(distListings, 'residential');
+  const distLand = path.join(distListings, 'land');
+  if (fs.existsSync(distRes))  { fs.writeFileSync(path.join(distRes,  'index.html'), resHtml,  'utf8'); console.log('  -> dist/listings/residential/index.html updated'); }
+  if (fs.existsSync(distLand)) { fs.writeFileSync(path.join(distLand, 'index.html'), landHtml, 'utf8'); console.log('  -> dist/listings/land/index.html updated'); }
+}
