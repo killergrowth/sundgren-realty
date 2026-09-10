@@ -205,66 +205,58 @@ ${buildFilterPills(['all','active','pending','residential','land','price-reduced
 
       <p class="listing-results-count" id="results-count"></p>
 
-      <!-- View Toggle -->
-      <div style="display:flex;justify-content:flex-end;align-items:center;gap:8px;margin-bottom:24px;">
-        <button id="view-grid-btn" onclick="setView('grid')" style="display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:700;padding:8px 14px;border-radius:6px;border:2px solid var(--dark);background:var(--dark);color:#fff;cursor:pointer;">
-          <i class="fas fa-th"></i> Grid
-        </button>
-        <button id="view-map-btn" onclick="setView('map')" style="display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:700;padding:8px 14px;border-radius:6px;border:2px solid var(--border);background:#fff;color:var(--dark);cursor:pointer;">
-          <i class="fas fa-map-marked-alt"></i> Map
-        </button>
-      </div>
-
-      <!-- Map View -->
-      <div id="listings-map-view" style="display:none;margin-bottom:48px;">
+      <!-- Map - always visible, same as /listings -->
+      <div id="listings-map-view" style="margin-bottom:32px;">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css">
         <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"><\/script>
-        <div id="listings-map" style="height:520px;border-radius:12px;border:1px solid var(--border);overflow:hidden;"></div>
+        <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"><\/script>
+        <div id="listings-map" style="height:480px;border-radius:12px;border:1px solid var(--border);overflow:hidden;"></div>
         <script>
         var _mapInitialized = false;
         function initListingsMap() {
           if (_mapInitialized) return;
           _mapInitialized = true;
-          var listings = [${pinsJs}];
-          var bounds = [];
-          var map = L.map('listings-map',{scrollWheelZoom:false});
-          L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'&copy; OpenStreetMap contributors',maxZoom:19}).addTo(map);
-          listings.forEach(function(l){
-            bounds.push([l.lat,l.lng]);
-            var icon = L.divIcon({className:'',html:'<div style="width:14px;height:14px;border-radius:50%;background:'+l.color+';border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.4);"></div>',iconSize:[14,14],iconAnchor:[7,7]});
-            L.marker([l.lat,l.lng],{icon:icon}).addTo(map)
-              .bindPopup('<div style="min-width:180px;"><strong>'+l.addr+'</strong><br><strong style="font-size:16px;">'+l.price+'</strong><br><a href="'+l.url+'" style="color:#b7791f;font-weight:700;font-size:13px;">View Details &rarr;<\/a><\/div>');
+          var map = L.map('listings-map', {scrollWheelZoom: false});
+          map.setView([37.82, -96.87], 10);
+          L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {attribution: '&copy; OpenStreetMap contributors', maxZoom: 19}).addTo(map);
+          var cluster = L.markerClusterGroup({
+            maxClusterRadius: 40,
+            spiderfyOnMaxZoom: true,
+            showCoverageOnHover: false,
+            zoomToBoundsOnClick: true,
+            iconCreateFunction: function(c) {
+              var n = c.getChildCount();
+              var s = n >= 100 ? 44 : n >= 10 ? 36 : 28;
+              return L.divIcon({className:'',html:'<div style="width:'+s+'px;height:'+s+'px;border-radius:50%;background:#FDF132;color:#000;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:'+(s<=28?11:13)+'px;border:3px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.35);">'+n+'<\/div>',iconSize:[s,s],iconAnchor:[s/2,s/2]});
+            }
           });
-          if (bounds.length) map.fitBounds(bounds, {padding:[40,40]});
-        }
-        function setView(v) {
-          var grid = document.getElementById('listings-grid-view');
-          var mapEl = document.getElementById('listings-map-view');
-          var gb = document.getElementById('view-grid-btn');
-          var mb = document.getElementById('view-map-btn');
-          if (v==='map') {
-            grid.style.display='none'; mapEl.style.display='block';
-            gb.style.background='#fff'; gb.style.color='var(--dark)'; gb.style.borderColor='var(--border)';
-            mb.style.background='var(--dark)'; mb.style.color='#fff'; mb.style.borderColor='var(--dark)';
-            initListingsMap();
-          } else {
-            mapEl.style.display='none'; grid.style.display='block';
-            mb.style.background='#fff'; mb.style.color='var(--dark)'; mb.style.borderColor='var(--border)';
-            gb.style.background='var(--dark)'; gb.style.color='#fff'; gb.style.borderColor='var(--dark)';
+          var listings = [${pinsJs}];
+          function makeIcon(color) {
+            return L.divIcon({className:'',html:'<div style="width:12px;height:12px;border-radius:50%;background:'+color+';border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.4);"></div>',iconSize:[12,12],iconAnchor:[6,6]});
           }
+          listings.forEach(function(l) {
+            if (!l.lat || !l.lng) return;
+            var color = l.type === 'land' ? '#16a34a' : '#0ea5e9';
+            L.marker([l.lat,l.lng],{icon:makeIcon(color)})
+              .bindPopup('<div style="min-width:180px;"><strong>'+l.addr+'</strong><br><strong style="font-size:16px;">'+l.price+'</strong><br><a href="'+l.url+'" style="color:#b7791f;font-weight:700;font-size:13px;">View Details &rarr;<\/a><\/div>')
+              .addTo(cluster);
+          });
+          map.addLayer(cluster);
         }
+        if (typeof L !== 'undefined') { initListingsMap(); } else { var _lmTick = setInterval(function(){ if (typeof L !== 'undefined') { clearInterval(_lmTick); initListingsMap(); } }, 50); }
+        <\/script>
+      </div>
         <\/script>
       </div>
 
-      <!-- Grid View -->
-      <div id="listings-grid-view">
-        <div class="listing-grid" id="listing-grid" style="margin-bottom:48px;">
+            <div class="listing-grid" id="listing-grid" style="margin-bottom:48px;">
 ${cards}
-        </div>
-        <div id="no-results">
-          <i class="fas fa-search"></i>
-          No listings match your search. <a href="#" onclick="clearFilters();return false;" style="color:var(--yellow-dark);font-weight:700;">Clear filters</a>
-        </div>
+      </div>
+      <div id="no-results">
+        <i class="fas fa-search"></i>
+        No listings match your search. <a href="#" onclick="clearFilters();return false;" style="color:var(--yellow-dark);font-weight:700;">Clear filters</a>
       </div>
 
     </div>
