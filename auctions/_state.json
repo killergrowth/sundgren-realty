@@ -1,5 +1,5 @@
 {
-  "lastFetch": "2026-09-10T10:48:18.680Z",
+  "lastFetch": "2026-09-10T15:57:21.103Z",
   "auctions": {
     "24096": {
       "slug": "test-auction-24096",
@@ -2874,6 +2874,18 @@
       "status": "pending",
       "name": "203 N 3rd St, Towanda KS 67144: 5 Bed 2 Bath Classic Home on Large Corner Lot",
       "generated": "2026-09-01T00:25:09.436Z"
+    },
+    "169491": {
+      "slug": "15592-nw-60th-whitewater-kansas-brick-home-on-96-acres-169491",
+      "status": "pending",
+      "name": "15592 NW 60th, Whitewater, Kansas – Brick home on 9.6+/- acres",
+      "generated": "2026-09-10T15:57:23.520Z"
+    },
+    "169498": {
+      "slug": "truck-stock-trailer-tractor-mower-tools-equipment-and-more-l-169498",
+      "status": "pending",
+      "name": "Truck, Stock Trailer, Tractor, Mower, Tools, Equipment and More – LIVE AUCTION",
+      "generated": "2026-09-10T15:57:23.520Z"
     }
   }
 }
