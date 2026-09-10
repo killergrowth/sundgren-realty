@@ -328,33 +328,51 @@ const html = `<!DOCTYPE html>
 
       <p class="listing-results-count" id="results-count"></p>
 
-      <!-- Map — always visible -->
-      <div id="listings-map-view" style="margin-bottom:32px;position:sticky;top:0;z-index:10;">
+      <!-- Map - always visible, sticky, cards scroll under -->
+      <div id="listings-map-view" style="position:sticky;top:0;z-index:10;background:#fff;padding-bottom:12px;">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css">
         <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"><\/script>
-        <div id="listings-map" style="height:520px;border-radius:12px;border:1px solid var(--border);overflow:hidden;"></div>
+        <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"><\/script>
+        <div id="listings-map" style="height:480px;border-radius:12px;border:1px solid var(--border);overflow:hidden;"></div>
         <script>
         var _mapInitialized = false;
         function initListingsMap() {
           if (_mapInitialized) return;
           _mapInitialized = true;
-          var listings = [${pinsJs}];
-          var bounds = [];
-          var map = L.map('listings-map',{scrollWheelZoom:false});
-          L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'&copy; OpenStreetMap contributors',maxZoom:19}).addTo(map);
-          listings.forEach(function(l){
-            bounds.push([l.lat,l.lng]);
-            var icon = L.divIcon({className:'',html:'<div style="width:14px;height:14px;border-radius:50%;background:'+l.color+';border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.4);"></div>',iconSize:[14,14],iconAnchor:[7,7]});
-            L.marker([l.lat,l.lng],{icon:icon}).addTo(map)
-              .bindPopup('<div style="min-width:180px;"><strong>'+l.addr+'</strong><br><strong style="font-size:16px;">'+l.price+'</strong><br><a href="'+l.url+'" style="color:#b7791f;font-weight:700;font-size:13px;">View Details &rarr;<\/a><\/div>');
+          var map = L.map('listings-map', {scrollWheelZoom: false});
+          map.setView([37.82, -96.87], 10);
+          L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {attribution: '&copy; OpenStreetMap contributors', maxZoom: 19}).addTo(map);
+          var cluster = L.markerClusterGroup({
+            maxClusterRadius: 40,
+            spiderfyOnMaxZoom: true,
+            showCoverageOnHover: false,
+            zoomToBoundsOnClick: true,
+            iconCreateFunction: function(c) {
+              var n = c.getChildCount();
+              var s = n >= 100 ? 44 : n >= 10 ? 36 : 28;
+              return L.divIcon({className:'',html:'<div style="width:'+s+'px;height:'+s+'px;border-radius:50%;background:#FDF132;color:#000;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:'+(s<=28?11:13)+'px;border:3px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.35);">'+n+'<\/div>',iconSize:[s,s],iconAnchor:[s/2,s/2]});
+            }
           });
-          if (bounds.length) map.fitBounds(bounds, {padding:[40,40]});
+          var listings = [${pinsJs}];
+          function makeIcon(color) {
+            return L.divIcon({className:'',html:'<div style="width:12px;height:12px;border-radius:50%;background:'+color+';border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.4);"></div>',iconSize:[12,12],iconAnchor:[6,6]});
+          }
+          listings.forEach(function(l) {
+            if (!l.lat || !l.lng) return;
+            var color = l.type === 'land' ? '#16a34a' : '#0ea5e9';
+            L.marker([l.lat,l.lng],{icon:makeIcon(color)})
+              .bindPopup('<div style="min-width:180px;"><strong>'+l.addr+'</strong><br><strong style="font-size:16px;">'+l.price+'</strong><br><a href="'+l.url+'" style="color:#b7791f;font-weight:700;font-size:13px;">View Details &rarr;<\/a><\/div>')
+              .addTo(cluster);
+          });
+          map.addLayer(cluster);
         }
         if (typeof L !== 'undefined') { initListingsMap(); } else { var _lmTick = setInterval(function(){ if (typeof L !== 'undefined') { clearInterval(_lmTick); initListingsMap(); } }, 50); }
         <\/script>
       </div>
 
-      <div>
+      <div style="margin-top:20px;">
         <div class="listing-grid" id="listing-grid" style="margin-bottom:48px;">
 ${cards}
         </div>
