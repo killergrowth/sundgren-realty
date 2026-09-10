@@ -328,8 +328,8 @@ const html = `<!DOCTYPE html>
 
       <p class="listing-results-count" id="results-count"></p>
 
-      <!-- Map - always visible, sticky, cards scroll under -->
-      <div id="listings-map-view" style="position:sticky;top:0;z-index:10;background:#fff;padding-bottom:12px;">
+      <!-- Map - always visible -->
+      <div id="listings-map-view" style="margin-bottom:32px;">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
         <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
         <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css">
