@@ -8,91 +8,15 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import {
+  esc, price, streetOnly, statusLabel, typeColor, labelCap, cityOf,
+  buildCards, buildMapPins, buildSuggestions, buildFilterPills, buildFilterScript
+} from './listing-card-helpers.mjs';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const allJson   = path.join(__dirname, 'data/all-listings.json');
 const repJson   = path.join(__dirname, 'data/repliers-listings.json');
 const all       = JSON.parse(fs.readFileSync(fs.existsSync(allJson) ? allJson : repJson, 'utf8'));
-
-function esc(s) {
-  return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
-}
-function price(p) {
-  return p && p > 0 ? '$' + parseInt(p).toLocaleString() : 'Contact for Price';
-}
-function metaLine(l) {
-  if (l.beds) {
-    let s = l.beds + ' Bd';
-    if (l.baths) s += ' &bull; ' + l.baths + ' Ba';
-    if (l.sqft)  s += ' &bull; ' + parseInt(l.sqft).toLocaleString() + ' sq ft';
-    if (l.acres) s += ' &bull; ' + parseFloat(l.acres).toFixed(1) + ' Acres';
-    return s;
-  }
-  if (l.acres) return parseFloat(l.acres).toFixed(1) + ' Acres';
-  return l.style || '';
-}
-function streetOnly(addr) { return addr.split(',')[0]; }
-function statusLabel(l) {
-  if (l.status === 'A') return 'Active';
-  const ls = (l.lastStatus || '').toLowerCase();
-  if (ls === 'sc' || ls === 'cs') return 'Pending';
-  return 'Inactive';
-}
-function statusColor(l) {
-  const s = statusLabel(l);
-  if (s === 'Active')  return '#22c55e';
-  if (s === 'Pending') return '#2563eb';
-  return '#6b7280';
-}
-function typeColor(t) {
-  return t === 'residential' ? '#0ea5e9' : t === 'land' ? '#16a34a' : '#6366f1';
-}
-function cityOf(l) {
-  return l.city || (l.address ? l.address.split(',')[1] : '') || '';
-}
-
-function buildCards(listings) {
-  return listings.map(l => {
-    const icon     = l.beds ? 'fa-bed' : 'fa-map';
-    const sl       = statusLabel(l);
-    const sc       = statusColor(l);
-    const tc       = typeColor(l.type);
-    const typeDisp = l.type.charAt(0).toUpperCase() + l.type.slice(1);
-    const city     = cityOf(l).trim();
-    const addrStr  = streetOnly(l.address);
-    const priceStr = price(l.price);
-    // data-* attributes drive search + filter
-    return `        <a href="/listings/${l.type}/${l.slug}/"
-           class="listing-card"
-           data-status="${sl.toLowerCase()}"
-           data-type="${l.type}"
-           data-city="${esc(city.toLowerCase())}"
-           data-search="${esc((addrStr + ' ' + city + ' ' + priceStr + ' ' + typeDisp + ' ' + sl).toLowerCase())}">
-          <img class="listing-card-img" src="${esc(l.image)}" alt="${esc(addrStr)}" loading="lazy">
-          <div class="listing-card-body">
-            <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
-              <span class="listing-card-badge" style="background:${sc};">${sl}</span>
-              <span class="listing-card-badge" style="background:${tc};">${typeDisp}</span>
-            </div>
-            <p class="listing-card-address">${esc(addrStr)}</p>
-            <p class="listing-card-meta"><i class="fas ${icon}"></i>${metaLine(l)}</p>
-            ${city ? `<p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>${esc(city)}, KS</p>` : ''}
-            <p class="listing-card-price">${priceStr}</p>
-            <span class="listing-card-more">View Details &rarr;</span>
-          </div>
-        </a>`;
-  }).join('\n');
-}
-
-function buildMapPins(listings) {
-  return listings
-    .filter(l => l.lat && l.lng)
-    .map(l => {
-      const addrShort = streetOnly(l.address) + ', ' + cityOf(l) + ', ' + (l.state || 'KS');
-      const tc = typeColor(l.type);
-      return `{lat:${l.lat},lng:${l.lng},addr:"${esc(addrShort)}",price:"${esc(price(l.price))}",url:"/listings/${l.type}/${l.slug}/",color:"${tc}"}`;
-    }).join(',\n            ');
-}
 
 function buildPage({ type, title, desc, crumbLabel, canonicalPath, listings }) {
   const cards    = buildCards(listings);
