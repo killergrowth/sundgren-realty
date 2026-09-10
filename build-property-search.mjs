@@ -248,10 +248,8 @@ ${buildFilterPills(['all','active','pending','residential','land','price-reduced
         if (typeof L !== 'undefined') { initListingsMap(); } else { var _lmTick = setInterval(function(){ if (typeof L !== 'undefined') { clearInterval(_lmTick); initListingsMap(); } }, 50); }
         <\/script>
       </div>
-        <\/script>
-      </div>
 
-            <div class="listing-grid" id="listing-grid" style="margin-bottom:48px;">
+      <div class="listing-grid" id="listing-grid" style="margin-bottom:48px;">
 ${cards}
       </div>
       <div id="no-results">
