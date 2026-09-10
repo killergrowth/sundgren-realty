@@ -266,10 +266,21 @@ function renderInfoCard(listing, typeInfo, fullAddr) {
 
   const statusHtml = `<span class="${statusPillClass(listing.status)} pill" style="display:inline-block;margin-bottom:16px;">${statusLabel(listing.status)}</span>`;
 
+  const resolved = resolveStatus(listing);
+  const isActive = resolved === 'active';
+  const cardHeading  = isActive ? 'Interested in this property?' : 'Interested in properties like this?';
+  const cardSubtext  = isActive
+    ? 'Call us directly or drop your info and we&#39;ll reach out to schedule a showing.'
+    : 'Call us directly or drop your info and we&#39;ll reach out.';
+  const hiddenMsg    = isActive
+    ? `I am interested in the property at ${esc(fullAddr)} (MLS# ${esc(listing.mlsNumber)}). Please contact me to schedule a showing.`
+    : `I am interested in properties similar to ${esc(fullAddr)} (MLS# ${esc(listing.mlsNumber)}). Please contact me.`;
+  const submitLabel  = isActive ? 'Contact Me About This Listing' : 'Get In Touch';
+
   return `
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we'll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">${cardHeading}</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">${cardSubtext}</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -279,13 +290,13 @@ function renderInfoCard(listing, typeInfo, fullAddr) {
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="${esc(fullAddr)}">
-        <input type="hidden" name="message" value="I am interested in the property at ${esc(fullAddr)} (MLS# ${esc(listing.mlsNumber)}). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="${hiddenMsg}">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          ${submitLabel}
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
@@ -500,7 +511,13 @@ function buildPage(listing, typeInfo, slug, allListings) {
   const ogImg   = heroImg || `${SITE_DOMAIN}/images/og-image.jpg`;
 
   const photoGrid    = renderPhotoGrid(listing.images || []);
-  const descHtml     = renderDescription(d.description || '');
+  const rawDescHtml  = renderDescription(d.description || '');
+  // Prepend under-contract/sold banner for non-active listings
+  const descHtml = resolved !== 'active'
+    ? `<div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div>` + rawDescHtml
+    : rawDescHtml;
   const featuresHtml = renderFeatures(listing);
   const mapHtml      = renderMap(listing);
   const statsRow     = renderStatsRow(listing);
