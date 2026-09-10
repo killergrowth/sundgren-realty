@@ -43,7 +43,8 @@
     "isSundgren": true,
     "agentName": "Phillip Solorio",
     "agentPhone": "3163230218",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 740000
   },
   {
     "slug": "0000-10th-st-severy-ks-653940",
@@ -89,7 +90,8 @@
     "isSundgren": true,
     "agentName": "Deanne Woodard",
     "agentPhone": "3163239238",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 495000
   },
   {
     "slug": "1910-jason-dr-el-dorado-ks-673963",
@@ -112,7 +114,8 @@
     "isSundgren": true,
     "agentName": "Phillip Solorio",
     "agentPhone": "3163230218",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 455000
   },
   {
     "slug": "9657-hopkins-switch-rd-augusta-ks-672322",
@@ -342,7 +345,8 @@
     "isSundgren": true,
     "agentName": "Kelsey Sundgren",
     "agentPhone": "3162449567",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 295000
   },
   {
     "slug": "211-commercial-ave-sedgwick-ks-675552",
@@ -687,7 +691,8 @@
     "isSundgren": true,
     "agentName": "Ashleigh Casper",
     "agentPhone": "6205839879",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 189900
   },
   {
     "slug": "1421-12th-ave-winfield-ks-670529",
@@ -779,7 +784,8 @@
     "isSundgren": true,
     "agentName": "Deanne Woodard",
     "agentPhone": "3163239238",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 135000
   },
   {
     "slug": "111-jefferson-st-eureka-ks-668660",
@@ -825,7 +831,8 @@
     "isSundgren": true,
     "agentName": "Ashleigh Casper",
     "agentPhone": "6205839879",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 120000
   },
   {
     "slug": "219-haverhill-rd-el-dorado-ks-669041",
@@ -848,7 +855,8 @@
     "isSundgren": true,
     "agentName": "Audrey Reese",
     "agentPhone": "3167081587",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 109000
   },
   {
     "slug": "000-143rd-st-east-valley-center-ks-678311",
@@ -940,7 +948,8 @@
     "isSundgren": true,
     "agentName": "Audrey Reese",
     "agentPhone": "3167081587",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 80000
   },
   {
     "slug": "320-maple-st-eureka-ks-676053",
@@ -2412,7 +2421,8 @@
     "isSundgren": false,
     "agentName": "Sissy Koury",
     "agentPhone": "3164099955",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 1799000
   },
   {
     "slug": "32123244-victoria-ave-wichita-ks-667319",
@@ -3746,7 +3756,8 @@
     "isSundgren": false,
     "agentName": "Ray Swearingen",
     "agentPhone": "7858251199",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 1200000
   },
   {
     "slug": "10730-103rd-st-s-st-mulvane-ks-675789",
@@ -3930,7 +3941,8 @@
     "isSundgren": false,
     "agentName": "Karen L McCaughan-Prahm",
     "agentPhone": "3165192491",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 1150000
   },
   {
     "slug": "11801-albert-cir-maize-ks-677699",
@@ -4804,7 +4816,8 @@
     "isSundgren": false,
     "agentName": "Bryce Jones",
     "agentPhone": "3166410878",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 950000
   },
   {
     "slug": "24-douglas-ave-eastborough-ks-674383",
@@ -6299,7 +6312,8 @@
     "isSundgren": false,
     "agentName": "Clarke Carnahan",
     "agentPhone": "3166449208",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 800000
   },
   {
     "slug": "10862-140th-st-cassoday-ks-676393",
@@ -6920,7 +6934,8 @@
     "isSundgren": false,
     "agentName": "Mike Mathews",
     "agentPhone": "3162950862",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 775000
   },
   {
     "slug": "3086-saddle-road-elk-city-ks-670231",
@@ -7863,7 +7878,8 @@
     "isSundgren": false,
     "agentName": "Kaleigh Key",
     "agentPhone": "9703661123",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 710000
   },
   {
     "slug": "329-sarah-ct-derby-ks-637858",
@@ -8070,7 +8086,8 @@
     "isSundgren": false,
     "agentName": "Joseph C Hall",
     "agentPhone": "6204402919",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 699900
   },
   {
     "slug": "26631-51st-rd-arkansas-city-ks-677934",
@@ -8346,7 +8363,8 @@
     "isSundgren": false,
     "agentName": "Trent Gorges",
     "agentPhone": "3166556468",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 695000
   },
   {
     "slug": "31-campbell-rd-marquette-ks-673598",
@@ -8783,7 +8801,8 @@
     "isSundgren": false,
     "agentName": "Lisa Soltesz",
     "agentPhone": "6233881135",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 670000
   },
   {
     "slug": "19447-meadowlark-rd-rose-hill-ks-672873",
@@ -8829,7 +8848,8 @@
     "isSundgren": false,
     "agentName": "Julie Schmidt",
     "agentPhone": "3166176700",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 669000
   },
   {
     "slug": "5046-remington-st-bel-aire-ks-671899",
@@ -8944,7 +8964,8 @@
     "isSundgren": false,
     "agentName": "Larry Showalter",
     "agentPhone": "7857664497",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 660000
   },
   {
     "slug": "880-barlow-ct-salina-ks-675231",
@@ -9404,7 +9425,8 @@
     "isSundgren": false,
     "agentName": "Janelle Shearer",
     "agentPhone": "3167689314",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 649000
   },
   {
     "slug": "435-130th-st-s-st-south-haven-ks-677033",
@@ -9450,7 +9472,8 @@
     "isSundgren": false,
     "agentName": "Samantha Swearingen",
     "agentPhone": "7855779878",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 640000
   },
   {
     "slug": "962-120th-ave-n-ave-conway-springs-ks-675028",
@@ -9841,7 +9864,8 @@
     "isSundgren": false,
     "agentName": "Kelly Kemnitz",
     "agentPhone": "3163083717",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 625000
   },
   {
     "slug": "113-hibiscus-st-garden-plain-ks-676474",
@@ -9933,7 +9957,8 @@
     "isSundgren": false,
     "agentName": "Mike Weber",
     "agentPhone": "3162151976",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 625000
   },
   {
     "slug": "5913-driftwood-st-wichita-ks-671329",
@@ -10485,7 +10510,8 @@
     "isSundgren": false,
     "agentName": "Amelia H Sumerell",
     "agentPhone": "3163936161",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 600000
   },
   {
     "slug": "1501-castle-rock-wichita-ks-675796",
@@ -11083,7 +11109,8 @@
     "isSundgren": false,
     "agentName": "Chris Rost",
     "agentPhone": "7858273641",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 595000
   },
   {
     "slug": "1613-rockhill-pl-andover-ks-666873",
@@ -11589,7 +11616,8 @@
     "isSundgren": false,
     "agentName": "Todd Davis",
     "agentPhone": "3169905460",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 579000
   },
   {
     "slug": "3263-bedford-st-wichita-ks-675214",
@@ -11681,7 +11709,8 @@
     "isSundgren": false,
     "agentName": "Leah Lawrence",
     "agentPhone": "3167652568",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 575000
   },
   {
     "slug": "2542-emerald-ct-andover-ks-677066",
@@ -12141,7 +12170,8 @@
     "isSundgren": false,
     "agentName": "Rachel Lange-Mills",
     "agentPhone": "3167655764",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 569000
   },
   {
     "slug": "13312-jewell-ct-wichita-ks-674602",
@@ -12624,7 +12654,8 @@
     "isSundgren": false,
     "agentName": "Julie Buth",
     "agentPhone": "3166555902",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 554900
   },
   {
     "slug": "14284-oakwood-dr-wichita-ks-678305",
@@ -13015,7 +13046,8 @@
     "isSundgren": false,
     "agentName": "Christina M Weller",
     "agentPhone": "3168330796",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 549988
   },
   {
     "slug": "5602-harry-st-wichita-ks-673282",
@@ -13429,7 +13461,8 @@
     "isSundgren": false,
     "agentName": "Tonya Stephenson",
     "agentPhone": "3168710500",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 540000
   },
   {
     "slug": "1748-cascade-pt-andover-ks-673455",
@@ -13636,7 +13669,8 @@
     "isSundgren": false,
     "agentName": "Sara L Cortner",
     "agentPhone": "3167081725",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 539000
   },
   {
     "slug": "3429-linden-ct-wichita-ks-677579",
@@ -13797,7 +13831,8 @@
     "isSundgren": false,
     "agentName": "Shane Pullman",
     "agentPhone": "3166407375",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 535000
   },
   {
     "slug": "464-stoney-creek-st-clearwater-ks-676331",
@@ -15223,7 +15258,8 @@
     "isSundgren": false,
     "agentName": "Sissy Koury",
     "agentPhone": "3164099955",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 500000
   },
   {
     "slug": "4508-sunny-cir-wichita-ks-676344",
@@ -16120,7 +16156,8 @@
     "isSundgren": false,
     "agentName": "Mari Loder",
     "agentPhone": "7854525314",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 495000
   },
   {
     "slug": "101-santa-fe-ave-salina-ks-671358",
@@ -16327,7 +16364,8 @@
     "isSundgren": false,
     "agentName": "Ronda Welsh",
     "agentPhone": "3164094431",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 494750
   },
   {
     "slug": "14113-barn-owl-st-wichita-ks-667706",
@@ -16373,7 +16411,8 @@
     "isSundgren": false,
     "agentName": "Christine M Ketzner",
     "agentPhone": "3166195709",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 494476
   },
   {
     "slug": "6237-central-park-ct-bel-aire-ks-668117",
@@ -16994,7 +17033,8 @@
     "isSundgren": false,
     "agentName": "Jenny Grandfield",
     "agentPhone": "3166445102",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 480000
   },
   {
     "slug": "3471-bearsden-derby-ks-672842",
@@ -17063,7 +17103,8 @@
     "isSundgren": false,
     "agentName": "Amanda L Levin",
     "agentPhone": "3163034835",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 479000
   },
   {
     "slug": "4821-peregrine-st-wichita-ks-674822",
@@ -17937,7 +17978,8 @@
     "isSundgren": false,
     "agentName": "Heidi Brown",
     "agentPhone": "7858267962",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 465000
   },
   {
     "slug": "3502-bluelake-ct-wichita-ks-675932",
@@ -18834,7 +18876,8 @@
     "isSundgren": false,
     "agentName": "Jessica Schmidt",
     "agentPhone": "6202811800",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 450000
   },
   {
     "slug": "13310-mount-vernon-rd-wichita-ks-677596",
@@ -18857,7 +18900,8 @@
     "isSundgren": false,
     "agentName": "Amanda Jolley",
     "agentPhone": "3162139043",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 450000
   },
   {
     "slug": "13831-berwick-dr-wichita-ks-677478",
@@ -19501,7 +19545,8 @@
     "isSundgren": false,
     "agentName": "Becky Schaffer",
     "agentPhone": "6207500054",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 449999
   },
   {
     "slug": "196-50th-st-s-st-wellington-ks-675117",
@@ -20582,7 +20627,8 @@
     "isSundgren": false,
     "agentName": "Cathie Barnard",
     "agentPhone": "3162508525",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 438500
   },
   {
     "slug": "00000-camp-road-abilene-ks-665898",
@@ -20697,7 +20743,8 @@
     "isSundgren": false,
     "agentName": "Susan E Shain",
     "agentPhone": "3167372275",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 435000
   },
   {
     "slug": "435-sienna-dr-rose-hill-ks-677171",
@@ -20996,7 +21043,8 @@
     "isSundgren": false,
     "agentName": "Sandra Haugen",
     "agentPhone": "3163935833",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 430000
   },
   {
     "slug": "1660-kay-st-derby-ks-669873",
@@ -21180,7 +21228,8 @@
     "isSundgren": false,
     "agentName": "Elizabeth Barker",
     "agentPhone": "3162048575",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 429000
   },
   {
     "slug": "421-estates-dr-salina-ks-675701",
@@ -21364,7 +21413,8 @@
     "isSundgren": false,
     "agentName": "Samantha Swearingen",
     "agentPhone": "7855779878",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 425000
   },
   {
     "slug": "931-clearlake-st-derby-ks-677751",
@@ -21387,7 +21437,8 @@
     "isSundgren": false,
     "agentName": "Marsha M Allen",
     "agentPhone": "3168066111",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 425000
   },
   {
     "slug": "13417-bellechase-st-wichita-ks-677763",
@@ -21824,7 +21875,8 @@
     "isSundgren": false,
     "agentName": "Gayle Atkins",
     "agentPhone": "3166507816",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 424900
   },
   {
     "slug": "2104-cedarcrest-ct-arkansas-city-ks-676774",
@@ -21962,7 +22014,8 @@
     "isSundgren": false,
     "agentName": "Jenny Grandfield",
     "agentPhone": "3166445102",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 422500
   },
   {
     "slug": "52865288-cypress-st-bel-aire-ks-666605",
@@ -22054,7 +22107,8 @@
     "isSundgren": false,
     "agentName": "Angie Vailas",
     "agentPhone": "3166507251",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 421000
   },
   {
     "slug": "2315-lakeway-ct-wichita-ks-677511",
@@ -22399,7 +22453,8 @@
     "isSundgren": false,
     "agentName": "Angel Culver",
     "agentPhone": "3167087361",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 419000
   },
   {
     "slug": "13913-watson-st-wichita-ks-672724",
@@ -22422,7 +22477,8 @@
     "isSundgren": false,
     "agentName": "Judy Bias",
     "agentPhone": "3166193734",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 419000
   },
   {
     "slug": "601-stone-lake-circle-augusta-ks-672479",
@@ -22813,7 +22869,8 @@
     "isSundgren": false,
     "agentName": "Heather Lora",
     "agentPhone": "3165732150",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 414900
   },
   {
     "slug": "000-klein-cir-derby-ks-671668",
@@ -23112,7 +23169,8 @@
     "isSundgren": false,
     "agentName": "Janelle Cook",
     "agentPhone": "3162146960",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 409900
   },
   {
     "slug": "142-144-gowen-st-goddard-ks-657945",
@@ -23710,7 +23768,8 @@
     "isSundgren": false,
     "agentName": "Mikaela Rehmert-Fira",
     "agentPhone": "3165161734",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 400000
   },
   {
     "slug": "1404-greenwich-rd-mulvane-ks-677905",
@@ -24170,7 +24229,8 @@
     "isSundgren": false,
     "agentName": "Lacey Pool",
     "agentPhone": "6205067488",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 399900
   },
   {
     "slug": "2824-crystal-lake-dr-salina-ks-668974",
@@ -24423,7 +24483,8 @@
     "isSundgren": false,
     "agentName": "Cathie Barnard",
     "agentPhone": "3162508525",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 399500
   },
   {
     "slug": "404-11th-ave-winfield-ks-674491",
@@ -25090,7 +25151,8 @@
     "isSundgren": false,
     "agentName": "Sissy Koury",
     "agentPhone": "3164099955",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 395000
   },
   {
     "slug": "2200-51st-st-wichita-ks-676069",
@@ -25113,7 +25175,8 @@
     "isSundgren": false,
     "agentName": "John Kumar",
     "agentPhone": "3166651555",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 395000
   },
   {
     "slug": "3554-tyler-ct-wichita-ks-667792",
@@ -25458,7 +25521,8 @@
     "isSundgren": false,
     "agentName": "Mikaela Rehmert-Fira",
     "agentPhone": "3165161734",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 393000
   },
   {
     "slug": "2612-spring-meadows-ct-derby-ks-677369",
@@ -26355,7 +26419,8 @@
     "isSundgren": false,
     "agentName": "Joseph C Hall",
     "agentPhone": "6204402919",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 389000
   },
   {
     "slug": "616-gatewood-ln-andover-ks-677209",
@@ -26447,7 +26512,8 @@
     "isSundgren": false,
     "agentName": "Danielle Keenan",
     "agentPhone": "3162102025",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 385000
   },
   {
     "slug": "2924-denene-st-wichita-ks-676991",
@@ -26539,7 +26605,8 @@
     "isSundgren": false,
     "agentName": "Lisa Cox",
     "agentPhone": "3166509481",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 385000
   },
   {
     "slug": "5540-porter-ave-wichita-ks-675748",
@@ -27436,7 +27503,8 @@
     "isSundgren": false,
     "agentName": "Robbin L Deel",
     "agentPhone": "3166488494",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 379900
   },
   {
     "slug": "3513-bluelake-st-wichita-ks-671913",
@@ -27988,7 +28056,8 @@
     "isSundgren": false,
     "agentName": "Ryan Rust",
     "agentPhone": "3168049003",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 379000
   },
   {
     "slug": "1540715409-josephine-st-goddard-ks-671568",
@@ -28379,7 +28448,8 @@
     "isSundgren": false,
     "agentName": "Betsy Anderson",
     "agentPhone": "3167069750",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 375000
   },
   {
     "slug": "519-renee-dr-andover-ks-678018",
@@ -28448,7 +28518,8 @@
     "isSundgren": false,
     "agentName": "Jarod C Gillenwater",
     "agentPhone": "3165501970",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 375000
   },
   {
     "slug": "413-cranmer-st-conway-springs-ks-677130",
@@ -28471,7 +28542,8 @@
     "isSundgren": false,
     "agentName": "Rachel Lange-Mills",
     "agentPhone": "3167655764",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 375000
   },
   {
     "slug": "407-stoney-creek-st-clearwater-ks-676927",
@@ -28540,7 +28612,8 @@
     "isSundgren": false,
     "agentName": "Kaylyn J Hobbs",
     "agentPhone": "3163087022",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 375000
   },
   {
     "slug": "52275229-cypress-st-bel-aire-ks-676830",
@@ -28563,7 +28636,8 @@
     "isSundgren": false,
     "agentName": "Michelle Estrada",
     "agentPhone": "3166800414",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 375000
   },
   {
     "slug": "15106-slope-st-wichita-ks-676488",
@@ -28586,7 +28660,8 @@
     "isSundgren": false,
     "agentName": "Ronda Welsh",
     "agentPhone": "3164094431",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 375000
   },
   {
     "slug": "232-234-gowen-st-goddard-ks-675090",
@@ -29437,7 +29512,8 @@
     "isSundgren": false,
     "agentName": "Derek Walden",
     "agentPhone": "3162092384",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 374900
   },
   {
     "slug": "890-hwy-14-harper-ks-670889",
@@ -29805,7 +29881,8 @@
     "isSundgren": false,
     "agentName": "Myron K Klaassen",
     "agentPhone": "3164614847",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 370000
   },
   {
     "slug": "16051607-limuel-st-wichita-ks-677917",
@@ -30702,7 +30779,8 @@
     "isSundgren": false,
     "agentName": "Joel Morris, ALC",
     "agentPhone": "3167069587",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 369000
   },
   {
     "slug": "2041-tara-falls-wichita-ks-676481",
@@ -31553,7 +31631,8 @@
     "isSundgren": false,
     "agentName": "Josh Roy",
     "agentPhone": "3166656799",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 365000
   },
   {
     "slug": "8857-hidden-ln-park-city-ks-675799",
@@ -32335,7 +32414,8 @@
     "isSundgren": false,
     "agentName": "Dan Madrigal",
     "agentPhone": "3169900184",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 360500
   },
   {
     "slug": "12148-33rd-st-n-wichita-ks-677739",
@@ -33922,7 +34002,8 @@
     "isSundgren": false,
     "agentName": "Rhonda M Brambley",
     "agentPhone": "3162850421",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 350000
   },
   {
     "slug": "15120-63rd-st-s-st-derby-ks-677465",
@@ -33945,7 +34026,8 @@
     "isSundgren": false,
     "agentName": "Angelina Bentley",
     "agentPhone": "3163239344",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 350000
   },
   {
     "slug": "5123-hampton-st-wichita-ks-676160",
@@ -34888,7 +34970,8 @@
     "isSundgren": false,
     "agentName": "Lisa Waupsh Towle",
     "agentPhone": "3169926099",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 349900
   },
   {
     "slug": "12705-hendryx-ct-wichita-ks-677327",
@@ -34934,7 +35017,8 @@
     "isSundgren": false,
     "agentName": "Mandi Hill",
     "agentPhone": "6202293600",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 349900
   },
   {
     "slug": "936-moss-wood-st-derby-ks-675586",
@@ -34957,7 +35041,8 @@
     "isSundgren": false,
     "agentName": "Melody Rogers",
     "agentPhone": "3167666480",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 349900
   },
   {
     "slug": "2202-cranbrook-st-wichita-ks-675421",
@@ -35417,7 +35502,8 @@
     "isSundgren": false,
     "agentName": "Vickie L Vargas-Jacobs",
     "agentPhone": "3163934445",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 346900
   },
   {
     "slug": "14109-barn-owl-st-wichita-ks-668354",
@@ -35509,7 +35595,8 @@
     "isSundgren": false,
     "agentName": "Molly Reilly",
     "agentPhone": "7853924186",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 345000
   },
   {
     "slug": "731-wakefield-ave-valley-center-ks-675146",
@@ -36015,7 +36102,8 @@
     "isSundgren": false,
     "agentName": "Mindy Wagner",
     "agentPhone": "3166409641",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 340000
   },
   {
     "slug": "10009-britton-st-wichita-ks-677427",
@@ -37740,7 +37828,8 @@
     "isSundgren": false,
     "agentName": "John Bossemeyer",
     "agentPhone": "8554141871",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 330000
   },
   {
     "slug": "420-pennsylvania-ave-holton-ks-673126",
@@ -37993,7 +38082,8 @@
     "isSundgren": false,
     "agentName": "Basem Krichati",
     "agentPhone": "3165160139",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 329900
   },
   {
     "slug": "1610-appleton-st-valley-center-ks-676577",
@@ -38016,7 +38106,8 @@
     "isSundgren": false,
     "agentName": "Basem Krichati",
     "agentPhone": "3165160139",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 329900
   },
   {
     "slug": "9809-laura-st-haysville-ks-675835",
@@ -38499,7 +38590,8 @@
     "isSundgren": false,
     "agentName": "Meaghan Sauder",
     "agentPhone": "3163129664",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 327500
   },
   {
     "slug": "0000-cr-lehigh-ks-676450",
@@ -38752,7 +38844,8 @@
     "isSundgren": false,
     "agentName": "Amanda Jolley",
     "agentPhone": "3162139043",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 325000
   },
   {
     "slug": "142-magnolia-dr-kaw-city-ok-676981",
@@ -38890,7 +38983,8 @@
     "isSundgren": false,
     "agentName": "W. David Beutel",
     "agentPhone": "2812016887",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 325000
   },
   {
     "slug": "4962-294th-dr-arkansas-city-ks-675048",
@@ -39442,7 +39536,8 @@
     "isSundgren": false,
     "agentName": "Dwight Boyce",
     "agentPhone": "3166483474",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 324990
   },
   {
     "slug": "2129-ventoso-rd-wichita-ks-677242",
@@ -39787,7 +39882,8 @@
     "isSundgren": false,
     "agentName": "Christina Splane",
     "agentPhone": "3162493569",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 322000
   },
   {
     "slug": "8026-morningside-st-wichita-ks-670623",
@@ -39902,7 +39998,8 @@
     "isSundgren": false,
     "agentName": "Tyus Becker",
     "agentPhone": "7855120066",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 320000
   },
   {
     "slug": "744-wakefield-ave-valley-center-ks-676783",
@@ -40017,7 +40114,8 @@
     "isSundgren": false,
     "agentName": "Larry Hall",
     "agentPhone": "3166403289",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 320000
   },
   {
     "slug": "405-morris-st-rose-hill-ks-674186",
@@ -40040,7 +40138,8 @@
     "isSundgren": false,
     "agentName": "Patty Cisney",
     "agentPhone": "3166700994",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 320000
   },
   {
     "slug": "602-high-st-argonia-ks-671411",
@@ -40408,7 +40507,8 @@
     "isSundgren": false,
     "agentName": "Robbin L Deel",
     "agentPhone": "3166488494",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 319900
   },
   {
     "slug": "195-15th-st-s-st-wellington-ks-675832",
@@ -40431,7 +40531,8 @@
     "isSundgren": false,
     "agentName": "Vickie L Vargas-Jacobs",
     "agentPhone": "3163934445",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 319900
   },
   {
     "slug": "4610-farmstead-ct-bel-aire-ks-675224",
@@ -40661,7 +40762,8 @@
     "isSundgren": false,
     "agentName": "Joseph C Hall",
     "agentPhone": "6204402919",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 319900
   },
   {
     "slug": "220224-harry-st-wichita-ks-667211",
@@ -40753,7 +40855,8 @@
     "isSundgren": false,
     "agentName": "Dustin Lynam",
     "agentPhone": "3162599184",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 319000
   },
   {
     "slug": "4604-sequoia-st-hutchinson-ks-676131",
@@ -40960,7 +41063,8 @@
     "isSundgren": false,
     "agentName": "Basem Krichati",
     "agentPhone": "3165160139",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 317000
   },
   {
     "slug": "5061-toben-ct-bel-aire-ks-676734",
@@ -41328,7 +41432,8 @@
     "isSundgren": false,
     "agentName": "Carol Phipps",
     "agentPhone": "3166481199",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 315000
   },
   {
     "slug": "13008-equestrian-st-wichita-ks-674246",
@@ -41903,7 +42008,8 @@
     "isSundgren": false,
     "agentName": "Phyllis Zimmerman",
     "agentPhone": "3167347411",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 310000
   },
   {
     "slug": "1326-rocky-creek-wichita-ks-675238",
@@ -42248,7 +42354,8 @@
     "isSundgren": false,
     "agentName": "Season Wedman",
     "agentPhone": "3166401731",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 309000
   },
   {
     "slug": "1835-megan-circle-el-dorado-ks-675946",
@@ -42478,7 +42585,8 @@
     "isSundgren": false,
     "agentName": "Kirsten Haas",
     "agentPhone": "3162140052",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 305000
   },
   {
     "slug": "215-main-street-herington-ks-674189",
@@ -42869,7 +42977,8 @@
     "isSundgren": false,
     "agentName": "Lisa Soltesz",
     "agentPhone": "6233881135",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 300000
   },
   {
     "slug": "419-myers-ct-mulvane-ks-678228",
@@ -42961,7 +43070,8 @@
     "isSundgren": false,
     "agentName": "Erica Day",
     "agentPhone": "3167946728",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 300000
   },
   {
     "slug": "7333-22nd-st-n-st-wichita-ks-677766",
@@ -43076,7 +43186,8 @@
     "isSundgren": false,
     "agentName": "Brittany Schowalter",
     "agentPhone": "3162535350",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 300000
   },
   {
     "slug": "12029-cornelison-ct-wichita-ks-675910",
@@ -43582,7 +43693,8 @@
     "isSundgren": false,
     "agentName": "Christy Needles",
     "agentPhone": "3165164591",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 299900
   },
   {
     "slug": "10231-alamo-st-wichita-ks-676999",
@@ -43605,7 +43717,8 @@
     "isSundgren": false,
     "agentName": "Danielle Brittain",
     "agentPhone": "3166553718",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 299900
   },
   {
     "slug": "12047-arvada-blvd-maize-ks-676998",
@@ -43743,7 +43856,8 @@
     "isSundgren": false,
     "agentName": "Joseph A Swartz",
     "agentPhone": "3163994666",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 299900
   },
   {
     "slug": "701-elmwood-st-park-city-ks-669467",
@@ -44272,7 +44386,8 @@
     "isSundgren": false,
     "agentName": "Cari Westhoff",
     "agentPhone": "3165704338",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 298000
   },
   {
     "slug": "2224-arrowhead-st-andover-ks-677980",
@@ -44686,7 +44801,8 @@
     "isSundgren": false,
     "agentName": "Heather L Hogan",
     "agentPhone": "3162137562",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 295000
   },
   {
     "slug": "904-5th-ave-winfield-ks-671903",
@@ -45123,7 +45239,8 @@
     "isSundgren": false,
     "agentName": "Andy Nguyen",
     "agentPhone": "3166441965",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 294900
   },
   {
     "slug": "3480-derwin-st-derby-ks-677073",
@@ -45606,7 +45723,8 @@
     "isSundgren": false,
     "agentName": "Edna Martinez",
     "agentPhone": "3165595325",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 290000
   },
   {
     "slug": "11803-murdock-ave-wichita-ks-677558",
@@ -45629,7 +45747,8 @@
     "isSundgren": false,
     "agentName": "Chelsee Cox",
     "agentPhone": "3167689922",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 290000
   },
   {
     "slug": "1913-honeytree-st-wichita-ks-675834",
@@ -46526,7 +46645,8 @@
     "isSundgren": false,
     "agentName": "Basem Krichati",
     "agentPhone": "3165160139",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 289000
   },
   {
     "slug": "8980-forbes-cir-bel-aire-ks-674862",
@@ -46572,7 +46692,8 @@
     "isSundgren": false,
     "agentName": "Larry Showalter",
     "agentPhone": "7857664497",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 289000
   },
   {
     "slug": "2720-beacon-hill-wichita-ks-672567",
@@ -47377,7 +47498,8 @@
     "isSundgren": false,
     "agentName": "Crystie Macormac",
     "agentPhone": "3169905944",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 285000
   },
   {
     "slug": "1914-summerwood-st-goddard-ks-677921",
@@ -47423,7 +47545,8 @@
     "isSundgren": false,
     "agentName": "Ronda Welsh",
     "agentPhone": "3164094431",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 285000
   },
   {
     "slug": "821-50th-st-wichita-ks-677813",
@@ -47515,7 +47638,8 @@
     "isSundgren": false,
     "agentName": "Josh Roy",
     "agentPhone": "3166656799",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 285000
   },
   {
     "slug": "5737-georgia-st-wichita-ks-676840",
@@ -47584,7 +47708,8 @@
     "isSundgren": false,
     "agentName": "Larry Levich",
     "agentPhone": "3169789777",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 285000
   },
   {
     "slug": "7027-sheriac-cir-wichita-ks-675656",
@@ -48803,7 +48928,8 @@
     "isSundgren": false,
     "agentName": "Adrienne M Winfield",
     "agentPhone": "3162100120",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 280000
   },
   {
     "slug": "604-saint-james-pl-wichita-ks-677161",
@@ -48826,7 +48952,8 @@
     "isSundgren": false,
     "agentName": "Nathan Kirk",
     "agentPhone": "3167067391",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 280000
   },
   {
     "slug": "1131-gow-st-wichita-ks-669741",
@@ -49010,7 +49137,8 @@
     "isSundgren": false,
     "agentName": "Ty Bryant",
     "agentPhone": "7853660261",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 280000
   },
   {
     "slug": "3590-bearsden-st-derby-ks-675370",
@@ -49079,7 +49207,8 @@
     "isSundgren": false,
     "agentName": "Heather Stevenson",
     "agentPhone": "3169938451",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 279900
   },
   {
     "slug": "1826-mars-st-wichita-ks-678116",
@@ -49125,7 +49254,8 @@
     "isSundgren": false,
     "agentName": "Jerry Short",
     "agentPhone": "7854525464",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 279900
   },
   {
     "slug": "21-fleetwood-dr-winfield-ks-677731",
@@ -49746,7 +49876,8 @@
     "isSundgren": false,
     "agentName": "Stephanie Fondren",
     "agentPhone": "3168070220",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 278000
   },
   {
     "slug": "851-meadowlark-ln-newton-ks-674941",
@@ -50137,7 +50268,8 @@
     "isSundgren": false,
     "agentName": "Grant Ketzner",
     "agentPhone": "3167599583",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 275000
   },
   {
     "slug": "1691-ashleigh-ln-milton-ks-677936",
@@ -50160,7 +50292,8 @@
     "isSundgren": false,
     "agentName": "Debbie Haukap",
     "agentPhone": "3167220030",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 275000
   },
   {
     "slug": "5122-peregrine-ct-wichita-ks-677931",
@@ -50183,7 +50316,8 @@
     "isSundgren": false,
     "agentName": "Katie Bacon",
     "agentPhone": "3163477218",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 275000
   },
   {
     "slug": "1518-covington-st-wichita-ks-677835",
@@ -50252,7 +50386,8 @@
     "isSundgren": false,
     "agentName": "Margaret Metzger",
     "agentPhone": "3163719816",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 275000
   },
   {
     "slug": "2634-viney-ave-murdock-ks-677531",
@@ -50298,7 +50433,8 @@
     "isSundgren": false,
     "agentName": "Rachel Lange-Mills",
     "agentPhone": "3167655764",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 275000
   },
   {
     "slug": "613-tanglewood-ct-derby-ks-677455",
@@ -51908,7 +52044,8 @@
     "isSundgren": false,
     "agentName": "Josh Witte",
     "agentPhone": "3164913938",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 270000
   },
   {
     "slug": "1102-west-st-rose-hill-ks-676164",
@@ -52414,7 +52551,8 @@
     "isSundgren": false,
     "agentName": "Dawn R Wade",
     "agentPhone": "3168061060",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 269000
   },
   {
     "slug": "8110-westlawn-cir-wichita-ks-677589",
@@ -52437,7 +52575,8 @@
     "isSundgren": false,
     "agentName": "Tamara L Walker",
     "agentPhone": "3165587985",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 269000
   },
   {
     "slug": "602-elmwood-st-park-city-ks-675897",
@@ -52713,7 +52852,8 @@
     "isSundgren": false,
     "agentName": "Pam Flesher",
     "agentPhone": "3163934015",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 268000
   },
   {
     "slug": "904-forestview-ct-wichita-ks-669063",
@@ -53081,7 +53221,8 @@
     "isSundgren": false,
     "agentName": "Molly Reilly",
     "agentPhone": "7853924186",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 265000
   },
   {
     "slug": "214-country-walk-mulvane-ks-675193",
@@ -53633,7 +53774,8 @@
     "isSundgren": false,
     "agentName": "Amanda Wells",
     "agentPhone": "3163714451",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 264900
   },
   {
     "slug": "1912-hydraulic-st-wichita-ks-675853",
@@ -53748,7 +53890,8 @@
     "isSundgren": false,
     "agentName": "Dawn R Wade",
     "agentPhone": "3168061060",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 264900
   },
   {
     "slug": "1831-denise-marie-st-wichita-ks-675371",
@@ -54070,7 +54213,8 @@
     "isSundgren": false,
     "agentName": "Ronda Welsh",
     "agentPhone": "3164094431",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 263000
   },
   {
     "slug": "6707-pepperwood-ct-wichita-ks-673462",
@@ -54300,7 +54444,8 @@
     "isSundgren": false,
     "agentName": "Marcus Baysinger",
     "agentPhone": "3167068577",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 260000
   },
   {
     "slug": "2922-west-parkway-wichita-ks-673581",
@@ -55289,7 +55434,8 @@
     "isSundgren": false,
     "agentName": "Tiffany Ribordy",
     "agentPhone": "3163476052",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 255000
   },
   {
     "slug": "330-firefly-st-wichita-ks-677533",
@@ -55358,7 +55504,8 @@
     "isSundgren": false,
     "agentName": "Amanda Jolley",
     "agentPhone": "3162139043",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 255000
   },
   {
     "slug": "1740-kessler-st-wichita-ks-675881",
@@ -55404,7 +55551,8 @@
     "isSundgren": false,
     "agentName": "Liz Amos",
     "agentPhone": "3168076800",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 255000
   },
   {
     "slug": "102-102-12-west-pl-salina-ks-674932",
@@ -56094,7 +56242,8 @@
     "isSundgren": false,
     "agentName": "Leslie Wessel",
     "agentPhone": "3164614375",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 250000
   },
   {
     "slug": "10233-binter-ave-wichita-ks-678058",
@@ -58072,7 +58221,8 @@
     "isSundgren": false,
     "agentName": "Lucy Ferrer-Gonzalez",
     "agentPhone": "3169789777",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 245000
   },
   {
     "slug": "1305-sheridan-st-wichita-ks-676453",
@@ -58785,7 +58935,8 @@
     "isSundgren": false,
     "agentName": "Pamela Guzman-Avila",
     "agentPhone": "3168471429",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 240000
   },
   {
     "slug": "4217-18th-st-n-wichita-ks-677067",
@@ -59498,7 +59649,8 @@
     "isSundgren": false,
     "agentName": "Michelle M Crouch",
     "agentPhone": "3164611405",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 239500
   },
   {
     "slug": "3425-thunder-st-wichita-ks-669588",
@@ -59590,7 +59742,8 @@
     "isSundgren": false,
     "agentName": "Patty Putter",
     "agentPhone": "3162831000",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 239000
   },
   {
     "slug": "301-mill-st-minneapolis-ks-674198",
@@ -59935,7 +60088,8 @@
     "isSundgren": false,
     "agentName": "Jamie Love",
     "agentPhone": "3167122055",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 236000
   },
   {
     "slug": "1650-willow-oak-ct-wichita-ks-678017",
@@ -60004,7 +60158,8 @@
     "isSundgren": false,
     "agentName": "Joseph Villatoro",
     "agentPhone": "3165009785",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 235000
   },
   {
     "slug": "211-plum-st-argonia-ks-677225",
@@ -60947,7 +61102,8 @@
     "isSundgren": false,
     "agentName": "Jean Kouame",
     "agentPhone": "3166700859",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 232500
   },
   {
     "slug": "5157-sweetwater-road-maize-ks-676581",
@@ -61131,7 +61287,8 @@
     "isSundgren": false,
     "agentName": "Valeria Moreno",
     "agentPhone": "3166704495",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 230000
   },
   {
     "slug": "106-shadybrook-dr-cheney-ks-676994",
@@ -61223,7 +61380,8 @@
     "isSundgren": false,
     "agentName": "Josh Roy",
     "agentPhone": "3166656799",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 230000
   },
   {
     "slug": "2118-radio-ln-arkansas-city-ks-673560",
@@ -61269,7 +61427,8 @@
     "isSundgren": false,
     "agentName": "LeAnna Beat",
     "agentPhone": "3162141121",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 230000
   },
   {
     "slug": "1631-fairview-wichita-ks-671771",
@@ -62696,7 +62855,8 @@
     "isSundgren": false,
     "agentName": "Abigail Young",
     "agentPhone": "6202626912",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 225000
   },
   {
     "slug": "1212-18th-st-n-st-wichita-ks-678140",
@@ -62742,7 +62902,8 @@
     "isSundgren": false,
     "agentName": "Jennifer Stutterheim",
     "agentPhone": "7858221969",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 225000
   },
   {
     "slug": "7077-central-23-ave-wichita-ks-677908",
@@ -62788,7 +62949,8 @@
     "isSundgren": false,
     "agentName": "Susan Evans Bessey",
     "agentPhone": "3166409119",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 225000
   },
   {
     "slug": "2124-evergreen-elk-falls-ks-678045",
@@ -62857,7 +63019,8 @@
     "isSundgren": false,
     "agentName": "Elissa Swanson",
     "agentPhone": "6202181257",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 225000
   },
   {
     "slug": "3013-hadden-ave-wichita-ks-677164",
@@ -62903,7 +63066,8 @@
     "isSundgren": false,
     "agentName": "Jon Quincy",
     "agentPhone": "3162074590",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 225000
   },
   {
     "slug": "1021-main-st-mcpherson-ks-675431",
@@ -63915,7 +64079,8 @@
     "isSundgren": false,
     "agentName": "Teresa Winfield",
     "agentPhone": "3165189668",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 220000
   },
   {
     "slug": "301-main-st-hillsboro-ks-678038",
@@ -63961,7 +64126,8 @@
     "isSundgren": false,
     "agentName": "Austin Hodge",
     "agentPhone": "3167086873",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 220000
   },
   {
     "slug": "842-litchfield-ave-wichita-ks-677411",
@@ -64076,7 +64242,8 @@
     "isSundgren": false,
     "agentName": "Terry Cockrum",
     "agentPhone": "6202171443",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 220000
   },
   {
     "slug": "12178-swift-fox-st-wichita-ks-675545",
@@ -64536,7 +64703,8 @@
     "isSundgren": false,
     "agentName": "Mari Loder",
     "agentPhone": "7854525314",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 219900
   },
   {
     "slug": "126-3rd-st-arkansas-city-ks-675128",
@@ -65433,7 +65601,8 @@
     "isSundgren": false,
     "agentName": "Bobbie Lane",
     "agentPhone": "3169900697",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 216000
   },
   {
     "slug": "5410-briskbay-ct-maize-ks-660941",
@@ -65571,7 +65740,8 @@
     "isSundgren": false,
     "agentName": "Marti Vo",
     "agentPhone": "3168076935",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 215000
   },
   {
     "slug": "1501-waco-ave-wichita-ks-678052",
@@ -65686,7 +65856,8 @@
     "isSundgren": false,
     "agentName": "Kerri Hageman",
     "agentPhone": "3164616692",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 215000
   },
   {
     "slug": "187-mendocino-ct-goddard-ks-672545",
@@ -66307,7 +66478,8 @@
     "isSundgren": false,
     "agentName": "Kerry Dunn",
     "agentPhone": "3169907293",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 214900
   },
   {
     "slug": "1527-westborough-dr-newton-ks-676120",
@@ -66629,7 +66801,8 @@
     "isSundgren": false,
     "agentName": "Kristel Melton",
     "agentPhone": "3166809809",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 210900
   },
   {
     "slug": "4612-elizabeth-ave-wichita-ks-678306",
@@ -66698,7 +66871,8 @@
     "isSundgren": false,
     "agentName": "Tyus Becker",
     "agentPhone": "7855120066",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 210000
   },
   {
     "slug": "504-stuart-st-south-haven-ks-677502",
@@ -66767,7 +66941,8 @@
     "isSundgren": false,
     "agentName": "Adley Oldham",
     "agentPhone": "3163770899",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 210000
   },
   {
     "slug": "3824-garland-st-wichita-ks-677190",
@@ -67526,7 +67701,8 @@
     "isSundgren": false,
     "agentName": "Braden McCurdy",
     "agentPhone": "3166830612",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 209000
   },
   {
     "slug": "142-tracy-st-wichita-ks-677466",
@@ -67687,7 +67863,8 @@
     "isSundgren": false,
     "agentName": "Juan Montoya",
     "agentPhone": "3168073000",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 205995
   },
   {
     "slug": "3310-charles-ave-wichita-ks-678427",
@@ -68354,7 +68531,8 @@
     "isSundgren": false,
     "agentName": "Janet Chiles",
     "agentPhone": "3166400417",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 200900
   },
   {
     "slug": "4603-seneca-st-wichita-ks-677957",
@@ -68446,7 +68624,8 @@
     "isSundgren": false,
     "agentName": "Mikaela Rehmert-Fira",
     "agentPhone": "3165161734",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 200000
   },
   {
     "slug": "322-sabin-st-wichita-ks-677784",
@@ -70401,7 +70580,8 @@
     "isSundgren": false,
     "agentName": "David Van Dyke",
     "agentPhone": "3168828284",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 198000
   },
   {
     "slug": "5407-colburn-ct-bel-aire-ks-676098",
@@ -70539,7 +70719,8 @@
     "isSundgren": false,
     "agentName": "Steve Myers",
     "agentPhone": "3163304318",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 197500
   },
   {
     "slug": "740-el-paso-dr-derby-ks-677183",
@@ -70976,7 +71157,8 @@
     "isSundgren": false,
     "agentName": "Josh Roy",
     "agentPhone": "3166656799",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 195000
   },
   {
     "slug": "633-broadview-ave-wichita-ks-676551",
@@ -71965,7 +72147,8 @@
     "isSundgren": false,
     "agentName": "Steve Myers",
     "agentPhone": "3163304318",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 190000
   },
   {
     "slug": "415-lazette-st-cambridge-ks-671486",
@@ -74495,7 +74678,8 @@
     "isSundgren": false,
     "agentName": "Sandra K Wendt",
     "agentPhone": "3166556134",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 185000
   },
   {
     "slug": "504-plum-st-moline-ks-676097",
@@ -75047,7 +75231,8 @@
     "isSundgren": false,
     "agentName": "Eric Malone",
     "agentPhone": "3162527498",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 184900
   },
   {
     "slug": "1401-hornecker-dr-wichita-ks-677928",
@@ -75093,7 +75278,8 @@
     "isSundgren": false,
     "agentName": "Ronda Welsh",
     "agentPhone": "3164094431",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 184900
   },
   {
     "slug": "759-highland-ave-salina-ks-677052",
@@ -75714,7 +75900,8 @@
     "isSundgren": false,
     "agentName": "Luke Farrell",
     "agentPhone": "3166330184",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 184500
   },
   {
     "slug": "15440-josephine-ct-goddard-ks-676364",
@@ -76105,7 +76292,8 @@
     "isSundgren": false,
     "agentName": "Amanda Jolley",
     "agentPhone": "3162139043",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 180000
   },
   {
     "slug": "1039-kokomo-ave-derby-ks-675840",
@@ -77600,7 +77788,8 @@
     "isSundgren": false,
     "agentName": "Tiffany Voran",
     "agentPhone": "3162078852",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 178000
   },
   {
     "slug": "2104-osage-ave-wichita-ks-675437",
@@ -77945,7 +78134,8 @@
     "isSundgren": false,
     "agentName": "Caleb Claussen",
     "agentPhone": "3162591995",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 175000
   },
   {
     "slug": "631-santa-fe-st-augusta-ks-677785",
@@ -78704,7 +78894,8 @@
     "isSundgren": false,
     "agentName": "Samantha Swearingen",
     "agentPhone": "7855779878",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 175000
   },
   {
     "slug": "4524-shoreline-wichita-ks-677555",
@@ -78911,7 +79102,8 @@
     "isSundgren": false,
     "agentName": "Andy Nguyen",
     "agentPhone": "3166441965",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 174900
   },
   {
     "slug": "1032-fabrique-dr-wichita-ks-677126",
@@ -78957,7 +79149,8 @@
     "isSundgren": false,
     "agentName": "Julie Gooch",
     "agentPhone": "6203260626",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 174900
   },
   {
     "slug": "8018-woodspring-way-wichita-ks-675900",
@@ -79187,7 +79380,8 @@
     "isSundgren": false,
     "agentName": "Joe Carbajal",
     "agentPhone": "3165007635",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 172500
   },
   {
     "slug": "243-western-ave-haysville-ks-678280",
@@ -79210,7 +79404,8 @@
     "isSundgren": false,
     "agentName": "Josh Roy",
     "agentPhone": "3166656799",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 170000
   },
   {
     "slug": "1309-baltimore-ave-derby-ks-677802",
@@ -79302,7 +79497,8 @@
     "isSundgren": false,
     "agentName": "Annie Nash",
     "agentPhone": "3163937708",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 170000
   },
   {
     "slug": "827829-terrace-dr-wichita-ks-676477",
@@ -80636,7 +80832,8 @@
     "isSundgren": false,
     "agentName": "Jessica Kinzle",
     "agentPhone": "3166652395",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 167500
   },
   {
     "slug": "00000-2600-ave-abilene-ks-677994",
@@ -80659,7 +80856,8 @@
     "isSundgren": false,
     "agentName": "Samantha Swearingen",
     "agentPhone": "7855779878",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 167500
   },
   {
     "slug": "lot-1-willow-oak-estates-wichita-ks-672407",
@@ -80820,7 +81018,8 @@
     "isSundgren": false,
     "agentName": "Cierra Schmidt",
     "agentPhone": "7853420861",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 165000
   },
   {
     "slug": "539-summitlawn-st-wichita-ks-678332",
@@ -80889,7 +81088,8 @@
     "isSundgren": false,
     "agentName": "Julie Gooch",
     "agentPhone": "6203260626",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 165000
   },
   {
     "slug": "311-star-st-el-dorado-ks-677839",
@@ -80912,7 +81112,8 @@
     "isSundgren": false,
     "agentName": "Debra Pearman",
     "agentPhone": "3166442836",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 165000
   },
   {
     "slug": "833-kokomo-ave-derby-ks-677569",
@@ -81050,7 +81251,8 @@
     "isSundgren": false,
     "agentName": "Kaitlyn Brashers",
     "agentPhone": "3165169114",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 165000
   },
   {
     "slug": "415-college-st-winfield-ks-675010",
@@ -81717,7 +81919,8 @@
     "isSundgren": false,
     "agentName": "Linda Sauer",
     "agentPhone": "7855775866",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 164900
   },
   {
     "slug": "1772-clifton-ave-wichita-ks-675469",
@@ -82315,7 +82518,8 @@
     "isSundgren": false,
     "agentName": "Amanda Zorn",
     "agentPhone": "7858291169",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 160000
   },
   {
     "slug": "815-1st-st-eureka-ks-678074",
@@ -82430,7 +82634,8 @@
     "isSundgren": false,
     "agentName": "Christy Friesen",
     "agentPhone": "3168540043",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 160000
   },
   {
     "slug": "7037-frazier-ln-wichita-ks-675814",
@@ -83695,7 +83900,8 @@
     "isSundgren": false,
     "agentName": "Dawn R Wade",
     "agentPhone": "3168061060",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 159000
   },
   {
     "slug": "515-g-st-wellington-ks-676894",
@@ -83994,7 +84200,8 @@
     "isSundgren": false,
     "agentName": "Jessica Seiler",
     "agentPhone": "3167371093",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 157500
   },
   {
     "slug": "000002-61st-st-andale-ks-678071",
@@ -84017,7 +84224,8 @@
     "isSundgren": false,
     "agentName": "Jessica Seiler",
     "agentPhone": "3167371093",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 157500
   },
   {
     "slug": "00001-61st-st-andale-ks-678072",
@@ -84040,7 +84248,8 @@
     "isSundgren": false,
     "agentName": "Jessica Seiler",
     "agentPhone": "3167371093",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 157500
   },
   {
     "slug": "lot-1-blk-a-cypress-st-derby-ks-666535",
@@ -84362,7 +84571,8 @@
     "isSundgren": false,
     "agentName": "Natasha Anderson",
     "agentPhone": "3164614135",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 155000
   },
   {
     "slug": "469-aa70-rd-fall-river-ks-676862",
@@ -85213,7 +85423,8 @@
     "isSundgren": false,
     "agentName": "Laura Buterbaugh",
     "agentPhone": "6202227593",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 152000
   },
   {
     "slug": "16580-hickory-ct-goddard-ks-660169",
@@ -85466,7 +85677,8 @@
     "isSundgren": false,
     "agentName": "Arlan R Newell",
     "agentPhone": "3162841973",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 150000
   },
   {
     "slug": "6429-keystone-st-haysville-ks-676156",
@@ -85512,7 +85724,8 @@
     "isSundgren": false,
     "agentName": "Micah Allan",
     "agentPhone": "3165598240",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 150000
   },
   {
     "slug": "615-broadview-ave-wichita-ks-675801",
@@ -85581,7 +85794,8 @@
     "isSundgren": false,
     "agentName": "Marti Vo",
     "agentPhone": "3168076935",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 150000
   },
   {
     "slug": "408-main-st-winfield-ks-670428",
@@ -86662,7 +86876,8 @@
     "isSundgren": false,
     "agentName": "Glenda Flores",
     "agentPhone": "3165191738",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 149900
   },
   {
     "slug": "3315-central-ave-winfield-ks-674369",
@@ -87490,7 +87705,8 @@
     "isSundgren": false,
     "agentName": "Caleb Claussen",
     "agentPhone": "3162591995",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 145000
   },
   {
     "slug": "3114-range-rd-wichita-ks-678215",
@@ -87513,7 +87729,8 @@
     "isSundgren": false,
     "agentName": "Daniela Garcia Esquivel",
     "agentPhone": "3162048531",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 145000
   },
   {
     "slug": "233-estelle-ave-wichita-ks-678149",
@@ -87582,7 +87799,8 @@
     "isSundgren": false,
     "agentName": "Justin Chandler",
     "agentPhone": "3163717764",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 145000
   },
   {
     "slug": "1510-broadway-ave-parsons-ks-677332",
@@ -88732,7 +88950,8 @@
     "isSundgren": false,
     "agentName": "Candice Sippel",
     "agentPhone": "6205321353",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 140000
   },
   {
     "slug": "2016-chishom-st-wichita-ks-677420",
@@ -88778,7 +88997,8 @@
     "isSundgren": false,
     "agentName": "Breana Thimmesch",
     "agentPhone": "3166413655",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 140000
   },
   {
     "slug": "215-sturges-st-potwin-ks-676268",
@@ -89399,7 +89619,8 @@
     "isSundgren": false,
     "agentName": "Omar Abushikha",
     "agentPhone": "3165181441",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 139900
   },
   {
     "slug": "621-grant-st-mcpherson-ks-677239",
@@ -90204,7 +90425,8 @@
     "isSundgren": false,
     "agentName": "Diana Frazier",
     "agentPhone": "6203993051",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 137900
   },
   {
     "slug": "1015-10th-st-arkansas-city-ks-676128",
@@ -90618,7 +90840,8 @@
     "isSundgren": false,
     "agentName": "Angelina Bentley",
     "agentPhone": "3163239344",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 135000
   },
   {
     "slug": "2147-laura-ave-wichita-ks-677295",
@@ -90710,7 +90933,8 @@
     "isSundgren": false,
     "agentName": "Julie Gooch",
     "agentPhone": "6203260626",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 135000
   },
   {
     "slug": "1113-27th-st-wichita-ks-676588",
@@ -90917,7 +91141,8 @@
     "isSundgren": false,
     "agentName": "Kristel Melton",
     "agentPhone": "3166809809",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 135000
   },
   {
     "slug": "502-8th-st-salina-ks-672169",
@@ -91883,7 +92108,8 @@
     "isSundgren": false,
     "agentName": "Brittanie Pechin",
     "agentPhone": "3163084623",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 131000
   },
   {
     "slug": "96-sedgwick-ave-haven-ks-678372",
@@ -91906,7 +92132,8 @@
     "isSundgren": false,
     "agentName": "Jessica Schmidt",
     "agentPhone": "6202811800",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 130000
   },
   {
     "slug": "1147-main-st-wichita-ks-678295",
@@ -91952,7 +92179,8 @@
     "isSundgren": false,
     "agentName": "Luis Benitez",
     "agentPhone": "9033158263",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 130000
   },
   {
     "slug": "1408-vassar-ave-wichita-ks-678092",
@@ -92113,7 +92341,8 @@
     "isSundgren": false,
     "agentName": "Angela King",
     "agentPhone": "6202627963",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 130000
   },
   {
     "slug": "319-magnolia-st-attica-ks-673073",
@@ -93125,7 +93354,8 @@
     "isSundgren": false,
     "agentName": "Pamela Hinman",
     "agentPhone": "6203262162",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 129900
   },
   {
     "slug": "324-market-st-caldwell-ks-669488",
@@ -93723,7 +93953,8 @@
     "isSundgren": false,
     "agentName": "Lisa Mayfield",
     "agentPhone": "3163518508",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 125793
   },
   {
     "slug": "701-main-st-winfield-ks-653444",
@@ -93769,7 +94000,8 @@
     "isSundgren": false,
     "agentName": "Marti Vo",
     "agentPhone": "3168076935",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 125000
   },
   {
     "slug": "123-king-st-gypsum-ks-677690",
@@ -93838,7 +94070,8 @@
     "isSundgren": false,
     "agentName": "Chris Greene",
     "agentPhone": "3166176516",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 125000
   },
   {
     "slug": "3022-elm-st-wichita-ks-676822",
@@ -94413,7 +94646,8 @@
     "isSundgren": false,
     "agentName": "Hollie Gaskill",
     "agentPhone": "6204460283",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 125000
   },
   {
     "slug": "lot-1-block-b-haysville-ks-668794",
@@ -94666,7 +94900,8 @@
     "isSundgren": false,
     "agentName": "Brisa Espinoza",
     "agentPhone": "3168693111",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 124900
   },
   {
     "slug": "310-11th-ave-winfield-ks-676187",
@@ -95172,7 +95407,8 @@
     "isSundgren": false,
     "agentName": "Carly Eilert",
     "agentPhone": "7858291191",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 120000
   },
   {
     "slug": "1527-sedgwick-st-wichita-ks-677581",
@@ -95195,7 +95431,8 @@
     "isSundgren": false,
     "agentName": "Daniela Garcia Esquivel",
     "agentPhone": "3162048531",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 120000
   },
   {
     "slug": "3051-elizabeth-ave-wichita-ks-677479",
@@ -95563,7 +95800,8 @@
     "isSundgren": false,
     "agentName": "Tricia Grace",
     "agentPhone": "7858201314",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 120000
   },
   {
     "slug": "627-raff-st-kingman-ks-677238",
@@ -95862,7 +96100,8 @@
     "isSundgren": false,
     "agentName": "Margaret Metzger",
     "agentPhone": "3163719816",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 120000
   },
   {
     "slug": "2432-pattie-st-wichita-ks-677565",
@@ -95977,7 +96216,8 @@
     "isSundgren": false,
     "agentName": "Jatena Leon",
     "agentPhone": "3167069309",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 120000
   },
   {
     "slug": "1632-140th-ave-n-ave-mulvane-ks-672436",
@@ -96000,7 +96240,8 @@
     "isSundgren": false,
     "agentName": "Jatena Leon",
     "agentPhone": "3167069309",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 120000
   },
   {
     "slug": "00000-160th-ave-cheney-ks-672471",
@@ -96414,7 +96655,8 @@
     "isSundgren": false,
     "agentName": "Oricel Iron Wing",
     "agentPhone": "3168336248",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 119000
   },
   {
     "slug": "315-stewart-dr-haysville-ks-677703",
@@ -96920,7 +97162,8 @@
     "isSundgren": false,
     "agentName": "Taylyn Barkley",
     "agentPhone": "6207500170",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 115000
   },
   {
     "slug": "131-5th-st-newton-ks-677235",
@@ -96989,7 +97232,8 @@
     "isSundgren": false,
     "agentName": "Kami Bolin",
     "agentPhone": "6203660751",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 115000
   },
   {
     "slug": "42694271-boston-dr-wichita-ks-675942",
@@ -97748,7 +97992,8 @@
     "isSundgren": false,
     "agentName": "Stefanie Roth",
     "agentPhone": "3168410403",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 113000
   },
   {
     "slug": "923-belmont-ave-wichita-ks-676743",
@@ -97909,7 +98154,8 @@
     "isSundgren": false,
     "agentName": "Christy Friesen",
     "agentPhone": "3168540043",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 112000
   },
   {
     "slug": "203-harvey-burrton-ks-675355",
@@ -98047,7 +98293,8 @@
     "isSundgren": false,
     "agentName": "Jessika E Mayer",
     "agentPhone": "3168074856",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 110000
   },
   {
     "slug": "812-maris-st-winfield-ks-677735",
@@ -99450,7 +99697,8 @@
     "isSundgren": false,
     "agentName": "Michelle Woody",
     "agentPhone": "7853809710",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 100000
   },
   {
     "slug": "114-durst-st-moundridge-ks-676875",
@@ -99979,7 +100227,8 @@
     "isSundgren": false,
     "agentName": "Becky Schaffer",
     "agentPhone": "6207500054",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 99900
   },
   {
     "slug": "221-2nd-st-halstead-ks-674801",
@@ -100278,7 +100527,8 @@
     "isSundgren": false,
     "agentName": "Myron Pushyk",
     "agentPhone": "3165739759",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 99000
   },
   {
     "slug": "1524-12th-st-newton-ks-670767",
@@ -100439,7 +100689,8 @@
     "isSundgren": false,
     "agentName": "Glenda Flores",
     "agentPhone": "3165191738",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 98000
   },
   {
     "slug": "2220-minneapolis-ave-wichita-ks-676996",
@@ -100462,7 +100713,8 @@
     "isSundgren": false,
     "agentName": "Rebecca Gallo",
     "agentPhone": "3167123585",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 98000
   },
   {
     "slug": "250-hummingbird-rd-medicine-lodge-ks-674916",
@@ -103084,7 +103336,8 @@
     "isSundgren": false,
     "agentName": "Sabrina Garrison",
     "agentPhone": "6205013201",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 86000
   },
   {
     "slug": "1409-water-st-wichita-ks-678028",
@@ -103107,7 +103360,8 @@
     "isSundgren": false,
     "agentName": "Ronda Welsh",
     "agentPhone": "3164094431",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 85000
   },
   {
     "slug": "4626-hemlock-ave-wichita-ks-678031",
@@ -103199,7 +103453,8 @@
     "isSundgren": false,
     "agentName": "Ashley Jarvis",
     "agentPhone": "7858221622",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 85000
   },
   {
     "slug": "1218-central-ave-el-dorado-ks-674342",
@@ -103268,7 +103523,8 @@
     "isSundgren": false,
     "agentName": "Amanda Buffalo",
     "agentPhone": "3166809735",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 85000
   },
   {
     "slug": "611-st-nicholas-st-eureka-ks-674852",
@@ -105959,7 +106215,8 @@
     "isSundgren": false,
     "agentName": "Tamara L Walker",
     "agentPhone": "3165587985",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 73000
   },
   {
     "slug": "3136-clifton-ave-wichita-ks-676854",
@@ -106028,7 +106285,8 @@
     "isSundgren": false,
     "agentName": "Laura Krier",
     "agentPhone": "7856143854",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 72500
   },
   {
     "slug": "131-glendale-ave-newton-ks-675349",
@@ -106258,7 +106516,8 @@
     "isSundgren": false,
     "agentName": "Rachel Westmoreland",
     "agentPhone": "6203260633",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 70000
   },
   {
     "slug": "321-violet-st-potwin-ks-677125",
@@ -106304,7 +106563,8 @@
     "isSundgren": false,
     "agentName": "Sarah Drechsler",
     "agentPhone": "3166409689",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 70000
   },
   {
     "slug": "641-ellis-st-wichita-ks-670009",
@@ -107845,7 +108105,8 @@
     "isSundgren": false,
     "agentName": "Jill M Smith",
     "agentPhone": "3162079640",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 65000
   },
   {
     "slug": "530-foresthills-ct-andover-ks-678361",
@@ -108811,7 +109072,8 @@
     "isSundgren": false,
     "agentName": "Cierra Schmidt",
     "agentPhone": "7853420861",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 63500
   },
   {
     "slug": "15601-37th-st-south-goddard-ks-669764",
@@ -114216,7 +114478,8 @@
     "isSundgren": false,
     "agentName": "Andrew Jones",
     "agentPhone": "3163232790",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 40000
   },
   {
     "slug": "1024-greenwood-ave-wichita-ks-677350",
@@ -121783,7 +122046,8 @@
     "isSundgren": false,
     "agentName": "Becky Schaffer",
     "agentPhone": "6207500054",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 30000
   },
   {
     "slug": "5545-nathan-st-wichita-ks-677244",
@@ -126935,7 +127199,8 @@
     "isSundgren": false,
     "agentName": "Steve Myers",
     "agentPhone": "3163304318",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 15000
   },
   {
     "slug": "829-high-st-el-dorado-ks-676869",
