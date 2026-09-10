@@ -1314,7 +1314,7 @@ a:hover { color: var(--yellow-dark); }
 .auction-card:hover { box-shadow: 0 6px 24px rgba(0,0,0,.12); transform: translateY(-2px); }
 .auction-card-wrap { display: block; text-decoration: none; color: inherit; height: 100%; }
 .auction-card-img {
-  height: 200px;
+  aspect-ratio: 4 / 3;
   background: var(--bg-light) center/cover no-repeat;
   position: relative;
   flex-shrink: 0;
