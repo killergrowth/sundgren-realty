@@ -225,18 +225,8 @@
 
       <p class="listing-results-count" id="results-count"></p>
 
-      <!-- View Toggle -->
-      <div style="display:flex;justify-content:flex-end;align-items:center;gap:8px;margin-bottom:24px;">
-        <button id="view-grid-btn" onclick="setView('grid')" style="display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:700;padding:8px 14px;border-radius:6px;border:2px solid var(--dark);background:var(--dark);color:#fff;cursor:pointer;">
-          <i class="fas fa-th"></i> Grid
-        </button>
-        <button id="view-map-btn" onclick="setView('map')" style="display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:700;padding:8px 14px;border-radius:6px;border:2px solid var(--border);background:#fff;color:var(--dark);cursor:pointer;">
-          <i class="fas fa-map-marked-alt"></i> Map
-        </button>
-      </div>
-
-      <!-- Map View -->
-      <div id="listings-map-view" style="display:none;margin-bottom:48px;">
+      <!-- Map — always visible -->
+      <div id="listings-map-view" style="margin-bottom:32px;position:sticky;top:0;z-index:10;">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
         <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
         <div id="listings-map" style="height:520px;border-radius:12px;border:1px solid var(--border);overflow:hidden;"></div>
@@ -6065,27 +6055,11 @@
           });
           if (bounds.length) map.fitBounds(bounds, {padding:[40,40]});
         }
-        function setView(v) {
-          var grid = document.getElementById('listings-grid-view');
-          var mapEl = document.getElementById('listings-map-view');
-          var gb = document.getElementById('view-grid-btn');
-          var mb = document.getElementById('view-map-btn');
-          if (v==='map') {
-            grid.style.display='none'; mapEl.style.display='block';
-            gb.style.background='#fff'; gb.style.color='var(--dark)'; gb.style.borderColor='var(--border)';
-            mb.style.background='var(--dark)'; mb.style.color='#fff'; mb.style.borderColor='var(--dark)';
-            initListingsMap();
-          } else {
-            mapEl.style.display='none'; grid.style.display='block';
-            mb.style.background='#fff'; mb.style.color='var(--dark)'; mb.style.borderColor='var(--border)';
-            gb.style.background='var(--dark)'; gb.style.color='#fff'; gb.style.borderColor='var(--dark)';
-          }
-        }
+        if (typeof L !== 'undefined') { initListingsMap(); } else { var _lmTick = setInterval(function(){ if (typeof L !== 'undefined') { clearInterval(_lmTick); initListingsMap(); } }, 50); }
         </script>
       </div>
 
-      <!-- Grid View -->
-      <div id="listings-grid-view">
+      <div>
         <div class="listing-grid" id="listing-grid" style="margin-bottom:48px;">
         <a href="/listings/residential/5747-20th-st-el-dorado-ks-672300/"
            class="listing-card listing-card--sundgren"
@@ -116536,9 +116510,37 @@ document.addEventListener('DOMContentLoaded', function(){
     sorted.forEach(function(c){ grid.appendChild(c); });
   }
 
+  var PAGE_SIZE = 100;
+  var currentPage = 1;
+
+  function renderPagination(matchedCards) {
+    var existing = document.getElementById('listings-pagination');
+    if (existing) existing.remove();
+    var totalPages = Math.ceil(matchedCards.length / PAGE_SIZE);
+    if (totalPages <= 1) return;
+    var pag = document.createElement('div');
+    pag.id = 'listings-pagination';
+    pag.style.cssText = 'display:flex;justify-content:center;align-items:center;gap:8px;margin:32px 0 48px;flex-wrap:wrap;';
+    function makeBtn(label, page, active) {
+      var b = document.createElement('button');
+      b.textContent = label;
+      b.style.cssText = 'padding:8px 14px;border-radius:6px;border:2px solid ' + (active ? 'var(--dark)' : 'var(--border)') + ';background:' + (active ? 'var(--dark)' : '#fff') + ';color:' + (active ? '#fff' : 'var(--dark)') + ';font-weight:700;font-size:13px;cursor:' + (page === null ? 'default' : 'pointer') + ';';
+      if (page !== null) b.addEventListener('click', function() { currentPage = page; applyFilters(); window.scrollTo({top:0,behavior:'smooth'}); });
+      return b;
+    }
+    var start = Math.max(1, currentPage - 2);
+    var end   = Math.min(totalPages, currentPage + 2);
+    if (currentPage > 1) pag.appendChild(makeBtn('← Prev', currentPage - 1, false));
+    if (start > 1) { pag.appendChild(makeBtn('1', 1, false)); if (start > 2) pag.appendChild(makeBtn('…', null, false)); }
+    for (var p = start; p <= end; p++) pag.appendChild(makeBtn(String(p), p, p === currentPage));
+    if (end < totalPages) { if (end < totalPages - 1) pag.appendChild(makeBtn('…', null, false)); pag.appendChild(makeBtn(String(totalPages), totalPages, false)); }
+    if (currentPage < totalPages) pag.appendChild(makeBtn('Next →', currentPage + 1, false));
+    grid.parentNode.insertBefore(pag, grid.nextSibling);
+  }
+
   function applyFilters() {
     var q = activeSearch.trim().toLowerCase();
-    var visible = 0;
+    var matched = [];
     cards.forEach(function(c) {
       var matchFilter = activeFilter === 'all'
         || c.dataset.status === activeFilter
@@ -116546,16 +116548,18 @@ document.addEventListener('DOMContentLoaded', function(){
         || (activeFilter === 'sundgren' && c.classList.contains('listing-card--sundgren'));
       var matchCity   = !activeCity || c.dataset.city === activeCity;
       var matchSearch = !q || c.dataset.search.indexOf(q) !== -1;
-      var show = matchFilter && matchCity && matchSearch;
-      c.style.display = show ? '' : 'none';
-      if (show) visible++;
+      if (matchFilter && matchCity && matchSearch) matched.push(c);
+      c.style.display = 'none';
     });
+    var startIdx = (currentPage - 1) * PAGE_SIZE;
+    matched.slice(startIdx, startIdx + PAGE_SIZE).forEach(function(c) { c.style.display = ''; });
+    var visible = matched.length;
     countEl.innerHTML = '<strong>' + visible + '</strong> listing' + (visible !== 1 ? 's' : '') + ' shown';
     noResults.style.display = visible === 0 ? 'block' : 'none';
     grid.style.display = visible === 0 ? 'none' : '';
-    // Show/hide clear link
     var dirty = activeFilter !== 'all' || activeCity || activeSearch || activeSort !== 'default';
     if (clearLink) clearLink.style.display = dirty ? 'inline' : 'none';
+    renderPagination(matched);
   }
 
   pills.forEach(function(pill) {
@@ -116563,6 +116567,7 @@ document.addEventListener('DOMContentLoaded', function(){
       pills.forEach(function(p) { p.classList.remove('active'); });
       pill.classList.add('active');
       activeFilter = pill.dataset.filter;
+      currentPage = 1;
       applyFilters();
     });
   });
@@ -116570,6 +116575,7 @@ document.addEventListener('DOMContentLoaded', function(){
   if (citySelect) {
     citySelect.addEventListener('change', function() {
       activeCity = citySelect.value;
+      currentPage = 1;
       applyFilters();
     });
   }
@@ -116577,6 +116583,7 @@ document.addEventListener('DOMContentLoaded', function(){
   if (sortSelect) {
     sortSelect.addEventListener('change', function() {
       activeSort = sortSelect.value;
+      currentPage = 1;
       sortCards();
       applyFilters();
     });
@@ -116584,6 +116591,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
   searchInput.addEventListener('input', function() {
     activeSearch = searchInput.value;
+    currentPage = 1;
     applyFilters();
     showAutocomplete(searchInput.value);
   });
