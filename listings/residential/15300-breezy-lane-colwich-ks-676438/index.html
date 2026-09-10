@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>On 5 Acres with a 40&#39; x 45&#39; Shop in the Highly Sought-After Renwick School District! The 40&#39; x 45&#39; shop is one of this property&#39;s biggest highlights! Featuring a concrete floor, an oversized RV-height overhead door, and plenty of space for an RV, multiple vehicles, equipment, hobbies, or a workshop, it&#39;s a rare feature that offers endless possibilities. Enjoy peaceful country living with wide-open field views while still being just minutes from West Wichita and New Market Square. Watch the landscape change with the seasons from your spacious back deck or while relaxing in the hot tub, which stays with the home. Inside, you&#39;ll love the real hardwood floors, open-concept kitchen, and inviting two-way gas fireplace. The layout is ideal for many buyers, offering 3 bedrooms on the main floor with 4 bedrooms total. An additional framed room with an egress window is already in place and ready to be finished as a 5th bedroom, home office, exercise room, or continue using it for excellent storage. The finished basement features a large family room along with an ideal setup for a private guest suite or in-law quarters. Additional highlights include main-floor laundry, all kitchen appliances remaining with the home, an irrigation system, and a wrought iron fence that provides low-maintenance outdoor living while preserving the beautiful views. It&#39;s not every day you find 5 acres, a 40&#39; x 45&#39; shop, and a location this convenient. Enjoy the best of country living while being just minutes from West Wichita, New Market Square, and the Northwest YMCA. Opportunities like this don&#39;t come along often.</p>
     </div>
@@ -209,8 +211,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -220,13 +222,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="15300 Breezy Lane, Colwich, KS, 67030">
-        <input type="hidden" name="message" value="I am interested in the property at 15300 Breezy Lane, Colwich, KS, 67030 (MLS# 676438). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 15300 Breezy Lane, Colwich, KS, 67030 (MLS# 676438). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

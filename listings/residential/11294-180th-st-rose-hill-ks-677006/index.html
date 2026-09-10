@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -143,7 +143,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Property offered at ONLINE ONLY auction. BIDDING OPENS: Tuesday, September 1st, 2026 at 2:00 PM (ct) | BIDDING CLOSING: Thursday, September 10th, 2026 at 2:00 PM (ct). Bidding will remain open on this property until 90 seconds have passed without receiving a bid. Property available to preview by appointment. CLEAR TITLE AT CLOSING, NO BACK TAXES. ONLINE ONLY!!! Welcome to this 4-bedroom, 2.5-bath tri-level home situated on 13.2± acres just outside of Rose Hill, offering the perfect blend of rural living, privacy, and space for hobbies or equipment. Step inside to find a comfortable living room featuring a wood-burning fireplace, creating a warm and inviting space to relax. Just off the living room is the kitchen/dining room combination, providing a functional layout for everyday living and entertaining. The kitchen features laminate countertops, and the refrigerator, range/oven, and dishwasher transfer with the property. The upper level includes three bedrooms and two full bathrooms. The primary bedroom features a private en-suite bathroom with a walk-in shower, while the second full bathroom includes a tub/shower combination. Downstairs, the basement offers additional living space with a large family/recreation room, an additional bedroom, and a third half bathroom, providing flexibility for hobbies, guests, or a home office. Outside, enjoy the peaceful setting with a small porch area, mature trees, and plenty of open space. A 50’ x 30’ outbuilding provides excellent room for equipment storage, workshop space, or additional uses. Offering acreage, functional living spaces, and the opportunity to enjoy rural living while remaining close to Rose Hill, this property is ready for its next owner. Don’t miss this opportunity! *Buyer should verify school assignments as they are subject to change. The real estate is offered at public auction in its present, “as is where is” condition and is accepted by the buyer without any expressed or implied warranties or representations from the seller or seller’s agents. Full auction terms and conditions provided in the Property Information Packet. Total purchase price will include a 10% buyer’s premium ($2,500.00 minimum) added to the final bid. Property available to preview by appointment. Earnest money is due from the high bidder at the auction in the form of cash, check, or immediately available, certified funds in the amount of $20,000.</p>
     </div>
@@ -208,8 +210,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -219,13 +221,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="11294 180th ST, Rose Hill, KS, 67133">
-        <input type="hidden" name="message" value="I am interested in the property at 11294 180th ST, Rose Hill, KS, 67133 (MLS# 677006). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 11294 180th ST, Rose Hill, KS, 67133 (MLS# 677006). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
