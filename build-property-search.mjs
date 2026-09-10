@@ -4,6 +4,10 @@
  * Run: node build-property-search.mjs
  * Then: node build.js && wrangler deploy
  */
+import {
+  esc, price, streetOnly, labelCap, cityOf, statusLabel, typeColor,
+  buildCards, buildMapPins, buildSuggestions, buildFilterPills, buildFilterScript
+} from './listing-card-helpers.mjs';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -13,80 +17,11 @@ const allJson      = path.join(__dirname, 'data/all-listings.json');
 const repliersJson = path.join(__dirname, 'data/repliers-listings.json');
 const listings     = JSON.parse(fs.readFileSync(fs.existsSync(allJson) ? allJson : repliersJson, 'utf8'));
 
-function esc(s) {
-  return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
-}
-function price(p) {
-  return p && p > 0 ? '$' + parseInt(p).toLocaleString() : 'Contact for Price';
-}
-function metaLine(l) {
-  if (l.beds) {
-    let s = l.beds + ' Bd';
-    if (l.baths) s += ' &bull; ' + l.baths + ' Ba';
-    if (l.sqft)  s += ' &bull; ' + parseInt(l.sqft).toLocaleString() + ' sq ft';
-    if (l.acres) s += ' &bull; ' + parseFloat(l.acres).toFixed(1) + ' Acres';
-    return s;
-  }
-  if (l.acres) return parseFloat(l.acres).toFixed(1) + ' Acres';
-  return l.style || '';
-}
-function typeColor(t) {
-  return t === 'residential' ? '#0ea5e9' : t === 'land' ? '#16a34a' : '#6366f1';
-}
-function labelCap(t) { return t.charAt(0).toUpperCase() + t.slice(1); }
-function streetOnly(addr) { return addr.split(',')[0]; }
-function statusLabel(l) {
-  if (l.status === 'A') return 'Active';
-  const ls = (l.lastStatus || '').toLowerCase();
-  if (ls === 'sc' || ls === 'cs') return 'Pending';
-  return 'Inactive';
-}
-function statusColor(l) {
-  const s = statusLabel(l);
-  if (s === 'Active')  return '#22c55e';
-  if (s === 'Pending') return '#2563eb';
-  return '#6b7280';
-}
-function cityOf(l) {
-  return l.city || (l.address ? l.address.split(',')[1] : '') || '';
-}
+// Helpers imported from listing-card-helpers.mjs
 
-const cards = listings.map(l => {
-  const sl       = statusLabel(l);
-  const sc       = statusColor(l);
-  const tc       = typeColor(l.type);
-  const typeDisp = labelCap(l.type);
-  const city     = cityOf(l).trim();
-  const addrStr  = streetOnly(l.address);
-  const priceStr = price(l.price);
-  const icon     = l.beds ? 'fa-bed' : 'fa-map';
-  return `        <a href="/listings/${l.type}/${l.slug}/"
-           class="listing-card"
-           data-status="${sl.toLowerCase()}"
-           data-type="${l.type}"
-           data-city="${esc(city.toLowerCase())}"
-           data-search="${esc((addrStr + ' ' + city + ' ' + priceStr + ' ' + typeDisp + ' ' + sl).toLowerCase())}">
-          <img class="listing-card-img" src="${esc(l.image)}" alt="${esc(addrStr)}" loading="lazy">
-          <div class="listing-card-body">
-            <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
-              <span class="listing-card-badge" style="background:${sc};">${sl}</span>
-              <span class="listing-card-badge" style="background:${tc};">${typeDisp}</span>
-            </div>
-            <p class="listing-card-address">${esc(addrStr)}</p>
-            <p class="listing-card-meta"><i class="fas ${icon}"></i>${metaLine(l)}</p>
-            ${city ? `<p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>${esc(city)}, KS</p>` : ''}
-            <p class="listing-card-price">${priceStr}</p>
-            <span class="listing-card-more">View Details &rarr;</span>
-          </div>
-        </a>`;
-}).join('\n');
+const cards = buildCards(listings);
 
-const pinsJs = listings
-  .filter(l => l.lat && l.lng)
-  .map(l => {
-    const addrShort = streetOnly(l.address) + ', ' + cityOf(l).trim() + ', ' + (l.state || 'KS');
-    return `{lat:${l.lat},lng:${l.lng},addr:"${esc(addrShort)}",price:"${esc(price(l.price))}",url:"/listings/${l.type}/${l.slug}/",color:"${typeColor(l.type)}"}`;
-  }).join(',\n            ');
+const pinsJs = buildMapPins(listings);
 
 const suggestions = [...new Set(
   listings.flatMap(l => [
@@ -264,19 +199,7 @@ const html = `<!DOCTYPE html>
           <ul id="search-autocomplete" role="listbox"></ul>
         </div>
         <div class="filter-pills" role="group" aria-label="Filter listings">
-          <button class="filter-pill active" data-filter="all">All <span id="pill-count-all"></span></button>
-          <button class="filter-pill" data-filter="active">
-            <span class="pill-dot" style="background:#22c55e;"></span>Active <span id="pill-count-active"></span>
-          </button>
-          <button class="filter-pill" data-filter="pending">
-            <span class="pill-dot" style="background:#2563eb;"></span>Pending <span id="pill-count-pending"></span>
-          </button>
-          <button class="filter-pill" data-filter="residential">
-            <span class="pill-dot" style="background:#0ea5e9;"></span>Residential <span id="pill-count-residential"></span>
-          </button>
-          <button class="filter-pill" data-filter="land">
-            <span class="pill-dot" style="background:#22c55e;"></span>Land <span id="pill-count-land"></span>
-          </button>
+${buildFilterPills(['all','active','pending','residential','land','price-reduced'])}
         </div>
       </div>
 
@@ -361,10 +284,8 @@ ${cards}
 <!-- FOOTER -->
 
 <script>
+window._listingSuggestions = ${JSON.stringify(suggestions)};
 document.addEventListener('DOMContentLoaded', function(){
-  function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
-
-  var SUGGESTIONS = ${JSON.stringify(suggestions)};
 
   var searchInput = document.getElementById('listing-search');
   var acList      = document.getElementById('search-autocomplete');
