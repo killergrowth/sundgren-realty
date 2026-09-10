@@ -299,31 +299,66 @@ document.addEventListener('DOMContentLoaded', function(){
   var activeSearch = '';
   var acActiveIdx  = -1;
 
+  var PAGE_SIZE = 100;
+  var currentPage = 1;
+
   function updatePillCounts() {
-    ['all','active','pending','residential','land'].forEach(function(f) {
+    ['all','active','pending','residential','land','price-reduced'].forEach(function(f) {
       var el = document.getElementById('pill-count-' + f);
       if (!el) return;
       var n = cards.filter(function(c) {
         if (f === 'all') return true;
+        if (f === 'price-reduced') return c.dataset.reduced === 'true';
         return c.dataset.status === f || c.dataset.type === f;
       }).length;
       el.textContent = '(' + n + ')';
     });
   }
 
+  function renderPagination(matchedCards) {
+    var existing = document.getElementById('listings-pagination');
+    if (existing) existing.remove();
+    var totalPages = Math.ceil(matchedCards.length / PAGE_SIZE);
+    if (totalPages <= 1) return;
+    var pag = document.createElement('div');
+    pag.id = 'listings-pagination';
+    pag.style.cssText = 'display:flex;justify-content:center;align-items:center;gap:8px;margin:32px 0 48px;flex-wrap:wrap;';
+    function makeBtn(label, page, active) {
+      var b = document.createElement('button');
+      b.textContent = label;
+      b.style.cssText = 'padding:8px 14px;border-radius:6px;border:2px solid ' + (active ? 'var(--dark)' : 'var(--border)') + ';background:' + (active ? 'var(--dark)' : '#fff') + ';color:' + (active ? '#fff' : 'var(--dark)') + ';font-weight:700;font-size:13px;cursor:' + (page === null ? 'default' : 'pointer') + ';';
+      if (page !== null) b.addEventListener('click', function() { currentPage = page; applyFilters(); window.scrollTo({top:0,behavior:'smooth'}); });
+      return b;
+    }
+    var start = Math.max(1, currentPage - 2);
+    var end   = Math.min(totalPages, currentPage + 2);
+    if (currentPage > 1) pag.appendChild(makeBtn('← Prev', currentPage - 1, false));
+    if (start > 1) { pag.appendChild(makeBtn('1', 1, false)); if (start > 2) pag.appendChild(makeBtn('…', null, false)); }
+    for (var p = start; p <= end; p++) pag.appendChild(makeBtn(String(p), p, p === currentPage));
+    if (end < totalPages) { if (end < totalPages - 1) pag.appendChild(makeBtn('…', null, false)); pag.appendChild(makeBtn(String(totalPages), totalPages, false)); }
+    if (currentPage < totalPages) pag.appendChild(makeBtn('Next →', currentPage + 1, false));
+    grid.parentNode.insertBefore(pag, grid.nextSibling);
+  }
+
   function applyFilters() {
     var q = activeSearch.trim().toLowerCase();
-    var visible = 0;
+    var matched = [];
     cards.forEach(function(c) {
-      var matchFilter = activeFilter === 'all' || c.dataset.status === activeFilter || c.dataset.type === activeFilter;
+      var matchFilter = activeFilter === 'all'
+        || c.dataset.status === activeFilter
+        || c.dataset.type === activeFilter
+        || (activeFilter === 'price-reduced' && c.dataset.reduced === 'true');
       var matchSearch = !q || c.dataset.search.indexOf(q) !== -1;
-      var show = matchFilter && matchSearch;
-      c.style.display = show ? '' : 'none';
-      if (show) visible++;
+      if (matchFilter && matchSearch) matched.push(c);
+      c.style.display = 'none';
     });
+    var startIdx = (currentPage - 1) * PAGE_SIZE;
+    matched.slice(startIdx, startIdx + PAGE_SIZE).forEach(function(c) { c.style.display = ''; });
+    var visible = matched.length;
     countEl.innerHTML = '<strong>' + visible + '</strong> listing' + (visible !== 1 ? 's' : '') + ' shown';
     noResults.style.display = visible === 0 ? 'block' : 'none';
     grid.style.display = visible === 0 ? 'none' : '';
+    renderPagination(matched);
   }
 
   pills.forEach(function(pill) {
@@ -331,6 +366,7 @@ document.addEventListener('DOMContentLoaded', function(){
       pills.forEach(function(p) { p.classList.remove('active'); });
       pill.classList.add('active');
       activeFilter = pill.dataset.filter;
+      currentPage = 1;
       applyFilters();
     });
   });

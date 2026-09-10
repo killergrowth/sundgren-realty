@@ -327,10 +327,19 @@ console.log('Done. Run node build.js next.');
 
 // Also write to dist/ so CI deploys always have fresh data.
 // build.js runs before this script in CI and would otherwise serve stale source copies.
+// Inject header/footer partials into dist copies
+const headerHtml = fs.existsSync(path.join(__dirname, '_partials/header.html'))
+  ? fs.readFileSync(path.join(__dirname, '_partials/header.html'), 'utf8') : '';
+const footerHtml = fs.existsSync(path.join(__dirname, '_partials/footer.html'))
+  ? fs.readFileSync(path.join(__dirname, '_partials/footer.html'), 'utf8') : '';
+function injectPartials(h) {
+  return h.replace('<!-- HEADER -->', headerHtml).replace('<!-- FOOTER -->', footerHtml);
+}
+
 const distListings = path.join(__dirname, 'dist/listings');
 if (fs.existsSync(distListings)) {
   const distRes  = path.join(distListings, 'residential');
   const distLand = path.join(distListings, 'land');
-  if (fs.existsSync(distRes))  { fs.writeFileSync(path.join(distRes,  'index.html'), resHtml,  'utf8'); console.log('  -> dist/listings/residential/index.html updated'); }
-  if (fs.existsSync(distLand)) { fs.writeFileSync(path.join(distLand, 'index.html'), landHtml, 'utf8'); console.log('  -> dist/listings/land/index.html updated'); }
+  if (fs.existsSync(distRes))  { fs.writeFileSync(path.join(distRes,  'index.html'), injectPartials(resHtml),  'utf8'); console.log('  -> dist/listings/residential/index.html updated'); }
+  if (fs.existsSync(distLand)) { fs.writeFileSync(path.join(distLand, 'index.html'), injectPartials(landHtml), 'utf8'); console.log('  -> dist/listings/land/index.html updated'); }
 }

@@ -3421,7 +3421,7 @@
             {lat:37.243281,lng:-96.97492,addr:"619 Alexander ST, Winfield, KS",price:"$185,000",url:"/listings/residential/619-alexander-st-winfield-ks-678424/",color:"#0ea5e9"},
             {lat:37.708712,lng:-97.465039,addr:"10607 Nantucket St, Wichita, KS",price:"$185,000",url:"/listings/residential/10607-nantucket-st-wichita-ks-678167/",color:"#0ea5e9"},
             {lat:38.01982,lng:-97.938786,addr:"605 Walnut ST, South Hutchinson, KS",price:"$185,000",url:"/listings/residential/605-walnut-st-south-hutchinson-ks-678185/",color:"#0ea5e9"},
-            {lat:37.68087698,lng:-96.97862895,addr:"814 State St, Augusta, KS",price:"$185,000",url:"/listings/residential/814-state-st-augusta-ks-677916/",color:"#0ea5e9"},
+            {lat:37.68087698,lng:-96.97862895,addr:"814 State St, Augusta, KS",price:"$184,000",url:"/listings/residential/814-state-st-augusta-ks-677916/",color:"#0ea5e9"},
             {lat:37.640513,lng:-97.460602,addr:"2928 Denene St, Wichita, KS",price:"$185,000",url:"/listings/residential/2928-denene-st-wichita-ks-677304/",color:"#0ea5e9"},
             {lat:37.641698,lng:-97.460625,addr:"2904 Denene St, Wichita, KS",price:"$185,000",url:"/listings/residential/2904-denene-st-wichita-ks-677252/",color:"#0ea5e9"},
             {lat:37.640513,lng:-97.460602,addr:"2928 Denene St, Wichita, KS",price:"$185,000",url:"/listings/residential/2928-denene-st-wichita-ks-677305/",color:"#0ea5e9"},
@@ -73909,7 +73909,7 @@
            data-type="residential"
            data-city="augusta"
            data-reduced="false"
-           data-search="814 state st augusta $185,000 residential active">
+           data-search="814 state st augusta $184,000 residential active">
           <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-677916_6703082624783558853.jpg" alt="814 State St" loading="lazy">
           <div class="listing-card-body">
             <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
@@ -73920,7 +73920,7 @@
             <p class="listing-card-address">814 State St</p>
             <p class="listing-card-meta"><i class="fas fa-bed"></i>2 Bd &bull; 1 Ba &bull; 1,080 sq ft &bull; 0.1 Acres</p>
             <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Augusta, KS</p>
-            <p class="listing-card-price">$185,000</p>
+            <p class="listing-card-price">$184,000</p>
             <span class="listing-card-more">View Details &rarr;</span>
           </div>
         </a>
@@ -128059,31 +128059,66 @@ document.addEventListener('DOMContentLoaded', function(){
   var activeSearch = '';
   var acActiveIdx  = -1;
 
+  var PAGE_SIZE = 100;
+  var currentPage = 1;
+
   function updatePillCounts() {
-    ['all','active','pending','residential','land'].forEach(function(f) {
+    ['all','active','pending','residential','land','price-reduced'].forEach(function(f) {
       var el = document.getElementById('pill-count-' + f);
       if (!el) return;
       var n = cards.filter(function(c) {
         if (f === 'all') return true;
+        if (f === 'price-reduced') return c.dataset.reduced === 'true';
         return c.dataset.status === f || c.dataset.type === f;
       }).length;
       el.textContent = '(' + n + ')';
     });
   }
 
+  function renderPagination(matchedCards) {
+    var existing = document.getElementById('listings-pagination');
+    if (existing) existing.remove();
+    var totalPages = Math.ceil(matchedCards.length / PAGE_SIZE);
+    if (totalPages <= 1) return;
+    var pag = document.createElement('div');
+    pag.id = 'listings-pagination';
+    pag.style.cssText = 'display:flex;justify-content:center;align-items:center;gap:8px;margin:32px 0 48px;flex-wrap:wrap;';
+    function makeBtn(label, page, active) {
+      var b = document.createElement('button');
+      b.textContent = label;
+      b.style.cssText = 'padding:8px 14px;border-radius:6px;border:2px solid ' + (active ? 'var(--dark)' : 'var(--border)') + ';background:' + (active ? 'var(--dark)' : '#fff') + ';color:' + (active ? '#fff' : 'var(--dark)') + ';font-weight:700;font-size:13px;cursor:' + (page === null ? 'default' : 'pointer') + ';';
+      if (page !== null) b.addEventListener('click', function() { currentPage = page; applyFilters(); window.scrollTo({top:0,behavior:'smooth'}); });
+      return b;
+    }
+    var start = Math.max(1, currentPage - 2);
+    var end   = Math.min(totalPages, currentPage + 2);
+    if (currentPage > 1) pag.appendChild(makeBtn('← Prev', currentPage - 1, false));
+    if (start > 1) { pag.appendChild(makeBtn('1', 1, false)); if (start > 2) pag.appendChild(makeBtn('…', null, false)); }
+    for (var p = start; p <= end; p++) pag.appendChild(makeBtn(String(p), p, p === currentPage));
+    if (end < totalPages) { if (end < totalPages - 1) pag.appendChild(makeBtn('…', null, false)); pag.appendChild(makeBtn(String(totalPages), totalPages, false)); }
+    if (currentPage < totalPages) pag.appendChild(makeBtn('Next →', currentPage + 1, false));
+    grid.parentNode.insertBefore(pag, grid.nextSibling);
+  }
+
   function applyFilters() {
     var q = activeSearch.trim().toLowerCase();
-    var visible = 0;
+    var matched = [];
     cards.forEach(function(c) {
-      var matchFilter = activeFilter === 'all' || c.dataset.status === activeFilter || c.dataset.type === activeFilter;
+      var matchFilter = activeFilter === 'all'
+        || c.dataset.status === activeFilter
+        || c.dataset.type === activeFilter
+        || (activeFilter === 'price-reduced' && c.dataset.reduced === 'true');
       var matchSearch = !q || c.dataset.search.indexOf(q) !== -1;
-      var show = matchFilter && matchSearch;
-      c.style.display = show ? '' : 'none';
-      if (show) visible++;
+      if (matchFilter && matchSearch) matched.push(c);
+      c.style.display = 'none';
     });
+    var startIdx = (currentPage - 1) * PAGE_SIZE;
+    matched.slice(startIdx, startIdx + PAGE_SIZE).forEach(function(c) { c.style.display = ''; });
+    var visible = matched.length;
     countEl.innerHTML = '<strong>' + visible + '</strong> listing' + (visible !== 1 ? 's' : '') + ' shown';
     noResults.style.display = visible === 0 ? 'block' : 'none';
     grid.style.display = visible === 0 ? 'none' : '';
+    renderPagination(matched);
   }
 
   pills.forEach(function(pill) {
@@ -128091,6 +128126,7 @@ document.addEventListener('DOMContentLoaded', function(){
       pills.forEach(function(p) { p.classList.remove('active'); });
       pill.classList.add('active');
       activeFilter = pill.dataset.filter;
+      currentPage = 1;
       applyFilters();
     });
   });
