@@ -82697,7 +82697,7 @@
     "state": "KS",
     "lat": 37.823462,
     "lng": -96.871817,
-    "price": 160000,
+    "price": 150000,
     "beds": 3,
     "baths": 2,
     "sqft": "1092",
@@ -82709,7 +82709,8 @@
     "isSundgren": false,
     "agentName": "Luke Beal",
     "agentPhone": "3164354664",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 160000
   },
   {
     "slug": "1022-cherry-st-wellington-ks-674694",
@@ -88622,7 +88623,7 @@
     "state": "KS",
     "lat": 37.264881,
     "lng": -97.403353,
-    "price": 142900,
+    "price": 137000,
     "beds": 2,
     "baths": 2,
     "sqft": "1108",
@@ -88634,7 +88635,8 @@
     "isSundgren": false,
     "agentName": "Rachel Westmoreland",
     "agentPhone": "6203260633",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 142900
   },
   {
     "slug": "746-osage-ave-salina-ks-677656",
