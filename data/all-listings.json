@@ -5542,7 +5542,7 @@
     "state": "KS",
     "lat": 38.26295486,
     "lng": -96.96908319,
-    "price": 857500,
+    "price": 835625,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -5554,7 +5554,8 @@
     "isSundgren": false,
     "agentName": "Shaun Reid",
     "agentPhone": "3162106680",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 857500
   },
   {
     "slug": "5010-maize-rd-maize-ks-645176",
@@ -6901,7 +6902,7 @@
     "state": "KS",
     "lat": 37.692738,
     "lng": -97.175967,
-    "price": 777000,
+    "price": 798000,
     "beds": 5,
     "baths": 5,
     "sqft": "3611",
@@ -12232,7 +12233,7 @@
     "state": "KS",
     "lat": 37.670302,
     "lng": -97.504829,
-    "price": 565000,
+    "price": 555000,
     "beds": 5,
     "baths": 3,
     "sqft": "3357",
@@ -12244,7 +12245,8 @@
     "isSundgren": false,
     "agentName": "Garrett J Pepper",
     "agentPhone": "3169920375",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 565000
   },
   {
     "slug": "20707-sunset-ridge-rose-hill-ks-677307",
@@ -12416,7 +12418,7 @@
     "state": "KS",
     "lat": 37.682824,
     "lng": -97.432209,
-    "price": 560000,
+    "price": 545000,
     "beds": 4,
     "baths": 4,
     "sqft": "3413",
@@ -12428,7 +12430,8 @@
     "isSundgren": false,
     "agentName": "Dan Madrigal",
     "agentPhone": "3169900184",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 560000
   },
   {
     "slug": "105-broadview-street-wichita-ks-676181",
@@ -15183,7 +15186,7 @@
     "state": "KS",
     "lat": 37.790006,
     "lng": -97.379963,
-    "price": 505000,
+    "price": 485000,
     "beds": 5,
     "baths": 3,
     "sqft": "3054",
@@ -15195,7 +15198,8 @@
     "isSundgren": false,
     "agentName": "Alec Davis",
     "agentPhone": "3169906585",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 505000
   },
   {
     "slug": "13942-willowgreen-ct-wichita-ks-666591",
@@ -18870,7 +18874,7 @@
     "state": "KS",
     "lat": 37.862358,
     "lng": -97.70251,
-    "price": 445000,
+    "price": 399000,
     "beds": 4,
     "baths": 3,
     "sqft": "2993",
@@ -18883,7 +18887,7 @@
     "agentName": "Jessica Schmidt",
     "agentPhone": "6202811800",
     "agentEmail": "",
-    "previousPrice": 450000
+    "previousPrice": 445000
   },
   {
     "slug": "13310-mount-vernon-rd-wichita-ks-677596",
@@ -18894,7 +18898,7 @@
     "state": "KS",
     "lat": 37.657358,
     "lng": -97.183157,
-    "price": 445000,
+    "price": 435000,
     "beds": 5,
     "baths": 4,
     "sqft": "3371",
@@ -18907,7 +18911,7 @@
     "agentName": "Amanda Jolley",
     "agentPhone": "3162139043",
     "agentEmail": "",
-    "previousPrice": 450000
+    "previousPrice": 445000
   },
   {
     "slug": "13831-berwick-dr-wichita-ks-677478",
@@ -20138,7 +20142,7 @@
     "state": "KS",
     "lat": 37.73563499,
     "lng": -97.14517502,
-    "price": 444975,
+    "price": 436250,
     "beds": 5,
     "baths": 3,
     "sqft": "2627",
@@ -20150,7 +20154,8 @@
     "isSundgren": false,
     "agentName": "Myron K Klaassen",
     "agentPhone": "3164614847",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 444975
   },
   {
     "slug": "2817-woodridge-st-wichita-ks-673094",
@@ -35025,7 +35030,7 @@
     "state": "KS",
     "lat": 37.207926,
     "lng": -96.990207,
-    "price": 345000,
+    "price": 335000,
     "beds": 5,
     "baths": 3,
     "sqft": "3081",
@@ -35038,7 +35043,7 @@
     "agentName": "Mandi Hill",
     "agentPhone": "6202293600",
     "agentEmail": "",
-    "previousPrice": 349900
+    "previousPrice": 345000
   },
   {
     "slug": "936-moss-wood-st-derby-ks-675586",
@@ -44100,7 +44105,7 @@
     "state": "KS",
     "lat": 37.549134,
     "lng": -97.25735397,
-    "price": 299500,
+    "price": 299000,
     "beds": 4,
     "baths": 2,
     "sqft": "2352",
@@ -44112,7 +44117,8 @@
     "isSundgren": false,
     "agentName": "Amanda Jolley",
     "agentPhone": "3162139043",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 299500
   },
   {
     "slug": "6135-harry-st-wichita-ks-653395",
@@ -44654,7 +44660,7 @@
     "state": "KS",
     "lat": 37.716931,
     "lng": -97.469891,
-    "price": 295000,
+    "price": 290000,
     "beds": 4,
     "baths": 3,
     "sqft": "2216",
@@ -44666,7 +44672,8 @@
     "isSundgren": false,
     "agentName": "Heather Stevenson",
     "agentPhone": "3169938451",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 295000
   },
   {
     "slug": "331-127th-st-e-401-wichita-ks-677756",
@@ -48712,7 +48719,7 @@
     "state": "KS",
     "lat": 37.777546,
     "lng": -97.232256,
-    "price": 282000,
+    "price": 279900,
     "beds": 4,
     "baths": 2,
     "sqft": "1599",
@@ -48724,7 +48731,8 @@
     "isSundgren": false,
     "agentName": "Basem Krichati",
     "agentPhone": "3165160139",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 282000
   },
   {
     "slug": "2311-applewood-ln-salina-ks-674529",
@@ -59872,7 +59880,7 @@
     "state": "KS",
     "lat": 37.386372,
     "lng": -97.278947,
-    "price": 238000,
+    "price": 228000,
     "beds": 3,
     "baths": 3,
     "sqft": "1916",
@@ -59884,7 +59892,8 @@
     "isSundgren": false,
     "agentName": "Denise Lewis",
     "agentPhone": "3163714081",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 238000
   },
   {
     "slug": "2100-ridgewood-dr-wichita-ks-677141",
@@ -95561,7 +95570,7 @@
     "state": "KS",
     "lat": 37.798828,
     "lng": -97.000037,
-    "price": 120000,
+    "price": 108000,
     "beds": 3,
     "baths": 3,
     "sqft": "924",
@@ -95573,7 +95582,8 @@
     "isSundgren": false,
     "agentName": "Debbie Holmes",
     "agentPhone": "3162041184",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 120000
   },
   {
     "slug": "3159-bunker-hill-wichita-ks-675399",

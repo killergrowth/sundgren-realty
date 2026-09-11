@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Step into timeless elegance with this stunning Lindsborg treasure, beautifully restored while preserving the craftsmanship and character that make historic homes so special. From the moment you enter the grand foyer, you’ll appreciate the remarkable details and inviting spaces throughout. The main floor offers a gracious parlor, spacious living room, formal dining room, beautifully updated kitchen, charming sun porch, butler’s pantry, full bathroom, and a versatile office space that could easily serve as a main floor bedroom. Upstairs, you’ll find four spacious bedrooms, two full bathrooms, an additional sun porch, and a rare back stairway that adds both convenience and classic charm. The partially finished attic offers incredible potential, with remaining building materials already stored upstairs and ready for your finishing touches. A full basement provides excellent storage space and functionality. Outside, the original carriage house now serves as a two-car garage with additional workspace, while the impressive 30x40 shed offers finished space plus abundant room for hobbies, toys, equipment, or entertaining. Situated on over an acre of beautifully shaded grounds with mature trees and gardens, this property is truly a rare Lindsborg classic that blends history, beauty, and endless possibilities.</p>
     </div>
@@ -205,8 +207,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -216,13 +218,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="116 Mill St, Lindsborg, KS, 67456">
-        <input type="hidden" name="message" value="I am interested in the property at 116 Mill St, Lindsborg, KS, 67456 (MLS# 673659). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 116 Mill St, Lindsborg, KS, 67456 (MLS# 673659). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

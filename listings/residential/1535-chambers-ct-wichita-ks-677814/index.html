@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Some homes surprise you with just how much they have to offer, and this is one of them. Tucked away at the end of a cul-de-sac in the highly sought-after Maize school district, this 4-bedroom, 3-bath home with a 2-car attached garage offers generous living spaces, thoughtful updates and even the potential for a fifth bedroom. The main floor features a split-bedroom layout with LVP flooring throughout the main living areas and three generously sized bedrooms, all with large closets. The primary suite includes a double closet and private bathroom with dual sinks, tile flooring and a tub/shower combination. The updated hall bath features granite countertops, LVP flooring and newer hardware. At the heart of the home is a beautifully remodeled kitchen with quartz countertops, abundant cabinetry and counter space, soft-close cabinets, updated hardware, an eating bar and newer stainless steel appliances. Just off the kitchen, the main-floor laundry includes additional storage space with plenty of potential for a walk-in pantry. The adjoining living room is anchored by a gas fireplace, creating a comfortable gathering space for everyday living. An upgraded sliding glass door with built-in blinds leads directly to the backyard and deck. Downstairs, there&#39;s even more room to spread out. The large rec room has plenty of space for movie nights, game nights, entertaining or simply giving everyone a little room of their own. The fourth bedroom feels more like a second primary suite, complete with a walk-in closet with built-in storage and a private bath featuring a custom tiled walk-in shower, rainfall showerhead and Bluetooth speaker/light/exhaust fan. A built-in desk and dedicated gaming setup add even more function to the space. An additional basement room currently used as a gym and home office offers flexibility for hobbies, work or a potential future fifth bedroom. Outside may become one of your favorite parts of the home though. Mature, professionally maintained trees provide plenty of shade over the fully fenced backyard, while the newer 17&#39; x 19&#39; deck features built-in seating and a dedicated grilling station ready for everything from quiet mornings to summer cookouts. There&#39;s even a 50-amp connection nearby if a hot tub is part of the plan. An irrigation well supplies the in-ground sprinkler system, helping keep the lawn looking its best without relying on city water for irrigation. The updates go well beyond what you can see, including a new HVAC system, gas furnace and humidifier in 2024, new water heater in 2026, additional attic insulation, a temperature-controlled attic exhaust fan, newer aluminum fencing and gates, an insulated garage door and an existing radon mitigation system. With no HOA, no special assessments, a quiet cul-de-sac location and so much flexible living space, this is one you&#39;ll want to experience in person. Schedule your showing and come see just how much this home has to offer!</p>
     </div>
@@ -205,8 +207,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -216,13 +218,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="1535 Chambers Ct, Wichita, KS, 67212">
-        <input type="hidden" name="message" value="I am interested in the property at 1535 Chambers Ct, Wichita, KS, 67212 (MLS# 677814). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 1535 Chambers Ct, Wichita, KS, 67212 (MLS# 677814). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
