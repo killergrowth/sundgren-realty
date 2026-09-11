@@ -4805,7 +4805,7 @@
     "state": "KS",
     "lat": 37.501649,
     "lng": -97.646574,
-    "price": 925000,
+    "price": 899000,
     "beds": 5,
     "baths": 3,
     "sqft": "3026",
@@ -4818,7 +4818,7 @@
     "agentName": "Bryce Jones",
     "agentPhone": "3166410878",
     "agentEmail": "",
-    "previousPrice": 950000
+    "previousPrice": 925000
   },
   {
     "slug": "24-douglas-ave-eastborough-ks-674383",
@@ -7637,7 +7637,7 @@
     "state": "KS",
     "lat": 37.546922,
     "lng": -97.220182,
-    "price": 725000,
+    "price": 709900,
     "beds": 5,
     "baths": 4,
     "sqft": "3737",
@@ -7649,7 +7649,8 @@
     "isSundgren": false,
     "agentName": "Debi Strange",
     "agentPhone": "3168064860",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 725000
   },
   {
     "slug": "534-richmond-ave-wichita-ks-672279",
@@ -12528,7 +12529,7 @@
     "state": "KS",
     "lat": 37.707462,
     "lng": -97.475228,
-    "price": 559400,
+    "price": 539000,
     "beds": 5,
     "baths": 4,
     "sqft": "3893",
@@ -12540,7 +12541,8 @@
     "isSundgren": false,
     "agentName": "Debi Strange",
     "agentPhone": "3168064860",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 559400
   },
   {
     "slug": "4809-portwest-st-wichita-ks-675299",
@@ -36371,7 +36373,7 @@
     "state": "KS",
     "lat": 37.664825,
     "lng": -97.30064,
-    "price": 339999,
+    "price": 334900,
     "beds": 5,
     "baths": 3,
     "sqft": "2414",
@@ -36383,7 +36385,8 @@
     "isSundgren": false,
     "agentName": "Kirsten Haas",
     "agentPhone": "3162140052",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 339999
   },
   {
     "slug": "11236-killarney-cir-wichita-ks-671910",

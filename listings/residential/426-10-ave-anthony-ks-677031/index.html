@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-terminated pill">Inactive</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -143,7 +143,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Property offered at ONLINE ONLY auction. BIDDING OPENS: Tuesday, August 25th, 2026 at 2 PM (ct) | BIDDING CLOSING: Thursday, September 3rd, 2026 at 2 PM (ct). Bidding will remain open on this property until 90 seconds have passed without receiving a bid. Property available to preview by appointment. CLEAR TITLE AT CLOSING, NO BACK TAXES. ONLINE ONLY!!! Set on approximately 22± scenic acres, this charming home is full of timeless character and unique architectural details, including striking stone accents. From the front gable to the tall red front door, this property offers a warm and inviting first impression while providing the space and privacy of country living. Inside and out, this property blends the charm of a bygone era with the practicality of modern country living. Whether you&#39;re drawn to the character-filled interior, the room to garden and raise livestock, or the peace and quiet that only acreage can offer, this is a rare chance to own something with genuine personality and space to grow. Home Features: Welcoming foyer Expansive living room with patterned metal vaulted ceilings Wood-burning fireplace One-of-a-kind antique barbershop mirrored accent wall Beautiful hardwood floors Double doors providing access to outdoor patio area Spacious kitchen with abundant cabinetry and built-in spice shelving Stainless steel refrigerator, gas oven, and dishwasher included Large main-floor family room Stunning stained-glass windows that add charm and character Generous primary bedroom with gorgeous hardwood floors Primary ensuite featuring a tub/shower combination and walk-in closet Two additional bedrooms Full guest bathroom with tub Half bathroom for guests Convenient laundry closet with washer and dryer included Spacious recreation/family room with built-in shelving, offering the perfect space for entertaining, hobbies, or a home theater Outdoor Features: Detached 720 sq. ft. two-car garage with overhead storage space 10&#39; x 12&#39; tool shed 20&#39; x 60&#39; poultry building Designated gardening areas with an established watering system Approximately 22± acres offering ample space for gardening, livestock, recreation, or simply enjoying the peaceful country setting Property Updates (Per Seller): 2018: Grant-funded windbreak—three tree rows, each over 300 feet long 2019: Basketball goal and light poles 2020: New water heater and a large established garden 2021: New 30-chamber septic system and driveway improved with four semi-truck loads of rock 2022: Over 800 feet of front-yard fencing 2023: New main HVAC system (indoor and outdoor units) plus three mini-splits (two 220-volt, one 110-volt) 2024: Replaced both double doors to the back porch 2026: Replaced the single rear &quot;dog door&quot; to the fenced backyard Don&#39;t miss this opportunity to own a truly distinctive rural property that combines unique architectural charm, spacious living areas, versatile outbuildings, and beautiful acreage! Per seller, County Records for the finished living area do not reflect the entire finished living space. Finished living area provided is measured and approximate. *Buyer should verify school assignments as they are subject to change. The real estate is offered at public auction in its present, “as is where is” condition and is accepted by the buyer without any expressed or implied warranties or representations from the seller or seller’s agents. Full auction terms and conditions provided in the Property Information Packet. Total purchase price will include a 10% buyer’s premium ($2,500.00 minimum) added to the final bid. Property available to preview by appointment. Earnest money is due from the high bidder at the auction in the form of cash, check, or immediately available, certified funds in the amount of $10,000.</p>
     </div>
@@ -208,8 +210,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -219,13 +221,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="426 10 Ave, Anthony, KS, 67003">
-        <input type="hidden" name="message" value="I am interested in the property at 426 10 Ave, Anthony, KS, 67003 (MLS# 677031). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 426 10 Ave, Anthony, KS, 67003 (MLS# 677031). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

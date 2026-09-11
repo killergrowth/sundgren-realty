@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-terminated pill">Inactive</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -128,7 +128,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Property offered at ONLINE ONLY auction. BIDDING OPENS: Tuesday, August 25th, 2026 at 2 PM (ct) | BIDDING CLOSING: Thursday, September 3rd, 2026 at 2:20 PM (ct). Bidding will remain open on this property until 90 seconds have passed without receiving a bid. Property available to preview by appointment. CLEAR TITLE AT CLOSING, NO BACK TAXES. ONLINE ONLY!!! Don&#39;t miss this outstanding investment opportunity featuring two side-by-side duplexes on a desirable corner lot in McPherson, Kansas. With 3 of the 4 units currently occupied, this property provides immediate rental income with additional upside through the vacant unit. The duplex containing units 421 and 423 have been completely remodeled, adding significant value and appeal. Each Unit Features: 2 bedrooms, 1 full bathroom Covered front entry Spacious living room with laminate flooring and a large picture window Kitchen/dining combination with refrigerator and oven/range included Full bathroom with tub/shower combination Laundry hookups Current Rental Income: Unit 417 – Rented for $600/month Unit 419 – Rented for $600/month Unit 421 – Vacant (income opportunity) Unit 423 – Rented for $750/month All current leases are month-to-month, offering flexibility for investors to adjust rents or occupancy as desired. Situated on a corner lot, this well-maintained four-unit property presents an excellent opportunity to expand your investment portfolio. Whether you&#39;re a seasoned investor or looking to acquire a solid income-producing property, this multi-family offering combines immediate cash flow with future income potential. The current rental amount does not match the leases. *Buyer should verify school assignments as they are subject to change. The real estate is offered at public auction in its present, “as is where is” condition and is accepted by the buyer without any expressed or implied warranties or representations from the seller or seller’s agents. Full auction terms and conditions provided in the Property Information Packet. Total purchase price will include a 10% buyer’s premium ($2,500.00 minimum) added to the final bid. Property available to preview by appointment. Earnest money is due from the high bidder at the auction in the form of cash, check, or immediately available, certified funds in the amount of: Buyer&#39;s choice for earnest money: $15,000 for a 30-day closing, $20,000 for a 45-day closing.</p>
     </div>
@@ -185,8 +187,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -196,13 +198,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="417 Gildersleeve St, McPherson, KS, 67460">
-        <input type="hidden" name="message" value="I am interested in the property at 417 Gildersleeve St, McPherson, KS, 67460 (MLS# 676978). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 417 Gildersleeve St, McPherson, KS, 67460 (MLS# 676978). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
