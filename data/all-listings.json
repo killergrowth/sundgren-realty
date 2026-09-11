@@ -6140,7 +6140,7 @@
     "state": "KS",
     "lat": 37.672626,
     "lng": -97.62002,
-    "price": 820000,
+    "price": 795000,
     "beds": 3,
     "baths": 4,
     "sqft": "2654",
@@ -6152,7 +6152,8 @@
     "isSundgren": false,
     "agentName": "Brianna Branine",
     "agentPhone": "3169416788",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 820000
   },
   {
     "slug": "2372-sagebrush-ct-wichita-ks-670319",
@@ -10408,7 +10409,7 @@
     "state": "KS",
     "lat": 37.730717,
     "lng": -97.399863,
-    "price": 604900,
+    "price": 599900,
     "beds": 5,
     "baths": 3,
     "sqft": "2954",
@@ -10420,7 +10421,8 @@
     "isSundgren": false,
     "agentName": "Sarah King",
     "agentPhone": "3166481199",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 604900
   },
   {
     "slug": "202-hillside-st-wellington-ks-669812",
@@ -11606,7 +11608,7 @@
     "state": "KS",
     "lat": 37.73217201,
     "lng": -97.40691495,
-    "price": 564000,
+    "price": 549000,
     "beds": 5,
     "baths": 3,
     "sqft": "3577",
@@ -11619,7 +11621,7 @@
     "agentName": "Todd Davis",
     "agentPhone": "3169905460",
     "agentEmail": "",
-    "previousPrice": 579000
+    "previousPrice": 564000
   },
   {
     "slug": "3263-bedford-st-wichita-ks-675214",
@@ -21522,7 +21524,7 @@
     "state": "KS",
     "lat": 37.934446,
     "lng": -97.320433,
-    "price": 425000,
+    "price": 417500,
     "beds": 3,
     "baths": 3,
     "sqft": "2557",
@@ -21534,7 +21536,8 @@
     "isSundgren": false,
     "agentName": "Dan Madrigal",
     "agentPhone": "3169900184",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 425000
   },
   {
     "slug": "2102-cranbrook-st-wichita-ks-676246",
@@ -22954,7 +22957,7 @@
     "state": "KS",
     "lat": 37.575642,
     "lng": -97.145899,
-    "price": 410000,
+    "price": 399500,
     "beds": 5,
     "baths": 3,
     "sqft": "3363",
@@ -22966,7 +22969,8 @@
     "isSundgren": false,
     "agentName": "Eric J Locke",
     "agentPhone": "3166409274",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 410000
   },
   {
     "slug": "1861-chelsea-dr-el-dorado-ks-677721",
@@ -27495,7 +27499,7 @@
     "state": "KS",
     "lat": 37.685425,
     "lng": -97.470954,
-    "price": 375900,
+    "price": 374900,
     "beds": 5,
     "baths": 4,
     "sqft": "3169",
@@ -27508,7 +27512,7 @@
     "agentName": "Robbin L Deel",
     "agentPhone": "3166488494",
     "agentEmail": "",
-    "previousPrice": 379900
+    "previousPrice": 375900
   },
   {
     "slug": "3513-bluelake-st-wichita-ks-671913",
@@ -27749,7 +27753,7 @@
     "state": "KS",
     "lat": 37.641034,
     "lng": -97.477946,
-    "price": 379800,
+    "price": 369800,
     "beds": null,
     "baths": null,
     "sqft": "2390",
@@ -27761,7 +27765,8 @@
     "isSundgren": false,
     "agentName": "Karen Hampton",
     "agentPhone": "3166419442",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 379800
   },
   {
     "slug": "2897-cedar-crest-ct-wichita-ks-671935",
@@ -27772,7 +27777,7 @@
     "state": "KS",
     "lat": 37.641058,
     "lng": -97.477256,
-    "price": 379800,
+    "price": 369800,
     "beds": null,
     "baths": null,
     "sqft": "2390",
@@ -27784,7 +27789,8 @@
     "isSundgren": false,
     "agentName": "Karen Hampton",
     "agentPhone": "3166419442",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 379800
   },
   {
     "slug": "2865-cedar-crest-ct-wichita-ks-671944",
@@ -27795,7 +27801,7 @@
     "state": "KS",
     "lat": 37.641165,
     "lng": -97.479183,
-    "price": 379800,
+    "price": 369800,
     "beds": null,
     "baths": null,
     "sqft": "2390",
@@ -27807,7 +27813,8 @@
     "isSundgren": false,
     "agentName": "Karen Hampton",
     "agentPhone": "3166419442",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 379800
   },
   {
     "slug": "2893-cedar-crest-ct-wichita-ks-671936",
@@ -27818,7 +27825,7 @@
     "state": "KS",
     "lat": 37.641049,
     "lng": -97.477498,
-    "price": 379800,
+    "price": 369800,
     "beds": null,
     "baths": null,
     "sqft": "2390",
@@ -27830,7 +27837,8 @@
     "isSundgren": false,
     "agentName": "Karen Hampton",
     "agentPhone": "3166419442",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 379800
   },
   {
     "slug": "2881-cedar-crest-ct-wichita-ks-671939",
@@ -27841,7 +27849,7 @@
     "state": "KS",
     "lat": 37.64102,
     "lng": -97.478186,
-    "price": 379800,
+    "price": 369800,
     "beds": null,
     "baths": null,
     "sqft": "2390",
@@ -27853,7 +27861,8 @@
     "isSundgren": false,
     "agentName": "Karen Hampton",
     "agentPhone": "3166419442",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 379800
   },
   {
     "slug": "2877-cedar-crest-ct-wichita-ks-671941",
@@ -27864,7 +27873,7 @@
     "state": "KS",
     "lat": 37.641029,
     "lng": -97.478442,
-    "price": 379800,
+    "price": 369800,
     "beds": null,
     "baths": null,
     "sqft": "2390",
@@ -27876,7 +27885,8 @@
     "isSundgren": false,
     "agentName": "Karen Hampton",
     "agentPhone": "3166419442",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 379800
   },
   {
     "slug": "2889-cedar-crest-ct-wichita-ks-671937",
@@ -27887,7 +27897,7 @@
     "state": "KS",
     "lat": 37.641042,
     "lng": -97.477722,
-    "price": 379800,
+    "price": 369800,
     "beds": null,
     "baths": null,
     "sqft": "2390",
@@ -27899,7 +27909,8 @@
     "isSundgren": false,
     "agentName": "Karen Hampton",
     "agentPhone": "3166419442",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 379800
   },
   {
     "slug": "2873-cedar-crest-ct-wichita-ks-671942",
@@ -27910,7 +27921,7 @@
     "state": "KS",
     "lat": 37.641092,
     "lng": -97.478688,
-    "price": 379800,
+    "price": 369800,
     "beds": null,
     "baths": null,
     "sqft": "2390",
@@ -27922,7 +27933,8 @@
     "isSundgren": false,
     "agentName": "Karen Hampton",
     "agentPhone": "3166419442",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 379800
   },
   {
     "slug": "2857-cedar-crest-ct-wichita-ks-670372",
@@ -27933,7 +27945,7 @@
     "state": "KS",
     "lat": 37.641118,
     "lng": -97.479635,
-    "price": 379800,
+    "price": 369800,
     "beds": null,
     "baths": null,
     "sqft": "2390",
@@ -27945,7 +27957,8 @@
     "isSundgren": false,
     "agentName": "Karen Hampton",
     "agentPhone": "3166419442",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 379800
   },
   {
     "slug": "1301-rushwood-dr-derby-ks-675702",
@@ -30587,7 +30600,7 @@
     "state": "KS",
     "lat": 37.810114,
     "lng": -97.303484,
-    "price": 369000,
+    "price": 359000,
     "beds": 4,
     "baths": 3,
     "sqft": "2676",
@@ -30599,7 +30612,8 @@
     "isSundgren": false,
     "agentName": "Edna Martinez",
     "agentPhone": "3165595325",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 369000
   },
   {
     "slug": "2142-malcolm-st-wichita-ks-675971",
@@ -36120,7 +36134,7 @@
     "state": "KS",
     "lat": 37.724697,
     "lng": -97.458417,
-    "price": 340000,
+    "price": 325000,
     "beds": 3,
     "baths": 2,
     "sqft": "2582",
@@ -36132,7 +36146,8 @@
     "isSundgren": false,
     "agentName": "Bobbie Lane",
     "agentPhone": "3169900697",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 340000
   },
   {
     "slug": "422-cheyenne-ct-kechi-ks-677079",
@@ -36166,7 +36181,7 @@
     "state": "KS",
     "lat": 37.78939274,
     "lng": -97.32437346,
-    "price": 340000,
+    "price": 335000,
     "beds": 4,
     "baths": 3,
     "sqft": "2616",
@@ -36178,7 +36193,8 @@
     "isSundgren": false,
     "agentName": "Jill Butcher",
     "agentPhone": "3163714598",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 340000
   },
   {
     "slug": "459-90th-ave-freeport-ks-673988",
@@ -43922,7 +43938,7 @@
     "state": "KS",
     "lat": 37.649904,
     "lng": -97.587452,
-    "price": 299900,
+    "price": 294500,
     "beds": 3,
     "baths": 2,
     "sqft": "1332",
@@ -43934,7 +43950,8 @@
     "isSundgren": false,
     "agentName": "Bree Russell",
     "agentPhone": "3165167417",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 299900
   },
   {
     "slug": "519-elmwood-st-park-city-ks-660955",
@@ -44221,7 +44238,7 @@
     "state": "KS",
     "lat": 37.76897,
     "lng": -97.461101,
-    "price": 299000,
+    "price": 294900,
     "beds": 5,
     "baths": 3,
     "sqft": "2282",
@@ -44233,7 +44250,8 @@
     "isSundgren": false,
     "agentName": "Denise Lewis",
     "agentPhone": "3163714081",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 299000
   },
   {
     "slug": "1930-cardington-st-wichita-ks-665888",
@@ -52547,7 +52565,7 @@
     "state": "KS",
     "lat": 37.553528,
     "lng": -97.254276,
-    "price": 264000,
+    "price": 263900,
     "beds": 3,
     "baths": 3,
     "sqft": "2776",
@@ -52560,7 +52578,7 @@
     "agentName": "Dawn R Wade",
     "agentPhone": "3168061060",
     "agentEmail": "",
-    "previousPrice": 269000
+    "previousPrice": 264000
   },
   {
     "slug": "8110-westlawn-cir-wichita-ks-677589",
@@ -72905,7 +72923,7 @@
     "state": "KS",
     "lat": 37.641034,
     "lng": -97.477946,
-    "price": 189900,
+    "price": 184900,
     "beds": 3,
     "baths": 2,
     "sqft": "1195",
@@ -72917,7 +72935,8 @@
     "isSundgren": false,
     "agentName": "Karen Hampton",
     "agentPhone": "3166419442",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 189900
   },
   {
     "slug": "2873-cedar-crest-ct-wichita-ks-671929",
@@ -72928,7 +72947,7 @@
     "state": "KS",
     "lat": 37.641092,
     "lng": -97.478688,
-    "price": 189900,
+    "price": 184900,
     "beds": 3,
     "baths": 2,
     "sqft": "1195",
@@ -72940,7 +72959,8 @@
     "isSundgren": false,
     "agentName": "Karen Hampton",
     "agentPhone": "3166419442",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 189900
   },
   {
     "slug": "2877-cedar-crest-ct-wichita-ks-671928",
@@ -72951,7 +72971,7 @@
     "state": "KS",
     "lat": 37.641029,
     "lng": -97.478442,
-    "price": 189900,
+    "price": 184900,
     "beds": 3,
     "baths": 2,
     "sqft": "1195",
@@ -72963,7 +72983,8 @@
     "isSundgren": false,
     "agentName": "Karen Hampton",
     "agentPhone": "3166419442",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 189900
   },
   {
     "slug": "2865-cedar-crest-ct-wichita-ks-671934",
@@ -72974,7 +72995,7 @@
     "state": "KS",
     "lat": 37.641165,
     "lng": -97.479183,
-    "price": 189900,
+    "price": 184900,
     "beds": 3,
     "baths": 2,
     "sqft": "1195",
@@ -72986,7 +73007,8 @@
     "isSundgren": false,
     "agentName": "Karen Hampton",
     "agentPhone": "3166419442",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 189900
   },
   {
     "slug": "2869-cedar-crest-ct-wichita-ks-671931",
@@ -72997,7 +73019,7 @@
     "state": "KS",
     "lat": 37.641176,
     "lng": -97.478933,
-    "price": 189900,
+    "price": 184900,
     "beds": 3,
     "baths": 2,
     "sqft": "1195",
@@ -73009,7 +73031,8 @@
     "isSundgren": false,
     "agentName": "Karen Hampton",
     "agentPhone": "3166419442",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 189900
   },
   {
     "slug": "2881-cedar-crest-ct-wichita-ks-671925",
@@ -73020,7 +73043,7 @@
     "state": "KS",
     "lat": 37.64102,
     "lng": -97.478186,
-    "price": 189900,
+    "price": 184900,
     "beds": 3,
     "baths": 2,
     "sqft": "1195",
@@ -73032,7 +73055,8 @@
     "isSundgren": false,
     "agentName": "Karen Hampton",
     "agentPhone": "3166419442",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 189900
   },
   {
     "slug": "2865-cedar-crest-ct-wichita-ks-671933",
@@ -73043,7 +73067,7 @@
     "state": "KS",
     "lat": 37.641165,
     "lng": -97.479183,
-    "price": 189900,
+    "price": 184900,
     "beds": 3,
     "baths": 2,
     "sqft": "1195",
@@ -73055,7 +73079,8 @@
     "isSundgren": false,
     "agentName": "Karen Hampton",
     "agentPhone": "3166419442",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 189900
   },
   {
     "slug": "2885-cedar-crest-ct-wichita-ks-671923",
@@ -73066,7 +73091,7 @@
     "state": "KS",
     "lat": 37.641034,
     "lng": -97.477946,
-    "price": 189900,
+    "price": 184900,
     "beds": 3,
     "baths": 2,
     "sqft": "1195",
@@ -73078,7 +73103,8 @@
     "isSundgren": false,
     "agentName": "Karen Hampton",
     "agentPhone": "3166419442",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 189900
   },
   {
     "slug": "2877-cedar-crest-ct-wichita-ks-671927",
@@ -73089,7 +73115,7 @@
     "state": "KS",
     "lat": 37.641029,
     "lng": -97.478442,
-    "price": 189900,
+    "price": 184900,
     "beds": 3,
     "baths": 2,
     "sqft": "1195",
@@ -73101,7 +73127,8 @@
     "isSundgren": false,
     "agentName": "Karen Hampton",
     "agentPhone": "3166419442",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 189900
   },
   {
     "slug": "2873-cedar-crest-ct-wichita-ks-671930",
@@ -73112,7 +73139,7 @@
     "state": "KS",
     "lat": 37.641092,
     "lng": -97.478688,
-    "price": 189900,
+    "price": 184900,
     "beds": 3,
     "baths": 2,
     "sqft": "1195",
@@ -73124,7 +73151,8 @@
     "isSundgren": false,
     "agentName": "Karen Hampton",
     "agentPhone": "3166419442",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 189900
   },
   {
     "slug": "2881-cedar-crest-ct-wichita-ks-671926",
@@ -73135,7 +73163,7 @@
     "state": "KS",
     "lat": 37.64102,
     "lng": -97.478186,
-    "price": 189900,
+    "price": 184900,
     "beds": 3,
     "baths": 2,
     "sqft": "1195",
@@ -73147,7 +73175,8 @@
     "isSundgren": false,
     "agentName": "Karen Hampton",
     "agentPhone": "3166419442",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 189900
   },
   {
     "slug": "2857-cedar-crest-ct-wichita-ks-670368",
@@ -73158,7 +73187,7 @@
     "state": "KS",
     "lat": 37.641118,
     "lng": -97.479635,
-    "price": 189900,
+    "price": 184900,
     "beds": 3,
     "baths": 2,
     "sqft": "1195",
@@ -73170,7 +73199,8 @@
     "isSundgren": false,
     "agentName": "Karen Hampton",
     "agentPhone": "3166419442",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 189900
   },
   {
     "slug": "1125-coolidge-ave-wichita-ks-676245",
@@ -76198,7 +76228,7 @@
     "state": "KS",
     "lat": 37.089534,
     "lng": -97.033224,
-    "price": 180000,
+    "price": 160000,
     "beds": 3,
     "baths": 2,
     "sqft": "1398",
@@ -76210,7 +76240,8 @@
     "isSundgren": false,
     "agentName": "Michelle Leeper",
     "agentPhone": "3167885581",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 180000
   },
   {
     "slug": "444-edwards-ave-wichita-ks-677730",
@@ -82493,7 +82524,7 @@
     "state": "KS",
     "lat": 37.27028,
     "lng": -97.165816,
-    "price": 160000,
+    "price": 155000,
     "beds": 3,
     "baths": 2,
     "sqft": "1104",
@@ -82505,7 +82536,8 @@
     "isSundgren": false,
     "agentName": "Andrea LaFever",
     "agentPhone": "3165582177",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 160000
   },
   {
     "slug": "1639-hydraulic-ave-wichita-ks-677778",
@@ -83899,7 +83931,7 @@
     "state": "KS",
     "lat": 37.550885,
     "lng": -97.267624,
-    "price": 154000,
+    "price": 153900,
     "beds": 3,
     "baths": 1,
     "sqft": "1250",
@@ -83912,7 +83944,7 @@
     "agentName": "Dawn R Wade",
     "agentPhone": "3168061060",
     "agentEmail": "",
-    "previousPrice": 159000
+    "previousPrice": 154000
   },
   {
     "slug": "515-g-st-wellington-ks-676894",
@@ -85354,7 +85386,7 @@
     "state": "KS",
     "lat": 37.687995,
     "lng": -96.976665,
-    "price": 152500,
+    "price": 139900,
     "beds": 2,
     "baths": 1,
     "sqft": "864",
@@ -85366,7 +85398,8 @@
     "isSundgren": false,
     "agentName": "Caitlin M Sudduth-Brazell",
     "agentPhone": "3163051660",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 152500
   },
   {
     "slug": "1309-charleston-dr-park-city-ks-674856",
@@ -88490,7 +88523,7 @@
     "state": "KS",
     "lat": 37.266785,
     "lng": -97.385936,
-    "price": 143000,
+    "price": 142000,
     "beds": 2,
     "baths": 1,
     "sqft": "1162",
@@ -88502,7 +88535,8 @@
     "isSundgren": false,
     "agentName": "Diana Frazier",
     "agentPhone": "6203993051",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 143000
   },
   {
     "slug": "0000-sierra-ridge-cir-garden-plain-ks-669558",
@@ -106566,7 +106600,7 @@
     "state": "KS",
     "lat": 37.809923,
     "lng": -96.853343,
-    "price": 65000,
+    "price": 60000,
     "beds": 3,
     "baths": 2,
     "sqft": "1730",
@@ -106579,7 +106613,7 @@
     "agentName": "Sarah Drechsler",
     "agentPhone": "3166409689",
     "agentEmail": "",
-    "previousPrice": 70000
+    "previousPrice": 65000
   },
   {
     "slug": "641-ellis-st-wichita-ks-670009",
