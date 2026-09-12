@@ -9394,7 +9394,7 @@
     "state": "KS",
     "lat": 37.617734,
     "lng": -97.233959,
-    "price": 649000,
+    "price": 625000,
     "beds": 5,
     "baths": 4,
     "sqft": "3109",
@@ -9406,7 +9406,8 @@
     "isSundgren": false,
     "agentName": "Nicolle Jausel",
     "agentPhone": "3166402564",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 649000
   },
   {
     "slug": "435-130th-st-s-st-south-haven-ks-676399",
@@ -31505,7 +31506,7 @@
     "state": "KS",
     "lat": 37.67158799,
     "lng": -97.49769901,
-    "price": 365000,
+    "price": 355000,
     "beds": 3,
     "baths": 3,
     "sqft": "2831",
@@ -31517,7 +31518,8 @@
     "isSundgren": false,
     "agentName": "Caden Carlson",
     "agentPhone": "3166500311",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 365000
   },
   {
     "slug": "231-milstead-st-wichita-ks-677260",
@@ -34201,7 +34203,7 @@
     "state": "KS",
     "lat": 37.726432,
     "lng": -97.2254,
-    "price": 350000,
+    "price": 330000,
     "beds": 4,
     "baths": 3,
     "sqft": "3404",
@@ -34213,7 +34215,8 @@
     "isSundgren": false,
     "agentName": "Lindsey Magana",
     "agentPhone": "3169907095",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 350000
   },
   {
     "slug": "3249-hood-ct-wichita-ks-672216",
@@ -38746,7 +38749,7 @@
     "state": "KS",
     "lat": 37.708738,
     "lng": -97.396613,
-    "price": 325000,
+    "price": 299000,
     "beds": 3,
     "baths": 3,
     "sqft": "2106",
@@ -38758,7 +38761,8 @@
     "isSundgren": false,
     "agentName": "Robin Wolfe",
     "agentPhone": "3166415166",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 325000
   },
   {
     "slug": "11519-14th-cir-n-cir-wichita-ks-678250",
@@ -50479,7 +50483,7 @@
     "state": "KS",
     "lat": 37.548371,
     "lng": -97.25159795,
-    "price": 275000,
+    "price": 265000,
     "beds": 5,
     "baths": 2,
     "sqft": "2130",
@@ -50491,7 +50495,8 @@
     "isSundgren": false,
     "agentName": "Lola Pfeifer",
     "agentPhone": "3167080330",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 275000
   },
   {
     "slug": "9405-35th-st-n-c8-wichita-ks-677381",
@@ -51560,7 +51565,7 @@
     "state": "KS",
     "lat": 37.570312,
     "lng": -97.365862,
-    "price": 274900,
+    "price": 269900,
     "beds": 3,
     "baths": 2,
     "sqft": "2101",
@@ -51572,7 +51577,8 @@
     "isSundgren": false,
     "agentName": "Don Hamm",
     "agentPhone": "3162088553",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 274900
   },
   {
     "slug": "618-8th-st-abilene-ks-673599",
@@ -60252,7 +60258,7 @@
     "state": "KS",
     "lat": 37.72783,
     "lng": -97.272281,
-    "price": 235000,
+    "price": 230000,
     "beds": 3,
     "baths": 3,
     "sqft": "1690",
@@ -60264,7 +60270,8 @@
     "isSundgren": false,
     "agentName": "Jarica Caldwell",
     "agentPhone": "3162078203",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 235000
   },
   {
     "slug": "2158-kensington-rd-salina-ks-676083",
@@ -61935,7 +61942,7 @@
     "state": "KS",
     "lat": 37.701437,
     "lng": -97.381826,
-    "price": 229900,
+    "price": 224900,
     "beds": 4,
     "baths": 2,
     "sqft": "1296",
@@ -61947,7 +61954,8 @@
     "isSundgren": false,
     "agentName": "Stephanie Fondren",
     "agentPhone": "3168070220",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 229900
   },
   {
     "slug": "3524-azalea-st-maize-ks-677673",
@@ -82510,7 +82518,7 @@
     "state": "KS",
     "lat": 38.055178,
     "lng": -97.345511,
-    "price": 160000,
+    "price": 157000,
     "beds": 3,
     "baths": 2,
     "sqft": "1484",
@@ -82522,7 +82530,8 @@
     "isSundgren": false,
     "agentName": "Aimee Monares",
     "agentPhone": "3162881789",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 160000
   },
   {
     "slug": "420-michigan-ave-oxford-ks-677914",
