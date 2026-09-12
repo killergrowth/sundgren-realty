@@ -4299,7 +4299,7 @@
     "state": "KS",
     "lat": 37.735797,
     "lng": -97.42892,
-    "price": 1050000,
+    "price": 999000,
     "beds": 7,
     "baths": 7,
     "sqft": "6243",
@@ -4311,7 +4311,8 @@
     "isSundgren": false,
     "agentName": "James L Davis",
     "agentPhone": "3165162940",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 1050000
   },
   {
     "slug": "5020-shoreside-st-maize-ks-676590",
@@ -14313,7 +14314,7 @@
     "state": "KS",
     "lat": 37.719025,
     "lng": -97.23099599,
-    "price": 525000,
+    "price": 500000,
     "beds": 4,
     "baths": 4,
     "sqft": "3573",
@@ -14325,7 +14326,8 @@
     "isSundgren": false,
     "agentName": "Shannon Pierce",
     "agentPhone": "3163047940",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 525000
   },
   {
     "slug": "1513-shadow-rock-dr-andover-ks-670928",
@@ -21183,7 +21185,7 @@
     "state": "KS",
     "lat": 37.838589,
     "lng": -97.385872,
-    "price": 429500,
+    "price": 420000,
     "beds": 5,
     "baths": 3,
     "sqft": "2907",
@@ -21195,7 +21197,8 @@
     "isSundgren": false,
     "agentName": "Jessica Seiler",
     "agentPhone": "3167371093",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 429500
   },
   {
     "slug": "2817-birch-avenue-parkerfield-ks-678056",
@@ -30170,7 +30173,7 @@
     "state": "KS",
     "lat": 38.033661,
     "lng": -97.330276,
-    "price": 369900,
+    "price": 364900,
     "beds": null,
     "baths": null,
     "sqft": "2510",
@@ -30182,7 +30185,8 @@
     "isSundgren": false,
     "agentName": "Kit Corby",
     "agentPhone": "3162585730",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 369900
   },
   {
     "slug": "920922-logan-st-newton-ks-676281",
@@ -30216,7 +30220,7 @@
     "state": "KS",
     "lat": 38.033225,
     "lng": -97.33028,
-    "price": 369900,
+    "price": 364900,
     "beds": null,
     "baths": null,
     "sqft": "2510",
@@ -30228,7 +30232,8 @@
     "isSundgren": false,
     "agentName": "Kit Corby",
     "agentPhone": "3162585730",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 369900
   },
   {
     "slug": "915917-fox-ridge-st-newton-ks-676279",
@@ -30239,7 +30244,7 @@
     "state": "KS",
     "lat": 38.033437,
     "lng": -97.330272,
-    "price": 369900,
+    "price": 364900,
     "beds": null,
     "baths": null,
     "sqft": "2510",
@@ -30251,7 +30256,8 @@
     "isSundgren": false,
     "agentName": "Kit Corby",
     "agentPhone": "3162585730",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 369900
   },
   {
     "slug": "10514-wilkinson-maize-ks-675266",
@@ -52580,7 +52586,7 @@
     "state": "KS",
     "lat": 37.553528,
     "lng": -97.254276,
-    "price": 263900,
+    "price": 263800,
     "beds": 3,
     "baths": 3,
     "sqft": "2776",
@@ -52593,7 +52599,7 @@
     "agentName": "Dawn R Wade",
     "agentPhone": "3168061060",
     "agentEmail": "",
-    "previousPrice": 264000
+    "previousPrice": 263900
   },
   {
     "slug": "8110-westlawn-cir-wichita-ks-677589",
@@ -74149,7 +74155,7 @@
     "state": "KS",
     "lat": 37.628221,
     "lng": -97.473693,
-    "price": 187500,
+    "price": 182500,
     "beds": 4,
     "baths": 2,
     "sqft": "1376",
@@ -74161,7 +74167,8 @@
     "isSundgren": false,
     "agentName": "Kit Corby",
     "agentPhone": "3162585730",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 187500
   },
   {
     "slug": "11440-35th-cir-wichita-ks-673387",
@@ -74172,7 +74179,7 @@
     "state": "KS",
     "lat": 37.628208,
     "lng": -97.474205,
-    "price": 187500,
+    "price": 182500,
     "beds": 4,
     "baths": 2,
     "sqft": "1376",
@@ -74184,7 +74191,8 @@
     "isSundgren": false,
     "agentName": "Kit Corby",
     "agentPhone": "3162585730",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 187500
   },
   {
     "slug": "11330-35th-cir-wichita-ks-673384",
@@ -74195,7 +74203,7 @@
     "state": "KS",
     "lat": 37.628108,
     "lng": -97.473724,
-    "price": 187500,
+    "price": 182500,
     "beds": 4,
     "baths": 2,
     "sqft": "1376",
@@ -74207,7 +74215,8 @@
     "isSundgren": false,
     "agentName": "Kit Corby",
     "agentPhone": "3162585730",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 187500
   },
   {
     "slug": "506-harper-st-valley-center-ks-666901",
@@ -74517,7 +74526,7 @@
     "state": "KS",
     "lat": 37.243281,
     "lng": -96.97492,
-    "price": 185000,
+    "price": 180000,
     "beds": 3,
     "baths": 2,
     "sqft": "1509",
@@ -74529,7 +74538,8 @@
     "isSundgren": false,
     "agentName": "Katie Minton",
     "agentPhone": "6202293432",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 185000
   },
   {
     "slug": "10607-nantucket-st-wichita-ks-678167",
@@ -77169,7 +77179,7 @@
     "state": "KS",
     "lat": 37.62811,
     "lng": -97.473488,
-    "price": 179900,
+    "price": 174900,
     "beds": 3,
     "baths": 2,
     "sqft": "1220",
@@ -77181,7 +77191,8 @@
     "isSundgren": false,
     "agentName": "Kit Corby",
     "agentPhone": "3162585730",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 179900
   },
   {
     "slug": "11322-35th-cir-wichita-ks-670157",
@@ -77192,7 +77203,7 @@
     "state": "KS",
     "lat": 37.628234,
     "lng": -97.473445,
-    "price": 179900,
+    "price": 174900,
     "beds": 3,
     "baths": 2,
     "sqft": "1220",
@@ -77204,7 +77215,8 @@
     "isSundgren": false,
     "agentName": "Kit Corby",
     "agentPhone": "3162585730",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 179900
   },
   {
     "slug": "1203-fountain-dr-salina-ks-666632",
@@ -77721,7 +77733,7 @@
     "state": "KS",
     "lat": 38.033126,
     "lng": -97.32968,
-    "price": 179000,
+    "price": 174000,
     "beds": 3,
     "baths": 2,
     "sqft": "1150",
@@ -77733,7 +77745,8 @@
     "isSundgren": false,
     "agentName": "Kit Corby",
     "agentPhone": "3162585730",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 179000
   },
   {
     "slug": "116-minneapolis-avenue-salina-ks-677956",
@@ -80075,7 +80088,7 @@
     "state": "KS",
     "lat": 37.613223,
     "lng": -97.33536301,
-    "price": 169900,
+    "price": 164900,
     "beds": 3,
     "baths": 2,
     "sqft": "1865",
@@ -80087,7 +80100,8 @@
     "isSundgren": false,
     "agentName": "Amanda Jolley",
     "agentPhone": "3162139043",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 169900
   },
   {
     "slug": "2355-macarthur-ct-wichita-ks-677888",
@@ -80098,7 +80112,7 @@
     "state": "KS",
     "lat": 37.620843,
     "lng": -97.368648,
-    "price": 169900,
+    "price": 164900,
     "beds": 3,
     "baths": 2,
     "sqft": "1135",
@@ -80110,7 +80124,8 @@
     "isSundgren": false,
     "agentName": "Kit Corby",
     "agentPhone": "3162585730",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 169900
   },
   {
     "slug": "2357-macarthur-ct-wichita-ks-677893",
@@ -80121,7 +80136,7 @@
     "state": "KS",
     "lat": 37.620792,
     "lng": -97.368649,
-    "price": 169900,
+    "price": 164900,
     "beds": 3,
     "baths": 2,
     "sqft": "1135",
@@ -80133,7 +80148,8 @@
     "isSundgren": false,
     "agentName": "Kit Corby",
     "agentPhone": "3162585730",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 169900
   },
   {
     "slug": "2349-macarthur-ct-wichita-ks-677849",
@@ -80144,7 +80160,7 @@
     "state": "KS",
     "lat": 37.620993,
     "lng": -97.368655,
-    "price": 169900,
+    "price": 164900,
     "beds": 3,
     "baths": 2,
     "sqft": "1135",
@@ -80156,7 +80172,8 @@
     "isSundgren": false,
     "agentName": "Kit Corby",
     "agentPhone": "3162585730",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 169900
   },
   {
     "slug": "2343-macarthur-ct-wichita-ks-677844",
@@ -80167,7 +80184,7 @@
     "state": "KS",
     "lat": 37.621153,
     "lng": -97.368614,
-    "price": 169900,
+    "price": 164900,
     "beds": 3,
     "baths": 2,
     "sqft": "1135",
@@ -80179,7 +80196,8 @@
     "isSundgren": false,
     "agentName": "Kit Corby",
     "agentPhone": "3162585730",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 169900
   },
   {
     "slug": "2345-macarthur-ct-wichita-ks-677846",
@@ -80190,7 +80208,7 @@
     "state": "KS",
     "lat": 37.62109,
     "lng": -97.368663,
-    "price": 169900,
+    "price": 164900,
     "beds": 3,
     "baths": 2,
     "sqft": "1135",
@@ -80202,7 +80220,8 @@
     "isSundgren": false,
     "agentName": "Kit Corby",
     "agentPhone": "3162585730",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 169900
   },
   {
     "slug": "2351-macarthur-ct-wichita-ks-677850",
@@ -80213,7 +80232,7 @@
     "state": "KS",
     "lat": 37.620939,
     "lng": -97.36865,
-    "price": 169900,
+    "price": 164900,
     "beds": 3,
     "baths": 2,
     "sqft": "1135",
@@ -80225,7 +80244,8 @@
     "isSundgren": false,
     "agentName": "Kit Corby",
     "agentPhone": "3162585730",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 169900
   },
   {
     "slug": "1930-marc-st-salina-ks-673882",
@@ -80259,7 +80279,7 @@
     "state": "KS",
     "lat": 37.620962,
     "lng": -97.369282,
-    "price": 169900,
+    "price": 164900,
     "beds": 3,
     "baths": 2,
     "sqft": "1135",
@@ -80271,7 +80291,8 @@
     "isSundgren": false,
     "agentName": "Kit Corby",
     "agentPhone": "3162585730",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 169900
   },
   {
     "slug": "2457-macarthur-ct-wichita-ks-668418",
@@ -80282,7 +80303,7 @@
     "state": "KS",
     "lat": 37.622239,
     "lng": -97.37023,
-    "price": 169900,
+    "price": 164900,
     "beds": 3,
     "baths": 2,
     "sqft": "1135",
@@ -80294,7 +80315,8 @@
     "isSundgren": false,
     "agentName": "Kit Corby",
     "agentPhone": "3162585730",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 169900
   },
   {
     "slug": "2453-macarthur-ct-wichita-ks-668420",
@@ -80305,7 +80327,7 @@
     "state": "KS",
     "lat": 37.622239,
     "lng": -97.370204,
-    "price": 169900,
+    "price": 164900,
     "beds": 3,
     "baths": 2,
     "sqft": "1135",
@@ -80317,7 +80339,8 @@
     "isSundgren": false,
     "agentName": "Kit Corby",
     "agentPhone": "3162585730",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 169900
   },
   {
     "slug": "2459-macarthur-ct-wichita-ks-668321",
@@ -80328,7 +80351,7 @@
     "state": "KS",
     "lat": 37.622238,
     "lng": -97.370243,
-    "price": 169900,
+    "price": 164900,
     "beds": 3,
     "baths": 2,
     "sqft": "1135",
@@ -80340,7 +80363,8 @@
     "isSundgren": false,
     "agentName": "Kit Corby",
     "agentPhone": "3162585730",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 169900
   },
   {
     "slug": "505-harper-st-valley-center-ks-662872",
@@ -82221,7 +82245,7 @@
     "state": "KS",
     "lat": 37.653354,
     "lng": -97.369384,
-    "price": 163000,
+    "price": 159900,
     "beds": 3,
     "baths": 1,
     "sqft": "928",
@@ -82233,7 +82257,8 @@
     "isSundgren": false,
     "agentName": "Jenny Grandfield",
     "agentPhone": "3166445102",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 163000
   },
   {
     "slug": "7015-newell-st-wichita-ks-675760",
@@ -83951,7 +83976,7 @@
     "state": "KS",
     "lat": 37.550885,
     "lng": -97.267624,
-    "price": 153900,
+    "price": 153800,
     "beds": 3,
     "baths": 1,
     "sqft": "1250",
@@ -83964,7 +83989,7 @@
     "agentName": "Dawn R Wade",
     "agentPhone": "3168061060",
     "agentEmail": "",
-    "previousPrice": 154000
+    "previousPrice": 153900
   },
   {
     "slug": "515-g-st-wellington-ks-676894",
