@@ -8864,7 +8864,7 @@
     "state": "KS",
     "lat": 37.77537,
     "lng": -97.248282,
-    "price": 669000,
+    "price": 649900,
     "beds": 5,
     "baths": 3,
     "sqft": "4402",
@@ -8876,7 +8876,8 @@
     "isSundgren": false,
     "agentName": "Basem Krichati",
     "agentPhone": "3165160139",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 669000
   },
   {
     "slug": "5017-shoreside-st-maize-ks-676824",
@@ -76176,7 +76177,7 @@
     "state": "KS",
     "lat": 37.26032,
     "lng": -97.367121,
-    "price": 182000,
+    "price": 175000,
     "beds": 2,
     "baths": 1,
     "sqft": "1488",
@@ -76188,7 +76189,8 @@
     "isSundgren": false,
     "agentName": "Vickie L Vargas-Jacobs",
     "agentPhone": "3163934445",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 182000
   },
   {
     "slug": "6501-randall-dr-park-city-ks-676714",
@@ -109036,7 +109038,7 @@
     "state": "KS",
     "lat": 37.688554,
     "lng": -96.782845,
-    "price": 64000,
+    "price": 58000,
     "beds": 4,
     "baths": 2,
     "sqft": "2054",
@@ -109048,7 +109050,8 @@
     "isSundgren": false,
     "agentName": "Kyle McLaren",
     "agentPhone": "3163230906",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 64000
   },
   {
     "slug": "1635-ridgecreek-st-andover-ks-678363",
