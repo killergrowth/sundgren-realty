@@ -66888,7 +66888,7 @@
     "state": "KS",
     "lat": 37.726061,
     "lng": -97.258455,
-    "price": 210000,
+    "price": 199000,
     "beds": 3,
     "baths": 2,
     "sqft": "1858",
@@ -66900,7 +66900,8 @@
     "isSundgren": false,
     "agentName": "Lucy Ferrer-Gonzalez",
     "agentPhone": "3169789777",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 210000
   },
   {
     "slug": "2230-douglas-ave-wichita-ks-677769",
