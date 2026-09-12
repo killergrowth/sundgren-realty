@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-terminated pill">Inactive</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>STOP YOUR SEARCH NOW. This is the ONE! Tucked away on a quiet cul-de-sac in Tyler’s Landing, this 5-bedroom, 3-bath home offers more than 2,900 square feet of comfortable living space with fresh interior and exterior paint, so you can move right in and start enjoying it. The main living area is open, bright, and welcoming, with a cozy gas fireplace, custom built-ins, and plenty of natural light. The primary suite is spacious and features dual sinks, a walk-in shower, and a walk-through closet that leads straight into the laundry room - one of those little details you’ll appreciate every day. Right off the garage, there’s also a handy drop zone that’s perfect for keeping all the everyday clutter in one place. Two more bedrooms with walk-in closets and a full bathroom complete the main floor. Downstairs, there’s plenty of room to spread out with a huge family room, two additional bedrooms, another full bathroom, and an unfinished space that’s ready to become your home gym or extra storage. Out back, you’ll love the covered composite deck overlooking the fully fenced backyard. The neighboring farmland off to the side gives you a little extra privacy and some pretty great Kansas skies. With Maize South schools just across the street and located less than a mile from shopping, restaurants, and everyday conveniences in either direction. Plus, quick highway access makes getting around town easy. If you’re looking for a home that’s functional, move-in ready, and in a fantastic west Wichita location, this one is definitely worth a look.</p>
     </div>
@@ -209,8 +211,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -220,13 +222,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="8206 Kackley Cir, Wichita, KS, 67205">
-        <input type="hidden" name="message" value="I am interested in the property at 8206 Kackley Cir, Wichita, KS, 67205 (MLS# 676555). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 8206 Kackley Cir, Wichita, KS, 67205 (MLS# 676555). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

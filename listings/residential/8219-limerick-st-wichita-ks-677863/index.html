@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-terminated pill">Inactive</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Welcome to 8219 E Limerick*Location, location, location! Nestled in the desirable Brookhollow neighborhood enjoy being close to popular destinations such as Bradley Fair, Waterfront, and so many shops and restaurants* Beautifully updated 3-bedroom, 2-bath home offering stylish finishes, comfortable living spaces, and thoughtful updates throughout this ranch with over 1900 sq. ft. on the main level*Step inside to find gorgeous engineered hardwood flooring throughout the main floor complemented by new designer carpet in the stairwell*This home has been extensively updated with a warm, inviting design that is truly move-in ready*Spacious living room with a huge bay window allowing lots of light to splash through the home*Completely remodeled kitchen features beautiful quartz countertops, crisp white upper cabinets, and warm maple wood lower cabinets for a timeless combination of colors and textures and the kitchen appliances stay with the home, making the move even easier* A convenient main-floor laundry room is located just off the kitchen, with an additional laundry area located in the basement, so if you choose to put laundry downstairs that gives you an additional large pantry! There is already a &quot;Pantry Room&quot; with tons of storage*The main level family room is perfect for relaxing or entertaining, featuring a red brick wood-burning fireplace and patio doors leading directly to the backyard patio* 4th Bedroom at the back of the home with its own private entrance, ideal for guests, extended family, or a roommate and includes its own mini-split heating &amp; cooling system for year-round comfort. Could be used as an office, sunroom or hobby space*Primary bedroom is 15x15 and features 2 closet spaces and a private primary suite with a very large shower with bench seating and a niche to keep your supplies. So fancy! Both bathrooms have been completely remodeled with beautiful warm maple cabinetry and quartz countertops, creating a cohesive, modern look throughout the home*The basement adds even more flexibility with a spacious family room, a second laundry location, and a large storage room providing plenty of space for storage and organization*Step outside and discover a spacious backyard with a peaceful, park-like setting. Mature trees provide wonderful shade and create a private, relaxing atmosphere. The extended concrete patio offers plenty of room for outdoor dining, entertaining &amp; those cookouts. Enjoy the beauty of your own backyard retreat featuring a unique privately designed concrete walking and riding path, ideal for daily walks and exercise or for kids to ride bikes, scooters and skate, all within the comfort and privacy of your completely fenced yard* Whether you&#39;re heading out for dinner, shopping, commuting across Wichita, or enjoying a weekend close to home, this location makes it easy to get where you want to go while still enjoying the established, quiet feel of the Brookhollow neighborhood*It’s the kind of location that gives you the best of both worlds — a peaceful neighborhood setting with the convenience of everything you need just minutes away.</p>
     </div>
@@ -209,8 +211,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -220,13 +222,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="8219 Limerick ST, Wichita, KS, 67206">
-        <input type="hidden" name="message" value="I am interested in the property at 8219 Limerick ST, Wichita, KS, 67206 (MLS# 677863). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 8219 Limerick ST, Wichita, KS, 67206 (MLS# 677863). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
