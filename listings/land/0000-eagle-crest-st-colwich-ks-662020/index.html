@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Land</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-terminated pill">Inactive</span><span class="pill sg-type-pill">Land</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -128,7 +128,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Discover the perfect setting for your dream home on this spacious 1 -acre lot in the desirable Maize School District. Enjoy the flexibility of an open builder policy and the benefit of no special taxes. Experience peaceful country living just minutes from Colwich, with convenient access to the shopping, dining, and amenities of West Wichita. This is a great opportunity to build in a quiet rural setting while staying close to everything you need.</p>
     </div>
@@ -146,9 +148,9 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
     (function(){
-      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.7788508715384,-97.5015227272034],15);
+      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.77885087,-97.50152273],15);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap contributors',maxZoom:19}).addTo(map);
-      L.marker([37.7788508715384,-97.5015227272034]).addTo(map).bindPopup('0000 Eagle Crest St, Colwich, KS 67030').openPopup();
+      L.marker([37.77885087,-97.50152273]).addTo(map).bindPopup('0000 Eagle Crest St, Colwich, KS 67030').openPopup();
     })();
     </script>
   </div>
@@ -156,8 +158,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -167,13 +169,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="0000 Eagle Crest St, Colwich, KS, 67030">
-        <input type="hidden" name="message" value="I am interested in the property at 0000 Eagle Crest St, Colwich, KS, 67030 (MLS# 662020). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 0000 Eagle Crest St, Colwich, KS, 67030 (MLS# 662020). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
