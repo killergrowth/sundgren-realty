@@ -5152,7 +5152,7 @@
     "state": "KS",
     "lat": 37.925806,
     "lng": -96.022598,
-    "price": 899000,
+    "price": 849000,
     "beds": 3,
     "baths": 3,
     "sqft": "2752",
@@ -5164,7 +5164,8 @@
     "isSundgren": false,
     "agentName": "Kari Higgins",
     "agentPhone": "3169904383",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 899000
   },
   {
     "slug": "226-prairie-point-ct-andover-ks-672270",
@@ -52586,7 +52587,7 @@
     "state": "KS",
     "lat": 37.553528,
     "lng": -97.254276,
-    "price": 263800,
+    "price": 263700,
     "beds": 3,
     "baths": 3,
     "sqft": "2776",
@@ -52599,7 +52600,7 @@
     "agentName": "Dawn R Wade",
     "agentPhone": "3168061060",
     "agentEmail": "",
-    "previousPrice": 263900
+    "previousPrice": 263800
   },
   {
     "slug": "8110-westlawn-cir-wichita-ks-677589",
@@ -54225,7 +54226,7 @@
     "state": "KS",
     "lat": 38.362,
     "lng": -97.675286,
-    "price": 263000,
+    "price": 258000,
     "beds": 4,
     "baths": 3,
     "sqft": "2510",
@@ -54237,7 +54238,8 @@
     "isSundgren": false,
     "agentName": "Mark Bird",
     "agentPhone": "7855020036",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 263000
   },
   {
     "slug": "11709-scarlett-ct-maize-ks-674821",
@@ -83979,7 +83981,7 @@
     "state": "KS",
     "lat": 37.550885,
     "lng": -97.267624,
-    "price": 153800,
+    "price": 153700,
     "beds": 3,
     "baths": 1,
     "sqft": "1250",
@@ -83992,7 +83994,7 @@
     "agentName": "Dawn R Wade",
     "agentPhone": "3168061060",
     "agentEmail": "",
-    "previousPrice": 153900
+    "previousPrice": 153800
   },
   {
     "slug": "515-g-st-wellington-ks-676894",
@@ -93438,7 +93440,7 @@
     "state": "KS",
     "lat": 37.267217,
     "lng": -97.389827,
-    "price": 129700,
+    "price": 129500,
     "beds": 3,
     "baths": 2,
     "sqft": "1200",
@@ -93451,7 +93453,7 @@
     "agentName": "Pamela Hinman",
     "agentPhone": "6203262162",
     "agentEmail": "",
-    "previousPrice": 129900
+    "previousPrice": 129700
   },
   {
     "slug": "324-market-st-caldwell-ks-669488",
