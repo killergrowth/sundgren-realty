@@ -54318,7 +54318,7 @@
     "state": "KS",
     "lat": 38.128904,
     "lng": -97.425045,
-    "price": 262500,
+    "price": 249900,
     "beds": 3,
     "baths": 3,
     "sqft": "2170",
@@ -54330,7 +54330,8 @@
     "isSundgren": false,
     "agentName": "Susan Swartzendruber",
     "agentPhone": "6202179561",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 262500
   },
   {
     "slug": "1815-country-walk-mulvane-ks-676189",
