@@ -41717,7 +41717,7 @@
     "state": "KS",
     "lat": 37.280165,
     "lng": -97.397591,
-    "price": 315000,
+    "price": 285000,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -41729,7 +41729,8 @@
     "isSundgren": false,
     "agentName": "Julie Gooch",
     "agentPhone": "6203260626",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 315000
   },
   {
     "slug": "00000-windmill-road-delphos-ks-672431",
@@ -82812,7 +82813,7 @@
     "state": "KS",
     "lat": 37.256211,
     "lng": -97.390183,
-    "price": 160000,
+    "price": 150000,
     "beds": 3,
     "baths": 1,
     "sqft": "960",
@@ -82824,7 +82825,8 @@
     "isSundgren": false,
     "agentName": "Luke Farrell",
     "agentPhone": "3166330184",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 160000
   },
   {
     "slug": "29-eastwood-dr-arkansas-city-ks-673938",
@@ -97301,7 +97303,7 @@
     "state": "KS",
     "lat": 37.61183,
     "lng": -97.295052,
-    "price": 115000,
+    "price": 110000,
     "beds": 3,
     "baths": 1,
     "sqft": "864",
@@ -97313,7 +97315,8 @@
     "isSundgren": false,
     "agentName": "Anthony Bilyeu",
     "agentPhone": "7852537135",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 115000
   },
   {
     "slug": "117-zimmerly-st-wichita-ks-676983",
