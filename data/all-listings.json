@@ -54918,7 +54918,7 @@
     "state": "KS",
     "lat": 37.654014,
     "lng": -97.297961,
-    "price": 259900,
+    "price": 249900,
     "beds": 3,
     "baths": 3,
     "sqft": "2292",
@@ -54930,7 +54930,8 @@
     "isSundgren": false,
     "agentName": "Liz Amos",
     "agentPhone": "3168076800",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 259900
   },
   {
     "slug": "9074-harvest-court-wichita-ks-677293",
