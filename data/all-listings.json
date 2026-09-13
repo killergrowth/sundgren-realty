@@ -16113,7 +16113,7 @@
     "state": "KS",
     "lat": 37.7365,
     "lng": -97.487109,
-    "price": 495500,
+    "price": 489500,
     "beds": 4,
     "baths": 2,
     "sqft": "3248",
@@ -16125,7 +16125,8 @@
     "isSundgren": false,
     "agentName": "Michelle M Crouch",
     "agentPhone": "3164611405",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 495500
   },
   {
     "slug": "2640-s-clear-creek-st-wichita-ks-677092",
@@ -19802,7 +19803,7 @@
     "state": "KS",
     "lat": 37.833158,
     "lng": -97.365556,
-    "price": 449000,
+    "price": 429000,
     "beds": 5,
     "baths": 3,
     "sqft": "3301",
@@ -19814,7 +19815,8 @@
     "isSundgren": false,
     "agentName": "Tonya Wituk",
     "agentPhone": "3166441874",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 449000
   },
   {
     "slug": "1212-north-shore-dr-salina-ks-677825",
@@ -46655,7 +46657,7 @@
     "state": "KS",
     "lat": 37.697766,
     "lng": -97.353051,
-    "price": 289000,
+    "price": 279000,
     "beds": 3,
     "baths": 2,
     "sqft": "1952",
@@ -46667,7 +46669,8 @@
     "isSundgren": false,
     "agentName": "Kristie Thackery",
     "agentPhone": "3166402240",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 289000
   },
   {
     "slug": "8962-joshua-st-bel-aire-ks-675482",
@@ -67079,7 +67082,7 @@
     "state": "KS",
     "lat": 37.716682,
     "lng": -97.373299,
-    "price": 210000,
+    "price": 199500,
     "beds": 3,
     "baths": 2,
     "sqft": "1164",
@@ -67091,7 +67094,8 @@
     "isSundgren": false,
     "agentName": "Kristie Thackery",
     "agentPhone": "3166402240",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 210000
   },
   {
     "slug": "121-n-mendocino-ct-goddard-ks-672760",
@@ -132165,7 +132169,7 @@
     "state": "KS",
     "lat": 38.365605,
     "lng": -97.704963,
-    "price": 499000,
+    "price": 489000,
     "beds": 6,
     "baths": 4,
     "sqft": "5148",
@@ -132177,7 +132181,8 @@
     "isSundgren": false,
     "agentName": "Braden McCurdy",
     "agentPhone": "3166830612",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 499000
   },
   {
     "slug": "1549a-y-rd-eureka-ks-676984",
