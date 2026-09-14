@@ -120,11 +120,6 @@
       <div class="stat-val">$50,000</div>
       <div class="stat-label">List Price</div>
     </div>
-    <div class="stat-cell">
-      <i class="fas fa-expand-arrows-alt"></i>
-      <div class="stat-val">0.25 ac</div>
-      <div class="stat-label">Lot Size</div>
-    </div>
   </div>
 
         <div style="margin-top:32px;">
@@ -146,9 +141,9 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
     (function(){
-      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.6313353237522,-97.3995544151306],15);
+      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.63133532,-97.39955442],15);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap contributors',maxZoom:19}).addTo(map);
-      L.marker([37.6313353237522,-97.3995544151306]).addTo(map).bindPopup('Lot 99 Block D Bluelake Ct, Wichita, KS 67215').openPopup();
+      L.marker([37.63133532,-97.39955442]).addTo(map).bindPopup('Lot 99 Block D Bluelake Ct, Wichita, KS 67215').openPopup();
     })();
     </script>
   </div>

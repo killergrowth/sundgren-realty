@@ -4645,7 +4645,7 @@
     "state": "KS",
     "lat": 37.84805,
     "lng": -97.281814,
-    "price": 979900,
+    "price": 999900,
     "beds": 4,
     "baths": 4,
     "sqft": "3346",
@@ -12724,7 +12724,7 @@
     "state": "KS",
     "lat": 37.290712,
     "lng": -97.43458,
-    "price": 550000,
+    "price": 547500,
     "beds": 4,
     "baths": 3,
     "sqft": "2330",
@@ -12736,7 +12736,8 @@
     "isSundgren": false,
     "agentName": "Dan Madrigal",
     "agentPhone": "3169900184",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 550000
   },
   {
     "slug": "5104-colonial-ave-bel-aire-ks-675519",
@@ -18190,7 +18191,7 @@
     "state": "KS",
     "lat": 37.61949227,
     "lng": -97.16394028,
-    "price": 464000,
+    "price": 420500,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -18202,7 +18203,8 @@
     "isSundgren": false,
     "agentName": "Josh Roy",
     "agentPhone": "3166656799",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 464000
   },
   {
     "slug": "9021-bradford-cir-wichita-ks-673856",
@@ -20404,7 +20406,7 @@
     "state": "KS",
     "lat": 37.6592,
     "lng": -97.5797,
-    "price": 439900,
+    "price": 434900,
     "beds": null,
     "baths": null,
     "sqft": "3622",
@@ -20416,7 +20418,8 @@
     "isSundgren": false,
     "agentName": "Stefanie Roth",
     "agentPhone": "3168410403",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 439900
   },
   {
     "slug": "8024-greenbriar-ct-wichita-ks-674485",
@@ -23133,7 +23136,7 @@
     "state": "KS",
     "lat": 37.6594,
     "lng": -97.5671,
-    "price": 409900,
+    "price": 404900,
     "beds": null,
     "baths": null,
     "sqft": "3024",
@@ -23145,7 +23148,8 @@
     "isSundgren": false,
     "agentName": "Stefanie Roth",
     "agentPhone": "3168410403",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 409900
   },
   {
     "slug": "224-226-mendocino-st-goddard-ks-674753",
@@ -23156,7 +23160,7 @@
     "state": "KS",
     "lat": 37.6594,
     "lng": -97.5671,
-    "price": 409900,
+    "price": 404900,
     "beds": null,
     "baths": null,
     "sqft": "3024",
@@ -23168,7 +23172,8 @@
     "isSundgren": false,
     "agentName": "Stefanie Roth",
     "agentPhone": "3168410403",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 409900
   },
   {
     "slug": "10410-graber-cir-wichita-ks-672183",
@@ -23203,7 +23208,7 @@
     "state": "KS",
     "lat": 37.683058,
     "lng": -97.535332,
-    "price": 409900,
+    "price": 404900,
     "beds": null,
     "baths": null,
     "sqft": "3024",
@@ -23215,7 +23220,8 @@
     "isSundgren": false,
     "agentName": "Stefanie Roth",
     "agentPhone": "3168410403",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 409900
   },
   {
     "slug": "208-210-gowen-st-goddard-ks-657949",
@@ -24147,7 +24153,7 @@
     "state": "KS",
     "lat": 37.6592,
     "lng": -97.5797,
-    "price": 399900,
+    "price": 394900,
     "beds": null,
     "baths": null,
     "sqft": "3000",
@@ -24159,7 +24165,8 @@
     "isSundgren": false,
     "agentName": "Stefanie Roth",
     "agentPhone": "3168410403",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 399900
   },
   {
     "slug": "16918-16920-leyland-st-goddard-ks-675109",
@@ -24170,7 +24177,7 @@
     "state": "KS",
     "lat": 37.6594,
     "lng": -97.5671,
-    "price": 399900,
+    "price": 394900,
     "beds": null,
     "baths": null,
     "sqft": "3000",
@@ -24182,7 +24189,8 @@
     "isSundgren": false,
     "agentName": "Stefanie Roth",
     "agentPhone": "3168410403",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 399900
   },
   {
     "slug": "9501-stafford-ct-wichita-ks-674842",
@@ -24309,7 +24317,7 @@
     "state": "KS",
     "lat": 37.677686,
     "lng": -97.528911,
-    "price": 399900,
+    "price": 394900,
     "beds": null,
     "baths": null,
     "sqft": "3000",
@@ -24321,7 +24329,8 @@
     "isSundgren": false,
     "agentName": "Stefanie Roth",
     "agentPhone": "3168410403",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 399900
   },
   {
     "slug": "9104-33rd-cir-s-cir-wichita-ks-648734",
@@ -28054,7 +28063,7 @@
     "state": "KS",
     "lat": 37.729758,
     "lng": -97.138571,
-    "price": 379000,
+    "price": 374800,
     "beds": 4,
     "baths": 3,
     "sqft": "2432",
@@ -28066,7 +28075,8 @@
     "isSundgren": false,
     "agentName": "Nancy Shih",
     "agentPhone": "3169921108",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 379000
   },
   {
     "slug": "1231-dry-creek-dr-derby-ks-673999",
@@ -28705,7 +28715,7 @@
     "state": "KS",
     "lat": 37.6592,
     "lng": -97.5797,
-    "price": 375000,
+    "price": 370000,
     "beds": null,
     "baths": null,
     "sqft": "2826",
@@ -28717,7 +28727,8 @@
     "isSundgren": false,
     "agentName": "Stefanie Roth",
     "agentPhone": "3168410403",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 375000
   },
   {
     "slug": "16902-16904-leyland-st-goddard-ks-675097",
@@ -28728,7 +28739,7 @@
     "state": "KS",
     "lat": 37.6594,
     "lng": -97.5671,
-    "price": 375000,
+    "price": 370000,
     "beds": null,
     "baths": null,
     "sqft": "2826",
@@ -28740,7 +28751,8 @@
     "isSundgren": false,
     "agentName": "Stefanie Roth",
     "agentPhone": "3168410403",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 375000
   },
   {
     "slug": "1401-fieldcrest-st-wichita-ks-674919",
@@ -28797,7 +28809,7 @@
     "state": "KS",
     "lat": 37.6594,
     "lng": -97.5671,
-    "price": 375000,
+    "price": 370000,
     "beds": null,
     "baths": null,
     "sqft": "2826",
@@ -28809,7 +28821,8 @@
     "isSundgren": false,
     "agentName": "Stefanie Roth",
     "agentPhone": "3168410403",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 375000
   },
   {
     "slug": "230-232-mendocino-st-goddard-ks-674754",
@@ -28820,7 +28833,7 @@
     "state": "KS",
     "lat": 37.6594,
     "lng": -97.5671,
-    "price": 375000,
+    "price": 370000,
     "beds": null,
     "baths": null,
     "sqft": "2826",
@@ -28832,7 +28845,8 @@
     "isSundgren": false,
     "agentName": "Stefanie Roth",
     "agentPhone": "3168410403",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 375000
   },
   {
     "slug": "818-mccloud-cir-109-cir-andover-ks-674618",
@@ -30156,7 +30170,7 @@
     "state": "KS",
     "lat": 37.764495,
     "lng": -97.474126,
-    "price": 369900,
+    "price": 359900,
     "beds": 5,
     "baths": 3,
     "sqft": "2722",
@@ -30168,7 +30182,8 @@
     "isSundgren": false,
     "agentName": "Lucas Johnson",
     "agentPhone": "3162141422",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 369900
   },
   {
     "slug": "909911-fox-ridge-st-newton-ks-676278",
@@ -30203,7 +30218,7 @@
     "state": "KS",
     "lat": 38.033219,
     "lng": -97.330899,
-    "price": 369900,
+    "price": 364900,
     "beds": null,
     "baths": null,
     "sqft": "2510",
@@ -30215,7 +30230,8 @@
     "isSundgren": false,
     "agentName": "Kit Corby",
     "agentPhone": "3162585730",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 369900
   },
   {
     "slug": "921923-fox-ridge-st-newton-ks-676280",
@@ -32535,7 +32551,7 @@
     "state": "KS",
     "lat": 37.6592,
     "lng": -97.5797,
-    "price": 360000,
+    "price": 355000,
     "beds": null,
     "baths": null,
     "sqft": "2518",
@@ -32547,7 +32563,8 @@
     "isSundgren": false,
     "agentName": "Stefanie Roth",
     "agentPhone": "3168410403",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 360000
   },
   {
     "slug": "16912-16914-leyland-st-goddard-ks-675106",
@@ -32558,7 +32575,7 @@
     "state": "KS",
     "lat": 37.7394,
     "lng": -97.4386,
-    "price": 360000,
+    "price": 355000,
     "beds": null,
     "baths": null,
     "sqft": "2518",
@@ -32570,7 +32587,8 @@
     "isSundgren": false,
     "agentName": "Stefanie Roth",
     "agentPhone": "3168410403",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 360000
   },
   {
     "slug": "254-256-mendocino-st-goddard-ks-674804",
@@ -32581,7 +32599,7 @@
     "state": "KS",
     "lat": 37.7394,
     "lng": -97.4386,
-    "price": 360000,
+    "price": 355000,
     "beds": null,
     "baths": null,
     "sqft": "2518",
@@ -32593,7 +32611,8 @@
     "isSundgren": false,
     "agentName": "Stefanie Roth",
     "agentPhone": "3168410403",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 360000
   },
   {
     "slug": "236-238-mendocino-st-goddard-ks-674755",
@@ -32604,7 +32623,7 @@
     "state": "KS",
     "lat": 37.7394,
     "lng": -97.4386,
-    "price": 360000,
+    "price": 355000,
     "beds": null,
     "baths": null,
     "sqft": "2518",
@@ -32616,7 +32635,8 @@
     "isSundgren": false,
     "agentName": "Stefanie Roth",
     "agentPhone": "3168410403",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 360000
   },
   {
     "slug": "817-orchard-st-wellington-ks-672143",
@@ -37632,7 +37652,7 @@
     "state": "KS",
     "lat": 37.780048,
     "lng": -97.269487,
-    "price": 330000,
+    "price": 325000,
     "beds": null,
     "baths": null,
     "sqft": "2532",
@@ -37644,7 +37664,8 @@
     "isSundgren": false,
     "agentName": "Virginia Franzese",
     "agentPhone": "8167789434",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 330000
   },
   {
     "slug": "5776-bristol-circle-wichita-ks-677882",
@@ -37655,7 +37676,7 @@
     "state": "KS",
     "lat": 37.780422,
     "lng": -97.269867,
-    "price": 330000,
+    "price": 325000,
     "beds": null,
     "baths": null,
     "sqft": "2532",
@@ -37667,7 +37688,8 @@
     "isSundgren": false,
     "agentName": "Virginia Franzese",
     "agentPhone": "8167789434",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 330000
   },
   {
     "slug": "9405-35th-st-n-c3-wichita-ks-677385",
@@ -38856,7 +38878,7 @@
     "state": "KS",
     "lat": 37.695833,
     "lng": -97.486066,
-    "price": 325000,
+    "price": 315000,
     "beds": 4,
     "baths": 3,
     "sqft": "2398",
@@ -38868,7 +38890,8 @@
     "isSundgren": false,
     "agentName": "Shane Phillips",
     "agentPhone": "3162950696",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 325000
   },
   {
     "slug": "8001-willowbrook-rd-wichita-ks-677544",
@@ -44241,7 +44264,7 @@
     "state": "KS",
     "lat": 37.776673,
     "lng": -97.232009,
-    "price": 299000,
+    "price": 285000,
     "beds": 4,
     "baths": 2,
     "sqft": "1600",
@@ -44253,7 +44276,8 @@
     "isSundgren": false,
     "agentName": "Basem Krichati",
     "agentPhone": "3165160139",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 299000
   },
   {
     "slug": "600-laramie-cir-maize-ks-670382",
@@ -46781,7 +46805,7 @@
     "state": "KS",
     "lat": 37.775814,
     "lng": -97.231971,
-    "price": 289000,
+    "price": 279000,
     "beds": 3,
     "baths": 2,
     "sqft": "1516",
@@ -46793,7 +46817,8 @@
     "isSundgren": false,
     "agentName": "Basem Krichati",
     "agentPhone": "3165160139",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 289000
   },
   {
     "slug": "8974-forbes-cir-bel-aire-ks-668757",
@@ -47540,7 +47565,7 @@
     "state": "KS",
     "lat": 37.273255,
     "lng": -97.387089,
-    "price": 280000,
+    "price": 272500,
     "beds": 4,
     "baths": 2,
     "sqft": "2114",
@@ -47553,7 +47578,7 @@
     "agentName": "Crystie Macormac",
     "agentPhone": "3169905944",
     "agentEmail": "",
-    "previousPrice": 285000
+    "previousPrice": 280000
   },
   {
     "slug": "1914-summerwood-st-goddard-ks-677921",
@@ -49528,7 +49553,7 @@
     "state": "KS",
     "lat": 39.818696,
     "lng": -97.633782,
-    "price": 279500,
+    "price": 265000,
     "beds": 4,
     "baths": 2,
     "sqft": "2318",
@@ -49540,7 +49565,8 @@
     "isSundgren": false,
     "agentName": "Laura Krier",
     "agentPhone": "7856143854",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 279500
   },
   {
     "slug": "413-douglas-ave-andover-ks-673367",
@@ -62909,7 +62935,7 @@
     "state": "KS",
     "lat": 37.557666,
     "lng": -97.265313,
-    "price": 220000,
+    "price": 215000,
     "beds": 3,
     "baths": 1,
     "sqft": "1405",
@@ -62922,7 +62948,7 @@
     "agentName": "Abigail Young",
     "agentPhone": "6202626912",
     "agentEmail": "",
-    "previousPrice": 225000
+    "previousPrice": 220000
   },
   {
     "slug": "1212-18th-st-n-st-wichita-ks-678140",
@@ -64804,7 +64830,7 @@
     "state": "KS",
     "lat": 37.6592,
     "lng": -97.5797,
-    "price": 219900,
+    "price": 214900,
     "beds": 4,
     "baths": 3,
     "sqft": "1811",
@@ -64816,7 +64842,8 @@
     "isSundgren": false,
     "agentName": "Stefanie Roth",
     "agentPhone": "3168410403",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 219900
   },
   {
     "slug": "241-gowen-st-goddard-ks-675077",
@@ -64850,7 +64877,7 @@
     "state": "KS",
     "lat": 37.684972,
     "lng": -97.535334,
-    "price": 219900,
+    "price": 214900,
     "beds": 4,
     "baths": 3,
     "sqft": "1811",
@@ -64862,7 +64889,8 @@
     "isSundgren": false,
     "agentName": "Stefanie Roth",
     "agentPhone": "3168410403",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 219900
   },
   {
     "slug": "3422-thunder-st-wichita-ks-673563",
@@ -65011,7 +65039,7 @@
     "state": "KS",
     "lat": 37.682732,
     "lng": -97.535484,
-    "price": 219900,
+    "price": 214900,
     "beds": 4,
     "baths": 3,
     "sqft": "1811",
@@ -65023,7 +65051,8 @@
     "isSundgren": false,
     "agentName": "Stefanie Roth",
     "agentPhone": "3168410403",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 219900
   },
   {
     "slug": "1423-1st-st-n-st-wichita-ks-675386",
@@ -67481,7 +67510,7 @@
     "state": "KS",
     "lat": 37.685633,
     "lng": -97.536117,
-    "price": 209900,
+    "price": 204900,
     "beds": 3,
     "baths": 3,
     "sqft": "1512",
@@ -67493,7 +67522,8 @@
     "isSundgren": false,
     "agentName": "Stefanie Roth",
     "agentPhone": "3168410403",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 209900
   },
   {
     "slug": "16908-leyland-st-goddard-ks-675099",
@@ -67504,7 +67534,7 @@
     "state": "KS",
     "lat": 37.6594,
     "lng": -97.5671,
-    "price": 209900,
+    "price": 204900,
     "beds": 3,
     "baths": 3,
     "sqft": "1512",
@@ -67516,7 +67546,8 @@
     "isSundgren": false,
     "agentName": "Stefanie Roth",
     "agentPhone": "3168410403",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 209900
   },
   {
     "slug": "226-mendocino-st-goddard-ks-674745",
@@ -67527,7 +67558,7 @@
     "state": "KS",
     "lat": 37.68230118,
     "lng": -97.53641535,
-    "price": 209900,
+    "price": 204900,
     "beds": 3,
     "baths": 3,
     "sqft": "1512",
@@ -67539,7 +67570,8 @@
     "isSundgren": false,
     "agentName": "Stefanie Roth",
     "agentPhone": "3168410403",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 209900
   },
   {
     "slug": "224-mendocino-st-goddard-ks-674744",
@@ -67550,7 +67582,7 @@
     "state": "KS",
     "lat": 37.684135,
     "lng": -97.536553,
-    "price": 209900,
+    "price": 204900,
     "beds": 3,
     "baths": 3,
     "sqft": "1512",
@@ -67562,7 +67594,8 @@
     "isSundgren": false,
     "agentName": "Stefanie Roth",
     "agentPhone": "3168410403",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 209900
   },
   {
     "slug": "142-gowen-st-goddard-ks-658429",
@@ -67573,7 +67606,7 @@
     "state": "KS",
     "lat": 37.683065,
     "lng": -97.53534,
-    "price": 209900,
+    "price": 204900,
     "beds": 3,
     "baths": 3,
     "sqft": "1512",
@@ -67585,7 +67618,8 @@
     "isSundgren": false,
     "agentName": "Stefanie Roth",
     "agentPhone": "3168410403",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 209900
   },
   {
     "slug": "144-gowen-st-goddard-ks-658432",
@@ -67596,7 +67630,7 @@
     "state": "KS",
     "lat": 37.683075,
     "lng": -97.535411,
-    "price": 209900,
+    "price": 204900,
     "beds": 3,
     "baths": 3,
     "sqft": "1512",
@@ -67608,7 +67642,8 @@
     "isSundgren": false,
     "agentName": "Stefanie Roth",
     "agentPhone": "3168410403",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 209900
   },
   {
     "slug": "307-sioux-st-kechi-ks-668809",
@@ -68288,7 +68323,7 @@
     "state": "KS",
     "lat": 37.685621,
     "lng": -97.535541,
-    "price": 204900,
+    "price": 199900,
     "beds": 5,
     "baths": 2,
     "sqft": "1500",
@@ -68300,7 +68335,8 @@
     "isSundgren": false,
     "agentName": "Stefanie Roth",
     "agentPhone": "3168410403",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 204900
   },
   {
     "slug": "16918-leyland-st-goddard-ks-675107",
@@ -68311,7 +68347,7 @@
     "state": "KS",
     "lat": 37.685589,
     "lng": -97.5366,
-    "price": 204900,
+    "price": 199900,
     "beds": 5,
     "baths": 2,
     "sqft": "1500",
@@ -68323,7 +68359,8 @@
     "isSundgren": false,
     "agentName": "Stefanie Roth",
     "agentPhone": "3168410403",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 204900
   },
   {
     "slug": "246-gowen-st-goddard-ks-675073",
@@ -68334,7 +68371,7 @@
     "state": "KS",
     "lat": 37.6592,
     "lng": -97.5797,
-    "price": 204900,
+    "price": 199900,
     "beds": 5,
     "baths": 2,
     "sqft": "1500",
@@ -68346,7 +68383,8 @@
     "isSundgren": false,
     "agentName": "Stefanie Roth",
     "agentPhone": "3168410403",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 204900
   },
   {
     "slug": "16920-leyland-st-goddard-ks-675108",
@@ -68357,7 +68395,7 @@
     "state": "KS",
     "lat": 37.6594,
     "lng": -97.5671,
-    "price": 204900,
+    "price": 199900,
     "beds": 5,
     "baths": 2,
     "sqft": "1500",
@@ -68369,7 +68407,8 @@
     "isSundgren": false,
     "agentName": "Stefanie Roth",
     "agentPhone": "3168410403",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 204900
   },
   {
     "slug": "242-mendocino-st-goddard-ks-674749",
@@ -68380,7 +68419,7 @@
     "state": "KS",
     "lat": 37.684714,
     "lng": -97.536526,
-    "price": 204900,
+    "price": 199900,
     "beds": 5,
     "baths": 2,
     "sqft": "1500",
@@ -68392,7 +68431,8 @@
     "isSundgren": false,
     "agentName": "Stefanie Roth",
     "agentPhone": "3168410403",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 204900
   },
   {
     "slug": "244-mendocino-st-goddard-ks-674750",
@@ -68403,7 +68443,7 @@
     "state": "KS",
     "lat": 37.6594,
     "lng": -97.5671,
-    "price": 204900,
+    "price": 199900,
     "beds": 5,
     "baths": 2,
     "sqft": "1500",
@@ -68415,7 +68455,8 @@
     "isSundgren": false,
     "agentName": "Stefanie Roth",
     "agentPhone": "3168410403",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 204900
   },
   {
     "slug": "641-woodlawn-60-st-wichita-ks-673576",
@@ -72227,7 +72268,7 @@
     "state": "KS",
     "lat": 37.318569,
     "lng": -96.668577,
-    "price": 190000,
+    "price": 180000,
     "beds": 3,
     "baths": 4,
     "sqft": "3113",
@@ -72239,7 +72280,8 @@
     "isSundgren": false,
     "agentName": "Jodi Lawrence",
     "agentPhone": "6202227995",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 190000
   },
   {
     "slug": "4410-25th-st-wichita-ks-676535",
@@ -72503,7 +72545,7 @@
     "state": "KS",
     "lat": 37.50351,
     "lng": -97.222321,
-    "price": 189900,
+    "price": 179900,
     "beds": 3,
     "baths": 2,
     "sqft": "1120",
@@ -72515,7 +72557,8 @@
     "isSundgren": false,
     "agentName": "Tammy Schmidt",
     "agentPhone": "3166172356",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 189900
   },
   {
     "slug": "2791-cedar-crest-st-wichita-ks-677516",
@@ -72664,7 +72707,7 @@
     "state": "KS",
     "lat": 37.6594,
     "lng": -97.5671,
-    "price": 189900,
+    "price": 184900,
     "beds": 4,
     "baths": 2,
     "sqft": "1413",
@@ -72676,7 +72719,8 @@
     "isSundgren": false,
     "agentName": "Stefanie Roth",
     "agentPhone": "3168410403",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 189900
   },
   {
     "slug": "234-gowen-st-goddard-ks-675088",
@@ -72687,7 +72731,7 @@
     "state": "KS",
     "lat": 37.6592,
     "lng": -97.5797,
-    "price": 189900,
+    "price": 184900,
     "beds": 4,
     "baths": 2,
     "sqft": "1413",
@@ -72699,7 +72743,8 @@
     "isSundgren": false,
     "agentName": "Stefanie Roth",
     "agentPhone": "3168410403",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 189900
   },
   {
     "slug": "232-gowen-st-goddard-ks-675086",
@@ -72710,7 +72755,7 @@
     "state": "KS",
     "lat": 37.685205,
     "lng": -97.535323,
-    "price": 189900,
+    "price": 184900,
     "beds": 4,
     "baths": 2,
     "sqft": "1413",
@@ -72722,7 +72767,8 @@
     "isSundgren": false,
     "agentName": "Stefanie Roth",
     "agentPhone": "3168410403",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 189900
   },
   {
     "slug": "1701-chestnut-ave-arkansas-city-ks-675144",
@@ -72756,7 +72802,7 @@
     "state": "KS",
     "lat": 37.685648,
     "lng": -97.535854,
-    "price": 189900,
+    "price": 184900,
     "beds": 4,
     "baths": 2,
     "sqft": "1413",
@@ -72768,7 +72814,8 @@
     "isSundgren": false,
     "agentName": "Stefanie Roth",
     "agentPhone": "3168410403",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 189900
   },
   {
     "slug": "235-gowen-st-goddard-ks-675081",
@@ -72802,7 +72849,7 @@
     "state": "KS",
     "lat": 37.6594,
     "lng": -97.5671,
-    "price": 189900,
+    "price": 184900,
     "beds": 4,
     "baths": 2,
     "sqft": "1413",
@@ -72814,7 +72861,8 @@
     "isSundgren": false,
     "agentName": "Stefanie Roth",
     "agentPhone": "3168410403",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 189900
   },
   {
     "slug": "232-mendocino-st-goddard-ks-674747",
@@ -72825,7 +72873,7 @@
     "state": "KS",
     "lat": 37.6594,
     "lng": -97.5671,
-    "price": 189900,
+    "price": 184900,
     "beds": 4,
     "baths": 2,
     "sqft": "1413",
@@ -72837,7 +72885,8 @@
     "isSundgren": false,
     "agentName": "Stefanie Roth",
     "agentPhone": "3168410403",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 189900
   },
   {
     "slug": "230-mendocino-st-goddard-ks-674746",
@@ -72848,7 +72897,7 @@
     "state": "KS",
     "lat": 37.684329,
     "lng": -97.536531,
-    "price": 189900,
+    "price": 184900,
     "beds": 4,
     "baths": 2,
     "sqft": "1413",
@@ -72860,7 +72909,8 @@
     "isSundgren": false,
     "agentName": "Stefanie Roth",
     "agentPhone": "3168410403",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 189900
   },
   {
     "slug": "248-mendocino-st-goddard-ks-674751",
@@ -72871,7 +72921,7 @@
     "state": "KS",
     "lat": 37.684906,
     "lng": -97.536527,
-    "price": 189900,
+    "price": 184900,
     "beds": 4,
     "baths": 2,
     "sqft": "1413",
@@ -72883,7 +72933,8 @@
     "isSundgren": false,
     "agentName": "Stefanie Roth",
     "agentPhone": "3168410403",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 189900
   },
   {
     "slug": "5433-briskbay-ct-maize-ks-674055",
@@ -75512,7 +75563,7 @@
     "state": "KS",
     "lat": 37.6592,
     "lng": -97.5797,
-    "price": 184900,
+    "price": 179900,
     "beds": 3,
     "baths": 2,
     "sqft": "1259",
@@ -75524,7 +75575,8 @@
     "isSundgren": false,
     "agentName": "Stefanie Roth",
     "agentPhone": "3168410403",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 184900
   },
   {
     "slug": "240-gowen-st-goddard-ks-675092",
@@ -75535,7 +75587,7 @@
     "state": "KS",
     "lat": 37.6592,
     "lng": -97.5797,
-    "price": 184900,
+    "price": 179900,
     "beds": 3,
     "baths": 2,
     "sqft": "1259",
@@ -75547,7 +75599,8 @@
     "isSundgren": false,
     "agentName": "Stefanie Roth",
     "agentPhone": "3168410403",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 184900
   },
   {
     "slug": "16914-leyland-st-goddard-ks-675104",
@@ -75558,7 +75611,7 @@
     "state": "KS",
     "lat": 37.7394,
     "lng": -97.4386,
-    "price": 184900,
+    "price": 179900,
     "beds": 3,
     "baths": 2,
     "sqft": "1259",
@@ -75570,7 +75623,8 @@
     "isSundgren": false,
     "agentName": "Stefanie Roth",
     "agentPhone": "3168410403",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 184900
   },
   {
     "slug": "16912-leyland-st-goddard-ks-675103",
@@ -75581,7 +75635,7 @@
     "state": "KS",
     "lat": 37.7394,
     "lng": -97.4386,
-    "price": 184900,
+    "price": 179900,
     "beds": 3,
     "baths": 2,
     "sqft": "1259",
@@ -75593,7 +75647,8 @@
     "isSundgren": false,
     "agentName": "Stefanie Roth",
     "agentPhone": "3168410403",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 184900
   },
   {
     "slug": "256-mendocino-st-goddard-ks-674807",
@@ -75604,7 +75659,7 @@
     "state": "KS",
     "lat": 37.7394,
     "lng": -97.4386,
-    "price": 184900,
+    "price": 179900,
     "beds": 3,
     "baths": 2,
     "sqft": "1259",
@@ -75616,7 +75671,8 @@
     "isSundgren": false,
     "agentName": "Stefanie Roth",
     "agentPhone": "3168410403",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 184900
   },
   {
     "slug": "238-mendocino-st-goddard-ks-674803",
@@ -75627,7 +75683,7 @@
     "state": "KS",
     "lat": 37.7394,
     "lng": -97.4386,
-    "price": 184900,
+    "price": 179900,
     "beds": 3,
     "baths": 2,
     "sqft": "1259",
@@ -75639,7 +75695,8 @@
     "isSundgren": false,
     "agentName": "Stefanie Roth",
     "agentPhone": "3168410403",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 184900
   },
   {
     "slug": "254-mendocino-st-goddard-ks-674805",
@@ -75650,7 +75707,7 @@
     "state": "KS",
     "lat": 37.685107,
     "lng": -97.536523,
-    "price": 184900,
+    "price": 179900,
     "beds": 3,
     "baths": 2,
     "sqft": "1259",
@@ -75662,7 +75719,8 @@
     "isSundgren": false,
     "agentName": "Stefanie Roth",
     "agentPhone": "3168410403",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 184900
   },
   {
     "slug": "236-mendocino-st-goddard-ks-674748",
@@ -75673,7 +75731,7 @@
     "state": "KS",
     "lat": 37.684522,
     "lng": -97.536526,
-    "price": 184900,
+    "price": 179900,
     "beds": 3,
     "baths": 2,
     "sqft": "1259",
@@ -75685,7 +75743,8 @@
     "isSundgren": false,
     "agentName": "Stefanie Roth",
     "agentPhone": "3168410403",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 184900
   },
   {
     "slug": "17138-lawson-cir-goddard-ks-670397",
@@ -76297,7 +76356,7 @@
     "state": "KS",
     "lat": 37.691149,
     "lng": -97.373356,
-    "price": 180000,
+    "price": 175000,
     "beds": 3,
     "baths": 1,
     "sqft": "1232",
@@ -76309,7 +76368,8 @@
     "isSundgren": false,
     "agentName": "Angela Urbina",
     "agentPhone": "3162858093",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 180000
   },
   {
     "slug": "1169-lakewind-st-wichita-ks-676974",
@@ -84643,7 +84703,7 @@
     "state": "KS",
     "lat": 37.561034,
     "lng": -97.364434,
-    "price": 155000,
+    "price": 145000,
     "beds": 2,
     "baths": 1,
     "sqft": "925",
@@ -84655,7 +84715,8 @@
     "isSundgren": false,
     "agentName": "Ginny Elston",
     "agentPhone": "3162084973",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 155000
   },
   {
     "slug": "938-holyoke-st-wichita-ks-677408",
@@ -86904,7 +86965,7 @@
     "state": "KS",
     "lat": 38.83148699,
     "lng": -97.61476101,
-    "price": 149900,
+    "price": 147500,
     "beds": 3,
     "baths": 2,
     "sqft": "2012",
@@ -86916,7 +86977,8 @@
     "isSundgren": false,
     "agentName": "Daniel Goble",
     "agentPhone": "7858191904",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 149900
   },
   {
     "slug": "3350-hiram-st-wichita-ks-678251",
@@ -100818,7 +100880,7 @@
     "state": "KS",
     "lat": 37.653906,
     "lng": -97.314452,
-    "price": 95000,
+    "price": 92500,
     "beds": 2,
     "baths": 1,
     "sqft": "720",
@@ -100831,7 +100893,7 @@
     "agentName": "Rebecca Gallo",
     "agentPhone": "3167123585",
     "agentEmail": "",
-    "previousPrice": 97000
+    "previousPrice": 95000
   },
   {
     "slug": "250-hummingbird-rd-medicine-lodge-ks-674916",
@@ -101693,7 +101755,7 @@
     "state": "KS",
     "lat": 37.712125,
     "lng": -97.334119,
-    "price": 94900,
+    "price": 89900,
     "beds": 2,
     "baths": 1,
     "sqft": "960",
@@ -101705,7 +101767,8 @@
     "isSundgren": false,
     "agentName": "Josh Roy",
     "agentPhone": "3166656799",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 94900
   },
   {
     "slug": "1509-2nd-st-arkansas-city-ks-674931",
