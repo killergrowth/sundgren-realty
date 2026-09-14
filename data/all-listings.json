@@ -25601,7 +25601,7 @@
     "state": "KS",
     "lat": 37.50751898,
     "lng": -97.23633602,
-    "price": 392000,
+    "price": 379900,
     "beds": 5,
     "baths": 3,
     "sqft": "2964",
@@ -25613,7 +25613,8 @@
     "isSundgren": false,
     "agentName": "Debi Strange",
     "agentPhone": "3168064860",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 392000
   },
   {
     "slug": "8232-prairie-lake-rd-moundridge-ks-678189",
@@ -27191,7 +27192,7 @@
     "state": "KS",
     "lat": 37.650637,
     "lng": -97.201732,
-    "price": 383000,
+    "price": 369900,
     "beds": 3,
     "baths": 2,
     "sqft": "1792",
@@ -27203,7 +27204,8 @@
     "isSundgren": false,
     "agentName": "Judy Bias",
     "agentPhone": "3166193734",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 383000
   },
   {
     "slug": "8471-pebble-st-maize-ks-664953",
@@ -30295,7 +30297,7 @@
     "state": "KS",
     "lat": 37.675716,
     "lng": -97.283295,
-    "price": 369900,
+    "price": 365000,
     "beds": 6,
     "baths": 4,
     "sqft": "2568",
@@ -30307,7 +30309,8 @@
     "isSundgren": false,
     "agentName": "Tiffany R Trotter",
     "agentPhone": "7858228295",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 369900
   },
   {
     "slug": "2113-walnut-creek-dr-derby-ks-672825",
@@ -50380,7 +50383,7 @@
     "state": "KS",
     "lat": 37.711522,
     "lng": -97.474725,
-    "price": 275000,
+    "price": 260000,
     "beds": 4,
     "baths": 3,
     "sqft": "2901",
@@ -50392,7 +50395,8 @@
     "isSundgren": false,
     "agentName": "Alyssha Dudgeon",
     "agentPhone": "3166880077",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 275000
   },
   {
     "slug": "1104-pinecrest-street-wichita-ks-677710",
@@ -52593,7 +52597,7 @@
     "state": "KS",
     "lat": 37.553528,
     "lng": -97.254276,
-    "price": 263700,
+    "price": 263600,
     "beds": 3,
     "baths": 3,
     "sqft": "2776",
@@ -52606,7 +52610,7 @@
     "agentName": "Dawn R Wade",
     "agentPhone": "3168061060",
     "agentEmail": "",
-    "previousPrice": 263800
+    "previousPrice": 263700
   },
   {
     "slug": "8110-westlawn-cir-wichita-ks-677589",
@@ -64176,7 +64180,7 @@
     "state": "KS",
     "lat": 37.514827,
     "lng": -97.003144,
-    "price": 210000,
+    "price": 200000,
     "beds": 3,
     "baths": 3,
     "sqft": "2169",
@@ -64189,7 +64193,7 @@
     "agentName": "Austin Hodge",
     "agentPhone": "3167086873",
     "agentEmail": "",
-    "previousPrice": 220000
+    "previousPrice": 210000
   },
   {
     "slug": "842-litchfield-ave-wichita-ks-677411",
@@ -83552,7 +83556,7 @@
     "state": "KS",
     "lat": 37.636184,
     "lng": -97.359673,
-    "price": 159999,
+    "price": 154999,
     "beds": 3,
     "baths": 1,
     "sqft": "908",
@@ -83564,7 +83568,8 @@
     "isSundgren": false,
     "agentName": "Jose E Flores",
     "agentPhone": "3169922585",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 159999
   },
   {
     "slug": "521-marshall-st-cheney-ks-677202",
@@ -83989,7 +83994,7 @@
     "state": "KS",
     "lat": 37.550885,
     "lng": -97.267624,
-    "price": 153700,
+    "price": 153600,
     "beds": 3,
     "baths": 1,
     "sqft": "1250",
@@ -84002,7 +84007,7 @@
     "agentName": "Dawn R Wade",
     "agentPhone": "3168061060",
     "agentEmail": "",
-    "previousPrice": 153800
+    "previousPrice": 153700
   },
   {
     "slug": "515-g-st-wellington-ks-676894",
@@ -98392,7 +98397,7 @@
     "state": "KS",
     "lat": 37.663525,
     "lng": -97.377023,
-    "price": 105000,
+    "price": 100000,
     "beds": 2,
     "baths": 1,
     "sqft": "720",
@@ -98405,7 +98410,7 @@
     "agentName": "Jessika E Mayer",
     "agentPhone": "3168074856",
     "agentEmail": "",
-    "previousPrice": 110000
+    "previousPrice": 105000
   },
   {
     "slug": "812-maris-st-winfield-ks-677735",
@@ -99060,7 +99065,7 @@
     "state": "KS",
     "lat": 38.86062001,
     "lng": -97.611136,
-    "price": 106400,
+    "price": 104500,
     "beds": 2,
     "baths": 1,
     "sqft": "759",
@@ -99072,7 +99077,8 @@
     "isSundgren": false,
     "agentName": "Daniel Goble",
     "agentPhone": "7858191904",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 106400
   },
   {
     "slug": "1717-cypress-1112-st-wichita-ks-675511",
