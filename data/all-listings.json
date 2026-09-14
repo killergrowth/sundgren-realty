@@ -18997,7 +18997,7 @@
     "state": "KS",
     "lat": 37.669374,
     "lng": -97.207418,
-    "price": 450000,
+    "price": 440000,
     "beds": 4,
     "baths": 4,
     "sqft": "4755",
@@ -19009,7 +19009,8 @@
     "isSundgren": false,
     "agentName": "Lucy Ferrer-Gonzalez",
     "agentPhone": "3169789777",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 450000
   },
   {
     "slug": "242-244-mendocino-st-goddard-ks-674756",
