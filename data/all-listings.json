@@ -42363,7 +42363,7 @@
     "state": "KS",
     "lat": 37.704031,
     "lng": -96.972599,
-    "price": 309000,
+    "price": 305000,
     "beds": 4,
     "baths": 3,
     "sqft": "2253",
@@ -42375,7 +42375,8 @@
     "isSundgren": false,
     "agentName": "Luke Beal",
     "agentPhone": "3164354664",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 309000
   },
   {
     "slug": "2635-sunnyslope-ct-park-city-ks-675722",
@@ -85651,7 +85652,7 @@
     "state": "KS",
     "lat": 37.800053,
     "lng": -97.320818,
-    "price": 150000,
+    "price": 148000,
     "beds": 2,
     "baths": 1,
     "sqft": "960",
@@ -85663,7 +85664,8 @@
     "isSundgren": false,
     "agentName": "Tiffany Denny",
     "agentPhone": "3165732928",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 150000
   },
   {
     "slug": "8201-harry-unit-501-st-wichita-ks-678261",
@@ -88949,7 +88951,7 @@
     "state": "KS",
     "lat": 37.672427,
     "lng": -97.322045,
-    "price": 140000,
+    "price": 135000,
     "beds": 2,
     "baths": 1,
     "sqft": "966",
@@ -88961,7 +88963,8 @@
     "isSundgren": false,
     "agentName": "Nikki Chavez",
     "agentPhone": "3169900690",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 140000
   },
   {
     "slug": "323-broadway-ave-augusta-ks-678238",
