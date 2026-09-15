@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-terminated pill">Inactive</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Discover a truly exceptional Kansas property where timeless craftsmanship, modern comfort, and wide-open countryside come together. Set on 20 picturesque acres, this beautifully restored 1918 Craftsman farmhouse offers the rare opportunity to own a private estate with incredible character, expansive views, and room to live, work, and explore. Approximately 4,000 square feet of living space spans three stories with SIX spacious bedrooms and FOUR full bathrooms. The welcoming wrap-around porch is the perfect place to take in spectacular Kansas sunsets. Inside, original craftsmanship is beautifully preserved with hardwood floors, rich woodwork, glass doors, oversized windows, and impressive 10-foot ceilings on both the main and second floors. The main level features a spacious primary suite with an ensuite bath offering double sinks, a large walk-in shower, and TWO walk-in closets. All six bedrooms feature walk-in closets. The light-filled kitchen is both beautiful and functional with quartz countertops, a farmhouse sink, pantry, double ovens, abundant cabinetry, and an abundance of natural light. A large formal dining room with built-in bookcases provides an elegant space for entertaining. The main floor also offers a convenient laundry room and mudroom. Upstairs, there are four large bedrooms with walk in closets, 2 full bathrooms, and a charming sunroom that opens to a balcony overlooking the surrounding countryside. The finished attic adds even more living space and is sure to be a favorite retreat or dream playroom. An oversized attached 3-car garage provides plenty of room for vehicles, equipment, and storage. Outside, the 20 acres offer exceptional privacy and breathtaking views in every direction. Expansive wheat fields stretch to the west, while a tree-lined creek create a peaceful setting filled with wildlife. The property is fully fenced and currently supports cattle and horses. Additional improvements include five livestock corrals with durable pipe-and-cable fencing, a 60&#39; x 40&#39; Quonset building with high-voltage power and drive-through access, historic grain silo and classic windmill, hay barn with lean-to, and a creek winding through the property. For those looking for even more land, an additional 50 acres are available for purchase separately, featuring two additional ponds and offering even more opportunity for livestock, recreation, hunting, or agricultural use. Whether you&#39;re looking for a working ranch, hobby farm, private retreat, equestrian property, hunting and recreation destination, or simply a spectacular place to call home, this remarkable estate offers possibilities that are truly hard to find. A rare piece of Kansas history, thoughtfully restored and ready for its next chapter.</p>
     </div>
@@ -213,8 +215,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -224,13 +226,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="7550 327th St W ST, Cheney, KS, 67025">
-        <input type="hidden" name="message" value="I am interested in the property at 7550 327th St W ST, Cheney, KS, 67025 (MLS# 678158). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 7550 327th St W ST, Cheney, KS, 67025 (MLS# 678158). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
