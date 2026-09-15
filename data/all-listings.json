@@ -14779,7 +14779,7 @@
     "state": "KS",
     "lat": 37.580033,
     "lng": -97.256981,
-    "price": 515000,
+    "price": 499900,
     "beds": 5,
     "baths": 4,
     "sqft": "4169",
@@ -14791,7 +14791,8 @@
     "isSundgren": false,
     "agentName": "Shana McCain",
     "agentPhone": "3163124000",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 515000
   },
   {
     "slug": "16108-sheriac-st-wichita-ks-671515",
@@ -15288,7 +15289,7 @@
     "state": "KS",
     "lat": 37.76453198,
     "lng": -97.409597,
-    "price": 500000,
+    "price": 490000,
     "beds": 4,
     "baths": 3,
     "sqft": "2749",
@@ -15300,7 +15301,8 @@
     "isSundgren": false,
     "agentName": "Rebecca S Zinabu",
     "agentPhone": "3163127080",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 500000
   },
   {
     "slug": "116-byron-ave-wichita-ks-674528",
@@ -24087,7 +24089,7 @@
     "state": "KS",
     "lat": 37.68958,
     "lng": -97.145612,
-    "price": 399900,
+    "price": 394900,
     "beds": 5,
     "baths": 3,
     "sqft": "3424",
@@ -24099,7 +24101,8 @@
     "isSundgren": false,
     "agentName": "Tara Maxwell",
     "agentPhone": "3162586878",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 399900
   },
   {
     "slug": "5758-edwards-st-wichita-ks-675273",
@@ -38977,7 +38980,7 @@
     "state": "KS",
     "lat": 38.045343,
     "lng": -97.344649,
-    "price": 325000,
+    "price": 275000,
     "beds": null,
     "baths": null,
     "sqft": "5,001 - 10,000",
@@ -38989,7 +38992,8 @@
     "isSundgren": false,
     "agentName": "Asa Pechin",
     "agentPhone": "3162950681",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 325000
   },
   {
     "slug": "10818-central-park-st-wichita-ks-676517",
@@ -46788,7 +46792,7 @@
     "state": "KS",
     "lat": 37.73324,
     "lng": -97.270973,
-    "price": 289000,
+    "price": 287000,
     "beds": 4,
     "baths": 4,
     "sqft": "2489",
@@ -46800,7 +46804,8 @@
     "isSundgren": false,
     "agentName": "Desiraye L Speer",
     "agentPhone": "7859696701",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 289000
   },
   {
     "slug": "5121-toben-ct-bel-aire-ks-671036",
@@ -52170,7 +52175,7 @@
     "state": "KS",
     "lat": 37.711732,
     "lng": -97.390409,
-    "price": 270000,
+    "price": 260000,
     "beds": 3,
     "baths": 4,
     "sqft": "1810",
@@ -52182,7 +52187,8 @@
     "isSundgren": false,
     "agentName": "Jennifer Masters",
     "agentPhone": "3168415117",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 270000
   },
   {
     "slug": "3702-3rd-st-n-wichita-ks-675517",
@@ -54247,7 +54253,7 @@
     "state": "KS",
     "lat": 37.5872413,
     "lng": -97.2663794,
-    "price": 263200,
+    "price": 263650,
     "beds": 3,
     "baths": 2,
     "sqft": "1336",
@@ -131946,7 +131952,7 @@
     "state": "KS",
     "lat": 37.776148,
     "lng": -97.258691,
-    "price": 0,
+    "price": 399900,
     "beds": 5,
     "baths": 3,
     "sqft": "3410",

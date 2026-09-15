@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Looking for a little more space and privacy without giving up the convenience of West Wichita? And what if it came with an incredible backyard and your own pool? This classic yet updated 2-story sits on a spacious ¾-acre property and offers 2,130 sq. ft. above grade, approximately 2,415 sq. ft. of total finished living space, multiple living areas and outdoor space that truly sets it apart — all with a Wichita address and taxes and Goddard schools! A sprawling covered front porch welcomes you inside to a tiled foyer and a floor plan with room to spread out. The main level includes a spacious formal living room plus a cozy family/hearth room with brick fireplace and built-in shelving. An additional flexible space can serve as a formal dining room, home office, sitting room or whatever best fits your lifestyle. The generously sized kitchen offers abundant workspace, a breakfast nook with backyard access and a walk-in pantry, while main-floor laundry, a half bath and direct garage access add everyday convenience. Upstairs, all 3 bedrooms are together along with 2 full bathrooms. The spacious primary bedroom features two separate closets, while the secondary bedrooms offer generous closet space and abundant natural light. A finished family room in the partial basement brings the home&#39;s total finished living space to approximately 2,415 sq. ft., with additional storage and a concrete storm room. But just wait until you step outside! The fully fenced backyard is an outdoor living space all its own, centered around an in-ground swimming pool with diving board and NEW liner. Recently redone poolside concrete/decking and refreshed landscaping make the entire pool area feel fresh and ready to enjoy. Multiple outdoor gathering areas provide room for fire pits, conversation areas and entertaining, while the covered and screened-in patio offers a shady retreat overlooking it all. Mature trees add privacy and shade, and even with the pool and extensive outdoor living areas, there is still plenty of grassy yard for kids, pets and play. An irrigation well helps maintain the extensive landscaping. Another unusual bonus is the abundant parking and additional property created when the former street area was vacated — especially handy when everyone comes over to enjoy that backyard! And while the setting offers extra elbow room and a more private feel, everyday conveniences are remarkably close. Shopping, groceries, fuel, coffee and dining around 135th &amp; Maple are just minutes away, with additional local dining and amenities around 119th &amp; Maple and easy access to the rest of West Wichita. Space to spread out, a backyard built for making memories and conveniences close at hand — 14321 W Taft offers a combination that&#39;s hard to duplicate.</p>
     </div>
@@ -209,8 +211,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -220,13 +222,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="14321 Taft ST, Wichita, KS, 67235">
-        <input type="hidden" name="message" value="I am interested in the property at 14321 Taft ST, Wichita, KS, 67235 (MLS# 678894). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 14321 Taft ST, Wichita, KS, 67235 (MLS# 678894). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
