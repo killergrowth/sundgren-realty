@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>NEW CONSTRUCTION DUPLEX – 5 BEDROOMS, 3 BATHROOMS &amp; OVER 1,900 SQ. FT.! This thoughtfully designed new construction duplex offers an impressive 5 bedrooms, 3 bathrooms, and over 1,900 square feet of living space. The spacious floor plan features durable LVP flooring throughout, granite countertops, and a modern kitchen with all kitchen appliances included. Window blinds are also included, making this home even more move-in ready. A standout feature of this property is the converted garage suite, which provides an additional bedroom and bathroom with its own separate exterior access. This flexible space creates a variety of possibilities and could be ideal for a private guest suite, extended family, home office, or an in-home healthcare/nursing setup where additional privacy and independent access are desired. With five bedrooms, three full bathrooms, modern finishes, and a versatile private-access suite, this duplex offers a unique combination of space, functionality, and flexibility that is difficult to find in new construction. Schedule your private showing today!</p>
     </div>
@@ -197,8 +199,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -208,13 +210,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="2965 Bunker Hill Ct #200 Ct, Wichita, KS, 67210">
-        <input type="hidden" name="message" value="I am interested in the property at 2965 Bunker Hill Ct #200 Ct, Wichita, KS, 67210 (MLS# 678929). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 2965 Bunker Hill Ct #200 Ct, Wichita, KS, 67210 (MLS# 678929). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

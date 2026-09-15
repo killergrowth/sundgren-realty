@@ -218,7 +218,7 @@
     "state": "KS",
     "lat": 37.205362,
     "lng": -97.000956,
-    "price": 375000,
+    "price": 354900,
     "beds": 2,
     "baths": 1,
     "sqft": "1152",
@@ -230,7 +230,8 @@
     "isSundgren": true,
     "agentName": "Tamara Cooley",
     "agentPhone": "6202222356",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 375000
   },
   {
     "slug": "635-central-ave-el-dorado-ks-675644",
@@ -19737,7 +19738,7 @@
     "state": "KS",
     "lat": 37.649054,
     "lng": -97.556081,
-    "price": 449500,
+    "price": 455000,
     "beds": 3,
     "baths": 2,
     "sqft": "1674",
@@ -25703,7 +25704,7 @@
     "state": "KS",
     "lat": 37.666493,
     "lng": -97.176665,
-    "price": 390000,
+    "price": 379900,
     "beds": 4,
     "baths": 4,
     "sqft": "2806",
@@ -25715,7 +25716,8 @@
     "isSundgren": false,
     "agentName": "Lisa Andrews",
     "agentPhone": "3166447893",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 390000
   },
   {
     "slug": "3731-3733-longleaf-st-wichita-ks-668003",
@@ -52623,7 +52625,7 @@
     "state": "KS",
     "lat": 37.553528,
     "lng": -97.254276,
-    "price": 263600,
+    "price": 260000,
     "beds": 3,
     "baths": 3,
     "sqft": "2776",
@@ -52636,7 +52638,7 @@
     "agentName": "Dawn R Wade",
     "agentPhone": "3168061060",
     "agentEmail": "",
-    "previousPrice": 263700
+    "previousPrice": 263600
   },
   {
     "slug": "8110-westlawn-cir-wichita-ks-677589",
@@ -53224,7 +53226,7 @@
     "state": "KS",
     "lat": 37.580657,
     "lng": -97.13282,
-    "price": 265000,
+    "price": 259900,
     "beds": 4,
     "baths": 3,
     "sqft": "2194",
@@ -53236,7 +53238,8 @@
     "isSundgren": false,
     "agentName": "Sandy McRae",
     "agentPhone": "3162593054",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 265000
   },
   {
     "slug": "2215-market-st-wichita-ks-677014",
@@ -62935,7 +62938,7 @@
     "state": "KS",
     "lat": 37.557666,
     "lng": -97.265313,
-    "price": 215000,
+    "price": 218000,
     "beds": 3,
     "baths": 1,
     "sqft": "1405",
@@ -62947,8 +62950,7 @@
     "isSundgren": false,
     "agentName": "Abigail Young",
     "agentPhone": "6202626912",
-    "agentEmail": "",
-    "previousPrice": 220000
+    "agentEmail": ""
   },
   {
     "slug": "1212-18th-st-n-st-wichita-ks-678140",
@@ -84054,7 +84056,7 @@
     "state": "KS",
     "lat": 37.550885,
     "lng": -97.267624,
-    "price": 153600,
+    "price": 164000,
     "beds": 3,
     "baths": 1,
     "sqft": "1250",
@@ -84066,8 +84068,7 @@
     "isSundgren": false,
     "agentName": "Dawn R Wade",
     "agentPhone": "3168061060",
-    "agentEmail": "",
-    "previousPrice": 153700
+    "agentEmail": ""
   },
   {
     "slug": "515-g-st-wellington-ks-676894",
@@ -106708,7 +106709,7 @@
     "state": "KS",
     "lat": 37.939307,
     "lng": -97.023545,
-    "price": 70000,
+    "price": 65000,
     "beds": 2,
     "baths": 1,
     "sqft": "765",
@@ -106720,7 +106721,8 @@
     "isSundgren": false,
     "agentName": "Lyndee Martin",
     "agentPhone": "3164521850",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 70000
   },
   {
     "slug": "311-towanda-ave-el-dorado-ks-676469",
@@ -107951,7 +107953,7 @@
     "state": "KS",
     "lat": 37.62806,
     "lng": -97.520534,
-    "price": 65900,
+    "price": 64900,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -107963,7 +107965,8 @@
     "isSundgren": false,
     "agentName": "Catalina McNany",
     "agentPhone": "3163000049",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 65900
   },
   {
     "slug": "15500-36th-south-goddard-ks-669774",
