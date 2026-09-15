@@ -58276,7 +58276,7 @@
     "state": "KS",
     "lat": 37.777094,
     "lng": -97.231145,
-    "price": 245000,
+    "price": 262000,
     "beds": 4,
     "baths": 3,
     "sqft": "1527",
@@ -70449,7 +70449,7 @@
     "state": "KS",
     "lat": 37.896309,
     "lng": -96.295639,
-    "price": 199000,
+    "price": 189000,
     "beds": 1,
     "baths": 1,
     "sqft": "1101",
@@ -70461,7 +70461,8 @@
     "isSundgren": false,
     "agentName": "Becky Schaffer",
     "agentPhone": "6207500054",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 199000
   },
   {
     "slug": "12947-blake-st-wichita-ks-672819",
