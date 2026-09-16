@@ -54418,7 +54418,7 @@
     "state": "KS",
     "lat": 37.2149343,
     "lng": -96.94157048,
-    "price": 262500,
+    "price": 245000,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -54430,7 +54430,8 @@
     "isSundgren": false,
     "agentName": "Jodi Lawrence",
     "agentPhone": "6202227995",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 262500
   },
   {
     "slug": "261-greenway-arkansas-city-ks-677796",
