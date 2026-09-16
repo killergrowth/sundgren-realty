@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>For someone who isn’t afraid to put in a little work, this home offers a great opportunity to build some sweat equity and make thespace exactly what you want it to be! This 2 bedroom, 2 bath, 1½ story home has lots of potential and could make a great starterhome or investment property. The main floor is where you’ll find both bedrooms, the kitchen, living room, and formal dining room,with the dining room nestled between the kitchen and living room for a nice flow through the home. Wood flooring runs thru bothbedrooms, with carpet in the living room. While the laundry is currently located in the basement, there are also laundry hookups onthe main floor, giving the next owner the option to move it upstairs if they choose. Head upstairs and you’ll find a loft area that couldbe used as an office, playroom, hobby space, or additional living area. The unfinished basement is a blank slate ready for the nextowner to use their imagination and make it their own. Along with the current laundry area, there is a potential bonus room, plenty ofstorage, and a full bathroom that could use some TLC. Whether you’re looking for additional living space, a hobby area, storage, or something completely your own, the possibilities are endless. The owners also installed a new HVAC system approximately 2 years ago, giving the next owner a little extra peace of mind knowing one of the home&#39;s major systems has already been updated. Outside, you’ll have a 1-car attached garage plus an additional detached garage in the backyard that could be used as a garage, workshop, extra storage, or. Previously used as a rental, this property has potential whether you’re looking for a place to call home or your next investment. Property is being sold AS-IS. Call me or your favorite REALTOR® today to schedule your private tour and come see the possibilities for yourself!</p>
     </div>
@@ -201,8 +203,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -212,13 +214,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="208 Birch St, Hillsboro, KS, 67063">
-        <input type="hidden" name="message" value="I am interested in the property at 208 Birch St, Hillsboro, KS, 67063 (MLS# 678937). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 208 Birch St, Hillsboro, KS, 67063 (MLS# 678937). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

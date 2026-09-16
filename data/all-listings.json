@@ -5339,7 +5339,7 @@
     "state": "KS",
     "lat": 37.766197,
     "lng": -97.411223,
-    "price": 883338,
+    "price": 899988,
     "beds": 5,
     "baths": 5,
     "sqft": "3808",
@@ -28511,7 +28511,7 @@
     "state": "KS",
     "lat": 37.716631,
     "lng": -97.140399,
-    "price": 375000,
+    "price": 349900,
     "beds": 4,
     "baths": 3,
     "sqft": "2901",
@@ -28523,7 +28523,8 @@
     "isSundgren": false,
     "agentName": "Jordan Hoefler",
     "agentPhone": "3162599333",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 375000
   },
   {
     "slug": "38213823-bluelake-ct-wichita-ks-677595",
@@ -101805,7 +101806,7 @@
     "state": "KS",
     "lat": 37.080125,
     "lng": -97.042653,
-    "price": 94900,
+    "price": 84900,
     "beds": 3,
     "baths": 1,
     "sqft": "1288",
@@ -101817,7 +101818,8 @@
     "isSundgren": false,
     "agentName": "Dawn R Wade",
     "agentPhone": "3168061060",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 94900
   },
   {
     "slug": "426-cave-springs-ave-el-dorado-ks-674339",
