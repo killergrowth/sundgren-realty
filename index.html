@@ -76,22 +76,11 @@
       text-align: center;
       overflow: hidden;
     }
-    /* Hero video — sits behind everything, fades out when done */
-    .hero-video {
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center 60%;
-      z-index: 0;
-      opacity: 1;
-      transition: opacity 1.2s ease;
-      pointer-events: none;
-    }
-    /* video stays visible when done — frozen on last frame, no swap */
-    .hero-video.hero-video--done {
-      opacity: 1;
+    /* Hero static background image */
+    .home-hero {
+      background-image: url('/images/hero-bg.png');
+      background-size: cover;
+      background-position: center 60%;
     }
     .home-hero::before {
       content: '';
@@ -310,27 +299,26 @@
 
   <!-- Full-bleed hero -->
   <section class="home-hero" aria-label="Sundgren Realty &amp; Auction">
-    <video class="hero-video" id="hero-video" autoplay muted playsinline preload="auto" aria-hidden="true">
-      <source src="/images/hero-video.mp4" type="video/mp4">
-    </video>
 
     <div class="home-hero-content">
-      <span class="home-hero-eyebrow">South Central Kansas &mdash; Est. 40+ Years</span>
+      <span class="home-hero-eyebrow">Sundgren Realty &amp; Auction &middot; Serving Kansas Since 1981</span>
 
-      <h1 class="home-hero-title">Your Home.<br>Your Land.<br>Your Auction.</h1>
+      <h1 class="home-hero-title">Under All Is The Land.</h1>
+
+      <p class="home-hero-sub" style="margin-bottom:28px;">Trusted by families for over four decades &mdash; residential real estate, land, and auctions all under one roof.</p>
 
       <div class="home-hero-btns">
-        <a href="/listings/" class="home-hero-btn home-hero-btn--primary">
-          <i class="fas fa-home"></i> Listings
-        </a>
         <a href="/auctions/" class="home-hero-btn home-hero-btn--ghost">
           <i class="fas fa-gavel"></i> Auctions
         </a>
-        <a href="/value-my-land/" class="home-hero-btn home-hero-btn--ghost">
-          <i class="fas fa-wheat-awn"></i> Value My Land
+        <a href="/land-listings/" class="home-hero-btn home-hero-btn--ghost">
+          <i class="fas fa-wheat-awn"></i> Land
         </a>
-        <a href="/contact-us/" class="home-hero-btn home-hero-btn--ghost">
-          <i class="fas fa-envelope"></i> Contact Us
+        <a href="/property-search/" class="home-hero-btn home-hero-btn--ghost">
+          <i class="fas fa-home"></i> Residential
+        </a>
+        <a href="/value-my-land/" class="home-hero-btn home-hero-btn--primary">
+          <i class="fas fa-arrow-right-arrow-left"></i> Sell My Land
         </a>
       </div>
 
@@ -344,6 +332,41 @@
       <i class="fas fa-chevron-down"></i>
     </div>
 
+  </section>
+
+  <!-- Nav scroll-in -->
+  <script>
+  (function() {
+    function checkNav() {
+      if (window.scrollY > 60) {
+        document.body.classList.add('nav-visible');
+      } else {
+        document.body.classList.remove('nav-visible');
+      }
+    }
+    window.addEventListener('scroll', checkNav, {passive: true});
+    checkNav();
+  })();
+  </script>
+
+  <!-- Who We Are -->
+  <section class="section about-section">
+    <div class="container">
+      <div class="about-inner">
+        <div class="about-text">
+          <span class="eyebrow">About Us</span>
+          <h2>Who We Are</h2>
+          <hr class="divider-left">
+          <p>For over 40 years, Sundgren Realty has exemplified a steadfast commitment to service, creativity, honesty and hard work. Our vast skillset is perfectly suited to guide our clients as they engage in buying and selling residential property, farm/ranch/recreational acreage, and commercial property in South Central Kansas.</p>
+          <p>We pride ourselves on our knowledge of Butler County and the surrounding counties and feel most fortunate to be located in the middle of the majestic Flint Hills &#8211; a region unlike any other!</p>
+          <p>While the real estate market has grown in value and complexity over the last several decades, one thing remains the same: our commitment to understanding your individual needs and providing exceptional real estate experiences. Our greatest reward is to help you realize your dream of ownership.</p>
+          <a href="/contact-us/" class="btn-primary">Contact Us <i class="fas fa-arrow-right" style="margin-left:6px;"></i></a>
+        </div>
+        <div>
+          <img src="/images/hero-aerial.jpg" alt="Aerial view of Kansas farmland and rural real estate - Sundgren Realty" style="width:100%;border-radius:6px;box-shadow:0 4px 24px rgba(0,0,0,.12);">
+        </div>
+      </div>
+    </div>
   </section>
 
 <!-- Listings Map -->
@@ -398,63 +421,6 @@
       </script>
       <div class="idx-viewall-wrap" style="margin-top:0;">
         <a href="/listings/" class="btn-primary">View All Listings <i class="fas fa-arrow-right" style="margin-left:6px;"></i></a>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- Nav scroll-in -->
-  <script>
-  (function() {
-    function checkNav() {
-      if (window.scrollY > 60) {
-        document.body.classList.add('nav-visible');
-      } else {
-        document.body.classList.remove('nav-visible');
-      }
-    }
-    window.addEventListener('scroll', checkNav, {passive: true});
-    checkNav();
-  })();
-  </script>
-
-  <!-- Hero video: plays once, freezes on last frame -->
-  <script>
-  (function() {
-    var vid = document.getElementById('hero-video');
-    if (!vid) return;
-    // On error or if video never loads, show fallback background
-    function showFallback() {
-      var hero = vid.closest('.home-hero');
-      if (hero) hero.style.backgroundImage = "url('/images/home-land.jpg')";
-      hero.style.backgroundPosition = 'center 60%';
-      hero.style.backgroundSize = 'cover';
-      vid.style.display = 'none';
-    }
-    vid.addEventListener('error', showFallback);
-    // Safety net: video hasn't played after 4s — show fallback
-    var safetyTimer = setTimeout(showFallback, 4000);
-    vid.addEventListener('playing', function() { clearTimeout(safetyTimer); });
-    // On end: video stays visible, frozen on last frame. Nothing to do.
-  })();
-  </script>
-
-  <!-- Who We Are -->
-  <section class="section about-section">
-    <div class="container">
-      <div class="about-inner">
-        <div class="about-text">
-          <span class="eyebrow">About Us</span>
-          <h2>Who We Are</h2>
-          <hr class="divider-left">
-          <p>For over 40 years, Sundgren Realty has exemplified a steadfast commitment to service, creativity, honesty and hard work. Our vast skillset is perfectly suited to guide our clients as they engage in buying and selling residential property, farm/ranch/recreational acreage, and commercial property in South Central Kansas.</p>
-          <p>We pride ourselves on our knowledge of Butler County and the surrounding counties and feel most fortunate to be located in the middle of the majestic Flint Hills &#8211; a region unlike any other!</p>
-          <p>While the real estate market has grown in value and complexity over the last several decades, one thing remains the same: our commitment to understanding your individual needs and providing exceptional real estate experiences. Our greatest reward is to help you realize your dream of ownership.</p>
-          <a href="/contact-us/" class="btn-primary">Contact Us <i class="fas fa-arrow-right" style="margin-left:6px;"></i></a>
-        </div>
-        <div>
-          <img src="/images/hero-aerial.jpg" alt="Aerial view of Kansas farmland and rural real estate - Sundgren Realty" style="width:100%;border-radius:6px;box-shadow:0 4px 24px rgba(0,0,0,.12);">
-        </div>
       </div>
     </div>
   </section>
