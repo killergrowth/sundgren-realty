@@ -4808,7 +4808,7 @@
     "state": "KS",
     "lat": 37.501649,
     "lng": -97.646574,
-    "price": 899000,
+    "price": 879000,
     "beds": 5,
     "baths": 3,
     "sqft": "3026",
@@ -4821,7 +4821,7 @@
     "agentName": "Bryce Jones",
     "agentPhone": "3166410878",
     "agentEmail": "",
-    "previousPrice": 925000
+    "previousPrice": 899000
   },
   {
     "slug": "24-douglas-ave-eastborough-ks-674383",
@@ -15336,7 +15336,7 @@
     "state": "KS",
     "lat": 37.317774,
     "lng": -96.89692,
-    "price": 500000,
+    "price": 349900,
     "beds": null,
     "baths": null,
     "sqft": "2,000 or Less",
@@ -15348,7 +15348,8 @@
     "isSundgren": false,
     "agentName": "Rick Hopper",
     "agentPhone": "6202293590",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 500000
   },
   {
     "slug": "209-highland-ave-chanute-ks-652151",
@@ -15543,7 +15544,7 @@
     "state": "KS",
     "lat": 38.970118,
     "lng": -97.635848,
-    "price": 499999,
+    "price": 495000,
     "beds": 5,
     "baths": 3,
     "sqft": "3284",
@@ -15555,7 +15556,8 @@
     "isSundgren": false,
     "agentName": "Kenneth Pitts",
     "agentPhone": "7858225117",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 499999
   },
   {
     "slug": "404-fielding-st-derby-ks-673973",
@@ -23049,7 +23051,7 @@
     "state": "KS",
     "lat": 38.796447,
     "lng": -97.57041,
-    "price": 410000,
+    "price": 399900,
     "beds": 3,
     "baths": 3,
     "sqft": "3890",
@@ -23061,7 +23063,8 @@
     "isSundgren": false,
     "agentName": "Todd Welsh",
     "agentPhone": "7858205900",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 410000
   },
   {
     "slug": "1024-twisted-oak-rd-derby-ks-677208",
@@ -28629,7 +28632,7 @@
     "state": "KS",
     "lat": 37.89996401,
     "lng": -96.293402,
-    "price": 375000,
+    "price": 369000,
     "beds": 2,
     "baths": 2,
     "sqft": "1056",
@@ -28641,7 +28644,8 @@
     "isSundgren": false,
     "agentName": "Becky Schaffer",
     "agentPhone": "6207500054",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 375000
   },
   {
     "slug": "917-4th-st-halstead-ks-676781",
@@ -35029,7 +35033,7 @@
     "state": "KS",
     "lat": 37.725811,
     "lng": -97.222918,
-    "price": 330000,
+    "price": 325000,
     "beds": 4,
     "baths": 4,
     "sqft": "2617",
@@ -35042,7 +35046,7 @@
     "agentName": "Lisa Waupsh Towle",
     "agentPhone": "3169926099",
     "agentEmail": "",
-    "previousPrice": 349900
+    "previousPrice": 330000
   },
   {
     "slug": "12705-hendryx-ct-wichita-ks-677327",
@@ -43024,7 +43028,7 @@
     "state": "KS",
     "lat": 37.714488,
     "lng": -97.370638,
-    "price": 300000,
+    "price": 290000,
     "beds": 3,
     "baths": 2,
     "sqft": "2489",
@@ -43036,7 +43040,8 @@
     "isSundgren": false,
     "agentName": "Garrett J Pepper",
     "agentPhone": "3169920375",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 300000
   },
   {
     "slug": "6505-44th-st-n-st-bel-aire-ks-678328",
@@ -51669,7 +51674,7 @@
     "state": "KS",
     "lat": 37.775799,
     "lng": -97.233382,
-    "price": 274900,
+    "price": 284000,
     "beds": 4,
     "baths": 2,
     "sqft": "1599",
@@ -70395,7 +70400,7 @@
     "state": "KS",
     "lat": 37.245019,
     "lng": -96.976143,
-    "price": 199000,
+    "price": 189000,
     "beds": 3,
     "baths": 2,
     "sqft": "1938",
@@ -70407,7 +70412,8 @@
     "isSundgren": false,
     "agentName": "Rick Hopper",
     "agentPhone": "6202293590",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 199000
   },
   {
     "slug": "12941-blake-st-wichita-ks-672816",
@@ -81144,7 +81150,7 @@
     "state": "KS",
     "lat": 37.238717,
     "lng": -96.978415,
-    "price": 166000,
+    "price": 159000,
     "beds": 5,
     "baths": 2,
     "sqft": "1592",
@@ -81156,7 +81162,8 @@
     "isSundgren": false,
     "agentName": "Roxann Taylor",
     "agentPhone": "6202627873",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 166000
   },
   {
     "slug": "11200-mossy-oak-dr-derby-ks-633321",
@@ -111620,7 +111627,7 @@
     "state": "KS",
     "lat": 37.44244901,
     "lng": -98.282881,
-    "price": 54900,
+    "price": 49900,
     "beds": 2,
     "baths": 1,
     "sqft": "1183",
@@ -111632,7 +111639,8 @@
     "isSundgren": false,
     "agentName": "Jessica Dreher",
     "agentPhone": "3165166931",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 54900
   },
   {
     "slug": "00000-sheridan-st-lindsborg-ks-657978",
