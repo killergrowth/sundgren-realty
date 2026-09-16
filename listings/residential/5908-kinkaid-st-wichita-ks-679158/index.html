@@ -11,14 +11,14 @@
   <link rel="apple-touch-icon" href="/images/favicon.png">
   <meta property="og:title" content="5908 Kinkaid St, Wichita, KS, 67218 – 2BD/1BA | Sundgren Realty &amp; Auction">
   <meta property="og:description" content="Residential property at 5908 Kinkaid St, Wichita, KS, 67218. NEWLY REMODELED HOME Tucked away from the city and located right across from Cessna Park sits ...">
-  <meta property="og:image" content="https://sundgrenrealty.com/images/og-image.jpg">
+  <meta property="og:image" content="https://cdn.repliers.io/southcentralkansas/IMG-679158_6707041548007708189.jpg">
   <meta property="og:url" content="https://sundgrenrealty.com/listings/residential/5908-kinkaid-st-wichita-ks-679158/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Sundgren Realty &amp; Auction">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="5908 Kinkaid St, Wichita, KS, 67218 – 2BD/1BA | Sundgren Realty &amp; Auction">
   <meta name="twitter:description" content="Residential property at 5908 Kinkaid St, Wichita, KS, 67218. NEWLY REMODELED HOME Tucked away from the city and located right across from Cessna Park sits ...">
-  <meta name="twitter:image" content="https://sundgrenrealty.com/images/og-image.jpg">
+  <meta name="twitter:image" content="https://cdn.repliers.io/southcentralkansas/IMG-679158_6707041548007708189.jpg">
   <meta name="robots" content="noindex, nofollow">
   <!-- SCHEMA:BreadcrumbList -->
   <!-- SCHEMA:WebPage -->
@@ -56,7 +56,63 @@
       <!-- Left Column -->
       <div class="auction-main">
 
+        <div class="sg-photo-pill-wrap">
+  <section class="photo-gallery-section" style="margin-bottom:24px;">
+    <div class="sg-mosaic">
+      <button class="sg-mosaic-hero" data-idx="0" aria-label="View photo 1" type="button">
+        <img src="https://cdn.repliers.io/southcentralkansas/IMG-679158_6707041548007708189.jpg" alt="Primary property photo" loading="eager">
+      </button>
+      <div class="sg-mosaic-strip">
+      <button class="sg-mosaic-thumb" data-idx="1" aria-label="View photo 2" type="button">
+        <img src="https://cdn.repliers.io/southcentralkansas/IMG-679158_6701941826515058875.jpg" alt="Property photo 2" loading="lazy">
         
+      </button>
+      <button class="sg-mosaic-thumb" data-idx="2" aria-label="View photo 3" type="button">
+        <img src="https://cdn.repliers.io/southcentralkansas/IMG-679158_6702459267670629258.jpg" alt="Property photo 3" loading="lazy">
+        
+      </button>
+      <button class="sg-mosaic-thumb" data-idx="3" aria-label="View photo 4" type="button">
+        <img src="https://cdn.repliers.io/southcentralkansas/IMG-679158_6705298848552199824.jpg" alt="Property photo 4" loading="lazy">
+        <div class="sg-mosaic-more" aria-hidden="true">+9 more</div>
+      </button>
+      </div>
+    </div>
+    <div class="sg-gallery-bar">
+      <button class="sg-gallery-all-btn" id="sg-view-all" type="button">
+        <i class="fas fa-images"></i> View all 13 photos
+      </button>
+    </div>
+  </section>
+
+  <div id="sg-lightbox" role="dialog" aria-modal="true" aria-label="Photo gallery">
+    <button id="sg-lightbox-close" aria-label="Close">&times;</button>
+    <button id="sg-lightbox-prev" aria-label="Previous">&#8249;</button>
+    <img id="sg-lightbox-img" src="" alt="Property photo">
+    <button id="sg-lightbox-next" aria-label="Next">&#8250;</button>
+    <span id="sg-lightbox-counter"></span>
+  </div>
+
+  <script>
+  (function(){
+    var srcs = ["https://cdn.repliers.io/southcentralkansas/IMG-679158_6707041548007708189.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679158_6701941826515058875.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679158_6702459267670629258.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679158_6705298848552199824.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679158_6701313749868453230.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679158_6703750109692817827.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679158_6702757609963565816.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679158_6707736706216913439.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679158_6700336054243057633.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679158_6705222478450164643.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679158_6702364419762494962.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679158_6702489398674282264.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679158_6703488920381868451.jpg"];
+    var lb = document.getElementById('sg-lightbox');
+    var lbImg = document.getElementById('sg-lightbox-img');
+    var lbCtr = document.getElementById('sg-lightbox-counter');
+    var cur = 0;
+    function open(i){ cur=i; lbImg.src=srcs[i]; lbCtr.textContent=(i+1)+' / '+srcs.length; lb.classList.add('active'); document.body.style.overflow='hidden'; }
+    function close(){ lb.classList.remove('active'); document.body.style.overflow=''; }
+    document.querySelectorAll('.sg-mosaic-hero, .sg-mosaic-thumb').forEach(function(btn){
+      btn.addEventListener('click',function(){ open(parseInt(btn.dataset.idx,10)); });
+    });
+    var viewAll = document.getElementById('sg-view-all');
+    if (viewAll) viewAll.addEventListener('click', function(){ open(0); });
+    document.getElementById('sg-lightbox-close').addEventListener('click',close);
+    document.getElementById('sg-lightbox-prev').addEventListener('click',function(){ open((cur-1+srcs.length)%srcs.length); });
+    document.getElementById('sg-lightbox-next').addEventListener('click',function(){ open((cur+1)%srcs.length); });
+    lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
+    document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
+  })();
+  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -91,7 +147,7 @@
     </div>
   </div>
 
-        <div style="margin-top:0;">
+        <div style="margin-top:32px;">
           <div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>NEWLY REMODELED HOME Tucked away from the city and located right across from Cessna Park sits your next place to call home! Offering a newer roof and adorable curb appeal, you won’t be disappointed in everything this home has to offer. Inside you will appreciate updated wood laminate flooring flowing beautifully throughout the entire house with fresh paint in every room! Kitchen features beautifully painted cabinets with updated hardware and comes fully equipped with all new kitchen appliances making an easy transition for the next new homeowner .Bathroom has been recently updated with a beautiful new vanity, sink and faucet with added shelving. Just off the living room you will find a master bedroom that serves as your own private oasis! The dinning room sliding glass door leading to the deck and Privacy Fenced backyard. Whether you are looking for a quiet place to relax or an inviting place to entertain, you won&#39;t be disappointed with the backyard size and fully wood fenced yard with plenty of mature trees. Conveniently located close to McConnell Air Force Base and plenty of dining, shopping and entertainment options, you will not want to miss this home!</p>
