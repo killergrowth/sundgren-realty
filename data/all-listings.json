@@ -6607,7 +6607,7 @@
     "state": "KS",
     "lat": 37.770355,
     "lng": -97.246103,
-    "price": 795000,
+    "price": 759000,
     "beds": 5,
     "baths": 4,
     "sqft": "5177",
@@ -6619,7 +6619,8 @@
     "isSundgren": false,
     "agentName": "Basem Krichati",
     "agentPhone": "3165160139",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 795000
   },
   {
     "slug": "3-stagecoach-ct-wichita-ks-670582",
@@ -9886,7 +9887,7 @@
     "state": "KS",
     "lat": 37.654512,
     "lng": -97.675449,
-    "price": 625000,
+    "price": 599000,
     "beds": 5,
     "baths": 4,
     "sqft": "3706",
@@ -9898,7 +9899,8 @@
     "isSundgren": false,
     "agentName": "Kooper Sanders",
     "agentPhone": "3169905740",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 625000
   },
   {
     "slug": "1656-logan-pass-andover-ks-676272",
@@ -10901,7 +10903,7 @@
     "state": "KS",
     "lat": 37.72897901,
     "lng": -97.14852896,
-    "price": 599000,
+    "price": 589000,
     "beds": 5,
     "baths": 3,
     "sqft": "3346",
@@ -10913,7 +10915,8 @@
     "isSundgren": false,
     "agentName": "Kelly Kemnitz",
     "agentPhone": "3163083717",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 599000
   },
   {
     "slug": "6906-summerside-ct-bel-aire-ks-668741",
@@ -15544,7 +15547,7 @@
     "state": "KS",
     "lat": 38.970118,
     "lng": -97.635848,
-    "price": 495000,
+    "price": 489998,
     "beds": 5,
     "baths": 3,
     "sqft": "3284",
@@ -15557,7 +15560,7 @@
     "agentName": "Kenneth Pitts",
     "agentPhone": "7858225117",
     "agentEmail": "",
-    "previousPrice": 499999
+    "previousPrice": 495000
   },
   {
     "slug": "404-fielding-st-derby-ks-673973",
@@ -23839,7 +23842,7 @@
     "state": "KS",
     "lat": 37.636555,
     "lng": -97.400342,
-    "price": 400000,
+    "price": 395000,
     "beds": 5,
     "baths": 3,
     "sqft": "2614",
@@ -23851,7 +23854,8 @@
     "isSundgren": false,
     "agentName": "James L Davis",
     "agentPhone": "3165162940",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 400000
   },
   {
     "slug": "11806-alderny-ct-wichita-ks-677040",
@@ -25689,7 +25693,7 @@
     "state": "KS",
     "lat": 37.727728,
     "lng": -97.4492,
-    "price": 390000,
+    "price": 379900,
     "beds": 4,
     "baths": 3,
     "sqft": "2623",
@@ -25701,7 +25705,8 @@
     "isSundgren": false,
     "agentName": "Ronda Tackett",
     "agentPhone": "3162143313",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 390000
   },
   {
     "slug": "1515-spring-hollow-cir-wichita-ks-677770",
@@ -37044,7 +37049,7 @@
     "state": "KS",
     "lat": 37.713414,
     "lng": -97.134997,
-    "price": 342719,
+    "price": 344799,
     "beds": 3,
     "baths": 2,
     "sqft": "1402",
@@ -40510,7 +40515,7 @@
     "state": "KS",
     "lat": 37.795699,
     "lng": -97.285172,
-    "price": 319900,
+    "price": 315900,
     "beds": 4,
     "baths": 2,
     "sqft": "2678",
@@ -40522,7 +40527,8 @@
     "isSundgren": false,
     "agentName": "Michael Crow",
     "agentPhone": "3166186591",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 319900
   },
   {
     "slug": "1403-meridian-rd-peck-ks-677764",
@@ -50240,7 +50246,7 @@
     "state": "KS",
     "lat": 37.67242,
     "lng": -97.2001,
-    "price": 276000,
+    "price": 273000,
     "beds": 3,
     "baths": 2,
     "sqft": "1878",
@@ -50252,7 +50258,8 @@
     "isSundgren": false,
     "agentName": "Chi M McKanlam",
     "agentPhone": "3168062859",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 276000
   },
   {
     "slug": "2819-rutland-ln-augusta-ks-669901",
@@ -67884,7 +67891,7 @@
     "state": "KS",
     "lat": 38.806407,
     "lng": -97.621851,
-    "price": 208750,
+    "price": 199900,
     "beds": 3,
     "baths": 2,
     "sqft": "1443",
@@ -67896,7 +67903,8 @@
     "isSundgren": false,
     "agentName": "Chris Dawson",
     "agentPhone": "8163929955",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 208750
   },
   {
     "slug": "lot-4-mills-estates-andover-ks-667003",
@@ -84086,7 +84094,7 @@
     "state": "KS",
     "lat": 37.550885,
     "lng": -97.267624,
-    "price": 163900,
+    "price": 163800,
     "beds": 3,
     "baths": 1,
     "sqft": "1250",
@@ -84099,7 +84107,7 @@
     "agentName": "Dawn R Wade",
     "agentPhone": "3168061060",
     "agentEmail": "",
-    "previousPrice": 164000
+    "previousPrice": 163900
   },
   {
     "slug": "515-g-st-wellington-ks-676894",
@@ -85822,7 +85830,7 @@
     "state": "KS",
     "lat": 38.03163,
     "lng": -97.353007,
-    "price": 150000,
+    "price": 142500,
     "beds": 3,
     "baths": 3,
     "sqft": "2037",
@@ -85834,7 +85842,8 @@
     "isSundgren": false,
     "agentName": "Su H Fox",
     "agentPhone": "3166811313",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 150000
   },
   {
     "slug": "303-2nd-st-arkansas-city-ks-676852",
@@ -92328,7 +92337,7 @@
     "state": "KS",
     "lat": 37.90119891,
     "lng": -97.78123938,
-    "price": 124900,
+    "price": 119900,
     "beds": 2,
     "baths": 1,
     "sqft": "948",
@@ -92341,7 +92350,7 @@
     "agentName": "Jessica Schmidt",
     "agentPhone": "6202811800",
     "agentEmail": "",
-    "previousPrice": 130000
+    "previousPrice": 124900
   },
   {
     "slug": "1147-main-st-wichita-ks-678295",

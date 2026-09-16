@@ -63,12 +63,23 @@
         <img src="https://cdn.repliers.io/southcentralkansas/IMG-671383_6702410723150855570.jpg" alt="Primary property photo" loading="eager">
       </button>
       <div class="sg-mosaic-strip">
-
+      <button class="sg-mosaic-thumb" data-idx="1" aria-label="View photo 2" type="button">
+        <img src="https://cdn.repliers.io/southcentralkansas/IMG-671383_6700736037043427147.jpg" alt="Property photo 2" loading="lazy">
+        
+      </button>
+      <button class="sg-mosaic-thumb" data-idx="2" aria-label="View photo 3" type="button">
+        <img src="https://cdn.repliers.io/southcentralkansas/IMG-671383_6704291576408438084.jpg" alt="Property photo 3" loading="lazy">
+        
+      </button>
+      <button class="sg-mosaic-thumb" data-idx="3" aria-label="View photo 4" type="button">
+        <img src="https://cdn.repliers.io/southcentralkansas/IMG-671383_6701768473645406029.jpg" alt="Property photo 4" loading="lazy">
+        <div class="sg-mosaic-more" aria-hidden="true">+16 more</div>
+      </button>
       </div>
     </div>
     <div class="sg-gallery-bar">
       <button class="sg-gallery-all-btn" id="sg-view-all" type="button">
-        <i class="fas fa-images"></i> View all 1 photo
+        <i class="fas fa-images"></i> View all 20 photos
       </button>
     </div>
   </section>
@@ -83,7 +94,7 @@
 
   <script>
   (function(){
-    var srcs = ["https://cdn.repliers.io/southcentralkansas/IMG-671383_6702410723150855570.jpg"];
+    var srcs = ["https://cdn.repliers.io/southcentralkansas/IMG-671383_6702410723150855570.jpg","https://cdn.repliers.io/southcentralkansas/IMG-671383_6700736037043427147.jpg","https://cdn.repliers.io/southcentralkansas/IMG-671383_6704291576408438084.jpg","https://cdn.repliers.io/southcentralkansas/IMG-671383_6701768473645406029.jpg","https://cdn.repliers.io/southcentralkansas/IMG-671383_6708867543086668719.jpg","https://cdn.repliers.io/southcentralkansas/IMG-671383_6703373561388363941.jpg","https://cdn.repliers.io/southcentralkansas/IMG-671383_6705283341089203418.jpg","https://cdn.repliers.io/southcentralkansas/IMG-671383_6709959545458724199.jpg","https://cdn.repliers.io/southcentralkansas/IMG-671383_6706673995851552782.jpg","https://cdn.repliers.io/southcentralkansas/IMG-671383_6705250207057826147.jpg","https://cdn.repliers.io/southcentralkansas/IMG-671383_6709804665182569144.jpg","https://cdn.repliers.io/southcentralkansas/IMG-671383_6706884792886632946.jpg","https://cdn.repliers.io/southcentralkansas/IMG-671383_6708136354036790544.jpg","https://cdn.repliers.io/southcentralkansas/IMG-671383_6703076396878583048.jpg","https://cdn.repliers.io/southcentralkansas/IMG-671383_6704225386020125775.jpg","https://cdn.repliers.io/southcentralkansas/IMG-671383_6704683470966003962.jpg","https://cdn.repliers.io/southcentralkansas/IMG-671383_6703421689355723206.jpg","https://cdn.repliers.io/southcentralkansas/IMG-671383_6705403024472300548.jpg","https://cdn.repliers.io/southcentralkansas/IMG-671383_6700229100973648736.jpg","https://cdn.repliers.io/southcentralkansas/IMG-671383_6705472834783903664.jpg"];
     var lb = document.getElementById('sg-lightbox');
     var lbImg = document.getElementById('sg-lightbox-img');
     var lbCtr = document.getElementById('sg-lightbox-counter');
@@ -184,9 +195,9 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
     (function(){
-      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.604103,-97.142241],15);
+      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.60416,-97.142247],15);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap contributors',maxZoom:19}).addTo(map);
-      L.marker([37.604103,-97.142241]).addTo(map).bindPopup('3414 Deer Rdg, Rose Hill, KS 67133').openPopup();
+      L.marker([37.60416,-97.142247]).addTo(map).bindPopup('3414 Deer Rdg, Rose Hill, KS 67133').openPopup();
     })();
     </script>
   </div>

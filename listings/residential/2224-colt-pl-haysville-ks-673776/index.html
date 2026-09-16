@@ -67,11 +67,19 @@
         <img src="https://cdn.repliers.io/southcentralkansas/IMG-673776_6702719460558878803.jpg" alt="Property photo 2" loading="lazy">
         
       </button>
+      <button class="sg-mosaic-thumb" data-idx="2" aria-label="View photo 3" type="button">
+        <img src="https://cdn.repliers.io/southcentralkansas/IMG-673776_6700766617603243057.jpg" alt="Property photo 3" loading="lazy">
+        
+      </button>
+      <button class="sg-mosaic-thumb" data-idx="3" aria-label="View photo 4" type="button">
+        <img src="https://cdn.repliers.io/southcentralkansas/IMG-673776_6704304663041313403.jpg" alt="Property photo 4" loading="lazy">
+        <div class="sg-mosaic-more" aria-hidden="true">+13 more</div>
+      </button>
       </div>
     </div>
     <div class="sg-gallery-bar">
       <button class="sg-gallery-all-btn" id="sg-view-all" type="button">
-        <i class="fas fa-images"></i> View all 2 photos
+        <i class="fas fa-images"></i> View all 17 photos
       </button>
     </div>
   </section>
@@ -86,7 +94,7 @@
 
   <script>
   (function(){
-    var srcs = ["https://cdn.repliers.io/southcentralkansas/IMG-673776_6703284008259735980.jpg","https://cdn.repliers.io/southcentralkansas/IMG-673776_6702719460558878803.jpg"];
+    var srcs = ["https://cdn.repliers.io/southcentralkansas/IMG-673776_6703284008259735980.jpg","https://cdn.repliers.io/southcentralkansas/IMG-673776_6702719460558878803.jpg","https://cdn.repliers.io/southcentralkansas/IMG-673776_6700766617603243057.jpg","https://cdn.repliers.io/southcentralkansas/IMG-673776_6704304663041313403.jpg","https://cdn.repliers.io/southcentralkansas/IMG-673776_6701971097133030170.jpg","https://cdn.repliers.io/southcentralkansas/IMG-673776_6705241315238566084.jpg","https://cdn.repliers.io/southcentralkansas/IMG-673776_6701353339067586924.jpg","https://cdn.repliers.io/southcentralkansas/IMG-673776_6701272072638876891.jpg","https://cdn.repliers.io/southcentralkansas/IMG-673776_6709465517891300360.jpg","https://cdn.repliers.io/southcentralkansas/IMG-673776_6703662714665858440.jpg","https://cdn.repliers.io/southcentralkansas/IMG-673776_6705942215804650878.jpg","https://cdn.repliers.io/southcentralkansas/IMG-673776_6701367545349688808.jpg","https://cdn.repliers.io/southcentralkansas/IMG-673776_6705821663528837569.jpg","https://cdn.repliers.io/southcentralkansas/IMG-673776_6703996348349025938.jpg","https://cdn.repliers.io/southcentralkansas/IMG-673776_6705295944141103548.jpg","https://cdn.repliers.io/southcentralkansas/IMG-673776_6703640380299995644.jpg","https://cdn.repliers.io/southcentralkansas/IMG-673776_6709361886734575604.jpg"];
     var lb = document.getElementById('sg-lightbox');
     var lbImg = document.getElementById('sg-lightbox-img');
     var lbCtr = document.getElementById('sg-lightbox-counter');
@@ -187,9 +195,9 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
     (function(){
-      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.557698,-97.376509],15);
+      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.55755892,-97.37648162],15);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap contributors',maxZoom:19}).addTo(map);
-      L.marker([37.557698,-97.376509]).addTo(map).bindPopup('2224 Colt Pl, Haysville, KS 67060').openPopup();
+      L.marker([37.55755892,-97.37648162]).addTo(map).bindPopup('2224 Colt Pl, Haysville, KS 67060').openPopup();
     })();
     </script>
   </div>
