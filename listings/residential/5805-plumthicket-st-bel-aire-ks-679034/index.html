@@ -101,7 +101,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -137,7 +137,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>BRAND-NEW CONSTRUCTION WITH A 3-CAR GARAGE! Welcome home to this thoughtfully designed 4-bedroom, 2-bath home offering 1,851 sq. ft. of comfortable, open-concept living space. The spacious kitchen flows seamlessly into the main living area and features granite countertops, a large center island, plenty of cabinet space, and all kitchen appliances included. Vaulted ceilings in the living area create an open and inviting feel with plenty of room for everyday living and entertaining. The private primary suite is tucked away from the additional bedrooms and features a vaulted ceiling, private bathroom, and generous closet space. Three additional bedrooms provide plenty of flexibility for family, guests, or a home office. Enjoy LVP flooring throughout the main living areas with comfortable carpet in the bedrooms, along with window blinds already included. The home also comes complete with a washer and dryer, making it truly move-in ready. Outside, enjoy the patio and the added convenience of a spacious 3-car garage, providing plenty of room for vehicles, storage, tools, or recreational equipment. For added safety and peace of mind, this home also includes a FEMA-rated storm shelter. With 1,851 sq. ft., 4 bedrooms, 2 bathrooms, a 3-car garage, granite countertops, full appliance package, washer and dryer, window blinds, and a FEMA-rated storm shelter, this brand-new home offers tremendous value with many of the extras already included. Schedule your private showing today!</p>
     </div>
@@ -190,8 +192,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -201,13 +203,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="5805 Plumthicket St, Bel Aire, KS, 67226">
-        <input type="hidden" name="message" value="I am interested in the property at 5805 Plumthicket St, Bel Aire, KS, 67226 (MLS# 679034). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 5805 Plumthicket St, Bel Aire, KS, 67226 (MLS# 679034). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

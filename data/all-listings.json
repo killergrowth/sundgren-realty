@@ -3562,7 +3562,7 @@
     "state": "KS",
     "lat": 37.744375,
     "lng": -97.199295,
-    "price": 1255545,
+    "price": 1276170,
     "beds": 5,
     "baths": 7,
     "sqft": "4469",
@@ -5846,7 +5846,7 @@
     "state": "KS",
     "lat": 37.736439,
     "lng": -97.231504,
-    "price": 849000,
+    "price": 819000,
     "beds": 5,
     "baths": 5,
     "sqft": "4522",
@@ -5858,7 +5858,8 @@
     "isSundgren": false,
     "agentName": "Pamela Chyba",
     "agentPhone": "8554564945",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 849000
   },
   {
     "slug": "1440-gatewood-st-wichita-ks-674508",
@@ -12451,7 +12452,7 @@
     "state": "KS",
     "lat": 37.686841,
     "lng": -97.287764,
-    "price": 560000,
+    "price": 555000,
     "beds": 4,
     "baths": 3,
     "sqft": "2892",
@@ -12463,7 +12464,8 @@
     "isSundgren": false,
     "agentName": "Nancy Shih",
     "agentPhone": "3169921108",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 560000
   },
   {
     "slug": "1768-road-11-howard-ks-674910",
@@ -17210,7 +17212,7 @@
     "state": "KS",
     "lat": 37.666453,
     "lng": -97.132388,
-    "price": 475000,
+    "price": 459900,
     "beds": 3,
     "baths": 3,
     "sqft": "3624",
@@ -17222,7 +17224,8 @@
     "isSundgren": false,
     "agentName": "Joseph Hamer",
     "agentPhone": "3162134986",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 475000
   },
   {
     "slug": "101-main-st-lindsborg-ks-677693",
@@ -29544,7 +29547,7 @@
     "state": "KS",
     "lat": 37.767045,
     "lng": -97.314407,
-    "price": 374900,
+    "price": 365000,
     "beds": 5,
     "baths": 3,
     "sqft": "2772",
@@ -29556,7 +29559,8 @@
     "isSundgren": false,
     "agentName": "Amanda L Levin",
     "agentPhone": "3163034835",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 374900
   },
   {
     "slug": "6900-hollywood-st-wichita-ks-677504",
@@ -47246,7 +47250,7 @@
     "state": "KS",
     "lat": 37.50660961,
     "lng": -97.49467073,
-    "price": 287000,
+    "price": 262000,
     "beds": 4,
     "baths": 2,
     "sqft": "1418",
@@ -47258,7 +47262,8 @@
     "isSundgren": false,
     "agentName": "Bryan Hazen",
     "agentPhone": "3163123405",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 287000
   },
   {
     "slug": "2102-colt-pl-haysville-ks-673768",
@@ -67033,7 +67038,7 @@
     "state": "KS",
     "lat": 37.676338,
     "lng": -97.38716,
-    "price": 210000,
+    "price": 199900,
     "beds": 3,
     "baths": 2,
     "sqft": "1186",
@@ -67045,7 +67050,8 @@
     "isSundgren": false,
     "agentName": "Kooper Sanders",
     "agentPhone": "3169905740",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 210000
   },
   {
     "slug": "737-harvard-ave-el-dorado-ks-677313",
@@ -103163,7 +103169,7 @@
     "state": "KS",
     "lat": 37.254437,
     "lng": -98.221604,
-    "price": 89000,
+    "price": 85000,
     "beds": 3,
     "baths": 2,
     "sqft": "2178",
@@ -103175,7 +103181,8 @@
     "isSundgren": false,
     "agentName": "Megan Inslee",
     "agentPhone": "6202432938",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 89000
   },
   {
     "slug": "3165-clifton-ave-wichita-ks-676856",
@@ -105514,7 +105521,7 @@
     "state": "KS",
     "lat": 37.07724,
     "lng": -97.050042,
-    "price": 76000,
+    "price": 72500,
     "beds": 3,
     "baths": 1,
     "sqft": "1072",
@@ -105526,7 +105533,8 @@
     "isSundgren": false,
     "agentName": "Alicia Vargas",
     "agentPhone": "6204024709",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 76000
   },
   {
     "slug": "1308-market-st-wichita-ks-669019",
@@ -113597,7 +113605,7 @@
     "state": "KS",
     "lat": 38.26739889,
     "lng": -98.40630195,
-    "price": 44900,
+    "price": 39900,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -113609,7 +113617,8 @@
     "isSundgren": false,
     "agentName": "Jeffrey Richardson",
     "agentPhone": "3167776620",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 44900
   },
   {
     "slug": "lot-16-block-b-sterling-east-add-derby-ks-663140",
