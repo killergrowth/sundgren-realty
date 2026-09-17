@@ -22938,7 +22938,7 @@
     "state": "KS",
     "lat": 37.78803,
     "lng": -97.375642,
-    "price": 414000,
+    "price": 409500,
     "beds": 5,
     "baths": 3,
     "sqft": "2628",
@@ -22950,7 +22950,8 @@
     "isSundgren": false,
     "agentName": "Alec Davis",
     "agentPhone": "3169906585",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 414000
   },
   {
     "slug": "314-bay-country-st-wichita-ks-676302",
@@ -104384,7 +104385,7 @@
     "state": "KS",
     "lat": 37.63933,
     "lng": -97.289855,
-    "price": 82000,
+    "price": 75000,
     "beds": 3,
     "baths": 1,
     "sqft": "768",
@@ -104396,7 +104397,8 @@
     "isSundgren": false,
     "agentName": "Glenda Flores",
     "agentPhone": "3165191738",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 82000
   },
   {
     "slug": "lot-2-cottonwood-estates-clearwater-ks-669822",

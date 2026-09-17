@@ -63,12 +63,23 @@
         <img src="https://cdn.repliers.io/southcentralkansas/IMG-678896_6708924598287624189.jpg" alt="Primary property photo" loading="eager">
       </button>
       <div class="sg-mosaic-strip">
-
+      <button class="sg-mosaic-thumb" data-idx="1" aria-label="View photo 2" type="button">
+        <img src="https://cdn.repliers.io/southcentralkansas/IMG-678896_6701928668360796114.jpg" alt="Property photo 2" loading="lazy">
+        
+      </button>
+      <button class="sg-mosaic-thumb" data-idx="2" aria-label="View photo 3" type="button">
+        <img src="https://cdn.repliers.io/southcentralkansas/IMG-678896_6706081324299342375.jpg" alt="Property photo 3" loading="lazy">
+        
+      </button>
+      <button class="sg-mosaic-thumb" data-idx="3" aria-label="View photo 4" type="button">
+        <img src="https://cdn.repliers.io/southcentralkansas/IMG-678896_6703510311929319039.jpg" alt="Property photo 4" loading="lazy">
+        <div class="sg-mosaic-more" aria-hidden="true">+16 more</div>
+      </button>
       </div>
     </div>
     <div class="sg-gallery-bar">
       <button class="sg-gallery-all-btn" id="sg-view-all" type="button">
-        <i class="fas fa-images"></i> View all 1 photo
+        <i class="fas fa-images"></i> View all 20 photos
       </button>
     </div>
   </section>
@@ -83,7 +94,7 @@
 
   <script>
   (function(){
-    var srcs = ["https://cdn.repliers.io/southcentralkansas/IMG-678896_6708924598287624189.jpg"];
+    var srcs = ["https://cdn.repliers.io/southcentralkansas/IMG-678896_6708924598287624189.jpg","https://cdn.repliers.io/southcentralkansas/IMG-678896_6701928668360796114.jpg","https://cdn.repliers.io/southcentralkansas/IMG-678896_6706081324299342375.jpg","https://cdn.repliers.io/southcentralkansas/IMG-678896_6703510311929319039.jpg","https://cdn.repliers.io/southcentralkansas/IMG-678896_6702524165972269775.jpg","https://cdn.repliers.io/southcentralkansas/IMG-678896_6708544584942644112.jpg","https://cdn.repliers.io/southcentralkansas/IMG-678896_6707602515552218526.jpg","https://cdn.repliers.io/southcentralkansas/IMG-678896_6702589857889760541.jpg","https://cdn.repliers.io/southcentralkansas/IMG-678896_6703464479602347376.jpg","https://cdn.repliers.io/southcentralkansas/IMG-678896_6702313038049935378.jpg","https://cdn.repliers.io/southcentralkansas/IMG-678896_6708190289616483425.jpg","https://cdn.repliers.io/southcentralkansas/IMG-678896_6706838210885355361.jpg","https://cdn.repliers.io/southcentralkansas/IMG-678896_6702201890657331888.jpg","https://cdn.repliers.io/southcentralkansas/IMG-678896_6703344697767760087.jpg","https://cdn.repliers.io/southcentralkansas/IMG-678896_6704813812816475402.jpg","https://cdn.repliers.io/southcentralkansas/IMG-678896_6707828253268142539.jpg","https://cdn.repliers.io/southcentralkansas/IMG-678896_6707644014214316389.jpg","https://cdn.repliers.io/southcentralkansas/IMG-678896_6706710692947863401.jpg","https://cdn.repliers.io/southcentralkansas/IMG-678896_6701894478992239520.jpg","https://cdn.repliers.io/southcentralkansas/IMG-678896_6703874533774113017.jpg"];
     var lb = document.getElementById('sg-lightbox');
     var lbImg = document.getElementById('sg-lightbox-img');
     var lbCtr = document.getElementById('sg-lightbox-counter');
@@ -184,9 +195,9 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
     (function(){
-      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.734175,-97.273963],15);
+      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.734173,-97.273963],15);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap contributors',maxZoom:19}).addTo(map);
-      L.marker([37.734175,-97.273963]).addTo(map).bindPopup('2810 Beacon Hill Street, Wichita, KS 67220').openPopup();
+      L.marker([37.734173,-97.273963]).addTo(map).bindPopup('2810 Beacon Hill Street, Wichita, KS 67220').openPopup();
     })();
     </script>
   </div>
