@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-terminated pill">Inactive</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -143,7 +143,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>LIVE w/ONLINE BIDDING AUCTION: 1485 N. D Rd., Peck, KS Bidding Opens: September 5, 2026, at 2:00 PM Bidding Closes: September 12, 2026, at 12:00 PM (Noon) This complete property package spans two parcels totaling over 1 acre (45,500 sq. ft.) in the Mulvane School District! The main parcel features a single-story 1,358 sq. ft. home offering 4 bedrooms, 2 full bathrooms, central HVAC, a wood deck, a 24&#39; X 20&#39; detached garage, and a 20&#39; X 18&#39; Carport. Directly across the alley, the sale includes an expansive 31,500 sqft. bonus parcel equipped with a 30&#39; X 20&#39; detached shop/garage and a secondary 20&#39; X 12&#39; garage/outbuilding! Fantastic setup for mechanics, hobbyists, investors, or anyone needing extra land and workshop space in a quiet small-town setting. Property &amp; Package Highlights: • Main Residence: 1,358 sq. ft., 4 Bedrooms, 2 Full Bathrooms, central HVAC • 1.04+ Total Acres: Includes the home lot ($14,000$ sq. ft.) AND a large bonus parcel ($31,500$ sq. ft.) directly across the alley • 3 Garages &amp; Shops: 24&#39; X 20&#39; Detached Garage (480 sq. ft.) 30&#39; X 20&#39; Shop / Detached Garage (600 sq. ft.) 20&#39; X 12&#39; Additional Outbuilding (240 sq. ft.) 20&#39; X 18&#39; Carport • Wood deck &amp; open porch space for relaxed small-town living</p>
     </div>
@@ -200,8 +202,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -211,13 +213,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="1485 D. Rd, Peck, KS, 67120">
-        <input type="hidden" name="message" value="I am interested in the property at 1485 D. Rd, Peck, KS, 67120 (MLS# 677101). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 1485 D. Rd, Peck, KS, 67120 (MLS# 677101). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

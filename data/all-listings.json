@@ -20833,7 +20833,7 @@
     "state": "KS",
     "lat": 37.57859601,
     "lng": -97.29792297,
-    "price": 435000,
+    "price": 430000,
     "beds": 5,
     "baths": 3,
     "sqft": "2903",
@@ -20845,7 +20845,8 @@
     "isSundgren": false,
     "agentName": "Brittanie Pechin",
     "agentPhone": "3163084623",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 435000
   },
   {
     "slug": "1254-osage-rd-mulvane-ks-674413",
@@ -84096,7 +84097,7 @@
     "state": "KS",
     "lat": 37.550885,
     "lng": -97.267624,
-    "price": 163800,
+    "price": 163700,
     "beds": 3,
     "baths": 1,
     "sqft": "1250",
@@ -84109,7 +84110,7 @@
     "agentName": "Dawn R Wade",
     "agentPhone": "3168061060",
     "agentEmail": "",
-    "previousPrice": 163900
+    "previousPrice": 163800
   },
   {
     "slug": "515-g-st-wellington-ks-676894",
