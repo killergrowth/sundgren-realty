@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>***MOTIVATED SELLER***Loaded with character and extensive upgrades, this beautifully remodeled home in the highly sought-after Andover School District offers space, privacy, and exceptional flexibility all with NO HOA! Featuring 5 bedrooms, a bonus room, and 2.5 bathrooms, this move-in-ready property sits on nearly one acre across two lots, a rare find within city limits, offering a unique level of space and privacy. The additional lot is included in the sale, providing endless potential for a sports court, soccer field, playground, garden, workshop, outbuilding, or an incredible outdoor entertaining space tailored to your vision. . The sellers have invested over $100,000 in upgrades, making this home truly turnkey. Recent improvements include a remodeled kitchen with quartz countertops, pull-out pantry storage, and a stylish backsplash, along with a remodeled basement, new roof, carpets, doors, windows, siding, flooring, A/C, and water heater. Inside, you&#39;ll find spacious living areas, two fireplaces and thoughtful updates throughout. Step outside to enjoy the covered patio, or unwind on the private deck off the primary bedroom overlooking the expansive backyard. The outdoor space is equally impressive, featuring Mature trees, a fenced yard, and two sheds with electricity ideal for storage, hobbies, or workshop use. Located on a quiet cul-de-sac within city limits and within walking distance to Andover Middle School and Andover High School, combining convenience with a peaceful setting. This is a rare opportunity to own a large, fully updated home with exceptional land, privacy, and room to grow in the award-winning Andover School District.</p>
     </div>
@@ -191,9 +193,9 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
     (function(){
-      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.71941,-97.135557],15);
+      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.71943397,-97.13587787],15);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap contributors',maxZoom:19}).addTo(map);
-      L.marker([37.71941,-97.135557]).addTo(map).bindPopup('114 Pine View Drive, Andover, KS 67002').openPopup();
+      L.marker([37.71943397,-97.13587787]).addTo(map).bindPopup('114 Pine View Drive, Andover, KS 67002').openPopup();
     })();
     </script>
   </div>
@@ -201,8 +203,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -212,13 +214,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="114 Pine View Drive, Andover, KS, 67002">
-        <input type="hidden" name="message" value="I am interested in the property at 114 Pine View Drive, Andover, KS, 67002 (MLS# 675210). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 114 Pine View Drive, Andover, KS, 67002 (MLS# 675210). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
