@@ -8799,7 +8799,7 @@
     "state": "KS",
     "lat": 37.70142,
     "lng": -97.194574,
-    "price": 639000,
+    "price": 610000,
     "beds": 5,
     "baths": 5,
     "sqft": "3720",
@@ -8812,7 +8812,7 @@
     "agentName": "Lisa Soltesz",
     "agentPhone": "6233881135",
     "agentEmail": "",
-    "previousPrice": 670000
+    "previousPrice": 639000
   },
   {
     "slug": "19447-meadowlark-rd-rose-hill-ks-672873",
@@ -12778,7 +12778,7 @@
     "state": "KS",
     "lat": 37.679733,
     "lng": -97.529412,
-    "price": 550000,
+    "price": 543000,
     "beds": 6,
     "baths": 4,
     "sqft": "3456",
@@ -12790,7 +12790,8 @@
     "isSundgren": false,
     "agentName": "Angela Slaughter",
     "agentPhone": "3165199005",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 550000
   },
   {
     "slug": "914-cypress-ct-wichita-ks-670214",
@@ -18826,7 +18827,7 @@
     "state": "KS",
     "lat": 37.687396,
     "lng": -97.570508,
-    "price": 454900,
+    "price": 445000,
     "beds": 5,
     "baths": 4,
     "sqft": "3642",
@@ -18838,7 +18839,8 @@
     "isSundgren": false,
     "agentName": "Denise Lewis",
     "agentPhone": "3163714081",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 454900
   },
   {
     "slug": "1634-forestview-st-wichita-ks-656786",
@@ -22272,7 +22274,7 @@
     "state": "KS",
     "lat": 37.098895,
     "lng": -97.018337,
-    "price": 420000,
+    "price": 400000,
     "beds": 2,
     "baths": 1,
     "sqft": "1132",
@@ -22284,7 +22286,8 @@
     "isSundgren": false,
     "agentName": "Candace N Hendricks",
     "agentPhone": "6206600844",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 420000
   },
   {
     "slug": "3131-forest-lakes-ct-wichita-ks-673602",
@@ -25652,7 +25655,7 @@
     "state": "KS",
     "lat": 38.143992,
     "lng": -97.64613,
-    "price": 390000,
+    "price": 375000,
     "beds": 4,
     "baths": 2,
     "sqft": "2506",
@@ -25664,7 +25667,8 @@
     "isSundgren": false,
     "agentName": "Madilynn Burt",
     "agentPhone": "7854169428",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 390000
   },
   {
     "slug": "727-goldspike-newton-ks-677988",
@@ -28571,7 +28575,7 @@
     "state": "KS",
     "lat": 37.416313,
     "lng": -97.276656,
-    "price": 374000,
+    "price": 350000,
     "beds": 3,
     "baths": 2,
     "sqft": "1746",
@@ -28584,7 +28588,7 @@
     "agentName": "Jarod C Gillenwater",
     "agentPhone": "3165501970",
     "agentEmail": "",
-    "previousPrice": 375000
+    "previousPrice": 374000
   },
   {
     "slug": "413-cranmer-st-conway-springs-ks-677130",
@@ -31769,7 +31773,7 @@
     "state": "KS",
     "lat": 38.209786,
     "lng": -98.202552,
-    "price": 365000,
+    "price": 355000,
     "beds": 4,
     "baths": 3,
     "sqft": "2240",
@@ -31781,7 +31785,8 @@
     "isSundgren": false,
     "agentName": "Shirley J Lebien",
     "agentPhone": "6204747100",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 365000
   },
   {
     "slug": "2880-ofelia-st-valley-center-ks-674902",
@@ -54136,7 +54141,7 @@
     "state": "KS",
     "lat": 37.676386,
     "lng": -97.487766,
-    "price": 264000,
+    "price": 259000,
     "beds": 3,
     "baths": 3,
     "sqft": "1760",
@@ -54148,7 +54153,8 @@
     "isSundgren": false,
     "agentName": "Kerri Hageman",
     "agentPhone": "3164616692",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 264000
   },
   {
     "slug": "1383-caddy-ln-wichita-ks-676816",
@@ -59830,7 +59836,7 @@
     "state": "KS",
     "lat": 37.792582,
     "lng": -97.629858,
-    "price": 239000,
+    "price": 229000,
     "beds": 4,
     "baths": 2,
     "sqft": "1936",
@@ -59842,7 +59848,8 @@
     "isSundgren": false,
     "agentName": "Amanda Treadwell",
     "agentPhone": "3164616962",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 239000
   },
   {
     "slug": "300-7th-st-lincolnville-ks-674896",
@@ -80774,7 +80781,7 @@
     "state": "KS",
     "lat": 39.013324,
     "lng": -97.971961,
-    "price": 169000,
+    "price": 162000,
     "beds": 3,
     "baths": 2,
     "sqft": "1534",
@@ -80786,7 +80793,8 @@
     "isSundgren": false,
     "agentName": "Terri Hostetler",
     "agentPhone": "7858190350",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 169000
   },
   {
     "slug": "2-crown-cir-anthony-ks-672313",
@@ -98305,7 +98313,7 @@
     "state": "KS",
     "lat": 37.055341,
     "lng": -97.04734,
-    "price": 112500,
+    "price": 99000,
     "beds": 2,
     "baths": 1,
     "sqft": "1518",
@@ -98317,7 +98325,8 @@
     "isSundgren": false,
     "agentName": "Bonnie L Niles",
     "agentPhone": "6204417592",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 112500
   },
   {
     "slug": "2027-gold-st-wichita-ks-676841",
@@ -102824,7 +102833,7 @@
     "state": "KS",
     "lat": 38.819694,
     "lng": -97.623479,
-    "price": 89900,
+    "price": 79900,
     "beds": 2,
     "baths": 1,
     "sqft": "1043",
@@ -102836,7 +102845,8 @@
     "isSundgren": false,
     "agentName": "Terri Hostetler",
     "agentPhone": "7858190350",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 89900
   },
   {
     "slug": "1717-cypress-st-1522-st-wichita-ks-673060",
