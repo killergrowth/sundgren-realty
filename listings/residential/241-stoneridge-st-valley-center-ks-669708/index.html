@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-terminated pill">Inactive</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>*As of 6/24 new carpet throughout home, painted bedrooms upstairs and painted deck. Beautiful Ranch Home in Prairie Lakes – Spacious &amp; Move-In Ready Welcome home to this spacious ranch-style property located in the desirable Prairie Lakes neighborhood of Valley Center. Built in 2008, this well-maintained home offers approximately 2,213 square feet of living space with 4 bedrooms and 3 full bathrooms, providing plenty of room for both everyday living and entertaining. The main floor features an open and inviting layout with vaulted ceilings and abundant natural light. The kitchen offers ample cabinet space, an eating bar island, and convenient access to the dining area with sliding doors leading to the backyard deck—perfect for gatherings or relaxing outdoors. A main-level laundry room adds everyday convenience. The primary suite includes a private en-suite bathroom and walk-in closet, while additional bedrooms provide generous space for family, guests, or a home office. The finished basement expands the living area with a large family room, fireplace, wet bar, and additional bedrooms, making it an ideal space for entertaining or movie nights. Step outside to enjoy the fully fenced backyard with a spacious deck, storage shed, and sprinkler system, perfect for outdoor living. An attached two-car garage completes this home’s practical layout. Located close to local amenities, parks, schools, shopping, and dining, this home offers the perfect combination of quiet neighborhood living with convenient access to everything Valley Center has to offer.</p>
     </div>
@@ -205,8 +207,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -216,13 +218,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="241 Stoneridge St, Valley Center, KS, 67147">
-        <input type="hidden" name="message" value="I am interested in the property at 241 Stoneridge St, Valley Center, KS, 67147 (MLS# 669708). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 241 Stoneridge St, Valley Center, KS, 67147 (MLS# 669708). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

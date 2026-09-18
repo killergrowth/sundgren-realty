@@ -19799,7 +19799,7 @@
     "state": "KS",
     "lat": 37.795037,
     "lng": -97.309014,
-    "price": 449500,
+    "price": 439500,
     "beds": 3,
     "baths": 3,
     "sqft": "1928",
@@ -19811,7 +19811,8 @@
     "isSundgren": false,
     "agentName": "Angie Vailas",
     "agentPhone": "3166507251",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 449500
   },
   {
     "slug": "134-emporia-ave-valley-center-ks-678347",
@@ -84116,7 +84117,7 @@
     "state": "KS",
     "lat": 37.550885,
     "lng": -97.267624,
-    "price": 163700,
+    "price": 163600,
     "beds": 3,
     "baths": 1,
     "sqft": "1250",
@@ -84129,7 +84130,7 @@
     "agentName": "Dawn R Wade",
     "agentPhone": "3168061060",
     "agentEmail": "",
-    "previousPrice": 163800
+    "previousPrice": 163700
   },
   {
     "slug": "515-g-st-wellington-ks-676894",
