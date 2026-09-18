@@ -35074,7 +35074,7 @@
     "state": "KS",
     "lat": 37.672484,
     "lng": -97.488317,
-    "price": 349900,
+    "price": 340000,
     "beds": 4,
     "baths": 3,
     "sqft": "3000",
@@ -35086,7 +35086,8 @@
     "isSundgren": false,
     "agentName": "Jim Hodson",
     "agentPhone": "3166176473",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 349900
   },
   {
     "slug": "611-cleek-ct-winfield-ks-675947",
@@ -47674,7 +47675,7 @@
     "state": "KS",
     "lat": 37.602706,
     "lng": -97.348974,
-    "price": 285000,
+    "price": 280000,
     "beds": 4,
     "baths": 3,
     "sqft": "1865",
@@ -47686,7 +47687,8 @@
     "isSundgren": false,
     "agentName": "Ariana K Smith",
     "agentPhone": "3169900814",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 285000
   },
   {
     "slug": "331-127th-east-106-st-wichita-ks-677738",
