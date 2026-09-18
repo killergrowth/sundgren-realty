@@ -11,14 +11,14 @@
   <link rel="apple-touch-icon" href="/images/favicon.png">
   <meta property="og:title" content="618 Blaine St, Wellington, KS, 67152 – 3BD/2BA | Sundgren Realty &amp; Auction">
   <meta property="og:description" content="Residential property at 618 Blaine St, Wellington, KS, 67152. Welcome to 618 N Blaine St in Wellington! This charming 3-bedroom, 1.5-bath home offers comfo...">
-  <meta property="og:image" content="https://sundgrenrealty.com/images/og-image.jpg">
+  <meta property="og:image" content="https://cdn.repliers.io/southcentralkansas/IMG-679234_6702373030134565554.jpg">
   <meta property="og:url" content="https://sundgrenrealty.com/listings/residential/618-blaine-st-wellington-ks-679234/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Sundgren Realty &amp; Auction">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="618 Blaine St, Wellington, KS, 67152 – 3BD/2BA | Sundgren Realty &amp; Auction">
   <meta name="twitter:description" content="Residential property at 618 Blaine St, Wellington, KS, 67152. Welcome to 618 N Blaine St in Wellington! This charming 3-bedroom, 1.5-bath home offers comfo...">
-  <meta name="twitter:image" content="https://sundgrenrealty.com/images/og-image.jpg">
+  <meta name="twitter:image" content="https://cdn.repliers.io/southcentralkansas/IMG-679234_6702373030134565554.jpg">
   <meta name="robots" content="noindex, nofollow">
   <!-- SCHEMA:BreadcrumbList -->
   <!-- SCHEMA:WebPage -->
@@ -56,7 +56,63 @@
       <!-- Left Column -->
       <div class="auction-main">
 
+        <div class="sg-photo-pill-wrap">
+  <section class="photo-gallery-section" style="margin-bottom:24px;">
+    <div class="sg-mosaic">
+      <button class="sg-mosaic-hero" data-idx="0" aria-label="View photo 1" type="button">
+        <img src="https://cdn.repliers.io/southcentralkansas/IMG-679234_6702373030134565554.jpg" alt="Primary property photo" loading="eager">
+      </button>
+      <div class="sg-mosaic-strip">
+      <button class="sg-mosaic-thumb" data-idx="1" aria-label="View photo 2" type="button">
+        <img src="https://cdn.repliers.io/southcentralkansas/IMG-679234_6703372884877494293.jpg" alt="Property photo 2" loading="lazy">
         
+      </button>
+      <button class="sg-mosaic-thumb" data-idx="2" aria-label="View photo 3" type="button">
+        <img src="https://cdn.repliers.io/southcentralkansas/IMG-679234_6702312155488877051.jpg" alt="Property photo 3" loading="lazy">
+        
+      </button>
+      <button class="sg-mosaic-thumb" data-idx="3" aria-label="View photo 4" type="button">
+        <img src="https://cdn.repliers.io/southcentralkansas/IMG-679234_6707092013859804426.jpg" alt="Property photo 4" loading="lazy">
+        <div class="sg-mosaic-more" aria-hidden="true">+16 more</div>
+      </button>
+      </div>
+    </div>
+    <div class="sg-gallery-bar">
+      <button class="sg-gallery-all-btn" id="sg-view-all" type="button">
+        <i class="fas fa-images"></i> View all 20 photos
+      </button>
+    </div>
+  </section>
+
+  <div id="sg-lightbox" role="dialog" aria-modal="true" aria-label="Photo gallery">
+    <button id="sg-lightbox-close" aria-label="Close">&times;</button>
+    <button id="sg-lightbox-prev" aria-label="Previous">&#8249;</button>
+    <img id="sg-lightbox-img" src="" alt="Property photo">
+    <button id="sg-lightbox-next" aria-label="Next">&#8250;</button>
+    <span id="sg-lightbox-counter"></span>
+  </div>
+
+  <script>
+  (function(){
+    var srcs = ["https://cdn.repliers.io/southcentralkansas/IMG-679234_6702373030134565554.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679234_6703372884877494293.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679234_6702312155488877051.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679234_6707092013859804426.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679234_6706854759012494372.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679234_6709014828040058750.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679234_6708826532953793195.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679234_6708320362633014385.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679234_6704917737546512614.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679234_6701446361129252693.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679234_6704831321176360587.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679234_6708345060650380296.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679234_6709958492999769774.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679234_6705180046986900759.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679234_6704502902455733514.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679234_6706544417517861746.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679234_6703555935471648640.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679234_6707040979928547858.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679234_6706524746113932696.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679234_6703138702701122397.jpg"];
+    var lb = document.getElementById('sg-lightbox');
+    var lbImg = document.getElementById('sg-lightbox-img');
+    var lbCtr = document.getElementById('sg-lightbox-counter');
+    var cur = 0;
+    function open(i){ cur=i; lbImg.src=srcs[i]; lbCtr.textContent=(i+1)+' / '+srcs.length; lb.classList.add('active'); document.body.style.overflow='hidden'; }
+    function close(){ lb.classList.remove('active'); document.body.style.overflow=''; }
+    document.querySelectorAll('.sg-mosaic-hero, .sg-mosaic-thumb').forEach(function(btn){
+      btn.addEventListener('click',function(){ open(parseInt(btn.dataset.idx,10)); });
+    });
+    var viewAll = document.getElementById('sg-view-all');
+    if (viewAll) viewAll.addEventListener('click', function(){ open(0); });
+    document.getElementById('sg-lightbox-close').addEventListener('click',close);
+    document.getElementById('sg-lightbox-prev').addEventListener('click',function(){ open((cur-1+srcs.length)%srcs.length); });
+    document.getElementById('sg-lightbox-next').addEventListener('click',function(){ open((cur+1)%srcs.length); });
+    lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
+    document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
+  })();
+  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -91,7 +147,7 @@
     </div>
   </div>
 
-        <div style="margin-top:0;">
+        <div style="margin-top:32px;">
           <div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Welcome to 618 N Blaine St in Wellington! This charming 3-bedroom, 1.5-bath home offers comfortable living with plenty of space to make it your own. Outside, you’ll appreciate the fenced yard, perfect for pets, play, entertaining, or simply relaxing outdoors. One of the standout features is the large detached 2-car garage, providing plenty of room for vehicles, storage, hobbies, or your next project. Whether you’re looking for your first home, ready to downsize, or simply want a property with great garage space and a fenced yard, this Wellington home is worth a look. Schedule your private showing today and see all that 618 N Blaine St has to offer!</p>

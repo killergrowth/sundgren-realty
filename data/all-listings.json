@@ -17927,7 +17927,7 @@
     "state": "KS",
     "lat": 37.634567,
     "lng": -97.400776,
-    "price": 465000,
+    "price": 435000,
     "beds": 5,
     "baths": 4,
     "sqft": "3136",
@@ -17939,7 +17939,8 @@
     "isSundgren": false,
     "agentName": "Lucy Alfaro",
     "agentPhone": "3163511231",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 465000
   },
   {
     "slug": "1272-hickory-creek-ct-wichita-ks-678069",
@@ -50399,7 +50400,7 @@
     "state": "KS",
     "lat": 37.467311,
     "lng": -97.769866,
-    "price": 257000,
+    "price": 247000,
     "beds": null,
     "baths": null,
     "sqft": "3,001 - 5,000",
@@ -50412,7 +50413,7 @@
     "agentName": "Debbie Haukap",
     "agentPhone": "3167220030",
     "agentEmail": "",
-    "previousPrice": 275000
+    "previousPrice": 257000
   },
   {
     "slug": "5122-peregrine-ct-wichita-ks-677931",
@@ -64248,7 +64249,7 @@
     "state": "KS",
     "lat": 37.514827,
     "lng": -97.003144,
-    "price": 200000,
+    "price": 195000,
     "beds": 3,
     "baths": 3,
     "sqft": "2169",
@@ -64261,7 +64262,7 @@
     "agentName": "Austin Hodge",
     "agentPhone": "3167086873",
     "agentEmail": "",
-    "previousPrice": 210000
+    "previousPrice": 200000
   },
   {
     "slug": "842-litchfield-ave-wichita-ks-677411",
@@ -81363,7 +81364,7 @@
     "state": "KS",
     "lat": 37.637477,
     "lng": -97.362744,
-    "price": 165000,
+    "price": 162500,
     "beds": 3,
     "baths": 1,
     "sqft": "947",
@@ -81375,7 +81376,8 @@
     "isSundgren": false,
     "agentName": "Steven Hartman",
     "agentPhone": "3163027913",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 165000
   },
   {
     "slug": "1701-main-st-kingman-ks-677241",
@@ -81409,7 +81411,7 @@
     "state": "KS",
     "lat": 38.00032,
     "lng": -97.516261,
-    "price": 165000,
+    "price": 160000,
     "beds": 4,
     "baths": 2,
     "sqft": "1722",
@@ -81421,7 +81423,8 @@
     "isSundgren": false,
     "agentName": "Jorie Thompson",
     "agentPhone": "3165301719",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 165000
   },
   {
     "slug": "800-2nd-ave-el-dorado-ks-676610",
@@ -94364,7 +94367,7 @@
     "state": "KS",
     "lat": 37.388968,
     "lng": -97.123582,
-    "price": 125000,
+    "price": 115000,
     "beds": 4,
     "baths": 2,
     "sqft": "2148",
@@ -94376,7 +94379,8 @@
     "isSundgren": false,
     "agentName": "Chi M McKanlam",
     "agentPhone": "3168062859",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 125000
   },
   {
     "slug": "525-santa-fe-st-newton-ks-674901",
@@ -125854,7 +125858,7 @@
     "state": "KS",
     "lat": 37.148062,
     "lng": -98.032507,
-    "price": 24000,
+    "price": 23000,
     "beds": 2,
     "baths": 1,
     "sqft": "960",
@@ -125866,7 +125870,8 @@
     "isSundgren": false,
     "agentName": "Steve Myers",
     "agentPhone": "3163304318",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 24000
   },
   {
     "slug": "1103-stutzman-cir-halstead-ks-673310",
