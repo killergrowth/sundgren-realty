@@ -3933,7 +3933,7 @@
     "state": "KS",
     "lat": 37.720304,
     "lng": -97.153657,
-    "price": 1125000,
+    "price": 1099000,
     "beds": 5,
     "baths": 6,
     "sqft": "4749",
@@ -3946,7 +3946,7 @@
     "agentName": "Karen L McCaughan-Prahm",
     "agentPhone": "3165192491",
     "agentEmail": "",
-    "previousPrice": 1150000
+    "previousPrice": 1125000
   },
   {
     "slug": "11801-albert-cir-maize-ks-677699",
@@ -17978,7 +17978,7 @@
     "state": "KS",
     "lat": 37.637727,
     "lng": -97.156787,
-    "price": 465000,
+    "price": 460000,
     "beds": 5,
     "baths": 3,
     "sqft": "2498",
@@ -17990,7 +17990,8 @@
     "isSundgren": false,
     "agentName": "Casey Baltazar",
     "agentPhone": "3165736047",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 465000
   },
   {
     "slug": "2744-wet-stone-dr-salina-ks-676296",
@@ -64835,7 +64836,7 @@
     "state": "KS",
     "lat": 37.690222,
     "lng": -97.30625,
-    "price": 219900,
+    "price": 214900,
     "beds": 5,
     "baths": 2,
     "sqft": "2073",
@@ -64847,7 +64848,8 @@
     "isSundgren": false,
     "agentName": "Michelle M Crouch",
     "agentPhone": "3164611405",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 219900
   },
   {
     "slug": "1007-lingonberry-ln-lindsborg-ks-676876",
