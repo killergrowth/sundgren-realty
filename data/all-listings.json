@@ -49352,7 +49352,7 @@
     "state": "KS",
     "lat": 37.659011,
     "lng": -97.467962,
-    "price": 279900,
+    "price": 269900,
     "beds": 3,
     "baths": 2,
     "sqft": "1874",
@@ -49364,7 +49364,8 @@
     "isSundgren": false,
     "agentName": "Grant H Farha",
     "agentPhone": "3165181711",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 279900
   },
   {
     "slug": "1114-revere-dr-salina-ks-677995",
