@@ -9402,7 +9402,7 @@
     "state": "KS",
     "lat": 37.617734,
     "lng": -97.233959,
-    "price": 625000,
+    "price": 600000,
     "beds": 5,
     "baths": 4,
     "sqft": "3109",
@@ -9415,7 +9415,7 @@
     "agentName": "Nicolle Jausel",
     "agentPhone": "3166402564",
     "agentEmail": "",
-    "previousPrice": 649000
+    "previousPrice": 625000
   },
   {
     "slug": "435-130th-st-s-st-south-haven-ks-676399",
@@ -57953,7 +57953,7 @@
     "state": "KS",
     "lat": 37.684696,
     "lng": -97.38129,
-    "price": 249500,
+    "price": 239900,
     "beds": 3,
     "baths": 2,
     "sqft": "2099",
@@ -57965,7 +57965,8 @@
     "isSundgren": false,
     "agentName": "Ray Stafford",
     "agentPhone": "3167377718",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 249500
   },
   {
     "slug": "2706-amelia-lane-salina-ks-677159",
