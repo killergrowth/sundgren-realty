@@ -34135,7 +34135,7 @@
     "state": "KS",
     "lat": 37.77619,
     "lng": -97.252685,
-    "price": 350000,
+    "price": 347500,
     "beds": 4,
     "baths": 3,
     "sqft": "2108",
@@ -34147,7 +34147,8 @@
     "isSundgren": false,
     "agentName": "Amanda J Rempe",
     "agentPhone": "3169901497",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 350000
   },
   {
     "slug": "1009-ruth-ann-dr-dodge-city-ks-676089",
@@ -38945,7 +38946,7 @@
     "state": "KS",
     "lat": 37.681244,
     "lng": -97.244053,
-    "price": 324500,
+    "price": 314500,
     "beds": 4,
     "baths": 3,
     "sqft": "3452",
@@ -38958,7 +38959,7 @@
     "agentName": "Amanda Jolley",
     "agentPhone": "3162139043",
     "agentEmail": "",
-    "previousPrice": 325000
+    "previousPrice": 324500
   },
   {
     "slug": "142-magnolia-dr-kaw-city-ok-676981",
@@ -40935,7 +40936,7 @@
     "state": "KS",
     "lat": 37.78731207,
     "lng": -97.22893983,
-    "price": 319000,
+    "price": 297900,
     "beds": 3,
     "baths": 2,
     "sqft": "1638",
@@ -40947,7 +40948,8 @@
     "isSundgren": false,
     "agentName": "Basem Krichati",
     "agentPhone": "3165160139",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 319000
   },
   {
     "slug": "1118-sontag-ct-derby-ks-676739",
@@ -129001,7 +129003,7 @@
     "state": "KS",
     "lat": 37.071764,
     "lng": -97.045813,
-    "price": 10000,
+    "price": 7000,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -129013,7 +129015,8 @@
     "isSundgren": false,
     "agentName": "Jennifer D Owen",
     "agentPhone": "6206602143",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 10000
   },
   {
     "slug": "402-center-burrton-ks-675928",
