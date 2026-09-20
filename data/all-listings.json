@@ -48565,7 +48565,7 @@
     "state": "KS",
     "lat": 37.686435,
     "lng": -97.13162,
-    "price": 283900,
+    "price": 283990,
     "beds": 3,
     "baths": 2,
     "sqft": "1298",
@@ -66964,7 +66964,7 @@
     "state": "KS",
     "lat": 37.80538601,
     "lng": -97.31331801,
-    "price": 210000,
+    "price": 199000,
     "beds": 4,
     "baths": 2,
     "sqft": "1952",
@@ -66977,7 +66977,7 @@
     "agentName": "Kristel Melton",
     "agentPhone": "3166809809",
     "agentEmail": "",
-    "previousPrice": 210900
+    "previousPrice": 210000
   },
   {
     "slug": "4612-elizabeth-ave-wichita-ks-678306",
