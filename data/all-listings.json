@@ -10422,7 +10422,7 @@
     "state": "KS",
     "lat": 37.730717,
     "lng": -97.399863,
-    "price": 599900,
+    "price": 589900,
     "beds": 5,
     "baths": 3,
     "sqft": "2954",
@@ -10435,7 +10435,7 @@
     "agentName": "Sarah King",
     "agentPhone": "3166481199",
     "agentEmail": "",
-    "previousPrice": 604900
+    "previousPrice": 599900
   },
   {
     "slug": "202-hillside-st-wellington-ks-669812",
@@ -17240,7 +17240,7 @@
     "state": "KS",
     "lat": 38.573636,
     "lng": -97.676081,
-    "price": 475000,
+    "price": 449000,
     "beds": null,
     "baths": null,
     "sqft": "3,001 - 5,000",
@@ -17252,7 +17252,8 @@
     "isSundgren": false,
     "agentName": "Mari Loder",
     "agentPhone": "7854525314",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 475000
   },
   {
     "slug": "4646-emerald-bay-ct-wichita-ks-677196",
@@ -38090,7 +38091,7 @@
     "state": "KS",
     "lat": 37.550321,
     "lng": -97.23163,
-    "price": 329900,
+    "price": 319900,
     "beds": 4,
     "baths": 3,
     "sqft": "2528",
@@ -38102,7 +38103,8 @@
     "isSundgren": false,
     "agentName": "Lisa Waupsh Towle",
     "agentPhone": "3169926099",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 329900
   },
   {
     "slug": "1501-midway-ct-valley-center-ks-678057",
