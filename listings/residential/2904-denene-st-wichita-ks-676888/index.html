@@ -71,11 +71,15 @@
         <img src="https://cdn.repliers.io/southcentralkansas/IMG-676888_6705036282147242627.jpg" alt="Property photo 3" loading="lazy">
         
       </button>
+      <button class="sg-mosaic-thumb" data-idx="3" aria-label="View photo 4" type="button">
+        <img src="https://cdn.repliers.io/southcentralkansas/IMG-676888_6700370638365993189.jpg" alt="Property photo 4" loading="lazy">
+        <div class="sg-mosaic-more" aria-hidden="true">+7 more</div>
+      </button>
       </div>
     </div>
     <div class="sg-gallery-bar">
       <button class="sg-gallery-all-btn" id="sg-view-all" type="button">
-        <i class="fas fa-images"></i> View all 3 photos
+        <i class="fas fa-images"></i> View all 11 photos
       </button>
     </div>
   </section>
@@ -90,7 +94,7 @@
 
   <script>
   (function(){
-    var srcs = ["https://cdn.repliers.io/southcentralkansas/IMG-676888_6703136873752046133.jpg","https://cdn.repliers.io/southcentralkansas/IMG-676888_6705967662569644961.jpg","https://cdn.repliers.io/southcentralkansas/IMG-676888_6705036282147242627.jpg"];
+    var srcs = ["https://cdn.repliers.io/southcentralkansas/IMG-676888_6703136873752046133.jpg","https://cdn.repliers.io/southcentralkansas/IMG-676888_6705967662569644961.jpg","https://cdn.repliers.io/southcentralkansas/IMG-676888_6705036282147242627.jpg","https://cdn.repliers.io/southcentralkansas/IMG-676888_6700370638365993189.jpg","https://cdn.repliers.io/southcentralkansas/IMG-676888_6707216204941295762.jpg","https://cdn.repliers.io/southcentralkansas/IMG-676888_6709531866825569528.jpg","https://cdn.repliers.io/southcentralkansas/IMG-676888_6705378194187057829.jpg","https://cdn.repliers.io/southcentralkansas/IMG-676888_6700204973104043042.jpg","https://cdn.repliers.io/southcentralkansas/IMG-676888_6705526165644546585.jpg","https://cdn.repliers.io/southcentralkansas/IMG-676888_6701413320284924131.jpg","https://cdn.repliers.io/southcentralkansas/IMG-676888_6708481465177564314.jpg"];
     var lb = document.getElementById('sg-lightbox');
     var lbImg = document.getElementById('sg-lightbox-img');
     var lbCtr = document.getElementById('sg-lightbox-counter');
@@ -180,9 +184,9 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
     (function(){
-      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.641698,-97.460625],15);
+      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.64168302,-97.46061869],15);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap contributors',maxZoom:19}).addTo(map);
-      L.marker([37.641698,-97.460625]).addTo(map).bindPopup('2904 Denene St, Wichita, KS 67215').openPopup();
+      L.marker([37.64168302,-97.46061869]).addTo(map).bindPopup('2904 Denene St, Wichita, KS 67215').openPopup();
     })();
     </script>
   </div>

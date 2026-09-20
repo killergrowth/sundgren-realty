@@ -12688,7 +12688,7 @@
     "state": "KS",
     "lat": 37.69368,
     "lng": -97.173363,
-    "price": 552073,
+    "price": 549777,
     "beds": 4,
     "baths": 3,
     "sqft": "2093",
@@ -12700,7 +12700,8 @@
     "isSundgren": false,
     "agentName": "Sarah King",
     "agentPhone": "3166481199",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 552073
   },
   {
     "slug": "249-ciderbluff-ct-wichita-ks-674736",
@@ -42070,7 +42071,7 @@
     "state": "KS",
     "lat": 37.215656,
     "lng": -96.989506,
-    "price": 310000,
+    "price": 299000,
     "beds": 5,
     "baths": 3,
     "sqft": "2534",
@@ -42082,7 +42083,8 @@
     "isSundgren": false,
     "agentName": "Brianna Brooks",
     "agentPhone": "6204413575",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 310000
   },
   {
     "slug": "444-greenvalley-dr-andover-ks-677163",

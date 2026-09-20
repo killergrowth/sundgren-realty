@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>If you’ve been searching for a beautifully updated home in the award-winning Rose Hill school district with the peaceful feel of country living, this Sienna Ranch property stands out from the rest. This spacious 5-bed, 3-bath home has been thoughtfully improved inside and out with major upgrades completed in 2023, 2024, and 2025. The exterior features a Class IV impact-resistant roof (2023), fresh exterior paint (2023), updated landscaping (2023–2024), newly planted trees (2024), and an irrigation system fed by a private irrigation well for added savings. The backyard offers a masonry fire pit, wrought-iron fencing, and a comfortable patio area for relaxing or entertaining. Inside, nearly every surface has been refreshed. Updates include new interior paint (2023), refinished hardwood floors (2023), new carpet, a new HVAC system (2024), tankless water heater (2023), and a sump-pump battery backup (2025). The open kitchen features granite countertops, 48” upper cabinets, full-access soft-close drawers, and a walk-in pantry. The split-bedroom floor plan includes a spacious primary suite with deck access, walk-in closet, and private bath. Downstairs, the walk-out basement is designed for entertaining with a custom-built granite wet bar, space for a beverage fridge and dishwasher, plus multiple areas perfect for a home theater, pool table/game area, and workout equipment. Don&#39;t miss the extra space in the garage, its like a 4th car but set up like a shop. Sienna Ranch amenities include scenic walking trails, wooded areas, ponds, a fishing lake, community pool and clubhouse, and a playground—offering a unique blend of nature and convenience. With its extensive upgrades and inviting layout, this home delivers the comfort of modern living with the charm of a serene setting. Schedule your private showing today.</p>
     </div>
@@ -199,9 +201,9 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
     (function(){
-      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.600802,-97.140462],15);
+      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.601376,-97.140847],15);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap contributors',maxZoom:19}).addTo(map);
-      L.marker([37.600802,-97.140462]).addTo(map).bindPopup('3045 Willow Crk, Rose Hill, KS 67133').openPopup();
+      L.marker([37.601376,-97.140847]).addTo(map).bindPopup('3045 Willow Crk, Rose Hill, KS 67133').openPopup();
     })();
     </script>
   </div>
@@ -209,8 +211,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -220,13 +222,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="3045 Willow Crk, Rose Hill, KS, 67133">
-        <input type="hidden" name="message" value="I am interested in the property at 3045 Willow Crk, Rose Hill, KS, 67133 (MLS# 673083). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 3045 Willow Crk, Rose Hill, KS, 67133 (MLS# 673083). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
