@@ -68853,7 +68853,7 @@
     "state": "KS",
     "lat": 37.662314,
     "lng": -97.302235,
-    "price": 200000,
+    "price": 190000,
     "beds": 4,
     "baths": 2,
     "sqft": "1586",
@@ -68865,7 +68865,8 @@
     "isSundgren": false,
     "agentName": "LeAnna Beat",
     "agentPhone": "3162141121",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 200000
   },
   {
     "slug": "8206-levitt-dr-wichita-ks-677720",

@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Free standing patio home with two primary suites and 2 1/2 baths is now available in Ashbriar Estates. Discover the perfect blend of comfort and convenience in this centrally located home offering 2130 square feet of thoughtfully designed living space. The inviting large living room with wood-burning fireplace is open to the formal dining area with wood floors and charming bay window. The oversized kitchen is a standout with an abundance of cabinetry and workspace. Just off the kitchen is the separate laundry room and half bath—both offering even more generous storage, and as a bonus the washer and dryer remain. This unique floor plan includes two spacious primary suites, one on the main level and one upstairs, each complete with their own ensuite and walk-in closets. The main-floor primary bedroom has book cases along one wall and is large enough to accommodate even a sitting area or perhaps an office. An unfinished basement provides endless possibilities for additional living space, gym, hobbies, or storage. Not only is there a covered front porch but a patio as well. You will find an additional entry door on the Murdock Street side, making guest parking especially convenient. Enjoy peace of mind with a well-managed HOA that covers lawn care, sprinklers, exterior maintenance and insurance, trash service, and snow removal - perfect for a lock-and-leave lifestyle. Whether you&#39;re a busy professional, frequent traveler, or simply seeking hassle-free homeownership, this patio home delivers. Conveniently located near shopping, dining, and everyday amenities. This is a rare opportunity to own one of Ashbriar Estates’ most unique floor plans. Please see Ashbriar packet in Associated docs. In addition to the monthly fee there is a semi-annual insurance payment of $870.58.</p>
     </div>
@@ -199,9 +201,9 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
     (function(){
-      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.697224,-97.265751],15);
+      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.697224,-97.265739],15);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap contributors',maxZoom:19}).addTo(map);
-      L.marker([37.697224,-97.265751]).addTo(map).bindPopup('641 Woodlawn #60 ST, Wichita, KS 67208').openPopup();
+      L.marker([37.697224,-97.265739]).addTo(map).bindPopup('641 Woodlawn #60 ST, Wichita, KS 67208').openPopup();
     })();
     </script>
   </div>
@@ -209,8 +211,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -220,13 +222,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="641 Woodlawn #60 ST, Wichita, KS, 67208">
-        <input type="hidden" name="message" value="I am interested in the property at 641 Woodlawn #60 ST, Wichita, KS, 67208 (MLS# 673576). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 641 Woodlawn #60 ST, Wichita, KS, 67208 (MLS# 673576). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
