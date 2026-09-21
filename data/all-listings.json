@@ -33192,7 +33192,7 @@
     "state": "KS",
     "lat": 37.557147,
     "lng": -97.258172,
-    "price": 359000,
+    "price": 349900,
     "beds": 3,
     "baths": 3,
     "sqft": "3277",
@@ -33204,7 +33204,8 @@
     "isSundgren": false,
     "agentName": "Susanne Spring",
     "agentPhone": "3162587073",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 359000
   },
   {
     "slug": "11857-160th-st-rose-hill-ks-675633",
@@ -52698,7 +52699,7 @@
     "state": "KS",
     "lat": 37.553528,
     "lng": -97.254276,
-    "price": 250000,
+    "price": 260000,
     "beds": 3,
     "baths": 3,
     "sqft": "2776",
@@ -52710,8 +52711,7 @@
     "isSundgren": false,
     "agentName": "Dawn R Wade",
     "agentPhone": "3168061060",
-    "agentEmail": "",
-    "previousPrice": 260000
+    "agentEmail": ""
   },
   {
     "slug": "8110-westlawn-cir-wichita-ks-677589",
@@ -84154,7 +84154,7 @@
     "state": "KS",
     "lat": 37.550885,
     "lng": -97.267624,
-    "price": 149900,
+    "price": 155000,
     "beds": 3,
     "baths": 1,
     "sqft": "1250",
@@ -84166,8 +84166,7 @@
     "isSundgren": false,
     "agentName": "Dawn R Wade",
     "agentPhone": "3168061060",
-    "agentEmail": "",
-    "previousPrice": 163600
+    "agentEmail": ""
   },
   {
     "slug": "515-g-st-wellington-ks-676894",
