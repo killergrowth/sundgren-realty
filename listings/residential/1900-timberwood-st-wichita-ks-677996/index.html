@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Experience the pinnacle of modern contemporary luxury in this extraordinary custom-built estate by Jim Goentzel, perfectly positioned on 1.5 beautifully landscaped lots in the prestigious gated Forestgate Estates at Oak Creek. Designed to impress from the moment you arrive, the striking symmetrical architecture, crisp lines, and circular drive set the tone for a home that seamlessly blends sophisticated design with exceptional craftsmanship. Walls of glass flood the expansive living spaces with natural light while framing breathtaking views of the private backyard oasis. The dramatic living room is anchored by an eye catching wall with a linear gas fireplace. The show-stopping chef’s kitchen featuring a 10.5&#39; quartz island, custom painted cabinetry, walk-in pantry, built-in recessed water bottle filler, double ovens, premium appliances, and an impressive butler’s bar complete with a backlit island countertop, beverage refrigerators, and an ice maker—creating the perfect space for entertaining. Just beyond, a stunning family room lined with windows creates the perfect gathering space, offering panoramic views of the resort-style backyard while a fireplace adds warmth and ambiance. The luxurious main-level primary suite wing is a true retreat, offering private access to the patio, a spa-inspired bath with a freestanding soaking tub, heated floors, oversized walk-through shower with multiple spray heads, dual quartz vanities, dedicated makeup room, and 2 expansive custom walk-in closets. Three additional main-floor bedroom suites each feature private baths and walk-in closets, including a spacious in-law suite with its own sitting area. A private study, prayer room, powder bath, and oversized drop zone complete the thoughtfully designed main level. A stunning curved staircase leads to the lower level where the luxury continues with an expansive recreation room, game room, fully equipped theatre room, abundant storage, and an incredible entertainer’s wet bar featuring seating for 12, dual beverage refrigerators, dishwasher, ice maker, warming drawer and a 100-bottle wine closet. FOUR additional bedroom suites, each with private baths and walk-in closets, provide exceptional comfort for family and guests. The breathtaking backyard offers multiple options for relaxation and enjoyment...a beautiful gunite pool with fountains, hot tub with waterfall and gas fire feature &amp; a fully equipped outdoor kitchen with a covered patio with fireplace. Other features include: a lighted sports court, pool bath &amp; shower, professional landscaping, irrigation well, and wrought iron fencing. Additional amenities include a DaVinci roof, stucco exterior, three zoned HVAC systems, water softener, 3 tankless water heaters, and impeccably finished SIX-car garage—including a garage complete with its own kitchen, ideal for entertaining, hobbies, or guest accommodations. Offering 8 bedrooms, 9 full baths, 2 half baths, and every luxury amenity imaginable, this exceptional residence combines modern architecture, timeless elegance, and resort-style living into one of Wichita’s most remarkable homes. Basement sq. ft. estimated. Home has 2 tax records and 2 legal descriptions.</p>
     </div>
@@ -199,9 +201,9 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
     (function(){
-      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.717987,-97.214641],15);
+      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.71805,-97.214693],15);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap contributors',maxZoom:19}).addTo(map);
-      L.marker([37.717987,-97.214641]).addTo(map).bindPopup('1900 Timberwood ST, Wichita, KS 67206').openPopup();
+      L.marker([37.71805,-97.214693]).addTo(map).bindPopup('1900 Timberwood ST, Wichita, KS 67206').openPopup();
     })();
     </script>
   </div>
@@ -209,8 +211,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -220,13 +222,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="1900 Timberwood ST, Wichita, KS, 67206">
-        <input type="hidden" name="message" value="I am interested in the property at 1900 Timberwood ST, Wichita, KS, 67206 (MLS# 677996). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 1900 Timberwood ST, Wichita, KS, 67206 (MLS# 677996). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

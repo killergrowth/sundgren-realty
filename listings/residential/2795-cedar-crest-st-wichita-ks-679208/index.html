@@ -11,14 +11,14 @@
   <link rel="apple-touch-icon" href="/images/favicon.png">
   <meta property="og:title" content="2795 Cedar Crest St, Wichita, KS, 67215 – 3BD/2BA | Sundgren Realty &amp; Auction">
   <meta property="og:description" content="Residential property at 2795 Cedar Crest St, Wichita, KS, 67215. This duplex has 2 zero entry front and side doors with 3 bedrooms and 2 bathrooms, and a 2...">
-  <meta property="og:image" content="https://sundgrenrealty.com/images/og-image.jpg">
+  <meta property="og:image" content="https://cdn.repliers.io/southcentralkansas/IMG-679208_6706306953174122472.jpg">
   <meta property="og:url" content="https://sundgrenrealty.com/listings/residential/2795-cedar-crest-st-wichita-ks-679208/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Sundgren Realty &amp; Auction">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="2795 Cedar Crest St, Wichita, KS, 67215 – 3BD/2BA | Sundgren Realty &amp; Auction">
   <meta name="twitter:description" content="Residential property at 2795 Cedar Crest St, Wichita, KS, 67215. This duplex has 2 zero entry front and side doors with 3 bedrooms and 2 bathrooms, and a 2...">
-  <meta name="twitter:image" content="https://sundgrenrealty.com/images/og-image.jpg">
+  <meta name="twitter:image" content="https://cdn.repliers.io/southcentralkansas/IMG-679208_6706306953174122472.jpg">
   <meta name="robots" content="noindex, nofollow">
   <!-- SCHEMA:BreadcrumbList -->
   <!-- SCHEMA:WebPage -->
@@ -56,7 +56,63 @@
       <!-- Left Column -->
       <div class="auction-main">
 
+        <div class="sg-photo-pill-wrap">
+  <section class="photo-gallery-section" style="margin-bottom:24px;">
+    <div class="sg-mosaic">
+      <button class="sg-mosaic-hero" data-idx="0" aria-label="View photo 1" type="button">
+        <img src="https://cdn.repliers.io/southcentralkansas/IMG-679208_6706306953174122472.jpg" alt="Primary property photo" loading="eager">
+      </button>
+      <div class="sg-mosaic-strip">
+      <button class="sg-mosaic-thumb" data-idx="1" aria-label="View photo 2" type="button">
+        <img src="https://cdn.repliers.io/southcentralkansas/IMG-679208_6709072626440443317.jpg" alt="Property photo 2" loading="lazy">
         
+      </button>
+      <button class="sg-mosaic-thumb" data-idx="2" aria-label="View photo 3" type="button">
+        <img src="https://cdn.repliers.io/southcentralkansas/IMG-679208_6702943952218304744.jpg" alt="Property photo 3" loading="lazy">
+        
+      </button>
+      <button class="sg-mosaic-thumb" data-idx="3" aria-label="View photo 4" type="button">
+        <img src="https://cdn.repliers.io/southcentralkansas/IMG-679208_6705002369951301989.jpg" alt="Property photo 4" loading="lazy">
+        <div class="sg-mosaic-more" aria-hidden="true">+16 more</div>
+      </button>
+      </div>
+    </div>
+    <div class="sg-gallery-bar">
+      <button class="sg-gallery-all-btn" id="sg-view-all" type="button">
+        <i class="fas fa-images"></i> View all 20 photos
+      </button>
+    </div>
+  </section>
+
+  <div id="sg-lightbox" role="dialog" aria-modal="true" aria-label="Photo gallery">
+    <button id="sg-lightbox-close" aria-label="Close">&times;</button>
+    <button id="sg-lightbox-prev" aria-label="Previous">&#8249;</button>
+    <img id="sg-lightbox-img" src="" alt="Property photo">
+    <button id="sg-lightbox-next" aria-label="Next">&#8250;</button>
+    <span id="sg-lightbox-counter"></span>
+  </div>
+
+  <script>
+  (function(){
+    var srcs = ["https://cdn.repliers.io/southcentralkansas/IMG-679208_6706306953174122472.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679208_6709072626440443317.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679208_6702943952218304744.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679208_6705002369951301989.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679208_6704430937902720851.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679208_6709651405191510650.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679208_6709988517570956625.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679208_6704285857294413089.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679208_6703201887608874359.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679208_6708744326563064271.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679208_6706681552588850392.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679208_6705300993846438324.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679208_6703847844198851905.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679208_6702833152051252828.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679208_6705973299422653338.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679208_6702760662200751817.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679208_6702415865503828298.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679208_6703508717890022497.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679208_6708780469427364878.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679208_6701184145976696891.jpg"];
+    var lb = document.getElementById('sg-lightbox');
+    var lbImg = document.getElementById('sg-lightbox-img');
+    var lbCtr = document.getElementById('sg-lightbox-counter');
+    var cur = 0;
+    function open(i){ cur=i; lbImg.src=srcs[i]; lbCtr.textContent=(i+1)+' / '+srcs.length; lb.classList.add('active'); document.body.style.overflow='hidden'; }
+    function close(){ lb.classList.remove('active'); document.body.style.overflow=''; }
+    document.querySelectorAll('.sg-mosaic-hero, .sg-mosaic-thumb').forEach(function(btn){
+      btn.addEventListener('click',function(){ open(parseInt(btn.dataset.idx,10)); });
+    });
+    var viewAll = document.getElementById('sg-view-all');
+    if (viewAll) viewAll.addEventListener('click', function(){ open(0); });
+    document.getElementById('sg-lightbox-close').addEventListener('click',close);
+    document.getElementById('sg-lightbox-prev').addEventListener('click',function(){ open((cur-1+srcs.length)%srcs.length); });
+    document.getElementById('sg-lightbox-next').addEventListener('click',function(){ open((cur+1)%srcs.length); });
+    lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
+    document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
+  })();
+  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -91,7 +147,7 @@
     </div>
   </div>
 
-        <div style="margin-top:0;">
+        <div style="margin-top:32px;">
           <div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>This duplex has 2 zero entry front and side doors with 3 bedrooms and 2 bathrooms, and a 2 car attached garage. They include luxury vinyl plank flooring throughout the property. The kitchen is fully equipped with a walk in pantry, bar seating and appliances including, range, microwave, refrigerator, and dishwasher. The property faces east over looking a pond making it perfect for enjoying a sunrise! THIS PROPERTY IS A MUST SEE! INFORMATION DEEMED RELIABLE, BUT NOT GUARNTEED. TAX AND SPECIALS NOT FULLY ACCESSED.</p>

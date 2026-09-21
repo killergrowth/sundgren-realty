@@ -20268,7 +20268,7 @@
     "state": "KS",
     "lat": 37.498313,
     "lng": -97.2456,
-    "price": 442500,
+    "price": 439900,
     "beds": 4,
     "baths": 4,
     "sqft": "3580",
@@ -20280,7 +20280,8 @@
     "isSundgren": false,
     "agentName": "Sue Wenger",
     "agentPhone": "3162046648",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 442500
   },
   {
     "slug": "2681-evening-bay-dr-salina-ks-674743",
@@ -22746,7 +22747,7 @@
     "state": "KS",
     "lat": 37.689076,
     "lng": -97.502694,
-    "price": 415000,
+    "price": 405000,
     "beds": 5,
     "baths": 3,
     "sqft": "3059",
@@ -22758,7 +22759,8 @@
     "isSundgren": false,
     "agentName": "Laura Mormando",
     "agentPhone": "3166414142",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 415000
   },
   {
     "slug": "1362-hickory-creek-wichita-ks-674854",
@@ -25177,7 +25179,7 @@
     "state": "KS",
     "lat": 38.016789,
     "lng": -97.329802,
-    "price": 395000,
+    "price": 385000,
     "beds": 5,
     "baths": 3,
     "sqft": "3225",
@@ -25189,7 +25191,8 @@
     "isSundgren": false,
     "agentName": "Alex Carbajal",
     "agentPhone": "3162889142",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 395000
   },
   {
     "slug": "922-karla-ct-haysville-ks-676769",
@@ -39459,7 +39462,7 @@
     "state": "KS",
     "lat": 37.688529,
     "lng": -97.447919,
-    "price": 325000,
+    "price": 319900,
     "beds": 4,
     "baths": 3,
     "sqft": "3016",
@@ -39471,7 +39474,8 @@
     "isSundgren": false,
     "agentName": "Genni Trilli",
     "agentPhone": "3165580067",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 325000
   },
   {
     "slug": "6321-ulysses-st-wichita-ks-676283",
@@ -40917,7 +40921,7 @@
     "state": "KS",
     "lat": 37.578623,
     "lng": -97.268543,
-    "price": 319000,
+    "price": 310000,
     "beds": 5,
     "baths": 3,
     "sqft": "2450",
@@ -40929,7 +40933,8 @@
     "isSundgren": false,
     "agentName": "Casey Alexander",
     "agentPhone": "3164612362",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 319000
   },
   {
     "slug": "5817-plumthicket-st-bel-aire-ks-677251",
@@ -41842,7 +41847,7 @@
     "state": "KS",
     "lat": 38.839383,
     "lng": -97.573706,
-    "price": 314900,
+    "price": 299999,
     "beds": 3,
     "baths": 2,
     "sqft": "2335",
@@ -41854,7 +41859,8 @@
     "isSundgren": false,
     "agentName": "Amber Renfro",
     "agentPhone": "7858207472",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 314900
   },
   {
     "slug": "231-forest-park-ct-derby-ks-676501",
@@ -41980,7 +41986,7 @@
     "state": "KS",
     "lat": 37.745638,
     "lng": -97.41745302,
-    "price": 312000,
+    "price": 295900,
     "beds": 5,
     "baths": 3,
     "sqft": "3299",
@@ -41992,7 +41998,8 @@
     "isSundgren": false,
     "agentName": "Dawn R Wade",
     "agentPhone": "3168061060",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 312000
   },
   {
     "slug": "1422-rutgers-st-wichita-ks-675803",
@@ -42466,7 +42473,7 @@
     "state": "KS",
     "lat": 37.803785,
     "lng": -97.304412,
-    "price": 304000,
+    "price": 299000,
     "beds": 4,
     "baths": 3,
     "sqft": "2581",
@@ -42479,7 +42486,7 @@
     "agentName": "Season Wedman",
     "agentPhone": "3166401731",
     "agentEmail": "",
-    "previousPrice": 309000
+    "previousPrice": 304000
   },
   {
     "slug": "1835-megan-circle-el-dorado-ks-675946",
@@ -42582,7 +42589,7 @@
     "state": "KS",
     "lat": 37.653312,
     "lng": -97.485672,
-    "price": 307000,
+    "price": 299000,
     "beds": 4,
     "baths": 3,
     "sqft": "2147",
@@ -42594,7 +42601,8 @@
     "isSundgren": false,
     "agentName": "Oricel Iron Wing",
     "agentPhone": "3168336248",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 307000
   },
   {
     "slug": "5043-toben-dr-bel-aire-ks-671527",
@@ -46649,7 +46657,7 @@
     "state": "KS",
     "lat": 37.77654017,
     "lng": -97.23294475,
-    "price": 289000,
+    "price": 272000,
     "beds": 4,
     "baths": 2,
     "sqft": "1599",
@@ -46661,7 +46669,8 @@
     "isSundgren": false,
     "agentName": "Basem Krichati",
     "agentPhone": "3165160139",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 289000
   },
   {
     "slug": "8974-joshua-st-bel-aire-ks-677394",
@@ -46672,7 +46681,7 @@
     "state": "KS",
     "lat": 37.77653593,
     "lng": -97.23272481,
-    "price": 289000,
+    "price": 272000,
     "beds": 4,
     "baths": 2,
     "sqft": "1599",
@@ -46684,7 +46693,8 @@
     "isSundgren": false,
     "agentName": "Basem Krichati",
     "agentPhone": "3165160139",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 289000
   },
   {
     "slug": "8986-joshua-st-bel-aire-ks-677395",
@@ -48455,7 +48465,7 @@
     "state": "KS",
     "lat": 37.716799,
     "lng": -97.470834,
-    "price": 284000,
+    "price": 282500,
     "beds": 5,
     "baths": 3,
     "sqft": "2347",
@@ -48467,7 +48477,8 @@
     "isSundgren": false,
     "agentName": "Jamie Graham",
     "agentPhone": "3166509630",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 284000
   },
   {
     "slug": "5801-plumthicket-st-bel-aire-ks-676695",
@@ -48823,7 +48834,7 @@
     "state": "KS",
     "lat": 37.777546,
     "lng": -97.232256,
-    "price": 279900,
+    "price": 278000,
     "beds": 4,
     "baths": 2,
     "sqft": "1599",
@@ -48836,7 +48847,7 @@
     "agentName": "Basem Krichati",
     "agentPhone": "3165160139",
     "agentEmail": "",
-    "previousPrice": 282000
+    "previousPrice": 279900
   },
   {
     "slug": "2311-applewood-ln-salina-ks-674529",
@@ -57779,7 +57790,7 @@
     "state": "KS",
     "lat": 37.746955,
     "lng": -97.371234,
-    "price": 249900,
+    "price": 239900,
     "beds": 3,
     "baths": 2,
     "sqft": "1314",
@@ -57791,7 +57802,8 @@
     "isSundgren": false,
     "agentName": "Samantha Aguilar",
     "agentPhone": "3167373235",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 249900
   },
   {
     "slug": "801-emerson-ave-wichita-ks-676516",
@@ -67551,7 +67563,7 @@
     "state": "KS",
     "lat": 37.658492,
     "lng": -97.362256,
-    "price": 209999,
+    "price": 199900,
     "beds": 3,
     "baths": 2,
     "sqft": "1244",
@@ -67563,7 +67575,8 @@
     "isSundgren": false,
     "agentName": "Jordan Hoefler",
     "agentPhone": "3162599333",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 209999
   },
   {
     "slug": "2614-executive-way-wichita-ks-678421",
@@ -83833,7 +83846,7 @@
     "state": "KS",
     "lat": 37.834877,
     "lng": -96.293891,
-    "price": 159900,
+    "price": 149900,
     "beds": 4,
     "baths": 2,
     "sqft": "1508",
@@ -83845,7 +83858,8 @@
     "isSundgren": false,
     "agentName": "Becky Schaffer",
     "agentPhone": "6207500054",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 159900
   },
   {
     "slug": "3579-vine-wichita-ks-673894",
@@ -85242,7 +85256,7 @@
     "state": "KS",
     "lat": 37.632607,
     "lng": -97.348254,
-    "price": 155000,
+    "price": 160000,
     "beds": 4,
     "baths": 1,
     "sqft": "1150",
@@ -109151,7 +109165,7 @@
     "state": "KS",
     "lat": 37.054883,
     "lng": -97.039321,
-    "price": 64900,
+    "price": 54900,
     "beds": 6,
     "baths": 4,
     "sqft": "2959",
@@ -109163,7 +109177,8 @@
     "isSundgren": false,
     "agentName": "Dawn R Wade",
     "agentPhone": "3168061060",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 64900
   },
   {
     "slug": "711-summit-st-arkansas-city-ks-675829",

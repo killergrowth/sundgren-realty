@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>This gorgeous, move-in-ready home has been thoughtfully updated with substantial, high-quality finishes and includes an impressive heated and cooled workshop in the backyard. Inside, the light and bright kitchen features a fresh 2024 remodel of quartz countertops, a double oven, soft-close drawers throughout, and convenient slide-out pantry shelving. Located just off the three-car garage, the laundry room provides abundant cabinet storage. The primary suite includes convenient bedside reading lights and a remodeled bathroom with an oversized, low-threshold shower, built-in shower bench, and Delta rain showerhead. A double vanity with marble-look quartz countertops completes the space. Off of the tastefully trimmed out living room, illuminated stairs lead to the finished basement, where you’ll find a wet bar, two additional bedrooms, and ample storage. The three-car garage is fully sheetrocked and equipped with a workbench, pegboard, and pull-down stairs providing access to the attic. An additional rear garage door opens directly onto a concrete backyard area with a basketball goal above the rear garage. Outdoor living is easy with a freshly painted covered back deck, measuring an impressive 33&#39;4&quot; x 11&#39;. The backyard also features a well and a four-zone sprinkler system. Additional exterior upgrades include Andersen windows and doors, shatterproof egress-window covers, and a Class IV Impact resistant roof and guttering system replaced in 2025. The standout feature is the heated and cooled outbuilding/workshop. Double-insulated and equipped with a heavy-duty HVAC system, this versatile building includes two manual roll-up doors, sand-and-flake epoxy grip flooring, and a remote- and app-controlled fan. It is wired for a car lift, includes 20-amp electrical circuits, and offers 50-amp service on both sides of the building for welding equipment or EV charging. With thoughtfully remodeled living spaces, generous storage, an expansive covered deck, and a remarkably well-equipped workshop, this Valley Center property is ready to support both everyday living and serious hobbies.</p>
     </div>
@@ -195,9 +197,9 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
     (function(){
-      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.833158,-97.365556],15);
+      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.833146,-97.365562],15);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap contributors',maxZoom:19}).addTo(map);
-      L.marker([37.833158,-97.365556]).addTo(map).bindPopup('134 Emporia Ave, Valley Center, KS 67147').openPopup();
+      L.marker([37.833146,-97.365562]).addTo(map).bindPopup('134 Emporia Ave, Valley Center, KS 67147').openPopup();
     })();
     </script>
   </div>
@@ -205,8 +207,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -216,13 +218,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="134 Emporia Ave, Valley Center, KS, 67147">
-        <input type="hidden" name="message" value="I am interested in the property at 134 Emporia Ave, Valley Center, KS, 67147 (MLS# 678347). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 134 Emporia Ave, Valley Center, KS, 67147 (MLS# 678347). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
