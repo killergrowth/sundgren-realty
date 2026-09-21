@@ -53324,7 +53324,7 @@
     "state": "KS",
     "lat": 37.65295,
     "lng": -97.337086,
-    "price": 265000,
+    "price": 255000,
     "beds": null,
     "baths": null,
     "sqft": "22738",
@@ -53336,7 +53336,8 @@
     "isSundgren": false,
     "agentName": "Amanda Henning",
     "agentPhone": "3169906245",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 265000
   },
   {
     "slug": "301-willow-rd-hillsboro-ks-676845",
@@ -55706,7 +55707,7 @@
     "state": "KS",
     "lat": 37.67006198,
     "lng": -97.22830699,
-    "price": 249900,
+    "price": 245000,
     "beds": 3,
     "baths": 3,
     "sqft": "2722",
@@ -55719,7 +55720,7 @@
     "agentName": "Liz Amos",
     "agentPhone": "3168076800",
     "agentEmail": "",
-    "previousPrice": 255000
+    "previousPrice": 249900
   },
   {
     "slug": "102-102-12-west-pl-salina-ks-674932",
@@ -81264,7 +81265,7 @@
     "state": "KS",
     "lat": 38.81424202,
     "lng": -97.628638,
-    "price": 159000,
+    "price": 156000,
     "beds": 3,
     "baths": 2,
     "sqft": "1040",
@@ -81277,7 +81278,7 @@
     "agentName": "Cierra Schmidt",
     "agentPhone": "7853420861",
     "agentEmail": "",
-    "previousPrice": 165000
+    "previousPrice": 159000
   },
   {
     "slug": "539-summitlawn-st-wichita-ks-678332",
