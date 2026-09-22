@@ -71,15 +71,11 @@
         <img src="https://cdn.repliers.io/southcentralkansas/IMG-674749_6704272358902593475.jpg" alt="Property photo 3" loading="lazy">
         
       </button>
-      <button class="sg-mosaic-thumb" data-idx="3" aria-label="View photo 4" type="button">
-        <img src="https://cdn.repliers.io/southcentralkansas/IMG-674749_6701029989976917128.jpg" alt="Property photo 4" loading="lazy">
-        <div class="sg-mosaic-more" aria-hidden="true">+16 more</div>
-      </button>
       </div>
     </div>
     <div class="sg-gallery-bar">
       <button class="sg-gallery-all-btn" id="sg-view-all" type="button">
-        <i class="fas fa-images"></i> View all 20 photos
+        <i class="fas fa-images"></i> View all 3 photos
       </button>
     </div>
   </section>
@@ -94,7 +90,7 @@
 
   <script>
   (function(){
-    var srcs = ["https://cdn.repliers.io/southcentralkansas/IMG-674749_6706319268660229534.jpg","https://cdn.repliers.io/southcentralkansas/IMG-674749_6701547082827327729.jpg","https://cdn.repliers.io/southcentralkansas/IMG-674749_6704272358902593475.jpg","https://cdn.repliers.io/southcentralkansas/IMG-674749_6701029989976917128.jpg","https://cdn.repliers.io/southcentralkansas/IMG-674749_6709358776459698098.jpg","https://cdn.repliers.io/southcentralkansas/IMG-674749_6706526369331074059.jpg","https://cdn.repliers.io/southcentralkansas/IMG-674749_6705838871434058466.jpg","https://cdn.repliers.io/southcentralkansas/IMG-674749_6703277493836090652.jpg","https://cdn.repliers.io/southcentralkansas/IMG-674749_6705733094181100145.jpg","https://cdn.repliers.io/southcentralkansas/IMG-674749_6708187573721791490.jpg","https://cdn.repliers.io/southcentralkansas/IMG-674749_6705834386656316598.jpg","https://cdn.repliers.io/southcentralkansas/IMG-674749_6704786044292273097.jpg","https://cdn.repliers.io/southcentralkansas/IMG-674749_6703261584855955727.jpg","https://cdn.repliers.io/southcentralkansas/IMG-674749_6706727391889206654.jpg","https://cdn.repliers.io/southcentralkansas/IMG-674749_6705580874085127389.jpg","https://cdn.repliers.io/southcentralkansas/IMG-674749_6703841986436485036.jpg","https://cdn.repliers.io/southcentralkansas/IMG-674749_6707802307341723809.jpg","https://cdn.repliers.io/southcentralkansas/IMG-674749_6701253908884005261.jpg","https://cdn.repliers.io/southcentralkansas/IMG-674749_6706755608097090073.jpg","https://cdn.repliers.io/southcentralkansas/IMG-674749_6705786045284162115.jpg"];
+    var srcs = ["https://cdn.repliers.io/southcentralkansas/IMG-674749_6706319268660229534.jpg","https://cdn.repliers.io/southcentralkansas/IMG-674749_6701547082827327729.jpg","https://cdn.repliers.io/southcentralkansas/IMG-674749_6704272358902593475.jpg"];
     var lb = document.getElementById('sg-lightbox');
     var lbImg = document.getElementById('sg-lightbox-img');
     var lbCtr = document.getElementById('sg-lightbox-counter');
@@ -191,9 +187,9 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
     (function(){
-      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.684714,-97.536526],15);
+      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.6594,-97.5671],15);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap contributors',maxZoom:19}).addTo(map);
-      L.marker([37.684714,-97.536526]).addTo(map).bindPopup('242 Mendocino St, Goddard, KS 67052').openPopup();
+      L.marker([37.6594,-97.5671]).addTo(map).bindPopup('242 Mendocino St, Goddard, KS 67052').openPopup();
     })();
     </script>
   </div>

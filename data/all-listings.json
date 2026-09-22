@@ -15556,7 +15556,7 @@
     "state": "KS",
     "lat": 38.970118,
     "lng": -97.635848,
-    "price": 489998,
+    "price": 479998,
     "beds": 5,
     "baths": 3,
     "sqft": "3284",
@@ -15569,7 +15569,7 @@
     "agentName": "Kenneth Pitts",
     "agentPhone": "7858225117",
     "agentEmail": "",
-    "previousPrice": 495000
+    "previousPrice": 489998
   },
   {
     "slug": "404-fielding-st-derby-ks-673973",
@@ -22101,7 +22101,7 @@
     "state": "KS",
     "lat": 38.552588,
     "lng": -97.83477599,
-    "price": 422000,
+    "price": 377000,
     "beds": null,
     "baths": null,
     "sqft": "5365",
@@ -22113,7 +22113,8 @@
     "isSundgren": false,
     "agentName": "Michael Piercy",
     "agentPhone": "3168717101",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 422000
   },
   {
     "slug": "4735-saker-st-wichita-ks-668447",
@@ -29450,7 +29451,7 @@
     "state": "KS",
     "lat": 37.903992,
     "lng": -97.757608,
-    "price": 375000,
+    "price": 350000,
     "beds": 5,
     "baths": 2,
     "sqft": "3724",
@@ -29462,7 +29463,8 @@
     "isSundgren": false,
     "agentName": "Jessica Schmidt",
     "agentPhone": "6202811800",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 375000
   },
   {
     "slug": "1143-rutland-ct-wichita-ks-673985",
@@ -33290,7 +33292,7 @@
     "state": "KS",
     "lat": 37.680189,
     "lng": -97.14458997,
-    "price": 357500,
+    "price": 354000,
     "beds": null,
     "baths": null,
     "sqft": "2162",
@@ -33302,7 +33304,8 @@
     "isSundgren": false,
     "agentName": "Janiece M Erbert",
     "agentPhone": "3169903672",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 357500
   },
   {
     "slug": "2101-tara-falls-ct-wichita-ks-667283",
@@ -46223,7 +46226,7 @@
     "state": "KS",
     "lat": 37.688073,
     "lng": -97.269202,
-    "price": 289900,
+    "price": 285000,
     "beds": 2,
     "baths": 2,
     "sqft": "1824",
@@ -46235,7 +46238,8 @@
     "isSundgren": false,
     "agentName": "Lindi Lanie",
     "agentPhone": "3163129845",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 289900
   },
   {
     "slug": "4278-westlake-dr-bel-aire-ks-678337",
@@ -48976,7 +48980,7 @@
     "state": "KS",
     "lat": 37.74986929,
     "lng": -98.55993902,
-    "price": 281120,
+    "price": 257024,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -48988,7 +48992,8 @@
     "isSundgren": false,
     "agentName": "Jake Steven",
     "agentPhone": "3167085960",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 281120
   },
   {
     "slug": "9408-hurst-st-wichita-ks-677964",
@@ -57265,7 +57270,7 @@
     "state": "KS",
     "lat": 37.625055,
     "lng": -97.412139,
-    "price": 249900,
+    "price": 243000,
     "beds": 3,
     "baths": 2,
     "sqft": "2007",
@@ -57277,7 +57282,8 @@
     "isSundgren": false,
     "agentName": "Kelly Yang",
     "agentPhone": "7207881481",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 249900
   },
   {
     "slug": "10448-tawakoni-rd-augusta-ks-677791",
@@ -65556,7 +65562,7 @@
     "state": "KS",
     "lat": 37.722182,
     "lng": -97.42942296,
-    "price": 219000,
+    "price": 209000,
     "beds": 2,
     "baths": 2,
     "sqft": "1580",
@@ -65568,7 +65574,8 @@
     "isSundgren": false,
     "agentName": "Shane Pullman",
     "agentPhone": "3166407375",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 219000
   },
   {
     "slug": "7504-cornelison-cir-wichita-ks-675653",
@@ -65579,7 +65586,7 @@
     "state": "KS",
     "lat": 37.72216,
     "lng": -97.42973795,
-    "price": 219000,
+    "price": 209000,
     "beds": 2,
     "baths": 2,
     "sqft": "1580",
@@ -65591,7 +65598,8 @@
     "isSundgren": false,
     "agentName": "Shane Pullman",
     "agentPhone": "3166407375",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 219000
   },
   {
     "slug": "16211-ike-ct-goddard-ks-671693",
@@ -68921,7 +68929,7 @@
     "state": "KS",
     "lat": 37.684095,
     "lng": -97.373024,
-    "price": 195000,
+    "price": 190000,
     "beds": 3,
     "baths": 2,
     "sqft": "1350",
@@ -68934,7 +68942,7 @@
     "agentName": "Lacy Critchfield",
     "agentPhone": "3166418907",
     "agentEmail": "",
-    "previousPrice": 200000
+    "previousPrice": 195000
   },
   {
     "slug": "1028-dearborn-st-augusta-ks-677089",
@@ -78432,7 +78440,7 @@
     "state": "KS",
     "lat": 38.36102,
     "lng": -98.585792,
-    "price": 175000,
+    "price": 165000,
     "beds": 3,
     "baths": 2,
     "sqft": "2272",
@@ -78444,7 +78452,8 @@
     "isSundgren": false,
     "agentName": "Khiley Davis",
     "agentPhone": "7853427436",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 175000
   },
   {
     "slug": "2221-bramblewood-st-wichita-ks-677111",
@@ -78478,7 +78487,7 @@
     "state": "KS",
     "lat": 37.833876,
     "lng": -96.845475,
-    "price": 175000,
+    "price": 169900,
     "beds": 3,
     "baths": 2,
     "sqft": "1606",
@@ -78490,7 +78499,8 @@
     "isSundgren": false,
     "agentName": "Erika Head",
     "agentPhone": "3163932957",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 175000
   },
   {
     "slug": "1509-smith-cir-wichita-ks-675655",
@@ -95696,7 +95706,7 @@
     "state": "KS",
     "lat": 38.809701,
     "lng": -97.621762,
-    "price": 115000,
+    "price": 110000,
     "beds": 2,
     "baths": 1,
     "sqft": "640",
@@ -95709,7 +95719,7 @@
     "agentName": "Carly Eilert",
     "agentPhone": "7858291191",
     "agentEmail": "",
-    "previousPrice": 120000
+    "previousPrice": 115000
   },
   {
     "slug": "1527-sedgwick-st-wichita-ks-677581",
@@ -105439,7 +105449,7 @@
     "state": "KS",
     "lat": 37.24713,
     "lng": -96.974433,
-    "price": 78000,
+    "price": 60000,
     "beds": 2,
     "baths": 1,
     "sqft": "756",
@@ -105451,7 +105461,8 @@
     "isSundgren": false,
     "agentName": "Roxann Taylor",
     "agentPhone": "6202627873",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 78000
   },
   {
     "slug": "2471-43rd-st-fall-river-ks-676861",
@@ -111568,7 +111579,7 @@
     "state": "KS",
     "lat": 37.8298,
     "lng": -96.841,
-    "price": 55000,
+    "price": 52000,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -111580,7 +111591,8 @@
     "isSundgren": false,
     "agentName": "Bryce Jones",
     "agentPhone": "3166410878",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 55000
   },
   {
     "slug": "3118-crystal-beach-st-wichita-ks-659313",
