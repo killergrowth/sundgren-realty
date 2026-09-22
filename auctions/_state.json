@@ -1,5 +1,5 @@
 {
-  "lastFetch": "2026-09-22T11:06:17.922Z",
+  "lastFetch": "2026-09-22T16:26:39.558Z",
   "auctions": {
     "24096": {
       "slug": "test-auction-24096",
@@ -2871,9 +2871,10 @@
     },
     "168773": {
       "slug": "203-n-3rd-st-towanda-ks-67144-5-bed-2-bath-classic-home-on-l-168773",
-      "status": "pending",
+      "status": "accepting_bids",
       "name": "203 N 3rd St, Towanda KS 67144: 5 Bed 2 Bath Classic Home on Large Corner Lot",
-      "generated": "2026-09-01T00:25:09.436Z"
+      "generated": "2026-09-01T00:25:09.436Z",
+      "updated": "2026-09-22T16:26:41.958Z"
     },
     "169491": {
       "slug": "15592-nw-60th-whitewater-kansas-brick-home-on-96-acres-169491",
@@ -2886,6 +2887,12 @@
       "status": "pending",
       "name": "Truck, Stock Trailer, Tractor, Mower, Tools, Equipment and More – LIVE AUCTION",
       "generated": "2026-09-10T15:57:23.520Z"
+    },
+    "170217": {
+      "slug": "guns-ammo-accessories-online-only-auction-170217",
+      "status": "accepting_bids",
+      "name": "Guns, Ammo & Accessories - ONLINE ONLY AUCTION",
+      "generated": "2026-09-22T16:26:41.961Z"
     }
   }
 }
