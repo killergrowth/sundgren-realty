@@ -8271,7 +8271,7 @@
     "state": "KS",
     "lat": 37.72426,
     "lng": -97.167248,
-    "price": 698942,
+    "price": 68999,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -8283,7 +8283,8 @@
     "isSundgren": false,
     "agentName": "Kelvin Gonzalez Cortes",
     "agentPhone": "7852012444",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 698942
   },
   {
     "slug": "108-kennedy-st-wichita-ks-677842",
@@ -8919,7 +8920,7 @@
     "state": "KS",
     "lat": 37.723628,
     "lng": -97.165967,
-    "price": 665363,
+    "price": 54499,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -8931,7 +8932,8 @@
     "isSundgren": false,
     "agentName": "Kelvin Gonzalez Cortes",
     "agentPhone": "7852012444",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 665363
   },
   {
     "slug": "11702-winterberry-st-wichita-ks-676650",
@@ -12735,7 +12737,7 @@
     "state": "KS",
     "lat": 37.290712,
     "lng": -97.43458,
-    "price": 547500,
+    "price": 535000,
     "beds": 4,
     "baths": 3,
     "sqft": "2330",
@@ -12748,7 +12750,7 @@
     "agentName": "Dan Madrigal",
     "agentPhone": "3169900184",
     "agentEmail": "",
-    "previousPrice": 550000
+    "previousPrice": 547500
   },
   {
     "slug": "5104-colonial-ave-bel-aire-ks-675519",
@@ -36013,7 +36015,7 @@
     "state": "KS",
     "lat": 37.840842,
     "lng": -96.848614,
-    "price": 343000,
+    "price": 335000,
     "beds": 5,
     "baths": 4,
     "sqft": "2667",
@@ -36025,7 +36027,8 @@
     "isSundgren": false,
     "agentName": "Micaela Jacquemin",
     "agentPhone": "6205832916",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 343000
   },
   {
     "slug": "123-sunset-dr-andover-ks-636981",
@@ -63264,7 +63267,7 @@
     "state": "KS",
     "lat": 38.359381,
     "lng": -97.666482,
-    "price": 225000,
+    "price": 215000,
     "beds": null,
     "baths": null,
     "sqft": "5,001 - 10,000",
@@ -63276,7 +63279,8 @@
     "isSundgren": false,
     "agentName": "Mari Loder",
     "agentPhone": "7854525314",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 225000
   },
   {
     "slug": "401-alleghany-st-el-dorado-ks-674823",
@@ -68916,7 +68920,7 @@
     "state": "KS",
     "lat": 37.684095,
     "lng": -97.373024,
-    "price": 200000,
+    "price": 195000,
     "beds": 3,
     "baths": 2,
     "sqft": "1350",
@@ -68928,7 +68932,8 @@
     "isSundgren": false,
     "agentName": "Lacy Critchfield",
     "agentPhone": "3166418907",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 200000
   },
   {
     "slug": "1028-dearborn-st-augusta-ks-677089",
@@ -89368,7 +89373,7 @@
     "state": "KS",
     "lat": 37.651198,
     "lng": -97.281904,
-    "price": 140000,
+    "price": 130000,
     "beds": 2,
     "baths": 2,
     "sqft": "1113",
@@ -89380,7 +89385,8 @@
     "isSundgren": false,
     "agentName": "Brittney Collins",
     "agentPhone": "3162109398",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 140000
   },
   {
     "slug": "820-seneca-ave-salina-ks-676560",
@@ -99435,7 +99441,7 @@
     "state": "KS",
     "lat": 37.036723,
     "lng": -97.610896,
-    "price": 105000,
+    "price": 99900,
     "beds": 2,
     "baths": 1,
     "sqft": "912",
@@ -99447,7 +99453,8 @@
     "isSundgren": false,
     "agentName": "Jeremiah Wood",
     "agentPhone": "6204330109",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 105000
   },
   {
     "slug": "107-3rd-st-newton-ks-676297",
