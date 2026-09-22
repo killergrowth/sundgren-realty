@@ -38312,7 +38312,7 @@
     "state": "KS",
     "lat": 37.721607,
     "lng": -97.074986,
-    "price": 329900,
+    "price": 326900,
     "beds": 3,
     "baths": 3,
     "sqft": "2159",
@@ -38324,7 +38324,8 @@
     "isSundgren": false,
     "agentName": "Marcus Baysinger",
     "agentPhone": "3167068577",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 329900
   },
   {
     "slug": "1629-thoroughbred-st-wichita-ks-674401",
@@ -47638,7 +47639,7 @@
     "state": "KS",
     "lat": 37.273255,
     "lng": -97.387089,
-    "price": 272500,
+    "price": 269500,
     "beds": 4,
     "baths": 2,
     "sqft": "2114",
@@ -47651,7 +47652,7 @@
     "agentName": "Crystie Macormac",
     "agentPhone": "3169905944",
     "agentEmail": "",
-    "previousPrice": 280000
+    "previousPrice": 272500
   },
   {
     "slug": "1914-summerwood-st-goddard-ks-677921",
@@ -55587,7 +55588,7 @@
     "state": "KS",
     "lat": 37.549808,
     "lng": -97.26112,
-    "price": 255000,
+    "price": 250000,
     "beds": 3,
     "baths": 3,
     "sqft": "2044",
@@ -55599,7 +55600,8 @@
     "isSundgren": false,
     "agentName": "Isaac Klingman",
     "agentPhone": "3162909452",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 255000
   },
   {
     "slug": "1800-ritchie-st-winfield-ks-677804",
@@ -60085,7 +60087,7 @@
     "state": "KS",
     "lat": 38.056581,
     "lng": -97.360497,
-    "price": 237900,
+    "price": 223500,
     "beds": 4,
     "baths": 3,
     "sqft": "2316",
@@ -60097,7 +60099,8 @@
     "isSundgren": false,
     "agentName": "Randall Flickinger",
     "agentPhone": "6202458401",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 237900
   },
   {
     "slug": "3150-elpyco-st-wichita-ks-677153",
@@ -60340,7 +60343,7 @@
     "state": "KS",
     "lat": 37.721262,
     "lng": -97.269622,
-    "price": 225000,
+    "price": 215000,
     "beds": 4,
     "baths": 3,
     "sqft": "1876",
@@ -60353,7 +60356,7 @@
     "agentName": "Joseph Villatoro",
     "agentPhone": "3165009785",
     "agentEmail": "",
-    "previousPrice": 235000
+    "previousPrice": 225000
   },
   {
     "slug": "211-plum-st-argonia-ks-677225",
@@ -63040,7 +63043,7 @@
     "state": "KS",
     "lat": 37.557666,
     "lng": -97.265313,
-    "price": 218000,
+    "price": 210000,
     "beds": 3,
     "baths": 1,
     "sqft": "1405",
@@ -63052,7 +63055,8 @@
     "isSundgren": false,
     "agentName": "Abigail Young",
     "agentPhone": "6202626912",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 218000
   },
   {
     "slug": "1212-18th-st-n-st-wichita-ks-678140",
@@ -68533,7 +68537,7 @@
     "state": "KS",
     "lat": 37.684714,
     "lng": -97.536526,
-    "price": 199900,
+    "price": 214900,
     "beds": 5,
     "baths": 2,
     "sqft": "1500",
@@ -68545,8 +68549,7 @@
     "isSundgren": false,
     "agentName": "Stefanie Roth",
     "agentPhone": "3168410403",
-    "agentEmail": "",
-    "previousPrice": 204900
+    "agentEmail": ""
   },
   {
     "slug": "244-mendocino-st-goddard-ks-674750",
@@ -68557,7 +68560,7 @@
     "state": "KS",
     "lat": 37.6594,
     "lng": -97.5671,
-    "price": 199900,
+    "price": 214900,
     "beds": 5,
     "baths": 2,
     "sqft": "1500",
@@ -68569,8 +68572,7 @@
     "isSundgren": false,
     "agentName": "Stefanie Roth",
     "agentPhone": "3168410403",
-    "agentEmail": "",
-    "previousPrice": 204900
+    "agentEmail": ""
   },
   {
     "slug": "641-woodlawn-60-st-wichita-ks-673576",
@@ -71925,7 +71927,7 @@
     "state": "KS",
     "lat": 37.621859,
     "lng": -97.404448,
-    "price": 194900,
+    "price": 189900,
     "beds": 4,
     "baths": 2,
     "sqft": "2758",
@@ -71937,7 +71939,8 @@
     "isSundgren": false,
     "agentName": "Tanner Ternes",
     "agentPhone": "3166706071",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 194900
   },
   {
     "slug": "1603-mound-st-winfield-ks-673765",
@@ -71971,7 +71974,7 @@
     "state": "KS",
     "lat": 37.621739,
     "lng": -97.40399,
-    "price": 194900,
+    "price": 189900,
     "beds": 4,
     "baths": 2,
     "sqft": "2758",
@@ -71983,7 +71986,8 @@
     "isSundgren": false,
     "agentName": "Tanner Ternes",
     "agentPhone": "3166706071",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 194900
   },
   {
     "slug": "12488-blanford-st-wichita-ks-655405",
@@ -95777,7 +95781,7 @@
     "state": "KS",
     "lat": 37.278143,
     "lng": -98.02942,
-    "price": 120000,
+    "price": 115000,
     "beds": 3,
     "baths": 1,
     "sqft": "1431",
@@ -95789,7 +95793,8 @@
     "isSundgren": false,
     "agentName": "Katie Bacon",
     "agentPhone": "3163477218",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 120000
   },
   {
     "slug": "2210-seneca-st-wichita-ks-675174",
@@ -103281,7 +103286,7 @@
     "state": "KS",
     "lat": 37.635784,
     "lng": -97.293796,
-    "price": 89000,
+    "price": 84000,
     "beds": null,
     "baths": null,
     "sqft": "2160",
@@ -103293,7 +103298,8 @@
     "isSundgren": false,
     "agentName": "Tamara L Walker",
     "agentPhone": "3165587985",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 89000
   },
   {
     "slug": "2620-poplar-st-wichita-ks-675968",
@@ -110107,7 +110113,7 @@
     "state": "KS",
     "lat": 37.827388,
     "lng": -96.851034,
-    "price": 60000,
+    "price": 50000,
     "beds": 4,
     "baths": 1,
     "sqft": "1464",
@@ -110119,7 +110125,8 @@
     "isSundgren": false,
     "agentName": "Darren Jackson Jr.",
     "agentPhone": "3163237503",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 60000
   },
   {
     "slug": "304-linden-st-dexter-ks-668933",
@@ -113237,7 +113244,7 @@
     "state": "KS",
     "lat": 37.707205,
     "lng": -97.343714,
-    "price": 48000,
+    "price": 39000,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -113249,7 +113256,8 @@
     "isSundgren": false,
     "agentName": "Shane Pullman",
     "agentPhone": "3166407375",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 48000
   },
   {
     "slug": "b2-l8-cedar-point-ct-salina-ks-646727",

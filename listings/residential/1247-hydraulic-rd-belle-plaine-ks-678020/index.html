@@ -179,6 +179,10 @@
       <i class="fas fa-tint"></i>
       <div><span class="mlabel">Water</span>Private</div>
     </div>
+    <div class="feat-cell">
+      <i class="fas fa-recycle"></i>
+      <div><span class="mlabel">Sewer</span>Septic Tank</div>
+    </div>
     </div>
   </div>
         </div>
@@ -194,9 +198,9 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
     (function(){
-      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.44261,-97.313564],15);
+      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.442609,-97.313568],15);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap contributors',maxZoom:19}).addTo(map);
-      L.marker([37.44261,-97.313564]).addTo(map).bindPopup('1247 Hydraulic RD, Belle Plaine, KS 67013').openPopup();
+      L.marker([37.442609,-97.313568]).addTo(map).bindPopup('1247 Hydraulic RD, Belle Plaine, KS 67013').openPopup();
     })();
     </script>
   </div>
