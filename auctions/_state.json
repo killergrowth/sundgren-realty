@@ -1,5 +1,5 @@
 {
-  "lastFetch": "2026-09-22T20:58:16.515Z",
+  "lastFetch": "2026-09-22T23:34:05.733Z",
   "auctions": {
     "24096": {
       "slug": "test-auction-24096",
@@ -2847,9 +2847,10 @@
     },
     "168254": {
       "slug": "2-20-acre-land-tracts-in-northeast-sedgwick-county-kansas-168254",
-      "status": "accepting_bids",
+      "status": "complete",
       "name": "(2) 20+- Acre Land Tracts in Northeast Sedgwick County, Kansas",
-      "generated": "2026-08-29T06:56:34.462Z"
+      "generated": "2026-08-29T06:56:34.462Z",
+      "updated": "2026-09-22T23:34:08.297Z"
     },
     "168675": {
       "slug": "240-acres-2-tracts-bird-creek-tillable-pasture-pond-trees-ho-168675",
