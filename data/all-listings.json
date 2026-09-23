@@ -870,7 +870,7 @@
     "state": "KS",
     "lat": 37.87685339,
     "lng": -97.17188489,
-    "price": 99500,
+    "price": 89500,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -882,7 +882,8 @@
     "isSundgren": true,
     "agentName": "Jeremy Sundgren",
     "agentPhone": "3163770013",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 99500
   },
   {
     "slug": "403-main-street-sedan-ks-639410",
@@ -20945,7 +20946,7 @@
     "state": "KS",
     "lat": 37.655382,
     "lng": -97.198085,
-    "price": 435000,
+    "price": 425000,
     "beds": 4,
     "baths": 3,
     "sqft": "3053",
@@ -20957,7 +20958,8 @@
     "isSundgren": false,
     "agentName": "Bobby Armstrong",
     "agentPhone": "3169900712",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 435000
   },
   {
     "slug": "148-forestview-wichita-ks-675798",
@@ -31444,7 +31446,7 @@
     "state": "KS",
     "lat": 37.59509701,
     "lng": -97.11647203,
-    "price": 360000,
+    "price": 350000,
     "beds": 4,
     "baths": 2,
     "sqft": "2984",
@@ -31457,7 +31459,7 @@
     "agentName": "Marina D Gomez",
     "agentPhone": "3162042437",
     "agentEmail": "",
-    "previousPrice": 367500
+    "previousPrice": 360000
   },
   {
     "slug": "5247-cambridge-st-bel-aire-ks-670799",
@@ -53280,7 +53282,7 @@
     "state": "KS",
     "lat": 37.662144,
     "lng": -97.213585,
-    "price": 265000,
+    "price": 249000,
     "beds": 3,
     "baths": 2,
     "sqft": "1954",
@@ -53292,7 +53294,8 @@
     "isSundgren": false,
     "agentName": "Sharon Rickard",
     "agentPhone": "3163129293",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 265000
   },
   {
     "slug": "1801-smithmoor-st-wichita-ks-677311",
@@ -64414,7 +64417,7 @@
     "state": "KS",
     "lat": 37.67449474,
     "lng": -97.35371928,
-    "price": 220000,
+    "price": 210000,
     "beds": 3,
     "baths": 2,
     "sqft": "1274",
@@ -64426,7 +64429,8 @@
     "isSundgren": false,
     "agentName": "Bobby Armstrong",
     "agentPhone": "3169900712",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 220000
   },
   {
     "slug": "1117-main-st-wichita-ks-675855",
@@ -91288,7 +91292,7 @@
     "state": "KS",
     "lat": 37.66648,
     "lng": -97.340962,
-    "price": 135000,
+    "price": 134500,
     "beds": 3,
     "baths": 2,
     "sqft": "1560",
@@ -91300,7 +91304,8 @@
     "isSundgren": false,
     "agentName": "Taylor Lock",
     "agentPhone": "3168679041",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 135000
   },
   {
     "slug": "2726-spruce-st-wichita-ks-676436",
@@ -112356,7 +112361,7 @@
     "state": "KS",
     "lat": 37.035433,
     "lng": -97.608628,
-    "price": 50000,
+    "price": 45000,
     "beds": 2,
     "baths": 1,
     "sqft": "1188",
@@ -112368,7 +112373,8 @@
     "isSundgren": false,
     "agentName": "Carrissa Wells",
     "agentPhone": "3166507637",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 50000
   },
   {
     "slug": "3933-ross-pkwy-wichita-ks-675825",
@@ -130948,7 +130954,7 @@
     "state": "KS",
     "lat": 37.505191,
     "lng": -97.503845,
-    "price": 0,
+    "price": 249900,
     "beds": null,
     "baths": null,
     "sqft": "5,001 - 10,000",

@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>NEW PRIE:) Welcome to this beautiful and spacious home in the desirable Settlers Creek Addition! With its fresh, bright feel, modern décor, and inviting open floor plan, this home offers plenty of space for everyday living, entertaining, and enjoying time with family and friends—all on an impressive oversized lot with NO HOA! The modern brick exterior offers great curb appeal, while the three-car garage and expansive driveway provide abundant parking. The large lot is a standout feature, offering plenty of space on both sides of the home for RVs, boats, campers, trailers, additional vehicles, storage, landscaping, or future improvements. With NO HOA, you have added flexibility to make the property work for your lifestyle, subject to applicable regulations. There is also room to explore adding a detached shop, garage, or workshop. Inside, you&#39;ll find vaulted ceilings, a charming bay window, modern finishes, and abundant natural light. The main floor features two bedrooms, main-floor laundry, and a beautiful kitchen with attractive cabinetry, a spacious island, pantry, and stainless-steel appliances. The open living and kitchen areas are perfect for everyday living and entertaining. The finished basement offers a large family room with a wet bar and tile flooring, creating an ideal space for a theater room, game room, recreation area, or gatherings. Additional basement bedrooms provide flexibility for guests, an office, hobbies, or additional living space. Outside, the fenced backyard and patio provide a great setting for cookouts, relaxing, and entertaining. The generous lot and additional included lots provide exceptional space, privacy, and future potential while still enjoying the convenience of living in town. Outdoor enthusiasts will appreciate the property&#39;s convenient location near Wellington Lake, just west of town, offering opportunities for fishing, camping, swimming, hiking, and family recreation. The property&#39;s ample space for an RV, boat, or camper makes it especially appealing for those who enjoy an active outdoor lifestyle. Whether you need room for your family, recreational vehicles, a boat, additional storage, or future improvements, this Settlers Creek home offers a rare combination of space, flexibility, privacy, and convenience—with NO HOA and easy access to Wellington Lake!</p>
     </div>
@@ -209,8 +211,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -220,13 +222,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="814 Homestead Dr, Wellington, KS, 67152">
-        <input type="hidden" name="message" value="I am interested in the property at 814 Homestead Dr, Wellington, KS, 67152 (MLS# 678139). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 814 Homestead Dr, Wellington, KS, 67152 (MLS# 678139). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
