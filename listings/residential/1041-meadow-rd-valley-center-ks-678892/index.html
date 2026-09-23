@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Don’t miss your chance to own this spectacular, upgraded 4-bedroom, 3-bath beauty designed for modern living and entertaining! This showstopper features a 3-car garage, a spacious fenced backyard, and a large deck complemented by a 13 x 14 shed for extra storage. Step inside to an open-concept kitchen with a stunning quartz island, stainless steel appliances, and clear sightlines to the dining and living areas. Gorgeous wood beams and vaulted ceilings create an airy, elegant atmosphere, while large windows flood the space with natural light and custom blinds offer privacy when you want it. Retreat down the wood floors to the generous primary suite with plenty of room to unwind. The en suite spa-like bathroom is truly one-of-a-kind, boasting a zero-entry custom walk-in shower with dual shower heads, tiled walls and ceiling, porcelain tile flooring, double vanities, and glass blocks that bathe the space in gentle natural light. Upstairs, you’ll find another bedroom and a full bath perfect for guests. Wind down the stairs to a large family room with walk-out access to the backyard. This family room offers versatile space for relaxing or entertaining. Two additional bedrooms and an elegant bathroom with granite and tiled finishes complete this luxurious home. The private backyard is your oasis, fully fenced and beautifully maintained with sprinklers and a well. Plus, enjoy peace of mind with the brand-new roof on the house and shed, new gutters, new garage doors, fresh interior paint, and a long list of thoughtful upgrades. This home truly has it all—style, comfort, and top-of-the-line features waiting for you to move in and enjoy.</p>
     </div>
@@ -209,8 +211,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -220,13 +222,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="1041 Meadow Rd, Valley Center, KS, 67147">
-        <input type="hidden" name="message" value="I am interested in the property at 1041 Meadow Rd, Valley Center, KS, 67147 (MLS# 678892). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 1041 Meadow Rd, Valley Center, KS, 67147 (MLS# 678892). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

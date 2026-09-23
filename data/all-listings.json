@@ -10332,7 +10332,7 @@
     "state": "KS",
     "lat": 37.687022,
     "lng": -97.159381,
-    "price": 609900,
+    "price": 599500,
     "beds": 4,
     "baths": 4,
     "sqft": "4509",
@@ -10344,7 +10344,8 @@
     "isSundgren": false,
     "agentName": "Diane Fox",
     "agentPhone": "3162539127",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 609900
   },
   {
     "slug": "00-satchell-creek-rd-rosalia-ks-667171",
@@ -14653,7 +14654,7 @@
     "state": "KS",
     "lat": 37.711231,
     "lng": -97.50907401,
-    "price": 520000,
+    "price": 500000,
     "beds": 5,
     "baths": 3,
     "sqft": "3198",
@@ -14665,7 +14666,8 @@
     "isSundgren": false,
     "agentName": "Kelly Kemnitz",
     "agentPhone": "3163083717",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 520000
   },
   {
     "slug": "1335-quartz-rd-minneapolis-ks-670453",
@@ -36644,7 +36646,7 @@
     "state": "KS",
     "lat": 37.583358,
     "lng": -97.256525,
-    "price": 339900,
+    "price": 334900,
     "beds": 5,
     "baths": 3,
     "sqft": "2325",
@@ -36656,7 +36658,8 @@
     "isSundgren": false,
     "agentName": "Chris Dawson",
     "agentPhone": "8163929955",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 339900
   },
   {
     "slug": "11-hopper-ct-goddard-ks-673798",
@@ -68165,7 +68168,7 @@
     "state": "KS",
     "lat": 37.642557,
     "lng": -97.315791,
-    "price": 205000,
+    "price": 175000,
     "beds": 3,
     "baths": 1,
     "sqft": "2126",
@@ -68177,7 +68180,8 @@
     "isSundgren": false,
     "agentName": "Kerry Dunn",
     "agentPhone": "3169907293",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 205000
   },
   {
     "slug": "5426-briskbay-ct-maize-ks-674052",
@@ -93126,7 +93130,7 @@
     "state": "KS",
     "lat": 37.817107,
     "lng": -96.864443,
-    "price": 130000,
+    "price": 125000,
     "beds": 2,
     "baths": 4,
     "sqft": "1699",
@@ -93138,7 +93142,8 @@
     "isSundgren": false,
     "agentName": "Chris Greene",
     "agentPhone": "3166176516",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 130000
   },
   {
     "slug": "2608-minnesota-st-wichita-ks-672031",
@@ -110597,7 +110602,7 @@
     "state": "KS",
     "lat": 37.277322,
     "lng": -97.394007,
-    "price": 59900,
+    "price": 49900,
     "beds": 2,
     "baths": 1,
     "sqft": "1020",
@@ -110609,7 +110614,8 @@
     "isSundgren": false,
     "agentName": "Roy J Foster",
     "agentPhone": "3162582670",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 59900
   },
   {
     "slug": "1301-dellrose-ave-wichita-ks-677696",
