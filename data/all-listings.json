@@ -19880,7 +19880,7 @@
     "state": "KS",
     "lat": 39.147622,
     "lng": -97.744451,
-    "price": 449000,
+    "price": 429000,
     "beds": 3,
     "baths": 2,
     "sqft": "2418",
@@ -19892,7 +19892,8 @@
     "isSundgren": false,
     "agentName": "Monte Nelson",
     "agentPhone": "7853927481",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 449000
   },
   {
     "slug": "4940-peregrine-st-wichita-ks-671846",
@@ -35142,7 +35143,7 @@
     "state": "KS",
     "lat": 37.578674,
     "lng": -97.258117,
-    "price": 349500,
+    "price": 344500,
     "beds": 4,
     "baths": 3,
     "sqft": "2619",
@@ -35155,7 +35156,7 @@
     "agentName": "Melody Rogers",
     "agentPhone": "3167666480",
     "agentEmail": "",
-    "previousPrice": 349900
+    "previousPrice": 349500
   },
   {
     "slug": "2202-cranbrook-st-wichita-ks-675421",
@@ -51731,7 +51732,7 @@
     "state": "KS",
     "lat": 38.922761,
     "lng": -97.221328,
-    "price": 274900,
+    "price": 249900,
     "beds": 5,
     "baths": 3,
     "sqft": "2352",
@@ -51743,7 +51744,8 @@
     "isSundgren": false,
     "agentName": "Christine A Taddiken",
     "agentPhone": "7854528469",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 274900
   },
   {
     "slug": "5079-toben-dr-bel-aire-ks-671526",
@@ -63093,7 +63095,7 @@
     "state": "KS",
     "lat": 38.780546,
     "lng": -97.592063,
-    "price": 222500,
+    "price": 219500,
     "beds": 3,
     "baths": 2,
     "sqft": "1076",
@@ -63106,7 +63108,7 @@
     "agentName": "Jennifer Stutterheim",
     "agentPhone": "7858221969",
     "agentEmail": "",
-    "previousPrice": 225000
+    "previousPrice": 222500
   },
   {
     "slug": "7077-central-23-ave-wichita-ks-677908",
@@ -68215,7 +68217,7 @@
     "state": "KS",
     "lat": 37.782043,
     "lng": -97.376107,
-    "price": 205000,
+    "price": 195000,
     "beds": 4,
     "baths": 2,
     "sqft": "1376",
@@ -68227,7 +68229,8 @@
     "isSundgren": false,
     "agentName": "Bree Russell",
     "agentPhone": "3165167417",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 205000
   },
   {
     "slug": "193-mendocino-st-goddard-ks-672547",
@@ -85650,7 +85653,7 @@
     "state": "KS",
     "lat": 37.687995,
     "lng": -96.976665,
-    "price": 139900,
+    "price": 141900,
     "beds": 2,
     "baths": 1,
     "sqft": "864",
@@ -85662,8 +85665,7 @@
     "isSundgren": false,
     "agentName": "Caitlin M Sudduth-Brazell",
     "agentPhone": "3163051660",
-    "agentEmail": "",
-    "previousPrice": 152500
+    "agentEmail": ""
   },
   {
     "slug": "1309-charleston-dr-park-city-ks-674856",
@@ -132418,7 +132420,7 @@
     "state": "KS",
     "lat": 38.365605,
     "lng": -97.704963,
-    "price": 489000,
+    "price": 479000,
     "beds": 6,
     "baths": 4,
     "sqft": "5148",
@@ -132431,7 +132433,7 @@
     "agentName": "Braden McCurdy",
     "agentPhone": "3166830612",
     "agentEmail": "",
-    "previousPrice": 499000
+    "previousPrice": 489000
   },
   {
     "slug": "1549a-y-rd-eureka-ks-676984",

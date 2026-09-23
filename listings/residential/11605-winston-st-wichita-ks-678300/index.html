@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Exceptional curb appeal welcomes you to this Craig Sharp-built modern farmhouse in Brookfield, where a striking Steel 360 front door makes an immediate statement. This five-bedroom, three-bath home offers generous living space, quality finishes, and thoughtful details throughout. The open main level is filled with natural light and features wide-plank wood floors and an impressive living room with a beamed shiplap tray ceiling. A white herringbone brick fireplace is flanked by custom built-in cabinetry and floating wood shelves. Custom window coverings are found throughout the home, with automated blinds in the living room and primary suite. The adjoining dining area is framed by large windows overlooking the backyard. At the heart of the home is a spacious kitchen with an oversized quartz island offering plenty of room for seating and gathering, a farmhouse sink, Café appliances including a gas cooktop, double ovens and refrigerator, white cabinetry, soft-close drawers, tiled backsplash, and an abundance of counter space. The appliances remain with the home. A built-in serving and beverage bar with additional cabinetry, counter space, and floating wood shelves adds both style and function, while the large walk-in pantry provides exceptional storage. The primary suite is a relaxing retreat with a dramatic tray ceiling and wood beams, large windows, and a private bath featuring an extended dual vanity, quartz countertops, wood cabinetry, and an oversized tiled walk-in shower with bench. The impressive primary closet offers extensive custom storage, built-in drawers, and natural light. Conveniently located just off the primary closet is the laundry room, complete with a utility sink and built-in cabinetry. Two additional bedrooms, a full bath, and a drop zone complete the main level. Every bedroom in the home features a large walk-in closet, providing exceptional storage throughout. The finished basement offers another exceptional gathering space with a large family and rec room, shiplap detailing, floating wood shelves, and a substantial wet bar with sink, beverage refrigerator, cabinetry, and tiled accent wall. Two additional bedrooms and a full bath provide plenty of space for family and guests. Outside, lush landscaping and mature trees create a picturesque setting and are truly a standout feature of this home. The thoughtfully designed and fully fenced backyard creates an impressive setting for the large, covered lanai with fireplace, extending the living and entertaining space outdoors. An irrigation well and sprinkler system help keep the lawn and landscaping looking their best. Located just minutes from everything Wichita’s east side has to offer, including shopping, dining, entertainment, and everyday conveniences, while situated in the desirable Circle School District. From the statement Steel 360 front door and custom details to the exceptional storage, multiple entertaining spaces, and impressive outdoor setting, this Brookfield home is one you won’t want to miss.</p>
     </div>
@@ -209,8 +211,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -220,13 +222,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="11605 Winston St, Wichita, KS, 67226">
-        <input type="hidden" name="message" value="I am interested in the property at 11605 Winston St, Wichita, KS, 67226 (MLS# 678300). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 11605 Winston St, Wichita, KS, 67226 (MLS# 678300). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
