@@ -69097,7 +69097,7 @@
     "state": "KS",
     "lat": 37.685907,
     "lng": -97.297044,
-    "price": 200000,
+    "price": 175000,
     "beds": 2,
     "baths": 2,
     "sqft": "1309",
@@ -69109,7 +69109,8 @@
     "isSundgren": false,
     "agentName": "Carol Cloud",
     "agentPhone": "3167379790",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 200000
   },
   {
     "slug": "3006-westridge-dr-wichita-ks-668043",
