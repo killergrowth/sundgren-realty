@@ -46837,7 +46837,7 @@
     "state": "KS",
     "lat": 38.35972099,
     "lng": -97.673765,
-    "price": 284900,
+    "price": 279900,
     "beds": 4,
     "baths": 3,
     "sqft": "2789",
@@ -46850,7 +46850,7 @@
     "agentName": "Larry Showalter",
     "agentPhone": "7857664497",
     "agentEmail": "",
-    "previousPrice": 289000
+    "previousPrice": 284900
   },
   {
     "slug": "2720-beacon-hill-wichita-ks-672567",
@@ -47277,7 +47277,7 @@
     "state": "KS",
     "lat": 37.56115198,
     "lng": -97.34110603,
-    "price": 287000,
+    "price": 274000,
     "beds": 4,
     "baths": 3,
     "sqft": "1956",
@@ -47289,7 +47289,8 @@
     "isSundgren": false,
     "agentName": "Monica Ronnebaum",
     "agentPhone": "3166559133",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 287000
   },
   {
     "slug": "179-tomahawk-clearwater-ks-672358",
@@ -113355,7 +113356,7 @@
     "state": "KS",
     "lat": 38.001114,
     "lng": -97.501319,
-    "price": 45000,
+    "price": 35000,
     "beds": 3,
     "baths": 1,
     "sqft": "1110",
@@ -113367,7 +113368,8 @@
     "isSundgren": false,
     "agentName": "Monica Ronnebaum",
     "agentPhone": "3166559133",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 45000
   },
   {
     "slug": "207-michigan-st-winfield-ks-675195",
