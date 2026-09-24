@@ -43758,7 +43758,7 @@
     "state": "KS",
     "lat": 37.278723,
     "lng": -97.38155,
-    "price": 299900,
+    "price": 297900,
     "beds": 5,
     "baths": 3,
     "sqft": "2996",
@@ -43770,7 +43770,8 @@
     "isSundgren": false,
     "agentName": "Sunni Goentzel",
     "agentPhone": "3162170217",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 299900
   },
   {
     "slug": "9715-westlawn-st-wichita-ks-677872",
@@ -68035,7 +68036,7 @@
     "state": "KS",
     "lat": 37.561736,
     "lng": -97.26769,
-    "price": 207500,
+    "price": 206000,
     "beds": 3,
     "baths": 1,
     "sqft": "1415",
@@ -68047,7 +68048,8 @@
     "isSundgren": false,
     "agentName": "Katie Brown",
     "agentPhone": "3167344873",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 207500
   },
   {
     "slug": "10716-212th-rd-winfield-ks-675120",
@@ -99332,7 +99334,7 @@
     "state": "KS",
     "lat": 37.395538,
     "lng": -97.277453,
-    "price": 106000,
+    "price": 95000,
     "beds": 2,
     "baths": 1,
     "sqft": "800",
@@ -99344,7 +99346,8 @@
     "isSundgren": false,
     "agentName": "Sunni Goentzel",
     "agentPhone": "3162170217",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 106000
   },
   {
     "slug": "0000-sierra-ridge-st-garden-plain-ks-669564",
