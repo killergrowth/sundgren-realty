@@ -1,5 +1,5 @@
 {
-  "lastFetch": "2026-09-24T11:15:21.555Z",
+  "lastFetch": "2026-09-24T16:38:56.949Z",
   "auctions": {
     "24096": {
       "slug": "test-auction-24096",
@@ -2853,9 +2853,10 @@
     },
     "168675": {
       "slug": "240-acres-2-tracts-bird-creek-tillable-pasture-pond-trees-ho-168675",
-      "status": "pending",
+      "status": "accepting_bids",
       "name": "240+- Acres, 2 Tracts – Bird Creek, Tillable, Pasture, Pond, Trees, House & Hunting – Butler County, Kansas",
-      "generated": "2026-09-01T00:25:09.437Z"
+      "generated": "2026-09-01T00:25:09.437Z",
+      "updated": "2026-09-24T16:39:00.113Z"
     },
     "168676": {
       "slug": "535-acres-of-native-pasture-and-a-large-pond-near-el-dorado-168676",
