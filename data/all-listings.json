@@ -7349,7 +7349,7 @@
     "state": "KS",
     "lat": 37.751018,
     "lng": -97.201785,
-    "price": 749000,
+    "price": 699990,
     "beds": 5,
     "baths": 3,
     "sqft": "3335",
@@ -7361,7 +7361,8 @@
     "isSundgren": false,
     "agentName": "Melinda Cryer-Peffly",
     "agentPhone": "3162530405",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 749000
   },
   {
     "slug": "4617-emerald-bay-st-wichita-ks-672324",
@@ -8688,7 +8689,7 @@
     "state": "KS",
     "lat": 37.71873,
     "lng": -97.15184,
-    "price": 675000,
+    "price": 625000,
     "beds": 3,
     "baths": 3,
     "sqft": "2388",
@@ -8700,7 +8701,8 @@
     "isSundgren": false,
     "agentName": "Bobbie Lane",
     "agentPhone": "3169900697",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 675000
   },
   {
     "slug": "1401-93rd-st-n-st-park-city-ks-676259",
@@ -11145,7 +11147,7 @@
     "state": "KS",
     "lat": 37.718744,
     "lng": -97.152021,
-    "price": 595000,
+    "price": 575000,
     "beds": 3,
     "baths": 3,
     "sqft": "2289",
@@ -11157,7 +11159,8 @@
     "isSundgren": false,
     "agentName": "Bobbie Lane",
     "agentPhone": "3169900697",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 595000
   },
   {
     "slug": "5601-127th-st-e-wichita-ks-663255",
@@ -12812,7 +12815,7 @@
     "state": "KS",
     "lat": 37.698224,
     "lng": -97.229162,
-    "price": 550000,
+    "price": 525000,
     "beds": 2,
     "baths": 4,
     "sqft": "3431",
@@ -12824,7 +12827,8 @@
     "isSundgren": false,
     "agentName": "Myron K Klaassen",
     "agentPhone": "3164614847",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 550000
   },
   {
     "slug": "6619-santa-fe-lake-rd-augusta-ks-676196",
@@ -43115,7 +43119,7 @@
     "state": "KS",
     "lat": 37.765394,
     "lng": -97.260853,
-    "price": 295000,
+    "price": 289000,
     "beds": 4,
     "baths": 3,
     "sqft": "2455",
@@ -43128,7 +43132,7 @@
     "agentName": "Lisa Soltesz",
     "agentPhone": "6233881135",
     "agentEmail": "",
-    "previousPrice": 300000
+    "previousPrice": 295000
   },
   {
     "slug": "419-myers-ct-mulvane-ks-678228",
@@ -46285,7 +46289,7 @@
     "state": "KS",
     "lat": 38.07229,
     "lng": -97.349433,
-    "price": 289900,
+    "price": 284900,
     "beds": 4,
     "baths": 3,
     "sqft": "2839",
@@ -46297,7 +46301,8 @@
     "isSundgren": false,
     "agentName": "Chris Bergquist",
     "agentPhone": "3165187114",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 289900
   },
   {
     "slug": "5103-toben-ct-bel-aire-ks-677324",
@@ -52686,7 +52691,7 @@
     "state": "KS",
     "lat": 37.686525,
     "lng": -97.130738,
-    "price": 269500,
+    "price": 263000,
     "beds": 2,
     "baths": 2,
     "sqft": "1112",
@@ -52698,7 +52703,8 @@
     "isSundgren": false,
     "agentName": "Kirk Short",
     "agentPhone": "3163714668",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 269500
   },
   {
     "slug": "4426-niblick-dr-winfield-ks-668015",
@@ -74668,7 +74674,7 @@
     "state": "KS",
     "lat": 37.653363,
     "lng": -97.368978,
-    "price": 186000,
+    "price": 179500,
     "beds": 3,
     "baths": 1,
     "sqft": "1068",
@@ -74680,7 +74686,8 @@
     "isSundgren": false,
     "agentName": "Oricel Iron Wing",
     "agentPhone": "3168336248",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 186000
   },
   {
     "slug": "lot-7-block-a-prairie-preserve-addition-bel-aire-ks-668276",
@@ -82477,7 +82484,7 @@
     "state": "KS",
     "lat": 37.653354,
     "lng": -97.369384,
-    "price": 159900,
+    "price": 155900,
     "beds": 3,
     "baths": 1,
     "sqft": "928",
@@ -82490,7 +82497,7 @@
     "agentName": "Jenny Grandfield",
     "agentPhone": "3166445102",
     "agentEmail": "",
-    "previousPrice": 163000
+    "previousPrice": 159900
   },
   {
     "slug": "7015-newell-st-wichita-ks-675760",
@@ -92572,7 +92579,7 @@
     "state": "KS",
     "lat": 37.673957,
     "lng": -97.362288,
-    "price": 130000,
+    "price": 125000,
     "beds": 2,
     "baths": 1,
     "sqft": "1369",
@@ -92584,7 +92591,8 @@
     "isSundgren": false,
     "agentName": "Steve Myers",
     "agentPhone": "3163304318",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 130000
   },
   {
     "slug": "1353-pershing-ave-wichita-ks-675865",
@@ -109240,7 +109248,7 @@
     "state": "KS",
     "lat": 37.054883,
     "lng": -97.039321,
-    "price": 64900,
+    "price": 54900,
     "beds": null,
     "baths": null,
     "sqft": "2959",
@@ -109252,7 +109260,8 @@
     "isSundgren": false,
     "agentName": "Dawn R Wade",
     "agentPhone": "3168061060",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 64900
   },
   {
     "slug": "801-c-st-arkansas-city-ks-673239",
