@@ -73,13 +73,13 @@
       </button>
       <button class="sg-mosaic-thumb" data-idx="3" aria-label="View photo 4" type="button">
         <img src="https://cdn.repliers.io/southcentralkansas/IMG-676736_6705693521234659400.jpg" alt="Property photo 4" loading="lazy">
-        <div class="sg-mosaic-more" aria-hidden="true">+5 more</div>
+        <div class="sg-mosaic-more" aria-hidden="true">+16 more</div>
       </button>
       </div>
     </div>
     <div class="sg-gallery-bar">
       <button class="sg-gallery-all-btn" id="sg-view-all" type="button">
-        <i class="fas fa-images"></i> View all 9 photos
+        <i class="fas fa-images"></i> View all 20 photos
       </button>
     </div>
   </section>
@@ -94,7 +94,7 @@
 
   <script>
   (function(){
-    var srcs = ["https://cdn.repliers.io/southcentralkansas/IMG-676736_6705319167031171267.jpg","https://cdn.repliers.io/southcentralkansas/IMG-676736_6702424589212833750.jpg","https://cdn.repliers.io/southcentralkansas/IMG-676736_6701549024504771567.jpg","https://cdn.repliers.io/southcentralkansas/IMG-676736_6705693521234659400.jpg","https://cdn.repliers.io/southcentralkansas/IMG-676736_6700071279806359621.jpg","https://cdn.repliers.io/southcentralkansas/IMG-676736_6708461296427052311.jpg","https://cdn.repliers.io/southcentralkansas/IMG-676736_6703324052527809287.jpg","https://cdn.repliers.io/southcentralkansas/IMG-676736_6705602231619769319.jpg","https://cdn.repliers.io/southcentralkansas/IMG-676736_6709592622719444358.jpg"];
+    var srcs = ["https://cdn.repliers.io/southcentralkansas/IMG-676736_6705319167031171267.jpg","https://cdn.repliers.io/southcentralkansas/IMG-676736_6702424589212833750.jpg","https://cdn.repliers.io/southcentralkansas/IMG-676736_6701549024504771567.jpg","https://cdn.repliers.io/southcentralkansas/IMG-676736_6705693521234659400.jpg","https://cdn.repliers.io/southcentralkansas/IMG-676736_6700071279806359621.jpg","https://cdn.repliers.io/southcentralkansas/IMG-676736_6708461296427052311.jpg","https://cdn.repliers.io/southcentralkansas/IMG-676736_6703324052527809287.jpg","https://cdn.repliers.io/southcentralkansas/IMG-676736_6705602231619769319.jpg","https://cdn.repliers.io/southcentralkansas/IMG-676736_6709592622719444358.jpg","https://cdn.repliers.io/southcentralkansas/IMG-676736_6706573416369057815.jpg","https://cdn.repliers.io/southcentralkansas/IMG-676736_6708675444417036927.jpg","https://cdn.repliers.io/southcentralkansas/IMG-676736_6703795129672087264.jpg","https://cdn.repliers.io/southcentralkansas/IMG-676736_6703840375994555376.jpg","https://cdn.repliers.io/southcentralkansas/IMG-676736_6706333996695165387.jpg","https://cdn.repliers.io/southcentralkansas/IMG-676736_6708763168240265054.jpg","https://cdn.repliers.io/southcentralkansas/IMG-676736_6700338544805103499.jpg","https://cdn.repliers.io/southcentralkansas/IMG-676736_6706142288637668627.jpg","https://cdn.repliers.io/southcentralkansas/IMG-676736_6707930559413126304.jpg","https://cdn.repliers.io/southcentralkansas/IMG-676736_6702210575223777070.jpg","https://cdn.repliers.io/southcentralkansas/IMG-676736_6703078873946528515.jpg"];
     var lb = document.getElementById('sg-lightbox');
     var lbImg = document.getElementById('sg-lightbox-img');
     var lbCtr = document.getElementById('sg-lightbox-counter');
@@ -195,9 +195,9 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
     (function(){
-      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.917734,-97.423578],15);
+      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.917747,-97.423521],15);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap contributors',maxZoom:19}).addTo(map);
-      L.marker([37.917734,-97.423578]).addTo(map).bindPopup('505 Washington Ave, Sedgwick, KS 67135').openPopup();
+      L.marker([37.917747,-97.423521]).addTo(map).bindPopup('505 Washington Ave, Sedgwick, KS 67135').openPopup();
     })();
     </script>
   </div>
