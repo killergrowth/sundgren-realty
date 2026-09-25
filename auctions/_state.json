@@ -1,5 +1,5 @@
 {
-  "lastFetch": "2026-09-25T11:20:21.049Z",
+  "lastFetch": "2026-09-25T16:44:31.480Z",
   "auctions": {
     "24096": {
       "slug": "test-auction-24096",
@@ -2865,9 +2865,10 @@
     },
     "168678": {
       "slug": "376-acres-3-tracts-tillable-pasture-oil-income-hunting-cowle-168678",
-      "status": "pending",
+      "status": "accepting_bids",
       "name": "376+- Acres, 3 Tracts - Tillable, Pasture, Oil Income & Hunting – Cowley County, Kansas",
-      "generated": "2026-08-30T16:12:09.640Z"
+      "generated": "2026-08-30T16:12:09.640Z",
+      "updated": "2026-09-25T16:44:33.992Z"
     },
     "168773": {
       "slug": "203-n-3rd-st-towanda-ks-67144-5-bed-2-bath-classic-home-on-l-168773",
