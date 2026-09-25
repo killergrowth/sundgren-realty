@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Welcome home to 1101 Park Glen, an absolute showstopper located in the heart of Clearwater, KS! Situated on a premier, spacious corner lot, this stunning 6-bedroom, 3-bathroom residence perfectly pairs high-end modern finishes with unparalleled everyday functionality. Step inside to an airy, light-filled open concept with vaulted celilings designed for both seamless entertaining and effortless daily living. The kitchen serves as the true heart of the home, boasting sleek modern finishes, premium cabinetry, and a massive center island perfect for meal prep, casual dining, or gathering with friends. Just off the kitchen, a beautifully designed, functional drop zone keeps the busy hustle organized, while the laundry room—complete with a built-in sink and ample folding space—makes chores a breeze. The stone fireplace is a wow factor and the focal point of the living room. Don&#39;t miss the electric shades! The primary bedroom will easily accommodate all of your furnishings and boasts a private en suite bathroom with double sinks, a separate tub, water closet, and walk-in shower. The downstairs boasts a finished walk-out basement offering abundant natural light with nine foot ceilings. It&#39;s the perfect setup with a family room, game area, wet bar, three more bedrooms, and a third full bathroom. Two of the bedrooms downstairs also feature walk-in closets with built-in dressers. And, don&#39;t be fooled by the hidden door that leads you into the safe room. Step right outside from the basement or head out from the main floor to your covered deck, which overlooks a backyard oasis built for active fun. Whether you&#39;re hosting weekend barbecues or shooting hoops on your private basketball/pickleball court, this outdoor space is a rare neighborhood gem. The cherry on top is the oversized, three car garage, irrigation well and sprinkler system! Set up your private showing today!</p>
     </div>
@@ -209,8 +211,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -220,13 +222,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="1101 Park Glen St, Clearwater, KS, 67026">
-        <input type="hidden" name="message" value="I am interested in the property at 1101 Park Glen St, Clearwater, KS, 67026 (MLS# 673550). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 1101 Park Glen St, Clearwater, KS, 67026 (MLS# 673550). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

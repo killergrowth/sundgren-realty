@@ -4811,7 +4811,7 @@
     "state": "KS",
     "lat": 37.501649,
     "lng": -97.646574,
-    "price": 879000,
+    "price": 849000,
     "beds": 5,
     "baths": 3,
     "sqft": "3026",
@@ -4824,7 +4824,7 @@
     "agentName": "Bryce Jones",
     "agentPhone": "3166410878",
     "agentEmail": "",
-    "previousPrice": 899000
+    "previousPrice": 879000
   },
   {
     "slug": "24-douglas-ave-eastborough-ks-674383",
@@ -25219,7 +25219,7 @@
     "state": "KS",
     "lat": 37.570954,
     "lng": -97.340763,
-    "price": 385000,
+    "price": 375000,
     "beds": 5,
     "baths": 3,
     "sqft": "3266",
@@ -25232,7 +25232,7 @@
     "agentName": "Sissy Koury",
     "agentPhone": "3164099955",
     "agentEmail": "",
-    "previousPrice": 395000
+    "previousPrice": 385000
   },
   {
     "slug": "2200-51st-st-wichita-ks-676069",
@@ -39068,7 +39068,7 @@
     "state": "KS",
     "lat": 37.731266,
     "lng": -97.468157,
-    "price": 325000,
+    "price": 315000,
     "beds": 5,
     "baths": 3,
     "sqft": "2552",
@@ -39080,7 +39080,8 @@
     "isSundgren": false,
     "agentName": "Breanne Morris",
     "agentPhone": "3165161163",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 325000
   },
   {
     "slug": "230-summer-ct-newton-ks-676345",
@@ -56280,7 +56281,7 @@
     "state": "KS",
     "lat": 37.58040102,
     "lng": -97.13344103,
-    "price": 253300,
+    "price": 243300,
     "beds": 4,
     "baths": 2,
     "sqft": "2148",
@@ -56292,7 +56293,8 @@
     "isSundgren": false,
     "agentName": "Jenifer Light",
     "agentPhone": "3168678760",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 253300
   },
   {
     "slug": "3219-northwood-ct-newton-ks-676576",
@@ -105767,7 +105769,7 @@
     "state": "KS",
     "lat": 37.637222,
     "lng": -97.289002,
-    "price": 75000,
+    "price": 67500,
     "beds": 3,
     "baths": 1,
     "sqft": "768",
@@ -105779,7 +105781,8 @@
     "isSundgren": false,
     "agentName": "Lesley Perreault",
     "agentPhone": "3166554069",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 75000
   },
   {
     "slug": "4601-brookhaven-st-wichita-ks-678030",
