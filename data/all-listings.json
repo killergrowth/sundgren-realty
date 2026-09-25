@@ -4420,7 +4420,7 @@
     "state": "KS",
     "lat": 37.738404,
     "lng": -97.359006,
-    "price": 999000,
+    "price": 979000,
     "beds": null,
     "baths": null,
     "sqft": "7920",
@@ -4432,7 +4432,8 @@
     "isSundgren": false,
     "agentName": "Grant Ketzner",
     "agentPhone": "3167599583",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 999000
   },
   {
     "slug": "1302-washington-ave-wichita-ks-668594",
@@ -50556,7 +50557,7 @@
     "state": "KS",
     "lat": 37.655965,
     "lng": -97.474984,
-    "price": 269900,
+    "price": 264900,
     "beds": 4,
     "baths": 3,
     "sqft": "2220",
@@ -50569,7 +50570,7 @@
     "agentName": "Margaret Metzger",
     "agentPhone": "3163719816",
     "agentEmail": "",
-    "previousPrice": 275000
+    "previousPrice": 269900
   },
   {
     "slug": "2634-viney-ave-murdock-ks-677531",
@@ -62377,7 +62378,7 @@
     "state": "KS",
     "lat": 37.0856746,
     "lng": -97.03773353,
-    "price": 229900,
+    "price": 219000,
     "beds": 3,
     "baths": 2,
     "sqft": "1621",
@@ -62389,7 +62390,8 @@
     "isSundgren": false,
     "agentName": "Mandi Hill",
     "agentPhone": "6202293600",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 229900
   },
   {
     "slug": "12903-thorton-st-wichita-ks-674454",
@@ -63188,7 +63190,7 @@
     "state": "KS",
     "lat": 37.371045,
     "lng": -96.155776,
-    "price": 225000,
+    "price": 215000,
     "beds": 2,
     "baths": 1,
     "sqft": "800",
@@ -63200,7 +63202,8 @@
     "isSundgren": false,
     "agentName": "Liz Hendricks",
     "agentPhone": "6203302438",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 225000
   },
   {
     "slug": "2219-edward-st-salina-ks-677424",
@@ -68963,7 +68966,7 @@
     "state": "KS",
     "lat": 37.684095,
     "lng": -97.373024,
-    "price": 190000,
+    "price": 187000,
     "beds": 3,
     "baths": 2,
     "sqft": "1350",
@@ -68976,7 +68979,7 @@
     "agentName": "Lacy Critchfield",
     "agentPhone": "3166418907",
     "agentEmail": "",
-    "previousPrice": 195000
+    "previousPrice": 190000
   },
   {
     "slug": "1028-dearborn-st-augusta-ks-677089",
@@ -83072,7 +83075,7 @@
     "state": "KS",
     "lat": 37.055156,
     "lng": -97.015249,
-    "price": 160000,
+    "price": 150000,
     "beds": 3,
     "baths": 2,
     "sqft": "1889",
@@ -83084,7 +83087,8 @@
     "isSundgren": false,
     "agentName": "Brionne Kirk",
     "agentPhone": "3165122224",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 160000
   },
   {
     "slug": "624-crawford-st-salina-ks-672213",
