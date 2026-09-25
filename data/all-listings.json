@@ -2460,7 +2460,7 @@
     "state": "KS",
     "lat": 37.71321898,
     "lng": -97.21299996,
-    "price": 1770000,
+    "price": 1600000,
     "beds": 5,
     "baths": 7,
     "sqft": "5616",
@@ -2472,7 +2472,8 @@
     "isSundgren": false,
     "agentName": "Stephanie Gaskill Jakub",
     "agentPhone": "3167063858",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 1770000
   },
   {
     "slug": "3505-rock-rd-wichita-ks-673559",
@@ -62606,7 +62607,7 @@
     "state": "KS",
     "lat": 37.683464,
     "lng": -97.535523,
-    "price": 229900,
+    "price": 214900,
     "beds": 4,
     "baths": 3,
     "sqft": "1811",
@@ -62618,7 +62619,8 @@
     "isSundgren": false,
     "agentName": "Stefanie Roth",
     "agentPhone": "3168410403",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 229900
   },
   {
     "slug": "3227-longfellow-ct-wichita-ks-676800",
@@ -76560,7 +76562,7 @@
     "state": "KS",
     "lat": 37.501621,
     "lng": -97.497151,
-    "price": 180000,
+    "price": 175000,
     "beds": 3,
     "baths": 2,
     "sqft": "1994",
@@ -76572,7 +76574,8 @@
     "isSundgren": false,
     "agentName": "Steve Myers",
     "agentPhone": "3163304318",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 180000
   },
   {
     "slug": "205-sedgwick-st-wichita-ks-676137",
@@ -84105,7 +84108,7 @@
     "state": "KS",
     "lat": 37.698093,
     "lng": -97.563703,
-    "price": 159900,
+    "price": 159950,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -87131,7 +87134,7 @@
     "state": "KS",
     "lat": 38.83148699,
     "lng": -97.61476101,
-    "price": 147500,
+    "price": 145000,
     "beds": 3,
     "baths": 2,
     "sqft": "2012",
@@ -87144,7 +87147,7 @@
     "agentName": "Daniel Goble",
     "agentPhone": "7858191904",
     "agentEmail": "",
-    "previousPrice": 149900
+    "previousPrice": 147500
   },
   {
     "slug": "3350-hiram-st-wichita-ks-678251",
@@ -103114,7 +103117,7 @@
     "state": "KS",
     "lat": 37.69776777,
     "lng": -97.57063576,
-    "price": 89900,
+    "price": 89950,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -103137,7 +103140,7 @@
     "state": "KS",
     "lat": 37.69855011,
     "lng": -97.56815224,
-    "price": 89900,
+    "price": 89950,
     "beds": null,
     "baths": null,
     "sqft": null,
