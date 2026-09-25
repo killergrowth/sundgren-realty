@@ -6774,7 +6774,7 @@
     "state": "KS",
     "lat": 37.754363,
     "lng": -97.447835,
-    "price": 789900,
+    "price": 779900,
     "beds": 3,
     "baths": 2,
     "sqft": "2532",
@@ -6786,7 +6786,8 @@
     "isSundgren": false,
     "agentName": "Trent Banister",
     "agentPhone": "3162101861",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 789900
   },
   {
     "slug": "912-terradyne-cir-andover-ks-678123",
@@ -28533,7 +28534,7 @@
     "state": "KS",
     "lat": 37.68032,
     "lng": -97.447594,
-    "price": 369900,
+    "price": 365000,
     "beds": 3,
     "baths": 3,
     "sqft": "2885",
@@ -28546,7 +28547,7 @@
     "agentName": "Betsy Anderson",
     "agentPhone": "3167069750",
     "agentEmail": "",
-    "previousPrice": 375000
+    "previousPrice": 369900
   },
   {
     "slug": "519-renee-dr-andover-ks-678018",
@@ -85310,7 +85311,7 @@
     "state": "KS",
     "lat": 37.632607,
     "lng": -97.348254,
-    "price": 160000,
+    "price": 157500,
     "beds": 4,
     "baths": 1,
     "sqft": "1150",
@@ -85322,7 +85323,8 @@
     "isSundgren": false,
     "agentName": "Jack Tomlinson",
     "agentPhone": "6143577389",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 160000
   },
   {
     "slug": "3328-chase-ave-wichita-ks-677750",
@@ -87987,7 +87989,7 @@
     "state": "KS",
     "lat": 37.709477,
     "lng": -97.292566,
-    "price": 146000,
+    "price": 144500,
     "beds": 3,
     "baths": 1,
     "sqft": "993",
@@ -87999,7 +88001,8 @@
     "isSundgren": false,
     "agentName": "Oricel Iron Wing",
     "agentPhone": "3168336248",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 146000
   },
   {
     "slug": "7051-rutan-st-wichita-ks-676971",
@@ -98712,7 +98715,7 @@
     "state": "KS",
     "lat": 37.711951,
     "lng": -97.331507,
-    "price": 110000,
+    "price": 100000,
     "beds": 2,
     "baths": 1,
     "sqft": "704",
@@ -98724,7 +98727,8 @@
     "isSundgren": false,
     "agentName": "Kevin Warner",
     "agentPhone": "3167372114",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 110000
   },
   {
     "slug": "1018-main-st-wichita-ks-669991",
@@ -103694,7 +103698,7 @@
     "state": "KS",
     "lat": 37.281815,
     "lng": -98.580056,
-    "price": 85900,
+    "price": 85500,
     "beds": 3,
     "baths": 2,
     "sqft": "2000",
@@ -103707,7 +103711,7 @@
     "agentName": "Sabrina Garrison",
     "agentPhone": "6205013201",
     "agentEmail": "",
-    "previousPrice": 86000
+    "previousPrice": 85900
   },
   {
     "slug": "1409-water-st-wichita-ks-678028",
@@ -132134,7 +132138,7 @@
     "state": "KS",
     "lat": 37.776148,
     "lng": -97.258691,
-    "price": 399900,
+    "price": 375000,
     "beds": 5,
     "baths": 3,
     "sqft": "3410",
@@ -132146,7 +132150,8 @@
     "isSundgren": false,
     "agentName": "Daniel Gutierrez",
     "agentPhone": "6209371488",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 399900
   },
   {
     "slug": "609-belmont-ave-wichita-ks-677510",

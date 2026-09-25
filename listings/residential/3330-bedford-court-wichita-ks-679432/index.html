@@ -63,12 +63,23 @@
         <img src="https://cdn.repliers.io/southcentralkansas/IMG-679432_6702926654477742590.jpg" alt="Primary property photo" loading="eager">
       </button>
       <div class="sg-mosaic-strip">
-
+      <button class="sg-mosaic-thumb" data-idx="1" aria-label="View photo 2" type="button">
+        <img src="https://cdn.repliers.io/southcentralkansas/IMG-679432_6704493947918067990.jpg" alt="Property photo 2" loading="lazy">
+        
+      </button>
+      <button class="sg-mosaic-thumb" data-idx="2" aria-label="View photo 3" type="button">
+        <img src="https://cdn.repliers.io/southcentralkansas/IMG-679432_6701649442424765105.jpg" alt="Property photo 3" loading="lazy">
+        
+      </button>
+      <button class="sg-mosaic-thumb" data-idx="3" aria-label="View photo 4" type="button">
+        <img src="https://cdn.repliers.io/southcentralkansas/IMG-679432_6705979825183481881.jpg" alt="Property photo 4" loading="lazy">
+        <div class="sg-mosaic-more" aria-hidden="true">+9 more</div>
+      </button>
       </div>
     </div>
     <div class="sg-gallery-bar">
       <button class="sg-gallery-all-btn" id="sg-view-all" type="button">
-        <i class="fas fa-images"></i> View all 1 photo
+        <i class="fas fa-images"></i> View all 13 photos
       </button>
     </div>
   </section>
@@ -83,7 +94,7 @@
 
   <script>
   (function(){
-    var srcs = ["https://cdn.repliers.io/southcentralkansas/IMG-679432_6702926654477742590.jpg"];
+    var srcs = ["https://cdn.repliers.io/southcentralkansas/IMG-679432_6702926654477742590.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679432_6704493947918067990.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679432_6701649442424765105.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679432_6705979825183481881.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679432_6702926157260892743.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679432_6705299623605613402.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679432_6706565554128183731.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679432_6708320047338724890.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679432_6708131813575840194.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679432_6703720673379926246.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679432_6703121589505908019.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679432_6709511634969968458.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679432_6700329067435901425.jpg"];
     var lb = document.getElementById('sg-lightbox');
     var lbImg = document.getElementById('sg-lightbox-img');
     var lbCtr = document.getElementById('sg-lightbox-counter');
@@ -101,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -137,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Brand new Paul Gray Homes beauty in Bobcat Bend at Brookfield! Don’t miss this incredible opportunity to own a grand home in the highly sought-after Brookfield community! From the moment you enter, you’ll be welcomed by the stunning finishes you&#39;ve come to expect in a Paul Gray home! The gourmet kitchen is a chef’s dream, featuring a large center island, high end appliances, gas cooktop, expansive walk-in pantry, and a dedicated workspace for added kitchen functionality. The main-level primary suite is a true retreat, offering a luxurious and elegant bath complete with a spa-inspired shower and large soaker bath with beautiful finishes. Bedrooms 2 &amp; 3 on the main floor enjoy their own private en-suite baths. The finished basement is where this home truly shines! Get ready for endless entertainment with a large open wet bar area, a dedicated home gym, and a spacious family room—perfect for movie nights, game days, and gatherings! Two additional bedrooms with their own private baths make this lower level ideal for guests or multigenerational living. This home offers the perfect blend of luxury, lifestyle, and functionality—designed to meet your needs for years to come. The taxes are estimated and from the Sedgwick County website. Schedule your private tour today and experience the magic of Brookfield living! So close to the city, yet that country feel!</p>
     </div>
@@ -198,8 +211,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -209,13 +222,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="3330 Bedford Court, Wichita, KS, 67226">
-        <input type="hidden" name="message" value="I am interested in the property at 3330 Bedford Court, Wichita, KS, 67226 (MLS# 679432). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 3330 Bedford Court, Wichita, KS, 67226 (MLS# 679432). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

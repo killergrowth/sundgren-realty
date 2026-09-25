@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>This beautifully designed home is in pristine condition with an incredible outdoor living space! NEW Class 4 Impact Resistant Roof going on the week of September 14th PLUS NEW gutters coming soon. The open-concept main floor features a desirable split-bedroom floor plan, main-floor laundry, and an impressive walk-in pantry plus a second walk-in pantry that would be perfect for household organization, cleaning supplies, or additional storage. The spacious primary suite includes dual sinks and a beautifully designed walk-in closet with custom built-ins plus a soaker tub and walk-in shower. The view-out basement offers even more living space with a finished family room, wet bar, fourth bedroom, plus an additional bedroom or flex space without a closet. A massive storage room provides plenty of space to keep everything organized. Step outside to an incredible backyard designed for entertaining and relaxing. The covered deck overlooks the beautifully landscaped, fenced backyard and features built-in electric heaters for extended seasonal use. A large patio with a pergola provides another wonderful outdoor gathering space. Complete with a three-car attached garage, this home offers exceptional indoor and outdoor living! NO special assessment taxes. Located in Meadowlark School District.</p>
     </div>
@@ -191,9 +193,9 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
     (function(){
-      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([38.814502,-97.571452],15);
+      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([38.814462,-97.571538],15);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap contributors',maxZoom:19}).addTo(map);
-      L.marker([38.814502,-97.571452]).addTo(map).bindPopup('2310 Pinecrest Cr CIR, Salina, KS 67401').openPopup();
+      L.marker([38.814462,-97.571538]).addTo(map).bindPopup('2310 Pinecrest Cr CIR, Salina, KS 67401').openPopup();
     })();
     </script>
   </div>
@@ -201,8 +203,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -212,13 +214,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="2310 Pinecrest Cr CIR, Salina, KS, 67401">
-        <input type="hidden" name="message" value="I am interested in the property at 2310 Pinecrest Cr CIR, Salina, KS, 67401 (MLS# 678945). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 2310 Pinecrest Cr CIR, Salina, KS, 67401 (MLS# 678945). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
