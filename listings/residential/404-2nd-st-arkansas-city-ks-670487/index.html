@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-terminated pill">Inactive</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>English~ Welcome to this spacious 2-story home located in Arkansas City! This property offers approximately 2204 sq ft of living space with multiple living areas, providing flexibility and comfort for everyday living. The main level features 2 large living rooms, and a functional kitchen layout. A downstairs utility room adds convenience for daily tasks. Upstairs you’ll find 4 bedrooms offering privacy and comfort. The home also includes a small garage and a decent-sized backyard, perfect for outdoor enjoyment. Attic fan has not been used in recent years and condition is unknown. Window A/C units to be installed upstairs. Water softener in basement present; condition unknown. Inspections recommended. Recent updates include new roofing and guttering, providing added peace of mind. Additional storage areas and a practical layout make this home ready for your personal touch. Located near local amenities, schools, and parks, this home is a great opportunity for homeowners or investors alike. Schedule your showing today! Español~ ¡Bienvenido a esta espaciosa casa de 2 niveles ubicada en Arkansas City! Esta propiedad ofrece aproximadamente 2,204 pies cuadrados de espacio habitable, con múltiples áreas de sala que brindan flexibilidad y comodidad para la vida diaria. El nivel principal cuenta con 2 salas de estar amplias y una cocina funcional. Un cuarto de lavado en la planta baja añade conveniencia para las tareas del hogar. En la planta alta encontrará 4 dormitorios que ofrecen privacidad y confort. La propiedad también incluye un garaje pequeño y un patio trasero de buen tamaño, ideal para disfrutar al aire libre. El ventilador del ático no ha sido utilizado en los últimos años y su condición es desconocida. Se instalarán unidades de aire acondicionado de ventana en la planta alta. La propiedad cuenta con un ablandador de agua en el sótano; su condición es desconocida. Se recomienda realizar inspecciones. Actualizaciones recientes incluyen techo nuevo y canaletas nuevas, brindando mayor tranquilidad. Áreas adicionales de almacenamiento y una distribución práctica hacen que esta casa esté lista para que le dé su toque personal. Ubicada cerca de servicios locales, escuelas y parques, esta propiedad es una excelente oportunidad tanto para compradores como para inversionistas. ¡Programe su visita hoy mismo!</p>
     </div>
@@ -205,8 +207,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -216,13 +218,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="404 2nd St, Arkansas City, KS, 67005">
-        <input type="hidden" name="message" value="I am interested in the property at 404 2nd St, Arkansas City, KS, 67005 (MLS# 670487). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 404 2nd St, Arkansas City, KS, 67005 (MLS# 670487). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

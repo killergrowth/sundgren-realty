@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-terminated pill">Inactive</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Peaceful Country Living on 10± Acres with Shop, Pond &amp; Gated Entry Tucked behind a gated entrance and set on approximately 10± acres, this well-cared-for rural property offers space, privacy, and the quiet beauty of country living just outside Arkansas City. The ranch-style home features 2 bedrooms and 1 bathroom and has been thoughtfully maintained over the years. Inside, you’ll find solid oak doors and trim, cedar-lined closets, custom window coverings, surround sound, and additional electrical outlets placed throughout for everyday convenience. The home is serviced by rural water and also includes a private water well with a brand-new pump available for use if desired. The impressive 100’ x 50’ climate-controlled shop offers exceptional versatility and includes two large drive-through garage doors plus a finished living area complete with a full kitchen, bathroom, bedroom, and living space—ideal for guests, hobbies, workspace, or extended living needs. The shop also features two 25-foot concrete-floored overhangs, providing excellent covered space for equipment, vehicles, or outdoor work areas. This space may be suitable for personal or business use, depending on buyer needs. Additional features include: Pond, Walk-in storm shelter, Three separate electric meters (home, shop, and additional potential build or future shop/home location), Brand new roofs on both the home and shop, New insulation installed in the shop roof. The property setting allows you to enjoy the simple moments of country life—watching the sunrise over the pond, spending evenings on the front porch, relaxing under mature trees, fishing, or enjoying the open Kansas sky filled with stars. Schedule your private showing with the listing agent today.</p>
     </div>
@@ -205,8 +207,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -216,13 +218,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="27750 85th Rd, Arkansas City, KS, 67005">
-        <input type="hidden" name="message" value="I am interested in the property at 27750 85th Rd, Arkansas City, KS, 67005 (MLS# 668100). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 27750 85th Rd, Arkansas City, KS, 67005 (MLS# 668100). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

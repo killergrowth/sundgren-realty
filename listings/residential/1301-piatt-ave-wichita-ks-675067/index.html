@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-terminated pill">Inactive</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -133,7 +133,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Looking for a great investment opportunity in one of Wichita&#39;s strongest rental areas? This well-maintained duplex, located just minutes from Wichita State University, offers excellent income potential for investors and owner-occupants alike. Each unit features 1 bedroom and 1 bathroom, making them attractive to students, young professionals, and small households. Unit 1303 has been extensively updated with a remodeled kitchen and bathroom, updated plumbing and electrical systems, hardwood floors, a newer water heater, and a newer air conditioner. Major exterior improvements include a newer roof, siding, and gutters, helping reduce future maintenance expenses. Both units have enjoyed consistent occupancy over the past four years, providing dependable rental income and strong investment returns. Conveniently located near Wichita State University, shopping, restaurants, and public transportation, this property continues to attract quality tenants. Whether you&#39;re looking to grow your investment portfolio or live in one unit while generating income from the other, this duplex offers a fantastic opportunity.</p>
     </div>
@@ -190,8 +192,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -201,13 +203,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="1301 Piatt AVE, Wichita, KS, 67214">
-        <input type="hidden" name="message" value="I am interested in the property at 1301 Piatt AVE, Wichita, KS, 67214 (MLS# 675067). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 1301 Piatt AVE, Wichita, KS, 67214 (MLS# 675067). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
