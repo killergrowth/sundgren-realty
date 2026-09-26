@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>8410 E Overbrook Ln is full of character, thoughtful updates, and spaces you don&#39;t find in every home. Located in Brookhollow, this 3 bedroom, 3.5 bath home offers multiple living areas and a flexible layout with plenty of room to make it your own. The main living space features beautiful wood floors, exposed beams, a fireplace, built ins, and large windows that bring in tons of natural light. Just off the living area is one of my favorite features of the home, a built in bar and entertaining space with extensive cabinetry, wine storage, and additional room to gather. The kitchen flows easily into the surrounding living spaces, while the finished lower level gives you even more room to spread out. In addition to the rec area, there&#39;s a separate bonus room that could easily become a home office, workout room, hobby space, or whatever fits your needs. Outside, you&#39;ll find a covered patio, dedicated fire pit area, garden space, established fruit trees, and a fenced backyard. What really makes this home stand out is the amount of usable space and personality throughout. From the exposed beams and fireplace to the built in bar and flexible lower level, there is a lot here that you simply can&#39;t see from the curb.</p>
     </div>
@@ -191,9 +193,9 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
     (function(){
-      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.690102,-97.239162],15);
+      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.690099,-97.239157],15);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap contributors',maxZoom:19}).addTo(map);
-      L.marker([37.690102,-97.239162]).addTo(map).bindPopup('8410 Overbrook St, Wichita, KS 67206').openPopup();
+      L.marker([37.690099,-97.239157]).addTo(map).bindPopup('8410 Overbrook St, Wichita, KS 67206').openPopup();
     })();
     </script>
   </div>
@@ -201,8 +203,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -212,13 +214,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="8410 Overbrook St, Wichita, KS, 67206">
-        <input type="hidden" name="message" value="I am interested in the property at 8410 Overbrook St, Wichita, KS, 67206 (MLS# 678957). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 8410 Overbrook St, Wichita, KS, 67206 (MLS# 678957). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

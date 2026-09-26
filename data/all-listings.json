@@ -45323,7 +45323,7 @@
     "state": "KS",
     "lat": 37.713365,
     "lng": -97.364115,
-    "price": 294900,
+    "price": 292500,
     "beds": 3,
     "baths": 2,
     "sqft": "2755",
@@ -45335,7 +45335,8 @@
     "isSundgren": false,
     "agentName": "Troy Fischer",
     "agentPhone": "3166191164",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 294900
   },
   {
     "slug": "1813-pine-grove-st-wichita-ks-676515",
@@ -53322,7 +53323,7 @@
     "state": "KS",
     "lat": 37.66081699,
     "lng": -97.212963,
-    "price": 265000,
+    "price": 260000,
     "beds": 4,
     "baths": 3,
     "sqft": "2076",
@@ -53334,7 +53335,8 @@
     "isSundgren": false,
     "agentName": "Blake Billington",
     "agentPhone": "3168336156",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 265000
   },
   {
     "slug": "1614-main-st-rose-hill-ks-677181",
