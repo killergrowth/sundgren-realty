@@ -11011,7 +11011,7 @@
     "state": "KS",
     "lat": 37.693685,
     "lng": -97.174093,
-    "price": 597928,
+    "price": 613512,
     "beds": 4,
     "baths": 3,
     "sqft": "2203",
@@ -24110,7 +24110,7 @@
     "state": "KS",
     "lat": 37.783834,
     "lng": -97.457341,
-    "price": 399900,
+    "price": 397400,
     "beds": 5,
     "baths": 3,
     "sqft": "2508",
@@ -24122,7 +24122,8 @@
     "isSundgren": false,
     "agentName": "Colby Jones",
     "agentPhone": "3163026141",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 399900
   },
   {
     "slug": "254-lakeside-dr-andover-ks-676546",
@@ -29976,7 +29977,7 @@
     "state": "KS",
     "lat": 37.693117,
     "lng": -97.240498,
-    "price": 360000,
+    "price": 355000,
     "beds": 4,
     "baths": 3,
     "sqft": "3080",
@@ -29989,7 +29990,7 @@
     "agentName": "Myron K Klaassen",
     "agentPhone": "3164614847",
     "agentEmail": "",
-    "previousPrice": 370000
+    "previousPrice": 360000
   },
   {
     "slug": "16051607-limuel-st-wichita-ks-677917",
@@ -35457,7 +35458,7 @@
     "state": "KS",
     "lat": 37.7837518,
     "lng": -97.45727564,
-    "price": 348000,
+    "price": 353000,
     "beds": 3,
     "baths": 2,
     "sqft": "1627",
@@ -35480,7 +35481,7 @@
     "state": "KS",
     "lat": 37.783529,
     "lng": -97.457246,
-    "price": 348000,
+    "price": 353000,
     "beds": 3,
     "baths": 2,
     "sqft": "1627",
@@ -61572,7 +61573,7 @@
     "state": "KS",
     "lat": 37.483304,
     "lng": -97.238571,
-    "price": 230000,
+    "price": 219900,
     "beds": 3,
     "baths": 3,
     "sqft": "1674",
@@ -61584,7 +61585,8 @@
     "isSundgren": false,
     "agentName": "Jarica Caldwell",
     "agentPhone": "3162078203",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 230000
   },
   {
     "slug": "4516-27th-st-n-wichita-ks-675540",

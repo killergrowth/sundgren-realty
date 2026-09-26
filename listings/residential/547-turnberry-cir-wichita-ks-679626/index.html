@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Rare opportunity to own an exceptional golf course residence on the coveted Crestview Country Club Mile, directly across from the brand new exclusive Reber Development on Central Avenue. This beautiful home backs to the 11th hole of Crestview Country Club’s South Course, offering beautiful golf course views and a premier Wichita location. Recent updates enhance the home’s appeal while preserving its custom character and craftsmanship. Highlights include: • New porcelain tile roof, updated guttering and new gutter-guards • Refinished HW flooring • Refreshed lighting and interior paint throughout • 3+ bedrooms, 3.5 baths • Soaring ceilings, expansive windows and fireplace in the main living area • Gourmet kitchen with high-end appliances including Sub-Zero fridge, custom cabinetry and large island • Spacious primary suite with walk-in shower and generous closet • Finished lower level with second kitchen, large living area and wet bar • Custom trim, molding and solid hardwood doors throughout • Electrical panel upgrade • Custom-built hidden room will only be revealed to the new owner • Colorado river-rock added to landscaping beds • Large back deck overlooking Crestview’s South Course The spacious primary suite offers a comfortable retreat with a spa-inspired ensuite bath, while the finished lower level provides exceptional additional living and entertaining space. The home also offers flexibility for additional bedrooms: the main-floor den could be converted to a 4th bedroom, and an additional finished room in the basement offers the potential for a 5th bedroom. Enjoy morning coffee or evening sunsets from the back deck overlooking the golf course. With its exceptional location, extensive updates, custom finishes and direct golf course setting, this is a distinctive opportunity to own an exquisite home in one of Wichita’s most sought-after areas.</p>
     </div>
@@ -170,7 +172,7 @@
     </div>
     <div class="feat-cell">
       <i class="fas fa-home"></i>
-      <div><span class="mlabel">Roof</span>Other, Tile</div>
+      <div><span class="mlabel">Roof</span>Tile, Other</div>
     </div>
     <div class="feat-cell">
       <i class="fas fa-car"></i>
@@ -205,8 +207,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -216,13 +218,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="547 Turnberry Cir, Wichita, KS, 67230">
-        <input type="hidden" name="message" value="I am interested in the property at 547 Turnberry Cir, Wichita, KS, 67230 (MLS# 679626). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 547 Turnberry Cir, Wichita, KS, 67230 (MLS# 679626). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

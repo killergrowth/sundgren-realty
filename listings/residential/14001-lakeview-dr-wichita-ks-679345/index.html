@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Welcome to this beautifully maintained home that truly has it all! The open main level features an open entryway leading to the family room with a striking box ceiling, a gas fireplace, and direct access to the spacious covered deck. Rich wood floors will take you to the formal dining area, a cozy breakfast nook, and a kitchen equipped with stunning granite countertops. Laundry is just off the kitchen with lots of storage. The generous primary suite offers a true retreat with dual sinks, a deep soaking tub, a separate shower, and a walk-in closet. Plus 2 more good sized bedrooms and another bathroom on the main level. Downstairs, the massive finished basement is built for relaxation and fun, boasting a family room surrounded by built-in bookshelves across three walls, a small wet bar, a dedicated game area, a fourth bedroom with a cedar closet, a fully finished bonus room, and an unbelievable storage area complete with a workbench. Out back you’ll love the covered and extended deck, beautiful landscaping, an irrigation well and sprinkler system, and a storage shed all within a nicely fenced yard. Newer roof from 2022. Conveniently located near Kellogg, you&#39;ll love the effortless commute to top local shopping, dining, and major highways!</p>
     </div>
@@ -209,8 +211,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -220,13 +222,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="14001 Lakeview Dr, Wichita, KS, 67230">
-        <input type="hidden" name="message" value="I am interested in the property at 14001 Lakeview Dr, Wichita, KS, 67230 (MLS# 679345). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 14001 Lakeview Dr, Wichita, KS, 67230 (MLS# 679345). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
