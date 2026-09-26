@@ -23879,7 +23879,7 @@
     "state": "KS",
     "lat": 37.636555,
     "lng": -97.400342,
-    "price": 395000,
+    "price": 380000,
     "beds": 5,
     "baths": 3,
     "sqft": "2614",
@@ -23892,7 +23892,7 @@
     "agentName": "James L Davis",
     "agentPhone": "3165162940",
     "agentEmail": "",
-    "previousPrice": 400000
+    "previousPrice": 395000
   },
   {
     "slug": "11806-alderny-ct-wichita-ks-677040",
@@ -52743,7 +52743,7 @@
     "state": "KS",
     "lat": 37.553528,
     "lng": -97.254276,
-    "price": 259000,
+    "price": 257000,
     "beds": 3,
     "baths": 3,
     "sqft": "2776",
@@ -52756,7 +52756,7 @@
     "agentName": "Dawn R Wade",
     "agentPhone": "3168061060",
     "agentEmail": "",
-    "previousPrice": 260000
+    "previousPrice": 259000
   },
   {
     "slug": "8110-westlawn-cir-wichita-ks-677589",
@@ -84230,7 +84230,7 @@
     "state": "KS",
     "lat": 37.550885,
     "lng": -97.267624,
-    "price": 159000,
+    "price": 155000,
     "beds": 3,
     "baths": 1,
     "sqft": "1250",
@@ -84242,7 +84242,8 @@
     "isSundgren": false,
     "agentName": "Dawn R Wade",
     "agentPhone": "3168061060",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 159000
   },
   {
     "slug": "515-g-st-wellington-ks-676894",
@@ -93700,7 +93701,7 @@
     "state": "KS",
     "lat": 37.267217,
     "lng": -97.389827,
-    "price": 129300,
+    "price": 125000,
     "beds": 3,
     "baths": 2,
     "sqft": "1200",
@@ -93713,7 +93714,7 @@
     "agentName": "Pamela Hinman",
     "agentPhone": "6203262162",
     "agentEmail": "",
-    "previousPrice": 129500
+    "previousPrice": 129300
   },
   {
     "slug": "324-market-st-caldwell-ks-669488",

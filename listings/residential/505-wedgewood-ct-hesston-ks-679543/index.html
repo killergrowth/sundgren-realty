@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Beautifully Maintained Ranch Home with Finished View-Out Basement in Hesston! Welcome home to this spacious 4-bedroom, 3-bathroom ranch offering comfort, functionality, and plenty of room to spread out! The main level features an inviting living room with a fireplace, creating a warm and welcoming gathering space, along with LVP flooring throughout most of the home. The kitchen offers beautiful granite countertops and all appliances stay—including the refrigerator, oven/range, dishwasher, microwave, and disposal. Custom blinds remain with the home, adding a finished touch throughout. The primary suite offers a private retreat with an en-suite bathroom featuring heated floors—a wonderful luxury on those chilly Kansas mornings. The finished view-out basement provides incredible additional living space, including a full second kitchen with refrigerator and range/oven, two bonus rooms, and an enormous amount of storage space. Whether you need a recreation area, home office, hobby space, guest accommodations, or simply room for everyone, this basement offers plenty of possibilities. The washer and dryer also stay with the home. Outside, enjoy the convenience of a sprinkler system, while the electrical service is wired for a generator, providing an added level of peace of mind. The oversized two-car garage offers extra room for vehicles, storage, and all of your workshop or hobby needs. A new roof was installed in 2022, adding valuable peace of mind for the next owner. With its spacious layout, inviting fireplace, second kitchen, abundant storage, bonus rooms, and thoughtful features throughout, this Hesston ranch offers the space and flexibility you&#39;ve been looking for. Come see all this wonderful home has to offer!</p>
     </div>
@@ -201,8 +203,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -212,13 +214,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="505 Wedgewood Ct, Hesston, KS, 67062">
-        <input type="hidden" name="message" value="I am interested in the property at 505 Wedgewood Ct, Hesston, KS, 67062 (MLS# 679543). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 505 Wedgewood Ct, Hesston, KS, 67062 (MLS# 679543). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
