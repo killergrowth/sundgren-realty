@@ -112610,7 +112610,7 @@
     "state": "KS",
     "lat": 37.92961728,
     "lng": -96.7894771,
-    "price": 50000,
+    "price": 45000,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -112622,7 +112622,8 @@
     "isSundgren": false,
     "agentName": "Kaila Frakes",
     "agentPhone": "3162500085",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 50000
   },
   {
     "slug": "238-marlen-ct-haysville-ks-674316",

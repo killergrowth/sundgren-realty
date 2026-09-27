@@ -44,7 +44,7 @@
   <div class="auction-hero-overlay"></div>
   <div class="auction-hero-content">
     <h1 class="auction-hero-title">636 Main St, Valley Center, KS, 67147</h1>
-    <p class="auction-hero-sub">$280,000 &nbsp;·&nbsp; 3BD/4BA</p>
+    <p class="auction-hero-sub">$287,500 &nbsp;·&nbsp; 3BD/4BA</p>
   </div>
 </section>
 
@@ -112,12 +112,12 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
       <i class="fas fa-tag"></i>
-      <div class="stat-val">$280,000</div>
+      <div class="stat-val">$287,500</div>
       <div class="stat-label">List Price</div>
     </div>
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Welcome to 636 E Main Street in Valley Center! This beautiful, well-maintained home has been lovingly cared for by its current owners and is ready for its next chapter. After years of ownership, the sellers are ready to downsize, creating a wonderful opportunity for a growing family to make this home their own. Offering 3 bedrooms, 3.5 bathrooms, and a spacious 3-car garage, this home provides plenty of room for comfortable living and entertaining. The layout also offers potential to convert existing space into a 4th bedroom, giving a new owner the flexibility to accommodate a growing family or create additional living space. Located in a desirable and established Valley Center neighborhood, this home offers the opportunity to become part of a welcoming community while enjoying the space and features families are looking for. The roof is only approximately 1 year old, providing added peace of mind for the next owner. Priced well below its estimated value, this property presents an attractive opportunity for buyers looking for a beautiful, well-cared-for home with room to grow and build equity. Don&#39;t miss your chance to see everything this Valley Center home has to offer!</p>
     </div>
@@ -201,8 +203,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -212,13 +214,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="636 Main St, Valley Center, KS, 67147">
-        <input type="hidden" name="message" value="I am interested in the property at 636 Main St, Valley Center, KS, 67147 (MLS# 679688). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 636 Main St, Valley Center, KS, 67147 (MLS# 679688). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
