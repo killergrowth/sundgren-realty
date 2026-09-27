@@ -22163,7 +22163,7 @@
     "state": "KS",
     "lat": 37.7586,
     "lng": -97.438833,
-    "price": 411000,
+    "price": 399000,
     "beds": 4,
     "baths": 3,
     "sqft": "2489",
@@ -22176,7 +22176,7 @@
     "agentName": "Angie Vailas",
     "agentPhone": "3166507251",
     "agentEmail": "",
-    "previousPrice": 421000
+    "previousPrice": 411000
   },
   {
     "slug": "2315-lakeway-ct-wichita-ks-677511",
@@ -26682,7 +26682,7 @@
     "state": "KS",
     "lat": 37.599083,
     "lng": -97.082404,
-    "price": 365000,
+    "price": 350000,
     "beds": 4,
     "baths": 1,
     "sqft": "1586",
@@ -26695,7 +26695,7 @@
     "agentName": "Lisa Cox",
     "agentPhone": "3166509481",
     "agentEmail": "",
-    "previousPrice": 385000
+    "previousPrice": 365000
   },
   {
     "slug": "5540-porter-ave-wichita-ks-675748",
@@ -68972,7 +68972,7 @@
     "state": "KS",
     "lat": 37.684095,
     "lng": -97.373024,
-    "price": 187000,
+    "price": 179000,
     "beds": 3,
     "baths": 2,
     "sqft": "1350",
@@ -68985,7 +68985,7 @@
     "agentName": "Lacy Critchfield",
     "agentPhone": "3166418907",
     "agentEmail": "",
-    "previousPrice": 190000
+    "previousPrice": 187000
   },
   {
     "slug": "1028-dearborn-st-augusta-ks-677089",
