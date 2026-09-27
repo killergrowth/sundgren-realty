@@ -52189,7 +52189,7 @@
     "state": "KS",
     "lat": 38.051953,
     "lng": -97.35592,
-    "price": 270000,
+    "price": 260000,
     "beds": 4,
     "baths": 3,
     "sqft": "2673",
@@ -52201,7 +52201,8 @@
     "isSundgren": false,
     "agentName": "Arlan R Newell",
     "agentPhone": "3162841973",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 270000
   },
   {
     "slug": "1630-pin-oak-ct-rose-hill-ks-673526",
@@ -92455,7 +92456,7 @@
     "state": "KS",
     "lat": 37.67485999,
     "lng": -97.25538004,
-    "price": 130000,
+    "price": 125000,
     "beds": 2,
     "baths": 1,
     "sqft": "821",
@@ -92468,7 +92469,7 @@
     "agentName": "Brittanie Pechin",
     "agentPhone": "3163084623",
     "agentEmail": "",
-    "previousPrice": 131000
+    "previousPrice": 130000
   },
   {
     "slug": "96-sedgwick-ave-haven-ks-678372",
@@ -94539,7 +94540,7 @@
     "state": "KS",
     "lat": 37.670277,
     "lng": -97.338518,
-    "price": 125000,
+    "price": 115000,
     "beds": 4,
     "baths": 2,
     "sqft": "1417",
@@ -94551,7 +94552,8 @@
     "isSundgren": false,
     "agentName": "Justin Chandler",
     "agentPhone": "3163717764",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 125000
   },
   {
     "slug": "2014-woodlawn-blvd-derby-ks-672775",

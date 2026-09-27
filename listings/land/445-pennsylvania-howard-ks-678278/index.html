@@ -112,12 +112,14 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Land</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Land</span></div></div>
 
         
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>ONLINE ONLY AUCTION - Wednesday, September 23rd at 6 PM TRACT 1 - 445 N. Pennsylvania, Howard, KS (tract 2 sells separately on the same day) DESCRIPTION: 75&#39; x 143&#39; corner lot, electric, city water &amp; sewer on lot, sewer has been plumbed for 2 RV&#39;s/Campers. Buyer is responsible for checking with City of Howard to verify if Buyers intended use will be allowed on the lot. TERMS OF SALE: Property will be selling by the total dollar. The contract price will be the final bid plus a 10% buyers premium. A non-refundable down payment/earnest money of $2,000 for both tract&#39;s 1 and 2 will be required at the close of the auction along with the signing of the purchase agreement. Earnest money will be applied to the purchase price at closing. The balance of the purchase price will be due at closing in certified funds. Property will not sell subject to financing, appraisal, inspections, or survey and is selling in its present condition without warranty. Buyer and Seller shall equally share the cost of the title insurance &amp; closing fee. 2026 real estate taxes will be prorated to the date of closing. Closing date shall be on or before October 23rd, 2026. Possession will be on the date of closing. Inspection of property will be by appointment only. Statements made the day of the sale will take precedence over any prior statements made or implied. Seller reserves the right to accept or reject the final bid. Tract 1 will start closing at 6 PM and Tract 2 will follow at 6:30 PM both on Wednesday, September 23rd, 2026.</p>
     </div>
@@ -135,9 +137,9 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
     (function(){
-      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.472914,-96.264552],15);
+      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.472917,-96.264556],15);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap contributors',maxZoom:19}).addTo(map);
-      L.marker([37.472914,-96.264552]).addTo(map).bindPopup('445 Pennsylvania , Howard, KS 67349').openPopup();
+      L.marker([37.472917,-96.264556]).addTo(map).bindPopup('445 Pennsylvania , Howard, KS 67349').openPopup();
     })();
     </script>
   </div>
@@ -145,8 +147,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -156,13 +158,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="445 Pennsylvania, Howard, KS, 67349">
-        <input type="hidden" name="message" value="I am interested in the property at 445 Pennsylvania, Howard, KS, 67349 (MLS# 678278). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 445 Pennsylvania, Howard, KS, 67349 (MLS# 678278). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
