@@ -12584,7 +12584,7 @@
     "state": "KS",
     "lat": 37.771085,
     "lng": -97.381448,
-    "price": 559000,
+    "price": 549900,
     "beds": 3,
     "baths": 3,
     "sqft": "2706",
@@ -12596,7 +12596,8 @@
     "isSundgren": false,
     "agentName": "Patrick Dreiling",
     "agentPhone": "3167611954",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 559000
   },
   {
     "slug": "4550-sandkey-st-wichita-ks-653377",
@@ -88970,7 +88971,7 @@
     "state": "KS",
     "lat": 37.264881,
     "lng": -97.403353,
-    "price": 137000,
+    "price": 133000,
     "beds": 2,
     "baths": 2,
     "sqft": "1108",
@@ -88983,7 +88984,7 @@
     "agentName": "Rachel Westmoreland",
     "agentPhone": "6203260633",
     "agentEmail": "",
-    "previousPrice": 142900
+    "previousPrice": 137000
   },
   {
     "slug": "746-osage-ave-salina-ks-677656",
