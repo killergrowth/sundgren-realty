@@ -5390,7 +5390,7 @@
     "state": "KS",
     "lat": 38.77596,
     "lng": -97.713929,
-    "price": 880000,
+    "price": 795000,
     "beds": 5,
     "baths": 5,
     "sqft": "7389",
@@ -5402,7 +5402,8 @@
     "isSundgren": false,
     "agentName": "Jody Ryan",
     "agentPhone": "7855775371",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 880000
   },
   {
     "slug": "00000-160th-st-s-caldwell-ks-677577",
@@ -12560,7 +12561,7 @@
     "state": "KS",
     "lat": 37.707462,
     "lng": -97.475228,
-    "price": 539000,
+    "price": 524900,
     "beds": 5,
     "baths": 4,
     "sqft": "3893",
@@ -12573,7 +12574,7 @@
     "agentName": "Debi Strange",
     "agentPhone": "3168064860",
     "agentEmail": "",
-    "previousPrice": 559400
+    "previousPrice": 539000
   },
   {
     "slug": "4809-portwest-st-wichita-ks-675299",
@@ -40276,7 +40277,7 @@
     "state": "KS",
     "lat": 37.563576,
     "lng": -97.13677,
-    "price": 315000,
+    "price": 310000,
     "beds": 4,
     "baths": 3,
     "sqft": "1900",
@@ -40289,7 +40290,7 @@
     "agentName": "Patty Cisney",
     "agentPhone": "3166700994",
     "agentEmail": "",
-    "previousPrice": 320000
+    "previousPrice": 315000
   },
   {
     "slug": "602-high-st-argonia-ks-671411",
@@ -81342,7 +81343,7 @@
     "state": "KS",
     "lat": 38.81424202,
     "lng": -97.628638,
-    "price": 156000,
+    "price": 153000,
     "beds": 3,
     "baths": 2,
     "sqft": "1040",
@@ -81355,7 +81356,7 @@
     "agentName": "Cierra Schmidt",
     "agentPhone": "7853420861",
     "agentEmail": "",
-    "previousPrice": 159000
+    "previousPrice": 156000
   },
   {
     "slug": "539-summitlawn-st-wichita-ks-678332",
@@ -99326,7 +99327,7 @@
     "state": "KS",
     "lat": 38.86062001,
     "lng": -97.611136,
-    "price": 104500,
+    "price": 96000,
     "beds": 2,
     "baths": 1,
     "sqft": "759",
@@ -99339,7 +99340,7 @@
     "agentName": "Daniel Goble",
     "agentPhone": "7858191904",
     "agentEmail": "",
-    "previousPrice": 106400
+    "previousPrice": 104500
   },
   {
     "slug": "1717-cypress-1112-st-wichita-ks-675511",
@@ -100342,7 +100343,7 @@
     "state": "KS",
     "lat": 37.59993523,
     "lng": -97.67863928,
-    "price": 100000,
+    "price": 97000,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -100354,7 +100355,8 @@
     "isSundgren": false,
     "agentName": "Lakin Petz",
     "agentPhone": "3166802345",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 100000
   },
   {
     "slug": "16551-hickory-st-goddard-ks-669507",
@@ -128585,7 +128587,7 @@
     "state": "KS",
     "lat": 37.399109,
     "lng": -97.278866,
-    "price": 14500,
+    "price": 13900,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -128597,7 +128599,8 @@
     "isSundgren": false,
     "agentName": "Kendra Osborn",
     "agentPhone": "6202627536",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 14500
   },
   {
     "slug": "00000-waldo-st-wellington-ks-670777",
