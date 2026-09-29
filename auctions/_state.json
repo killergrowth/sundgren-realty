@@ -1,5 +1,5 @@
 {
-  "lastFetch": "2026-09-16T10:58:16.080Z",
+  "lastFetch": "2026-09-29T19:49:01.842Z",
   "auctions": {
     "24096": {
       "slug": "test-auction-24096",
@@ -2847,15 +2847,17 @@
     },
     "168254": {
       "slug": "2-20-acre-land-tracts-in-northeast-sedgwick-county-kansas-168254",
-      "status": "accepting_bids",
+      "status": "complete",
       "name": "(2) 20+- Acre Land Tracts in Northeast Sedgwick County, Kansas",
-      "generated": "2026-08-29T06:56:34.462Z"
+      "generated": "2026-08-29T06:56:34.462Z",
+      "updated": "2026-09-29T19:49:04.571Z"
     },
     "168675": {
       "slug": "240-acres-2-tracts-bird-creek-tillable-pasture-pond-trees-ho-168675",
-      "status": "pending",
+      "status": "accepting_bids",
       "name": "240+- Acres, 2 Tracts – Bird Creek, Tillable, Pasture, Pond, Trees, House & Hunting – Butler County, Kansas",
-      "generated": "2026-09-01T00:25:09.437Z"
+      "generated": "2026-09-01T00:25:09.437Z",
+      "updated": "2026-09-29T19:49:04.562Z"
     },
     "168676": {
       "slug": "535-acres-of-native-pasture-and-a-large-pond-near-el-dorado-168676",
@@ -2865,15 +2867,17 @@
     },
     "168678": {
       "slug": "376-acres-3-tracts-tillable-pasture-oil-income-hunting-cowle-168678",
-      "status": "pending",
+      "status": "accepting_bids",
       "name": "376+- Acres, 3 Tracts - Tillable, Pasture, Oil Income & Hunting – Cowley County, Kansas",
-      "generated": "2026-08-30T16:12:09.640Z"
+      "generated": "2026-08-30T16:12:09.640Z",
+      "updated": "2026-09-29T19:49:04.563Z"
     },
     "168773": {
       "slug": "203-n-3rd-st-towanda-ks-67144-5-bed-2-bath-classic-home-on-l-168773",
-      "status": "pending",
+      "status": "accepting_bids",
       "name": "203 N 3rd St, Towanda KS 67144: 5 Bed 2 Bath Classic Home on Large Corner Lot",
-      "generated": "2026-09-01T00:25:09.436Z"
+      "generated": "2026-09-01T00:25:09.436Z",
+      "updated": "2026-09-29T19:49:04.544Z"
     },
     "169491": {
       "slug": "15592-nw-60th-whitewater-kansas-brick-home-on-96-acres-169491",
@@ -2886,6 +2890,18 @@
       "status": "pending",
       "name": "Truck, Stock Trailer, Tractor, Mower, Tools, Equipment and More – LIVE AUCTION",
       "generated": "2026-09-10T15:57:23.520Z"
+    },
+    "170217": {
+      "slug": "guns-ammo-accessories-online-only-auction-170217",
+      "status": "accepting_bids",
+      "name": "Guns, Ammo & Accessories - ONLINE ONLY AUCTION",
+      "generated": "2026-09-29T19:49:04.565Z"
+    },
+    "170742": {
+      "slug": "10-acres-w-walnut-river-frontage-amazing-mature-trees-august-170742",
+      "status": "pending",
+      "name": "10+- Acres w/ Walnut River Frontage & Amazing Mature Trees – Augusta, Kansas",
+      "generated": "2026-09-29T19:49:04.569Z"
     }
   }
 }
