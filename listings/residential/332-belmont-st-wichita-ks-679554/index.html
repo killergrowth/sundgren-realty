@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Welcome to 332 S Belmont Ave, a beautifully updated full-brick home in the heart of Wichita’s highly desirable College Hill neighborhood. Built in 1917 and offering 2,594 square feet of living space, this classic home blends the warmth and craftsmanship of its era with thoughtful updates throughout. Step inside and you’ll immediately appreciate the character that sets this home apart. The main level features beautiful wood floors, abundant natural wood details and exposed brick beneath the staircase near the front entry. Numerous windows fill the main floor with natural light, creating bright, welcoming spaces while highlighting the warmth of the original woodwork. The spacious living room flows seamlessly into the sizable formal dining room, creating a natural gathering space that is equally suited for everyday living, family dinners and entertaining. In addition, a versatile bonus room off the dining offers additional flexibility as a home office, den, playroom or sitting room. The completely updated kitchen pairs modern finishes and functionality with the home’s timeless character. An inviting eat-in area accented by exposed brick adds warmth and texture, creating a comfortable spot for casual dining and conversation. Just off the living room, a conveniently located main-floor bathroom completes the space. All four bedrooms are together on the second floor along with the home’s second full bathroom, creating a traditional and functional layout that keeps the sleeping spaces together while leaving the main floor dedicated to everyday living and entertaining. The partially finished basement adds even more usable space with a finished recreation room, along with a large unfinished storage area offering plenty of room for seasonal items, hobbies and more. Outside, the property truly stands out. Situated on a large, deep double lot of approximately .29 acres, the backyard provides an exceptional amount of outdoor space in the heart of College Hill. A large patio creates an ideal setting for entertaining, grilling or relaxing outdoors, while the home’s double staircase provides convenient access to the backyard. An oversized detached two-car garage offers plenty of room for vehicles, bikes, lawn equipment and additional storage. The location is hard to beat! Enjoy the charm and tree-lined streets of one of Wichita’s most established neighborhoods while being within walking distance of nearby shops and restaurants. College Hill Park is conveniently close, offering a playground, swimming pool, tennis courts and walking paths. This College Hill home offers an exceptional combination of historic character, modern updates, space and location. Call for your showing today!</p>
     </div>
@@ -205,8 +207,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -216,13 +218,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="332 Belmont ST, Wichita, KS, 67218">
-        <input type="hidden" name="message" value="I am interested in the property at 332 Belmont ST, Wichita, KS, 67218 (MLS# 679554). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 332 Belmont ST, Wichita, KS, 67218 (MLS# 679554). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
