@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Lake-view living with paid-off specials in Silverton! This 5-bedroom, 3-bathroom home sits on a beautiful lot in northwest Wichita with scenic water views and a backyard designed for entertaining. Enjoy evenings on the pergola-covered deck, relax in the hot tub that stays with the home, or head through the backyard gate to fish on the lake. With all specials paid off, you&#39;ll also enjoy a real cost savings compared to newer homes that still carry them. Silverton sits in the Renwick School District and offers a community playground, with the newer Northwest YMCA just minutes away and the shopping and dining at NewMarket Square a short drive from home. Pulling up to the home, you&#39;ll notice the brick and siding exterior, a covered front porch, and an extensive landscaping package with a variety of trees and plants. Rock stream beds wind through the mulched landscape beds, giving the front yard a lot of character. Step inside to the open-concept main floor, where vaulted ceilings, wood-toned flooring, and abundant natural light make a great first impression. The corner wood-burning fireplace has a gas starter for easy use on cold nights, and large windows look out to the lake. The living room flows right into the kitchen and dining area, making it an easy space for everyday living and entertaining. The kitchen features granite countertops, a white tile backsplash, stainless steel appliances, and under-cabinet lighting, along with a large peninsula eating bar overlooking the living and dining areas. The dining area has a sliding door out to the deck, so you can enjoy the lake view with every meal. Between the garage and kitchen you&#39;ll find a separate laundry room with cabinet storage, keeping laundry out of the main living space. Just off the kitchen, the primary suite includes a walk-in closet and a private bathroom with a dual-sink vanity, a shiplap accent wall, and a tub and shower combo. On the other side of the main floor you&#39;ll find two additional bedrooms and a full hall bathroom, giving everyone their own space. The sellers are also offering a $3,000 carpet allowance, so you can pick out new carpet for the main level and stairs. Head downstairs to find a spacious second living area with view-out windows to the backyard, plus two additional bedrooms and a full bathroom. It&#39;s plenty of room for guests, hobbies, a home office, or a growing family. In the backyard you&#39;ll love the elevated deck with a pergola overhead, with stairs leading down to the concrete patio and hot tub. A second pergola sits on the lower level closer to the home, and a rock water feature tucked into the tree-lined berm adds a relaxing sound while you sit in the shade and look out over the lake. The yard is fully fenced with wrought iron and includes a gate out to the lake. Lake-view homes like this in Silverton don&#39;t come up often. Schedule your private tour today!</p>
     </div>
@@ -209,8 +211,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -220,13 +222,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="1902 Bellick St, Wichita, KS, 67235">
-        <input type="hidden" name="message" value="I am interested in the property at 1902 Bellick St, Wichita, KS, 67235 (MLS# 679596). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 1902 Bellick St, Wichita, KS, 67235 (MLS# 679596). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

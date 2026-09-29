@@ -11776,7 +11776,7 @@
     "state": "KS",
     "lat": 37.687611,
     "lng": -97.248721,
-    "price": 575000,
+    "price": 585000,
     "beds": 4,
     "baths": 4,
     "sqft": "3588",
@@ -16449,7 +16449,7 @@
     "state": "KS",
     "lat": 37.696818,
     "lng": -97.488374,
-    "price": 489000,
+    "price": 484000,
     "beds": 3,
     "baths": 2,
     "sqft": "1828",
@@ -16462,7 +16462,7 @@
     "agentName": "Christine M Ketzner",
     "agentPhone": "3166195709",
     "agentEmail": "",
-    "previousPrice": 494476
+    "previousPrice": 489000
   },
   {
     "slug": "6237-central-park-ct-bel-aire-ks-668117",
@@ -20333,7 +20333,7 @@
     "state": "KS",
     "lat": 37.65488898,
     "lng": -97.19599601,
-    "price": 440000,
+    "price": 430000,
     "beds": 4,
     "baths": 4,
     "sqft": "2914",
@@ -20345,7 +20345,8 @@
     "isSundgren": false,
     "agentName": "Karen Peters",
     "agentPhone": "3162139770",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 440000
   },
   {
     "slug": "116-f-st-wellington-ks-674996",
@@ -46391,7 +46392,7 @@
     "state": "KS",
     "lat": 37.775815,
     "lng": -97.232187,
-    "price": 289900,
+    "price": 279900,
     "beds": 4,
     "baths": 2,
     "sqft": "1599",
@@ -46403,7 +46404,8 @@
     "isSundgren": false,
     "agentName": "Basem Krichati",
     "agentPhone": "3165160139",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 289900
   },
   {
     "slug": "8968-forbes-cir-bel-aire-ks-667224",
@@ -46414,7 +46416,7 @@
     "state": "KS",
     "lat": 37.77755,
     "lng": -97.233015,
-    "price": 289900,
+    "price": 279900,
     "beds": 4,
     "baths": 2,
     "sqft": "1599",
@@ -46426,7 +46428,8 @@
     "isSundgren": false,
     "agentName": "Basem Krichati",
     "agentPhone": "3165160139",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 289900
   },
   {
     "slug": "1526-cedar-tree-st-park-city-ks-675831",
@@ -46832,7 +46835,7 @@
     "state": "KS",
     "lat": 37.777434,
     "lng": -97.232636,
-    "price": 289000,
+    "price": 279900,
     "beds": 4,
     "baths": 2,
     "sqft": "1599",
@@ -46844,7 +46847,8 @@
     "isSundgren": false,
     "agentName": "Basem Krichati",
     "agentPhone": "3165160139",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 289000
   },
   {
     "slug": "840-pine-ct-mcpherson-ks-673297",
@@ -46927,7 +46931,7 @@
     "state": "KS",
     "lat": 37.77742,
     "lng": -97.232828,
-    "price": 289000,
+    "price": 279900,
     "beds": 4,
     "baths": 2,
     "sqft": "1599",
@@ -46939,7 +46943,8 @@
     "isSundgren": false,
     "agentName": "Basem Krichati",
     "agentPhone": "3165160139",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 289000
   },
   {
     "slug": "1720-madison-ave-arkansas-city-ks-650381",
@@ -51962,7 +51967,7 @@
     "state": "KS",
     "lat": 37.775843,
     "lng": -97.233146,
-    "price": 273900,
+    "price": 269900,
     "beds": 3,
     "baths": 2,
     "sqft": "1560",
@@ -51974,7 +51979,8 @@
     "isSundgren": false,
     "agentName": "Basem Krichati",
     "agentPhone": "3165160139",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 273900
   },
   {
     "slug": "1316-main-st-halstead-ks-668363",
@@ -55390,7 +55396,7 @@
     "state": "KS",
     "lat": 38.536803,
     "lng": -96.85686,
-    "price": 259000,
+    "price": 249000,
     "beds": 3,
     "baths": 2,
     "sqft": "1400",
@@ -55402,7 +55408,8 @@
     "isSundgren": false,
     "agentName": "Patty Putter",
     "agentPhone": "3162831000",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 259000
   },
   {
     "slug": "951-170th-road-minneapolis-ks-675945",
@@ -67158,7 +67165,7 @@
     "state": "KS",
     "lat": 37.676338,
     "lng": -97.38716,
-    "price": 199900,
+    "price": 194900,
     "beds": 3,
     "baths": 2,
     "sqft": "1186",
@@ -67171,7 +67178,7 @@
     "agentName": "Kooper Sanders",
     "agentPhone": "3169905740",
     "agentEmail": "",
-    "previousPrice": 210000
+    "previousPrice": 199900
   },
   {
     "slug": "737-harvard-ave-el-dorado-ks-677313",
@@ -88130,7 +88137,7 @@
     "state": "KS",
     "lat": 37.653263,
     "lng": -97.276486,
-    "price": 145000,
+    "price": 142500,
     "beds": 2,
     "baths": 1,
     "sqft": "952",
@@ -88142,7 +88149,8 @@
     "isSundgren": false,
     "agentName": "Pamela Hinman",
     "agentPhone": "6203262162",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 145000
   },
   {
     "slug": "2746-iva-ave-wichita-ks-677892",
@@ -94065,7 +94073,7 @@
     "state": "KS",
     "lat": 38.351845,
     "lng": -97.013852,
-    "price": 129000,
+    "price": 125000,
     "beds": 3,
     "baths": 2,
     "sqft": "1603",
@@ -94077,7 +94085,8 @@
     "isSundgren": false,
     "agentName": "Patty Putter",
     "agentPhone": "3162831000",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 129000
   },
   {
     "slug": "1902-roosevelt-st-wichita-ks-667452",
@@ -101097,7 +101106,7 @@
     "state": "KS",
     "lat": 37.653906,
     "lng": -97.314452,
-    "price": 92500,
+    "price": 90000,
     "beds": 2,
     "baths": 1,
     "sqft": "720",
@@ -101110,7 +101119,7 @@
     "agentName": "Rebecca Gallo",
     "agentPhone": "3167123585",
     "agentEmail": "",
-    "previousPrice": 95000
+    "previousPrice": 92500
   },
   {
     "slug": "250-hummingbird-rd-medicine-lodge-ks-674916",
@@ -116638,7 +116647,7 @@
     "state": "KS",
     "lat": 37.78945689,
     "lng": -97.31296695,
-    "price": 35000,
+    "price": 34900,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -116650,7 +116659,8 @@
     "isSundgren": false,
     "agentName": "Basem Krichati",
     "agentPhone": "3165160139",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 35000
   },
   {
     "slug": "tbd-willis-st-derby-ks-667486",
@@ -131457,7 +131467,7 @@
     "state": "KS",
     "lat": 37.775829,
     "lng": -97.299523,
-    "price": 0,
+    "price": 259900,
     "beds": 3,
     "baths": 3,
     "sqft": "1928",
