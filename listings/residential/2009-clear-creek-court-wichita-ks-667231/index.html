@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-terminated pill">Inactive</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>PRICE IMPROVEMENT ON THIS FABULOUS QUALITY THROUGHOUT HOME......THEIR CONTINGENCY BUYERS COULD NOT PERFORM SO YOU ARE LUCKY TO GET A CHANCE TO MAKE THIS YOUR HOME! WELCOME TO THE PRESTIGIOUS GATED COMMUNITY OF REEDS COVE RESERVE WHERE YOU WILL FIND THIS ALL BRICK BEAUTIFUL AND COMMANDING, YET WARM AND INVITING, NIES BUILT HOME WITH TILE ROOF AND COPPER AWNINGS. The circle drive with side load oversized 3 car garage as well as mature and crafted landscaping/nightscaping magically greet you. Enter the custom built front doors to the warmth of the 14&#39; ceiling entry with see through fireplace and half bath. The east wing houses the master quarters coffee bar entry, bedroom, bath with his/her sinks, large tub, water closet w heated toilet &amp; large walk through tiled shower that enters/exits from bath or closet. The large master closet houses beautiful high/low hanging bars and wonderful built ins. An additional bedroom currently used as office completes the east wing. The incredible living room with 14&#39; beamed ceiling &amp; floor to ceiling windows overlook the incredible back yard. Currently used as the formal living &amp; dining room you will marvel at the beauty of the scraped real wood floors that are throughout the main floor. The fireplace makes for warm ambiance. The hearth room kitchen has a 2nd fireplace, large granite island, breakfast nook with serving bar &amp; built ins, Wolf 6 burner gas stove w grill, pot filler, sub zero built in fridge, Wolf double ovens, built in microwave, ASKO dishwasher all presented beautifully with a stone back wall. The west side of this incredible home leads to the 3rd bedroom with ensuite bath, &amp; door to screened in porch, large walk in pantry, drop zone, coffee bar, large laundry room with built in desk, sink, folding table, washer/dryer that stay, and separate wrapping room with cubbies for storage. Door to oversized 3 car garage with lift to storage is simply wonderful! The large screened in main floor porch with fireplace and room for grills is magnificent with a door &amp; steps to back yard pool &amp; brick pool house. The basement is huge with Jack n Jill bedroom and full bath, half bath for guests, area with built ins for pool table, hearth room with fireplace, wet bar with 2 beverage drawers, dishwasher, ice maker, built in for glass ware, bar back room w 2nd fridge and oven that stay. The fun and entertaining 10 chair theater room, surround sound, movie equipment &amp; screen is ever so popular. Exit basement through the 2nd screened in porch with hot tub, to the incredible back yard with 50 x 20 gunite pool, flagstone shallow seating area, steps to deep end and electric pool cover. The full brick pool house with tile roof has covered shaded seating,(great for movies night), mini split heated/cooled full bath, storage room for toys/floats/furniture &amp; separate pool equipment room. There is a built in sand box &amp; pad for play equipment, fire pit, separated fenced area for dogs, bricked garage bin area with extra parking, irrigation well &amp; sprinkler system, beautiful established landscaping and is fully fenced. Security System, Electronic Hunter Douglas Blinds throughout add to the highlights mentioned here! There&#39;s so much more in this upscale home and it&#39;s even better in person! NO SPECIALS, SEDGWICK COUNTY TAXES, ANDOVER SCHOOLS! TOP OF THE LINE AND QUALITY QUALITY FINISHES THROUGHOUT! THIS HOME HAS IT ALL! DO NOT MISS!</p>
     </div>
@@ -199,9 +201,9 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
     (function(){
-      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.720726,-97.179059],15);
+      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.720671,-97.178973],15);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap contributors',maxZoom:19}).addTo(map);
-      L.marker([37.720726,-97.179059]).addTo(map).bindPopup('2009 Clear Creek Court, Wichita, KS 67230').openPopup();
+      L.marker([37.720671,-97.178973]).addTo(map).bindPopup('2009 Clear Creek Court, Wichita, KS 67230').openPopup();
     })();
     </script>
   </div>
@@ -209,8 +211,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -220,13 +222,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="2009 Clear Creek Court, Wichita, KS, 67230">
-        <input type="hidden" name="message" value="I am interested in the property at 2009 Clear Creek Court, Wichita, KS, 67230 (MLS# 667231). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 2009 Clear Creek Court, Wichita, KS, 67230 (MLS# 667231). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

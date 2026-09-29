@@ -73,13 +73,13 @@
       </button>
       <button class="sg-mosaic-thumb" data-idx="3" aria-label="View photo 4" type="button">
         <img src="https://cdn.repliers.io/southcentralkansas/IMG-675541_6704325125641374180.jpg" alt="Property photo 4" loading="lazy">
-        <div class="sg-mosaic-more" aria-hidden="true">+14 more</div>
+        <div class="sg-mosaic-more" aria-hidden="true">+16 more</div>
       </button>
       </div>
     </div>
     <div class="sg-gallery-bar">
       <button class="sg-gallery-all-btn" id="sg-view-all" type="button">
-        <i class="fas fa-images"></i> View all 18 photos
+        <i class="fas fa-images"></i> View all 20 photos
       </button>
     </div>
   </section>
@@ -94,7 +94,7 @@
 
   <script>
   (function(){
-    var srcs = ["https://cdn.repliers.io/southcentralkansas/IMG-675541_6706572950387181888.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675541_6705046288435587531.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675541_6709601089593523477.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675541_6704325125641374180.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675541_6703381337369424533.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675541_6704608457868445531.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675541_6704083011312368304.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675541_6708706664728839739.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675541_6702957445729998290.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675541_6709852037437517052.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675541_6708283586456588576.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675541_6701403678816849425.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675541_6706009433675026252.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675541_6704714832821341236.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675541_6706256612105742020.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675541_6702394653091190941.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675541_6701130893944712729.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675541_6704801860760264296.jpg"];
+    var srcs = ["https://cdn.repliers.io/southcentralkansas/IMG-675541_6706572950387181888.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675541_6705046288435587531.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675541_6709601089593523477.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675541_6704325125641374180.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675541_6703381337369424533.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675541_6704608457868445531.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675541_6704083011312368304.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675541_6708706664728839739.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675541_6702957445729998290.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675541_6709852037437517052.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675541_6708283586456588576.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675541_6701403678816849425.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675541_6706009433675026252.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675541_6704714832821341236.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675541_6706256612105742020.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675541_6702394653091190941.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675541_6701130893944712729.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675541_6704801860760264296.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675541_6703493070041328010.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675541_6705975716229282791.jpg"];
     var lb = document.getElementById('sg-lightbox');
     var lbImg = document.getElementById('sg-lightbox-img');
     var lbCtr = document.getElementById('sg-lightbox-counter');
@@ -191,9 +191,9 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
     (function(){
-      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([38.740229,-98.031342],15);
+      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([38.740236,-98.031275],15);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap contributors',maxZoom:19}).addTo(map);
-      L.marker([38.740229,-98.031342]).addTo(map).bindPopup('1002 McManes Ave, Brookville, KS 67425').openPopup();
+      L.marker([38.740236,-98.031275]).addTo(map).bindPopup('1002 McManes Ave, Brookville, KS 67425').openPopup();
     })();
     </script>
   </div>

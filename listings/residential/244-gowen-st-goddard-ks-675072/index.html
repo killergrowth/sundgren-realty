@@ -71,11 +71,15 @@
         <img src="https://cdn.repliers.io/southcentralkansas/IMG-675072_6703288562492310205.jpg" alt="Property photo 3" loading="lazy">
         
       </button>
+      <button class="sg-mosaic-thumb" data-idx="3" aria-label="View photo 4" type="button">
+        <img src="https://cdn.repliers.io/southcentralkansas/IMG-675072_6707396357732412478.jpg" alt="Property photo 4" loading="lazy">
+        <div class="sg-mosaic-more" aria-hidden="true">+16 more</div>
+      </button>
       </div>
     </div>
     <div class="sg-gallery-bar">
       <button class="sg-gallery-all-btn" id="sg-view-all" type="button">
-        <i class="fas fa-images"></i> View all 3 photos
+        <i class="fas fa-images"></i> View all 20 photos
       </button>
     </div>
   </section>
@@ -90,7 +94,7 @@
 
   <script>
   (function(){
-    var srcs = ["https://cdn.repliers.io/southcentralkansas/IMG-675072_6705083608752216528.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675072_6704266126817899873.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675072_6703288562492310205.jpg"];
+    var srcs = ["https://cdn.repliers.io/southcentralkansas/IMG-675072_6705083608752216528.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675072_6704266126817899873.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675072_6703288562492310205.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675072_6707396357732412478.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675072_6705528663654924719.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675072_6703999181566060339.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675072_6704368711460404050.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675072_6700847418861662897.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675072_6703928875172432467.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675072_6701729114381429466.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675072_6701981526669000566.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675072_6704666424118438408.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675072_6705978430681765822.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675072_6704541294130210439.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675072_6705436230108090823.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675072_6701740385871727161.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675072_6702565610754205715.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675072_6704932057919619385.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675072_6701986274760143272.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675072_6701533884198143138.jpg"];
     var lb = document.getElementById('sg-lightbox');
     var lbImg = document.getElementById('sg-lightbox-img');
     var lbCtr = document.getElementById('sg-lightbox-counter');
@@ -187,9 +191,9 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
     (function(){
-      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.685621,-97.535541],15);
+      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.6592,-97.5797],15);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap contributors',maxZoom:19}).addTo(map);
-      L.marker([37.685621,-97.535541]).addTo(map).bindPopup('244 Gowen St, Goddard, KS 67052').openPopup();
+      L.marker([37.6592,-97.5797]).addTo(map).bindPopup('244 Gowen St, Goddard, KS 67052').openPopup();
     })();
     </script>
   </div>

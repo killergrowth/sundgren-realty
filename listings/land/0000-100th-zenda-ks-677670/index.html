@@ -112,12 +112,14 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Land</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Land</span></div></div>
 
         
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Property offered at ONLINE ONLY auction. BIDDING OPENS: Tuesday, Sept 8th, 2026 at 2 PM (ct) | BIDDING CLOSING: Wednesday, Sept 16, 2026 @ 3:10 PM (ct). Bidding will remain open on this property until 90 seconds have passed without receiving a bid. Property available to preview by appointment. CLEAR TITLE AT CLOSING, NO BACK TAXES. ONLINE ONLY — SELLING ABSOLUTE, REGARDLESS OF PRICE!!! Sitting on the corner of SW 100th Ave and SW 160th St, this 178± acre parcel is full of potential — and it&#39;s selling to the highest bidder regardless of price. It&#39;s part of a Southwest Kingman County farm held in the same family for decades, just outside Zenda off Highway 42. There&#39;s a lot to like for the buyer who wants farm income and outdoor appeal in the same piece of land. The pasture covers roughly 41± acres and comes with three ponds — the main one about an acre — plus rolling ground, scattered trees, and some old farm character in the form of grain bins and a small shed. A set of cattle pens also sits toward the north end. On the crop side, about 100± acres of tillable ground anchors the parcel, with CRP surrounding it — four fields totaling 31.2± acres at $66.82/acre through 9/30/2027. Between the ponds, the timber, and the rolling terrain, this is a natural draw for whitetail deer and upland birds, making it not only a farm but a potential hunting property. Features: 178± acres in Southwest Kingman County, Kansas Corner of SW 100th Ave and SW 160th St, off Highway 42 41± acres of pasture with three ponds (main pond ~1 acre) Rolling topography, trees, and old farm improvements Grain bins and small shed Cattle pens toward the north end 100± acres of tillable ground 4 CRP fields totaling 31.2± acres at $66.82/acre through 9/30/2027 Immediate possession of pasture; tillable possession after soybean harvest Early possession granted upon non-refundable earnest money deposit Add it to your operation, have it as recreational piece, or invest in quality Kansas land — either way, it&#39;s selling absolute, regardless of price so do not miss it! Definition of &#39;selling by the acre&#39;: A method of sale often used for agricultural or undeveloped acreage in which bids are made based on a per acre price. By way of example, if a 160-acre parcel was offered “by the acre” the high bid may be $5,000 an acre. That amount would then be multiplied times the total acreage to arrive at a total bid price of $800,000 (plus Buyer’s Premium, if applicable). For the purposes of calculating the total sales price, the acreage will be rounded to the nearest whole acre. For example, a parcel with 158.7 acres would be offered as 159 acres or a parcel is 158.3 would be offered as 158 acres. *Buyer should verify school assignments as they are subject to change. The real estate is offered at public auction in its present, “as is where is” condition and is accepted by the buyer without any expressed or implied warranties or representations from the seller or seller’s agents. Full auction terms and conditions provided in the Property Information Packet. Total purchase price will include a 10% buyer’s premium ($2,500.00 minimum) added to the final bid. Property available to preview by appointment. Earnest money is due from the high bidder at the auction in the form of check, or immediately available, certified funds in the amount of $25,000 for a 30 day close, $30,000 for a 45 day close.</p>
     </div>
@@ -145,8 +147,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -156,13 +158,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="0000 100th, Zenda, KS, 67159">
-        <input type="hidden" name="message" value="I am interested in the property at 0000 100th, Zenda, KS, 67159 (MLS# 677670). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 0000 100th, Zenda, KS, 67159 (MLS# 677670). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

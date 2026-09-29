@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Beautifully Updated Ranch Home on Nearly an Acre! Welcome home to this beautifully updated 3-bedroom, 3-bath ranch home, perfectly situated on nearly an acre with a fenced backyard and peaceful views of the neighboring farmland. This move-in-ready home offers comfortable living spaces, thoughtful updates, and an incredible outdoor living area you’ll want to enjoy year-round. The inviting kitchen features a center island with bar seating, convenient pull-out drawers, and all appliances remain. The living room boasts a vaulted ceiling and electric fireplace, creating a warm and welcoming space for relaxing or entertaining. The dining room is filled with natural light from the bay window and offers sliders leading directly to the impressive 20x24 covered deck. The spacious primary suite includes a private bath with dual sinks, a relaxing soaker tub, and a walk-in shower. The basement adds even more living space with view-out windows, a large family room, and a versatile rec room that could easily serve as a home office, hobby room, or additional gathering space. While the kitchen is certainly a highlight, the large covered deck may truly be the heart of this home. Overlooking the fenced backyard and neighboring farm ground, it provides the perfect setting for morning coffee, family gatherings, outdoor dining, or simply relaxing and enjoying the peaceful surroundings. The divided, insulated 3-car garage provides excellent space for vehicles, storage, hobbies, or a workshop, measuring approximately 24x20 and 13x22. A backyard shed is also included. This wonderful property offers the space, updates, privacy, and outdoor living you’ve been looking for — and it’s truly move-in ready! ***DO NOT ATTACH a letter from the buyer when submitting an offer due to the risk of Fair Housing Violations. ****Buyers be pre-qualified or have proof of funds before viewing.***ALL INFORMATION DEEMED ACCURATE. PLEASE VERIFY INFORMATION TO SATISFY YOURSELF AS A BUYER AND /OR TRANSACTION BROKER OR A BUYER&#39;S AGENT. Information such as room sizes, square feet, schools, lot lines, flood zone, flood way, trash service, propane service, propane tank rental, mailbox or mailbox keys, HOA fees if any, initiation fees, covenants, rural water transfer fees, warranties, monthly services if any such as water delivery, water softener rentals, security fees, etc., this is not an all inclusive list, if it is important to you, then investigate and inspect to satisfy yourself.</p>
     </div>
@@ -199,9 +201,9 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
     (function(){
-      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.539442,-97.308547],15);
+      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.539457,-97.308538],15);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap contributors',maxZoom:19}).addTo(map);
-      L.marker([37.539442,-97.308547]).addTo(map).bindPopup('2245 84th St S ST, Haysville, KS 67060').openPopup();
+      L.marker([37.539457,-97.308538]).addTo(map).bindPopup('2245 84th St S ST, Haysville, KS 67060').openPopup();
     })();
     </script>
   </div>
@@ -209,8 +211,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -220,13 +222,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="2245 84th St S ST, Haysville, KS, 67060">
-        <input type="hidden" name="message" value="I am interested in the property at 2245 84th St S ST, Haysville, KS, 67060 (MLS# 678859). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 2245 84th St S ST, Haysville, KS, 67060 (MLS# 678859). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

@@ -44,7 +44,7 @@
   <div class="auction-hero-overlay"></div>
   <div class="auction-hero-content">
     <h1 class="auction-hero-title">1638 Faulders Ln, Wichita, KS, 67208</h1>
-    <p class="auction-hero-sub">$159,900 &nbsp;·&nbsp; 2BD/2BA</p>
+    <p class="auction-hero-sub">$165,000 &nbsp;·&nbsp; 2BD/2BA</p>
   </div>
 </section>
 
@@ -112,12 +112,12 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-terminated pill">Inactive</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
       <i class="fas fa-tag"></i>
-      <div class="stat-val">$159,900</div>
+      <div class="stat-val">$165,000</div>
       <div class="stat-label">List Price</div>
     </div>
     <div class="stat-cell">
@@ -197,9 +197,9 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
     (function(){
-      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.663362,-97.268723],15);
+      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.663354,-97.268716],15);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap contributors',maxZoom:19}).addTo(map);
-      L.marker([37.663362,-97.268723]).addTo(map).bindPopup('1638 Faulders Ln, Wichita, KS 67208').openPopup();
+      L.marker([37.663354,-97.268716]).addTo(map).bindPopup('1638 Faulders Ln, Wichita, KS 67208').openPopup();
     })();
     </script>
   </div>

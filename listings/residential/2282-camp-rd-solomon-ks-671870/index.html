@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Distinctive custom home with extensive upgrades, outbuildings &amp; entertaining spaces Originally built in 1971 as a berm-style home (approx. 1,288 sq ft), this property was thoughtfully expanded and reimagined in 1995 with a major addition that now incorporates the entire original structure under one roof. The result is a unique, low-maintenance residence with approximately 2,691 sq ft of finished living area (3,243 sq ft total including attached garage), designed for comfort, efficiency, and durability. Main Residence (3 bed / 3 bath + office &amp; sewing room) - Spacious 1995 great-room addition combining kitchen, dining, living room, and wet bar—ideal for gatherings and everyday living. Additional main-level rooms include a dedicated office, laundry room, and sewing/craft room, plus generous closets and storage throughout. Three bedrooms and three full bathrooms, including a primary suite that opens directly to the back yard. Bright sunroom off the kitchen and primary bedroom overlooks the backyard and connects indoor and outdoor living. Renewal by Andersen windows installed in 2017 for improved efficiency, comfort, and curb appeal. Construction &amp; Exterior Features - Entire home covered by the 1995 roof system, designed for durability. Hail-resistant concrete roof shingles for peace of mind in severe weather. Low-maintenance exterior: DryVit over insulation and steel soffits—no exterior painting required. Attached garage includes a built-in tornado/security shelter for added safety. Outbuildings &amp; Amenities - “The Shed” (2004 – approx. 36&#39; x 54&#39;) Finished multi-purpose building with central HVAC and its own restroom, perfect for hobbyists, home-based business, or serious storage: Workshop room for projects and tools. Former catering kitchen with a large gas stove and oven still in place. Two-bay garage area with abundant storage space. Houses the well’s water pressure tank in the restroom/furnace room. On-demand gas water heater in the bathroom. Mower Shed (2015 – approx. 10&#39; x 15&#39;) Separate storage for mowers, tiller, and other lawn/garden equipment, keeping the main garage and shed organized. Greenhouse (approx. 8.5&#39; x 12&#39;) Small greenhouse building with restroom, storage, planting bench, and garden tool organization. Equipped with electrical service and water. Water system includes a master shut-off, control valves, and drain valves designed for proper winterization and freeze protection, plus permanently installed heat tape for cold weather. Pavilion (2017 – approx. 16&#39; x 22&#39;) Timber-beam, screened pavilion just off the back yard—an inviting “happy place” for relaxing or entertaining. Electrical service and seasonal water available. Screened and curtained in cooler months for extended outdoor use. Originally built to serve a pool area; the pool has since been removed and replaced with low-maintenance turf, creating a versatile backyard retreat. This property offers a rare combination of solid construction, thoughtful updates, generous storage and workspace, and multiple indoor–outdoor living areas—ideal for those who value quality, functionality, and room to spread out.</p>
     </div>
@@ -195,9 +197,9 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
     (function(){
-      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([38.924862,-97.332549],15);
+      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([38.924896,-97.332592],15);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap contributors',maxZoom:19}).addTo(map);
-      L.marker([38.924862,-97.332549]).addTo(map).bindPopup('2282 Camp Rd, Solomon, KS 67480').openPopup();
+      L.marker([38.924896,-97.332592]).addTo(map).bindPopup('2282 Camp Rd, Solomon, KS 67480').openPopup();
     })();
     </script>
   </div>
@@ -205,8 +207,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -216,13 +218,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="2282 Camp Rd, Solomon, KS, 67480">
-        <input type="hidden" name="message" value="I am interested in the property at 2282 Camp Rd, Solomon, KS, 67480 (MLS# 671870). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 2282 Camp Rd, Solomon, KS, 67480 (MLS# 671870). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

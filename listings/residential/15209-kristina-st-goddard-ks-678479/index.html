@@ -63,12 +63,23 @@
         <img src="https://cdn.repliers.io/southcentralkansas/IMG-678479_6708043412831054940.jpg" alt="Primary property photo" loading="eager">
       </button>
       <div class="sg-mosaic-strip">
-
+      <button class="sg-mosaic-thumb" data-idx="1" aria-label="View photo 2" type="button">
+        <img src="https://cdn.repliers.io/southcentralkansas/IMG-678479_6707807390915456878.jpg" alt="Property photo 2" loading="lazy">
+        
+      </button>
+      <button class="sg-mosaic-thumb" data-idx="2" aria-label="View photo 3" type="button">
+        <img src="https://cdn.repliers.io/southcentralkansas/IMG-678479_6705528692944046687.jpg" alt="Property photo 3" loading="lazy">
+        
+      </button>
+      <button class="sg-mosaic-thumb" data-idx="3" aria-label="View photo 4" type="button">
+        <img src="https://cdn.repliers.io/southcentralkansas/IMG-678479_6708529534907326944.jpg" alt="Property photo 4" loading="lazy">
+        <div class="sg-mosaic-more" aria-hidden="true">+6 more</div>
+      </button>
       </div>
     </div>
     <div class="sg-gallery-bar">
       <button class="sg-gallery-all-btn" id="sg-view-all" type="button">
-        <i class="fas fa-images"></i> View all 1 photo
+        <i class="fas fa-images"></i> View all 10 photos
       </button>
     </div>
   </section>
@@ -83,7 +94,7 @@
 
   <script>
   (function(){
-    var srcs = ["https://cdn.repliers.io/southcentralkansas/IMG-678479_6708043412831054940.jpg"];
+    var srcs = ["https://cdn.repliers.io/southcentralkansas/IMG-678479_6708043412831054940.jpg","https://cdn.repliers.io/southcentralkansas/IMG-678479_6707807390915456878.jpg","https://cdn.repliers.io/southcentralkansas/IMG-678479_6705528692944046687.jpg","https://cdn.repliers.io/southcentralkansas/IMG-678479_6708529534907326944.jpg","https://cdn.repliers.io/southcentralkansas/IMG-678479_6708547684844329963.jpg","https://cdn.repliers.io/southcentralkansas/IMG-678479_6705318916586041007.jpg","https://cdn.repliers.io/southcentralkansas/IMG-678479_6701737392385514361.jpg","https://cdn.repliers.io/southcentralkansas/IMG-678479_6708094802020452124.jpg","https://cdn.repliers.io/southcentralkansas/IMG-678479_6708468316226334633.jpg","https://cdn.repliers.io/southcentralkansas/IMG-678479_6700626798460654570.jpg"];
     var lb = document.getElementById('sg-lightbox');
     var lbImg = document.getElementById('sg-lightbox-img');
     var lbCtr = document.getElementById('sg-lightbox-counter');
@@ -180,9 +191,9 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
     (function(){
-      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.718985,-97.517761],15);
+      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.719079,-97.517733],15);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap contributors',maxZoom:19}).addTo(map);
-      L.marker([37.718985,-97.517761]).addTo(map).bindPopup('15209 Kristina St, Goddard, KS 67052').openPopup();
+      L.marker([37.719079,-97.517733]).addTo(map).bindPopup('15209 Kristina St, Goddard, KS 67052').openPopup();
     })();
     </script>
   </div>

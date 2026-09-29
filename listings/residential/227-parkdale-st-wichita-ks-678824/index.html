@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>A home filled with space, possibilities, and room to make memories! This unique 4-bedroom, 3-bath home offers multiple levels of living space, wonderful outdoor amenities, and an incredible amount of flexibility. The upper level features 3 bedrooms, including the primary suite, along with a guest bathroom, dining room, and spacious kitchen. The primary suite offers a brand-new custom walk-in shower, creating a beautiful private retreat. Just off the kitchen is a fantastic covered deck—perfect for morning coffee, evening drinks, or gathering with friends. The main level offers a cozy family room with a mounted TV that stays, making this a great spot for movie nights and relaxing together. A new gas fireplace adds warmth and charm, while the newer HVAC system provides efficient heating and cooling throughout the home. Head downstairs to find an additional family room with another mounted TV over the fireplace that stays, a full bathroom, and a fourth bedroom. This level provides direct access to the backyard and heated pool, making it an ideal setup for entertaining, guests, or simply enjoying summer days at home. And there’s even a basement offering plenty of additional storage! Outside, the property continues to impress with a heated and cooled she-shed that could easily become a crafting studio, woodworking space, quiet TV room, home office, or personal retreat. An additional storage shed provides the perfect place for gardening supplies and outdoor equipment. Plus, there’s a 2-car garage for parking and even more storage. Priced well below market value, this home offers an exceptional opportunity for buyers who can see the possibilities and add their own personal touches. The current price reflects some cosmetic updating the new owner may wish to make, creating the potential to build equity while making the home truly their own. With the sellers eager to move forward with their next home, this one is ready for its next chapter—and it could be yours!</p>
     </div>
@@ -191,9 +193,9 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
     (function(){
-      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.680296,-97.469325],15);
+      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.680277,-97.469286],15);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap contributors',maxZoom:19}).addTo(map);
-      L.marker([37.680296,-97.469325]).addTo(map).bindPopup('227 Parkdale St, Wichita, KS 67209').openPopup();
+      L.marker([37.680277,-97.469286]).addTo(map).bindPopup('227 Parkdale St, Wichita, KS 67209').openPopup();
     })();
     </script>
   </div>
@@ -201,8 +203,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -212,13 +214,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="227 Parkdale St, Wichita, KS, 67209">
-        <input type="hidden" name="message" value="I am interested in the property at 227 Parkdale St, Wichita, KS, 67209 (MLS# 678824). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 227 Parkdale St, Wichita, KS, 67209 (MLS# 678824). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

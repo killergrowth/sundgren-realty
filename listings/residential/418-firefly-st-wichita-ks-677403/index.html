@@ -44,7 +44,7 @@
   <div class="auction-hero-overlay"></div>
   <div class="auction-hero-content">
     <h1 class="auction-hero-title">418 Firefly St, Wichita, KS, 67235</h1>
-    <p class="auction-hero-sub">$264,000 &nbsp;·&nbsp; 3BD/3BA</p>
+    <p class="auction-hero-sub">$259,000 &nbsp;·&nbsp; 3BD/3BA</p>
   </div>
 </section>
 
@@ -112,12 +112,12 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
       <i class="fas fa-tag"></i>
-      <div class="stat-val">$264,000</div>
+      <div class="stat-val">$259,000</div>
       <div class="stat-label">List Price</div>
     </div>
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>WELCOME HOME TO THE PERFECT BLEND OF COMFORT, LOCATION, AND BACKYARD BEAUTY! This inviting 3-bedroom, 3 bath home located in the highly desirable Goddard School District offers the space, setting, and lifestyle buyers are looking for. Step inside to a warm and welcoming floor plan with plenty of room for everyday living and entertaining. The finished basement provides valuable additional living space, perfect for a family room, recreation area, home office, or guest space. An attached two car garage adds convenience and storage. Step outside and discover what truly sets this property apart. A walking path and park are located directly behind the home, creating a peaceful backdrop where deer and wild turkey are frequent visitors. Enjoy morning coffee, evening walks, beautiful Kansas sunsets, and the feeling of nature right outside your back door while still being close to everything Wichita has to offer. With 3 bedrooms, 3 bathrooms, a finished basement, Goddard schools, and an exceptional location, this is more than a house. It is a place you will be proud to call home.</p>
     </div>
@@ -199,9 +201,9 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
     (function(){
-      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.676386,-97.487766],15);
+      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.676365,-97.487783],15);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap contributors',maxZoom:19}).addTo(map);
-      L.marker([37.676386,-97.487766]).addTo(map).bindPopup('418 Firefly St, Wichita, KS 67235').openPopup();
+      L.marker([37.676365,-97.487783]).addTo(map).bindPopup('418 Firefly St, Wichita, KS 67235').openPopup();
     })();
     </script>
   </div>
@@ -209,8 +211,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -220,13 +222,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="418 Firefly St, Wichita, KS, 67235">
-        <input type="hidden" name="message" value="I am interested in the property at 418 Firefly St, Wichita, KS, 67235 (MLS# 677403). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 418 Firefly St, Wichita, KS, 67235 (MLS# 677403). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

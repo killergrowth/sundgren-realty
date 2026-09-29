@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Classic East Side Ranch with Space, Character &amp; a Sun Porch You’ll Love! Welcome to 138 S Parkwood Ln, a sprawling one-level ranch tucked into a desirable East Side Wichita location. With approximately 2,259 square feet all on one floor, this home offers the kind of spacious rooms, timeless character, and easy living that are increasingly hard to find. Step inside and you’ll immediately appreciate the beautiful wood floors throughout, giving the home warmth and character while providing a wonderful backdrop for both traditional and modern décor. The generous living room is made for relaxing, featuring a gas fireplace that creates the perfect gathering spot on cool evenings. But the real showstopper may be the full-length back sun porch. Filled with natural light and overlooking the backyard, this versatile space is the perfect place to enjoy your morning coffee, curl up with a good book, entertain friends, or simply find a little peace and quiet at the end of the day. It’s the kind of space that makes you want to slow down and stay awhile. The spacious floor plan provides plenty of room to spread out, with large living areas, comfortable bedrooms, and the convenience of having everything you need on one level. Whether you&#39;re looking for room for family, guests, hobbies, or simply more breathing room, this home delivers. Located in a desirable East Side neighborhood, you’ll enjoy convenient access to shopping, restaurants, parks, and everyday amenities, while coming home to a quiet residential setting. If you appreciate solid construction, generous room sizes, beautiful hardwood floors, and the charm of a classic Wichita ranch, this one deserves a closer look. Homes offering this much space on one level and a sun porch like this don’t come along every day! Come see why 138 S Parkwood Ln could be the place you&#39;ve been looking for.</p>
     </div>
@@ -195,9 +197,9 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
     (function(){
-      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.685365,-97.273346],15);
+      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.685355,-97.273335],15);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap contributors',maxZoom:19}).addTo(map);
-      L.marker([37.685365,-97.273346]).addTo(map).bindPopup('138 Parkwood Ln, Wichita, KS 67218').openPopup();
+      L.marker([37.685355,-97.273335]).addTo(map).bindPopup('138 Parkwood Ln, Wichita, KS 67218').openPopup();
     })();
     </script>
   </div>
@@ -205,8 +207,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -216,13 +218,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="138 Parkwood Ln, Wichita, KS, 67218">
-        <input type="hidden" name="message" value="I am interested in the property at 138 Parkwood Ln, Wichita, KS, 67218 (MLS# 678748). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 138 Parkwood Ln, Wichita, KS, 67218 (MLS# 678748). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

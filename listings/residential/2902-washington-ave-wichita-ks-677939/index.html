@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Don&#39;t miss this completely renovated brick ranch offering 2 bedrooms, 2 bathrooms, and two separate living spaces. The home sits just a short walk from Leon Robinson Park, the Arkansas River, and the walking path that follows it. Having two living areas means you get room to spread out, which makes this one great for entertaining. The roof is brand new, offering peace of mind and lower insurance costs. Pulling up to the home you&#39;ll appreciate the oversized driveway and covered front porch, along with the brick exterior and dark trim accents. Step inside to an inviting front living room where the refinished hardwood floors set the tone right away. A wide picture window brings in natural light throughout the day, and a coat closet sits conveniently off the entry. From there the living room opens to the dining room, anchored by a stylish chandelier. This is the center of the home, with doorways leading off to the kitchen, the back living room, and the bedrooms. The kitchen has been fully renovated with brand new cabinetry and quartz countertops. A subway tile backsplash runs the length of both walls, while wood floating shelves and a stainless chimney hood add warmth and contrast. Brushed gold hardware and a matching faucet tie everything together, and the stainless appliances stay with the home. Between the window over the sink and the large format tile flooring, the space stays bright and easy to maintain. Just past the dining room you&#39;ll step down into the back living room, which is the showstopper of the home. Vaulted ceilings with exposed beams open the space up, and an oversized brick wood burning fireplace with a raised stone hearth anchors the far wall. Built in display shelving, plantation shutters, and soft carpet finish it off, and an updated half bathroom sits right off the room for added convenience when you have guests over. Back at the front of the home, the hallway leading to the bedrooms offers built in storage along the way. The full bathroom has been fully remodeled with a tub and shower combo and a floor to ceiling marble look tile surround. You&#39;ll also appreciate the quartz top vanity and timeless brass finishes. Both bedrooms sit on this side of the home, each offering refinished hardwood floors, a ceiling fan, and good closet space. In the backyard you&#39;ll love the large fenced yard with a private concrete patio and a raised garden bed. Two storage sheds convey, including an oversized wood shed with windows and double doors, and the attached 1-car garage gives you even more room to work with. Renovated top to bottom and just steps from the river, this home is move in ready. Schedule your private tour today!</p>
     </div>
@@ -195,9 +197,9 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
     (function(){
-      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.64040698,-97.32600402],15);
+      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.640409,-97.32599],15);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap contributors',maxZoom:19}).addTo(map);
-      L.marker([37.64040698,-97.32600402]).addTo(map).bindPopup('2902 Washington Ave, Wichita, KS 67216').openPopup();
+      L.marker([37.640409,-97.32599]).addTo(map).bindPopup('2902 Washington Ave, Wichita, KS 67216').openPopup();
     })();
     </script>
   </div>
@@ -205,8 +207,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -216,13 +218,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="2902 Washington Ave, Wichita, KS, 67216">
-        <input type="hidden" name="message" value="I am interested in the property at 2902 Washington Ave, Wichita, KS, 67216 (MLS# 677939). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 2902 Washington Ave, Wichita, KS, 67216 (MLS# 677939). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
