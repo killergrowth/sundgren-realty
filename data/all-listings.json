@@ -52749,7 +52749,7 @@
     "state": "KS",
     "lat": 37.553528,
     "lng": -97.254276,
-    "price": 257000,
+    "price": 264000,
     "beds": 3,
     "baths": 3,
     "sqft": "2776",
@@ -52761,8 +52761,7 @@
     "isSundgren": false,
     "agentName": "Dawn R Wade",
     "agentPhone": "3168061060",
-    "agentEmail": "",
-    "previousPrice": 259000
+    "agentEmail": ""
   },
   {
     "slug": "8110-westlawn-cir-wichita-ks-677589",
@@ -78357,7 +78356,7 @@
     "state": "KS",
     "lat": 37.697058,
     "lng": -97.300647,
-    "price": 175000,
+    "price": 170000,
     "beds": 4,
     "baths": 1,
     "sqft": "1466",
@@ -78369,7 +78368,8 @@
     "isSundgren": false,
     "agentName": "Jadyn Barr",
     "agentPhone": "3162171717",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 175000
   },
   {
     "slug": "225-belair-st-el-dorado-ks-678134",

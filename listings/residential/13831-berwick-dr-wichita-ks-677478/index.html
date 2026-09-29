@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Welcome to this beautifully updated all-brick home in the highly desirable Crestview Country Club Estates. This immaculate 4-bedroom, 3-bathroom home is located in the sought-after Andover School District, just minutes from Crestview Country Club. The impressive great room features soaring ceilings, decorative wood accents, stylish new lighting, expansive windows, and a cozy two-way fireplace shared with the kitchen. Fresh paint and new laminate wood flooring throughout the main level provide a fresh, modern feel. The stunning fully remodeled kitchen is the heart of the home, designed with both beauty and function in mind. It features a large center island, quartz countertops, a decorative tile backsplash, abundant cabinetry, and all-new appliances that remain with the home. Both informal and formal dining spaces, along with a convenient wet bar, offer exceptional flexibility for entertaining guests or enjoying everyday meals. The spacious updated main-floor primary suite offers a luxurious en suite bath with heated tile floors, dual sinks, a walk-in shower, jetted tub, and a large walk-in closet. A second main-floor bedroom has direct access to a fully remodeled bath. The updated laundry room includes a convenient drop zone, and the washer and dryer remain. The finished lower level expands the home&#39;s living space with a bright family and recreation room featuring view-out windows, two additional bedrooms, a full bathroom, generous storage space, and a dedicated workshop perfect for hobbies, crafts, or projects. Step outside to enjoy the deck overlooking the private backyard—an ideal setting for morning coffee, evening relaxation, or outdoor entertaining. Additional highlights include a whole-home generator for added peace of mind, a new HVAC system installed in 2025, and a sprinkler system connected to the HOA irrigation well. Lawn care is provided by the HOA, allowing you more time to enjoy this exceptional home, as well as golf and relaxation! This move-in ready home combines quality updates, low-maintenance living, and an exceptional location.</p>
     </div>
@@ -195,9 +197,9 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
     (function(){
-      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.694754,-97.177517],15);
+      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.694785,-97.177524],15);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap contributors',maxZoom:19}).addTo(map);
-      L.marker([37.694754,-97.177517]).addTo(map).bindPopup('13831 Berwick Dr, Wichita, KS 67230').openPopup();
+      L.marker([37.694785,-97.177524]).addTo(map).bindPopup('13831 Berwick Dr, Wichita, KS 67230').openPopup();
     })();
     </script>
   </div>
@@ -205,8 +207,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -216,13 +218,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="13831 Berwick Dr, Wichita, KS, 67230">
-        <input type="hidden" name="message" value="I am interested in the property at 13831 Berwick Dr, Wichita, KS, 67230 (MLS# 677478). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 13831 Berwick Dr, Wichita, KS, 67230 (MLS# 677478). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
