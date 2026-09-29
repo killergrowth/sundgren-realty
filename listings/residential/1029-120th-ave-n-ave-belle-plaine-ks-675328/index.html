@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,9 +148,7 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section" style="border-left-color:#2563eb;">
-        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
-      </div><div class="desc-section">
+          <div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Set away from the road, at the end of a private driveway, this custom-built barndominium on 10 acres offers the peaceful country lifestyle you&#39;ve been dreaming of. Surrounded by wide open skies, abundant wildlife, and room to truly spread out, this one-of-a-kind property combines custom craftsmanship with everyday comfort and endless opportunities for recreation. Inside, nearly 3,400 square feet of thoughtfully designed living space welcomes you with soaring vaulted ceilings, abundant natural light, and an open-concept layout that brings everyone together. The spacious great room flows effortlessly into a chef-inspired kitchen featuring custom cabinetry, an oversized island with generous seating, a gas range, a walk-in pantry with built-in storage and space for an upright freezer, plus a dedicated area ready for a future wine refrigerator. Designed with both privacy and functionality in mind, the split bedroom floor plan offers four oversized bedrooms, each with its own walk-in closet. The guest bath provides a smart layout with separate vanity space and a private tub and water closet, making busy mornings easier for everyone. The private primary suite is a relaxing retreat complete with dual vanities, a soaking tub, a spacious walk-in shower with built-in seating, and an impressive walk-in closet featuring custom built-ins, shoe cubbies, and a chest of drawers. Conveniently located nearby, the laundry room offers additional cabinetry and a utility sink. Additional living spaces include a dedicated home office, an oversized mudroom with drop zone, and a spacious family room already plumbed for a future wet bar, creating the perfect space for entertaining, movie nights, or game day gatherings. Zoned heating and cooling, along with dual zoned tankless water heaters, provide year-round comfort and efficiency. Head outside to enjoy covered front and back porches where you can unwind while taking in breathtaking sunsets, peaceful country views, and frequent visits from local wildlife. The low-maintenance exterior with metal siding and a metal roof allows you to spend less time on upkeep and more time enjoying everything this property has to offer. Whether your passion is hunting, target shooting, exploring your own land, or simply embracing the quiet of country living, the back acreage provides the space and privacy to do it all. A 36 x 42 storage building with an additional 36 x 24 enclosed parking area offers ample room for equipment, vehicles, hobbies, and outdoor toys. If you&#39;ve been searching for a custom home that delivers space, privacy, quality craftsmanship, and the freedom to enjoy country living at its best, this exceptional property is ready to welcome you home. Just a few miles from the Kansas Turnpike and a short drive to shopping and city amenities. Schedule a time to see it for yourself!</p>
     </div>
@@ -205,9 +203,9 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
     (function(){
-      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.435203,-97.307884],15);
+      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.435206,-97.307882],15);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap contributors',maxZoom:19}).addTo(map);
-      L.marker([37.435203,-97.307884]).addTo(map).bindPopup('1029 120th Ave N AVE, Belle Plaine, KS 67013').openPopup();
+      L.marker([37.435206,-97.307882]).addTo(map).bindPopup('1029 120th Ave N AVE, Belle Plaine, KS 67013').openPopup();
     })();
     </script>
   </div>
@@ -215,8 +213,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -226,13 +224,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="1029 120th Ave N AVE, Belle Plaine, KS, 67013">
-        <input type="hidden" name="message" value="I am interested in properties similar to 1029 120th Ave N AVE, Belle Plaine, KS, 67013 (MLS# 675328). Please contact me.">
+        <input type="hidden" name="message" value="I am interested in the property at 1029 120th Ave N AVE, Belle Plaine, KS, 67013 (MLS# 675328). Please contact me to schedule a showing.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Get In Touch
+          Contact Me About This Listing
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Commercial</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Commercial</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -138,9 +138,7 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section" style="border-left-color:#2563eb;">
-        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
-      </div><div class="desc-section">
+          <div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>An exceptional opportunity to own one of Lindsborg&#39;s most recognizable and beloved businesses! Hemslöjd, the Swedish word for &quot;handicraft,&quot; has been a cornerstone of the community and a destination for visitors from across the country. Instantly recognized by the iconic Dala Horse displayed out front—one of the most photographed landmarks in Lindsborg—this thriving business enjoys a prime location and strong reputation built over decades. This turnkey operation offers multiple revenue streams, including a spacious retail gift shop featuring Swedish and Scandinavian imports, traditional gifts, home décor, books, music, jewelry, crystal, table linens, holiday merchandise, and specialty grocery items. Customers also enjoy custom glass etching services, personalized gifts, mail-order sales, and online shopping opportunities. Beyond the retail space, Hemslöjd houses a woodworking shop where craftsmen create the famous personalized Dala Horse house signs shipped nationwide. The business also offers quadricycle rentals, giving visitors a unique way to explore Lindsborg. Known throughout the region as a must-visit attraction, Hemslöjd is woven into the fabric of Lindsborg&#39;s vibrant tourism and business community. The sale includes an established brand, loyal customer base, and proven business model. Don&#39;t miss this rare chance to own a landmark business in the heart of Little Sweden, USA.</p>
     </div>
@@ -191,9 +189,9 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
     (function(){
-      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([38.575168,-97.676244],15);
+      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([38.575169,-97.676249],15);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap contributors',maxZoom:19}).addTo(map);
-      L.marker([38.575168,-97.676244]).addTo(map).bindPopup('201 Main St, Lindsborg, KS 67456').openPopup();
+      L.marker([38.575169,-97.676249]).addTo(map).bindPopup('201 Main St, Lindsborg, KS 67456').openPopup();
     })();
     </script>
   </div>
@@ -201,8 +199,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -212,13 +210,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="201 Main St, Lindsborg, KS, 67456">
-        <input type="hidden" name="message" value="I am interested in properties similar to 201 Main St, Lindsborg, KS, 67456 (MLS# 674880). Please contact me.">
+        <input type="hidden" name="message" value="I am interested in the property at 201 Main St, Lindsborg, KS, 67456 (MLS# 674880). Please contact me to schedule a showing.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Get In Touch
+          Contact Me About This Listing
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

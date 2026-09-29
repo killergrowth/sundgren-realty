@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -143,9 +143,7 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section" style="border-left-color:#2563eb;">
-        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
-      </div><div class="desc-section">
+          <div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Online Only Auction! 4 BED, 2 BATH HOME IN KECHI, KS - CONVENIENT ACCESS TO HWY 254. Bidding is now open and concludes on Friday, September 25th at 10:30 AM. Located at 336 W Tomahawk in Kechi, this 4-bedroom, 2-bath home offers easy access to Hwy 254, Kechi, and local schools. The home features approximately 1,036 SF above ground plus a 916 SF basement, including approximately 868 SF of finished basement area, providing nearly 1,904 SF of total finished living space. Additional features include an attached 2-car garage and a 7,940± SF (0.18± acre) lot. Built in 1990 and located within USD 259 – Wichita. Online bidders are advised to thoroughly review the terms and details provided on the online bidding site. Any announcements made the day of the auction supersede any other advertised material. The property is being sold in its current “Where Is, As Is” condition, without any warranties. Sale is subject to seller confirmation with closing within 30 days. The successful bidder must immediately execute the provided auction purchase contract and deposit $10,000.00 as earnest money within the specified time outlined in the contract. Additionally, a 10% buyer’s premium will be added to the final bid price. This auction will be held with live and online bidding. The auctioneer may, at their sole discretion, reject, disqualify, or refuse any bid. Broker forms, if any, are available on the bidding site. While all information is deemed reliable, buyers are encouraged to conduct their own due diligence. The sale is not contingent on financing, appraisal, or inspection, and the winning bidder must be available immediately post-auction. The property is sold subject to applicable Federal, State, and/or Local Government regulations, with all measurements and details approximate and non-binding. The auctioneer provides no warranties regarding the online bidding platform’s performance and assumes no liability for any bidder-incurred damages during its use, including unacknowledged bids or errors. Bidders accept all risks associated with the platform and acknowledge that the auctioneer bears no responsibility for bid submission or acceptance errors or omissions. Auctions may be subject to selling prior to the auction date.</p>
     </div>
@@ -188,9 +186,9 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
     (function(){
-      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.793088,-97.284707],15);
+      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.793081,-97.284734],15);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap contributors',maxZoom:19}).addTo(map);
-      L.marker([37.793088,-97.284707]).addTo(map).bindPopup('336 Tomahawk ST, Kechi, KS 67067').openPopup();
+      L.marker([37.793081,-97.284734]).addTo(map).bindPopup('336 Tomahawk ST, Kechi, KS 67067').openPopup();
     })();
     </script>
   </div>
@@ -198,8 +196,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -209,13 +207,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="336 Tomahawk ST, Kechi, KS, 67067">
-        <input type="hidden" name="message" value="I am interested in properties similar to 336 Tomahawk ST, Kechi, KS, 67067 (MLS# 678062). Please contact me.">
+        <input type="hidden" name="message" value="I am interested in the property at 336 Tomahawk ST, Kechi, KS, 67067 (MLS# 678062). Please contact me to schedule a showing.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Get In Touch
+          Contact Me About This Listing
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

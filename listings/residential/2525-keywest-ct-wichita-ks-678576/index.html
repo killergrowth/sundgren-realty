@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,9 +148,7 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section" style="border-left-color:#2563eb;">
-        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
-      </div><div class="desc-section">
+          <div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Sellers are motivated! Welcome to this beautifully refreshed 4-bedroom, 3.5-bath home in The Moorings. Located in Wichita but within the Valley Center school district, you’ll have quick access to K-96 and I-235, making it easy to get to shopping, dining, and the rest of Wichita. With plenty of living space, extensive storage, and fresh updates throughout, this home is ready for its next owner. The main level features an open layout with vaulted ceilings, a floor-to-ceiling fireplace, new decorative wall moulding in the living room, and a roomy kitchen with granite countertops, plenty of cabinet space, and an attached dining room. The primary suite offers fresh paint, a large walk-in closet, and a private bath with double sinks, jetted tub, separate shower, and additional storage. Just inside from the garage is a entry nook with built-in cubbies and hooks right next to an oversized laundry room featuring a utility sink and half bath. Downstairs, you&#39;ll find new carpet throughout the combined family and rec room, along with a wet bar featuring new LVP flooring. The generously sized 4th bedroom also has new carpet. Don’t miss yet another full bathroom and finished flex space perfect for a children’s playroom, home office, or additional storage. Outside, enjoy the nearly half-acre lot from the composite deck or large patio, with a separate outdoor storage closet conveniently located behind the garage. The oversized garage is a standout feature with an extended 3rd-car workshop area, built-in cabinets, and easy attic access. Don’t miss your chance to see everything this home has to offer - schedule your showing today!</p>
     </div>
@@ -197,9 +195,9 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
     (function(){
-      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.77159811,-97.37235424],15);
+      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.771528,-97.372302],15);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap contributors',maxZoom:19}).addTo(map);
-      L.marker([37.77159811,-97.37235424]).addTo(map).bindPopup('2525 Keywest Ct, Wichita, KS 67204').openPopup();
+      L.marker([37.771528,-97.372302]).addTo(map).bindPopup('2525 Keywest Ct, Wichita, KS 67204').openPopup();
     })();
     </script>
   </div>
@@ -207,8 +205,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -218,13 +216,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="2525 Keywest Ct, Wichita, KS, 67204">
-        <input type="hidden" name="message" value="I am interested in properties similar to 2525 Keywest Ct, Wichita, KS, 67204 (MLS# 678576). Please contact me.">
+        <input type="hidden" name="message" value="I am interested in the property at 2525 Keywest Ct, Wichita, KS, 67204 (MLS# 678576). Please contact me to schedule a showing.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Get In Touch
+          Contact Me About This Listing
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

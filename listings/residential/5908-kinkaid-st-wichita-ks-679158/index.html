@@ -73,13 +73,13 @@
       </button>
       <button class="sg-mosaic-thumb" data-idx="3" aria-label="View photo 4" type="button">
         <img src="https://cdn.repliers.io/southcentralkansas/IMG-679158_6705298848552199824.jpg" alt="Property photo 4" loading="lazy">
-        <div class="sg-mosaic-more" aria-hidden="true">+8 more</div>
+        <div class="sg-mosaic-more" aria-hidden="true">+9 more</div>
       </button>
       </div>
     </div>
     <div class="sg-gallery-bar">
       <button class="sg-gallery-all-btn" id="sg-view-all" type="button">
-        <i class="fas fa-images"></i> View all 12 photos
+        <i class="fas fa-images"></i> View all 13 photos
       </button>
     </div>
   </section>
@@ -94,7 +94,7 @@
 
   <script>
   (function(){
-    var srcs = ["https://cdn.repliers.io/southcentralkansas/IMG-679158_6707041548007708189.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679158_6701941826515058875.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679158_6702459267670629258.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679158_6705298848552199824.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679158_6701313749868453230.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679158_6703750109692817827.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679158_6702757609963565816.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679158_6707736706216913439.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679158_6700336054243057633.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679158_6705222478450164643.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679158_6702364419762494962.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679158_6702489398674282264.jpg"];
+    var srcs = ["https://cdn.repliers.io/southcentralkansas/IMG-679158_6707041548007708189.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679158_6701941826515058875.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679158_6702459267670629258.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679158_6705298848552199824.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679158_6701313749868453230.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679158_6703750109692817827.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679158_6702757609963565816.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679158_6707736706216913439.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679158_6700336054243057633.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679158_6705222478450164643.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679158_6702364419762494962.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679158_6702489398674282264.jpg","https://cdn.repliers.io/southcentralkansas/IMG-679158_6703488920381868451.jpg"];
     var lb = document.getElementById('sg-lightbox');
     var lbImg = document.getElementById('sg-lightbox-img');
     var lbCtr = document.getElementById('sg-lightbox-counter');
@@ -191,9 +191,9 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
     (function(){
-      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.653929,-97.26823],15);
+      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.653927,-97.268243],15);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap contributors',maxZoom:19}).addTo(map);
-      L.marker([37.653929,-97.26823]).addTo(map).bindPopup('5908 Kinkaid St, Wichita, KS 67218').openPopup();
+      L.marker([37.653927,-97.268243]).addTo(map).bindPopup('5908 Kinkaid St, Wichita, KS 67218').openPopup();
     })();
     </script>
   </div>
