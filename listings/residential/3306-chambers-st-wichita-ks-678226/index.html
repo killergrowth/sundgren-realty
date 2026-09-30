@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Welcome to this thoughtfully designed home in the Fontana subdivision and highly desirable Maize School District! SPECIAL TAXES ALMOST PAID!!! One of the largest homes and lots in the neighborhood, featuring a sought-after bonus room floor plan, spacious living areas, impressive architectural details and water views, this home offers flexibility for everyday living, entertaining, multi-generational living or remote office work. The light-filled living room features soaring vaulted ceilings, wood beams, oversized windows, true wood flooring and a gas fireplace with tile and custom wood accents. The open layout flows into the kitchen and dining area, where a barrel ceiling with indirect lighting creates a warm gathering space. The large, functional kitchen includes a gas range, rustic beech cabinetry, under-cabinet lighting and a hidden walk-in pantry. The primary suite offers a private retreat with French doors leading to the en suite bath, complete with dual vanities, a large walk-in shower, soaker tub and separate linen closet. The spacious walk-in closet includes organized floor-to-ceiling storage for seasonal clothing and shoes and connects directly to the main-floor laundry room. Additional main-floor conveniences include a functional drop zone near the garage and laundry area with hanging space and upper cubby storage. The second main-floor bedroom offers generous space and is adjacent to a full bathroom with a tub/shower and granite-topped vanity. Privately located by itself upstairs, the additional bedroom offers exceptional flexibility with zoned HVAC, an angled ceiling, large walk-in closet and private full en suite bathroom with a granite-topped vanity. Ideal as a second primary suite, private guest room, multi-generational living space or quiet remote office away from the home&#39;s high-traffic areas. The finished walkout basement provides incredible additional living and entertaining space. The expansive family room features a stone and brick-faced gas fireplace, mounted electric screen and projector for movie nights and game-day gatherings, plus a separate recreation and game table area. The wet bar includes tile flooring, seating for bar stools, abundant cabinetry, granite upper and lower counters, a full-size refrigerator, dishwasher and wine rack. Two additional bedrooms, each with walk-in closets, a full bathroom with tub/shower and a storage room complete the basement, providing even more flexibility for guests, extended family or a remote office. Outside, enjoy two distinct outdoor living areas: a large, covered deck off the dining room with outdoor speakers, and a large custom stone patio off the walkout basement. The patio is electrically wired to accommodate a hot tub or firepit, and features a built-in stone privacy screen. Both spaces provide plenty of room to relax or entertain while enjoying the water views. The garage also offers ample storage with ceiling pallet storage, built-in cabinets with countertop workspace and wood shelving that remain with the property.</p>
     </div>
@@ -209,8 +211,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -220,13 +222,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="3306 Chambers St, Wichita, KS, 67205">
-        <input type="hidden" name="message" value="I am interested in the property at 3306 Chambers St, Wichita, KS, 67205 (MLS# 678226). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 3306 Chambers St, Wichita, KS, 67205 (MLS# 678226). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

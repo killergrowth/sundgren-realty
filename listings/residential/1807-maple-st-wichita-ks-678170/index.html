@@ -63,12 +63,23 @@
         <img src="https://cdn.repliers.io/southcentralkansas/IMG-678170_6702446674951188027.jpg" alt="Primary property photo" loading="eager">
       </button>
       <div class="sg-mosaic-strip">
-
+      <button class="sg-mosaic-thumb" data-idx="1" aria-label="View photo 2" type="button">
+        <img src="https://cdn.repliers.io/southcentralkansas/IMG-678170_6704863665907556480.jpg" alt="Property photo 2" loading="lazy">
+        
+      </button>
+      <button class="sg-mosaic-thumb" data-idx="2" aria-label="View photo 3" type="button">
+        <img src="https://cdn.repliers.io/southcentralkansas/IMG-678170_6700805684649247110.jpg" alt="Property photo 3" loading="lazy">
+        
+      </button>
+      <button class="sg-mosaic-thumb" data-idx="3" aria-label="View photo 4" type="button">
+        <img src="https://cdn.repliers.io/southcentralkansas/IMG-678170_6708748639431057260.jpg" alt="Property photo 4" loading="lazy">
+        <div class="sg-mosaic-more" aria-hidden="true">+4 more</div>
+      </button>
       </div>
     </div>
     <div class="sg-gallery-bar">
       <button class="sg-gallery-all-btn" id="sg-view-all" type="button">
-        <i class="fas fa-images"></i> View all 1 photo
+        <i class="fas fa-images"></i> View all 8 photos
       </button>
     </div>
   </section>
@@ -83,7 +94,7 @@
 
   <script>
   (function(){
-    var srcs = ["https://cdn.repliers.io/southcentralkansas/IMG-678170_6702446674951188027.jpg"];
+    var srcs = ["https://cdn.repliers.io/southcentralkansas/IMG-678170_6702446674951188027.jpg","https://cdn.repliers.io/southcentralkansas/IMG-678170_6704863665907556480.jpg","https://cdn.repliers.io/southcentralkansas/IMG-678170_6700805684649247110.jpg","https://cdn.repliers.io/southcentralkansas/IMG-678170_6708748639431057260.jpg","https://cdn.repliers.io/southcentralkansas/IMG-678170_6701325810874670409.jpg","https://cdn.repliers.io/southcentralkansas/IMG-678170_6705294917230271663.jpg","https://cdn.repliers.io/southcentralkansas/IMG-678170_6700314285303983763.jpg","https://cdn.repliers.io/southcentralkansas/IMG-678170_6704705865956455726.jpg"];
     var lb = document.getElementById('sg-lightbox');
     var lbImg = document.getElementById('sg-lightbox-img');
     var lbCtr = document.getElementById('sg-lightbox-counter');
@@ -173,9 +184,9 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
     (function(){
-      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.680261,-97.361866],15);
+      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.680198,-97.361836],15);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap contributors',maxZoom:19}).addTo(map);
-      L.marker([37.680261,-97.361866]).addTo(map).bindPopup('1807 Maple ST, Wichita, KS 67203').openPopup();
+      L.marker([37.680198,-97.361836]).addTo(map).bindPopup('1807 Maple ST, Wichita, KS 67203').openPopup();
     })();
     </script>
   </div>

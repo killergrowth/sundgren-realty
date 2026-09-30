@@ -15573,7 +15573,7 @@
     "state": "KS",
     "lat": 38.970118,
     "lng": -97.635848,
-    "price": 479998,
+    "price": 474995,
     "beds": 5,
     "baths": 3,
     "sqft": "3284",
@@ -15586,7 +15586,7 @@
     "agentName": "Kenneth Pitts",
     "agentPhone": "7858225117",
     "agentEmail": "",
-    "previousPrice": 499999
+    "previousPrice": 479998
   },
   {
     "slug": "404-fielding-st-derby-ks-673973",
@@ -35327,7 +35327,7 @@
     "state": "KS",
     "lat": 37.693573,
     "lng": -97.505429,
-    "price": 349490,
+    "price": 329990,
     "beds": 2,
     "baths": 2,
     "sqft": "1279",
@@ -35339,7 +35339,8 @@
     "isSundgren": false,
     "agentName": "Tammi Blackburn-Hilger",
     "agentPhone": "3167291900",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 349490
   },
   {
     "slug": "23-kingdom-ct-goddard-ks-671718",
@@ -35650,7 +35651,7 @@
     "state": "KS",
     "lat": 37.693713,
     "lng": -97.505391,
-    "price": 346490,
+    "price": 329990,
     "beds": 2,
     "baths": 2,
     "sqft": "1279",
@@ -35662,7 +35663,8 @@
     "isSundgren": false,
     "agentName": "Tammi Blackburn-Hilger",
     "agentPhone": "3167291900",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 346490
   },
   {
     "slug": "234-central-st-wichita-ks-677232",
@@ -38152,7 +38154,7 @@
     "state": "KS",
     "lat": 37.83046277,
     "lng": -97.35624251,
-    "price": 329900,
+    "price": 319900,
     "beds": 3,
     "baths": 2,
     "sqft": "1675",
@@ -38164,7 +38166,8 @@
     "isSundgren": false,
     "agentName": "Basem Krichati",
     "agentPhone": "3165160139",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 329900
   },
   {
     "slug": "1520-appleton-st-valley-center-ks-677900",
@@ -38175,7 +38178,7 @@
     "state": "KS",
     "lat": 37.830156,
     "lng": -97.355753,
-    "price": 329900,
+    "price": 319900,
     "beds": 3,
     "baths": 2,
     "sqft": "1675",
@@ -38187,7 +38190,8 @@
     "isSundgren": false,
     "agentName": "Basem Krichati",
     "agentPhone": "3165160139",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 329900
   },
   {
     "slug": "1500-appleton-st-valley-center-ks-677901",
@@ -38198,7 +38202,7 @@
     "state": "KS",
     "lat": 37.830144,
     "lng": -97.356281,
-    "price": 329900,
+    "price": 319900,
     "beds": 3,
     "baths": 2,
     "sqft": "1675",
@@ -38210,7 +38214,8 @@
     "isSundgren": false,
     "agentName": "Basem Krichati",
     "agentPhone": "3165160139",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 329900
   },
   {
     "slug": "1600-appleton-st-valley-center-ks-676637",
@@ -41881,7 +41886,7 @@
     "state": "KS",
     "lat": 38.839383,
     "lng": -97.573706,
-    "price": 299999,
+    "price": 285000,
     "beds": 3,
     "baths": 2,
     "sqft": "2335",
@@ -41894,7 +41899,7 @@
     "agentName": "Amber Renfro",
     "agentPhone": "7858207472",
     "agentEmail": "",
-    "previousPrice": 314900
+    "previousPrice": 299999
   },
   {
     "slug": "231-forest-park-ct-derby-ks-676501",
@@ -80972,7 +80977,7 @@
     "state": "KS",
     "lat": 37.676251,
     "lng": -97.247725,
-    "price": 169000,
+    "price": 162500,
     "beds": 3,
     "baths": 1,
     "sqft": "1172",
@@ -80984,7 +80989,8 @@
     "isSundgren": false,
     "agentName": "Jack Quick",
     "agentPhone": "3166849252",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 169000
   },
   {
     "slug": "203-2nd-st-marion-ks-665717",
@@ -125492,7 +125498,7 @@
     "state": "KS",
     "lat": 38.12627,
     "lng": -97.422049,
-    "price": 25500,
+    "price": 28500,
     "beds": null,
     "baths": null,
     "sqft": null,
