@@ -11868,7 +11868,7 @@
     "state": "KS",
     "lat": 37.66406201,
     "lng": -97.11901896,
-    "price": 575000,
+    "price": 550000,
     "beds": 5,
     "baths": 4,
     "sqft": "4170",
@@ -11880,7 +11880,8 @@
     "isSundgren": false,
     "agentName": "Karianne Williams",
     "agentPhone": "3162085351",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 575000
   },
   {
     "slug": "511-glen-creek-st-newton-ks-671354",
@@ -36203,7 +36204,7 @@
     "state": "KS",
     "lat": 37.560016,
     "lng": -97.253906,
-    "price": 340000,
+    "price": 320000,
     "beds": 3,
     "baths": 3,
     "sqft": "2956",
@@ -36215,7 +36216,8 @@
     "isSundgren": false,
     "agentName": "Terrah Todd",
     "agentPhone": "3167084289",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 340000
   },
   {
     "slug": "4426-sunny-ct-wichita-ks-677470",
@@ -52757,7 +52759,7 @@
     "state": "KS",
     "lat": 37.553528,
     "lng": -97.254276,
-    "price": 264000,
+    "price": 256000,
     "beds": 3,
     "baths": 3,
     "sqft": "2776",
@@ -52769,7 +52771,8 @@
     "isSundgren": false,
     "agentName": "Dawn R Wade",
     "agentPhone": "3168061060",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 264000
   },
   {
     "slug": "8110-westlawn-cir-wichita-ks-677589",
@@ -85459,7 +85462,7 @@
     "state": "KS",
     "lat": 37.678585,
     "lng": -97.145941,
-    "price": 145000,
+    "price": 134900,
     "beds": 3,
     "baths": 2,
     "sqft": "1528",
@@ -85472,7 +85475,7 @@
     "agentName": "Matthew Chavez",
     "agentPhone": "3168066537",
     "agentEmail": "",
-    "previousPrice": 154900
+    "previousPrice": 145000
   },
   {
     "slug": "2978-deer-dr-beverly-ks-674934",
@@ -91468,7 +91471,7 @@
     "state": "KS",
     "lat": 37.667602,
     "lng": -97.286847,
-    "price": 135000,
+    "price": 130000,
     "beds": 4,
     "baths": 2,
     "sqft": "1368",
@@ -91480,7 +91483,8 @@
     "isSundgren": false,
     "agentName": "Carrie Licon",
     "agentPhone": "3163044152",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 135000
   },
   {
     "slug": "407-pine-st-pratt-ks-674188",
@@ -106927,7 +106931,7 @@
     "state": "KS",
     "lat": 37.280197,
     "lng": -97.396973,
-    "price": 68000,
+    "price": 65000,
     "beds": 2,
     "baths": 1,
     "sqft": "927",
@@ -106940,7 +106944,7 @@
     "agentName": "Rachel Westmoreland",
     "agentPhone": "6203260633",
     "agentEmail": "",
-    "previousPrice": 70000
+    "previousPrice": 68000
   },
   {
     "slug": "321-violet-st-potwin-ks-677125",
@@ -108518,7 +108522,7 @@
     "state": "KS",
     "lat": 37.803953,
     "lng": -96.861836,
-    "price": 58000,
+    "price": 49900,
     "beds": 2,
     "baths": 1,
     "sqft": "864",
@@ -108531,7 +108535,7 @@
     "agentName": "Jill M Smith",
     "agentPhone": "3162079640",
     "agentEmail": "",
-    "previousPrice": 65000
+    "previousPrice": 58000
   },
   {
     "slug": "530-foresthills-ct-andover-ks-678361",

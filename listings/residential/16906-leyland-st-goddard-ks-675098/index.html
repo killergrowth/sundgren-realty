@@ -73,13 +73,13 @@
       </button>
       <button class="sg-mosaic-thumb" data-idx="3" aria-label="View photo 4" type="button">
         <img src="https://cdn.repliers.io/southcentralkansas/IMG-675098_6708859906128962028.jpg" alt="Property photo 4" loading="lazy">
-        
+        <div class="sg-mosaic-more" aria-hidden="true">+16 more</div>
       </button>
       </div>
     </div>
     <div class="sg-gallery-bar">
       <button class="sg-gallery-all-btn" id="sg-view-all" type="button">
-        <i class="fas fa-images"></i> View all 4 photos
+        <i class="fas fa-images"></i> View all 20 photos
       </button>
     </div>
   </section>
@@ -94,7 +94,7 @@
 
   <script>
   (function(){
-    var srcs = ["https://cdn.repliers.io/southcentralkansas/IMG-675098_6706305299393161148.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675098_6703244033797212510.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675098_6701883858626884516.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675098_6708859906128962028.jpg"];
+    var srcs = ["https://cdn.repliers.io/southcentralkansas/IMG-675098_6706305299393161148.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675098_6703244033797212510.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675098_6701883858626884516.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675098_6708859906128962028.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675098_6709770293104053048.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675098_6709887457004852695.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675098_6703133010862616697.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675098_6707355018877241764.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675098_6700177373485278185.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675098_6704291835289736972.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675098_6705466907543621249.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675098_6704851482239350498.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675098_6700237765636158102.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675098_6705383585370684874.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675098_6703701242884050534.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675098_6709387694254548919.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675098_6700144342893321212.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675098_6702438081915513600.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675098_6703469496817514362.jpg","https://cdn.repliers.io/southcentralkansas/IMG-675098_6709326521796779058.jpg"];
     var lb = document.getElementById('sg-lightbox');
     var lbImg = document.getElementById('sg-lightbox-img');
     var lbCtr = document.getElementById('sg-lightbox-counter');
@@ -150,7 +150,7 @@
         <div style="margin-top:32px;">
           <div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
-      <p>The Tracy is a two-story, three-bedroom, 2.5-bath duplex with a thoughtful layout. All bedrooms are located upstairs, including a primary suite with a vaulted ceiling and private bathroom, while the secondary bedrooms feature 8-foot ceilings. The open-concept kitchen, dining, and living areas on the main floor are perfect for entertaining, with a two-car garage and covered patio adding practical convenience. Supervising Broker has an interest in Cypress Glen Partners All information deemed reliable but not guaranteed. Buyer&#39;s agent to verify any information deemed necessary to buyer.</p>
+      <p>The Tracy is a two-story, three-bedroom, 2.5-bath duplex with a thoughtful layout. All bedrooms are located upstairs, including a primary suite with a vaulted ceiling and private bathroom, while the secondary bedrooms feature 8-foot ceilings. The open-concept kitchen, dining, and living areas on the main floor are perfect for entertaining, with a two-car garage and covered patio adding practical convenience. A managing member of Cypress Glen Partners is a Licensed Associate Broker in the State of Kansas. All information deemed reliable but not guaranteed. Buyer&#39;s agent to verify any information deemed necessary to buyer.</p>
     </div>
           
   <div class="info-card" style="margin-top:24px;">
@@ -191,9 +191,9 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
     (function(){
-      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.685633,-97.536117],15);
+      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.6594,-97.5671],15);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap contributors',maxZoom:19}).addTo(map);
-      L.marker([37.685633,-97.536117]).addTo(map).bindPopup('16906 Leyland St, Goddard, KS 67052').openPopup();
+      L.marker([37.6594,-97.5671]).addTo(map).bindPopup('16906 Leyland St, Goddard, KS 67052').openPopup();
     })();
     </script>
   </div>

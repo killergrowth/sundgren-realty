@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Charming Family Home with a Touch of Country Living! Welcome home to this inviting four-bedroom, three-full-bath home located in the desirable Goddard school district! Offering a wonderful blend of comfort, functionality, and opportunity, this home is designed to accommodate both everyday family living and entertaining. Step inside to find luxury vinyl plank flooring extending through the entryway, living room, dining room, and kitchen, creating a cohesive and easy-to-maintain living space. The tasteful color palette throughout the home provides a warm, calming atmosphere and offers a neutral backdrop for your personal style. The heart of the home is the spacious kitchen, featuring stainless steel appliances that remain with the property, along with a convenient pantry area providing additional storage. Whether you&#39;re preparing a weeknight meal or hosting friends and family, the open feel of the main living areas makes gathering easy and enjoyable. One of the home&#39;s standout features is the peaceful view from the back of the home. Look out over the backyard and beyond to an open field, offering a little taste of country living right at home. With no backyard neighbors, you&#39;ll enjoy added privacy and beautiful, unobstructed views—a rare and desirable feature. The main floor also offers a practical drop zone, perfect for keeping backpacks, shoes, coats, and everyday essentials organized. The washer and dryer can remain with the home, making the move-in process even easier. Downstairs, the full basement provides valuable additional living space, including a finished family room, bedroom, and full bathroom. The basement offers flexibility for guests, teenagers, a home office, hobby space, or a private retreat. There is also an unfinished area that provides an exciting opportunity to add a fifth bedroom. With an existing egress window, this space gives the next homeowner the chance to finish the room and build additional value and equity over time. Storage won&#39;t be an issue here! The home offers ample interior storage, while the three-car garage provides plenty of room for vehicles, tools, recreational equipment, or additional outdoor storage. Outside, enjoy the well-maintained yard and the convenience of a sprinkler system supplied by a well, helping keep the lawn looking its best while conserving treated water. It&#39;s an especially practical feature during those hot Kansas summers. Class IV IR shingles on the roof. With its peaceful backyard setting, spacious floor plan, finished basement, three-car garage, and room to grow, this home offers a wonderful combination of comfort, privacy, and potential. Come see why this charming property could be the perfect place to call home!</p>
     </div>
@@ -201,8 +203,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -212,13 +214,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="2106 Wheatland St, Wichita, KS, 67235">
-        <input type="hidden" name="message" value="I am interested in the property at 2106 Wheatland St, Wichita, KS, 67235 (MLS# 678853). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 2106 Wheatland St, Wichita, KS, 67235 (MLS# 678853). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

@@ -73,13 +73,13 @@
       </button>
       <button class="sg-mosaic-thumb" data-idx="3" aria-label="View photo 4" type="button">
         <img src="https://cdn.repliers.io/southcentralkansas/IMG-658432_6708412627069466669.jpg" alt="Property photo 4" loading="lazy">
-        
+        <div class="sg-mosaic-more" aria-hidden="true">+16 more</div>
       </button>
       </div>
     </div>
     <div class="sg-gallery-bar">
       <button class="sg-gallery-all-btn" id="sg-view-all" type="button">
-        <i class="fas fa-images"></i> View all 4 photos
+        <i class="fas fa-images"></i> View all 20 photos
       </button>
     </div>
   </section>
@@ -94,7 +94,7 @@
 
   <script>
   (function(){
-    var srcs = ["https://cdn.repliers.io/southcentralkansas/IMG-658432_6705223410816359972.jpg","https://cdn.repliers.io/southcentralkansas/IMG-658432_6702855470503315834.jpg","https://cdn.repliers.io/southcentralkansas/IMG-658432_6701722040811762116.jpg","https://cdn.repliers.io/southcentralkansas/IMG-658432_6708412627069466669.jpg"];
+    var srcs = ["https://cdn.repliers.io/southcentralkansas/IMG-658432_6705223410816359972.jpg","https://cdn.repliers.io/southcentralkansas/IMG-658432_6702855470503315834.jpg","https://cdn.repliers.io/southcentralkansas/IMG-658432_6701722040811762116.jpg","https://cdn.repliers.io/southcentralkansas/IMG-658432_6708412627069466669.jpg","https://cdn.repliers.io/southcentralkansas/IMG-658432_6701757801190623672.jpg","https://cdn.repliers.io/southcentralkansas/IMG-658432_6702003585926796291.jpg","https://cdn.repliers.io/southcentralkansas/IMG-658432_6707270852796170015.jpg","https://cdn.repliers.io/southcentralkansas/IMG-658432_6703507254777172631.jpg","https://cdn.repliers.io/southcentralkansas/IMG-658432_6707376984857125716.jpg","https://cdn.repliers.io/southcentralkansas/IMG-658432_6704056009120680132.jpg","https://cdn.repliers.io/southcentralkansas/IMG-658432_6705292935825288280.jpg","https://cdn.repliers.io/southcentralkansas/IMG-658432_6703314316160725560.jpg","https://cdn.repliers.io/southcentralkansas/IMG-658432_6708012246518347314.jpg","https://cdn.repliers.io/southcentralkansas/IMG-658432_6705590805807230206.jpg","https://cdn.repliers.io/southcentralkansas/IMG-658432_6705499337745487724.jpg","https://cdn.repliers.io/southcentralkansas/IMG-658432_6704537094576295905.jpg","https://cdn.repliers.io/southcentralkansas/IMG-658432_6707476676070512239.jpg","https://cdn.repliers.io/southcentralkansas/IMG-658432_6702216647491700635.jpg","https://cdn.repliers.io/southcentralkansas/IMG-658432_6708869590578373514.jpg","https://cdn.repliers.io/southcentralkansas/IMG-658432_6704822560211946007.jpg"];
     var lb = document.getElementById('sg-lightbox');
     var lbImg = document.getElementById('sg-lightbox-img');
     var lbCtr = document.getElementById('sg-lightbox-counter');
@@ -150,7 +150,7 @@
         <div style="margin-top:32px;">
           <div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
-      <p>The Tracy is a two-story, three-bedroom, 2.5-bath duplex with a thoughtful layout. All bedrooms are located upstairs, including a primary suite with a vaulted ceiling and private bathroom, while the secondary bedroom features 8-foot ceilings. The open-concept kitchen, dining, and living areas on the main floor are prefect for entertaining, with a two-car garage and covered patio adding practical convenience. Specials have been estimated but should be close to this amount. HOA amounts have not been finalized. Supervising Broker has an interest in Cypress Glen Partners</p>
+      <p>The Tracy is a two-story, three-bedroom, 2.5-bath duplex with a thoughtful layout. All bedrooms are located upstairs, including a primary suite with a vaulted ceiling and private bathroom, while the secondary bedroom features 8-foot ceilings. The open-concept kitchen, dining, and living areas on the main floor are prefect for entertaining, with a two-car garage and covered patio adding practical convenience. Specials have been estimated but should be close to this amount. HOA amounts have not been finalized. A managing member of Cypress Glen Partners is a Licensed Associate Broker in the State of Kansas.</p>
     </div>
           
   <div class="info-card" style="margin-top:24px;">
@@ -191,9 +191,9 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
     (function(){
-      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.683075,-97.535411],15);
+      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.68305704,-97.53527605],15);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap contributors',maxZoom:19}).addTo(map);
-      L.marker([37.683075,-97.535411]).addTo(map).bindPopup('144 Gowen St, Goddard, KS 67052').openPopup();
+      L.marker([37.68305704,-97.53527605]).addTo(map).bindPopup('144 Gowen St, Goddard, KS 67052').openPopup();
     })();
     </script>
   </div>

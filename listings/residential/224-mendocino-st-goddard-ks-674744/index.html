@@ -73,13 +73,13 @@
       </button>
       <button class="sg-mosaic-thumb" data-idx="3" aria-label="View photo 4" type="button">
         <img src="https://cdn.repliers.io/southcentralkansas/IMG-674744_6706157522127168109.jpg" alt="Property photo 4" loading="lazy">
-        
+        <div class="sg-mosaic-more" aria-hidden="true">+16 more</div>
       </button>
       </div>
     </div>
     <div class="sg-gallery-bar">
       <button class="sg-gallery-all-btn" id="sg-view-all" type="button">
-        <i class="fas fa-images"></i> View all 4 photos
+        <i class="fas fa-images"></i> View all 20 photos
       </button>
     </div>
   </section>
@@ -94,7 +94,7 @@
 
   <script>
   (function(){
-    var srcs = ["https://cdn.repliers.io/southcentralkansas/IMG-674744_6705626179448869899.jpg","https://cdn.repliers.io/southcentralkansas/IMG-674744_6703583614512787476.jpg","https://cdn.repliers.io/southcentralkansas/IMG-674744_6700667394994851473.jpg","https://cdn.repliers.io/southcentralkansas/IMG-674744_6706157522127168109.jpg"];
+    var srcs = ["https://cdn.repliers.io/southcentralkansas/IMG-674744_6705626179448869899.jpg","https://cdn.repliers.io/southcentralkansas/IMG-674744_6703583614512787476.jpg","https://cdn.repliers.io/southcentralkansas/IMG-674744_6700667394994851473.jpg","https://cdn.repliers.io/southcentralkansas/IMG-674744_6706157522127168109.jpg","https://cdn.repliers.io/southcentralkansas/IMG-674744_6702395492462941762.jpg","https://cdn.repliers.io/southcentralkansas/IMG-674744_6702036995171328139.jpg","https://cdn.repliers.io/southcentralkansas/IMG-674744_6702995603245546633.jpg","https://cdn.repliers.io/southcentralkansas/IMG-674744_6700003076209649386.jpg","https://cdn.repliers.io/southcentralkansas/IMG-674744_6704924192641289753.jpg","https://cdn.repliers.io/southcentralkansas/IMG-674744_6709555170919660864.jpg","https://cdn.repliers.io/southcentralkansas/IMG-674744_6706351846598148952.jpg","https://cdn.repliers.io/southcentralkansas/IMG-674744_6706021439042669093.jpg","https://cdn.repliers.io/southcentralkansas/IMG-674744_6702227771799729252.jpg","https://cdn.repliers.io/southcentralkansas/IMG-674744_6709461150915151157.jpg","https://cdn.repliers.io/southcentralkansas/IMG-674744_6706082215657858179.jpg","https://cdn.repliers.io/southcentralkansas/IMG-674744_6709452385988402836.jpg","https://cdn.repliers.io/southcentralkansas/IMG-674744_6705934402624040574.jpg","https://cdn.repliers.io/southcentralkansas/IMG-674744_6704225211240187918.jpg","https://cdn.repliers.io/southcentralkansas/IMG-674744_6705939404036939384.jpg","https://cdn.repliers.io/southcentralkansas/IMG-674744_6707811324122705011.jpg"];
     var lb = document.getElementById('sg-lightbox');
     var lbImg = document.getElementById('sg-lightbox-img');
     var lbCtr = document.getElementById('sg-lightbox-counter');
@@ -150,7 +150,7 @@
         <div style="margin-top:32px;">
           <div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
-      <p>The Tracy is a two-story, three-bedroom, 2.5-bath duplex with a thoughtful layout. All bedrooms are located upstairs, including a primary suite with a vaulted ceiling and private bathroom, while the secondary bedrooms feature 8-foot ceilings. The open-concept kitchen, dining, and living areas on the main floor are perfect for entertaining, with a two-car garage and covered patio adding practical convenience. Supervising Broker has an interest in Cypress Glen Partners. All information deemed reliable but not guaranteed. Buyer&#39;s agent to verify any information deemed necessary to buyer.</p>
+      <p>The Tracy is a two-story, three-bedroom, 2.5-bath duplex with a thoughtful layout. All bedrooms are located upstairs, including a primary suite with a vaulted ceiling and private bathroom, while the secondary bedrooms feature 8-foot ceilings. The open-concept kitchen, dining, and living areas on the main floor are perfect for entertaining, with a two-car garage and covered patio adding practical convenience. All information deemed reliable but not guaranteed. Buyer&#39;s agent to verify any information deemed necessary to buyer.</p>
     </div>
           
   <div class="info-card" style="margin-top:24px;">
@@ -191,9 +191,9 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
     (function(){
-      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.684135,-97.536553],15);
+      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.68230118,-97.53641535],15);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap contributors',maxZoom:19}).addTo(map);
-      L.marker([37.684135,-97.536553]).addTo(map).bindPopup('224 Mendocino St, Goddard, KS 67052').openPopup();
+      L.marker([37.68230118,-97.53641535]).addTo(map).bindPopup('224 Mendocino St, Goddard, KS 67052').openPopup();
     })();
     </script>
   </div>
