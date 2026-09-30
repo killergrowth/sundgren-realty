@@ -1,5 +1,5 @@
 {
-  "lastFetch": "2026-09-30T17:42:46.821Z",
+  "lastFetch": "2026-09-30T21:57:09.720Z",
   "auctions": {
     "24096": {
       "slug": "test-auction-24096",
@@ -2861,8 +2861,7 @@
       "slug": "535-acres-of-native-pasture-and-a-large-pond-near-el-dorado-168676",
       "status": "accepting_bids",
       "name": "53.5 Acres of Native Pasture and a Large Pond near El Dorado Lake",
-      "generated": "2026-08-30T04:04:17.220Z",
-      "updated": "2026-09-30T17:42:49.959Z"
+      "generated": "2026-08-30T04:04:17.220Z"
     },
     "168678": {
       "slug": "376-acres-3-tracts-tillable-pasture-oil-income-hunting-cowle-168678",
@@ -2899,6 +2898,12 @@
       "status": "pending",
       "name": "10+- Acres w/ Walnut River Frontage & Amazing Mature Trees – Augusta, Kansas",
       "generated": "2026-09-29T19:49:04.569Z"
+    },
+    "170941": {
+      "slug": "37-acres-north-of-severy-in-greenwood-county-kansas-pond-pas-170941",
+      "status": "pending",
+      "name": "37+- Acres North of Severy in Greenwood County, Kansas – Pond, Pasture & Trees",
+      "generated": "2026-09-30T21:57:11.779Z"
     }
   }
 }
