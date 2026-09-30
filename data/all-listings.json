@@ -70322,7 +70322,7 @@
     "state": "KS",
     "lat": 37.749315,
     "lng": -97.488392,
-    "price": 199500,
+    "price": 1750,
     "beds": 3,
     "baths": 2,
     "sqft": "1336",
@@ -70334,7 +70334,8 @@
     "isSundgren": false,
     "agentName": "Bree Russell",
     "agentPhone": "3165167417",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 199500
   },
   {
     "slug": "401-11th-ave-el-dorado-ks-673250",
