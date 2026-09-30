@@ -13237,7 +13237,7 @@
     "state": "KS",
     "lat": 37.771899,
     "lng": -97.442514,
-    "price": 545000,
+    "price": 530000,
     "beds": 5,
     "baths": 3,
     "sqft": "3091",
@@ -13249,7 +13249,8 @@
     "isSundgren": false,
     "agentName": "Eric Kim",
     "agentPhone": "5174889229",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 545000
   },
   {
     "slug": "1100-summerchase-st-derby-ks-671423",
@@ -15292,7 +15293,7 @@
     "state": "KS",
     "lat": 38.024516,
     "lng": -97.952814,
-    "price": 459000,
+    "price": 450000,
     "beds": 3,
     "baths": 3,
     "sqft": "3790",
@@ -15305,7 +15306,7 @@
     "agentName": "Sissy Koury",
     "agentPhone": "3164099955",
     "agentEmail": "",
-    "previousPrice": 479900
+    "previousPrice": 459000
   },
   {
     "slug": "4508-sunny-cir-wichita-ks-676344",
@@ -20820,7 +20821,7 @@
     "state": "KS",
     "lat": 37.60458,
     "lng": -97.142273,
-    "price": 435000,
+    "price": 429900,
     "beds": 5,
     "baths": 3,
     "sqft": "2698",
@@ -20832,7 +20833,8 @@
     "isSundgren": false,
     "agentName": "Shana McCain",
     "agentPhone": "3163124000",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 435000
   },
   {
     "slug": "1802-bluestem-ln-salina-ks-676719",
@@ -81501,7 +81503,7 @@
     "state": "KS",
     "lat": 37.637477,
     "lng": -97.362744,
-    "price": 162500,
+    "price": 155000,
     "beds": 3,
     "baths": 1,
     "sqft": "947",
@@ -81514,7 +81516,7 @@
     "agentName": "Steven Hartman",
     "agentPhone": "3163027913",
     "agentEmail": "",
-    "previousPrice": 165000
+    "previousPrice": 162500
   },
   {
     "slug": "1701-main-st-kingman-ks-677241",
@@ -84253,7 +84255,7 @@
     "state": "KS",
     "lat": 37.550885,
     "lng": -97.267624,
-    "price": 155000,
+    "price": 150000,
     "beds": 3,
     "baths": 1,
     "sqft": "1250",
@@ -84266,7 +84268,7 @@
     "agentName": "Dawn R Wade",
     "agentPhone": "3168061060",
     "agentEmail": "",
-    "previousPrice": 163900
+    "previousPrice": 155000
   },
   {
     "slug": "515-g-st-wellington-ks-676894",
@@ -98658,7 +98660,7 @@
     "state": "KS",
     "lat": 38.835381,
     "lng": -97.612819,
-    "price": 110000,
+    "price": 99000,
     "beds": 3,
     "baths": 1,
     "sqft": "1388",
@@ -98670,7 +98672,8 @@
     "isSundgren": false,
     "agentName": "Kimberlie Jarvis-Ryff",
     "agentPhone": "7855758616",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 110000
   },
   {
     "slug": "1715-saint-paul-st-wichita-ks-677711",
@@ -99166,7 +99169,7 @@
     "state": "KS",
     "lat": 39.128641,
     "lng": -97.70290099,
-    "price": 109000,
+    "price": 90000,
     "beds": 3,
     "baths": 2,
     "sqft": "1346",
@@ -99178,7 +99181,8 @@
     "isSundgren": false,
     "agentName": "Kimberlie Jarvis-Ryff",
     "agentPhone": "7855758616",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 109000
   },
   {
     "slug": "lot-14-block-a-rio-bella-addition-valley-center-ks-673987",
@@ -100897,7 +100901,7 @@
     "state": "KS",
     "lat": 38.852982,
     "lng": -97.612158,
-    "price": 99000,
+    "price": 89000,
     "beds": 4,
     "baths": 1,
     "sqft": "1297",
@@ -100909,7 +100913,8 @@
     "isSundgren": false,
     "agentName": "Kimberlie Jarvis-Ryff",
     "agentPhone": "7855758616",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 99000
   },
   {
     "slug": "1608-delmar-st-wichita-ks-673713",
