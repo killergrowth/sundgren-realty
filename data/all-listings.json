@@ -5991,7 +5991,7 @@
     "state": "KS",
     "lat": 37.845925,
     "lng": -97.278787,
-    "price": 825000,
+    "price": 785000,
     "beds": 5,
     "baths": 3,
     "sqft": "3422",
@@ -6003,7 +6003,8 @@
     "isSundgren": false,
     "agentName": "Tamara L Walker",
     "agentPhone": "3165587985",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 825000
   },
   {
     "slug": "2625-saratoga-ct-goddard-ks-676135",
@@ -42396,7 +42397,7 @@
     "state": "KS",
     "lat": 37.668932,
     "lng": -97.295718,
-    "price": 309900,
+    "price": 275000,
     "beds": null,
     "baths": null,
     "sqft": "3255",
@@ -42408,7 +42409,8 @@
     "isSundgren": false,
     "agentName": "Dwight Boyce",
     "agentPhone": "3166483474",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 309900
   },
   {
     "slug": "5563-wandering-way-maize-ks-650831",
@@ -67968,7 +67970,7 @@
     "state": "KS",
     "lat": 37.669761,
     "lng": -97.239051,
-    "price": 205000,
+    "price": 199000,
     "beds": 4,
     "baths": 2,
     "sqft": "1428",
@@ -67981,7 +67983,7 @@
     "agentName": "Braden McCurdy",
     "agentPhone": "3166830612",
     "agentEmail": "",
-    "previousPrice": 209000
+    "previousPrice": 205000
   },
   {
     "slug": "142-tracy-st-wichita-ks-677466",
@@ -85031,7 +85033,7 @@
     "state": "KS",
     "lat": 37.696593,
     "lng": -97.312504,
-    "price": 155000,
+    "price": 150000,
     "beds": 4,
     "baths": 2,
     "sqft": "1344",
@@ -85043,7 +85045,8 @@
     "isSundgren": false,
     "agentName": "Johanna Campos",
     "agentPhone": "3165166872",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 155000
   },
   {
     "slug": "9099-268th-dr-arkansas-city-ks-675199",
