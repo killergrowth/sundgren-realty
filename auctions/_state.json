@@ -1,5 +1,5 @@
 {
-  "lastFetch": "2026-09-30T21:57:09.720Z",
+  "lastFetch": "2026-10-01T04:35:22.729Z",
   "auctions": {
     "24096": {
       "slug": "test-auction-24096",
@@ -2904,6 +2904,12 @@
       "status": "pending",
       "name": "37+- Acres North of Severy in Greenwood County, Kansas – Pond, Pasture & Trees",
       "generated": "2026-09-30T21:57:11.779Z"
+    },
+    "170942": {
+      "slug": "bentgrass-condo-1770-country-club-rd-9-el-dorado-ks-67042-170942",
+      "status": "pending",
+      "name": "BentGrass Condo: 1770 Country Club Rd #9, El Dorado, KS 67042",
+      "generated": "2026-10-01T04:35:25.600Z"
     }
   }
 }
