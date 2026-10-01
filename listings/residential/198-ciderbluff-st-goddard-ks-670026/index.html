@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-terminated pill">Inactive</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Welcome to 198 S Ciderbluff St., Goddard, KS 67052, where luxury seamlessly meets functionality in this stunning single-family residence. Set on a spacious 15,636 sq ft lot, this impressive 5,752 sq ft home perfectly blends style, comfort, and versatility to meet all your family&#39;s needs. As you step inside, you&#39;ll be welcomed by a beautifully designed interior featuring 7 generously sized bedrooms and 5 elegantly appointed bathrooms—a perfect setup for hosting guests or accommodating a growing family. The inviting entryway sets the tone for the entire home, leading you to expansive living areas. The roomy living room offers a stunning view of two pools, one hot tub, and open fields with no rear neighbors, providing an ideal backdrop for entertaining or enjoying cozy family evenings. For culinary enthusiasts, the kitchen showcases stunning granite countertops that effortlessly combine elegance with practicality. The formal dining room offers ample space for sharing meals and creating memories, while the casual breakfast area is ideal for relaxed mornings. On beautiful days, prepare a feast in the outdoor kitchen, complete with a wood fire pizza oven, ceramic smoker, barbecue grill, and 2 burner stainless steel griddle. This home boasts a variety of exceptional multipurpose rooms. Unleash your creativity in the dedicated (unfinished) craft room or explore your passion for photography in the fully equipped darkroom, which also serves as a theater and golf simulator room. Stay on top of your fitness goals in the well-appointed exercise room. Relax in the lavish outdoor oasis, featuring a 30-foot pool, a sunning pool, and a hot tub. The Casita (pool house) epitomizes relaxation and provides a fantastic setting for summer gatherings or visits from extended family and friends. The property also includes a large garage with a supercharger power station, a convenient attic, and a spacious basement, offering ample storage and further opportunities for customization. The charm of this home goes beyond its walls; Goddard offers a vibrant community with desirable amenities nearby. The highly-rated Goddard School system, just 2 miles away, is renowned for its outstanding academic programs. For nature lovers, the tranquil Lake Afton Park is only a 6-mile drive, providing a perfect retreat for weekend picnics and family activities. Don&#39;t miss the opportunity to make this remarkable residence your own. Discover unparalleled living at 198 S Ciderbluff St., where every detail is crafted to enhance your lifestyle. Schedule your viewing today and experience firsthand the exceptional blend of comfort and sophistication this home offers. Contact our dedicated agent for more details and take the first step toward your dream home. Disclosure: The selling agent is the owner.</p>
     </div>
@@ -199,9 +201,9 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
     (function(){
-      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.680792,-97.52157],15);
+      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.680773,-97.521575],15);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap contributors',maxZoom:19}).addTo(map);
-      L.marker([37.680792,-97.52157]).addTo(map).bindPopup('198 Ciderbluff St, Goddard, KS 67052').openPopup();
+      L.marker([37.680773,-97.521575]).addTo(map).bindPopup('198 Ciderbluff St, Goddard, KS 67052').openPopup();
     })();
     </script>
   </div>
@@ -209,8 +211,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -220,13 +222,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="198 Ciderbluff St, Goddard, KS, 67052">
-        <input type="hidden" name="message" value="I am interested in the property at 198 Ciderbluff St, Goddard, KS, 67052 (MLS# 670026). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 198 Ciderbluff St, Goddard, KS, 67052 (MLS# 670026). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

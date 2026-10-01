@@ -19548,7 +19548,7 @@
     "state": "KS",
     "lat": 37.62201,
     "lng": -96.024754,
-    "price": 450000,
+    "price": 399999,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -19560,7 +19560,8 @@
     "isSundgren": false,
     "agentName": "Lane Johnson",
     "agentPhone": "6207500217",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 450000
   },
   {
     "slug": "0000-elm-st-salina-ks-658117",
