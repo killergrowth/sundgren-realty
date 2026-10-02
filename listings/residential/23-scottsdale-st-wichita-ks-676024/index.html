@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-terminated pill">Inactive</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>RECENT PRICE IMPROVEMENT! Welcome to this charming, timeless 1.5 story home with nearly 6,000 square feet nestled in the highly sought after Shadybrook neighborhood, where you&#39;ll enjoy the rare combination of Sedgwick County taxes, the award-winning Andover School District, and no special taxes. Shadybrook is known for the gorgeous trees, large lots, and very private and quiet setting! The home is situated on a beautifully wooded over half-acre lot, and offers lovely curb appeal with mature landscaping, a charming brick walkway, and a welcoming front porch-the perfect place to enjoy your morning coffee or relax in the evening. Thanks to the home&#39;s desirable north-south orientation, both the front porch and backyard oasis are comfortable spaces to enjoy throughout the day. Out back, you&#39;ll find your own private retreat featuring a resort-style salt water pool, built-in outdoor grill area, covered sitting area, and fire-pit, all surround by mature trees creating a peaceful setting for entertaining or unwinding. Inside, timeless architecture and quality craftsmanship are immediately introduced. The foyer showcases rich hardwood floors, detailed millwork, and a beautiful staircase with dual access, setting the tone for the warmth and character found throughout the home. The floor plan is one of the best layouts! The main level features a formal dining room, a private office that could also serve as a playroom or non-conforming sixth bedroom, a large living room with high ceilings and a two-sided fireplace, a cozy hearth room, a half bath, a breakfast nook looking out to the pool, a separate laundry room, and a beautiful updated primary suite that provides the convenience and comfort for main-floor living. On the second level, there are three generously sized bedrooms with one having its own bathroom attached, and the other two bedrooms sharing a Jack and Jill bathroom. The basement is light and bright with large view out windows show cases the private backyard and features two living areas where one currently functions as a movie-room, and the other as a pool/game area that are separated with a cozy dual fireplace. The basement offers great storage, a fifth bedroom, a fourth full bathroom, and separate exercise room! Rarely does a home offer this combination of quality, location, privacy, and value. From the mature trees and private lot to the award-wining Andover schools, timeless floor plan, and resort-style pool, this home truly stands apart. You couldn&#39;t build this home today for the current list price. Don&#39;t miss this rare opportunity to make it yours and spend the rest of summer enjoying your own backyard retreat!</p>
     </div>
@@ -205,8 +207,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -216,13 +218,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="23 Scottsdale St, Wichita, KS, 67230">
-        <input type="hidden" name="message" value="I am interested in the property at 23 Scottsdale St, Wichita, KS, 67230 (MLS# 676024). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 23 Scottsdale St, Wichita, KS, 67230 (MLS# 676024). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Commercial</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-terminated pill">Inactive</span><span class="pill sg-type-pill">Commercial</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -133,7 +133,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Property offered at ONLINE ONLY auction. BIDDING OPENS: Tuesday, September 15th, 2026 at 2:00 PM (ct) | BIDDING CLOSING: Thursday, September 24th, 2026 at 2:15 PM (ct). Bidding will remain open on this property until 90 seconds have passed without receiving a bid. Property available to preview by appointment. CLEAR TITLE AT CLOSING, NO BACK TAXES. ONLINE ONLY!!! This 5,252± sq. ft. waterfront office building is ideally located at 21st &amp; 135th in Wichita, offering excellent visibility, accessibility, and convenient access to major roadways. Situated on a 0.54± acre lot with ample parking and functional office space, this property presents an excellent opportunity for an owner-user or investor. Currently rented, the property generates $12,700 (Triple Net) per month in rental income. The lease in place expires 04/30/2027. 5,252± sq. ft. office building 0.54± acre lot Prime location at 21st &amp; 135th Up to nearly 30 parking spaces Convenient street access and location Currently rented for $12,700/month Annual rental income: $152,400 Lease expires 30, 2027 Tremendous owner-occupant opportunity! Building features include: 7 office spaces 2 restrooms Break room Functional office layout with flexible potential for a variety of professional uses Floor plan in the Property Information Packet This is a prime commercial opportunity in a highly accessible Wichita location. With substantial office space, ample parking, and excellent access at 21st &amp; 135th, this property is well-suited for professional offices, service businesses, or investors seeking a versatile commercial asset. Do not miss this opportunity! Buyer&#39;s choice for earnest money: $40,000 for a 30-day close or $60,000 for a 45-day close. Tenant has renewed lease and extended occupancy through 04/30/2027 Rental amount is per seller. Lease does not reflect current rent amount. *Buyer should verify school assignments as they are subject to change. The real estate is offered at public auction in its present, “as is where is” condition and is accepted by the buyer without any expressed or implied warranties or representations from the seller or seller’s agents. Full auction terms and conditions provided in the Property Information Packet. Total purchase price will include a 10% buyer’s premium ($2,500.00 minimum) added to the final bid. Property available to preview by appointment. Earnest money is due from the high bidder at the auction in the form of cash, check, or immediately available, certified funds in the amount of $40,000 for a 30-day close or $60,000 for a 45-day close.</p>
     </div>
@@ -194,8 +196,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -205,13 +207,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="13203 21st Ct. N CT, Wichita, KS, 67235">
-        <input type="hidden" name="message" value="I am interested in the property at 13203 21st Ct. N CT, Wichita, KS, 67235 (MLS# 677441). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 13203 21st Ct. N CT, Wichita, KS, 67235 (MLS# 677441). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

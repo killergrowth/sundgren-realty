@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-terminated pill">Inactive</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Escape the hustle without leaving the city! Tucked away on an almost ½-acre treed lot, this beautifully updated home offers the rare opportunity to enjoy the peaceful feeling of country living while remaining just minutes from Kellogg, shopping, dining, and everything northwest Wichita has to offer. Inside you&#39;ll find a split-bedroom floor plan featuring 3 bedrooms, 1 bath, two spacious living areas, and a 1-car detached garage. The flexible layout offers endless possibilities—the oversized second living room could serve as a family room, formal dining area, home office, or could easily be converted into a 4th bedroom. The oversized primary bedroom is a true retreat, complete with two closets and a charming nook between them that&#39;s perfect for a reading corner, makeup vanity, or desk. The remodeled laundry room has been transformed into a functional mudroom with additional pantry storage, while the nearly zero-entry front entrance with an existing ramp provides added accessibility and convenience. The beautifully updated kitchen features granite countertops and includes a new stove and dishwasher, making it ready for its next owner. Step outside and discover a backyard filled with character and possibility. A magnificent blooming Catalpa shade tree creates the perfect backdrop for relaxing on the back patio. The previous owners had a passion for landscaping, rocks, and garden art, creating winding pathways, planting beds, and hidden treasures throughout the property. The established landscaping offers endless potential to restore the outdoor spaces into the charming garden retreat they were originally designed to be. The low-maintenance ground cover provides an attractive alternative to traditional grass while adding to the property&#39;s one-of-a-kind charm. Outdoor amenities include a welcoming covered front porch, spacious back patio, large workshop, detached garage, additional storage shed and storm shelter. The workshop and garage previously had electricity, giving future owners the opportunity to reconnect service based on their needs. Additional features include: Almost ½-acre treed lot Split-bedroom floor plan Two spacious living areas Potential 4th bedroom conversion Private well to help reduce utility costs Completely updated inside and out New electrical panel New garage door Large workshop plus additional storage shed Quiet northwest Wichita location with quick access to Kellogg, shopping, restaurants, and more Homes offering this much outdoor space, flexibility, and personality are hard to find. Whether you&#39;re searching for room to garden, create, entertain, or simply unwind beneath the trees, this unique property is ready for its next chapter.</p>
     </div>
@@ -201,8 +203,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -212,13 +214,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="907 Flora St, Wichita, KS, 67212">
-        <input type="hidden" name="message" value="I am interested in the property at 907 Flora St, Wichita, KS, 67212 (MLS# 676505). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 907 Flora St, Wichita, KS, 67212 (MLS# 676505). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

@@ -13218,7 +13218,7 @@
     "state": "KS",
     "lat": 37.647834,
     "lng": -97.555133,
-    "price": 545000,
+    "price": 537000,
     "beds": 5,
     "baths": 3,
     "sqft": "2647",
@@ -13230,7 +13230,8 @@
     "isSundgren": false,
     "agentName": "Loc Nguyen",
     "agentPhone": "3163008746",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 545000
   },
   {
     "slug": "4909-emerald-ct-maize-ks-676753",
@@ -35147,7 +35148,7 @@
     "state": "KS",
     "lat": 37.207926,
     "lng": -96.990207,
-    "price": 335000,
+    "price": 299900,
     "beds": 5,
     "baths": 3,
     "sqft": "3081",
@@ -35160,7 +35161,7 @@
     "agentName": "Mandi Hill",
     "agentPhone": "6202293600",
     "agentEmail": "",
-    "previousPrice": 345000
+    "previousPrice": 335000
   },
   {
     "slug": "936-moss-wood-st-derby-ks-675586",
@@ -42172,7 +42173,7 @@
     "state": "KS",
     "lat": 37.677535,
     "lng": -97.472445,
-    "price": 300000,
+    "price": 295000,
     "beds": 3,
     "baths": 3,
     "sqft": "2965",
@@ -42185,7 +42186,7 @@
     "agentName": "Phyllis Zimmerman",
     "agentPhone": "3167347411",
     "agentEmail": "",
-    "previousPrice": 310000
+    "previousPrice": 300000
   },
   {
     "slug": "1326-rocky-creek-wichita-ks-675238",
@@ -58462,7 +58463,7 @@
     "state": "KS",
     "lat": 37.611022,
     "lng": -97.373143,
-    "price": 240000,
+    "price": 235000,
     "beds": 3,
     "baths": 2,
     "sqft": "1236",
@@ -58475,7 +58476,7 @@
     "agentName": "Lucy Ferrer-Gonzalez",
     "agentPhone": "3169789777",
     "agentEmail": "",
-    "previousPrice": 245000
+    "previousPrice": 240000
   },
   {
     "slug": "1305-sheridan-st-wichita-ks-676453",
@@ -72260,7 +72261,7 @@
     "state": "KS",
     "lat": 37.740702,
     "lng": -97.482608,
-    "price": 193000,
+    "price": 189000,
     "beds": 3,
     "baths": 2,
     "sqft": "1158",
@@ -72272,7 +72273,8 @@
     "isSundgren": false,
     "agentName": "Boone Downing",
     "agentPhone": "3168471471",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 193000
   },
   {
     "slug": "1408-meridian-rd-peck-ks-675905",
@@ -86131,7 +86133,7 @@
     "state": "KS",
     "lat": 37.67699,
     "lng": -97.287648,
-    "price": 150000,
+    "price": 145000,
     "beds": 2,
     "baths": 1,
     "sqft": "992",
@@ -86143,7 +86145,8 @@
     "isSundgren": false,
     "agentName": "Benjamin Wiltshire",
     "agentPhone": "9134243168",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 150000
   },
   {
     "slug": "1500-9th-st-newton-ks-675241",
