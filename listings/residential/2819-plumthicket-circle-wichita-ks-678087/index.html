@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Welcome to low-maintenance living in the gated Fox Point Patio Home community, offering plenty of guest parking and a lovely community gazebo overlooking a recirculating waterfall. Extensively remodeled with comfort, style, and functionality in mind, this exceptional home is conveniently located near shopping, dining, and easy highway access. Step inside to a fresh, light-filled interior with spacious rooms and a cohesive, neutral design. Improvements throughout include freshly painted walls, trim, doors, and cabinetry, along with refreshed ceilings for a clean, modern look. Hardwood Floors in Main living areas, Luxury vinyl plank, tile, and plush carpeting complement the home, while new hardware, fixtures, window treatments, and an updated stair railing add polished finishing touches. At the heart of the home is a stunning remodeled kitchen designed for everyday living and entertaining. The completely rebuilt island features a beautiful quartz waterfall end, complemented by quartz countertops, updated hardware, and a striking range hood. A built-in microwave drawer, induction range, and custom-sized refrigerator remain with the home. The primary suite provides a peaceful retreat with new flooring and a transformed bath featuring quartz surfaces, tile, marble shower details, glass backsplash, and stylish fixtures. The guest bathrooms have also been refreshed with new tile, quartz, faucets, hardware, and glass shower doors. Two fireplaces bring warmth and character to the home, one on the main level and another in the spacious view-out basement. The finished lower level provides plenty of room for relaxing, entertaining, hobbies, or overnight guests, along with a cedar closet, large bonus room, and separate storage room. Outdoor living may quickly become a favorite part of this home. The spacious new deck with wrought-iron railing overlooks a private backyard framed by mature trees, established landscaping, flowers, and greenery. New sod enhances the yard, while low-maintenance artificial turf beneath the deck keeps the area attractive and usable. Storage and organization have not been overlooked. The garage features an abundance of built-in cabinetry, while the laundry room offers convenient built-ins designed to simplify everyday routines. Additional improvements include a water softener, whole-house vent cleaning, updated front door, and numerous plumbing and hardware upgrades. From the beautifully remodeled interior to the lovely outdoor setting, this Fox Point patio home offers the ease of low-maintenance living without sacrificing space, storage, or style. With extensive improvements already completed and a convenient location near everyday amenities, all that’s left to do is move in and enjoy.</p>
     </div>
@@ -199,9 +201,9 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
     (function(){
-      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.735098,-97.227439],15);
+      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.735092,-97.22742],15);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap contributors',maxZoom:19}).addTo(map);
-      L.marker([37.735098,-97.227439]).addTo(map).bindPopup('2819 Plumthicket Circle, Wichita, KS 67226').openPopup();
+      L.marker([37.735092,-97.22742]).addTo(map).bindPopup('2819 Plumthicket Circle, Wichita, KS 67226').openPopup();
     })();
     </script>
   </div>
@@ -209,8 +211,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -220,13 +222,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="2819 Plumthicket Circle, Wichita, KS, 67226">
-        <input type="hidden" name="message" value="I am interested in the property at 2819 Plumthicket Circle, Wichita, KS, 67226 (MLS# 678087). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 2819 Plumthicket Circle, Wichita, KS, 67226 (MLS# 678087). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

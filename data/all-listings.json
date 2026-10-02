@@ -9114,7 +9114,7 @@
     "state": "KS",
     "lat": 37.730811,
     "lng": -97.145138,
-    "price": 650000,
+    "price": 635000,
     "beds": 5,
     "baths": 3,
     "sqft": "3058",
@@ -9126,7 +9126,8 @@
     "isSundgren": false,
     "agentName": "Val Peare",
     "agentPhone": "3166190571",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 650000
   },
   {
     "slug": "1255-120th-ave-cheney-ks-675758",
@@ -21570,7 +21571,7 @@
     "state": "KS",
     "lat": 38.984975,
     "lng": -95.716588,
-    "price": 425000,
+    "price": 420000,
     "beds": 4,
     "baths": 3,
     "sqft": "2719",
@@ -21582,7 +21583,8 @@
     "isSundgren": false,
     "agentName": "Gabriela Moreno",
     "agentPhone": "6206179081",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 425000
   },
   {
     "slug": "8909-spencer-rd-sedgwick-ks-677576",
@@ -49096,7 +49098,7 @@
     "state": "KS",
     "lat": 37.550738,
     "lng": -97.259652,
-    "price": 280000,
+    "price": 275000,
     "beds": 3,
     "baths": 2,
     "sqft": "2399",
@@ -49108,7 +49110,8 @@
     "isSundgren": false,
     "agentName": "Amy Endres",
     "agentPhone": "3164945973",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 280000
   },
   {
     "slug": "2421-linden-st-wichita-ks-677924",
@@ -59219,7 +59222,7 @@
     "state": "KS",
     "lat": 37.011923,
     "lng": -97.013339,
-    "price": 240000,
+    "price": 237500,
     "beds": 3,
     "baths": 2,
     "sqft": "1680",
@@ -59231,7 +59234,8 @@
     "isSundgren": false,
     "agentName": "Candace N Hendricks",
     "agentPhone": "6206600844",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 240000
   },
   {
     "slug": "179-mendocino-ct-goddard-ks-672540",
@@ -91393,7 +91397,7 @@
     "state": "KS",
     "lat": 37.73268,
     "lng": -97.308955,
-    "price": 135000,
+    "price": 130000,
     "beds": 3,
     "baths": 1,
     "sqft": "974",
@@ -91405,7 +91409,8 @@
     "isSundgren": false,
     "agentName": "Jamie Brown",
     "agentPhone": "3164611263",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 135000
   },
   {
     "slug": "831-christine-ave-wichita-ks-675365",
@@ -131606,7 +131611,7 @@
     "state": "KS",
     "lat": 37.389183,
     "lng": -97.648692,
-    "price": 0,
+    "price": 55000,
     "beds": 2,
     "baths": 2,
     "sqft": "640",
