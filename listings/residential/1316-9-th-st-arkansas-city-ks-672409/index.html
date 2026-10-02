@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>English~ Charming 3-bedroom, 1-bath home featuring a spacious, shaded yard and convenient alley access. The property includes a backyard shed, perfect for storing tools and lawn equipment. Major updates include a roof approximately 7 years old and an A/C unit around 4 years old, offering added peace of mind. With its functional layout and inviting outdoor space, this home presents a great opportunity for first-time buyers, investors, or anyone looking for a comfortable place to call home. Property is being sold as-is. Español~ Encantadora casa de 3 recámaras y 1 baño que cuenta con un amplio patio con bastante sombra y acceso por el callejón. La propiedad incluye un cobertizo en el patio trasero, ideal para guardar herramientas y equipo de jardinería. Entre las mejoras importantes se encuentran un techo de aproximadamente 7 años y una unidad de aire acondicionado de alrededor de 4 años, brindando mayor tranquilidad. Con una distribución funcional y un espacio exterior agradable, esta propiedad es una excelente oportunidad para compradores primerizos, inversionistas o cualquier persona que busque un lugar cómodo para llamar hogar. La propiedad se vende en su estado actual (as-is).</p>
     </div>
@@ -197,8 +199,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -208,13 +210,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="1316 9 Th ST, Arkansas City, KS, 67005">
-        <input type="hidden" name="message" value="I am interested in the property at 1316 9 Th ST, Arkansas City, KS, 67005 (MLS# 672409). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 1316 9 Th ST, Arkansas City, KS, 67005 (MLS# 672409). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

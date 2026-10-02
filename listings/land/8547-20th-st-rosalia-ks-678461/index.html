@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Land</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Land</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -123,7 +123,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Auction Date: THURSDAY OCTOBER 1, 2026 6:00 PM * Auction Location: EL DORADO CIVIC CENTER, 201 E CENTRAL AVE, EL DORADO KS * TRACT 1 PROPERTY ADDRESS: 8547 SE 20th St., Rosalia, Kansas 67132 * TRACT 1 OF 2 DESCRIPTION: Versatile 80-acre property located between El Dorado and Rosalia in Butler County, Kansas, offering a combination of agricultural, farmstead, and outstanding recreational opportunities. The 1916-built farmhouse is currently rented, offering the opportunity for an additional income source. If you aren’t interested in a tenant, it could be used as a rural residence, weekend retreat or hunting cabin. The property features tillable farm ground, providing agricultural acreage and adding value for farmers, outdoors enthusiasts and investors. Mature trees and natural cover create attractive wildlife habitat throughout the property, while Bird Creek adds an important water feature and enhances the character and recreational appeal of the land. For the outdoor enthusiast, this property offers excellent Kansas hunting. The combination of creek, timber, agricultural ground, and natural cover creates ideal habitat for Kansas whitetail deer, along with wild turkey and quail. The diverse habitat provides opportunities for hunting, wildlife watching, and enjoying the outdoors throughout the year.</p>
     </div>
@@ -154,9 +156,9 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
     (function(){
-      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.792094,-96.686701],15);
+      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.795394,-96.687787],15);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap contributors',maxZoom:19}).addTo(map);
-      L.marker([37.792094,-96.686701]).addTo(map).bindPopup('8547 20th St, Rosalia, KS 67132').openPopup();
+      L.marker([37.795394,-96.687787]).addTo(map).bindPopup('8547 20th St, Rosalia, KS 67132').openPopup();
     })();
     </script>
   </div>
@@ -164,8 +166,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -175,13 +177,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="8547 20th St, Rosalia, KS, 67132">
-        <input type="hidden" name="message" value="I am interested in the property at 8547 20th St, Rosalia, KS, 67132 (MLS# 678461). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 8547 20th St, Rosalia, KS, 67132 (MLS# 678461). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
