@@ -23591,7 +23591,7 @@
     "state": "KS",
     "lat": 37.65932,
     "lng": -97.490793,
-    "price": 405000,
+    "price": 400000,
     "beds": null,
     "baths": null,
     "sqft": "2920",
@@ -23603,7 +23603,8 @@
     "isSundgren": false,
     "agentName": "Jacob Gibbs",
     "agentPhone": "3162825676",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 405000
   },
   {
     "slug": "13302-lost-creek-st-wichita-ks-675340",
@@ -30244,7 +30245,7 @@
     "state": "KS",
     "lat": 37.764495,
     "lng": -97.474126,
-    "price": 359900,
+    "price": 349900,
     "beds": 5,
     "baths": 3,
     "sqft": "2722",
@@ -30257,7 +30258,7 @@
     "agentName": "Lucas Johnson",
     "agentPhone": "3162141422",
     "agentEmail": "",
-    "previousPrice": 369900
+    "previousPrice": 359900
   },
   {
     "slug": "909911-fox-ridge-st-newton-ks-676278",
@@ -67372,7 +67373,7 @@
     "state": "KS",
     "lat": 37.65936,
     "lng": -97.490559,
-    "price": 210000,
+    "price": 205000,
     "beds": 4,
     "baths": 3,
     "sqft": "1460",
@@ -67384,7 +67385,8 @@
     "isSundgren": false,
     "agentName": "Jacob Gibbs",
     "agentPhone": "3162825676",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 210000
   },
   {
     "slug": "401-edwards-ave-moundridge-ks-658703",
@@ -131266,7 +131268,7 @@
     "state": "KS",
     "lat": 37.385532,
     "lng": -97.646168,
-    "price": 0,
+    "price": 159000,
     "beds": 3,
     "baths": 1,
     "sqft": "1198",
@@ -131289,7 +131291,7 @@
     "state": "KS",
     "lat": 37.622165,
     "lng": -97.344563,
-    "price": 0,
+    "price": 210000,
     "beds": 3,
     "baths": 2,
     "sqft": "1700",
