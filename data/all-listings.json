@@ -106820,7 +106820,7 @@
     "state": "KS",
     "lat": 37.243562,
     "lng": -98.229926,
-    "price": 72000,
+    "price": 69900,
     "beds": 3,
     "baths": 1,
     "sqft": "1108",
@@ -106832,7 +106832,8 @@
     "isSundgren": false,
     "agentName": "Randall Flickinger",
     "agentPhone": "6202458401",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 72000
   },
   {
     "slug": "lot-17-blk-e-ph2-cedar-ranch-estates-derby-ks-662311",

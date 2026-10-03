@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-terminated pill">Inactive</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Your slice of country is located just 3 miles west of Wellington on Hwy 160 (15th St. S). Situated on a treed parcel, this exceptionally well-maintained 2022 Solitaire Presidio manufactured home offers modern comfort, quality upgrades, and outstanding outbuildings. This spacious 4-bedroom, 2-bath home features a desirable split-bedroom floor plan and an open-concept living area designed for everyday living. The kitchen offers a large island with bar seating, pantry, and all appliances. The private primary suite includes double vanities, a relaxing soaker tub, walk-in shower, oversized walk-in closet, and a private exterior door leading directly to the swim spa. Three additional bedrooms are generously sized with ample closet space. Built with quality in mind, this home is exceptionally clean and offers upgrades not commonly found in manufactured homes. Enjoy relaxing on the large covered front porch or the back deck overlooking this country setting. The property is loaded with extras, including a 30&#39; x 50&#39; insulated shop with electricity and a finished studio apartment complete with a mini-split heating and cooling system and full bathroom—ideal for guests, hobbies, or a home office. An additional 12&#39; x 24&#39; garage provides even more storage or workspace. Outdoor swim spa 7&#39;10½&quot; x 13&#39;8&quot; (50&quot; deep) is included in this sale and features a 20-year shell warranty and a 10-year equipment warranty, and an above-ground storm shelter for peace of mind. Whether you&#39;re looking for room to entertain, space for hobbies, or simply a country lifestyle with modern conveniences, this property offers it all. Make this land your land and start enjoying country living. ***Additional info -- roof was replaced July 2026, Class 4, home is built with 2x6 construction *** all electric with buried lines *** sellers use Kanokla for internet with fiber optic with buried lines *** cable TV lines are buried also ***the home has a Culligan water softener system with UV bacteria protection. ****DO NOT ATTACH a letter from the buyer when submitting an offer due to the risk of Fair Housing Violations. ****Buyers be pre-qualified or have proof of funds before viewing.***ALL INFORMATION DEEMED ACCURATE. PLEASE VERIFY INFORMATION TO SATISFY YOURSELF AS A BUYER AND /OR TRANSACTION BROKER OR A BUYER&#39;S AGENT. Information such as room sizes, square feet, schools, lot lines, flood zone, flood way, trash service, propane service, propane tank rental, mailbox or mailbox keys, HOA fees if any, initiation fees, rural water transfer fees, warranties, monthly services if any such as water delivery, water softener rentals, security fees, etc., this is not an all inclusive list, if it is important to you, then investigate and inspect to satisfy yourself. ***The Sumner County casino offers to all Sumner County students at the start of the school year enrollment in grades K-12 a $100 educational reward card AND $1500 scholarship to all High School Graduates to be used towards their post-secondary education AND most teachers in Sumner County receive a $500 allowance to help defray the cost of classroom supplies, visit their website to learn more and to determine if you qualify. (It is the buyers and/or buyers’ agent/transaction broker to determine if this information is accurate.)****</p>
     </div>
@@ -209,8 +211,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -220,13 +222,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="195 15th St S ST, Wellington, KS, 67152">
-        <input type="hidden" name="message" value="I am interested in the property at 195 15th St S ST, Wellington, KS, 67152 (MLS# 675832). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 195 15th St S ST, Wellington, KS, 67152 (MLS# 675832). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

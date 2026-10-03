@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-terminated pill">Inactive</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Welcome to 608 W Cedar Ave, a spacious 4 bedroom, 2 bathroom home on a corner lot just shy of one third of an acre. With approximately 1,840 square feet, a covered front porch, and a comfortable blend of recent updates and original character, this home offers plenty of space both inside and out. The covered porch leads into an entry that connects the main living areas of the home. The naturally lit living room provides a comfortable gathering space and connects to the spacious primary bedroom, complete with a private bathroom, two sinks, and a walk in closet. Just off the entry, the front bedroom offers two closets and built in storage beneath the window. The dining room leads into the kitchen, where plenty of cabinetry, a good sized pantry, and room for a breakfast table make the space both comfortable and functional. The stove, microwave, and dishwasher have been replaced. Just beyond the kitchen, the mudroom provides convenient backyard access and laundry space. Down the hallway, two additional rooms provide useful flexibility. One offers additional storage, including two closets and loft storage, while the other provides access to the home&#39;s cellar through a sliding door in the floor. The cellar houses the mechanical equipment along with additional open storage, and the staggered steps automatically light as you enter. The full bathroom features a walk in shower area for easier access. Fresh paint, updated or refinished flooring, replaced or updated windows, and other improvements have given the home a fresh feel while preserving its character. Outside, the nearly one third acre lot is privacy fenced around most of the property and includes a 2 car garage and oversized lean to, offering plenty of room for parking, storage, hobbies, or projects. Conveniently located with easy access to everything Arkansas City has to offer, 608 W Cedar Ave offers comfortable living space, useful features, and plenty of room to enjoy both inside and out. Schedule your showing today!</p>
     </div>
@@ -201,8 +203,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -212,13 +214,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="608 Cedar AVE, Arkansas City, KS, 67005">
-        <input type="hidden" name="message" value="I am interested in the property at 608 Cedar AVE, Arkansas City, KS, 67005 (MLS# 679986). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 608 Cedar AVE, Arkansas City, KS, 67005 (MLS# 679986). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
