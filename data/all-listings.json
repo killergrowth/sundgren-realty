@@ -23546,7 +23546,7 @@
     "state": "KS",
     "lat": 37.539356,
     "lng": -97.253339,
-    "price": 405000,
+    "price": 400000,
     "beds": 4,
     "baths": 4,
     "sqft": "3060",
@@ -23558,7 +23558,8 @@
     "isSundgren": false,
     "agentName": "Nicholas Weathers",
     "agentPhone": "3163617372",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 405000
   },
   {
     "slug": "145-shay-rd-andover-ks-673466",
@@ -70505,7 +70506,7 @@
     "state": "KS",
     "lat": 37.712483,
     "lng": -97.341595,
-    "price": 199000,
+    "price": 194000,
     "beds": 5,
     "baths": 2,
     "sqft": "2139",
@@ -70517,7 +70518,8 @@
     "isSundgren": false,
     "agentName": "Jamie Love",
     "agentPhone": "3167122055",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 199000
   },
   {
     "slug": "1908-cypress-ln-newton-ks-678009",
@@ -94478,7 +94480,7 @@
     "state": "KS",
     "lat": 37.693264,
     "lng": -97.404986,
-    "price": 122500,
+    "price": 120000,
     "beds": 2,
     "baths": 2,
     "sqft": "864",
@@ -94491,7 +94493,7 @@
     "agentName": "Chris Greene",
     "agentPhone": "3166176516",
     "agentEmail": "",
-    "previousPrice": 125000
+    "previousPrice": 122500
   },
   {
     "slug": "3022-elm-st-wichita-ks-676822",
@@ -131088,7 +131090,7 @@
     "state": "KS",
     "lat": 37.721699,
     "lng": -97.493614,
-    "price": 0,
+    "price": 1375000,
     "beds": null,
     "baths": null,
     "sqft": "5,001 - 10,000",
@@ -132538,7 +132540,7 @@
     "state": "KS",
     "lat": 38.365605,
     "lng": -97.704963,
-    "price": 479000,
+    "price": 454000,
     "beds": 6,
     "baths": 4,
     "sqft": "5148",
@@ -132551,7 +132553,7 @@
     "agentName": "Braden McCurdy",
     "agentPhone": "3166830612",
     "agentEmail": "",
-    "previousPrice": 489000
+    "previousPrice": 479000
   },
   {
     "slug": "1549a-y-rd-eureka-ks-676984",
