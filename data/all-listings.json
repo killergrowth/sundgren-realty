@@ -10436,7 +10436,7 @@
     "state": "KS",
     "lat": 37.730717,
     "lng": -97.399863,
-    "price": 589900,
+    "price": 579900,
     "beds": 5,
     "baths": 3,
     "sqft": "2954",
@@ -10449,7 +10449,7 @@
     "agentName": "Sarah King",
     "agentPhone": "3166481199",
     "agentEmail": "",
-    "previousPrice": 599900
+    "previousPrice": 589900
   },
   {
     "slug": "202-hillside-st-wellington-ks-669812",
@@ -15298,7 +15298,7 @@
     "state": "KS",
     "lat": 38.024516,
     "lng": -97.952814,
-    "price": 450000,
+    "price": 419090,
     "beds": 3,
     "baths": 3,
     "sqft": "3790",
@@ -15311,7 +15311,7 @@
     "agentName": "Sissy Koury",
     "agentPhone": "3164099955",
     "agentEmail": "",
-    "previousPrice": 459000
+    "previousPrice": 450000
   },
   {
     "slug": "4508-sunny-cir-wichita-ks-676344",
@@ -34131,7 +34131,7 @@
     "state": "KS",
     "lat": 38.09962,
     "lng": -97.919479,
-    "price": 345000,
+    "price": 339900,
     "beds": 5,
     "baths": 3,
     "sqft": "2966",
@@ -34144,7 +34144,7 @@
     "agentName": "Rhonda M Brambley",
     "agentPhone": "3162850421",
     "agentEmail": "",
-    "previousPrice": 350000
+    "previousPrice": 345000
   },
   {
     "slug": "15120-63rd-st-s-st-derby-ks-677465",
@@ -57543,7 +57543,7 @@
     "state": "KS",
     "lat": 37.746527,
     "lng": -97.370195,
-    "price": 249900,
+    "price": 249000,
     "beds": 3,
     "baths": 2,
     "sqft": "1311",
@@ -57555,7 +57555,8 @@
     "isSundgren": false,
     "agentName": "Liz Amos",
     "agentPhone": "3168076800",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 249900
   },
   {
     "slug": "1629-midway-ct-valley-center-ks-675913",
@@ -84281,7 +84282,7 @@
     "state": "KS",
     "lat": 37.550885,
     "lng": -97.267624,
-    "price": 149000,
+    "price": 147000,
     "beds": 3,
     "baths": 1,
     "sqft": "1250",
@@ -84294,7 +84295,7 @@
     "agentName": "Dawn R Wade",
     "agentPhone": "3168061060",
     "agentEmail": "",
-    "previousPrice": 150000
+    "previousPrice": 149000
   },
   {
     "slug": "515-g-st-wellington-ks-676894",

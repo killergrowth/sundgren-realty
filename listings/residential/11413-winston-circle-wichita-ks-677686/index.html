@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Brand-New Fahsholtz Home in the Desirable Brookfield Area! Welcome to this stunning brand-new Fahsholtz home, nearly complete and ideally located in the beautiful Brookfield area. Thoughtfully designed with impressive architectural details, spacious living areas, and an abundance of natural light, this home offers the perfect blend of luxury, comfort, and functionality. The heart of the home is the gorgeous kitchen, featuring a dramatic barrel-vaulted ceiling and an open-concept design that flows seamlessly into the living area. The living room makes a statement with soaring 12-foot ceilings, a beautiful stone fireplace, and custom bookshelves on either side, creating a warm and inviting gathering space. The spacious main-floor primary suite is a true retreat, offering plenty of room to relax and unwind. The primary closet conveniently connects directly to the laundry room for exceptional everyday functionality. Two additional beds and a half bath complete the main level. The walkout basement is designed for entertaining and everyday enjoyment, featuring 9-foot ceilings, an expansive recreation room and game room, plus a beautiful wet bar. Two additional bedrooms and two full bathrooms provide plenty of space for family, guests, or a private retreat. Step outside to enjoy the backyard, which already features a good-neighbor fence along the back and a mature cottonwood tree providing established character. The remaining fencing can easily be added to the purchase for an additional cost. The home will be beautifully landscaped and includes a full-yard sprinkler system, along with front-yard landscaping and trees. With its impressive ceilings, custom architectural details, spacious finished walkout basement, and beautiful setting in the Brookfield area, this exceptional new construction home is one you won’t want to miss!</p>
     </div>
@@ -209,8 +211,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -220,13 +222,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="11413 Winston Circle, Wichita, KS, 67226">
-        <input type="hidden" name="message" value="I am interested in the property at 11413 Winston Circle, Wichita, KS, 67226 (MLS# 677686). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 11413 Winston Circle, Wichita, KS, 67226 (MLS# 677686). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

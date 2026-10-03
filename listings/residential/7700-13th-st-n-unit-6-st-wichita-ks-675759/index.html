@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>RAINTREE VILLAGE - Spacious and beautifully maintained ranch-style patio home with a fully finished basement, located in desirable Raintree Village. The combined living and dining rooms provide ample space for formal or casual gatherings and is highlighted by large windows, vaulted ceilings, a wood-burning fireplace and built in buffet cabinet, along with access the east facing deck and pergola. The main level also offers a spacious owner’s suite featuring vaulted ceilings, an abundant walk-in closet, and an ensuite bathroom with tiled floors, two sinks and a separate walk-in shower w/corner seat. You can start your day by spending time on the private patio off the owner&#39;s suite. Two additional bedrooms and a full bath are located on the opposite side of the home for added privacy. The kitchen is equipped with stainless steel appliances, a pantry, and a casual dining area. Currently, the laundry is located in a large, finished basement room but could easily be relocated to the kitchen pantry area or a main floor 2nd bedroom closet that shares a wall with the hall bath (with the addition of plumbing). A chairlift to the basement may remain or be removed, at the buyer’s request. The finished basement features a large family room with wet bar, a spacious additional space with daylight window, and an adjoining flex space ideal for a home office or workout area. Additional highlights include generous storage and a walk-in cedar closet. The house interior and exterior have been painted recently. Outdoor living is enhanced by an east-facing wood deck with pergola, perfect for relaxing or entertaining. The side and backyard are rock-scaped for low maintenance. Raintree Village is located close to retail shopping, restaurants, banks, schools the City bus and more. The neighborhood amenities include two clubhouses, two swimming pools (one heated in early summer for aerobics), snow removal (streets and driveways at 4+ inches of snow), front yard mowing, fertilization, and sprinkler system maintenance. Residential trash pickup is included in HOA provided services and recycling services are available for an additional nominal fee. Owners are responsible maintenance of areas behind their gates. Raintree Village is a covenant, owner-occupied community (no rentals permitted) offering a walkable neighborhood, a single entrance/exit, and gated access to Eastview/Coleman Park from the neighborhood. Many organized RTV homeowner activities are available to enjoy throughout the year. Information deemed reliable but not guaranteed.</p>
     </div>
@@ -209,8 +211,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -220,13 +222,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="7700 13th St N Unit 6 St, Wichita, KS, 67206">
-        <input type="hidden" name="message" value="I am interested in the property at 7700 13th St N Unit 6 St, Wichita, KS, 67206 (MLS# 675759). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 7700 13th St N Unit 6 St, Wichita, KS, 67206 (MLS# 675759). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
