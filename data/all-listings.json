@@ -52776,7 +52776,7 @@
     "state": "KS",
     "lat": 37.553528,
     "lng": -97.254276,
-    "price": 255000,
+    "price": 259000,
     "beds": 3,
     "baths": 3,
     "sqft": "2776",
@@ -52788,8 +52788,7 @@
     "isSundgren": false,
     "agentName": "Dawn R Wade",
     "agentPhone": "3168061060",
-    "agentEmail": "",
-    "previousPrice": 256000
+    "agentEmail": ""
   },
   {
     "slug": "8110-westlawn-cir-wichita-ks-677589",
