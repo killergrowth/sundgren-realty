@@ -11,14 +11,14 @@
   <link rel="apple-touch-icon" href="/images/favicon.png">
   <meta property="og:title" content="5809 Plumthicket St, Bel Aire, KS, 67226 – 4BD/2BA | Sundgren Realty &amp; Auction">
   <meta property="og:description" content="Residential property at 5809 Plumthicket St, Bel Aire, KS, 67226. Welcome home to comfort, style, and functionality! This beautifully designed 4-bedroom, 2...">
-  <meta property="og:image" content="https://sundgrenrealty.com/images/og-image.jpg">
+  <meta property="og:image" content="https://cdn.repliers.io/southcentralkansas/IMG-680036_6705637513255725068.jpg">
   <meta property="og:url" content="https://sundgrenrealty.com/listings/residential/5809-plumthicket-st-bel-aire-ks-680036/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Sundgren Realty &amp; Auction">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="5809 Plumthicket St, Bel Aire, KS, 67226 – 4BD/2BA | Sundgren Realty &amp; Auction">
   <meta name="twitter:description" content="Residential property at 5809 Plumthicket St, Bel Aire, KS, 67226. Welcome home to comfort, style, and functionality! This beautifully designed 4-bedroom, 2...">
-  <meta name="twitter:image" content="https://sundgrenrealty.com/images/og-image.jpg">
+  <meta name="twitter:image" content="https://cdn.repliers.io/southcentralkansas/IMG-680036_6705637513255725068.jpg">
   <meta name="robots" content="noindex, nofollow">
   <!-- SCHEMA:BreadcrumbList -->
   <!-- SCHEMA:WebPage -->
@@ -56,7 +56,63 @@
       <!-- Left Column -->
       <div class="auction-main">
 
+        <div class="sg-photo-pill-wrap">
+  <section class="photo-gallery-section" style="margin-bottom:24px;">
+    <div class="sg-mosaic">
+      <button class="sg-mosaic-hero" data-idx="0" aria-label="View photo 1" type="button">
+        <img src="https://cdn.repliers.io/southcentralkansas/IMG-680036_6705637513255725068.jpg" alt="Primary property photo" loading="eager">
+      </button>
+      <div class="sg-mosaic-strip">
+      <button class="sg-mosaic-thumb" data-idx="1" aria-label="View photo 2" type="button">
+        <img src="https://cdn.repliers.io/southcentralkansas/IMG-680036_6704344546185343731.jpg" alt="Property photo 2" loading="lazy">
         
+      </button>
+      <button class="sg-mosaic-thumb" data-idx="2" aria-label="View photo 3" type="button">
+        <img src="https://cdn.repliers.io/southcentralkansas/IMG-680036_6703614329694478744.jpg" alt="Property photo 3" loading="lazy">
+        
+      </button>
+      <button class="sg-mosaic-thumb" data-idx="3" aria-label="View photo 4" type="button">
+        <img src="https://cdn.repliers.io/southcentralkansas/IMG-680036_6702245727068913884.jpg" alt="Property photo 4" loading="lazy">
+        <div class="sg-mosaic-more" aria-hidden="true">+14 more</div>
+      </button>
+      </div>
+    </div>
+    <div class="sg-gallery-bar">
+      <button class="sg-gallery-all-btn" id="sg-view-all" type="button">
+        <i class="fas fa-images"></i> View all 18 photos
+      </button>
+    </div>
+  </section>
+
+  <div id="sg-lightbox" role="dialog" aria-modal="true" aria-label="Photo gallery">
+    <button id="sg-lightbox-close" aria-label="Close">&times;</button>
+    <button id="sg-lightbox-prev" aria-label="Previous">&#8249;</button>
+    <img id="sg-lightbox-img" src="" alt="Property photo">
+    <button id="sg-lightbox-next" aria-label="Next">&#8250;</button>
+    <span id="sg-lightbox-counter"></span>
+  </div>
+
+  <script>
+  (function(){
+    var srcs = ["https://cdn.repliers.io/southcentralkansas/IMG-680036_6705637513255725068.jpg","https://cdn.repliers.io/southcentralkansas/IMG-680036_6704344546185343731.jpg","https://cdn.repliers.io/southcentralkansas/IMG-680036_6703614329694478744.jpg","https://cdn.repliers.io/southcentralkansas/IMG-680036_6702245727068913884.jpg","https://cdn.repliers.io/southcentralkansas/IMG-680036_6700847250025238695.jpg","https://cdn.repliers.io/southcentralkansas/IMG-680036_6704993953650235136.jpg","https://cdn.repliers.io/southcentralkansas/IMG-680036_6708796207720495810.jpg","https://cdn.repliers.io/southcentralkansas/IMG-680036_6705332071498022070.jpg","https://cdn.repliers.io/southcentralkansas/IMG-680036_6702511685473573231.jpg","https://cdn.repliers.io/southcentralkansas/IMG-680036_6708320375417316442.jpg","https://cdn.repliers.io/southcentralkansas/IMG-680036_6705565441078723417.jpg","https://cdn.repliers.io/southcentralkansas/IMG-680036_6702203079571020482.jpg","https://cdn.repliers.io/southcentralkansas/IMG-680036_6709098088146514256.jpg","https://cdn.repliers.io/southcentralkansas/IMG-680036_6706280579453782846.jpg","https://cdn.repliers.io/southcentralkansas/IMG-680036_6708702657694285675.jpg","https://cdn.repliers.io/southcentralkansas/IMG-680036_6708757870040206059.jpg","https://cdn.repliers.io/southcentralkansas/IMG-680036_6701551393679588248.jpg","https://cdn.repliers.io/southcentralkansas/IMG-680036_6705542618592356337.jpg"];
+    var lb = document.getElementById('sg-lightbox');
+    var lbImg = document.getElementById('sg-lightbox-img');
+    var lbCtr = document.getElementById('sg-lightbox-counter');
+    var cur = 0;
+    function open(i){ cur=i; lbImg.src=srcs[i]; lbCtr.textContent=(i+1)+' / '+srcs.length; lb.classList.add('active'); document.body.style.overflow='hidden'; }
+    function close(){ lb.classList.remove('active'); document.body.style.overflow=''; }
+    document.querySelectorAll('.sg-mosaic-hero, .sg-mosaic-thumb').forEach(function(btn){
+      btn.addEventListener('click',function(){ open(parseInt(btn.dataset.idx,10)); });
+    });
+    var viewAll = document.getElementById('sg-view-all');
+    if (viewAll) viewAll.addEventListener('click', function(){ open(0); });
+    document.getElementById('sg-lightbox-close').addEventListener('click',close);
+    document.getElementById('sg-lightbox-prev').addEventListener('click',function(){ open((cur-1+srcs.length)%srcs.length); });
+    document.getElementById('sg-lightbox-next').addEventListener('click',function(){ open((cur+1)%srcs.length); });
+    lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
+    document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
+  })();
+  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -91,7 +147,7 @@
     </div>
   </div>
 
-        <div style="margin-top:0;">
+        <div style="margin-top:32px;">
           <div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Welcome home to comfort, style, and functionality! This beautifully designed 4-bedroom, 2-bathroom home offers an oversized two-car garage and thoughtful upgrades throughout. Step into the spacious living room, where elegant coffered ceilings and a cozy electric fireplace create the perfect gathering space. The luxurious primary suite also features stunning coffered ceilings, adding a touch of sophistication and charm. The heart of the home is the open-concept kitchen, complete with granite countertops, a large island, pantry, and all kitchen appliances included—perfect for entertaining and everyday living. Step outside to enjoy the covered patio, ideal for relaxing evenings or weekend get-togethers. Still plenty of time to make your own selections. Don&#39;t miss your opportunity to make it yours—call today to schedule your private showing!</p>
