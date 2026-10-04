@@ -8163,7 +8163,7 @@
     "state": "KS",
     "lat": 37.611269,
     "lng": -97.229497,
-    "price": 699000,
+    "price": 680000,
     "beds": 5,
     "baths": 3,
     "sqft": "2998",
@@ -8175,7 +8175,8 @@
     "isSundgren": false,
     "agentName": "Alysia Stroupe",
     "agentPhone": "3166418767",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 699000
   },
   {
     "slug": "7700-13th-st-n-unit-52-st-wichita-ks-667610",
@@ -55673,7 +55674,7 @@
     "state": "KS",
     "lat": 37.230785,
     "lng": -96.979826,
-    "price": 249000,
+    "price": 239000,
     "beds": 3,
     "baths": 2,
     "sqft": "2132",
@@ -55686,7 +55687,7 @@
     "agentName": "Tiffany Ribordy",
     "agentPhone": "3163476052",
     "agentEmail": "",
-    "previousPrice": 255000
+    "previousPrice": 249000
   },
   {
     "slug": "330-firefly-st-wichita-ks-677533",
@@ -97627,7 +97628,7 @@
     "state": "KS",
     "lat": 37.61183,
     "lng": -97.295052,
-    "price": 110000,
+    "price": 100000,
     "beds": 3,
     "baths": 1,
     "sqft": "864",
@@ -97640,7 +97641,7 @@
     "agentName": "Anthony Bilyeu",
     "agentPhone": "7852537135",
     "agentEmail": "",
-    "previousPrice": 115000
+    "previousPrice": 110000
   },
   {
     "slug": "117-zimmerly-st-wichita-ks-676983",
