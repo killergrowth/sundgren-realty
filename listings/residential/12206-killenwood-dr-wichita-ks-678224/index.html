@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Andover Schools, Sedgwick County Taxes, Whitetail Subdivision, 4 Bedrooms, 3 Baths, New HVAC, plus flexible living space designed to adapt to changing needs. The Bus Stops Here! Homes can serve many purposes over time, and one of the standout features of this spacious ranch is its ability to adapt. Whether additional space is needed for recreation, entertaining, hobbies, working from home, guests, or simply spreading out, this floor plan offers options on both levels. Step inside to an open living and dining area filled with natural light, plantation shutters, and an inviting flow for everyday living and entertaining. At the heart of the main floor is a centralized kitchen featuring hardwood floors, granite countertops, an induction cooktop, pantry, long eating bar, and sunny breakfast nook. Just beyond, the hearth room provides another comfortable gathering space for game days, holiday celebrations, entertaining, or relaxing at the end of the day. Convenient main floor laundry is located just off the kitchen. The split-bedroom floor plan provides separation between sleeping areas. Two bedrooms and a full bath are positioned apart from the spacious primary suite. The primary suite features a generously sized bedroom and large en suite bath with dual sinks, a separate shower and tub, a private water closet with bidet, and walk-in closet. Downstairs, the possibilities continue. Feedback from prospective buyers indicated that the size and openness of the lower-level recreation area made it difficult to visualize how the space might be arranged. To help illustrate its versatility, two virtually staged photos have been added. One depicts the area configured as a colorful recreation and activity space, while the other shows the same room arranged as a comfortable lounge and entertaining area. The large recreation/family room is finished with LVP flooring and is complemented by two additional rooms offering flexibility for hobbies, exercise, a home office, crafts, gaming, storage, or other uses that suit the next owner’s needs. The fourth bedroom offers additional versatility with its own dedicated entrance and convenient access to a full bath, providing useful separation for guests or other household needs. Step outside through the pit walk-out to a covered patio beneath the finished deck, providing two levels of outdoor living space. The fenced backyard, mature landscaping, and irrigation system create an inviting setting for outdoor dining, recreation, gardening, entertaining, or quiet evenings at home. With a 2-car garage, abundant living space on two levels, a flexible floor plan, Andover Schools, and Sedgwick County taxes, this Whitetail home offers more than rooms and square footage. It offers adaptable spaces ready to be used in whatever way works best for the next owner. Neighborhood amenities include a swimming pool, greenbelt, jogging path, lake/pond, and playground. And did we mention? The bus stops here!</p>
     </div>
@@ -209,8 +211,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -220,13 +222,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="12206 Killenwood Dr, Wichita, KS, 67206">
-        <input type="hidden" name="message" value="I am interested in the property at 12206 Killenwood Dr, Wichita, KS, 67206 (MLS# 678224). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 12206 Killenwood Dr, Wichita, KS, 67206 (MLS# 678224). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

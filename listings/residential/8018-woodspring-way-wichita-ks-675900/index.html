@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Enjoy low-maintenance living in the highly desirable Silverleaf at Tallgrass, nestled within the beautiful Tallgrass Golf Club community. This move-in-ready 3-bedroom, 2.5-bath condo offers the perfect blend of comfort, convenience, and lifestyle just minutes from Bradley Fair, premier shopping, dining, and quick access to K-96. Step inside to discover a bright, open living room featuring soaring vaulted ceilings, a cozy gas fireplace, and abundant natural light. The adjoining galley-style kitchen offers warm wood cabinetry, an inviting dining area, and recently updated microwave and dishwasher. The spacious main-floor primary suite provides private access to the deck, a generous walk-in closet, and an updated en-suite bath. A second bedroom and full bathroom complete the main level, while upstairs you&#39;ll find a flexible loft, third bedroom, convenient half bath with laundry hookups, and a finished attic offering exceptional storage. Whether you&#39;re enjoying morning coffee on your private deck, taking in the beautifully maintained surroundings, or spending the day at nearby Tallgrass Golf Club, you&#39;ll appreciate the ease of this lock-and-leave lifestyle. A detached one-car garage and reserved parking space add everyday convenience, while the HOA covers exterior maintenance, lawn care, snow removal, water, and trash service. This is an outstanding opportunity to enjoy comfortable living in one of east Wichita&#39;s most sought-after communities.</p>
     </div>
@@ -199,9 +201,9 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
     (function(){
-      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.73073,-97.244141],15);
+      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.730676,-97.244147],15);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap contributors',maxZoom:19}).addTo(map);
-      L.marker([37.73073,-97.244141]).addTo(map).bindPopup('8018 Woodspring Way, Wichita, KS 67226').openPopup();
+      L.marker([37.730676,-97.244147]).addTo(map).bindPopup('8018 Woodspring Way, Wichita, KS 67226').openPopup();
     })();
     </script>
   </div>
@@ -209,8 +211,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -220,13 +222,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="8018 Woodspring Way, Wichita, KS, 67226">
-        <input type="hidden" name="message" value="I am interested in the property at 8018 Woodspring Way, Wichita, KS, 67226 (MLS# 675900). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 8018 Woodspring Way, Wichita, KS, 67226 (MLS# 675900). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

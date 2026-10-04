@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Welcome to this beautifully updated home nestled in a great neighborhood lined with mature shade trees! From the moment you arrive, you’ll appreciate the new driveway and newer exterior paint. The driveway has been extended alongside the two-car garage, providing additional parking and potentially enough room for an RV. Step inside to a warm and inviting two-story home filled with natural light. The spacious family room, located just off the entry, features a woodburning fireplace, luxury vinyl tile flooring, a front-facing window, and sliding glass doors that open to the backyard. The main-floor flooring was replaced in 2024, adding to the home&#39;s fresh, updated feel. To the right of the entry is the formal dining room, offering plenty of space for a large dining table and a front-facing window. All windows throughout the home have been replaced with energy-efficient triple-pane windows. The beautiful kitchen is both stylish and functional, featuring freshly painted cabinetry, butcher-block countertops, and a picture window overlooking the backyard. Conveniently located between the kitchen and family room is a remodeled half bath and laundry room combination, perfect for everyday living. Upstairs, you’ll find three spacious bedrooms. The primary suite offers plenty of room for your furniture along with a spacious walk-in closet and an additional separate closet. The primary bathroom features a double vanity and shower. Two additional generously sized bedrooms are located nearby, along with a completely remodeled hall bathroom featuring a beautiful tub, granite countertop, and updated finishes. The finished basement provides even more living space, including a large family room with built-in shelving and two daylight windows. Down the hall is another bathroom with a shower and a fourth bedroom with a daylight window—perfect for guests, an office, or additional family space. There is also a dedicated mechanical/storage room. Step outside into your own backyard oasis! A spacious concrete patio extends the length of the home and connects to both the side and front driveways. The backyard also features a playground and hot tub, with the playground area thoughtfully sectioned off and a Colorado rock walk behind. A separate shed with electricity has been used as a comfortable temperature-controlled man cave and offers a variety of possibilities for its next owner. The hot tub and playground can remain or be removed according to the buyer’s preference. Adding to the home&#39;s appeal are owned solar panels that will transfer to the buyer, helping keep electric bills exceptionally low, even during the summer months. The HVAC system is newer and has been sized larger to provide improved cooling for the second floor. With spacious living areas, extensive updates, four bedrooms, multiple baths, finished basement space, triple-pane windows, solar panels, and an impressive backyard setup, this home offers an exceptional combination of comfort, functionality, and versatility. Ask your agent for a showing and come make it yours!</p>
     </div>
@@ -205,8 +207,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -216,13 +218,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="219 Sandhill Rd, Derby, KS, 67037">
-        <input type="hidden" name="message" value="I am interested in the property at 219 Sandhill Rd, Derby, KS, 67037 (MLS# 679230). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 219 Sandhill Rd, Derby, KS, 67037 (MLS# 679230). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
