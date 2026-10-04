@@ -67260,7 +67260,7 @@
     "state": "KS",
     "lat": 37.64314,
     "lng": -97.358652,
-    "price": 210000,
+    "price": 202500,
     "beds": 4,
     "baths": 2,
     "sqft": "1500",
@@ -67272,7 +67272,8 @@
     "isSundgren": false,
     "agentName": "Pam Hesse",
     "agentPhone": "3166484377",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 210000
   },
   {
     "slug": "2618-athenian-ave-wichita-ks-676936",
