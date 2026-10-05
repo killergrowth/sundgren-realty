@@ -4005,7 +4005,7 @@
     "state": "KS",
     "lat": 39.072447,
     "lng": -97.286297,
-    "price": 1130000,
+    "price": 975000,
     "beds": 4,
     "baths": 3,
     "sqft": "3046",
@@ -4017,7 +4017,8 @@
     "isSundgren": false,
     "agentName": "Samantha Swearingen",
     "agentPhone": "7855779878",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 1130000
   },
   {
     "slug": "402-industrial-st-goddard-ks-676225",
@@ -4212,7 +4213,7 @@
     "state": "KS",
     "lat": 37.71084899,
     "lng": -97.16497199,
-    "price": 1095000,
+    "price": 995000,
     "beds": 10,
     "baths": 10,
     "sqft": "10647",
@@ -4224,7 +4225,8 @@
     "isSundgren": false,
     "agentName": "Connie Davis",
     "agentPhone": "3162881716",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 1095000
   },
   {
     "slug": "sec-of-55th-st-s-s-west-st-haysville-ks-657130",
@@ -10809,7 +10811,7 @@
     "state": "KS",
     "lat": 37.18012398,
     "lng": -97.36755102,
-    "price": 599900,
+    "price": 589900,
     "beds": 4,
     "baths": 3,
     "sqft": "3416",
@@ -10821,7 +10823,8 @@
     "isSundgren": false,
     "agentName": "Pamela Hinman",
     "agentPhone": "6203262162",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 599900
   },
   {
     "slug": "1619-lakeside-dr-andover-ks-677903",
@@ -12450,7 +12453,7 @@
     "state": "KS",
     "lat": 37.682824,
     "lng": -97.432209,
-    "price": 545000,
+    "price": 529900,
     "beds": 4,
     "baths": 4,
     "sqft": "3413",
@@ -12463,7 +12466,7 @@
     "agentName": "Dan Madrigal",
     "agentPhone": "3169900184",
     "agentEmail": "",
-    "previousPrice": 560000
+    "previousPrice": 545000
   },
   {
     "slug": "105-broadview-street-wichita-ks-676181",
@@ -14236,7 +14239,7 @@
     "state": "KS",
     "lat": 37.725063,
     "lng": -97.231388,
-    "price": 525000,
+    "price": 495000,
     "beds": 4,
     "baths": 5,
     "sqft": "3922",
@@ -14248,7 +14251,8 @@
     "isSundgren": false,
     "agentName": "Leslie Wessel",
     "agentPhone": "3164614375",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 525000
   },
   {
     "slug": "2420-dellrose-st-wichita-ks-677039",
@@ -15809,7 +15813,7 @@
     "state": "KS",
     "lat": 37.2332,
     "lng": -97.349211,
-    "price": 499500,
+    "price": 459000,
     "beds": 4,
     "baths": 4,
     "sqft": "3283",
@@ -15821,7 +15825,8 @@
     "isSundgren": false,
     "agentName": "Ken Patterson",
     "agentPhone": "6202181713",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 499500
   },
   {
     "slug": "1212-nineiron-st-wichita-ks-674154",
@@ -27273,7 +27278,7 @@
     "state": "KS",
     "lat": 37.650637,
     "lng": -97.201732,
-    "price": 369900,
+    "price": 345000,
     "beds": 3,
     "baths": 2,
     "sqft": "1792",
@@ -27286,7 +27291,7 @@
     "agentName": "Judy Bias",
     "agentPhone": "3166193734",
     "agentEmail": "",
-    "previousPrice": 383000
+    "previousPrice": 369900
   },
   {
     "slug": "8471-pebble-st-maize-ks-664953",
@@ -31591,7 +31596,7 @@
     "state": "KS",
     "lat": 37.660578,
     "lng": -97.197738,
-    "price": 365000,
+    "price": 359000,
     "beds": 5,
     "baths": 3,
     "sqft": "2616",
@@ -31603,7 +31608,8 @@
     "isSundgren": false,
     "agentName": "Oricel Iron Wing",
     "agentPhone": "3168336248",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 365000
   },
   {
     "slug": "13501-links-st-wichita-ks-677884",
@@ -35685,7 +35691,7 @@
     "state": "KS",
     "lat": 37.78427,
     "lng": -97.205745,
-    "price": 345900,
+    "price": 335900,
     "beds": 5,
     "baths": 2,
     "sqft": "2630",
@@ -35697,7 +35703,8 @@
     "isSundgren": false,
     "agentName": "Don Hamm",
     "agentPhone": "3162088553",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 345900
   },
   {
     "slug": "14326-hawthorne-st-wichita-ks-678274",
@@ -38815,7 +38822,7 @@
     "state": "KS",
     "lat": 37.80962997,
     "lng": -97.31150995,
-    "price": 326900,
+    "price": 318900,
     "beds": 5,
     "baths": 3,
     "sqft": "2220",
@@ -38827,7 +38834,8 @@
     "isSundgren": false,
     "agentName": "Christy Needles",
     "agentPhone": "3165164591",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 326900
   },
   {
     "slug": "2803-rutland-ln-augusta-ks-676351",
@@ -48871,7 +48879,7 @@
     "state": "KS",
     "lat": 37.317899,
     "lng": -97.466817,
-    "price": 282450,
+    "price": 259000,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -48883,7 +48891,8 @@
     "isSundgren": false,
     "agentName": "Ken Patterson",
     "agentPhone": "6202181713",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 282450
   },
   {
     "slug": "8992-forbes-cir-bel-aire-ks-671805",
@@ -57382,7 +57391,7 @@
     "state": "KS",
     "lat": 37.654639,
     "lng": -97.467082,
-    "price": 249900,
+    "price": 240000,
     "beds": 3,
     "baths": 2,
     "sqft": "2020",
@@ -57394,7 +57403,8 @@
     "isSundgren": false,
     "agentName": "Josh Roy",
     "agentPhone": "3166656799",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 249900
   },
   {
     "slug": "12910-thorton-st-wichita-ks-677637",
@@ -62418,7 +62428,7 @@
     "state": "KS",
     "lat": 37.0856746,
     "lng": -97.03773353,
-    "price": 219000,
+    "price": 199900,
     "beds": 3,
     "baths": 2,
     "sqft": "1621",
@@ -62431,7 +62441,7 @@
     "agentName": "Mandi Hill",
     "agentPhone": "6202293600",
     "agentEmail": "",
-    "previousPrice": 229900
+    "previousPrice": 219000
   },
   {
     "slug": "12903-thorton-st-wichita-ks-674454",
@@ -64991,7 +65001,7 @@
     "state": "KS",
     "lat": 37.06335657,
     "lng": -97.04246469,
-    "price": 219900,
+    "price": 199900,
     "beds": 4,
     "baths": 2,
     "sqft": "2483",
@@ -65003,7 +65013,8 @@
     "isSundgren": false,
     "agentName": "Mandi Hill",
     "agentPhone": "6202293600",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 219900
   },
   {
     "slug": "228-gowen-st-goddard-ks-675084",
@@ -65615,7 +65626,7 @@
     "state": "KS",
     "lat": 37.241865,
     "lng": -96.97693,
-    "price": 219000,
+    "price": 214900,
     "beds": 3,
     "baths": 3,
     "sqft": "1824",
@@ -65627,7 +65638,8 @@
     "isSundgren": false,
     "agentName": "Shirley Jester",
     "agentPhone": "6202221685",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 219000
   },
   {
     "slug": "7500-cornelison-cir-wichita-ks-676723",
@@ -66079,7 +66091,7 @@
     "state": "KS",
     "lat": 38.135003,
     "lng": -97.437086,
-    "price": 215000,
+    "price": 205000,
     "beds": 3,
     "baths": 2,
     "sqft": "2178",
@@ -66091,7 +66103,8 @@
     "isSundgren": false,
     "agentName": "Taylor Myers",
     "agentPhone": "2172859000",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 215000
   },
   {
     "slug": "8917-harvest-ln-wichita-ks-674765",
@@ -80384,7 +80397,7 @@
     "state": "KS",
     "lat": 37.613223,
     "lng": -97.33536301,
-    "price": 164900,
+    "price": 159900,
     "beds": 3,
     "baths": 2,
     "sqft": "1865",
@@ -80397,7 +80410,7 @@
     "agentName": "Amanda Jolley",
     "agentPhone": "3162139043",
     "agentEmail": "",
-    "previousPrice": 169900
+    "previousPrice": 164900
   },
   {
     "slug": "2355-macarthur-ct-wichita-ks-677888",
@@ -91524,7 +91537,7 @@
     "state": "KS",
     "lat": 37.642464,
     "lng": -98.735789,
-    "price": 135000,
+    "price": 129999,
     "beds": 6,
     "baths": 3,
     "sqft": "2441",
@@ -91536,7 +91549,8 @@
     "isSundgren": false,
     "agentName": "MaKayla Jackson",
     "agentPhone": "4796899080",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 135000
   },
   {
     "slug": "622-carr-ave-el-dorado-ks-673712",
@@ -96610,7 +96624,7 @@
     "state": "KS",
     "lat": 37.648407,
     "lng": -97.820415,
-    "price": 120000,
+    "price": 109900,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -96622,7 +96636,8 @@
     "isSundgren": false,
     "agentName": "Amanda L Levin",
     "agentPhone": "3163034835",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 120000
   },
   {
     "slug": "1632-140th-ave-n-ave-mulvane-ks-672588",
@@ -97121,7 +97136,7 @@
     "state": "KS",
     "lat": 37.815137,
     "lng": -96.272703,
-    "price": 119000,
+    "price": 114900,
     "beds": 3,
     "baths": 2,
     "sqft": "1716",
@@ -97133,7 +97148,8 @@
     "isSundgren": false,
     "agentName": "Dominique Schaffer",
     "agentPhone": "3854051545",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 119000
   },
   {
     "slug": "720-elm-st-eureka-ks-672922",
@@ -100174,7 +100190,7 @@
     "state": "KS",
     "lat": 37.610903,
     "lng": -96.025881,
-    "price": 100000,
+    "price": 70000,
     "beds": 2,
     "baths": 1,
     "sqft": "1056",
@@ -100186,7 +100202,8 @@
     "isSundgren": false,
     "agentName": "Micaela Jacquemin",
     "agentPhone": "6205832916",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 100000
   },
   {
     "slug": "1717-cypress-st-apt-412-st-wichita-ks-675209",
@@ -108068,7 +108085,7 @@
     "state": "KS",
     "lat": 37.54256707,
     "lng": -97.2243114,
-    "price": 67000,
+    "price": 72000,
     "beds": null,
     "baths": null,
     "sqft": null,

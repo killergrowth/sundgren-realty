@@ -63,12 +63,23 @@
         <img src="https://cdn.repliers.io/southcentralkansas/IMG-677258_6701603207491234640.jpg" alt="Primary property photo" loading="eager">
       </button>
       <div class="sg-mosaic-strip">
-
+      <button class="sg-mosaic-thumb" data-idx="1" aria-label="View photo 2" type="button">
+        <img src="https://cdn.repliers.io/southcentralkansas/IMG-677258_6703329178351296854.jpg" alt="Property photo 2" loading="lazy">
+        
+      </button>
+      <button class="sg-mosaic-thumb" data-idx="2" aria-label="View photo 3" type="button">
+        <img src="https://cdn.repliers.io/southcentralkansas/IMG-677258_6704137226191570013.jpg" alt="Property photo 3" loading="lazy">
+        
+      </button>
+      <button class="sg-mosaic-thumb" data-idx="3" aria-label="View photo 4" type="button">
+        <img src="https://cdn.repliers.io/southcentralkansas/IMG-677258_6701130369520616685.jpg" alt="Property photo 4" loading="lazy">
+        <div class="sg-mosaic-more" aria-hidden="true">+16 more</div>
+      </button>
       </div>
     </div>
     <div class="sg-gallery-bar">
       <button class="sg-gallery-all-btn" id="sg-view-all" type="button">
-        <i class="fas fa-images"></i> View all 1 photo
+        <i class="fas fa-images"></i> View all 20 photos
       </button>
     </div>
   </section>
@@ -83,7 +94,7 @@
 
   <script>
   (function(){
-    var srcs = ["https://cdn.repliers.io/southcentralkansas/IMG-677258_6701603207491234640.jpg"];
+    var srcs = ["https://cdn.repliers.io/southcentralkansas/IMG-677258_6701603207491234640.jpg","https://cdn.repliers.io/southcentralkansas/IMG-677258_6703329178351296854.jpg","https://cdn.repliers.io/southcentralkansas/IMG-677258_6704137226191570013.jpg","https://cdn.repliers.io/southcentralkansas/IMG-677258_6701130369520616685.jpg","https://cdn.repliers.io/southcentralkansas/IMG-677258_6701822806692228093.jpg","https://cdn.repliers.io/southcentralkansas/IMG-677258_6701776393689138620.jpg","https://cdn.repliers.io/southcentralkansas/IMG-677258_6701448649116832156.jpg","https://cdn.repliers.io/southcentralkansas/IMG-677258_6709442858075045373.jpg","https://cdn.repliers.io/southcentralkansas/IMG-677258_6709133354188531864.jpg","https://cdn.repliers.io/southcentralkansas/IMG-677258_6700743958336911410.jpg","https://cdn.repliers.io/southcentralkansas/IMG-677258_6700720531133128853.jpg","https://cdn.repliers.io/southcentralkansas/IMG-677258_6703854937996772185.jpg","https://cdn.repliers.io/southcentralkansas/IMG-677258_6703393706289145084.jpg","https://cdn.repliers.io/southcentralkansas/IMG-677258_6700677674039805058.jpg","https://cdn.repliers.io/southcentralkansas/IMG-677258_6704383951956541331.jpg","https://cdn.repliers.io/southcentralkansas/IMG-677258_6704798208945506342.jpg","https://cdn.repliers.io/southcentralkansas/IMG-677258_6707875517857569889.jpg","https://cdn.repliers.io/southcentralkansas/IMG-677258_6705736462748327612.jpg","https://cdn.repliers.io/southcentralkansas/IMG-677258_6707445878373565258.jpg","https://cdn.repliers.io/southcentralkansas/IMG-677258_6705954814542920655.jpg"];
     var lb = document.getElementById('sg-lightbox');
     var lbImg = document.getElementById('sg-lightbox-img');
     var lbCtr = document.getElementById('sg-lightbox-counter');
@@ -147,7 +158,7 @@
     <div class="feat-grid">
     <div class="feat-cell">
       <i class="fas fa-fire"></i>
-      <div><span class="mlabel">Heating</span>Forced Air, Natural Gas</div>
+      <div><span class="mlabel">Heating</span>Natural Gas, Forced Air</div>
     </div>
     <div class="feat-cell">
       <i class="fas fa-snowflake"></i>
@@ -180,9 +191,9 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
     (function(){
-      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.647436,-97.553639],15);
+      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.6455,-97.5565],15);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap contributors',maxZoom:19}).addTo(map);
-      L.marker([37.647436,-97.553639]).addTo(map).bindPopup('1493 Cozy Hollow Ct, Goddard, KS 67052').openPopup();
+      L.marker([37.6455,-97.5565]).addTo(map).bindPopup('1493 Cozy Hollow Ct, Goddard, KS 67052').openPopup();
     })();
     </script>
   </div>
