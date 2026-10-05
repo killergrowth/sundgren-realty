@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Experience refined living in one of Wichita’s most prestigious and sought-after established neighborhoods. This exceptional 7-bedroom, 1½-story estate was masterfully redesigned and rebuilt in 2017, offering a modern, open floor plan paired with the charm and craftsmanship of a classic home. The renovation went far beyond aesthetics, with new electrical, plumbing, insulation, and energy-efficient low-E windows providing peace of mind and long-term comfort. A brand-new DaVinci roof was completed in July 2026, adding exceptional durability and long-term value. Situated on approximately .59 acres with a beautifully landscaped yard and circle drive, the home is designed for both everyday living and entertaining. Formal living and dining rooms feature rich hardwood floors, coffered ceilings, wainscoting and a marble-surround fireplace. The chef’s kitchen opens to the main living spaces and features Quartz countertops, oversized island with breakfast bar, custom soft-close cabinetry, paneled appliances, La Cornue professional gas range with double convection ovens, pot-filler, tile backsplash, coffee/wet bar, and walk-in pantry. The main-floor family room includes a stone-surround fireplace, custom wet bar, built-ins, and oversized sliding doors overlooking the backyard. The main level also offers a laundry room, drop zone, mudroom, half bath, additional bedroom and full bath, all conveniently located near the attached four-car garage. The private primary suite spans more than 1,300 square feet and includes a fireplace, patio access, spa-inspired bath, large tiled shower with multiple shower heads, freestanding soaking tub, dual vanities, and expansive boutique-style closet with custom organization, Quartz island, built-in dresser, and access to an additional laundry area. An adjoining flex room provides space for a study, nursery, or fitness room. Upstairs are three spacious bedrooms, ample closet space, a full bath with dual vanities, and an additional recently added full bathroom. The finished basement adds a recreation/game room, second wet bar with wine storage, seventh bedroom, full bath, and abundant storage. The private, fully fenced backyard is an entertainer’s retreat with a two-tiered deck, covered outdoor living area with fireplace, inground pool, and pool house with bath and rough-in for an outdoor kitchen. With extensive 2017 improvements, exceptional finishes, thoughtful design, and a new DaVinci roof completed in July 2026, this remarkable property offers a rare combination of elegance, functionality, and enduring quality.</p>
     </div>
@@ -209,8 +211,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -220,13 +222,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="4 Highland Rd, Eastborough, KS, 67208">
-        <input type="hidden" name="message" value="I am interested in the property at 4 Highland Rd, Eastborough, KS, 67208 (MLS# 679902). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 4 Highland Rd, Eastborough, KS, 67208 (MLS# 679902). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
