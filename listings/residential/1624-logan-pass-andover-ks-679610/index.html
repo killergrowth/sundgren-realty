@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Welcome to 1624 S. Logan Pass, a beautifully crafted Nies-built home in Andover’s desirable Montana Hills neighborhood. Offering 5 bedrooms, 3.5 baths, a 3-car garage and a thoughtful split-bedroom design, this home blends timeless character, impressive entertaining spaces and energy-efficient construction. Step through the stone-and-brick covered entry into a stunning foyer, where 10-foot main-floor ceilings and a wall of windows immediately create a sense of space and light. Rich wood floors lead into the open great room, where a vaulted ceiling with substantial wood beams, three wrought-iron chandeliers and a striking stone fireplace create a space that feels both impressive and inviting. Continue into the kitchen, truly the heart of the home. An 8-foot granite island offers generous seating and workspace, surrounded by custom alder cabinetry with dovetailed drawers, under- and over-cabinet lighting, a 60/40 split sink, 5-burner gas range, custom vented hood and a KitchenAid dishwasher with third-tier rack. An impressively large walk-in pantry provides exceptional storage, while the breakfast nook and formal dining area offer plenty of options for everyday meals, holidays and entertaining. The split-bedroom layout places two secondary bedrooms and a full hall bath together on one side of the main level, while the primary suite enjoys privacy on the opposite side. The primary retreat features a beautiful barrel ceiling, abundant natural light and private access to the covered deck. Its ensuite bath includes dual vanities, a soaker tub, separate walk-in shower, private commode and direct access to the spacious walk-in closet. Nearby, the guest powder bath adds another custom touch with a glass-tile countertop and vessel sink, while the separate laundry room is conveniently located just off the kitchen. Head downstairs to a bright walkout lower level designed for entertaining, everyday living and multigenerational flexibility. The spacious family and game room opens to an impressive knotty alder wet bar with granite countertops, a dishwasher, space for a refrigerator and room for an ice maker. A custom barn door opens to a large walk-in pantry—perfect for additional storage or an incredible future wine cellar. Another set of custom barn doors opens to the dedicated media room featuring a gas fireplace, in-wall surround sound, projector wiring and a wide opening that allows you to enjoy the game from the adjoining bar area. Two additional bedrooms, a full bath and generous storage provide the space and privacy to comfortably accommodate guests, older children or extended family. Outdoor living is equally inviting, with a covered composite deck, lower covered patio and fenced backyard beneath a canopy of mature shade trees. Additional highlights include a Rachio Smart Sprinkler System with Weatherproof Enclosure, wrought-iron fencing, fresh exterior paint and a brand-new impact-resistant roof. The truly oversized 3-car garage, providing plenty of room for vehicles, storage, hobbies and all the extras. Built with comfort and efficiency in mind, this ENERGY STAR-rated home features upgraded attic insulation and a water-powered backup system on the sump pump. Best of all, there are NO special assessment taxes. Montana Hills offers the peaceful feel of an established neighborhood while keeping you close to Andover schools, shopping, dining, recreation and everyday conveniences. From the striking foyer to the expansive walkout lower level and inviting outdoor spaces, every part of this home was designed with comfort, function and entertaining in mind. Schedule your private showing today and experience the craftsmanship, space and thoughtful design of 1624 S. Logan Pass for yourself. Don&#39;t just dream it - OWN it.</p>
     </div>
@@ -205,8 +207,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -216,13 +218,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="1624 Logan Pass, Andover, KS, 67002">
-        <input type="hidden" name="message" value="I am interested in the property at 1624 Logan Pass, Andover, KS, 67002 (MLS# 679610). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 1624 Logan Pass, Andover, KS, 67002 (MLS# 679610). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
