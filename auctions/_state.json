@@ -1,5 +1,5 @@
 {
-  "lastFetch": "2026-10-05T13:50:05.122Z",
+  "lastFetch": "2026-10-05T21:51:25.543Z",
   "auctions": {
     "24096": {
       "slug": "test-auction-24096",
@@ -2879,8 +2879,7 @@
       "slug": "15592-nw-60th-whitewater-kansas-brick-home-on-96-acres-169491",
       "status": "accepting_bids",
       "name": "15592 NW 60th, Whitewater, Kansas – Brick home on 9.6+/- acres",
-      "generated": "2026-09-10T15:57:23.520Z",
-      "updated": "2026-10-05T13:50:07.070Z"
+      "generated": "2026-09-10T15:57:23.520Z"
     },
     "169498": {
       "slug": "truck-stock-trailer-tractor-mower-tools-equipment-and-more-l-169498",
@@ -2890,9 +2889,10 @@
     },
     "170217": {
       "slug": "guns-ammo-accessories-online-only-auction-170217",
-      "status": "accepting_bids",
+      "status": "complete",
       "name": "Guns, Ammo & Accessories - ONLINE ONLY AUCTION",
-      "generated": "2026-09-29T19:49:04.565Z"
+      "generated": "2026-09-29T19:49:04.565Z",
+      "updated": "2026-10-05T21:51:26.761Z"
     },
     "170742": {
       "slug": "10-acres-w-walnut-river-frontage-amazing-mature-trees-august-170742",
