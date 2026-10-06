@@ -1,5 +1,5 @@
 {
-  "lastFetch": "2026-10-05T21:51:25.543Z",
+  "lastFetch": "2026-10-06T05:15:57.058Z",
   "auctions": {
     "24096": {
       "slug": "test-auction-24096",
@@ -2891,8 +2891,7 @@
       "slug": "guns-ammo-accessories-online-only-auction-170217",
       "status": "complete",
       "name": "Guns, Ammo & Accessories - ONLINE ONLY AUCTION",
-      "generated": "2026-09-29T19:49:04.565Z",
-      "updated": "2026-10-05T21:51:26.761Z"
+      "generated": "2026-09-29T19:49:04.565Z"
     },
     "170742": {
       "slug": "10-acres-w-walnut-river-frontage-amazing-mature-trees-august-170742",
