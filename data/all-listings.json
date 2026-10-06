@@ -682,7 +682,7 @@
     "state": "KS",
     "lat": 37.836317,
     "lng": -96.302526,
-    "price": 180000,
+    "price": 175000,
     "beds": 3,
     "baths": 2,
     "sqft": "1641",
@@ -695,7 +695,7 @@
     "agentName": "Ashleigh Casper",
     "agentPhone": "6205839879",
     "agentEmail": "",
-    "previousPrice": 189900
+    "previousPrice": 180000
   },
   {
     "slug": "1421-12th-ave-winfield-ks-670529",
@@ -22946,7 +22946,7 @@
     "state": "KS",
     "lat": 37.657137,
     "lng": -97.185958,
-    "price": 399900,
+    "price": 379900,
     "beds": 4,
     "baths": 3,
     "sqft": "2931",
@@ -22959,7 +22959,7 @@
     "agentName": "Heather Lora",
     "agentPhone": "3165732150",
     "agentEmail": "",
-    "previousPrice": 414900
+    "previousPrice": 399900
   },
   {
     "slug": "000-klein-cir-derby-ks-671668",
@@ -25755,7 +25755,7 @@
     "state": "KS",
     "lat": 37.727728,
     "lng": -97.4492,
-    "price": 379900,
+    "price": 359900,
     "beds": 4,
     "baths": 3,
     "sqft": "2623",
@@ -25768,7 +25768,7 @@
     "agentName": "Ronda Tackett",
     "agentPhone": "3162143313",
     "agentEmail": "",
-    "previousPrice": 390000
+    "previousPrice": 379900
   },
   {
     "slug": "1515-spring-hollow-cir-wichita-ks-677770",
@@ -68161,7 +68161,7 @@
     "state": "KS",
     "lat": 37.610804,
     "lng": -97.384822,
-    "price": 202995,
+    "price": 199900,
     "beds": 3,
     "baths": 2,
     "sqft": "1223",
@@ -68174,7 +68174,7 @@
     "agentName": "Juan Montoya",
     "agentPhone": "3168073000",
     "agentEmail": "",
-    "previousPrice": 205995
+    "previousPrice": 202995
   },
   {
     "slug": "3310-charles-ave-wichita-ks-678427",
@@ -72835,7 +72835,7 @@
     "state": "KS",
     "lat": 37.711159,
     "lng": -97.349646,
-    "price": 189900,
+    "price": 185900,
     "beds": 2,
     "baths": 2,
     "sqft": "1592",
@@ -72847,7 +72847,8 @@
     "isSundgren": false,
     "agentName": "Hattie Foster",
     "agentPhone": "3163050577",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 189900
   },
   {
     "slug": "3153-cranberry-st-wichita-ks-675794",
@@ -85385,7 +85386,7 @@
     "state": "KS",
     "lat": 37.632607,
     "lng": -97.348254,
-    "price": 155000,
+    "price": 154000,
     "beds": 4,
     "baths": 1,
     "sqft": "1150",
@@ -85398,7 +85399,7 @@
     "agentName": "Jack Tomlinson",
     "agentPhone": "6143577389",
     "agentEmail": "",
-    "previousPrice": 157000
+    "previousPrice": 155000
   },
   {
     "slug": "3328-chase-ave-wichita-ks-677750",

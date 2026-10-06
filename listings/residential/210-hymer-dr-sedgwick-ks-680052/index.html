@@ -11,14 +11,14 @@
   <link rel="apple-touch-icon" href="/images/favicon.png">
   <meta property="og:title" content="210 Hymer DR, Sedgwick, KS, 67135 – 5BD/3BA | Sundgren Realty &amp; Auction">
   <meta property="og:description" content="Residential property at 210 Hymer DR, Sedgwick, KS, 67135. Five bedrooms. Multiple living spaces. Nearly 2,000 square feet. If you&#39;ve been searching for a ...">
-  <meta property="og:image" content="https://sundgrenrealty.com/images/og-image.jpg">
+  <meta property="og:image" content="https://cdn.repliers.io/southcentralkansas/IMG-680052_6702528875965476266.jpg">
   <meta property="og:url" content="https://sundgrenrealty.com/listings/residential/210-hymer-dr-sedgwick-ks-680052/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Sundgren Realty &amp; Auction">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="210 Hymer DR, Sedgwick, KS, 67135 – 5BD/3BA | Sundgren Realty &amp; Auction">
   <meta name="twitter:description" content="Residential property at 210 Hymer DR, Sedgwick, KS, 67135. Five bedrooms. Multiple living spaces. Nearly 2,000 square feet. If you&#39;ve been searching for a ...">
-  <meta name="twitter:image" content="https://sundgrenrealty.com/images/og-image.jpg">
+  <meta name="twitter:image" content="https://cdn.repliers.io/southcentralkansas/IMG-680052_6702528875965476266.jpg">
   <meta name="robots" content="noindex, nofollow">
   <!-- SCHEMA:BreadcrumbList -->
   <!-- SCHEMA:WebPage -->
@@ -56,7 +56,63 @@
       <!-- Left Column -->
       <div class="auction-main">
 
+        <div class="sg-photo-pill-wrap">
+  <section class="photo-gallery-section" style="margin-bottom:24px;">
+    <div class="sg-mosaic">
+      <button class="sg-mosaic-hero" data-idx="0" aria-label="View photo 1" type="button">
+        <img src="https://cdn.repliers.io/southcentralkansas/IMG-680052_6702528875965476266.jpg" alt="Primary property photo" loading="eager">
+      </button>
+      <div class="sg-mosaic-strip">
+      <button class="sg-mosaic-thumb" data-idx="1" aria-label="View photo 2" type="button">
+        <img src="https://cdn.repliers.io/southcentralkansas/IMG-680052_6707839148420658054.jpg" alt="Property photo 2" loading="lazy">
         
+      </button>
+      <button class="sg-mosaic-thumb" data-idx="2" aria-label="View photo 3" type="button">
+        <img src="https://cdn.repliers.io/southcentralkansas/IMG-680052_6707568659428669270.jpg" alt="Property photo 3" loading="lazy">
+        
+      </button>
+      <button class="sg-mosaic-thumb" data-idx="3" aria-label="View photo 4" type="button">
+        <img src="https://cdn.repliers.io/southcentralkansas/IMG-680052_6708108869217695834.jpg" alt="Property photo 4" loading="lazy">
+        <div class="sg-mosaic-more" aria-hidden="true">+16 more</div>
+      </button>
+      </div>
+    </div>
+    <div class="sg-gallery-bar">
+      <button class="sg-gallery-all-btn" id="sg-view-all" type="button">
+        <i class="fas fa-images"></i> View all 20 photos
+      </button>
+    </div>
+  </section>
+
+  <div id="sg-lightbox" role="dialog" aria-modal="true" aria-label="Photo gallery">
+    <button id="sg-lightbox-close" aria-label="Close">&times;</button>
+    <button id="sg-lightbox-prev" aria-label="Previous">&#8249;</button>
+    <img id="sg-lightbox-img" src="" alt="Property photo">
+    <button id="sg-lightbox-next" aria-label="Next">&#8250;</button>
+    <span id="sg-lightbox-counter"></span>
+  </div>
+
+  <script>
+  (function(){
+    var srcs = ["https://cdn.repliers.io/southcentralkansas/IMG-680052_6702528875965476266.jpg","https://cdn.repliers.io/southcentralkansas/IMG-680052_6707839148420658054.jpg","https://cdn.repliers.io/southcentralkansas/IMG-680052_6707568659428669270.jpg","https://cdn.repliers.io/southcentralkansas/IMG-680052_6708108869217695834.jpg","https://cdn.repliers.io/southcentralkansas/IMG-680052_6700708310832537180.jpg","https://cdn.repliers.io/southcentralkansas/IMG-680052_6703130635907163898.jpg","https://cdn.repliers.io/southcentralkansas/IMG-680052_6702255555659345558.jpg","https://cdn.repliers.io/southcentralkansas/IMG-680052_6709246961315115457.jpg","https://cdn.repliers.io/southcentralkansas/IMG-680052_6700740022374035155.jpg","https://cdn.repliers.io/southcentralkansas/IMG-680052_6701312690338652111.jpg","https://cdn.repliers.io/southcentralkansas/IMG-680052_6708008984357776428.jpg","https://cdn.repliers.io/southcentralkansas/IMG-680052_6703203970835350145.jpg","https://cdn.repliers.io/southcentralkansas/IMG-680052_6708818221685975518.jpg","https://cdn.repliers.io/southcentralkansas/IMG-680052_6704660861896483092.jpg","https://cdn.repliers.io/southcentralkansas/IMG-680052_6708726234195086666.jpg","https://cdn.repliers.io/southcentralkansas/IMG-680052_6703482314952086543.jpg","https://cdn.repliers.io/southcentralkansas/IMG-680052_6700310563920004365.jpg","https://cdn.repliers.io/southcentralkansas/IMG-680052_6706082593470440913.jpg","https://cdn.repliers.io/southcentralkansas/IMG-680052_6704816845092761081.jpg","https://cdn.repliers.io/southcentralkansas/IMG-680052_6700275702120544322.jpg"];
+    var lb = document.getElementById('sg-lightbox');
+    var lbImg = document.getElementById('sg-lightbox-img');
+    var lbCtr = document.getElementById('sg-lightbox-counter');
+    var cur = 0;
+    function open(i){ cur=i; lbImg.src=srcs[i]; lbCtr.textContent=(i+1)+' / '+srcs.length; lb.classList.add('active'); document.body.style.overflow='hidden'; }
+    function close(){ lb.classList.remove('active'); document.body.style.overflow=''; }
+    document.querySelectorAll('.sg-mosaic-hero, .sg-mosaic-thumb').forEach(function(btn){
+      btn.addEventListener('click',function(){ open(parseInt(btn.dataset.idx,10)); });
+    });
+    var viewAll = document.getElementById('sg-view-all');
+    if (viewAll) viewAll.addEventListener('click', function(){ open(0); });
+    document.getElementById('sg-lightbox-close').addEventListener('click',close);
+    document.getElementById('sg-lightbox-prev').addEventListener('click',function(){ open((cur-1+srcs.length)%srcs.length); });
+    document.getElementById('sg-lightbox-next').addEventListener('click',function(){ open((cur+1)%srcs.length); });
+    lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
+    document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
+  })();
+  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -91,7 +147,7 @@
     </div>
   </div>
 
-        <div style="margin-top:0;">
+        <div style="margin-top:32px;">
           <div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Five bedrooms. Multiple living spaces. Nearly 2,000 square feet. If you&#39;ve been searching for a home with room to actually live, 210 W Hymer deserves a second look. Step inside to a bright living room with vaulted ceilings and a gas fireplace, creating a comfortable gathering space at the heart of the home. The kitchen offers plenty of cabinetry, an eating bar, pantry storage, and easy access to the dining area and back deck. The main-level primary suite adds everyday convenience, while additional bedrooms provide plenty of flexibility for family, guests, a home office, or hobby space. Downstairs, you&#39;ll find even more usable living space, including a spacious family room and a large bedroom with dual closets. Outside, enjoy mornings on the covered front porch or evenings on the back deck overlooking the privacy-fenced backyard. A two-car garage provides additional storage and convenience. Recent improvements include a new roof in 2020, heating system blower in 2021, refrigerator in 2023, and main water line in 2023. With five bedrooms, multiple gathering spaces, and a floor plan that can adapt to the way you live, this Sedgwick home packs a lot of possibility into one address. Come take a fresh look at 210 W Hymer and see if this is the space you&#39;ve been waiting for!</p>

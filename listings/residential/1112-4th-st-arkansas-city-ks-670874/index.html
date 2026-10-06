@@ -11,14 +11,14 @@
   <link rel="apple-touch-icon" href="/images/favicon.png">
   <meta property="og:title" content="1112 4th St, Arkansas City, KS, 67005 – 3BD/2BA | Sundgren Realty &amp; Auction">
   <meta property="og:description" content="Residential property at 1112 4th St, Arkansas City, KS, 67005. Seller is motivated to sell! Walk into a very open floor plan. A living room spacious enough...">
-  <meta property="og:image" content="https://sundgrenrealty.com/images/og-image.jpg">
+  <meta property="og:image" content="https://cdn.repliers.io/southcentralkansas/IMG-670874_6703469005195356024.jpg">
   <meta property="og:url" content="https://sundgrenrealty.com/listings/residential/1112-4th-st-arkansas-city-ks-670874/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Sundgren Realty &amp; Auction">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="1112 4th St, Arkansas City, KS, 67005 – 3BD/2BA | Sundgren Realty &amp; Auction">
   <meta name="twitter:description" content="Residential property at 1112 4th St, Arkansas City, KS, 67005. Seller is motivated to sell! Walk into a very open floor plan. A living room spacious enough...">
-  <meta name="twitter:image" content="https://sundgrenrealty.com/images/og-image.jpg">
+  <meta name="twitter:image" content="https://cdn.repliers.io/southcentralkansas/IMG-670874_6703469005195356024.jpg">
   <meta name="robots" content="noindex, nofollow">
   <!-- SCHEMA:BreadcrumbList -->
   <!-- SCHEMA:WebPage -->
@@ -56,7 +56,63 @@
       <!-- Left Column -->
       <div class="auction-main">
 
+        <div class="sg-photo-pill-wrap">
+  <section class="photo-gallery-section" style="margin-bottom:24px;">
+    <div class="sg-mosaic">
+      <button class="sg-mosaic-hero" data-idx="0" aria-label="View photo 1" type="button">
+        <img src="https://cdn.repliers.io/southcentralkansas/IMG-670874_6703469005195356024.jpg" alt="Primary property photo" loading="eager">
+      </button>
+      <div class="sg-mosaic-strip">
+      <button class="sg-mosaic-thumb" data-idx="1" aria-label="View photo 2" type="button">
+        <img src="https://cdn.repliers.io/southcentralkansas/IMG-670874_6708126527825678940.jpg" alt="Property photo 2" loading="lazy">
         
+      </button>
+      <button class="sg-mosaic-thumb" data-idx="2" aria-label="View photo 3" type="button">
+        <img src="https://cdn.repliers.io/southcentralkansas/IMG-670874_6704182854738199145.jpg" alt="Property photo 3" loading="lazy">
+        
+      </button>
+      <button class="sg-mosaic-thumb" data-idx="3" aria-label="View photo 4" type="button">
+        <img src="https://cdn.repliers.io/southcentralkansas/IMG-670874_6705341781504695183.jpg" alt="Property photo 4" loading="lazy">
+        <div class="sg-mosaic-more" aria-hidden="true">+13 more</div>
+      </button>
+      </div>
+    </div>
+    <div class="sg-gallery-bar">
+      <button class="sg-gallery-all-btn" id="sg-view-all" type="button">
+        <i class="fas fa-images"></i> View all 17 photos
+      </button>
+    </div>
+  </section>
+
+  <div id="sg-lightbox" role="dialog" aria-modal="true" aria-label="Photo gallery">
+    <button id="sg-lightbox-close" aria-label="Close">&times;</button>
+    <button id="sg-lightbox-prev" aria-label="Previous">&#8249;</button>
+    <img id="sg-lightbox-img" src="" alt="Property photo">
+    <button id="sg-lightbox-next" aria-label="Next">&#8250;</button>
+    <span id="sg-lightbox-counter"></span>
+  </div>
+
+  <script>
+  (function(){
+    var srcs = ["https://cdn.repliers.io/southcentralkansas/IMG-670874_6703469005195356024.jpg","https://cdn.repliers.io/southcentralkansas/IMG-670874_6708126527825678940.jpg","https://cdn.repliers.io/southcentralkansas/IMG-670874_6704182854738199145.jpg","https://cdn.repliers.io/southcentralkansas/IMG-670874_6705341781504695183.jpg","https://cdn.repliers.io/southcentralkansas/IMG-670874_6705455430374086808.jpg","https://cdn.repliers.io/southcentralkansas/IMG-670874_6703818226209213178.jpg","https://cdn.repliers.io/southcentralkansas/IMG-670874_6700735380192290571.jpg","https://cdn.repliers.io/southcentralkansas/IMG-670874_6707721628651003411.jpg","https://cdn.repliers.io/southcentralkansas/IMG-670874_6702912718027819716.jpg","https://cdn.repliers.io/southcentralkansas/IMG-670874_6701770605515932375.jpg","https://cdn.repliers.io/southcentralkansas/IMG-670874_6700796221964431812.jpg","https://cdn.repliers.io/southcentralkansas/IMG-670874_6701514824328394091.jpg","https://cdn.repliers.io/southcentralkansas/IMG-670874_6705141963717136216.jpg","https://cdn.repliers.io/southcentralkansas/IMG-670874_6702186270619720003.jpg","https://cdn.repliers.io/southcentralkansas/IMG-670874_6704610404216082530.jpg","https://cdn.repliers.io/southcentralkansas/IMG-670874_6707316469235363449.jpg","https://cdn.repliers.io/southcentralkansas/IMG-670874_6707358882144841314.jpg"];
+    var lb = document.getElementById('sg-lightbox');
+    var lbImg = document.getElementById('sg-lightbox-img');
+    var lbCtr = document.getElementById('sg-lightbox-counter');
+    var cur = 0;
+    function open(i){ cur=i; lbImg.src=srcs[i]; lbCtr.textContent=(i+1)+' / '+srcs.length; lb.classList.add('active'); document.body.style.overflow='hidden'; }
+    function close(){ lb.classList.remove('active'); document.body.style.overflow=''; }
+    document.querySelectorAll('.sg-mosaic-hero, .sg-mosaic-thumb').forEach(function(btn){
+      btn.addEventListener('click',function(){ open(parseInt(btn.dataset.idx,10)); });
+    });
+    var viewAll = document.getElementById('sg-view-all');
+    if (viewAll) viewAll.addEventListener('click', function(){ open(0); });
+    document.getElementById('sg-lightbox-close').addEventListener('click',close);
+    document.getElementById('sg-lightbox-prev').addEventListener('click',function(){ open((cur-1+srcs.length)%srcs.length); });
+    document.getElementById('sg-lightbox-next').addEventListener('click',function(){ open((cur+1)%srcs.length); });
+    lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
+    document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
+  })();
+  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -91,7 +147,7 @@
     </div>
   </div>
 
-        <div style="margin-top:0;">
+        <div style="margin-top:32px;">
           <div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Seller is motivated to sell! Walk into a very open floor plan. A living room spacious enough for all your furniture. Dining area features a large banquet with built in storage for family dinners. Three bedrooms with original hardwood floors. Recently refreshed bathroom with a claw foot tub. Separate laundry room. Mud room with indoor storm shelter access, which also leads to a deck for gatherings. HVAC system, new roof in 2025, windows have been replaced in the open living area, with ceiling fans throughout. Enjoy the fenced back yard. The single car garage with concrete floor, also heated and cooled. A large carport beside the garage for extra coverage from storms. With nearly 2000 sqft this home is waiting for your decorating flair. So call listing agent today for a private showing.</p>
@@ -102,7 +158,7 @@
     <div class="feat-grid">
     <div class="feat-cell">
       <i class="fas fa-fire"></i>
-      <div><span class="mlabel">Heating</span>Forced Air, Natural Gas</div>
+      <div><span class="mlabel">Heating</span>Natural Gas, Forced Air</div>
     </div>
     <div class="feat-cell">
       <i class="fas fa-snowflake"></i>
