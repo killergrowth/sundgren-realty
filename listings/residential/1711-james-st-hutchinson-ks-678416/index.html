@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -143,7 +143,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>ATTENTION INVESTORS &amp; HOMEBUYERS: LIVE &amp; ONLINE SIMULCAST AUCTION! 1711 James Street, Hutchinson, KS 67502 Bidding Opens: Saturday, September 26th Bidding Concludes: Saturday, October 3rd at 2:00 PM Live On-Site &amp; Online Simulcast Bidding Don&#39;t miss this outstanding opportunity in northern Hutchinson! Situated in an established neighborhood directly backing up to Vic Goering Park, this brick ranch offers far more space than meets the eye! Featuring 1,011 sq. ft. on the main level PLUS a spacious 22&#39; x 16&#39; (352 sq. ft.) climate-controlled, 4-season addition—ideal for a main-floor family room, sunroom, or craft studio. That’s not all—the home also boasts a 750 sq. ft. partially finished basement featuring an additional family/recreation room and a bonus room, bringing total usable living area to over 2,100 sq. ft.! Built in 1970, the property includes durable brick construction, central air conditioning, forced air heat, and a handicap-accessible entry. Exterior highlights include a convenient circle drive with approach to the attached 1-car garage and a generous 0.28-acre lot with peaceful park views directly out back. Whether you are looking to add a high-potential asset to your portfolio or secure a spacious home with incredible room to customize, 1711 James Street delivers! PROPERTY HIGHLIGHTS: Total Living Space: Over 2,100 Total Usable Sq. Ft.! Main Level: 3 Bedrooms / 1 Bath (1,011 sq. ft.) 4-Season Addition: 22&#39; x 16&#39; (352 sq. ft.) climate-controlled addition (former enclosed patio) Basement: 750 sq. ft. partially finished with a Family/Rec Room &amp; 4th Bedroom (non-conforming) Accessibility: Handicap-accessible entry Climate Control: Central Air Conditioning &amp; Forced Air Heat Lot &amp; Location: 0.28 Acres backing up directly to Vic Goering Park Driveway &amp; Parking: Circle drive with approach to attached 1-car garage Bidding Format: Online bidding opens Saturday, Sept 26th. Bidding concludes LIVE on-site with online simulcast on Saturday, October 3rd @ 2:00 PM CDT. Type of Auction: Reserve Auction. Buyer’s Premium: A 10% Buyer’s Premium will be added to the final winning bid to determine the total contract purchase price. Earnest Money Deposit: A $2,500 non-refundable earnest deposit is due the day of the auction upon execution of the purchase agreement (payable via Cashier&#39;s Check, Personal Check, ACH Deposit, or Cash). As-Is Sale: Property is sold &quot;AS-IS, WHERE-IS&quot; with no warranties or guarantees expressed or implied. All inspections/due diligence must be completed prior to bidding. Contingencies: Sale is NOT contingent upon financing, appraisals, or inspections. Buyers are encouraged to arrange financing prior to bidding. Announcements: All announcements made the day of the sale take precedence over any printed or digital material.</p>
     </div>
@@ -200,8 +202,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -211,13 +213,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="1711 James St, Hutchinson, KS, 67502">
-        <input type="hidden" name="message" value="I am interested in the property at 1711 James St, Hutchinson, KS, 67502 (MLS# 678416). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 1711 James St, Hutchinson, KS, 67502 (MLS# 678416). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

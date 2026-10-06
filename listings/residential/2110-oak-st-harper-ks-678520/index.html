@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Affordable small-town living with the comforts you&#39;ve been looking for! This charming 2-bedroom, 2-bath home offers 1,292 square feet of comfortable living space, an updated kitchen, and a 2-car garage with alley access. Welcome to a home that captures the best of Harper living, where peaceful surroundings and a close-knit community create a lifestyle that feels easy and inviting. With a comfortable, single-level layout, there is plenty of room to settle in and make this home your own. The spacious living room is sure to become a favorite gathering spot, especially when winter arrives and the wood-burning stove fills the space with a warm, cozy glow. It adds character and comfort while offering the potential to help offset heating costs during colder months. The updated kitchen is full of personality, featuring granite tile countertops with copper flecks, a distinctive copper sink, and great lighting above and below the cabinets. The gas range makes cooking a pleasure, and all appliances will remain for the buyer&#39;s convenience. Two bedrooms plus a generously sized bonus room provide flexibility for family, guests, hobbies, or a home office. You&#39;ll also appreciate the laundry area, which provides an abundance of additional storage and includes a folding table with plenty of space to spread out. The 2-car garage offers everyday convenience along with plenty of room for storage. Out back, the fenced yard offers a small storage shed and patio space ready for outdoor seating, morning coffee, or your own personal touches. Located in a peaceful neighborhood, this home puts you right in the heart of the relaxed pace that makes Harper special. Across the street, you’ll have a front row seat to baseball games. Enjoy the simple pleasures of small-town living, friendly neighbors, a welcoming downtown area, and a community where home feels a little more personal. Click through the photos and take the mural&#39;s advice: Come Grow With Us!</p>
     </div>
@@ -158,7 +160,7 @@
     <div class="feat-grid">
     <div class="feat-cell">
       <i class="fas fa-fire"></i>
-      <div><span class="mlabel">Heating</span>Forced Air, Natural Gas, Other</div>
+      <div><span class="mlabel">Heating</span>Natural Gas, Forced Air</div>
     </div>
     <div class="feat-cell">
       <i class="fas fa-snowflake"></i>
@@ -191,9 +193,9 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
     (function(){
-      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.27625398,-98.02750503],15);
+      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.276252,-98.027502],15);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap contributors',maxZoom:19}).addTo(map);
-      L.marker([37.27625398,-98.02750503]).addTo(map).bindPopup('2110 Oak St, Harper, KS 67058').openPopup();
+      L.marker([37.276252,-98.027502]).addTo(map).bindPopup('2110 Oak St, Harper, KS 67058').openPopup();
     })();
     </script>
   </div>
@@ -201,8 +203,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -212,13 +214,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="2110 Oak St, Harper, KS, 67058">
-        <input type="hidden" name="message" value="I am interested in the property at 2110 Oak St, Harper, KS, 67058 (MLS# 678520). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 2110 Oak St, Harper, KS, 67058 (MLS# 678520). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

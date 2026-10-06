@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Take your time while walking through this beautiful 2 story, 10,647 sq ft, 10 bedroom, 9.5 bathroom, all brick home. Included in this is a large, 1 bedroom, full bathroom, full kitchen, attached apartment that also has it&#39;s own private entrance! Can be income producing or reserved for your special guests! This home is located in the coveted Savanna Subdivision and highly sought after Andover school district. You just can&#39;t help being impressed when you drive up the circle driveway. This home is situated on an 1.18 acre lot, with beautiful landscaping that is irrigated with a sprinkler system, fed by a well. You will have peaceful pond views and a subdivision clubhouse and swimming pool within walking distance. Walk in the front door and you will be enamored with the view of the beautiful great room with floor to ceiling windows that look out on the brand new composite deck, facing the pond and grassy common area. The master suite boasts of the very same view with a sliding glass door leading to the deck. The master bathroom has a large walk in shower and stand alone jetted tub as well as his and hers separate walk-in closets. Walk in the opposite direction and you will see the large formal dining room, with tray ceilings. The open kitchen has all stainless steel appliances, including double refrigerators, double stovetops, double convection oven/microwave, which will remain with the home. There is an eating bar, large pantry and breakfast nook with another great view! Across from the kitchen is a Hearth room with built in shelves and cabinets. Down the hall you will find a separate laundry room with dual washer and dryer hook ups. Then you have the over-sized 3 car garage that allows entry to the home through the spacious breezeway. Down the stairs to the basement is a very large family room with a full wet bar that walks out to the enclosed patio that sits beneath the new composite deck. There are 2 bedrooms, 2 full bathrooms, an exercise room with built in shelving and a game room with a pool table that stays with the home. The upper level of the home has 6 bedrooms with 4 full bathrooms, 2 of them being Jack and Jill and walk-in closets in several of the upstairs bedrooms. The upstairs is open to a hallway that overlooks the beautiful main floor great room. There is a whole home lighting system with memory, and a panic button to light the entire home up as well as whole home light shut off. The hallways and closets light up upon entry. There is a security system that can be activated and a house sound system with ceiling speakers as well as outside speakers. One of the basement rooms was converted to a theater room. With all the extra rooms in this gorgeous home, you can turn any of them into an exercise room, a large luxury closet, the opportunities are endless. This home has a layout that fosters coming together for family time as well as privacy for all who live here. Come and experience the views and tranquility of this beautiful home and make it yours!</p>
     </div>
@@ -201,8 +203,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -212,13 +214,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="1509 Freedom Rd, Wichita, KS, 67230">
-        <input type="hidden" name="message" value="I am interested in the property at 1509 Freedom Rd, Wichita, KS, 67230 (MLS# 663540). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 1509 Freedom Rd, Wichita, KS, 67230 (MLS# 663540). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
