@@ -219,7 +219,7 @@
     "state": "KS",
     "lat": 37.205362,
     "lng": -97.000956,
-    "price": 354900,
+    "price": 345000,
     "beds": 2,
     "baths": 1,
     "sqft": "1152",
@@ -232,7 +232,7 @@
     "agentName": "Tamara Cooley",
     "agentPhone": "6202222356",
     "agentEmail": "",
-    "previousPrice": 375000
+    "previousPrice": 354900
   },
   {
     "slug": "635-central-ave-el-dorado-ks-675644",
@@ -21559,7 +21559,7 @@
     "state": "KS",
     "lat": 37.690476,
     "lng": -97.485957,
-    "price": 425000,
+    "price": 418500,
     "beds": 5,
     "baths": 3,
     "sqft": "2816",
@@ -21571,7 +21571,8 @@
     "isSundgren": false,
     "agentName": "Desiree Mesle",
     "agentPhone": "3169938307",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 425000
   },
   {
     "slug": "4513-sw-lakeside-dr-topeka-ks-677583",
@@ -36532,7 +36533,7 @@
     "state": "KS",
     "lat": 37.664825,
     "lng": -97.30064,
-    "price": 334900,
+    "price": 329900,
     "beds": 5,
     "baths": 3,
     "sqft": "2414",
@@ -36545,7 +36546,7 @@
     "agentName": "Kirsten Haas",
     "agentPhone": "3162140052",
     "agentEmail": "",
-    "previousPrice": 339999
+    "previousPrice": 334900
   },
   {
     "slug": "11236-killarney-cir-wichita-ks-671910",
@@ -47661,7 +47662,7 @@
     "state": "KS",
     "lat": 37.717155,
     "lng": -97.479245,
-    "price": 285000,
+    "price": 280000,
     "beds": 4,
     "baths": 3,
     "sqft": "2070",
@@ -47673,7 +47674,8 @@
     "isSundgren": false,
     "agentName": "Cheyenne L Harvey",
     "agentPhone": "3166489997",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 285000
   },
   {
     "slug": "1905-deer-rd-abilene-ks-678313",
@@ -52794,7 +52796,7 @@
     "state": "KS",
     "lat": 37.553528,
     "lng": -97.254276,
-    "price": 259000,
+    "price": 258000,
     "beds": 3,
     "baths": 3,
     "sqft": "2776",
@@ -52806,7 +52808,8 @@
     "isSundgren": false,
     "agentName": "Dawn R Wade",
     "agentPhone": "3168061060",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 259000
   },
   {
     "slug": "8110-westlawn-cir-wichita-ks-677589",
@@ -61698,7 +61701,7 @@
     "state": "KS",
     "lat": 37.683521,
     "lng": -97.314392,
-    "price": 210000,
+    "price": 199000,
     "beds": 3,
     "baths": 2,
     "sqft": "1504",
@@ -61711,7 +61714,7 @@
     "agentName": "LeAnna Beat",
     "agentPhone": "3162141121",
     "agentEmail": "",
-    "previousPrice": 230000
+    "previousPrice": 210000
   },
   {
     "slug": "1631-fairview-wichita-ks-671771",
@@ -72799,7 +72802,7 @@
     "state": "KS",
     "lat": 37.642427,
     "lng": -97.477801,
-    "price": 189900,
+    "price": 184900,
     "beds": 3,
     "baths": 2,
     "sqft": "1232",
@@ -72811,7 +72814,8 @@
     "isSundgren": false,
     "agentName": "Tanner Ternes",
     "agentPhone": "3166706071",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 189900
   },
   {
     "slug": "739-119th-st-w-st-wichita-ks-677154",
@@ -75992,7 +75996,7 @@
     "state": "KS",
     "lat": 37.681938,
     "lng": -97.538745,
-    "price": 184900,
+    "price": 179900,
     "beds": 3,
     "baths": 2,
     "sqft": "1112",
@@ -76004,7 +76008,8 @@
     "isSundgren": false,
     "agentName": "Tanner Ternes",
     "agentPhone": "3166706071",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 184900
   },
   {
     "slug": "17126-lawson-cir-goddard-ks-670403",
@@ -76015,7 +76020,7 @@
     "state": "KS",
     "lat": 37.681949,
     "lng": -97.538223,
-    "price": 184900,
+    "price": 179900,
     "beds": 3,
     "baths": 2,
     "sqft": "1112",
@@ -76027,7 +76032,8 @@
     "isSundgren": false,
     "agentName": "Tanner Ternes",
     "agentPhone": "3166706071",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 184900
   },
   {
     "slug": "17014-lawson-st-goddard-ks-670407",
@@ -76084,7 +76090,7 @@
     "state": "KS",
     "lat": 37.682029,
     "lng": -97.538214,
-    "price": 184900,
+    "price": 179900,
     "beds": 3,
     "baths": 2,
     "sqft": "1112",
@@ -76096,7 +76102,8 @@
     "isSundgren": false,
     "agentName": "Tanner Ternes",
     "agentPhone": "3166706071",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 184900
   },
   {
     "slug": "17136-lawson-cir-goddard-ks-670398",
@@ -76107,7 +76114,7 @@
     "state": "KS",
     "lat": 37.681962,
     "lng": -97.538651,
-    "price": 184900,
+    "price": 179900,
     "beds": 3,
     "baths": 2,
     "sqft": "1112",
@@ -76119,7 +76126,8 @@
     "isSundgren": false,
     "agentName": "Tanner Ternes",
     "agentPhone": "3166706071",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 184900
   },
   {
     "slug": "17132-lawson-cir-goddard-ks-668904",
@@ -76130,7 +76138,7 @@
     "state": "KS",
     "lat": 37.681946,
     "lng": -97.538504,
-    "price": 184900,
+    "price": 179900,
     "beds": 3,
     "baths": 2,
     "sqft": "1112",
@@ -76142,7 +76150,8 @@
     "isSundgren": false,
     "agentName": "Tanner Ternes",
     "agentPhone": "3166706071",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 184900
   },
   {
     "slug": "17130-lawson-cir-goddard-ks-668903",
@@ -76153,7 +76162,7 @@
     "state": "KS",
     "lat": 37.681962,
     "lng": -97.538419,
-    "price": 184900,
+    "price": 179900,
     "beds": 3,
     "baths": 2,
     "sqft": "1112",
@@ -76165,7 +76174,8 @@
     "isSundgren": false,
     "agentName": "Tanner Ternes",
     "agentPhone": "3166706071",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 184900
   },
   {
     "slug": "3855-longleaf-st-wichita-ks-667839",
@@ -84309,7 +84319,7 @@
     "state": "KS",
     "lat": 37.550885,
     "lng": -97.267624,
-    "price": 147000,
+    "price": 146000,
     "beds": 3,
     "baths": 1,
     "sqft": "1250",
@@ -84322,7 +84332,7 @@
     "agentName": "Dawn R Wade",
     "agentPhone": "3168061060",
     "agentEmail": "",
-    "previousPrice": 149000
+    "previousPrice": 147000
   },
   {
     "slug": "515-g-st-wellington-ks-676894",
@@ -84843,7 +84853,7 @@
     "state": "KS",
     "lat": 37.388766,
     "lng": -97.117654,
-    "price": 155000,
+    "price": 150000,
     "beds": 3,
     "baths": 1,
     "sqft": "984",
@@ -84855,7 +84865,8 @@
     "isSundgren": false,
     "agentName": "Marina D Gomez",
     "agentPhone": "3162042437",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 155000
   },
   {
     "slug": "314-carlyle-st-wichita-ks-678174",
@@ -114927,7 +114938,7 @@
     "state": "KS",
     "lat": 37.242614,
     "lng": -96.99375,
-    "price": 41900,
+    "price": 37500,
     "beds": 3,
     "baths": 2,
     "sqft": "1496",
@@ -114939,7 +114950,8 @@
     "isSundgren": false,
     "agentName": "Robert L Clasen",
     "agentPhone": "6207823586",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 41900
   },
   {
     "slug": "1316-a-st-wellington-ks-675344",

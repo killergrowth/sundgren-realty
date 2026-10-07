@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-terminated pill">Inactive</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Price Reduction!!! Welcome Home to 6538 N. Bella Rd., a truly special property offering the perfect blend of peaceful country living and convenient city access. Nestled on over an acre in the highly sought-after Rio Vista Estates, this beautifully maintained custom home provides space, privacy, and timeless charm just minutes from Wichita&#39;s shopping, dining, and entertainment. From the moment you arrive, you&#39;ll appreciate the mature trees, classic brick exterior, and welcoming courtyard entry that create exceptional curb appeal. The expansive grounds offer endless possibilities for outdoor living, whether you envision a pool, workshop, garden, or simply a place to relax and enjoy breathtaking Kansas sunsets. A detached garage provides ample room for additional vehicles, recreational equipment, a boat, or RV. Inside, you&#39;ll find a warm and inviting floor plan filled with natural light from large windows throughout the home. Architectural details including arched doorways, custom built-ins, beautiful woodwork, and cozy fireplaces add character and timeless appeal. The spacious kitchen is truly the heart of the home, featuring a large island, eating bar, double ovens, stainless steel appliances, abundant cabinet space, and an incredible walk-in pantry. A versatile built-in desk area makes the perfect coffee bar or household command center. The spacious dining area is ideal for gathering with family and friends, while the thoughtfully designed main floor bedrooms offer comfort and functionality. Retreat to the private primary suite featuring a spa-like bathroom with dual vanities, a soaking tub, separate shower, dressing area, and a large walk-in closet with custom built-ins. An oversized laundry room offers abundant storage, counter space, and a utility sink, making everyday tasks a breeze. The finished lower level expands your living and entertaining options with a large family room, game area, wet bar, play nook, two additional bedrooms connected by a Jack-and-Jill bathroom, a powder room, and excellent storage space, including a dedicated storm room. Step outside to enjoy the spacious composite deck overlooking the beautiful acreage. A sprinkler system supplied by a private well helps keep the lawn lush and green. With zoned HVAC systems, dual water heaters, and meticulous care throughout, this home is as practical as it is beautiful. If you&#39;ve been searching for room to spread out, stunning surroundings, and a home designed for both everyday living and entertaining, this exceptional Rio Vista Estates property is one you won&#39;t want to miss.</p>
     </div>
@@ -209,8 +211,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -220,13 +222,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="6538 Bella Rd, Wichita, KS, 67204">
-        <input type="hidden" name="message" value="I am interested in the property at 6538 Bella Rd, Wichita, KS, 67204 (MLS# 674936). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 6538 Bella Rd, Wichita, KS, 67204 (MLS# 674936). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
@@ -325,17 +327,17 @@
           <span class="listing-card-more">View Details &rarr;</span>
         </div>
       </a>
-      <a href="/listings/residential/118-95th-terrace-leon-ks-677724/" class="listing-card">
-        <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-677724_6703840748336612397.jpg" alt="118 95th Terrace, Leon, KS, 67074" loading="lazy">
+      <a href="/listings/residential/1325-prairie-view-rd-el-dorado-ks-680139/" class="listing-card">
+        <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-680139_24a0a16c504718ca356b8b82b7534c83ae24a98b6b5e52e1df5527690397fdbb.jpg" alt="1325 Prairie View Rd, El Dorado, KS, 67042" loading="lazy">
         <div class="listing-card-body">
           <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
             <span class="listing-card-badge" style="background:#22c55e;">Active</span>
             <span class="listing-card-badge" style="background:#0ea5e9;">Residential</span>
           </div>
-          <p class="listing-card-address">118 95th Terrace</p>
-          <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Leon, KS</p>
-          <p class="listing-card-meta"><i class="fas fa-ruler-combined"></i>2 Bd · 3 Ba · 2,838 sq ft</p>
-          <p class="listing-card-price">$490,000</p>
+          <p class="listing-card-address">1325 Prairie View Rd</p>
+          <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>El Dorado, KS</p>
+          <p class="listing-card-meta"><i class="fas fa-ruler-combined"></i>5 Bd · 3 Ba · 3,258 sq ft</p>
+          <p class="listing-card-price">$565,000</p>
           <span class="listing-card-more">View Details &rarr;</span>
         </div>
       </a>

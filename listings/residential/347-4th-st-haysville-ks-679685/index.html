@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Here’s the listing description agents wish they could write. Welcome to Haysville, where apparently you CAN get a fully remodeled kitchen, a fenced backyard, and a garage without spending your entire life savings. This three-bedroom, one-bathroom home is conveniently located near the restaurants and retail along Seneca, as well as the park and community center. It’s also a low-maintenance option with vinyl siding, some updated windows, a fully renovated kitchen, and additional updates throughout. At 880 square feet, this home proves you don’t need a ton of square footage -- and a mortgage-induced identity crisis -- to have a great place to live. Step through the covered front porch and into a bright living room featuring LVP flooring for a clean, updated look and easy maintenance. But go ahead and enjoy the living room for a minute, because you’re probably going to want to breeze right past it to the star of the home: the kitchen. The kitchen has already been remodeled, so you can skip the part where you spend your weekends watching DIY videos and questioning your life choices. The new layout includes brand-new cabinetry (not just cabinets someone slapped paint on), quartz countertops, and stainless steel appliances. Granite is so yesterday. And because civilization has finally reached the point where we recognize coffee as a basic necessity, there’s even a dedicated coffee bar space. But yes, there’s more to life than the kitchen. You do need somewhere to sleep and shower, after all. Just off the living room are three bedrooms, all featuring matching LVP flooring for a cohesive look. The bathroom has also received updates, keeping the fresh, move-in-ready feel going throughout the home. From the kitchen, head toward the laundry room and out to the backyard, where things get even better. The fenced backyard gives you space for pets, kids, entertaining, or simply standing outside pretending you’re going to do yard work. A concrete sidewalk leads to the 12&#39; x 8&#39; shed, which is perfect for projects, hobbies, or that obligatory collection of things you swear you’re going to use someday. Add in the extended one-car garage, covered front porch, convenient Haysville location, and a list of updates that means you can spend your weekends actually enjoying your home instead of making a never-ending renovation checklist.</p>
     </div>
@@ -205,8 +207,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -216,13 +218,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="347 4th St, Haysville, KS, 67060">
-        <input type="hidden" name="message" value="I am interested in the property at 347 4th St, Haysville, KS, 67060 (MLS# 679685). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 347 4th St, Haysville, KS, 67060 (MLS# 679685). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
@@ -321,17 +323,17 @@
           <span class="listing-card-more">View Details &rarr;</span>
         </div>
       </a>
-      <a href="/listings/residential/118-95th-terrace-leon-ks-677724/" class="listing-card">
-        <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-677724_6703840748336612397.jpg" alt="118 95th Terrace, Leon, KS, 67074" loading="lazy">
+      <a href="/listings/residential/1325-prairie-view-rd-el-dorado-ks-680139/" class="listing-card">
+        <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-680139_24a0a16c504718ca356b8b82b7534c83ae24a98b6b5e52e1df5527690397fdbb.jpg" alt="1325 Prairie View Rd, El Dorado, KS, 67042" loading="lazy">
         <div class="listing-card-body">
           <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
             <span class="listing-card-badge" style="background:#22c55e;">Active</span>
             <span class="listing-card-badge" style="background:#0ea5e9;">Residential</span>
           </div>
-          <p class="listing-card-address">118 95th Terrace</p>
-          <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Leon, KS</p>
-          <p class="listing-card-meta"><i class="fas fa-ruler-combined"></i>2 Bd · 3 Ba · 2,838 sq ft</p>
-          <p class="listing-card-price">$490,000</p>
+          <p class="listing-card-address">1325 Prairie View Rd</p>
+          <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>El Dorado, KS</p>
+          <p class="listing-card-meta"><i class="fas fa-ruler-combined"></i>5 Bd · 3 Ba · 3,258 sq ft</p>
+          <p class="listing-card-price">$565,000</p>
           <span class="listing-card-more">View Details &rarr;</span>
         </div>
       </a>

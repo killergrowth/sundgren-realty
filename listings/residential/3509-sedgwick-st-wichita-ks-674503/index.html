@@ -11,14 +11,14 @@
   <link rel="apple-touch-icon" href="/images/favicon.png">
   <meta property="og:title" content="3509 Sedgwick St, Wichita, KS, 67203 – 3BD/2BA | Sundgren Realty &amp; Auction">
   <meta property="og:description" content="Residential property at 3509 Sedgwick St, Wichita, KS, 67203. NEW PRICE! Welcome home to this beautifully crafted 2025 new construction offering modern sty...">
-  <meta property="og:image" content="https://sundgrenrealty.com/images/og-image.jpg">
+  <meta property="og:image" content="https://cdn.repliers.io/southcentralkansas/IMG-674503_6709789558576884295.jpg">
   <meta property="og:url" content="https://sundgrenrealty.com/listings/residential/3509-sedgwick-st-wichita-ks-674503/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Sundgren Realty &amp; Auction">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="3509 Sedgwick St, Wichita, KS, 67203 – 3BD/2BA | Sundgren Realty &amp; Auction">
   <meta name="twitter:description" content="Residential property at 3509 Sedgwick St, Wichita, KS, 67203. NEW PRICE! Welcome home to this beautifully crafted 2025 new construction offering modern sty...">
-  <meta name="twitter:image" content="https://sundgrenrealty.com/images/og-image.jpg">
+  <meta name="twitter:image" content="https://cdn.repliers.io/southcentralkansas/IMG-674503_6709789558576884295.jpg">
   <meta name="robots" content="noindex, nofollow">
   <!-- SCHEMA:BreadcrumbList -->
   <!-- SCHEMA:WebPage -->
@@ -56,7 +56,63 @@
       <!-- Left Column -->
       <div class="auction-main">
 
+        <div class="sg-photo-pill-wrap">
+  <section class="photo-gallery-section" style="margin-bottom:24px;">
+    <div class="sg-mosaic">
+      <button class="sg-mosaic-hero" data-idx="0" aria-label="View photo 1" type="button">
+        <img src="https://cdn.repliers.io/southcentralkansas/IMG-674503_6709789558576884295.jpg" alt="Primary property photo" loading="eager">
+      </button>
+      <div class="sg-mosaic-strip">
+      <button class="sg-mosaic-thumb" data-idx="1" aria-label="View photo 2" type="button">
+        <img src="https://cdn.repliers.io/southcentralkansas/IMG-674503_6707542344158232860.jpg" alt="Property photo 2" loading="lazy">
         
+      </button>
+      <button class="sg-mosaic-thumb" data-idx="2" aria-label="View photo 3" type="button">
+        <img src="https://cdn.repliers.io/southcentralkansas/IMG-674503_6708531806752992377.jpg" alt="Property photo 3" loading="lazy">
+        
+      </button>
+      <button class="sg-mosaic-thumb" data-idx="3" aria-label="View photo 4" type="button">
+        <img src="https://cdn.repliers.io/southcentralkansas/IMG-674503_6704520650054970173.jpg" alt="Property photo 4" loading="lazy">
+        <div class="sg-mosaic-more" aria-hidden="true">+14 more</div>
+      </button>
+      </div>
+    </div>
+    <div class="sg-gallery-bar">
+      <button class="sg-gallery-all-btn" id="sg-view-all" type="button">
+        <i class="fas fa-images"></i> View all 18 photos
+      </button>
+    </div>
+  </section>
+
+  <div id="sg-lightbox" role="dialog" aria-modal="true" aria-label="Photo gallery">
+    <button id="sg-lightbox-close" aria-label="Close">&times;</button>
+    <button id="sg-lightbox-prev" aria-label="Previous">&#8249;</button>
+    <img id="sg-lightbox-img" src="" alt="Property photo">
+    <button id="sg-lightbox-next" aria-label="Next">&#8250;</button>
+    <span id="sg-lightbox-counter"></span>
+  </div>
+
+  <script>
+  (function(){
+    var srcs = ["https://cdn.repliers.io/southcentralkansas/IMG-674503_6709789558576884295.jpg","https://cdn.repliers.io/southcentralkansas/IMG-674503_6707542344158232860.jpg","https://cdn.repliers.io/southcentralkansas/IMG-674503_6708531806752992377.jpg","https://cdn.repliers.io/southcentralkansas/IMG-674503_6704520650054970173.jpg","https://cdn.repliers.io/southcentralkansas/IMG-674503_6709091485350701320.jpg","https://cdn.repliers.io/southcentralkansas/IMG-674503_6704658134973025274.jpg","https://cdn.repliers.io/southcentralkansas/IMG-674503_6701374521979878722.jpg","https://cdn.repliers.io/southcentralkansas/IMG-674503_6707170651163284943.jpg","https://cdn.repliers.io/southcentralkansas/IMG-674503_6700050259636987129.jpg","https://cdn.repliers.io/southcentralkansas/IMG-674503_6708767783264464801.jpg","https://cdn.repliers.io/southcentralkansas/IMG-674503_6704992777021105655.jpg","https://cdn.repliers.io/southcentralkansas/IMG-674503_6700629859610900016.jpg","https://cdn.repliers.io/southcentralkansas/IMG-674503_6706271502579230299.jpg","https://cdn.repliers.io/southcentralkansas/IMG-674503_6701027590118326670.jpg","https://cdn.repliers.io/southcentralkansas/IMG-674503_6701950654445005832.jpg","https://cdn.repliers.io/southcentralkansas/IMG-674503_6701496971178850588.jpg","https://cdn.repliers.io/southcentralkansas/IMG-674503_6705904138200574791.jpg","https://cdn.repliers.io/southcentralkansas/IMG-674503_6707512335334211832.jpg"];
+    var lb = document.getElementById('sg-lightbox');
+    var lbImg = document.getElementById('sg-lightbox-img');
+    var lbCtr = document.getElementById('sg-lightbox-counter');
+    var cur = 0;
+    function open(i){ cur=i; lbImg.src=srcs[i]; lbCtr.textContent=(i+1)+' / '+srcs.length; lb.classList.add('active'); document.body.style.overflow='hidden'; }
+    function close(){ lb.classList.remove('active'); document.body.style.overflow=''; }
+    document.querySelectorAll('.sg-mosaic-hero, .sg-mosaic-thumb').forEach(function(btn){
+      btn.addEventListener('click',function(){ open(parseInt(btn.dataset.idx,10)); });
+    });
+    var viewAll = document.getElementById('sg-view-all');
+    if (viewAll) viewAll.addEventListener('click', function(){ open(0); });
+    document.getElementById('sg-lightbox-close').addEventListener('click',close);
+    document.getElementById('sg-lightbox-prev').addEventListener('click',function(){ open((cur-1+srcs.length)%srcs.length); });
+    document.getElementById('sg-lightbox-next').addEventListener('click',function(){ open((cur+1)%srcs.length); });
+    lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
+    document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
+  })();
+  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -91,7 +147,7 @@
     </div>
   </div>
 
-        <div style="margin-top:0;">
+        <div style="margin-top:32px;">
           <div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>NEW PRICE! Welcome home to this beautifully crafted 2025 new construction offering modern style, quality finishes, and low-maintenance living. This 3-bedroom, 2-bath home features an open-concept layout, granite countertops, a spacious kitchen island, luxury vinyl flooring, and a bright, inviting living space perfect for everyday living and entertaining. The private primary suite provides a comfortable retreat, while the additional bedrooms offer flexibility for family, guests, or a home office. Unlike many new builds, this property includes sod and a sprinkler system, adding immediate value and curb appeal. Conveniently located less than 5 minutes from I-235 and just minutes from Valley Center, you’ll enjoy easy access to shopping, dining, schools, and commuting routes. Move-in ready and priced to sell—schedule your private showing today!</p>
@@ -261,17 +317,17 @@
           <span class="listing-card-more">View Details &rarr;</span>
         </div>
       </a>
-      <a href="/listings/residential/118-95th-terrace-leon-ks-677724/" class="listing-card">
-        <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-677724_6703840748336612397.jpg" alt="118 95th Terrace, Leon, KS, 67074" loading="lazy">
+      <a href="/listings/residential/1325-prairie-view-rd-el-dorado-ks-680139/" class="listing-card">
+        <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-680139_24a0a16c504718ca356b8b82b7534c83ae24a98b6b5e52e1df5527690397fdbb.jpg" alt="1325 Prairie View Rd, El Dorado, KS, 67042" loading="lazy">
         <div class="listing-card-body">
           <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
             <span class="listing-card-badge" style="background:#22c55e;">Active</span>
             <span class="listing-card-badge" style="background:#0ea5e9;">Residential</span>
           </div>
-          <p class="listing-card-address">118 95th Terrace</p>
-          <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Leon, KS</p>
-          <p class="listing-card-meta"><i class="fas fa-ruler-combined"></i>2 Bd · 3 Ba · 2,838 sq ft</p>
-          <p class="listing-card-price">$490,000</p>
+          <p class="listing-card-address">1325 Prairie View Rd</p>
+          <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>El Dorado, KS</p>
+          <p class="listing-card-meta"><i class="fas fa-ruler-combined"></i>5 Bd · 3 Ba · 3,258 sq ft</p>
+          <p class="listing-card-price">$565,000</p>
           <span class="listing-card-more">View Details &rarr;</span>
         </div>
       </a>
