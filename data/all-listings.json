@@ -24206,7 +24206,7 @@
     "state": "KS",
     "lat": 37.569386,
     "lng": -97.346939,
-    "price": 399900,
+    "price": 389900,
     "beds": 4,
     "baths": 3,
     "sqft": "2956",
@@ -24218,7 +24218,8 @@
     "isSundgren": false,
     "agentName": "Glenda Flores",
     "agentPhone": "3165191738",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 399900
   },
   {
     "slug": "244-246-gowen-st-goddard-ks-675074",
@@ -66122,7 +66123,7 @@
     "state": "KS",
     "lat": 37.708465,
     "lng": -97.445527,
-    "price": 215000,
+    "price": 204900,
     "beds": 3,
     "baths": 3,
     "sqft": "1612",
@@ -66134,7 +66135,8 @@
     "isSundgren": false,
     "agentName": "Judith H Carty",
     "agentPhone": "3163059456",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 215000
   },
   {
     "slug": "339-briarwood-st-norwich-ks-672836",
@@ -82085,7 +82087,7 @@
     "state": "KS",
     "lat": 37.66121,
     "lng": -97.293757,
-    "price": 165000,
+    "price": 160000,
     "beds": 2,
     "baths": 2,
     "sqft": "1356",
@@ -82097,7 +82099,8 @@
     "isSundgren": false,
     "agentName": "Leslie Canady",
     "agentPhone": "3168717573",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 165000
   },
   {
     "slug": "1838-mccomas-ave-wichita-ks-675490",
