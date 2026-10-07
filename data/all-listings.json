@@ -5509,7 +5509,7 @@
     "state": "KS",
     "lat": 37.51601,
     "lng": -97.102216,
-    "price": 870000,
+    "price": 865000,
     "beds": 4,
     "baths": 3,
     "sqft": "2922",
@@ -5521,7 +5521,8 @@
     "isSundgren": false,
     "agentName": "Kate Mix",
     "agentPhone": "3166198485",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 870000
   },
   {
     "slug": "11385-50th-st-towanda-ks-670907",
@@ -10534,7 +10535,7 @@
     "state": "KS",
     "lat": 37.731362,
     "lng": -97.227412,
-    "price": 579900,
+    "price": 575000,
     "beds": 4,
     "baths": 3,
     "sqft": "3505",
@@ -10547,7 +10548,7 @@
     "agentName": "Amelia H Sumerell",
     "agentPhone": "3163936161",
     "agentEmail": "",
-    "previousPrice": 590000
+    "previousPrice": 579900
   },
   {
     "slug": "1501-castle-rock-wichita-ks-675796",
@@ -13525,7 +13526,7 @@
     "state": "KS",
     "lat": 37.661375,
     "lng": -97.117502,
-    "price": 540000,
+    "price": 539500,
     "beds": 4,
     "baths": 4,
     "sqft": "3794",
@@ -13537,7 +13538,8 @@
     "isSundgren": false,
     "agentName": "Jarod C Gillenwater",
     "agentPhone": "3165501970",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 540000
   },
   {
     "slug": "4462-grey-meadows-maize-ks-664679",
@@ -21370,7 +21372,7 @@
     "state": "KS",
     "lat": 37.729741,
     "lng": -97.138848,
-    "price": 418000,
+    "price": 398000,
     "beds": 4,
     "baths": 3,
     "sqft": "2719",
@@ -21383,7 +21385,7 @@
     "agentName": "Caleb Claussen",
     "agentPhone": "3162591995",
     "agentEmail": "",
-    "previousPrice": 428000
+    "previousPrice": 418000
   },
   {
     "slug": "9014-33rd-cir-s-cir-wichita-ks-661819",
@@ -80898,7 +80900,7 @@
     "state": "KS",
     "lat": 37.721966,
     "lng": -97.303835,
-    "price": 168000,
+    "price": 157000,
     "beds": 2,
     "baths": 1,
     "sqft": "1628",
@@ -80911,7 +80913,7 @@
     "agentName": "Shane Pullman",
     "agentPhone": "3166407375",
     "agentEmail": "",
-    "previousPrice": 169500
+    "previousPrice": 168000
   },
   {
     "slug": "14311-60-st-norwich-ks-672323",
@@ -81598,7 +81600,7 @@
     "state": "KS",
     "lat": 38.00032,
     "lng": -97.516261,
-    "price": 160000,
+    "price": 155000,
     "beds": 4,
     "baths": 2,
     "sqft": "1722",
@@ -81611,7 +81613,7 @@
     "agentName": "Jorie Thompson",
     "agentPhone": "3165301719",
     "agentEmail": "",
-    "previousPrice": 165000
+    "previousPrice": 160000
   },
   {
     "slug": "800-2nd-ave-el-dorado-ks-676610",
@@ -82845,7 +82847,7 @@
     "state": "KS",
     "lat": 37.65917,
     "lng": -97.273534,
-    "price": 160000,
+    "price": 155000,
     "beds": 2,
     "baths": 2,
     "sqft": "1325",
@@ -82857,7 +82859,8 @@
     "isSundgren": false,
     "agentName": "Anita Ealey",
     "agentPhone": "3162142303",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 160000
   },
   {
     "slug": "1113-main-st-newton-ks-677961",
@@ -99553,7 +99556,7 @@
     "state": "KS",
     "lat": 37.615385,
     "lng": -97.295161,
-    "price": 105000,
+    "price": 103000,
     "beds": 4,
     "baths": 1,
     "sqft": "1008",
@@ -99565,7 +99568,8 @@
     "isSundgren": false,
     "agentName": "Josh Roy",
     "agentPhone": "3166656799",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 105000
   },
   {
     "slug": "422-clayton-ave-wichita-ks-676655",
@@ -107336,7 +107340,7 @@
     "state": "KS",
     "lat": 39.03405,
     "lng": -97.595803,
-    "price": 69900,
+    "price": 59900,
     "beds": 3,
     "baths": 2,
     "sqft": "1566",
@@ -107348,7 +107352,8 @@
     "isSundgren": false,
     "agentName": "Linda Sauer",
     "agentPhone": "7855775866",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 69900
   },
   {
     "slug": "1201-front-st-salina-ks-675572",
@@ -113860,7 +113865,7 @@
     "state": "KS",
     "lat": 38.26739889,
     "lng": -98.40630195,
-    "price": 39900,
+    "price": 34900,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -113873,7 +113878,7 @@
     "agentName": "Jeffrey Richardson",
     "agentPhone": "3167776620",
     "agentEmail": "",
-    "previousPrice": 44900
+    "previousPrice": 39900
   },
   {
     "slug": "lot-16-block-b-sterling-east-add-derby-ks-663140",
