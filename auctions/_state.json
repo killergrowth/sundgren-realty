@@ -1,5 +1,5 @@
 {
-  "lastFetch": "2026-10-08T00:44:51.073Z",
+  "lastFetch": "2026-10-08T10:08:08.274Z",
   "auctions": {
     "24096": {
       "slug": "test-auction-24096",
@@ -2861,8 +2861,7 @@
       "slug": "535-acres-of-native-pasture-and-a-large-pond-near-el-dorado-168676",
       "status": "complete",
       "name": "53.5 Acres of Native Pasture and a Large Pond near El Dorado Lake",
-      "generated": "2026-08-30T04:04:17.220Z",
-      "updated": "2026-10-08T00:44:52.061Z"
+      "generated": "2026-08-30T04:04:17.220Z"
     },
     "168678": {
       "slug": "376-acres-3-tracts-tillable-pasture-oil-income-hunting-cowle-168678",
