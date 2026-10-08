@@ -22093,7 +22093,7 @@
     "state": "KS",
     "lat": 37.692157,
     "lng": -97.240345,
-    "price": 420000,
+    "price": 410000,
     "beds": 5,
     "baths": 3,
     "sqft": "3242",
@@ -22106,7 +22106,7 @@
     "agentName": "Jenny Grandfield",
     "agentPhone": "3166445102",
     "agentEmail": "",
-    "previousPrice": 422500
+    "previousPrice": 420000
   },
   {
     "slug": "52865288-cypress-st-bel-aire-ks-666605",
@@ -27401,7 +27401,7 @@
     "state": "KS",
     "lat": 38.838957,
     "lng": -97.569992,
-    "price": 365000,
+    "price": 350000,
     "beds": 3,
     "baths": 4,
     "sqft": "2946",
@@ -27414,7 +27414,7 @@
     "agentName": "Jera Richardson",
     "agentPhone": "7855772021",
     "agentEmail": "",
-    "previousPrice": 380000
+    "previousPrice": 365000
   },
   {
     "slug": "10567-sondra-ct-maize-ks-675934",
@@ -29014,7 +29014,7 @@
     "state": "KS",
     "lat": 37.71040199,
     "lng": -97.142295,
-    "price": 375000,
+    "price": 365000,
     "beds": 5,
     "baths": 3,
     "sqft": "2701",
@@ -29026,7 +29026,8 @@
     "isSundgren": false,
     "agentName": "April Richey",
     "agentPhone": "3166489021",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 375000
   },
   {
     "slug": "17371739-limuel-st-wichita-ks-671700",
@@ -43169,7 +43170,7 @@
     "state": "KS",
     "lat": 37.765394,
     "lng": -97.260853,
-    "price": 289000,
+    "price": 283000,
     "beds": 4,
     "baths": 3,
     "sqft": "2455",
@@ -43182,7 +43183,7 @@
     "agentName": "Lisa Soltesz",
     "agentPhone": "6233881135",
     "agentEmail": "",
-    "previousPrice": 295000
+    "previousPrice": 289000
   },
   {
     "slug": "419-myers-ct-mulvane-ks-678228",
@@ -44422,7 +44423,7 @@
     "state": "KS",
     "lat": 37.76897,
     "lng": -97.461101,
-    "price": 294900,
+    "price": 285000,
     "beds": 5,
     "baths": 3,
     "sqft": "2282",
@@ -44435,7 +44436,7 @@
     "agentName": "Denise Lewis",
     "agentPhone": "3163714081",
     "agentEmail": "",
-    "previousPrice": 299000
+    "previousPrice": 294900
   },
   {
     "slug": "1930-cardington-st-wichita-ks-665888",
@@ -55188,7 +55189,7 @@
     "state": "KS",
     "lat": 37.603233,
     "lng": -97.34988,
-    "price": 255000,
+    "price": 250000,
     "beds": 4,
     "baths": 2,
     "sqft": "1677",
@@ -55201,7 +55202,7 @@
     "agentName": "Kendra Carothers",
     "agentPhone": "3163029522",
     "agentEmail": "",
-    "previousPrice": 259900
+    "previousPrice": 255000
   },
   {
     "slug": "10150-turkey-creek-rd-leon-ks-676206",
@@ -62861,7 +62862,7 @@
     "state": "KS",
     "lat": 37.685704,
     "lng": -97.30148696,
-    "price": 229000,
+    "price": 209000,
     "beds": 5,
     "baths": 2,
     "sqft": "2016",
@@ -62873,7 +62874,8 @@
     "isSundgren": false,
     "agentName": "Robert Mitelhaus",
     "agentPhone": "6613737443",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 229000
   },
   {
     "slug": "1317-erie-ave-wichita-ks-676786",
@@ -67171,7 +67173,7 @@
     "state": "KS",
     "lat": 37.684185,
     "lng": -97.367992,
-    "price": 205000,
+    "price": 200000,
     "beds": 5,
     "baths": 2,
     "sqft": "2734",
@@ -67184,7 +67186,7 @@
     "agentName": "Tyus Becker",
     "agentPhone": "7855120066",
     "agentEmail": "",
-    "previousPrice": 210000
+    "previousPrice": 205000
   },
   {
     "slug": "504-stuart-st-south-haven-ks-677502",
@@ -69201,7 +69203,7 @@
     "state": "KS",
     "lat": 37.685907,
     "lng": -97.297044,
-    "price": 175000,
+    "price": 170000,
     "beds": 2,
     "baths": 2,
     "sqft": "1309",
@@ -69214,7 +69216,7 @@
     "agentName": "Carol Cloud",
     "agentPhone": "3167379790",
     "agentEmail": "",
-    "previousPrice": 200000
+    "previousPrice": 175000
   },
   {
     "slug": "3006-westridge-dr-wichita-ks-668043",
@@ -83195,7 +83197,7 @@
     "state": "KS",
     "lat": 38.827395,
     "lng": -97.617273,
-    "price": 160000,
+    "price": 145000,
     "beds": 2,
     "baths": 2,
     "sqft": "1237",
@@ -83207,7 +83209,8 @@
     "isSundgren": false,
     "agentName": "Chris Keene",
     "agentPhone": "7856430038",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 160000
   },
   {
     "slug": "606-kansas-ave-anthony-ks-672382",
@@ -105951,7 +105954,7 @@
     "state": "KS",
     "lat": 37.163442,
     "lng": -98.027357,
-    "price": 75000,
+    "price": 65000,
     "beds": 3,
     "baths": 1,
     "sqft": "1762",
@@ -105963,7 +105966,8 @@
     "isSundgren": false,
     "agentName": "Megan Inslee",
     "agentPhone": "6202432938",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 75000
   },
   {
     "slug": "317-wagner-street-dexter-ks-674671",
@@ -128824,7 +128828,7 @@
     "state": "KS",
     "lat": 37.640821,
     "lng": -97.29072602,
-    "price": 12000,
+    "price": 10000,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -128836,7 +128840,8 @@
     "isSundgren": false,
     "agentName": "Tina Bell",
     "agentPhone": "3162090358",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 12000
   },
   {
     "slug": "1669-bryce-dr-milton-ks-670249",
