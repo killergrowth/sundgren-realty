@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Tucked away near Central and Rock, The Chaumont feels like a hidden gem in the heart of east Wichita. With its distinctive French Country-inspired architecture, mature landscaping and beautiful courtyard setting, the community offers a sense of character and charm you might not expect to find just moments from some of Wichita&#39;s most convenient shopping, dining and everyday amenities. Welcome to #23, a rare opportunity for spacious, easy one-level living within this established condominium community! Offering approximately 1,802 sq. ft., this 3-bedroom, 3-bath condo occupies the entire main floor and features zero-entry access with no steps. Even more unusual within The Chaumont, #23 includes a connected private garage with direct access to the home, plus an additional covered parking space and private basement storage. Step inside to a welcoming tiled foyer with a generous coat closet and an exceptionally spacious floor plan. The large living room is anchored by a cozy fireplace, while the formal dining area offers plenty of room for everyday meals, entertaining and holiday gatherings. The kitchen provides abundant storage with two pantries—including convenient pull-out shelving—and all appliances remain. The sellers also added LVP flooring in the kitchen and laundry room. The home&#39;s thoughtful layout includes three bedrooms, each with its own ensuite bathroom, providing wonderful privacy and flexibility for owners, family and guests. The spacious primary suite features large windows for abundant natural light, double closets and a private bath. Another ensuite bath has been updated with a fresh, modern look and walk-in shower. Additional conveniences include generous hallway linen storage, a built-in ironing board, bathroom timers controlling the light, heater and fan, and two water heaters. Step outside to a private patio overlooking one of The Chaumont&#39;s beautifully maintained courtyards. The sellers expanded the concrete to create additional outdoor living space, while mature landscaping, sitting areas and walking paths add to the community&#39;s tucked-away atmosphere. And while The Chaumont may feel quietly removed from the hustle and bustle, its Central and Rock location is anything but remote. Groceries, coffee, restaurants, shopping and everyday necessities are close at hand, with quick access to the Rock Road corridor, Towne East and Kellogg. With its distinctive setting, unusually spacious single-level floor plan, three private bedroom suites, abundant storage, private outdoor space, connected garage and additional covered parking, #23 offers a combination that is difficult to duplicate!</p>
     </div>
@@ -191,9 +193,9 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
     (function(){
-      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.692444,-97.253982],15);
+      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.692453,-97.253993],15);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap contributors',maxZoom:19}).addTo(map);
-      L.marker([37.692444,-97.253982]).addTo(map).bindPopup('7077 Central #23 AVE, Wichita, KS 67206').openPopup();
+      L.marker([37.692453,-97.253993]).addTo(map).bindPopup('7077 Central #23 AVE, Wichita, KS 67206').openPopup();
     })();
     </script>
   </div>
@@ -201,8 +203,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -212,13 +214,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="7077 Central #23 AVE, Wichita, KS, 67206">
-        <input type="hidden" name="message" value="I am interested in the property at 7077 Central #23 AVE, Wichita, KS, 67206 (MLS# 677908). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 7077 Central #23 AVE, Wichita, KS, 67206 (MLS# 677908). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

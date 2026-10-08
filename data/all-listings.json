@@ -7751,7 +7751,7 @@
     "state": "KS",
     "lat": 37.816972,
     "lng": -96.862783,
-    "price": 724900,
+    "price": 699000,
     "beds": 5,
     "baths": 4,
     "sqft": "5775",
@@ -7763,7 +7763,8 @@
     "isSundgren": false,
     "agentName": "Kimmy Ostrom",
     "agentPhone": "3166656477",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 724900
   },
   {
     "slug": "00000-80th-rd-sylvan-grove-ks-674048",
@@ -25226,7 +25227,7 @@
     "state": "KS",
     "lat": 38.016789,
     "lng": -97.329802,
-    "price": 385000,
+    "price": 375000,
     "beds": 5,
     "baths": 3,
     "sqft": "3225",
@@ -25239,7 +25240,7 @@
     "agentName": "Alex Carbajal",
     "agentPhone": "3162889142",
     "agentEmail": "",
-    "previousPrice": 395000
+    "previousPrice": 385000
   },
   {
     "slug": "922-karla-ct-haysville-ks-676769",
@@ -30611,7 +30612,7 @@
     "state": "KS",
     "lat": 37.58789187,
     "lng": -97.26745763,
-    "price": 369513,
+    "price": 369335,
     "beds": 5,
     "baths": 3,
     "sqft": "2565",
@@ -30623,7 +30624,8 @@
     "isSundgren": false,
     "agentName": "Shelly S Voss",
     "agentPhone": "3162000701",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 369513
   },
   {
     "slug": "38403842-blue-lake-street-wichita-ks-677413",
@@ -42169,7 +42171,7 @@
     "state": "KS",
     "lat": 37.69372099,
     "lng": -97.14650196,
-    "price": 310000,
+    "price": 280000,
     "beds": 4,
     "baths": 4,
     "sqft": "2097",
@@ -42181,7 +42183,8 @@
     "isSundgren": false,
     "agentName": "Josh Witte",
     "agentPhone": "3164913938",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 310000
   },
   {
     "slug": "351-shefford-st-wichita-ks-676202",
@@ -43907,7 +43910,7 @@
     "state": "KS",
     "lat": 37.709763,
     "lng": -97.461328,
-    "price": 289900,
+    "price": 279900,
     "beds": 3,
     "baths": 3,
     "sqft": "3283",
@@ -43920,7 +43923,7 @@
     "agentName": "Danielle Brittain",
     "agentPhone": "3166553718",
     "agentEmail": "",
-    "previousPrice": 299900
+    "previousPrice": 289900
   },
   {
     "slug": "12047-arvada-blvd-maize-ks-676998",
@@ -50608,7 +50611,7 @@
     "state": "KS",
     "lat": 37.655965,
     "lng": -97.474984,
-    "price": 264900,
+    "price": 260000,
     "beds": 4,
     "baths": 3,
     "sqft": "2220",
@@ -50621,7 +50624,7 @@
     "agentName": "Margaret Metzger",
     "agentPhone": "3163719816",
     "agentEmail": "",
-    "previousPrice": 269900
+    "previousPrice": 264900
   },
   {
     "slug": "2634-viney-ave-murdock-ks-677531",
@@ -56503,7 +56506,7 @@
     "state": "KS",
     "lat": 37.689086,
     "lng": -97.271039,
-    "price": 240000,
+    "price": 224900,
     "beds": 3,
     "baths": 2,
     "sqft": "2006",
@@ -56516,7 +56519,7 @@
     "agentName": "Leslie Wessel",
     "agentPhone": "3164614375",
     "agentEmail": "",
-    "previousPrice": 250000
+    "previousPrice": 240000
   },
   {
     "slug": "10233-binter-ave-wichita-ks-678058",
@@ -82582,7 +82585,7 @@
     "state": "KS",
     "lat": 37.653354,
     "lng": -97.369384,
-    "price": 155900,
+    "price": 155000,
     "beds": 3,
     "baths": 1,
     "sqft": "928",
@@ -82595,7 +82598,7 @@
     "agentName": "Jenny Grandfield",
     "agentPhone": "3166445102",
     "agentEmail": "",
-    "previousPrice": 159900
+    "previousPrice": 155900
   },
   {
     "slug": "7015-newell-st-wichita-ks-675760",
@@ -84390,7 +84393,7 @@
     "state": "KS",
     "lat": 37.238226,
     "lng": -96.98664499,
-    "price": 159000,
+    "price": 155000,
     "beds": 3,
     "baths": 2,
     "sqft": "1441",
@@ -84402,7 +84405,8 @@
     "isSundgren": false,
     "agentName": "Alia S Tate",
     "agentPhone": "6202626355",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 159000
   },
   {
     "slug": "1838-green-st-wichita-ks-675460",
@@ -85110,7 +85114,7 @@
     "state": "KS",
     "lat": 37.090882,
     "lng": -97.001784,
-    "price": 155000,
+    "price": 150000,
     "beds": 3,
     "baths": 2,
     "sqft": "1404",
@@ -85122,7 +85126,8 @@
     "isSundgren": false,
     "agentName": "Elizabeth Gaston",
     "agentPhone": "6209687064",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 155000
   },
   {
     "slug": "8201-harry-st-wichita-ks-673947",
@@ -124027,7 +124032,7 @@
     "state": "KS",
     "lat": 37.666516,
     "lng": -97.329134,
-    "price": 27500,
+    "price": 25750,
     "beds": null,
     "baths": null,
     "sqft": "N/A or Lease",
@@ -124039,7 +124044,8 @@
     "isSundgren": false,
     "agentName": "Daniel Gutierrez",
     "agentPhone": "6209371488",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 27500
   },
   {
     "slug": "1320-northridge-st-valley-center-ks-676939",
@@ -132015,7 +132021,7 @@
     "state": "KS",
     "lat": 37.648015,
     "lng": -98.729327,
-    "price": 0,
+    "price": 105000,
     "beds": 3,
     "baths": 3,
     "sqft": "2550",
