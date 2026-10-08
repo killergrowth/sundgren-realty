@@ -19055,7 +19055,7 @@
     "state": "KS",
     "lat": 37.669374,
     "lng": -97.207418,
-    "price": 440000,
+    "price": 400000,
     "beds": 4,
     "baths": 4,
     "sqft": "4755",
@@ -19068,7 +19068,7 @@
     "agentName": "Lucy Ferrer-Gonzalez",
     "agentPhone": "3169789777",
     "agentEmail": "",
-    "previousPrice": 450000
+    "previousPrice": 440000
   },
   {
     "slug": "242-244-mendocino-st-goddard-ks-674756",
@@ -43355,7 +43355,7 @@
     "state": "KS",
     "lat": 37.613629,
     "lng": -97.37645,
-    "price": 300000,
+    "price": 290000,
     "beds": 5,
     "baths": 3,
     "sqft": "2624",
@@ -43367,7 +43367,8 @@
     "isSundgren": false,
     "agentName": "Charles J Fairleigh",
     "agentPhone": "3166812818",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 300000
   },
   {
     "slug": "621-star-st-el-dorado-ks-676285",
@@ -61010,7 +61011,7 @@
     "state": "KS",
     "lat": 37.67347,
     "lng": -95.450545,
-    "price": 234900,
+    "price": 229900,
     "beds": 3,
     "baths": 3,
     "sqft": "3551",
@@ -61022,7 +61023,8 @@
     "isSundgren": false,
     "agentName": "Judith H Carty",
     "agentPhone": "3163059456",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 234900
   },
   {
     "slug": "5022-vassar-ave-wichita-ks-677953",

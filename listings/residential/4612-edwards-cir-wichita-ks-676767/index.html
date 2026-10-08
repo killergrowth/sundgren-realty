@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Welcome Home to 4612 S. Edwards Cir, where brand-new construction meets modern design, quality craftsmanship, and everyday comfort. Situated on a quiet cul-de-sac in south Wichita, this thoughtfully designed home offers the perfect combination of style, functionality, and peaceful surroundings. Backing to a tree-lined greenspace with no immediate rear neighbors, you&#39;ll enjoy added privacy and a beautiful natural backdrop just beyond your backyard. Step inside to an inviting open-concept floor plan filled with natural light, luxury vinyl plank flooring, recessed LED lighting, contemporary ceiling fans, and a sleek electric fireplace that creates a warm focal point in the spacious living area. Designed for both everyday living and entertaining, the seamless flow between the living room, dining area, and kitchen makes gathering with family and friends effortless. The beautifully appointed kitchen showcases quartz countertops, white shaker cabinetry, matte black hardware and fixtures, stainless steel appliances, a spacious center island with seating, abundant cabinet and counter space, and a walk-in pantry that provides exceptional storage. Whether preparing weeknight meals or hosting holiday gatherings, this kitchen is designed to impress. The private primary suite offers a relaxing retreat with generous space, large windows, and a stylish ensuite bathroom featuring a modern vanity, illuminated mirror, contemporary black fixtures, and ample closet space. Additional bedrooms are well-sized and provide flexibility for family, guests, a home office, playroom, or hobby space. The secondary bathroom continues the home&#39;s clean, modern aesthetic with quality finishes and timeless design. Step outside through the sliding glass doors to the rear patio, the perfect place to enjoy morning coffee, outdoor dining, or evenings overlooking the peaceful tree-lined backdrop. The covered front porch enhances the home&#39;s curb appeal, while the attached two-car garage and oversized concrete driveway provide convenience, additional storage, and ample parking. Conveniently located near shopping, dining, parks, schools, and major commuter routes, this move-in ready home offers the best of new construction with modern finishes, energy-efficient features, and a functional layout designed for today&#39;s lifestyle. If you&#39;ve been searching for a beautifully finished home with an open floor plan, premium finishes, and a desirable south Wichita location, 4612 S. Edwards Cir is ready to welcome you home.</p>
     </div>
@@ -201,8 +203,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -212,13 +214,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="4612 Edwards Cir, Wichita, KS, 67217">
-        <input type="hidden" name="message" value="I am interested in the property at 4612 Edwards Cir, Wichita, KS, 67217 (MLS# 676767). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 4612 Edwards Cir, Wichita, KS, 67217 (MLS# 676767). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
