@@ -1,5 +1,5 @@
 {
-  "lastFetch": "2026-10-08T18:32:23.590Z",
+  "lastFetch": "2026-10-09T01:01:13.651Z",
   "auctions": {
     "24096": {
       "slug": "test-auction-24096",
@@ -2910,6 +2910,12 @@
       "status": "pending",
       "name": "BentGrass Condo: 1770 Country Club Rd #9, El Dorado, KS 67042",
       "generated": "2026-10-01T04:35:25.600Z"
+    },
+    "171464": {
+      "slug": "594-acres-west-of-andale-in-sedgwick-county-kansas-selling-i-171464",
+      "status": "pending",
+      "name": "59.4+- Acres West of Andale in Sedgwick County, Kansas Selling in 2 Tracts",
+      "generated": "2026-10-09T01:01:15.260Z"
     }
   }
 }
