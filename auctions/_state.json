@@ -1,5 +1,5 @@
 {
-  "lastFetch": "2026-10-09T01:01:13.651Z",
+  "lastFetch": "2026-10-09T10:09:53.912Z",
   "auctions": {
     "24096": {
       "slug": "test-auction-24096",
@@ -2916,6 +2916,18 @@
       "status": "pending",
       "name": "59.4+- Acres West of Andale in Sedgwick County, Kansas Selling in 2 Tracts",
       "generated": "2026-10-09T01:01:15.260Z"
+    },
+    "171491": {
+      "slug": "2-tracts-160-acres-w-home-buildings-land-north-of-peabody-in-171491",
+      "status": "pending",
+      "name": "2 Tracts: 160+- Acres w/ Home, Buildings & Land North of Peabody in Marion County, Kansas",
+      "generated": "2026-10-09T10:09:55.452Z"
+    },
+    "171494": {
+      "slug": "2-80-acre-premium-hunting-land-tracts-cowley-county-kansas-171494",
+      "status": "pending",
+      "name": "(2) 80+- Acre Premium Hunting Land Tracts – Cowley County, Kansas",
+      "generated": "2026-10-09T10:09:55.454Z"
     }
   }
 }
