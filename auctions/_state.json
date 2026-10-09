@@ -1,5 +1,5 @@
 {
-  "lastFetch": "2026-10-09T10:09:53.912Z",
+  "lastFetch": "2026-10-09T18:03:48.763Z",
   "auctions": {
     "24096": {
       "slug": "test-auction-24096",
@@ -2877,15 +2877,17 @@
     },
     "169491": {
       "slug": "15592-nw-60th-whitewater-kansas-brick-home-on-96-acres-169491",
-      "status": "accepting_bids",
+      "status": "complete",
       "name": "15592 NW 60th, Whitewater, Kansas – Brick home on 9.6+/- acres",
-      "generated": "2026-09-10T15:57:23.520Z"
+      "generated": "2026-09-10T15:57:23.520Z",
+      "updated": "2026-10-09T18:03:50.166Z"
     },
     "169498": {
       "slug": "truck-stock-trailer-tractor-mower-tools-equipment-and-more-l-169498",
-      "status": "pending",
+      "status": "complete",
       "name": "Truck, Stock Trailer, Tractor, Mower, Tools, Equipment and More – LIVE AUCTION",
-      "generated": "2026-09-10T15:57:23.520Z"
+      "generated": "2026-09-10T15:57:23.520Z",
+      "updated": "2026-10-09T18:03:50.165Z"
     },
     "170217": {
       "slug": "guns-ammo-accessories-online-only-auction-170217",
@@ -2928,6 +2930,12 @@
       "status": "pending",
       "name": "(2) 80+- Acre Premium Hunting Land Tracts – Cowley County, Kansas",
       "generated": "2026-10-09T10:09:55.454Z"
+    },
+    "171497": {
+      "slug": "guns-ammo-oil-cans-antiques-171497",
+      "status": "accepting_bids",
+      "name": "Guns, Ammo, Oil Cans & Antiques",
+      "generated": "2026-10-09T18:03:50.147Z"
     }
   }
 }
