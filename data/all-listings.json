@@ -3175,7 +3175,7 @@
     "state": "KS",
     "lat": 37.717416,
     "lng": -97.238757,
-    "price": 1390000,
+    "price": 1290000,
     "beds": 5,
     "baths": 4,
     "sqft": "5759",
@@ -3187,7 +3187,8 @@
     "isSundgren": false,
     "agentName": "Kevin Pham",
     "agentPhone": "3164090444",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 1390000
   },
   {
     "slug": "1510-69th-st-n-st-park-city-ks-669296",
@@ -10585,7 +10586,7 @@
     "state": "KS",
     "lat": 37.693191,
     "lng": -97.183016,
-    "price": 600000,
+    "price": 585000,
     "beds": 5,
     "baths": 5,
     "sqft": "3891",
@@ -10597,7 +10598,8 @@
     "isSundgren": false,
     "agentName": "Judith H Carty",
     "agentPhone": "3163059456",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 600000
   },
   {
     "slug": "725-main-st-newton-ks-661869",
@@ -15309,7 +15311,7 @@
     "state": "KS",
     "lat": 38.024516,
     "lng": -97.952814,
-    "price": 419090,
+    "price": 419900,
     "beds": 3,
     "baths": 3,
     "sqft": "3790",
@@ -15321,8 +15323,7 @@
     "isSundgren": false,
     "agentName": "Sissy Koury",
     "agentPhone": "3164099955",
-    "agentEmail": "",
-    "previousPrice": 450000
+    "agentEmail": ""
   },
   {
     "slug": "4508-sunny-cir-wichita-ks-676344",
@@ -54058,7 +54059,7 @@
     "state": "KS",
     "lat": 37.717795,
     "lng": -97.316953,
-    "price": 264900,
+    "price": 254900,
     "beds": null,
     "baths": null,
     "sqft": "1988",
@@ -54070,7 +54071,8 @@
     "isSundgren": false,
     "agentName": "Randy Ambrose",
     "agentPhone": "3163123079",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 264900
   },
   {
     "slug": "1019-spruce-ave-wichita-ks-675850",
@@ -54081,7 +54083,7 @@
     "state": "KS",
     "lat": 37.701618,
     "lng": -97.309623,
-    "price": 264900,
+    "price": 254900,
     "beds": null,
     "baths": null,
     "sqft": "2100",
@@ -54093,7 +54095,8 @@
     "isSundgren": false,
     "agentName": "Randy Ambrose",
     "agentPhone": "3163123079",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 264900
   },
   {
     "slug": "1906-hydraulic-st-wichita-ks-675852",
@@ -54104,7 +54107,7 @@
     "state": "KS",
     "lat": 37.717658,
     "lng": -97.316952,
-    "price": 264900,
+    "price": 254900,
     "beds": null,
     "baths": null,
     "sqft": "1988",
@@ -54116,7 +54119,8 @@
     "isSundgren": false,
     "agentName": "Randy Ambrose",
     "agentPhone": "3163123079",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 264900
   },
   {
     "slug": "1021-sruce-st-wichita-ks-675851",
@@ -54127,7 +54131,7 @@
     "state": "KS",
     "lat": 37.701729,
     "lng": -97.309623,
-    "price": 264900,
+    "price": 254900,
     "beds": null,
     "baths": null,
     "sqft": "2100",
@@ -54139,7 +54143,8 @@
     "isSundgren": false,
     "agentName": "Randy Ambrose",
     "agentPhone": "3163123079",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 264900
   },
   {
     "slug": "3121-westwind-bay-st-wichita-ks-669900",
@@ -64467,7 +64472,7 @@
     "state": "KS",
     "lat": 38.879241,
     "lng": -97.505273,
-    "price": 220000,
+    "price": 210000,
     "beds": 3,
     "baths": 1,
     "sqft": "1100",
@@ -64479,7 +64484,8 @@
     "isSundgren": false,
     "agentName": "Tammy Shirack",
     "agentPhone": "7854932984",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 220000
   },
   {
     "slug": "211-brookside-pkwy-wichita-ks-677008",
@@ -77101,7 +77107,7 @@
     "state": "KS",
     "lat": 37.707425,
     "lng": -97.298153,
-    "price": 180000,
+    "price": 175000,
     "beds": 3,
     "baths": 2,
     "sqft": "1032",
@@ -77113,7 +77119,8 @@
     "isSundgren": false,
     "agentName": "Tammy Schmidt",
     "agentPhone": "3166172356",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 180000
   },
   {
     "slug": "920-52nd-st-wichita-ks-677874",
@@ -94143,7 +94150,7 @@
     "state": "KS",
     "lat": 37.362086,
     "lng": -96.30207,
-    "price": 129000,
+    "price": 99000,
     "beds": 3,
     "baths": 2,
     "sqft": "1802",
@@ -94155,7 +94162,8 @@
     "isSundgren": false,
     "agentName": "Darrel Moore",
     "agentPhone": "3166175763",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 129000
   },
   {
     "slug": "310-lincoln-st-marion-ks-675746",
@@ -95441,7 +95449,7 @@
     "state": "KS",
     "lat": 37.718364,
     "lng": -97.313015,
-    "price": 122400,
+    "price": 120000,
     "beds": 2,
     "baths": 1,
     "sqft": "825",
@@ -95454,7 +95462,7 @@
     "agentName": "Kim Cowans",
     "agentPhone": "3165197979",
     "agentEmail": "",
-    "previousPrice": 124900
+    "previousPrice": 122400
   },
   {
     "slug": "418-5th-st-concordia-ks-675749",
@@ -107072,7 +107080,7 @@
     "state": "KS",
     "lat": 37.809923,
     "lng": -96.853343,
-    "price": 60000,
+    "price": 45000,
     "beds": 3,
     "baths": 2,
     "sqft": "1730",
@@ -107085,7 +107093,7 @@
     "agentName": "Sarah Drechsler",
     "agentPhone": "3166409689",
     "agentEmail": "",
-    "previousPrice": 65000
+    "previousPrice": 60000
   },
   {
     "slug": "641-ellis-st-wichita-ks-670009",
@@ -124022,7 +124030,7 @@
     "state": "KS",
     "lat": 37.666516,
     "lng": -97.329134,
-    "price": 27500,
+    "price": 25750,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -124034,7 +124042,8 @@
     "isSundgren": false,
     "agentName": "Daniel Gutierrez",
     "agentPhone": "6209371488",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 27500
   },
   {
     "slug": "730-boston-st-wichita-ks-676074",

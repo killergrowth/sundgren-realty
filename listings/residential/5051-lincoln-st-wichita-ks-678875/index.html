@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Experience the perfect blend of comfort, convenience, and community at Parklane Towers, Wichita’s premier cooperative living residence! Located in the heart of East Wichita at Lincoln and Oliver, this spacious one-bedroom, one-bath home offers virtually maintenance-free living eight stories above the city. Step inside to discover a bright, inviting interior with brand-new carpet and fresh paint throughout. The spacious floor plan provides plenty of room to relax and entertain, while the private north-facing balcony offers incredible views stretching for miles across Wichita. With its elevated setting and sweeping views, this apartment delivers a penthouse-like feel without the penthouse maintenance. Parklane Towers is designed for those who appreciate quality, convenience, and a worry-free lifestyle. The beautifully maintained building and grounds offer secure access and an impressive collection of amenities. Two elevators provide access to every floor, and door attendants are available every day of the year. Each residence features an intercom connected to the front entrance, allowing Owners to approve guests before they are admitted into the building. Additional conveniences include ample guest parking, a guest apartment for overnight visitors, an event room for social gatherings, valet service, car-to-door delivery of groceries, luggage, and packages, locked lobby mailboxes, large-package delivery directly to residences, trash closets on every floor, and storage rooms when available. Residents also enjoy 24-hour access to the laundry room, exercise room, and lending library, along with electronic key-fob entry and outdoor surveillance cameras with shareholder access. As a cooperative, Parklane Towers offers a unique alternative to traditional condominium or apartment ownership. Rather than purchasing the individual real estate, buyers purchase shares in the corporation associated with their chosen residence, with ownership based on the home’s square footage. A monthly maintenance fee, similar to an HOA fee, helps cover building upkeep, utilities, and amenities, creating a truly low-maintenance lifestyle. New Owners are welcomed through an approval process conducted by the New Resident Committee and Board of Directors. And because Parklane Towers residents are Owners, there is a genuine sense of community throughout the building, where neighbors get to know one another and shareholders have a voice in their community. Whether you&#39;re ready to simplify your lifestyle, looking for a secure and convenient place to call home, or simply want to enjoy incredible views without the responsibilities that come with maintaining a traditional property, this eighth-floor Parklane Towers residence is a rare opportunity. Discover one of Wichita’s best-kept secrets in cooperative living and experience life at Parklane Towers!</p>
     </div>
@@ -191,9 +193,9 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
     (function(){
-      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.671281,-97.277521],15);
+      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.671252,-97.277519],15);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap contributors',maxZoom:19}).addTo(map);
-      L.marker([37.671281,-97.277521]).addTo(map).bindPopup('5051 Lincoln St, Wichita, KS 67218').openPopup();
+      L.marker([37.671252,-97.277519]).addTo(map).bindPopup('5051 Lincoln St, Wichita, KS 67218').openPopup();
     })();
     </script>
   </div>
@@ -201,8 +203,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -212,13 +214,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="5051 Lincoln St, Wichita, KS, 67218">
-        <input type="hidden" name="message" value="I am interested in the property at 5051 Lincoln St, Wichita, KS, 67218 (MLS# 678875). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 5051 Lincoln St, Wichita, KS, 67218 (MLS# 678875). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
