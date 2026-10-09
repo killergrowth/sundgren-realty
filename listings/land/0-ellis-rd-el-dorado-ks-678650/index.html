@@ -112,12 +112,14 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Land</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Land</span></div></div>
 
         
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Auction Date: WEDNESDAY OCTOBER 7, 2026 4:00 PM * Auction Location: EL DORADO CIVIC CENTER, 201 E CENTRAL AVE, EL DORADO KS * PROPERTY DESCRIPTION: 53.5 acres of top quality native Flint Hills pasture northeast of El Dorado, near the El Dorado Lake, in Butler County, Kansas. You won’t find better quality grass! This property has been utilized for cattle grazing and as hay meadow in the past. That diversity is valuable regardless of your intention to own land as an investment or for agriculture production activities. There is a large pond on the property, and any concerns about water can be alleviated with the purchase of a rural water meter. A rural water line runs across the road and a meter is available! In addition to top notch pasture, water, and location, this property also has some sneaky good hunting! While enjoying time on the property, we have seen Kansas whitetail deer, dove, turkeys and quail! Invest In Land! RURAL WATER: Butler County Rural Water District #3 has a line across the road, and meters are available. Cost of a new meter is $3,000 plus any construction costs that would include a road bore. Having rural water and electric available along the road make this property an excellent homesite candidate!</p>
     </div>
@@ -135,9 +137,9 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
     (function(){
-      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.91010198,-96.7309807],15);
+      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.87895302,-96.73888332],15);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap contributors',maxZoom:19}).addTo(map);
-      L.marker([37.91010198,-96.7309807]).addTo(map).bindPopup('0 Ellis Rd, El Dorado, KS 67042').openPopup();
+      L.marker([37.87895302,-96.73888332]).addTo(map).bindPopup('0 Ellis Rd, El Dorado, KS 67042').openPopup();
     })();
     </script>
   </div>
@@ -145,8 +147,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -156,13 +158,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="0 Ellis Rd, El Dorado, KS, 67042">
-        <input type="hidden" name="message" value="I am interested in the property at 0 Ellis Rd, El Dorado, KS, 67042 (MLS# 678650). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 0 Ellis Rd, El Dorado, KS, 67042 (MLS# 678650). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

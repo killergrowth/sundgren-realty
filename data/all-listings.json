@@ -7451,7 +7451,7 @@
     "state": "KS",
     "lat": 37.602694,
     "lng": -97.623214,
-    "price": 735000,
+    "price": 710000,
     "beds": 6,
     "baths": 5,
     "sqft": "4023",
@@ -7463,7 +7463,8 @@
     "isSundgren": false,
     "agentName": "Kari Higgins",
     "agentPhone": "3169904383",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 735000
   },
   {
     "slug": "68-mission-rd-eastborough-ks-672271",
@@ -8122,7 +8123,7 @@
     "state": "KS",
     "lat": 37.104466,
     "lng": -97.060611,
-    "price": 699000,
+    "price": 649000,
     "beds": 2,
     "baths": 2,
     "sqft": "1728",
@@ -8134,7 +8135,8 @@
     "isSundgren": false,
     "agentName": "Rick Hopper",
     "agentPhone": "6202293590",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 699000
   },
   {
     "slug": "6538-bella-rd-wichita-ks-674936",
@@ -16765,7 +16767,7 @@
     "state": "KS",
     "lat": 37.762854,
     "lng": -97.247001,
-    "price": 485000,
+    "price": 475000,
     "beds": 5,
     "baths": 4,
     "sqft": "3486",
@@ -16777,7 +16779,8 @@
     "isSundgren": false,
     "agentName": "Amelia H Sumerell",
     "agentPhone": "3163936161",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 485000
   },
   {
     "slug": "1761-butternut-dr-wichita-ks-673251",
@@ -28172,7 +28175,7 @@
     "state": "KS",
     "lat": 37.558314,
     "lng": -97.258901,
-    "price": 355000,
+    "price": 349900,
     "beds": 4,
     "baths": 4,
     "sqft": "3330",
@@ -28185,7 +28188,7 @@
     "agentName": "Ryan Rust",
     "agentPhone": "3168049003",
     "agentEmail": "",
-    "previousPrice": 365000
+    "previousPrice": 355000
   },
   {
     "slug": "1540715409-josephine-st-goddard-ks-671568",
@@ -40086,7 +40089,7 @@
     "state": "KS",
     "lat": 37.683331,
     "lng": -97.242712,
-    "price": 322000,
+    "price": 316000,
     "beds": 6,
     "baths": 3,
     "sqft": "3377",
@@ -40098,7 +40101,8 @@
     "isSundgren": false,
     "agentName": "Jemmima Wanjau",
     "agentPhone": "3169931351",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 322000
   },
   {
     "slug": "1030-stafford-ct-augusta-ks-676529",
@@ -43194,7 +43198,7 @@
     "state": "KS",
     "lat": 37.499585,
     "lng": -97.236355,
-    "price": 300000,
+    "price": 295000,
     "beds": 4,
     "baths": 3,
     "sqft": "2216",
@@ -43206,7 +43210,8 @@
     "isSundgren": false,
     "agentName": "Cheyenne L Harvey",
     "agentPhone": "3166489997",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 300000
   },
   {
     "slug": "2609-casey-dr-goddard-ks-677952",
@@ -70239,7 +70244,7 @@
     "state": "KS",
     "lat": 37.274028,
     "lng": -97.40473,
-    "price": 187500,
+    "price": 182500,
     "beds": null,
     "baths": null,
     "sqft": "1404",
@@ -70252,7 +70257,7 @@
     "agentName": "Pamela Hinman",
     "agentPhone": "6203262162",
     "agentEmail": "",
-    "previousPrice": 199900
+    "previousPrice": 187500
   },
   {
     "slug": "260-minneapolis-ave-wichita-ks-677457",
@@ -98770,7 +98775,7 @@
     "state": "KS",
     "lat": 37.663525,
     "lng": -97.377023,
-    "price": 100000,
+    "price": 97500,
     "beds": 2,
     "baths": 1,
     "sqft": "720",
@@ -98783,7 +98788,7 @@
     "agentName": "Jessika E Mayer",
     "agentPhone": "3168074856",
     "agentEmail": "",
-    "previousPrice": 105000
+    "previousPrice": 100000
   },
   {
     "slug": "812-maris-st-winfield-ks-677735",
