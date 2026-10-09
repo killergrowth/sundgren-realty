@@ -4423,7 +4423,7 @@
     "state": "KS",
     "lat": 37.738404,
     "lng": -97.359006,
-    "price": 979000,
+    "price": 949900,
     "beds": null,
     "baths": null,
     "sqft": "7920",
@@ -4436,7 +4436,7 @@
     "agentName": "Grant Ketzner",
     "agentPhone": "3167599583",
     "agentEmail": "",
-    "previousPrice": 999000
+    "previousPrice": 979000
   },
   {
     "slug": "1302-washington-ave-wichita-ks-668594",
@@ -39023,7 +39023,7 @@
     "state": "KS",
     "lat": 37.681244,
     "lng": -97.244053,
-    "price": 312500,
+    "price": 312000,
     "beds": 4,
     "baths": 3,
     "sqft": "3452",
@@ -39036,7 +39036,7 @@
     "agentName": "Amanda Jolley",
     "agentPhone": "3162139043",
     "agentEmail": "",
-    "previousPrice": 314500
+    "previousPrice": 312500
   },
   {
     "slug": "142-magnolia-dr-kaw-city-ok-676981",
@@ -43823,7 +43823,7 @@
     "state": "KS",
     "lat": 37.278723,
     "lng": -97.38155,
-    "price": 294900,
+    "price": 289900,
     "beds": 5,
     "baths": 3,
     "sqft": "2996",
@@ -43836,7 +43836,7 @@
     "agentName": "Sunni Goentzel",
     "agentPhone": "3162170217",
     "agentEmail": "",
-    "previousPrice": 299900
+    "previousPrice": 294900
   },
   {
     "slug": "9715-westlawn-st-wichita-ks-677872",
@@ -77908,7 +77908,7 @@
     "state": "KS",
     "lat": 39.559756,
     "lng": -97.652066,
-    "price": 179500,
+    "price": 169500,
     "beds": 3,
     "baths": 2,
     "sqft": "2352",
@@ -77920,7 +77920,8 @@
     "isSundgren": false,
     "agentName": "Laura Krier",
     "agentPhone": "7856143854",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 179500
   },
   {
     "slug": "2017-reece-st-goddard-ks-656177",
@@ -81764,7 +81765,7 @@
     "state": "KS",
     "lat": 38.025693,
     "lng": -97.668496,
-    "price": 165000,
+    "price": 155000,
     "beds": 4,
     "baths": 2,
     "sqft": "2322",
@@ -81776,7 +81777,8 @@
     "isSundgren": false,
     "agentName": "Andrea LaFever",
     "agentPhone": "3165582177",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 165000
   },
   {
     "slug": "3333-bayley-st-wichita-ks-670937",
