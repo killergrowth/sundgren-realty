@@ -29896,7 +29896,7 @@
     "state": "KS",
     "lat": 37.762396,
     "lng": -97.409665,
-    "price": 359000,
+    "price": 349000,
     "beds": 3,
     "baths": 2,
     "sqft": "1485",
@@ -29909,7 +29909,7 @@
     "agentName": "Carol Phipps",
     "agentPhone": "3166481199",
     "agentEmail": "",
-    "previousPrice": 370000
+    "previousPrice": 359000
   },
   {
     "slug": "16915-kashmir-st-goddard-ks-674950",
@@ -37786,7 +37786,7 @@
     "state": "KS",
     "lat": 37.780422,
     "lng": -97.269867,
-    "price": 325000,
+    "price": 320000,
     "beds": null,
     "baths": null,
     "sqft": "2532",
@@ -37799,7 +37799,7 @@
     "agentName": "Virginia Franzese",
     "agentPhone": "8167789434",
     "agentEmail": "",
-    "previousPrice": 330000
+    "previousPrice": 325000
   },
   {
     "slug": "9405-35th-st-n-c3-wichita-ks-677385",
@@ -39235,7 +39235,7 @@
     "state": "KS",
     "lat": 37.78106,
     "lng": -97.270136,
-    "price": 325000,
+    "price": 320000,
     "beds": null,
     "baths": null,
     "sqft": "2532",
@@ -39247,7 +39247,8 @@
     "isSundgren": false,
     "agentName": "Virginia Franzese",
     "agentPhone": "8167789434",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 325000
   },
   {
     "slug": "5752-bristol-street-wichita-ks-674181",
@@ -40623,7 +40624,7 @@
     "state": "KS",
     "lat": 37.795699,
     "lng": -97.285172,
-    "price": 309900,
+    "price": 299900,
     "beds": 4,
     "baths": 2,
     "sqft": "2678",
@@ -40636,7 +40637,7 @@
     "agentName": "Michael Crow",
     "agentPhone": "3166186591",
     "agentEmail": "",
-    "previousPrice": 315900
+    "previousPrice": 309900
   },
   {
     "slug": "1403-meridian-rd-peck-ks-677764",
@@ -50107,7 +50108,7 @@
     "state": "KS",
     "lat": 38.064407,
     "lng": -97.360788,
-    "price": 265000,
+    "price": 262000,
     "beds": 5,
     "baths": 3,
     "sqft": "2533",
@@ -50120,7 +50121,7 @@
     "agentName": "Stephanie Fondren",
     "agentPhone": "3168070220",
     "agentEmail": "",
-    "previousPrice": 268000
+    "previousPrice": 265000
   },
   {
     "slug": "851-meadowlark-ln-newton-ks-674941",
@@ -51904,7 +51905,7 @@
     "state": "KS",
     "lat": 38.359343,
     "lng": -97.642657,
-    "price": 274000,
+    "price": 264000,
     "beds": 3,
     "baths": 2,
     "sqft": "1451",
@@ -51916,7 +51917,8 @@
     "isSundgren": false,
     "agentName": "Mari Loder",
     "agentPhone": "7854525314",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 274000
   },
   {
     "slug": "5651-plumthicket-st-bel-aire-ks-676175",
@@ -70923,7 +70925,7 @@
     "state": "KS",
     "lat": 37.637469,
     "lng": -97.367028,
-    "price": 190000,
+    "price": 180000,
     "beds": 4,
     "baths": 2,
     "sqft": "1517",
@@ -70936,7 +70938,7 @@
     "agentName": "David Van Dyke",
     "agentPhone": "3168828284",
     "agentEmail": "",
-    "previousPrice": 195000
+    "previousPrice": 190000
   },
   {
     "slug": "5407-colburn-ct-bel-aire-ks-676098",
