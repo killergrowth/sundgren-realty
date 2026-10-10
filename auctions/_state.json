@@ -1,5 +1,5 @@
 {
-  "lastFetch": "2026-10-09T18:03:48.763Z",
+  "lastFetch": "2026-10-10T00:31:00.002Z",
   "auctions": {
     "24096": {
       "slug": "test-auction-24096",
@@ -2879,15 +2879,13 @@
       "slug": "15592-nw-60th-whitewater-kansas-brick-home-on-96-acres-169491",
       "status": "complete",
       "name": "15592 NW 60th, Whitewater, Kansas – Brick home on 9.6+/- acres",
-      "generated": "2026-09-10T15:57:23.520Z",
-      "updated": "2026-10-09T18:03:50.166Z"
+      "generated": "2026-09-10T15:57:23.520Z"
     },
     "169498": {
       "slug": "truck-stock-trailer-tractor-mower-tools-equipment-and-more-l-169498",
       "status": "complete",
       "name": "Truck, Stock Trailer, Tractor, Mower, Tools, Equipment and More – LIVE AUCTION",
-      "generated": "2026-09-10T15:57:23.520Z",
-      "updated": "2026-10-09T18:03:50.165Z"
+      "generated": "2026-09-10T15:57:23.520Z"
     },
     "170217": {
       "slug": "guns-ammo-accessories-online-only-auction-170217",
