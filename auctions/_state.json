@@ -1,5 +1,5 @@
 {
-  "lastFetch": "2026-10-10T00:31:00.002Z",
+  "lastFetch": "2026-10-10T09:31:20.588Z",
   "auctions": {
     "24096": {
       "slug": "test-auction-24096",
@@ -2934,6 +2934,12 @@
       "status": "accepting_bids",
       "name": "Guns, Ammo, Oil Cans & Antiques",
       "generated": "2026-10-09T18:03:50.147Z"
+    },
+    "171552": {
+      "slug": "rolling-hills-estates-condominium-120-s-maize-rd-unit-23-wic-171552",
+      "status": "accepting_bids",
+      "name": "Rolling Hills Estates Condominium: 120 S Maize Rd. Unit 23, Wichita and Personal Property Auction",
+      "generated": "2026-10-10T09:31:23.301Z"
     }
   }
 }
