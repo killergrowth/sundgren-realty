@@ -101,7 +101,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-terminated pill">Inactive</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -137,7 +137,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>What an incredible find! Nestled snugly into the friendly town of Whitewater, Kansas, this beautiful home offers so much for your family to enjoy. The gorgeous front elevation is striking with it&#39;s nice roof line and wide, comfortable, covered porch. Entering from the front door is an inviting living room with a formal dining room to the side. Continuing straight through the formal living room is a giant casual family room with sliding door access to the back yard wood deck that is, wait for it, you guessed it, brand new. Also from the living room is an entry into the lovely kitchen with all new quartz counter tops, backsplash, flooring, and solid pine cabinet doors. Exit the kitchen into the fantastic main floor Hollywood style bathroom with all new quartz vanity top, toilet and tile shower. Off the family room is the massive laundry which is in a separate room with tons of space for storage. the main floor finishes with two bedrooms. The upper level is an additional treat. The master suite has a wonderful bathroom and a huge dressing/sitting area attached. The large 4th bedroom is also on the upper level. This incredible home has all new exterior siding and paint, new windows, driveway and new electrical service from Evergy. The interior boasts all new flooring, doors, paint, light fixtures, plumbing fixtures and beautiful, wide trim work. The property has an oversized two+ car garage and alley access. Property is heated and cooled by mini-split system with three exterior units and five head units. Hurry and book your showing today!</p>
     </div>
@@ -190,8 +192,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -201,13 +203,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="209 Oak ST, Whitewater, KS, 67154">
-        <input type="hidden" name="message" value="I am interested in the property at 209 Oak ST, Whitewater, KS, 67154 (MLS# 679086). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 209 Oak ST, Whitewater, KS, 67154 (MLS# 679086). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
