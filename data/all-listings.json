@@ -10445,7 +10445,7 @@
     "state": "KS",
     "lat": 37.730717,
     "lng": -97.399863,
-    "price": 579900,
+    "price": 574900,
     "beds": 5,
     "baths": 3,
     "sqft": "2954",
@@ -10458,7 +10458,7 @@
     "agentName": "Sarah King",
     "agentPhone": "3166481199",
     "agentEmail": "",
-    "previousPrice": 589900
+    "previousPrice": 579900
   },
   {
     "slug": "202-hillside-st-wellington-ks-669812",
@@ -78473,7 +78473,7 @@
     "state": "KS",
     "lat": 37.836838,
     "lng": -96.847537,
-    "price": 175000,
+    "price": 165000,
     "beds": 3,
     "baths": 2,
     "sqft": "1412",
@@ -78485,7 +78485,8 @@
     "isSundgren": false,
     "agentName": "Zac Sundgren",
     "agentPhone": "3163225812",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 175000
   },
   {
     "slug": "2102-winchester-st-wichita-ks-678019",

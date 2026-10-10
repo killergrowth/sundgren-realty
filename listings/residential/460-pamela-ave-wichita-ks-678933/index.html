@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>4 bedroom 2,935 sq ft Rolling Hills ranch the recent improvements and an inground sport pool! Walk inside this well insulated brick ranch and you are immediately welcomed by a spacious living area with a woodburning fireplace. There&#39;s a formal dining area just off the kitchen that is perfect for family dinners or gatherings. The kitchen boasts recent upgrades including quartz counters, new cabinets, new stainless appliances, a gas stove, new fixtures, &amp; more! The laundry area is just off the garage &amp; powder bath. The main level features 3 bedrooms with ample space including a primary with his &amp; her closets. You&#39;ll love the refinished hardwood flooring throughout keeping in the line with the home &amp; areas charm. The basement is finished with an oversized rec/family room, 2nd fireplace, a wet bar for entertaining, a bonus rec space, a refinished bath, the 4th bedroom, &amp; a bonus workshop or hobby room! Relax in the shade of the covered patio while your family &amp; friends splash around in the 28x12 heated sport pool with an automatic cover. There&#39;s even a 24x10 bonus shed for your toys, hobbies, or just more storage in the privacy fenced yard. Some recent improvements include: refinished hardwood flooring, new carpet, lvp flooring, fresh interior paint, upgraded kitchen, upgraded bathrooms, appliances, fixtures, &amp; more! This is a great rolling hills ranch that&#39;s ready today!</p>
     </div>
@@ -158,7 +160,7 @@
     <div class="feat-grid">
     <div class="feat-cell">
       <i class="fas fa-fire"></i>
-      <div><span class="mlabel">Heating</span>Forced Air, Natural Gas</div>
+      <div><span class="mlabel">Heating</span>Natural Gas, Forced Air</div>
     </div>
     <div class="feat-cell">
       <i class="fas fa-snowflake"></i>
@@ -199,9 +201,9 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
     (function(){
-      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.68959098,-97.44933602],15);
+      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.689583,-97.449338],15);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap contributors',maxZoom:19}).addTo(map);
-      L.marker([37.68959098,-97.44933602]).addTo(map).bindPopup('460 Pamela Ave, Wichita, KS 67212').openPopup();
+      L.marker([37.689583,-97.449338]).addTo(map).bindPopup('460 Pamela Ave, Wichita, KS 67212').openPopup();
     })();
     </script>
   </div>
@@ -209,8 +211,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -220,13 +222,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="460 Pamela Ave, Wichita, KS, 67212">
-        <input type="hidden" name="message" value="I am interested in the property at 460 Pamela Ave, Wichita, KS, 67212 (MLS# 678933). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 460 Pamela Ave, Wichita, KS, 67212 (MLS# 678933). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
