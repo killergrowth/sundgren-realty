@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-terminated pill">Inactive</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -138,7 +138,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Opportunity meets character in the heart of downtown Anthony. Formerly home to a local eatery, this newly remodeled commercial building is ready for its next chapter. Whether you&#39;re looking to reopen a restaurant with minimal downtime or transform the space into a café, retail store, office, brewery, or another business venture, the groundwork has already been laid. From the moment you step inside, you&#39;ll appreciate the charm that sets this property apart. Large storefront windows, two front entrances, original exposed brick walls, classic tin ceilings, and updated laminate flooring create a warm, welcoming atmosphere. The spacious front dining area offers ample seating and the flexibility to accommodate a variety of business concepts and layouts. Behind the dining area, you&#39;ll find a well-equipped prep space featuring shelving, generous work surfaces, cabinet storage, two refrigerators, and a sink. The impeccably maintained commercial kitchen includes a triple-compartment sink, 5&#39; x 2&#39; gas griddle with vent hood and fire suppression system, stove, sandwich prep station, two double-door refrigerators, tile flooring, and abundant shelving. With much of the infrastructure already in place, a restaurant could be up and running in a fraction of the time and expense typically required. Additional features include a spacious ADA-accessible restroom, dedicated storage space, convenient access to the building&#39;s mechanical systems and a rear entrance. Major improvements have already been completed, including updated electrical wiring, new mini-split systems, a newer HVAC system, and a roof that&#39;s only two years old. A substantial portion of the kitchen equipment and interior contents will also convey with the sale, with an itemized list available upon request. Whether you&#39;re an entrepreneur ready to bring a restaurant back to downtown Anthony or an investor searching for a versatile commercial property with character and potential, 211 W. Main Street offers an exceptional opportunity to bring your vision to life.</p>
     </div>
@@ -199,8 +201,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -210,13 +212,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="211 Main St, Anthony, KS, 67003">
-        <input type="hidden" name="message" value="I am interested in the property at 211 Main St, Anthony, KS, 67003 (MLS# 675821). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 211 Main St, Anthony, KS, 67003 (MLS# 675821). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
