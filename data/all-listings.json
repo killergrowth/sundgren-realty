@@ -15311,7 +15311,7 @@
     "state": "KS",
     "lat": 38.024516,
     "lng": -97.952814,
-    "price": 419900,
+    "price": 399900,
     "beds": 3,
     "baths": 3,
     "sqft": "3790",
@@ -15323,7 +15323,8 @@
     "isSundgren": false,
     "agentName": "Sissy Koury",
     "agentPhone": "3164099955",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 419900
   },
   {
     "slug": "4508-sunny-cir-wichita-ks-676344",
