@@ -23075,7 +23075,7 @@
     "state": "KS",
     "lat": 37.841358,
     "lng": -96.842172,
-    "price": 410000,
+    "price": 400000,
     "beds": 5,
     "baths": 4,
     "sqft": "3477",
@@ -23087,7 +23087,8 @@
     "isSundgren": false,
     "agentName": "Zac Sundgren",
     "agentPhone": "3163225812",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 410000
   },
   {
     "slug": "54265428-briskbay-ct-maize-ks-677655",
@@ -69724,7 +69725,7 @@
     "state": "KS",
     "lat": 37.48849163,
     "lng": -97.55570172,
-    "price": 200000,
+    "price": 169000,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -69736,7 +69737,8 @@
     "isSundgren": false,
     "agentName": "Tyler Gentry",
     "agentPhone": "6205774487",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 200000
   },
   {
     "slug": "0000-111th-st-s-e-lot-clearwater-ks-677692",
@@ -69747,7 +69749,7 @@
     "state": "KS",
     "lat": 37.48810003,
     "lng": -97.55261181,
-    "price": 200000,
+    "price": 169000,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -69759,7 +69761,8 @@
     "isSundgren": false,
     "agentName": "Tyler Gentry",
     "agentPhone": "6205774487",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 200000
   },
   {
     "slug": "000-51st-road-douglass-ks-677334",
@@ -84345,7 +84348,7 @@
     "state": "KS",
     "lat": 37.550885,
     "lng": -97.267624,
-    "price": 146000,
+    "price": 145000,
     "beds": 3,
     "baths": 1,
     "sqft": "1250",
@@ -84358,7 +84361,7 @@
     "agentName": "Dawn R Wade",
     "agentPhone": "3168061060",
     "agentEmail": "",
-    "previousPrice": 147000
+    "previousPrice": 146000
   },
   {
     "slug": "515-g-st-wellington-ks-676894",
@@ -85437,7 +85440,7 @@
     "state": "KS",
     "lat": 37.632607,
     "lng": -97.348254,
-    "price": 154000,
+    "price": 150000,
     "beds": 4,
     "baths": 1,
     "sqft": "1150",
@@ -85450,7 +85453,7 @@
     "agentName": "Jack Tomlinson",
     "agentPhone": "6143577389",
     "agentEmail": "",
-    "previousPrice": 155000
+    "previousPrice": 154000
   },
   {
     "slug": "3328-chase-ave-wichita-ks-677750",
