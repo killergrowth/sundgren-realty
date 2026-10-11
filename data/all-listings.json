@@ -108973,7 +108973,7 @@
     "state": "KS",
     "lat": 37.52821599,
     "lng": -97.32618474,
-    "price": 65000,
+    "price": 60000,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -108985,7 +108985,8 @@
     "isSundgren": false,
     "agentName": "Cindy Crain",
     "agentPhone": "3166448396",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 65000
   },
   {
     "slug": "lot-85-block-d-calvert-wichita-ks-644781",

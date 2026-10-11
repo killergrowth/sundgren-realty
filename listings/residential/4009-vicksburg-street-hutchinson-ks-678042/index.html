@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Welcome home to 4009 Vicksburg St. in Hutchinson! This spacious and inviting home offers an abundance of living space, beautiful curb appeal, and room to grow. From the moment you arrive, you’ll be greeted by gorgeous, well-manicured landscaping and beautiful curb appeal that create a warm and welcoming first impression. The current owners have taken excellent care of this home, and their pride of ownership is evident throughout. With approximately 2,966 square feet of finished living space, including a finished lower level, this home offers exceptional flexibility for families, entertaining, hobbies, a home office, guests, or simply spreading out and enjoying your space. The main level offers comfortable living spaces, 3 bedrooms, 2 full bathrooms, beautiful kitchen, dining room, spacious living room, and convenient everyday functionality. The finished basement provides substantial additional living space, including 2 additional bedrooms, a full bathroom, and a generous family/rec room—creating countless possibilities for a growing household or those who simply want plenty of room for everyone. Situated on an approximately 0.24-acre lot in the Hampton Estates subdivision, the property offers a wonderful combination of neighborhood living, beautiful landscaping, and convenient access to Hutchinson amenities. The thoughtfully landscaped grounds and attractive curb appeal make this home especially inviting from the moment you pull up. Whether you’re looking for additional bedrooms, generous gathering space, a dedicated hobby area, a home office, or simply room for everyone to have their own space, this home is ready to welcome its next owners. Come see all that 4009 Vicksburg has to offer and imagine the memories you’ll create here!</p>
     </div>
@@ -201,8 +203,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -212,13 +214,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="4009 Vicksburg Street, Hutchinson, KS, 67502">
-        <input type="hidden" name="message" value="I am interested in the property at 4009 Vicksburg Street, Hutchinson, KS, 67502 (MLS# 678042). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 4009 Vicksburg Street, Hutchinson, KS, 67502 (MLS# 678042). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
