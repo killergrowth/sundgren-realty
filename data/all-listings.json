@@ -9217,7 +9217,7 @@
     "state": "KS",
     "lat": 37.923216,
     "lng": -97.246769,
-    "price": 650000,
+    "price": 625000,
     "beds": 3,
     "baths": 3,
     "sqft": "2648",
@@ -9229,7 +9229,8 @@
     "isSundgren": false,
     "agentName": "Dan Madrigal",
     "agentPhone": "3169900184",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 650000
   },
   {
     "slug": "1956-highway-141-marquette-ks-672189",
@@ -44292,7 +44293,7 @@
     "state": "KS",
     "lat": 37.549134,
     "lng": -97.25735397,
-    "price": 292000,
+    "price": 290000,
     "beds": 4,
     "baths": 2,
     "sqft": "2352",
@@ -44305,7 +44306,7 @@
     "agentName": "Amanda Jolley",
     "agentPhone": "3162139043",
     "agentEmail": "",
-    "previousPrice": 299000
+    "previousPrice": 292000
   },
   {
     "slug": "6135-harry-st-wichita-ks-653395",
@@ -101035,7 +101036,7 @@
     "state": "KS",
     "lat": 37.632361,
     "lng": -97.317916,
-    "price": 90000,
+    "price": 80000,
     "beds": 4,
     "baths": 2,
     "sqft": "1508",
@@ -101048,7 +101049,7 @@
     "agentName": "Myron Pushyk",
     "agentPhone": "3165739759",
     "agentEmail": "",
-    "previousPrice": 99000
+    "previousPrice": 90000
   },
   {
     "slug": "1524-12th-st-newton-ks-670767",
@@ -107039,7 +107040,7 @@
     "state": "KS",
     "lat": 37.280197,
     "lng": -97.396973,
-    "price": 65000,
+    "price": 60000,
     "beds": 2,
     "baths": 1,
     "sqft": "927",
@@ -107052,7 +107053,7 @@
     "agentName": "Rachel Westmoreland",
     "agentPhone": "6203260633",
     "agentEmail": "",
-    "previousPrice": 68000
+    "previousPrice": 65000
   },
   {
     "slug": "321-violet-st-potwin-ks-677125",
