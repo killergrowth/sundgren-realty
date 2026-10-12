@@ -1,5 +1,5 @@
 {
-  "lastFetch": "2026-10-12T10:21:37.122Z",
+  "lastFetch": "2026-10-12T21:00:03.603Z",
   "auctions": {
     "24096": {
       "slug": "test-auction-24096",
@@ -2932,13 +2932,13 @@
     "171497": {
       "slug": "guns-ammo-oil-cans-antiques-171497",
       "status": "accepting_bids",
-      "name": "Guns, Ammo, Oil Cans & Antiques",
+      "name": "Guns, Ammo, Oil Cans & Antiques - El Dorado KS",
       "generated": "2026-10-09T18:03:50.147Z"
     },
     "171552": {
       "slug": "rolling-hills-estates-condominium-120-s-maize-rd-unit-23-wic-171552",
       "status": "accepting_bids",
-      "name": "Rolling Hills Estates Condominium: 120 S Maize Rd. Unit 23, Wichita and Personal Property Auction",
+      "name": "Rolling Hills Estates Condominium: 120 N Maize Rd. Unit 23, Wichita and Personal Property Auction",
       "generated": "2026-10-10T09:31:23.301Z"
     }
   }
