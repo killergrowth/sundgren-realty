@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Welcome home to this beautifully maintained 3-bedroom, 2-bath ranch featuring a full finished view-out basement and 2-car garage! The inviting main level offers an open-concept living room and kitchen, perfect for everyday living and entertaining. The remodeled kitchen features custom tall cabinets, granite countertops, tile backsplash, under-cabinet lighting and a convenient center island. The living room showcases a cozy wood-burning fireplace. Both bathrooms have been updated with new fixtures, tile flooring and stylish vanities. The main-floor bath features a custom-tiled walk-in shower. The finished basement provides additional living space with a large family/rec room, full bathroom and bedroom with brand-new carpet. A convenient wet bar with separate mini refrigerator and mini freezer makes the basement ideal for entertaining or guests. Step outside to enjoy the wood deck overlooking a large, fully fenced backyard with a sprinkler system. This home has been exceptionally well cared for and is truly move-in ready. Don&#39;t miss your opportunity to make this wonderful home yours!</p>
     </div>
@@ -205,8 +207,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -216,13 +218,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="1206 Manchester Ct, Wichita, KS, 67212">
-        <input type="hidden" name="message" value="I am interested in the property at 1206 Manchester Ct, Wichita, KS, 67212 (MLS# 680276). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 1206 Manchester Ct, Wichita, KS, 67212 (MLS# 680276). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
@@ -321,17 +323,17 @@
           <span class="listing-card-more">View Details &rarr;</span>
         </div>
       </a>
-      <a href="/listings/residential/1325-prairie-view-rd-el-dorado-ks-680139/" class="listing-card">
-        <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-680139_66835956b61ec0c84aca66493445b86b546e919636f23d294dd2329903c4db49.jpg" alt="1325 Prairie View Rd, El Dorado, KS, 67042" loading="lazy">
+      <a href="/listings/residential/810-29th-rd-little-river-ks-664897/" class="listing-card">
+        <img class="listing-card-img" src="" alt="810 29th Rd, Little River, KS, 67457" loading="lazy">
         <div class="listing-card-body">
           <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
             <span class="listing-card-badge" style="background:#22c55e;">Active</span>
             <span class="listing-card-badge" style="background:#0ea5e9;">Residential</span>
           </div>
-          <p class="listing-card-address">1325 Prairie View Rd</p>
-          <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>El Dorado, KS</p>
-          <p class="listing-card-meta"><i class="fas fa-ruler-combined"></i>5 Bd · 3 Ba · 3,258 sq ft</p>
-          <p class="listing-card-price">$565,000</p>
+          <p class="listing-card-address">810 29th Rd</p>
+          <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Little River, KS</p>
+          <p class="listing-card-meta"><i class="fas fa-ruler-combined"></i>3 Bd · 3 Ba · 3,307 sq ft</p>
+          <p class="listing-card-price">$600,000</p>
           <span class="listing-card-more">View Details &rarr;</span>
         </div>
       </a>

@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>MORE SPACE. MORE STYLE. MORE POSSIBILITIES — ALL FOR $250,000! Looking for a move-in-ready home with room to spread out without stretching your budget? Welcome to 124 W. Baird Street in Kechi, Kansas! This beautifully updated and thoughtfully staged 4-bedroom, 2.5-bathroom home offers approximately 1,944 finished square feet, a finished basement, an attached 2-car garage, and a spacious corner lot — all just minutes from Wichita! Step inside and discover a home that combines modern style with everyday comfort. The inviting living room features a cozy fireplace, updated finishes, and plenty of space to relax or entertain. The stylish kitchen makes a statement with rich blue cabinetry, contrasting white upper cabinets, butcher-block countertops, contemporary backsplash, and breakfast bar seating. The adjoining dining area offers the perfect setting for everything from casual weeknight dinners to hosting friends and family. With four bedrooms and three bathrooms, this home offers the flexibility today’s buyers are searching for. Need a home office, guest bedroom, hobby room, or additional living space? You’ve got options! The finished basement provides even more room to spread out, whether you envision a movie room, gaming area, workout space, or comfortable second living area. The updated bathrooms feature contemporary fixtures, stylish vanities, and modern finishes that give the home a fresh, welcoming feel. Outside, the generous corner lot opens up even more possibilities! There’s plenty of room to enjoy outdoor activities, entertain guests, or explore the potential for a future workshop, additional garage, or swimming pool, subject to applicable requirements. The attached two-car garage provides convenient parking and additional storage. Located in the charming community of Kechi, you’ll enjoy small-town living with convenient access to northeast Wichita, Bel Aire, Park City, shopping, restaurants, and major commuting routes. Discover local favorites like Old School Tap House &amp; Social and Karg Art Glass, along with the welcoming atmosphere that makes Kechi such a unique place to call home. FIRST-TIME BUYERS, TAKE NOTE! This property may qualify for USDA Rural Development financing, offering eligible buyers the opportunity to purchase with ZERO DOWN PAYMENT! Why settle for a smaller home when you could have four bedrooms, three bathrooms, a finished basement, and a spacious yard at this price? Whether you’re purchasing your first home, moving up to something larger, or simply searching for more space and flexibility, 124 W. Baird Street delivers an exceptional combination of comfort, style, and value. Four bedrooms. 2.5 bathrooms. Finished basement. Two-car garage. Spacious corner lot. All for $250,000. Schedule your private showing today and discover just how much home your money can buy in Kechi!</p>
     </div>
@@ -205,8 +207,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -216,13 +218,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="124 Baird St, Kechi, KS, 67067">
-        <input type="hidden" name="message" value="I am interested in the property at 124 Baird St, Kechi, KS, 67067 (MLS# 679868). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 124 Baird St, Kechi, KS, 67067 (MLS# 679868). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
@@ -321,17 +323,17 @@
           <span class="listing-card-more">View Details &rarr;</span>
         </div>
       </a>
-      <a href="/listings/residential/1325-prairie-view-rd-el-dorado-ks-680139/" class="listing-card">
-        <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-680139_66835956b61ec0c84aca66493445b86b546e919636f23d294dd2329903c4db49.jpg" alt="1325 Prairie View Rd, El Dorado, KS, 67042" loading="lazy">
+      <a href="/listings/residential/810-29th-rd-little-river-ks-664897/" class="listing-card">
+        <img class="listing-card-img" src="" alt="810 29th Rd, Little River, KS, 67457" loading="lazy">
         <div class="listing-card-body">
           <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
             <span class="listing-card-badge" style="background:#22c55e;">Active</span>
             <span class="listing-card-badge" style="background:#0ea5e9;">Residential</span>
           </div>
-          <p class="listing-card-address">1325 Prairie View Rd</p>
-          <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>El Dorado, KS</p>
-          <p class="listing-card-meta"><i class="fas fa-ruler-combined"></i>5 Bd · 3 Ba · 3,258 sq ft</p>
-          <p class="listing-card-price">$565,000</p>
+          <p class="listing-card-address">810 29th Rd</p>
+          <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Little River, KS</p>
+          <p class="listing-card-meta"><i class="fas fa-ruler-combined"></i>3 Bd · 3 Ba · 3,307 sq ft</p>
+          <p class="listing-card-price">$600,000</p>
           <span class="listing-card-more">View Details &rarr;</span>
         </div>
       </a>

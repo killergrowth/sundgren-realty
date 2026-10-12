@@ -7336,7 +7336,7 @@
     "state": "KS",
     "lat": 37.638673,
     "lng": -97.386382,
-    "price": 749000,
+    "price": 699000,
     "beds": null,
     "baths": null,
     "sqft": "3,001 - 5,000",
@@ -7348,7 +7348,8 @@
     "isSundgren": false,
     "agentName": "Andy Nguyen",
     "agentPhone": "3166441965",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 749000
   },
   {
     "slug": "3658-bristol-ct-wichita-ks-675212",
@@ -14179,7 +14180,7 @@
     "state": "KS",
     "lat": 38.246216,
     "lng": -97.632792,
-    "price": 525000,
+    "price": 515000,
     "beds": 5,
     "baths": 4,
     "sqft": "3544",
@@ -14191,7 +14192,8 @@
     "isSundgren": false,
     "agentName": "Rachel Burge",
     "agentPhone": "6209514016",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 525000
   },
   {
     "slug": "155-circle-drive-wichita-ks-677841",
@@ -16239,7 +16241,7 @@
     "state": "KS",
     "lat": 38.840802,
     "lng": -97.609501,
-    "price": 495000,
+    "price": 449999,
     "beds": null,
     "baths": null,
     "sqft": "20,001 - 50,000",
@@ -16251,7 +16253,8 @@
     "isSundgren": false,
     "agentName": "Jessica Decker",
     "agentPhone": "7853420935",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 495000
   },
   {
     "slug": "505-maple-leaf-cir-newton-ks-670298",
@@ -19453,7 +19456,7 @@
     "state": "KS",
     "lat": 37.668632,
     "lng": -97.183638,
-    "price": 450000,
+    "price": 440000,
     "beds": 5,
     "baths": 3,
     "sqft": "3277",
@@ -19465,7 +19468,8 @@
     "isSundgren": false,
     "agentName": "Samar Edenfield",
     "agentPhone": "3166175901",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 450000
   },
   {
     "slug": "302-lakewood-dr-north-newton-ks-678021",
@@ -26162,7 +26166,7 @@
     "state": "KS",
     "lat": 38.935019,
     "lng": -97.207722,
-    "price": 389900,
+    "price": 384900,
     "beds": 5,
     "baths": 4,
     "sqft": "3914",
@@ -26174,7 +26178,8 @@
     "isSundgren": false,
     "agentName": "Amber Renfro",
     "agentPhone": "7858207472",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 389900
   },
   {
     "slug": "215-prather-st-mulvane-ks-674831",
@@ -46817,7 +46822,7 @@
     "state": "KS",
     "lat": 37.777579,
     "lng": -98.024724,
-    "price": 289000,
+    "price": 279000,
     "beds": 4,
     "baths": 2,
     "sqft": "2104",
@@ -46829,7 +46834,8 @@
     "isSundgren": false,
     "agentName": "Gina Nutile",
     "agentPhone": "3164616720",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 289000
   },
   {
     "slug": "807-gilman-ave-wichita-ks-676389",
@@ -49185,7 +49191,7 @@
     "state": "KS",
     "lat": 37.695002,
     "lng": -97.258552,
-    "price": 270000,
+    "price": 265000,
     "beds": 4,
     "baths": 3,
     "sqft": "2479",
@@ -49198,7 +49204,7 @@
     "agentName": "Nathan Kirk",
     "agentPhone": "3167067391",
     "agentEmail": "",
-    "previousPrice": 280000
+    "previousPrice": 270000
   },
   {
     "slug": "1131-gow-st-wichita-ks-669741",
@@ -62460,7 +62466,7 @@
     "state": "KS",
     "lat": 37.0856746,
     "lng": -97.03773353,
-    "price": 199900,
+    "price": 189900,
     "beds": 3,
     "baths": 2,
     "sqft": "1621",
@@ -62473,7 +62479,7 @@
     "agentName": "Mandi Hill",
     "agentPhone": "6202293600",
     "agentEmail": "",
-    "previousPrice": 219000
+    "previousPrice": 199900
   },
   {
     "slug": "12903-thorton-st-wichita-ks-674454",
@@ -64175,7 +64181,7 @@
     "state": "KS",
     "lat": 37.240867,
     "lng": -96.996977,
-    "price": 224900,
+    "price": 199900,
     "beds": null,
     "baths": null,
     "sqft": "5,001 - 10,000",
@@ -64187,7 +64193,8 @@
     "isSundgren": false,
     "agentName": "Lacey Pool",
     "agentPhone": "6205067488",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 224900
   },
   {
     "slug": "12433-fennec-st-wichita-ks-651887",
@@ -80009,7 +80016,7 @@
     "state": "KS",
     "lat": 38.83236801,
     "lng": -97.61185601,
-    "price": 170000,
+    "price": 159000,
     "beds": 4,
     "baths": 3,
     "sqft": "3102",
@@ -80021,7 +80028,8 @@
     "isSundgren": false,
     "agentName": "Jessica Decker",
     "agentPhone": "7853420935",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 170000
   },
   {
     "slug": "325-wichita-st-benton-ks-675049",
@@ -81405,7 +81413,7 @@
     "state": "KS",
     "lat": 37.238717,
     "lng": -96.978415,
-    "price": 159000,
+    "price": 156400,
     "beds": 5,
     "baths": 2,
     "sqft": "1592",
@@ -81418,7 +81426,7 @@
     "agentName": "Roxann Taylor",
     "agentPhone": "6202627873",
     "agentEmail": "",
-    "previousPrice": 166000
+    "previousPrice": 159000
   },
   {
     "slug": "11200-mossy-oak-dr-derby-ks-633321",
@@ -81546,7 +81554,7 @@
     "state": "KS",
     "lat": 37.820284,
     "lng": -96.852856,
-    "price": 160000,
+    "price": 158500,
     "beds": null,
     "baths": null,
     "sqft": "1982",
@@ -81559,7 +81567,7 @@
     "agentName": "Debra Pearman",
     "agentPhone": "3166442836",
     "agentEmail": "",
-    "previousPrice": 165000
+    "previousPrice": 160000
   },
   {
     "slug": "833-kokomo-ave-derby-ks-677569",
@@ -94672,7 +94680,7 @@
     "state": "KS",
     "lat": 37.670277,
     "lng": -97.338518,
-    "price": 115000,
+    "price": 105000,
     "beds": 4,
     "baths": 2,
     "sqft": "1417",
@@ -94685,7 +94693,7 @@
     "agentName": "Justin Chandler",
     "agentPhone": "3163717764",
     "agentEmail": "",
-    "previousPrice": 125000
+    "previousPrice": 115000
   },
   {
     "slug": "2014-woodlawn-blvd-derby-ks-672775",
@@ -112784,7 +112792,7 @@
     "state": "KS",
     "lat": 37.56799002,
     "lng": -97.33910402,
-    "price": 50000,
+    "price": 44000,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -112796,7 +112804,8 @@
     "isSundgren": false,
     "agentName": "Joe Danler",
     "agentPhone": "3166483796",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 50000
   },
   {
     "slug": "13024-furlong-wichita-ks-672085",

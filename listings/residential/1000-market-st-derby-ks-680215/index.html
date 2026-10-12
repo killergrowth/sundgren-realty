@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Welcome to 1000 E. Market Street in Derby! Situated on a spacious corner lot of over a quarter acre in an established neighborhood, this inviting quad-level home offers 3 bedrooms, 2 bathrooms, and 1,710 square feet of versatile living space. With multiple living areas, a functional layout, and plenty of room to spread out, this home has something for everyone! The main level welcomes you with a spacious formal living room, offering an inviting setting for entertaining guests or relaxing at the end of the day. The adjoining dining room provides a dedicated space for everyday meals and special gatherings, while the conveniently located kitchen offers a functional layout with easy access to the attached garage, making unloading groceries and daily routines a breeze. Together, these spaces create a comfortable and practical main level designed for both everyday living and entertaining. All appliances remain with the home, adding convenience for the next owner. Upstairs, you&#39;ll find all three bedrooms and a bathroom conveniently located together. The lower-level family room features a cozy fireplace, creating the perfect gathering spot for movie nights or relaxing evenings. This level also includes a conveniently located second bathroom, along with a versatile additional space ideal for a home office, study area, or hobby room. The basement provides even more possibilities with a bonus room that could serve as a nonconforming fourth bedroom, game room, or additional living space, along with a large storage room to keep everything organized. Step outside and enjoy the substantial, fully fenced backyard with plenty of room for outdoor activities, pets, gardening, or entertaining. The covered patio offers a great place to relax or host gatherings, while the backyard storage shed provides additional space for lawn equipment and tools. A side-load garage adds both functionality and curb appeal. Location is another standout feature! Within walking distance of the Derby Recreation Center and Derby Middle School, this home offers convenient access to recreational activities, fitness facilities, and nearby schools. Shopping, dining, parks, and other Derby amenities are also just minutes away. With four levels of functional living space, multiple areas for gathering or relaxing, and a generous backyard, this home offers an excellent combination of space, flexibility, and location. Schedule your private showing today!</p>
     </div>
@@ -201,8 +203,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -212,13 +214,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="1000 Market ST, Derby, KS, 67037">
-        <input type="hidden" name="message" value="I am interested in the property at 1000 Market ST, Derby, KS, 67037 (MLS# 680215). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 1000 Market ST, Derby, KS, 67037 (MLS# 680215). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
@@ -317,17 +319,17 @@
           <span class="listing-card-more">View Details &rarr;</span>
         </div>
       </a>
-      <a href="/listings/residential/1325-prairie-view-rd-el-dorado-ks-680139/" class="listing-card">
-        <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-680139_66835956b61ec0c84aca66493445b86b546e919636f23d294dd2329903c4db49.jpg" alt="1325 Prairie View Rd, El Dorado, KS, 67042" loading="lazy">
+      <a href="/listings/residential/810-29th-rd-little-river-ks-664897/" class="listing-card">
+        <img class="listing-card-img" src="" alt="810 29th Rd, Little River, KS, 67457" loading="lazy">
         <div class="listing-card-body">
           <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
             <span class="listing-card-badge" style="background:#22c55e;">Active</span>
             <span class="listing-card-badge" style="background:#0ea5e9;">Residential</span>
           </div>
-          <p class="listing-card-address">1325 Prairie View Rd</p>
-          <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>El Dorado, KS</p>
-          <p class="listing-card-meta"><i class="fas fa-ruler-combined"></i>5 Bd · 3 Ba · 3,258 sq ft</p>
-          <p class="listing-card-price">$565,000</p>
+          <p class="listing-card-address">810 29th Rd</p>
+          <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Little River, KS</p>
+          <p class="listing-card-meta"><i class="fas fa-ruler-combined"></i>3 Bd · 3 Ba · 3,307 sq ft</p>
+          <p class="listing-card-price">$600,000</p>
           <span class="listing-card-more">View Details &rarr;</span>
         </div>
       </a>
