@@ -17999,7 +17999,7 @@
     "state": "KS",
     "lat": 37.70601599,
     "lng": -97.49118703,
-    "price": 455000,
+    "price": 445000,
     "beds": 5,
     "baths": 3,
     "sqft": "3241",
@@ -18012,7 +18012,7 @@
     "agentName": "Phyllis Zimmerman",
     "agentPhone": "3167347411",
     "agentEmail": "",
-    "previousPrice": 465000
+    "previousPrice": 455000
   },
   {
     "slug": "11-pony-meadows-dr-wichita-ks-677535",
@@ -26074,7 +26074,7 @@
     "state": "KS",
     "lat": 37.693694,
     "lng": -97.491579,
-    "price": 389900,
+    "price": 394900,
     "beds": 4,
     "baths": 3,
     "sqft": "2150",
@@ -97155,7 +97155,7 @@
     "state": "KS",
     "lat": 37.673073,
     "lng": -97.273359,
-    "price": 99500,
+    "price": 89500,
     "beds": 2,
     "baths": 1,
     "sqft": "956",
@@ -97168,7 +97168,7 @@
     "agentName": "Oricel Iron Wing",
     "agentPhone": "3168336248",
     "agentEmail": "",
-    "previousPrice": 105000
+    "previousPrice": 99500
   },
   {
     "slug": "315-stewart-dr-haysville-ks-677703",
