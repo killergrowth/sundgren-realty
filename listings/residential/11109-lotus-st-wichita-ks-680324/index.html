@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>11109 W Lotus St offers something every homeowner can appreciate: plenty of room to live, fresh updates, and the freedom to move right in without a long list of projects waiting for you. Located in west Wichita within the Goddard School District, this 3 bedroom, 2 bathroom home offers 1,812 square feet of finished living space, an attached 2 car garage, and a comfortable layout that gives you room to spread out without feeling overwhelming to maintain. Inside, new luxury vinyl flooring, brand new carpet, and updated kitchen countertops give the home a fresh, welcoming feel from day one. The kitchen provides a practical space for cooking and everyday meals, while the generous living areas offer flexibility for the way you actually live. Imagine having a comfortable place to relax at the end of the day, a separate space for movie nights or watching the game, and enough room for guests, hobbies, or a home office without sacrificing your everyday living space. Built in 1995, this home offers the convenience of a more modern floor plan with the updates already completed. The location is another major advantage, putting you near west Wichita shopping, restaurants, grocery stores, and convenient routes across town while enjoying the benefits of the Goddard School District. Whether you&#39;re looking for room to grow or a home that&#39;s easier to settle into, 11109 W Lotus St delivers the space, comfort, and move-in ready condition that make everyday life a little easier.</p>
     </div>
@@ -201,8 +203,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -212,13 +214,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="11109 Lotus ST, Wichita, KS, 67209">
-        <input type="hidden" name="message" value="I am interested in the property at 11109 Lotus ST, Wichita, KS, 67209 (MLS# 680324). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 11109 Lotus ST, Wichita, KS, 67209 (MLS# 680324). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

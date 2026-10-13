@@ -13371,7 +13371,7 @@
     "state": "KS",
     "lat": 38.934234,
     "lng": -97.625367,
-    "price": 544900,
+    "price": 495000,
     "beds": 6,
     "baths": 5,
     "sqft": "6628",
@@ -13383,7 +13383,8 @@
     "isSundgren": false,
     "agentName": "Jerry Short",
     "agentPhone": "7854525464",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 544900
   },
   {
     "slug": "14046-willowgreen-ct-wichita-ks-674651",
@@ -28791,7 +28792,7 @@
     "state": "KS",
     "lat": 37.674229,
     "lng": -97.515933,
-    "price": 370000,
+    "price": 360000,
     "beds": 4,
     "baths": 3,
     "sqft": "2547",
@@ -28804,7 +28805,7 @@
     "agentName": "Ronda Welsh",
     "agentPhone": "3164094431",
     "agentEmail": "",
-    "previousPrice": 375000
+    "previousPrice": 370000
   },
   {
     "slug": "232-234-gowen-st-goddard-ks-675090",
@@ -44924,7 +44925,7 @@
     "state": "KS",
     "lat": 37.719027,
     "lng": -97.47534,
-    "price": 295000,
+    "price": 288500,
     "beds": 4,
     "baths": 3,
     "sqft": "1895",
@@ -44936,7 +44937,8 @@
     "isSundgren": false,
     "agentName": "Paula Clouse",
     "agentPhone": "3167066566",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 295000
   },
   {
     "slug": "200-garfield-st-walton-ks-677318",
@@ -69919,7 +69921,7 @@
     "state": "KS",
     "lat": 37.594072,
     "lng": -97.331517,
-    "price": 199900,
+    "price": 189000,
     "beds": 3,
     "baths": 2,
     "sqft": "1337",
@@ -69931,7 +69933,8 @@
     "isSundgren": false,
     "agentName": "Oricel Iron Wing",
     "agentPhone": "3168336248",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 199900
   },
   {
     "slug": "221-main-st-mount-hope-ks-674070",
@@ -75698,7 +75701,7 @@
     "state": "KS",
     "lat": 38.825026,
     "lng": -97.610699,
-    "price": 184900,
+    "price": 179000,
     "beds": 3,
     "baths": 2,
     "sqft": "1440",
@@ -75710,7 +75713,8 @@
     "isSundgren": false,
     "agentName": "Kaitlyn Albert",
     "agentPhone": "3163908153",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 184900
   },
   {
     "slug": "617-4th-st-haysville-ks-676787",
@@ -92664,7 +92668,7 @@
     "state": "KS",
     "lat": 37.713212,
     "lng": -97.284538,
-    "price": 125000,
+    "price": 120000,
     "beds": 2,
     "baths": 1,
     "sqft": "808",
@@ -92677,7 +92681,7 @@
     "agentName": "Luis Benitez",
     "agentPhone": "9033158263",
     "agentEmail": "",
-    "previousPrice": 130000
+    "previousPrice": 125000
   },
   {
     "slug": "1408-vassar-ave-wichita-ks-678092",
@@ -129231,7 +129235,7 @@
     "state": "KS",
     "lat": 38.83625901,
     "lng": -97.61893201,
-    "price": 10500,
+    "price": 9500,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -129243,7 +129247,8 @@
     "isSundgren": false,
     "agentName": "Tammy Rank",
     "agentPhone": "7853429359",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 10500
   },
   {
     "slug": "1539-pershing-ave-wichita-ks-667318",
@@ -133858,7 +133863,7 @@
     "state": "KS",
     "lat": 37.23561416,
     "lng": -96.78494894,
-    "price": 0,
+    "price": 262500,
     "beds": null,
     "baths": null,
     "sqft": null,
