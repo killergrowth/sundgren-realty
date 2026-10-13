@@ -9426,7 +9426,7 @@
     "state": "KS",
     "lat": 37.617734,
     "lng": -97.233959,
-    "price": 585000,
+    "price": 560000,
     "beds": 5,
     "baths": 4,
     "sqft": "3109",
@@ -9439,7 +9439,7 @@
     "agentName": "Nicolle Jausel",
     "agentPhone": "3166402564",
     "agentEmail": "",
-    "previousPrice": 600000
+    "previousPrice": 585000
   },
   {
     "slug": "435-130th-st-s-st-south-haven-ks-676399",
@@ -46918,7 +46918,7 @@
     "state": "KS",
     "lat": 38.35972099,
     "lng": -97.673765,
-    "price": 279900,
+    "price": 274900,
     "beds": 4,
     "baths": 3,
     "sqft": "2789",
@@ -46931,7 +46931,7 @@
     "agentName": "Larry Showalter",
     "agentPhone": "7857664497",
     "agentEmail": "",
-    "previousPrice": 284900
+    "previousPrice": 279900
   },
   {
     "slug": "2720-beacon-hill-wichita-ks-672567",

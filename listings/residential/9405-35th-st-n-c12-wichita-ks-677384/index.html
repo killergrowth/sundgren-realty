@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-terminated pill">Inactive</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -143,7 +143,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Welcome to Greenlight GarageDominiums at 9405 E. 35th Street N., Wichita, KS—a rare opportunity to own a luxury garage condominium designed for those who value space, security, and versatility. Whether you&#39;re a car enthusiast, collector, hobbyist, entrepreneur, or simply need the ultimate place to store your recreational vehicles, business equipment, or prized possessions, this premium unit offers endless possibilities. Featuring approximately 1,666–2,000 square feet of thoughtfully designed space with soaring 20+ foot ceilings, the interior is finished with polished concrete floors, completed drywall, insulated walls, an oversized insulated automatic garage door, a spacious mezzanine for additional storage or workspace, an oversized ceiling fan, and an energy-efficient mini-split heating and cooling system for year-round comfort. The unit also includes an installed hot water heater, while the plumbing has already been roughed in for a future restroom with a toilet, shower, and sink. An additional water line rough-in is also in place, providing even greater flexibility for future customization or utility needs. Greenlight GarageDominiums is a gated, secure community offering 24/7 owner access, allowing you to enjoy your space whenever inspiration strikes. Conveniently located near K-96, Highway 254, Koch Industries, Wichita State University, and the shopping, dining, and entertainment along the K-96 corridor, this one-of-a-kind property combines luxury, convenience, and functionality in a way that&#39;s difficult to find. If you&#39;ve been searching for the perfect place to work, create, store, or showcase your investments, this exceptional garage condominium is ready to exceed your expectations. Zero Down Ownership options - call for details</p>
     </div>
@@ -196,8 +198,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -207,13 +209,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="9405 35th St N #C12, Wichita, KS, 67226">
-        <input type="hidden" name="message" value="I am interested in the property at 9405 35th St N #C12, Wichita, KS, 67226 (MLS# 677384). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 9405 35th St N #C12, Wichita, KS, 67226 (MLS# 677384). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
