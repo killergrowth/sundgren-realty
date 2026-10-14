@@ -1,5 +1,5 @@
 {
-  "lastFetch": "2026-10-13T18:58:36.377Z",
+  "lastFetch": "2026-10-14T00:11:09.878Z",
   "auctions": {
     "24096": {
       "slug": "test-auction-24096",
@@ -2940,6 +2940,18 @@
       "status": "accepting_bids",
       "name": "Rolling Hills Estates Condominium: 120 N Maize Rd. Unit 23, Wichita and Personal Property Auction",
       "generated": "2026-10-10T09:31:23.301Z"
+    },
+    "171813": {
+      "slug": "1158-acres-farm-house-barns-pasture-near-toronto-in-greenwoo-171813",
+      "status": "pending",
+      "name": "115.8 Acres Farm House, Barns & Pasture near Toronto in Greenwood County, Kansas",
+      "generated": "2026-10-14T00:11:16.739Z"
+    },
+    "171835": {
+      "slug": "1120-acres-kansas-native-bluestem-pasture-ranch-woodson-coun-171835",
+      "status": "pending",
+      "name": "1,120+- Acres Kansas Native Bluestem Pasture Ranch – Woodson County, Kansas",
+      "generated": "2026-10-14T00:11:16.740Z"
     }
   }
 }
