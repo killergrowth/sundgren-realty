@@ -964,7 +964,7 @@
     "state": "KS",
     "lat": 37.821985,
     "lng": -96.28803,
-    "price": 79900,
+    "price": 70000,
     "beds": 4,
     "baths": 1,
     "sqft": "1690",
@@ -976,7 +976,8 @@
     "isSundgren": true,
     "agentName": "Ashleigh Casper",
     "agentPhone": "6205839879",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 79900
   },
   {
     "slug": "4774-maple-st-wichita-ks-635999",
@@ -23082,7 +23083,7 @@
     "state": "KS",
     "lat": 37.841358,
     "lng": -96.842172,
-    "price": 400000,
+    "price": 395000,
     "beds": 5,
     "baths": 4,
     "sqft": "3477",
@@ -23095,7 +23096,7 @@
     "agentName": "Zac Sundgren",
     "agentPhone": "3163225812",
     "agentEmail": "",
-    "previousPrice": 410000
+    "previousPrice": 400000
   },
   {
     "slug": "54265428-briskbay-ct-maize-ks-677655",
@@ -27623,7 +27624,7 @@
     "state": "KS",
     "lat": 37.685425,
     "lng": -97.470954,
-    "price": 374900,
+    "price": 364900,
     "beds": 5,
     "baths": 4,
     "sqft": "3169",
@@ -27636,7 +27637,7 @@
     "agentName": "Robbin L Deel",
     "agentPhone": "3166488494",
     "agentEmail": "",
-    "previousPrice": 375900
+    "previousPrice": 374900
   },
   {
     "slug": "3513-bluelake-st-wichita-ks-671913",
@@ -28603,7 +28604,7 @@
     "state": "KS",
     "lat": 37.716631,
     "lng": -97.140399,
-    "price": 349900,
+    "price": 330000,
     "beds": 4,
     "baths": 3,
     "sqft": "2901",
@@ -28616,7 +28617,7 @@
     "agentName": "Jordan Hoefler",
     "agentPhone": "3162599333",
     "agentEmail": "",
-    "previousPrice": 375000
+    "previousPrice": 349900
   },
   {
     "slug": "38213823-bluelake-ct-wichita-ks-677595",
@@ -92648,7 +92649,7 @@
     "state": "KS",
     "lat": 37.671778,
     "lng": -97.338434,
-    "price": 130000,
+    "price": 125000,
     "beds": 3,
     "baths": 3,
     "sqft": "2292",
@@ -92660,7 +92661,8 @@
     "isSundgren": false,
     "agentName": "Lucy Ferrer-Gonzalez",
     "agentPhone": "3169789777",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 130000
   },
   {
     "slug": "1639-kenmar-dr-wichita-ks-678221",

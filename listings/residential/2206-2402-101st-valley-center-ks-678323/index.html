@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -133,7 +133,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Property offered at ONLINE ONLY auction. BIDDING OPENS: Tuesday, October 6th, 2026 at 2 PM (ct) | BIDDING CLOSING: Wednesday, October 14th, 2026 at 2 PM (ct). Bidding will remain open on this property until 90 seconds have passed without receiving a bid. Property available to preview by appointment. CLEAR TITLE AT CLOSING, NO BACK TAXES. ONLINE ONLY!!! The Jim James Memorial 101 Club is a nearly 80-acre recreational property with an exceptional variety of buildings, amenities, and potential uses. Located just north of Wichita off 101st Street N. in Valley Center, this one-of-a-kind property provides an incredible opportunity to acquire a large recreational campus with extensive indoor and outdoor facilities. With nearly 80 acres, multiple gathering spaces, and a wide range of recreational amenities already in place, the possibilities for the next owner are endless. Property Features: Nearly 80 acres of recreational land Located at 2206 &amp; 2402 E. 101st St. in Valley Center Zoned Rural Residential and Non-Conformance Site Large 101 Bingo Hall with open gathering space Stage Men&#39;s and women&#39;s restrooms with showers Laundry facilities Second large open gathering room Kitchen and dining area Storage space Covered outdoor patio Two large swimming pools Approximately 10-acre lake Catfish, Bass &amp; Crappie Pond Nature trail Multiple campsites with electrical hookups 3 Softball fields Disc golf course Trap shooting bunker Horseshoe Pit Lagoons Potential Uses: Event or wedding venue Recreational retreat Corporate retreat or training center Educational campus Youth camp Wellness center Sports and recreation facility Outdoor adventure destination Private club Redevelopment opportunity This is a rare opportunity to acquire a one-of-a-kind property with substantial infrastructure, extensive recreational amenities, and room for a new vision. Whether preserved as a recreational retreat or transformed into something entirely new, the Jim James Memorial 101 Club offers exceptional space and versatility. Tax amount is “to be determined” due to the property’s current status as tax exempt. Buyer&#39;s choice for earnest money: $75,000 for a 30-day closing, $100,000 for a 45-day closing. The conveyance of the real estate at closing will be made and accepted subject to the existence of 24 known burial sites located northwest of main fellowship hall on the property; another potential burial site near the lake under a tree and marked with a memorial/headstone; and a final memorial/headstone that is east of the southern softball diamond, near the gravel trail. Notwithstanding the clearly marked cemetery area northwest of the main fellowship hall on the property, the Seller is not aware of whether the markers are for actual graves or just memorials near trees that have been planted. The Buyer should exercise its own due diligence and become familiar with the legal requirements for maintenance of gravesites on the property. As it relates to the cemetery area, there are currently 2 vacant plots that are reserved for the wives of a previously deceased spouse. Buyer is receiving the property subject to the rights of the surviving spouses to be buried next to their husbands at death. With regard to the cemetery and memorials (as applicable) Buyer will be required to grant access for ingress and egress for descendants, family members, and the general public with a request to visit the sites. To the best of Seller’s knowledge, the aforementioned individuals have a legal right of reasonable access to visit the gravesites. Buyer shall be required to not restrict reasonable ingress and egress along a designated access route (to be determined by the buyer) and shall maintain no structure or fence that impedes such visitation. *SEE TERMS OF SALE</p>
     </div>
@@ -186,8 +188,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -197,13 +199,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="2206 &amp; 2402 101st, Valley Center, KS, 67147">
-        <input type="hidden" name="message" value="I am interested in the property at 2206 &amp; 2402 101st, Valley Center, KS, 67147 (MLS# 678323). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 2206 &amp; 2402 101st, Valley Center, KS, 67147 (MLS# 678323). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

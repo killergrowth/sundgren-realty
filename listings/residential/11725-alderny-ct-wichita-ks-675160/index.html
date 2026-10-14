@@ -158,15 +158,11 @@
     <div class="feat-grid">
     <div class="feat-cell">
       <i class="fas fa-fire"></i>
-      <div><span class="mlabel">Heating</span>Forced Air, Natural Gas</div>
+      <div><span class="mlabel">Heating</span>Natural Gas, Forced Air</div>
     </div>
     <div class="feat-cell">
       <i class="fas fa-snowflake"></i>
       <div><span class="mlabel">Cooling</span>Ceiling Fan(s), Wall/Window Unit(s), Electric</div>
-    </div>
-    <div class="feat-cell">
-      <i class="fas fa-border-all"></i>
-      <div><span class="mlabel">Flooring</span>Smoke Detector(s)</div>
     </div>
     <div class="feat-cell">
       <i class="fas fa-home"></i>
@@ -199,9 +195,9 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
     (function(){
-      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.704328,-97.478198],15);
+      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.705089,-97.479487],15);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap contributors',maxZoom:19}).addTo(map);
-      L.marker([37.704328,-97.478198]).addTo(map).bindPopup('11725 Alderny Ct, Wichita, KS 67212').openPopup();
+      L.marker([37.705089,-97.479487]).addTo(map).bindPopup('11725 Alderny Ct, Wichita, KS 67212').openPopup();
     })();
     </script>
   </div>

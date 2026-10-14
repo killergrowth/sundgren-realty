@@ -158,15 +158,11 @@
     <div class="feat-grid">
     <div class="feat-cell">
       <i class="fas fa-fire"></i>
-      <div><span class="mlabel">Heating</span>Forced Air, Zoned, Natural Gas</div>
+      <div><span class="mlabel">Heating</span>Natural Gas, Forced Air, Zoned</div>
     </div>
     <div class="feat-cell">
       <i class="fas fa-snowflake"></i>
       <div><span class="mlabel">Cooling</span>Ceiling Fan(s), Central Air, Zoned, Electric</div>
-    </div>
-    <div class="feat-cell">
-      <i class="fas fa-border-all"></i>
-      <div><span class="mlabel">Flooring</span>Smoke Detector(s)</div>
     </div>
     <div class="feat-cell">
       <i class="fas fa-home"></i>
@@ -199,9 +195,9 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
     (function(){
-      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.68525,-97.13026],15);
+      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.685242,-97.130257],15);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap contributors',maxZoom:19}).addTo(map);
-      L.marker([37.68525,-97.13026]).addTo(map).bindPopup('145 Shay Rd, Andover, KS 67002').openPopup();
+      L.marker([37.685242,-97.130257]).addTo(map).bindPopup('145 Shay Rd, Andover, KS 67002').openPopup();
     })();
     </script>
   </div>
