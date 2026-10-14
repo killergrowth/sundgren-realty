@@ -21619,7 +21619,7 @@
     "state": "KS",
     "lat": 37.934446,
     "lng": -97.320433,
-    "price": 417500,
+    "price": 399900,
     "beds": 3,
     "baths": 3,
     "sqft": "2557",
@@ -21632,7 +21632,7 @@
     "agentName": "Dan Madrigal",
     "agentPhone": "3169900184",
     "agentEmail": "",
-    "previousPrice": 425000
+    "previousPrice": 417500
   },
   {
     "slug": "2102-cranbrook-st-wichita-ks-676246",
@@ -22522,7 +22522,7 @@
     "state": "KS",
     "lat": 37.69174798,
     "lng": -97.29352298,
-    "price": 410000,
+    "price": 399900,
     "beds": 3,
     "baths": 2,
     "sqft": "2882",
@@ -22535,7 +22535,7 @@
     "agentName": "Deanna M Russell",
     "agentPhone": "3167129447",
     "agentEmail": "",
-    "previousPrice": 419900
+    "previousPrice": 410000
   },
   {
     "slug": "11804-1st-st-n-wichita-ks-678233",
@@ -49472,7 +49472,7 @@
     "state": "KS",
     "lat": 37.659011,
     "lng": -97.467962,
-    "price": 269900,
+    "price": 259900,
     "beds": 3,
     "baths": 2,
     "sqft": "1874",
@@ -49485,7 +49485,7 @@
     "agentName": "Grant H Farha",
     "agentPhone": "3165181711",
     "agentEmail": "",
-    "previousPrice": 279900
+    "previousPrice": 269900
   },
   {
     "slug": "1114-revere-dr-salina-ks-677995",
@@ -58100,7 +58100,7 @@
     "state": "KS",
     "lat": 37.684696,
     "lng": -97.38129,
-    "price": 239900,
+    "price": 232500,
     "beds": 3,
     "baths": 2,
     "sqft": "2099",
@@ -58113,7 +58113,7 @@
     "agentName": "Ray Stafford",
     "agentPhone": "3167377718",
     "agentEmail": "",
-    "previousPrice": 249500
+    "previousPrice": 239900
   },
   {
     "slug": "2706-amelia-lane-salina-ks-677159",
@@ -88251,7 +88251,7 @@
     "state": "KS",
     "lat": 37.653263,
     "lng": -97.276486,
-    "price": 142500,
+    "price": 139900,
     "beds": 2,
     "baths": 1,
     "sqft": "952",
@@ -88264,7 +88264,7 @@
     "agentName": "Pamela Hinman",
     "agentPhone": "6203262162",
     "agentEmail": "",
-    "previousPrice": 145000
+    "previousPrice": 142500
   },
   {
     "slug": "2746-iva-ave-wichita-ks-677892",

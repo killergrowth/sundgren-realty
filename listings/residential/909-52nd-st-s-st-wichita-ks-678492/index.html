@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Beautifully well cared for home completely move-in ready. This charming home has 2 bedrooms and 1 full bath upstairs, 1 flex room, a rec room area and family room in the finished basement, as well a second full bath and laundry. The living room and 2 upstairs bedrooms have lighted ceiling fans. There is a 2 car attached garage. Every detail has been thoughtfully refreshed, giving this low maintenance home a clean, modern feel the moment you walk in. The covered patio with the lake view is a great place to relax morning and evening. There is a 10x12 storage building in the backyard, as well as a 6x7 covered BBQ hut. Enjoy access right from your backyard to the private neighborhood lake with a scenic walking path where you can fish, relax, or even canoe in your own community year round! A minimal $10 a month HOA fee pays for maintenance around the lake area and keeps the lake private. The roof on the home and outbuilding is new as of September, 2026, insulated siding with house wrap and covered gutters have been installed within the last 10 years. The AC and furnace have also been replaced within that time frame as well. The double pane insulated tilt-in for cleaning windows have a lifetime guarantee with Alside, a local company, and are new in the last 10 years, as is the carpet in the bedrooms and laminate flooring in the main living area and kitchen. The appliances have also been purchased within the last 10 years. The 25 cu. ft. side by side Amana refrigerator, smooth cooktop range with over the range microwave, as well as the dishwasher, remain with the house. The vanity, vessel sink and toilet in the upstairs bath have been replaced. Documentation and service records are available for all claims. The home is truly turnkey and ready for its next owner. Call today for your private showing.</p>
     </div>
@@ -201,8 +203,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -212,13 +214,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="909 52nd St S St, Wichita, KS, 67216">
-        <input type="hidden" name="message" value="I am interested in the property at 909 52nd St S St, Wichita, KS, 67216 (MLS# 678492). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 909 52nd St S St, Wichita, KS, 67216 (MLS# 678492). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
