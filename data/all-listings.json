@@ -14089,7 +14089,7 @@
     "state": "KS",
     "lat": 37.490549,
     "lng": -97.230829,
-    "price": 529000,
+    "price": 509000,
     "beds": 5,
     "baths": 5,
     "sqft": "3930",
@@ -14101,7 +14101,8 @@
     "isSundgren": false,
     "agentName": "Kirk Short",
     "agentPhone": "3163714668",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 529000
   },
   {
     "slug": "9658-cedar-lane-maize-ks-664682",
@@ -48428,7 +48429,7 @@
     "state": "KS",
     "lat": 37.590326,
     "lng": -97.26811,
-    "price": 284999,
+    "price": 284000,
     "beds": 3,
     "baths": 3,
     "sqft": "1614",
@@ -48440,7 +48441,8 @@
     "isSundgren": false,
     "agentName": "Huynhnhu Tran",
     "agentPhone": "3169904307",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 284999
   },
   {
     "slug": "9404-hurst-st-wichita-ks-677984",
@@ -87949,7 +87951,7 @@
     "state": "KS",
     "lat": 37.674041,
     "lng": -97.27888398,
-    "price": 148000,
+    "price": 135000,
     "beds": 4,
     "baths": 1,
     "sqft": "1114",
@@ -87961,7 +87963,8 @@
     "isSundgren": false,
     "agentName": "Steve Myers",
     "agentPhone": "3163304318",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 148000
   },
   {
     "slug": "1509-ash-ave-el-dorado-ks-672622",
@@ -102295,7 +102298,7 @@
     "state": "KS",
     "lat": 38.828653,
     "lng": -97.605355,
-    "price": 91000,
+    "price": 87000,
     "beds": 6,
     "baths": 3,
     "sqft": "2638",
@@ -102308,7 +102311,7 @@
     "agentName": "Kenneth M Clark",
     "agentPhone": "3167212889",
     "agentEmail": "",
-    "previousPrice": 92700
+    "previousPrice": 91000
   },
   {
     "slug": "1313-fern-st-wichita-ks-678342",
@@ -105112,7 +105115,7 @@
     "state": "KS",
     "lat": 37.627588,
     "lng": -96.228236,
-    "price": 79900,
+    "price": 65000,
     "beds": 2,
     "baths": 1,
     "sqft": "1691",
@@ -105124,7 +105127,8 @@
     "isSundgren": false,
     "agentName": "Becky Schaffer",
     "agentPhone": "6207500054",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 79900
   },
   {
     "slug": "518-cedar-st-marion-ks-668389",

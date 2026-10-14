@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Land</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Land</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -123,7 +123,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Just outside of Oxford, Kansas, along the banks of the Kansas River, lies a remarkable riverfront property offering an exceptional combination of trophy whitetail hunting, waterfowl, turkey hunting, fishing, and year-round recreation. Towering cottonwoods, mature timber, cedar thickets, and the flowing waters of the Kansas River create a diverse property that offers something for the serious outdoorsman in every season. Accessed from 10th Avenue, the property offers paved road frontage with electricity available at the road, providing potential for a future cabin, hunting lodge, or recreational retreat, subject to applicable regulations. The front field offers flexibility for a hay meadow, additional wildlife habitat, or potential building site. As you move through the property, mature cottonwoods, cedar thickets, and dense natural cover provide excellent bedding and security habitat for whitetails, while the mature timber offers quality roosting cover for wild turkeys. The back portion of the property is particularly attractive for the trophy whitetail hunter, with thick Johnson grass providing excellent cover and a mowed trail creating a natural deer travel route. The east corner also provides an ideal location for a future food plot or feeder site. One of the property&#39;s greatest strengths is its privacy and seclusion. Quality security cover and limited disturbance give wildlife a sense of safety that can be difficult to find on smaller river properties. This secluded setting creates an excellent environment for mature whitetails to move and feed with less pressure, while also providing hunters with multiple opportunities to capitalize on natural travel patterns. As fall transitions into winter, the Kansas River becomes a major attraction for waterfowl hunting. The property&#39;s high banks and flowing water help maintain open water during colder weather, creating an important travel corridor for ducks and geese. Nearby sand pits and private lakes provide additional roosting and holding areas, with major roost locations less than a mile from the property. Combined with large agricultural fields in the surrounding area, this location offers an excellent setup for late-season waterfowl hunting. Beyond hunting, the river provides tremendous year-round recreational value. Spend summer days fishing, exploring sandbars, camping, or simply enjoying the privacy and scenery of owning Kansas River frontage. The surrounding area also offers opportunities for pheasant, quail, and turkey hunting. This property may be modest in size, but it packs an enormous amount of opportunity into every acre. Trophy whitetail habitat, mature timber, waterfowl opportunities, turkey hunting, river frontage, potential building sites, and year-round recreation combine to create a rare Kansas River retreat. Properties offering this combination of river frontage, secluded wildlife habitat, trophy whitetail potential, and recreational versatility are increasingly difficult to find. For the buyer looking for a premium hunting property that can also serve as a private family getaway, this tract deserves serious consideration.</p>
     </div>
@@ -151,8 +153,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -162,13 +164,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="00000 10th Ave, Oxford, KS, 67119">
-        <input type="hidden" name="message" value="I am interested in the property at 00000 10th Ave, Oxford, KS, 67119 (MLS# 679657). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 00000 10th Ave, Oxford, KS, 67119 (MLS# 679657). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
