@@ -182,9 +182,9 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
     (function(){
-      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.651502,-97.496002],15);
+      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.651502,-97.496],15);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap contributors',maxZoom:19}).addTo(map);
-      L.marker([37.651502,-97.496002]).addTo(map).bindPopup('2349 Saddle Cir, Wichita, KS 67235').openPopup();
+      L.marker([37.651502,-97.496]).addTo(map).bindPopup('2349 Saddle Cir, Wichita, KS 67235').openPopup();
     })();
     </script>
   </div>
