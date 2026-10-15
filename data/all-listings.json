@@ -18950,7 +18950,7 @@
     "state": "KS",
     "lat": 37.862358,
     "lng": -97.70251,
-    "price": 399000,
+    "price": 475000,
     "beds": 4,
     "baths": 3,
     "sqft": "2993",
@@ -18962,8 +18962,7 @@
     "isSundgren": false,
     "agentName": "Jessica Schmidt",
     "agentPhone": "6202811800",
-    "agentEmail": "",
-    "previousPrice": 445000
+    "agentEmail": ""
   },
   {
     "slug": "13310-mount-vernon-rd-wichita-ks-677596",
