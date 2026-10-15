@@ -8266,7 +8266,7 @@
     "state": "KS",
     "lat": 37.688186,
     "lng": -97.31982,
-    "price": 699000,
+    "price": 649000,
     "beds": null,
     "baths": null,
     "sqft": "5,001 - 10,000",
@@ -8278,7 +8278,8 @@
     "isSundgren": false,
     "agentName": "Robert Mitelhaus",
     "agentPhone": "6613737443",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 699000
   },
   {
     "slug": "14704-peppertree-st-wichita-ks-667600",
@@ -20223,7 +20224,7 @@
     "state": "KS",
     "lat": 37.73563499,
     "lng": -97.14517502,
-    "price": 436250,
+    "price": 424900,
     "beds": 5,
     "baths": 3,
     "sqft": "2627",
@@ -20236,7 +20237,7 @@
     "agentName": "Myron K Klaassen",
     "agentPhone": "3164614847",
     "agentEmail": "",
-    "previousPrice": 444975
+    "previousPrice": 436250
   },
   {
     "slug": "2817-woodridge-st-wichita-ks-673094",
@@ -53475,7 +53476,7 @@
     "state": "KS",
     "lat": 38.342728,
     "lng": -97.205078,
-    "price": 265000,
+    "price": 249900,
     "beds": 4,
     "baths": 3,
     "sqft": "2183",
@@ -53487,7 +53488,8 @@
     "isSundgren": false,
     "agentName": "Matt Koontz",
     "agentPhone": "3163046938",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 265000
   },
   {
     "slug": "612-delia-avenue-minneapolis-ks-675583",
@@ -67368,7 +67370,7 @@
     "state": "KS",
     "lat": 37.716682,
     "lng": -97.373299,
-    "price": 199500,
+    "price": 194000,
     "beds": 3,
     "baths": 2,
     "sqft": "1164",
@@ -67381,7 +67383,7 @@
     "agentName": "Kristie Thackery",
     "agentPhone": "3166402240",
     "agentEmail": "",
-    "previousPrice": 210000
+    "previousPrice": 199500
   },
   {
     "slug": "121-n-mendocino-ct-goddard-ks-672760",
@@ -84295,7 +84297,7 @@
     "state": "KS",
     "lat": 37.712973,
     "lng": -97.289517,
-    "price": 159500,
+    "price": 154500,
     "beds": 2,
     "baths": 1,
     "sqft": "2338",
@@ -84307,7 +84309,8 @@
     "isSundgren": false,
     "agentName": "Cleve M Smith",
     "agentPhone": "3169936365",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 159500
   },
   {
     "slug": "211-english-st-mulvane-ks-674149",
@@ -94269,7 +94272,7 @@
     "state": "KS",
     "lat": 37.695065,
     "lng": -97.278535,
-    "price": 128500,
+    "price": 123500,
     "beds": 2,
     "baths": 1,
     "sqft": "964",
@@ -94281,7 +94284,8 @@
     "isSundgren": false,
     "agentName": "Cleve M Smith",
     "agentPhone": "3169936365",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 128500
   },
   {
     "slug": "lot-6-blk-1-saddle-ridge-at-andale-andale-ks-666038",
