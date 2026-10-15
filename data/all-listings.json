@@ -22779,7 +22779,7 @@
     "state": "KS",
     "lat": 37.63077554,
     "lng": -97.24115302,
-    "price": 415000,
+    "price": 399900,
     "beds": 5,
     "baths": 3,
     "sqft": "2485",
@@ -22791,7 +22791,8 @@
     "isSundgren": false,
     "agentName": "Caleb Claussen",
     "agentPhone": "3162591995",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 415000
   },
   {
     "slug": "14012-highland-springs-ct-wichita-ks-675459",
@@ -50681,7 +50682,7 @@
     "state": "KS",
     "lat": 37.669531,
     "lng": -97.555689,
-    "price": 265000,
+    "price": 259900,
     "beds": 3,
     "baths": 2,
     "sqft": "1459",
@@ -50694,7 +50695,7 @@
     "agentName": "Rachel Lange-Mills",
     "agentPhone": "3167655764",
     "agentEmail": "",
-    "previousPrice": 272000
+    "previousPrice": 265000
   },
   {
     "slug": "613-tanglewood-ct-derby-ks-677455",
@@ -55492,7 +55493,7 @@
     "state": "KS",
     "lat": 39.09572799,
     "lng": -97.613005,
-    "price": 254000,
+    "price": 250000,
     "beds": 2,
     "baths": 3,
     "sqft": "960",
@@ -55505,7 +55506,7 @@
     "agentName": "Samantha Swearingen",
     "agentPhone": "7855779878",
     "agentEmail": "",
-    "previousPrice": 259000
+    "previousPrice": 254000
   },
   {
     "slug": "1200-vista-sur-dr-salina-ks-671461",
@@ -78467,7 +78468,7 @@
     "state": "KS",
     "lat": 37.697058,
     "lng": -97.300647,
-    "price": 170000,
+    "price": 165000,
     "beds": 4,
     "baths": 1,
     "sqft": "1466",
@@ -78480,7 +78481,7 @@
     "agentName": "Jadyn Barr",
     "agentPhone": "3162171717",
     "agentEmail": "",
-    "previousPrice": 175000
+    "previousPrice": 170000
   },
   {
     "slug": "225-belair-st-el-dorado-ks-678134",
@@ -88278,7 +88279,7 @@
     "state": "KS",
     "lat": 37.733264,
     "lng": -97.291357,
-    "price": 145000,
+    "price": 150000,
     "beds": 2,
     "baths": 2,
     "sqft": "1348",

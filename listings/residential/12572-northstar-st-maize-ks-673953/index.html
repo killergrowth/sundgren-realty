@@ -67,11 +67,19 @@
         <img src="https://cdn.repliers.io/southcentralkansas/IMG-673953_6704338377117900743.jpg" alt="Property photo 2" loading="lazy">
         
       </button>
+      <button class="sg-mosaic-thumb" data-idx="2" aria-label="View photo 3" type="button">
+        <img src="https://cdn.repliers.io/southcentralkansas/IMG-673953_12d30adeb9291d331648f29978303c3ffd005ad92773d06e4be53de1e48d6c77.jpg" alt="Property photo 3" loading="lazy">
+        
+      </button>
+      <button class="sg-mosaic-thumb" data-idx="3" aria-label="View photo 4" type="button">
+        <img src="https://cdn.repliers.io/southcentralkansas/IMG-673953_2d329f6275626521adceb313075b696f698ae3b7a4c605b5566b7e7664ed9afb.jpg" alt="Property photo 4" loading="lazy">
+        <div class="sg-mosaic-more" aria-hidden="true">+13 more</div>
+      </button>
       </div>
     </div>
     <div class="sg-gallery-bar">
       <button class="sg-gallery-all-btn" id="sg-view-all" type="button">
-        <i class="fas fa-images"></i> View all 2 photos
+        <i class="fas fa-images"></i> View all 17 photos
       </button>
     </div>
   </section>
@@ -86,7 +94,7 @@
 
   <script>
   (function(){
-    var srcs = ["https://cdn.repliers.io/southcentralkansas/IMG-673953_6704630676518694813.jpg","https://cdn.repliers.io/southcentralkansas/IMG-673953_6704338377117900743.jpg"];
+    var srcs = ["https://cdn.repliers.io/southcentralkansas/IMG-673953_6704630676518694813.jpg","https://cdn.repliers.io/southcentralkansas/IMG-673953_6704338377117900743.jpg","https://cdn.repliers.io/southcentralkansas/IMG-673953_12d30adeb9291d331648f29978303c3ffd005ad92773d06e4be53de1e48d6c77.jpg","https://cdn.repliers.io/southcentralkansas/IMG-673953_2d329f6275626521adceb313075b696f698ae3b7a4c605b5566b7e7664ed9afb.jpg","https://cdn.repliers.io/southcentralkansas/IMG-673953_630b547ad4e37f93fefe9ff86b062771a8139c5eae0cb8a6eba333761bbd549c.jpg","https://cdn.repliers.io/southcentralkansas/IMG-673953_c7fa99c7868526b6d3d792254a42a331c1936d9c21c37799f5adea242dbe08d2.jpg","https://cdn.repliers.io/southcentralkansas/IMG-673953_69c6b96c05d99d36d73d958f181f07277e714275a1f79093239c4fe9d09c17b1.jpg","https://cdn.repliers.io/southcentralkansas/IMG-673953_162e48ce8745981c6741dcf7b9f85c97da70690fc77603325d895cc88c40b1d9.jpg","https://cdn.repliers.io/southcentralkansas/IMG-673953_d1b16d4878eba53a0eef31e564d3fb9ad354a67e30d5e2a9f0eebb5d402b5e2c.jpg","https://cdn.repliers.io/southcentralkansas/IMG-673953_9e11e112789066fb57ac389d016e387963bc3b8587b52360ac065419fbd0b659.jpg","https://cdn.repliers.io/southcentralkansas/IMG-673953_7ad4eaf0b68d20dc8ecad10fc51109e45c118bb29b7b55a3b81d2f705728ff77.jpg","https://cdn.repliers.io/southcentralkansas/IMG-673953_9c4c23a30706db5d3bd604c7efc898c7c2611af88fbcc83966dc09bf91ea57cd.jpg","https://cdn.repliers.io/southcentralkansas/IMG-673953_5876af011c0cf14c807cf8a938e7ff93ce433338021e955004fc7e5f4dff04c9.jpg","https://cdn.repliers.io/southcentralkansas/IMG-673953_bed2f5a4488eea108b0d0c553c8892b622dfadb5c0a2f3b1d0cd725efbc64f70.jpg","https://cdn.repliers.io/southcentralkansas/IMG-673953_4eeb35206a88b316de4b464b4671127d53e792a1c1a6e8ee21568313dee7728a.jpg","https://cdn.repliers.io/southcentralkansas/IMG-673953_fbf8d2f0e789a11e1b77ada39c8044ea2a0070a6de198a9a329a477206f0a415.jpg","https://cdn.repliers.io/southcentralkansas/IMG-673953_e6e27b553388fa10cbe27aa24f83440fd7086de6472947b6c1ff9943bc97e571.jpg"];
     var lb = document.getElementById('sg-lightbox');
     var lbImg = document.getElementById('sg-lightbox-img');
     var lbCtr = document.getElementById('sg-lightbox-counter');
@@ -150,7 +158,7 @@
     <div class="feat-grid">
     <div class="feat-cell">
       <i class="fas fa-fire"></i>
-      <div><span class="mlabel">Heating</span>Forced Air, Natural Gas</div>
+      <div><span class="mlabel">Heating</span>Natural Gas, Forced Air</div>
     </div>
     <div class="feat-cell">
       <i class="fas fa-snowflake"></i>
@@ -183,9 +191,9 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
     (function(){
-      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.749327,-97.487771],15);
+      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.7492539,-97.4877129],15);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap contributors',maxZoom:19}).addTo(map);
-      L.marker([37.749327,-97.487771]).addTo(map).bindPopup('12572 Northstar St, Maize, KS 67223').openPopup();
+      L.marker([37.7492539,-97.4877129]).addTo(map).bindPopup('12572 Northstar St, Maize, KS 67223').openPopup();
     })();
     </script>
   </div>

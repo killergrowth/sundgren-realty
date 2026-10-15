@@ -67,11 +67,19 @@
         <img src="https://cdn.repliers.io/southcentralkansas/IMG-673928_6701911213053185348.jpg" alt="Property photo 2" loading="lazy">
         
       </button>
+      <button class="sg-mosaic-thumb" data-idx="2" aria-label="View photo 3" type="button">
+        <img src="https://cdn.repliers.io/southcentralkansas/IMG-673928_4d0b866e6215c09119c5f86e7b7a622057bb16c1b3a497c49839916c9a993337.jpg" alt="Property photo 3" loading="lazy">
+        
+      </button>
+      <button class="sg-mosaic-thumb" data-idx="3" aria-label="View photo 4" type="button">
+        <img src="https://cdn.repliers.io/southcentralkansas/IMG-673928_5b611e41b411e9cb4eda9f169c45dafe81d3de4a2b05673cf6a2fbe40c6bb0ee.jpg" alt="Property photo 4" loading="lazy">
+        <div class="sg-mosaic-more" aria-hidden="true">+10 more</div>
+      </button>
       </div>
     </div>
     <div class="sg-gallery-bar">
       <button class="sg-gallery-all-btn" id="sg-view-all" type="button">
-        <i class="fas fa-images"></i> View all 2 photos
+        <i class="fas fa-images"></i> View all 14 photos
       </button>
     </div>
   </section>
@@ -86,7 +94,7 @@
 
   <script>
   (function(){
-    var srcs = ["https://cdn.repliers.io/southcentralkansas/IMG-673928_6701524711862560724.jpg","https://cdn.repliers.io/southcentralkansas/IMG-673928_6701911213053185348.jpg"];
+    var srcs = ["https://cdn.repliers.io/southcentralkansas/IMG-673928_6701524711862560724.jpg","https://cdn.repliers.io/southcentralkansas/IMG-673928_6701911213053185348.jpg","https://cdn.repliers.io/southcentralkansas/IMG-673928_4d0b866e6215c09119c5f86e7b7a622057bb16c1b3a497c49839916c9a993337.jpg","https://cdn.repliers.io/southcentralkansas/IMG-673928_5b611e41b411e9cb4eda9f169c45dafe81d3de4a2b05673cf6a2fbe40c6bb0ee.jpg","https://cdn.repliers.io/southcentralkansas/IMG-673928_906247d79715e7f01b1649168e52ccec71367a7369136456616503203a4fe7f5.jpg","https://cdn.repliers.io/southcentralkansas/IMG-673928_b6a07c7c9c3760c759417478821da15ad8552197296cc93d92e427cf61968c66.jpg","https://cdn.repliers.io/southcentralkansas/IMG-673928_d83fdd4c41fa706db98a1e34c7d0f39466dea00e55afc2f1447034d0c0ffe4ec.jpg","https://cdn.repliers.io/southcentralkansas/IMG-673928_dcccf7396851111b8d95d10c7a197d1c505e4f3a5440eb29fb76fa2efd56fc6b.jpg","https://cdn.repliers.io/southcentralkansas/IMG-673928_992c943bbbb10879fc8cac18224f7bb64a0fb47c222d6c2584831a910d85a49a.jpg","https://cdn.repliers.io/southcentralkansas/IMG-673928_162c630f822da972c32116d53636e73580a55abd6a3bba119415ee61c12b2624.jpg","https://cdn.repliers.io/southcentralkansas/IMG-673928_16b3da183151759763d3b722e410da913acc5696f622c330f1ada37aff6a7d7d.jpg","https://cdn.repliers.io/southcentralkansas/IMG-673928_2b3b88e814928057340885e9356eede217c602ecedcbf8f7c7931027dc996b74.jpg","https://cdn.repliers.io/southcentralkansas/IMG-673928_7c63c1c02a0df1d2659bf78fb7209b78a0b4da759d5434a34af42d5af5806079.jpg","https://cdn.repliers.io/southcentralkansas/IMG-673928_7d59908fb0203cd0f6e99b5c71d3362f59cb157e1ab272b6cf91cbf33370674c.jpg"];
     var lb = document.getElementById('sg-lightbox');
     var lbImg = document.getElementById('sg-lightbox-img');
     var lbCtr = document.getElementById('sg-lightbox-counter');
@@ -183,9 +191,9 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
     (function(){
-      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.749337,-97.487149],15);
+      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.7493048,-97.48709063],15);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap contributors',maxZoom:19}).addTo(map);
-      L.marker([37.749337,-97.487149]).addTo(map).bindPopup('12518 Northstar St, Maize, KS 67223').openPopup();
+      L.marker([37.7493048,-97.48709063]).addTo(map).bindPopup('12518 Northstar St, Maize, KS 67223').openPopup();
     })();
     </script>
   </div>
