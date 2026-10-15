@@ -1,5 +1,5 @@
 {
-  "lastFetch": "2026-10-15T10:58:45.330Z",
+  "lastFetch": "2026-10-15T16:27:37.854Z",
   "auctions": {
     "24096": {
       "slug": "test-auction-24096",
@@ -2952,6 +2952,12 @@
       "status": "pending",
       "name": "1,120+- Acres Kansas Native Bluestem Pasture Ranch – Woodson County, Kansas",
       "generated": "2026-10-14T00:11:16.740Z"
+    },
+    "171923": {
+      "slug": "320-acres-butler-county-kansas-native-flint-hills-pasture-2-171923",
+      "status": "pending",
+      "name": "320+- Acres Butler County, Kansas Native Flint Hills Pasture – 2 Tracts",
+      "generated": "2026-10-15T16:27:44.450Z"
     }
   }
 }
