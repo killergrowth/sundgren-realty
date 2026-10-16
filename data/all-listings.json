@@ -39177,7 +39177,7 @@
     "state": "KS",
     "lat": 37.710319,
     "lng": -97.112247,
-    "price": 322500,
+    "price": 320000,
     "beds": 5,
     "baths": 3,
     "sqft": "2214",
@@ -39190,7 +39190,7 @@
     "agentName": "W. David Beutel",
     "agentPhone": "2812016887",
     "agentEmail": "",
-    "previousPrice": 325000
+    "previousPrice": 322500
   },
   {
     "slug": "4962-294th-dr-arkansas-city-ks-675048",
@@ -61571,7 +61571,7 @@
     "state": "KS",
     "lat": 37.722211,
     "lng": -97.448893,
-    "price": 230000,
+    "price": 225000,
     "beds": 4,
     "baths": 3,
     "sqft": "3092",
@@ -61583,7 +61583,8 @@
     "isSundgren": false,
     "agentName": "Kelly Hartshorn",
     "agentPhone": "3166407500",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 230000
   },
   {
     "slug": "1639-lulu-ave-wichita-ks-677263",
