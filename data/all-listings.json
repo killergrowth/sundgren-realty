@@ -9638,7 +9638,7 @@
     "state": "KS",
     "lat": 37.729386,
     "lng": -97.135037,
-    "price": 635000,
+    "price": 625000,
     "beds": 5,
     "baths": 3,
     "sqft": "2990",
@@ -9650,7 +9650,8 @@
     "isSundgren": false,
     "agentName": "Eric J Locke",
     "agentPhone": "3166409274",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 635000
   },
   {
     "slug": "15031-shadow-lakes-ct-wichita-ks-676252",
@@ -12488,7 +12489,7 @@
     "state": "KS",
     "lat": 37.686841,
     "lng": -97.287764,
-    "price": 555000,
+    "price": 540000,
     "beds": 4,
     "baths": 3,
     "sqft": "2892",
@@ -12501,7 +12502,7 @@
     "agentName": "Nancy Shih",
     "agentPhone": "3169921108",
     "agentEmail": "",
-    "previousPrice": 560000
+    "previousPrice": 555000
   },
   {
     "slug": "1768-road-11-howard-ks-674910",
@@ -33265,7 +33266,7 @@
     "state": "KS",
     "lat": 37.557147,
     "lng": -97.258172,
-    "price": 349900,
+    "price": 339900,
     "beds": 3,
     "baths": 3,
     "sqft": "3277",
@@ -33278,7 +33279,7 @@
     "agentName": "Susanne Spring",
     "agentPhone": "3162587073",
     "agentEmail": "",
-    "previousPrice": 359000
+    "previousPrice": 349900
   },
   {
     "slug": "11857-160th-st-rose-hill-ks-675633",
@@ -37222,7 +37223,7 @@
     "state": "KS",
     "lat": 37.719807,
     "lng": -97.226726,
-    "price": 335000,
+    "price": 325000,
     "beds": 2,
     "baths": 2,
     "sqft": "1542",
@@ -37234,7 +37235,8 @@
     "isSundgren": false,
     "agentName": "Loc Nguyen",
     "agentPhone": "3163008746",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 335000
   },
   {
     "slug": "8132-morningside-st-wichita-ks-676979",
@@ -39036,7 +39038,7 @@
     "state": "KS",
     "lat": 37.681244,
     "lng": -97.244053,
-    "price": 312000,
+    "price": 311500,
     "beds": 4,
     "baths": 3,
     "sqft": "3452",
@@ -39049,7 +39051,7 @@
     "agentName": "Amanda Jolley",
     "agentPhone": "3162139043",
     "agentEmail": "",
-    "previousPrice": 312500
+    "previousPrice": 312000
   },
   {
     "slug": "142-magnolia-dr-kaw-city-ok-676981",
@@ -50659,7 +50661,7 @@
     "state": "KS",
     "lat": 37.609376,
     "lng": -97.93098599,
-    "price": 265000,
+    "price": 245000,
     "beds": 4,
     "baths": 2,
     "sqft": "2399",
@@ -50672,7 +50674,7 @@
     "agentName": "Eric J Locke",
     "agentPhone": "3166409274",
     "agentEmail": "",
-    "previousPrice": 275000
+    "previousPrice": 265000
   },
   {
     "slug": "1730-winterset-circle-wichita-ks-677559",
@@ -125653,7 +125655,7 @@
     "state": "KS",
     "lat": 38.550864,
     "lng": -97.429111,
-    "price": 25000,
+    "price": 15000,
     "beds": null,
     "baths": null,
     "sqft": "2,000 or Less",
@@ -125665,7 +125667,8 @@
     "isSundgren": false,
     "agentName": "Tammy Rank",
     "agentPhone": "7853429359",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 25000
   },
   {
     "slug": "1119-pershing-ave-wichita-ks-671605",
