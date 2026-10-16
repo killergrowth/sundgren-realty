@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-terminated pill">Inactive</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -133,7 +133,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Conveniently located near the intersection of Kellogg and Woodlawn, this quadplex offers easy access to shopping, dining, and entertainment, including Towne East Square and numerous nearby amenities. The property consists of four 1-bedroom, 1-bathroom units, with three of the four units currently occupied, providing immediate rental income. Each unit features a living and dining area with luxury vinyl flooring, a functional kitchen equipped with a refrigerator and oven/range, one bedroom, and a full bathroom with a tub/shower combination. Unit 604 – Leased for $625/month through 12/31/2026. Tenant pays for electric and $20 for water/sewer. Seller pays for gas. Unit 606 – Vacant, offering an opportunity for owner occupancy or additional rental income. When occupied tenant was paying electric, gas, and $20 for water/sewer. Unit 608 – Leased for $650/month through 1/31/2027. Tenant pays for electric, trash, and $20 for water/sewer. There is no gas in this unit. Unit 610 – Leased for $700/month, on a month to month basis. Tenant pays electric, gas, trash, and $20 for water/sewer. With three units generating a combined $1,975 per month in rental income and one vacant unit available for lease, this property presents an excellent opportunity for investors seeking both immediate cash flow and upside potential. The current rental amount does not match the lease. Utilities marked in leases do not reflect the correct responsible party. Please see comments above. Unit 606 Utilities are off. All information deemed reliable but not guaranteed. Buyers and agents to verify all information pertinent to them.</p>
     </div>
@@ -184,9 +186,9 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
     (function(){
-      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.677496,-97.258923],15);
+      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.677493,-97.258869],15);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap contributors',maxZoom:19}).addTo(map);
-      L.marker([37.677496,-97.258923]).addTo(map).bindPopup('604-610 Hunter ST, Wichita, KS 67207').openPopup();
+      L.marker([37.677493,-97.258869]).addTo(map).bindPopup('604-610 Hunter ST, Wichita, KS 67207').openPopup();
     })();
     </script>
   </div>
@@ -194,8 +196,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -205,13 +207,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="604-610 Hunter ST, Wichita, KS, 67207">
-        <input type="hidden" name="message" value="I am interested in the property at 604-610 Hunter ST, Wichita, KS, 67207 (MLS# 674248). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 604-610 Hunter ST, Wichita, KS, 67207 (MLS# 674248). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
@@ -311,7 +313,7 @@
         </div>
       </a>
       <a href="/listings/residential/810-29th-rd-little-river-ks-664897/" class="listing-card">
-        <img class="listing-card-img" src="" alt="810 29th Rd, Little River, KS, 67457" loading="lazy">
+        <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-664897_3d9ef5211b70ed56aca6914655526de643260be70aa1182b21524c9e6a527838.jpg" alt="810 29th Rd, Little River, KS, 67457" loading="lazy">
         <div class="listing-card-body">
           <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
             <span class="listing-card-badge" style="background:#22c55e;">Active</span>

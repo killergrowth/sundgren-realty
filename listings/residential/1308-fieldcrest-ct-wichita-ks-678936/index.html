@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-terminated pill">Inactive</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Welcome home to the prettiest house on the block in west Wichita. This 6 bedroom, 3 ½ bath, 2 story home sits on a corner lot on a quiet cul-de-sac with your own personal backyard oasis. Entertain your friends and family on the enormous, covered Timber Tech composite deck equipped with overhead ceiling fans, canned lighting and TV / Stereo that walks out to the sparkling in-ground Saltwater pool. The grand foyer greets you as you enter the front door, and your eyes are immediately drawn to the gorgeous custom woodwork details featured on the staircase banister and wooden columns that frame the main floor living room. A floor-to-ceiling stacked stone-faced fireplace is the focal point of this sunken living room and is highlighted by the large windows and a sliding glass door that displays the view of your backyard paradise. The customized eat-in kitchen is a total showstopper featuring hardwood flooring, vaulted ceilings, granite counter tops with undermount sink, tile back splash, walk-in pantry, soft close cabinets/drawers, a full set of stainless-steel appliances and a 3-tiered center island with an eating bar. You will also find another impressive floor-to-ceiling brick-faced fireplace that is the perfect addition to this stunning kitchen area. Nearby is a huge formal dining room to entertain larger gatherings. The secluded master bedroom is conveniently located on the main floor with private access to your deck. The adjoining en-suite master bathroom has a new Jetta deep soaker corner tub, and double sink vanity with custom front-lighted mirrors. You also get a huge walk-in master closet with custom built-in storage, shoe racks, and shelving. A separate laundry room with pocket door and a half hall bath round out the main floor. The second story is home to three generously sized bedrooms, all with ceiling fans and large closets that share their own beautiful updated full hall bathroom that boasts tile flooring, updated fixtures, and a beautiful brand-new tub shower. The upper-level loft is perfect for an office, or children&#39;s play area with easy access to additional storage in the attic space. This home has a full walk-out basement with a spacious family/rec room with stained concrete floors, a 2-way brick fireplace, built-in entertainment center and sliding glass doors that walk out to that gorgeous backyard. Adjacent to the rec room is another ultimate entertainment space, where you can take a seat at the custom-built wet bar, rack up a game of pool or cozy up next to the fireplace to catch a sporting event. The basement also has two additional bedrooms and its own new modern full bath. The side-load 2 car garage is oversized and provides plenty of extra room to store all your outdoor equipment and toys. Mechanical upgrades include two HVAC systems for optimal climate controls on each floor, two 50-gallon water heaters for hot showers every morning, and an irrigation well and underground sprinkler system to keep the lawn green all summer long. Bathrooms are new and come with lifetime warranties. The exterior of house has been updated with the best quality materials and comes with several warranties giving you peace of mind. Roof is comprised of Presidential asphalt impact resistant shingles with limited lifetime warranty. Siding is LP Smart siding only 1 year old with kickout flashing and a 50-yr warranty. The deck has a fade &amp; stain 50-year warranty. This home has the widely preferred Anderson windows. Paint on house is Sherwin Willimas duration paint. The pool has been upgraded with a new salt-selling filter with glass media vs sand for longer lasting life and a recently purchased 1 year old pool cover. This home has all the amenities you could ask for and is located in the Huntington Place division which provides a pond, trail, and Swanson Park for your neighborhood enjoyment.</p>
     </div>
@@ -209,8 +211,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -220,13 +222,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="1308 Fieldcrest Ct, Wichita, KS, 67212">
-        <input type="hidden" name="message" value="I am interested in the property at 1308 Fieldcrest Ct, Wichita, KS, 67212 (MLS# 678936). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 1308 Fieldcrest Ct, Wichita, KS, 67212 (MLS# 678936). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
@@ -326,7 +328,7 @@
         </div>
       </a>
       <a href="/listings/residential/810-29th-rd-little-river-ks-664897/" class="listing-card">
-        <img class="listing-card-img" src="" alt="810 29th Rd, Little River, KS, 67457" loading="lazy">
+        <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-664897_3d9ef5211b70ed56aca6914655526de643260be70aa1182b21524c9e6a527838.jpg" alt="810 29th Rd, Little River, KS, 67457" loading="lazy">
         <div class="listing-card-body">
           <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
             <span class="listing-card-badge" style="background:#22c55e;">Active</span>

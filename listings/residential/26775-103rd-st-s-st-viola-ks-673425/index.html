@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-terminated pill">Inactive</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>NEW PRICE — $30,000 REDUCTION! The seller has made a significant price adjustment to help offset today’s higher interest rates and improve overall affordability. Welcome to a Once-in-a-Lifetime Luxury Country Estate—Where Storybook Charm Meets Modern Mastery. Just 20 minutes from Wichita, this extraordinary 38+ acre estate delivers a rare combination of timeless Victorian elegance, resort-style amenities, and breathtaking natural beauty—creating a lifestyle few properties can match. Perched atop a scenic rise, the fully restored 1890 Victorian home overlooks your own private lake and a picturesque island complete with mature trees and a handcrafted Amish gazebo. The setting is private and peaceful. Inside, over 3,000 square feet of meticulously rebuilt living space blends historic character with modern sophistication. Original architectural details—expansive front, back and side porches, intricate millwork, stained glass, and antique finishes—are seamlessly paired with major upgrades including new siding, windows, roof, electrical, insulation, PEX plumbing, new ductwork and newer zoned HVAC. At the heart of the home, a designer gourmet kitchen is built to impress. Featuring custom cabinetry, quartz countertops, premium appliances, and a walk-in pantry with prep sink, it’s perfectly positioned to capture stunning lake views—ideal for both everyday living and upscale entertaining. Upstairs, the primary suite is a true retreat—spacious, serene, and spa-inspired, includes a 13.5’ x 10’ closet. Enjoy dual vanities, a freestanding soaking tub with hand-held shower, and an oversized 6’x6’ walk-in shower with multiple heads. Four additional bedrooms, a full guest bath, and a thoughtfully designed laundry room complete the upper level. The opportunity continues with over 1,000 square feet of unfinished basement space—already framed, plumbed, and wired—ready to be transformed into 2 additional bedrooms with egress, a full bath, plumbed for a kitchenette/wet bar, or a custom entertainment space tailored to your vision. Outdoors, the estate becomes a destination. A massive 40’x120’ barn offers unmatched versatility with finished interior space, oversized overhead doors, and covered parking for RVs or equipment. A private apartment with bath and laundry, plus an outdoor kitchen and grilling area, creates the perfect setup for guests or family. The arrival experience is just as impressive—winding driveways guide you across a scenic lake dam and through wooded surroundings before revealing a private blacktop entrance that sets the tone for what’s to come. Whether you’re hosting unforgettable gatherings, enjoying quiet mornings on the porch, or taking in Kansas sunsets over the water, this property delivers a lifestyle defined by privacy, beauty, and distinction. This is more than a home—it’s a legacy estate. Schedule your private tour today and experience one of the most unique properties in the region.</p>
     </div>
@@ -213,8 +215,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -224,13 +226,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="26775 103rd St S St, Viola, KS, 67149">
-        <input type="hidden" name="message" value="I am interested in the property at 26775 103rd St S St, Viola, KS, 67149 (MLS# 673425). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 26775 103rd St S St, Viola, KS, 67149 (MLS# 673425). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
@@ -330,7 +332,7 @@
         </div>
       </a>
       <a href="/listings/residential/810-29th-rd-little-river-ks-664897/" class="listing-card">
-        <img class="listing-card-img" src="" alt="810 29th Rd, Little River, KS, 67457" loading="lazy">
+        <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-664897_3d9ef5211b70ed56aca6914655526de643260be70aa1182b21524c9e6a527838.jpg" alt="810 29th Rd, Little River, KS, 67457" loading="lazy">
         <div class="listing-card-body">
           <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
             <span class="listing-card-badge" style="background:#22c55e;">Active</span>
