@@ -92628,7 +92628,7 @@
     "state": "KS",
     "lat": 37.90119891,
     "lng": -97.78123938,
-    "price": 119900,
+    "price": 119400,
     "beds": 2,
     "baths": 1,
     "sqft": "948",
@@ -92641,7 +92641,7 @@
     "agentName": "Jessica Schmidt",
     "agentPhone": "6202811800",
     "agentEmail": "",
-    "previousPrice": 124900
+    "previousPrice": 119900
   },
   {
     "slug": "1147-main-st-wichita-ks-678295",
