@@ -7268,7 +7268,7 @@
     "state": "KS",
     "lat": 37.811603,
     "lng": -95.395658,
-    "price": 757995,
+    "price": 695000,
     "beds": null,
     "baths": null,
     "sqft": "3,001 - 5,000",
@@ -7280,7 +7280,8 @@
     "isSundgren": false,
     "agentName": "Lane Budde",
     "agentPhone": "3166400204",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 757995
   },
   {
     "slug": "6215-kellogg-wichita-ks-676843",
@@ -18028,7 +18029,7 @@
     "state": "KS",
     "lat": 37.637727,
     "lng": -97.156787,
-    "price": 460000,
+    "price": 450000,
     "beds": 5,
     "baths": 3,
     "sqft": "2498",
@@ -18041,7 +18042,7 @@
     "agentName": "Casey Baltazar",
     "agentPhone": "3165736047",
     "agentEmail": "",
-    "previousPrice": 465000
+    "previousPrice": 460000
   },
   {
     "slug": "2744-wet-stone-dr-salina-ks-676296",
@@ -28772,7 +28773,7 @@
     "state": "KS",
     "lat": 37.776893,
     "lng": -97.23444,
-    "price": 360000,
+    "price": 356000,
     "beds": null,
     "baths": null,
     "sqft": "2330",
@@ -28785,7 +28786,7 @@
     "agentName": "Michelle Estrada",
     "agentPhone": "3166800414",
     "agentEmail": "",
-    "previousPrice": 375000
+    "previousPrice": 360000
   },
   {
     "slug": "15106-slope-st-wichita-ks-676488",
@@ -41566,7 +41567,7 @@
     "state": "KS",
     "lat": 37.771683,
     "lng": -97.457881,
-    "price": 315000,
+    "price": 307500,
     "beds": 3,
     "baths": 3,
     "sqft": "1654",
@@ -41578,7 +41579,8 @@
     "isSundgren": false,
     "agentName": "Tiffany Voran",
     "agentPhone": "3162078852",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 315000
   },
   {
     "slug": "312-willow-rd-hillsboro-ks-676117",
@@ -82401,7 +82403,7 @@
     "state": "KS",
     "lat": 37.660909,
     "lng": -97.293888,
-    "price": 164900,
+    "price": 159900,
     "beds": 3,
     "baths": 2,
     "sqft": "1485",
@@ -82413,7 +82415,8 @@
     "isSundgren": false,
     "agentName": "Kevin Sechrist",
     "agentPhone": "6206800388",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 164900
   },
   {
     "slug": "801-lightner-dr-wichita-ks-676261",

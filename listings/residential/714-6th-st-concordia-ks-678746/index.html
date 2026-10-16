@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Welcome home into this well-kept, 1,480-square-foot single-family bungalow style home. Sitting on 0.28 acres across two large lots, this nicely maintained home pairs original character with excellent modern updates. The home features 3 bedrooms and 2 full bathrooms. The primary full bathroom features a brand-new walk-in shower. Includes a large family room featuring original, newly refinished wood floors. A partial unfinished block basement provides extensive space great for storage. The large Eat-In Kitchen is designed with a kitchen/dining combo featuring newer cabinets, ample counter space, two large pantries, and an extra sink for additional utility. Main-level laundry hookups provide convenient, single-story accessibility. Wrapped in durable vinyl siding and outfitted with newer double-glaze windows for improved energy efficiency. The property encompasses two spacious lots with a massive back deck, offering an ideal configuration to sit back and enjoy outdoor activities. The property offers convenient alley access leading to 2 spacious detached garages alongside additional parking spaces—perfect for a workshop or extra vehicle storage. With a large yard great for entertaining guests or to keep your gardening dreams alive. This cute move in ready home will not last long with everything it has to offer!!</p>
     </div>
@@ -187,9 +189,9 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
     (function(){
-      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([39.571333,-97.649446],15);
+      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([39.571333,-97.649443],15);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap contributors',maxZoom:19}).addTo(map);
-      L.marker([39.571333,-97.649446]).addTo(map).bindPopup('714 6th St, Concordia, KS 66901').openPopup();
+      L.marker([39.571333,-97.649443]).addTo(map).bindPopup('714 6th St, Concordia, KS 66901').openPopup();
     })();
     </script>
   </div>
@@ -197,8 +199,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -208,13 +210,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="714 6th St, Concordia, KS, 66901">
-        <input type="hidden" name="message" value="I am interested in the property at 714 6th St, Concordia, KS, 66901 (MLS# 678746). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 714 6th St, Concordia, KS, 66901 (MLS# 678746). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
