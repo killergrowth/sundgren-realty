@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-terminated pill">Inactive</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Water – Water – Water! Enjoy lakefront, resort-style living in this beautifully updated ranch located on one of the premier lots in the neighborhood! Tucked away at the end of a quiet cul-de-sac, this exceptional home overlooks scenic Horseshoe Lake, offering peaceful water views, mature trees, and outstanding privacy. Step inside to an inviting open floor plan featuring a spacious living room with a dramatic fireplace accented by a wood and tile surround extending to the ceiling, beautiful wood flooring, and a new patio door leading to the deck. The updated island kitchen is designed for both everyday living and entertaining with granite countertops, a pantry, an eating-bar peninsula, and two dining areas, all complemented by warm wood flooring. The main-floor primary suite is a relaxing retreat featuring a luxurious bath with a huge double vanity, separate tub and shower, private water closet, and large walk-in closet. A second bedroom and full bath are located on the opposite side of the home, providing added privacy. The roomy guest bedroom features a large closet and ceiling fan and is conveniently located next to a full bath with an oversized vanity and tub/shower combination. The finished walkout basement provides exceptional additional living space with a large family room, versatile playroom or office nook, spacious third bedroom with a huge walk-in closet, full bath, safe room, and abundant storage. Original blueprints also indicate the option to add a main-floor laundry to where the pantry is now. Outdoor living is second to none! Relax on the brand-new covered Trex deck while taking in the beautiful views of Horseshoe Lake, or step down to the walkout patio, already wired and ready for your hot tub. The private boat dock remains with the property, and the lake allows electric boats—perfect for fishing, kayaking, or simply enjoying peaceful evenings on the water. Best of all, the HOA takes care of lawn maintenance and snow removal, giving you more time to enjoy the lake and the carefree lifestyle this home offers. Updates in the past few years include: New Andersen windows and patio door in living/dining rooms, 2 year old roof, new paint inside and out, completely new Trex deck. Don&#39;t miss this rare opportunity to own one of the finest lakefront properties in the neighborhood!</p>
     </div>
@@ -209,8 +211,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -220,13 +222,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="2315 Lakeway Ct, Wichita, KS, 67205">
-        <input type="hidden" name="message" value="I am interested in the property at 2315 Lakeway Ct, Wichita, KS, 67205 (MLS# 677511). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 2315 Lakeway Ct, Wichita, KS, 67205 (MLS# 677511). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

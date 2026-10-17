@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-terminated pill">Inactive</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Beautifully maintained and thoughtfully finished, this 3-year-old, 5-bedroom, 3-bath ranch in the Maize South school district offers an exceptional combination of style, space, and move-in-ready condition - with NO SPECIAL TAXES and a brand new roof to be installed prior to closing. From the manicured lawn and low-maintenance landscaping to the pristine interior, pride of ownership is evident throughout. The open main level is filled with natural light and features luxury vinyl flooring, updated fixtures, a fresh neutral palette, and a vaulted living room centered around an elegant gas fireplace with a white stacked-stone surround. The kitchen offers a generous granite-topped island, under-mount sink, walk-in pantry, herringbone tile backsplash, and an adjoining dining area overlooking the backyard. Just inside the oversized 25&#39;6&quot;-deep three-car garage, a convenient drop zone provides a polished solution for everyday organization. The spacious primary suite offers its own access to the extended, freshly stained covered deck, along with a walk-in closet and private bath featuring dual vanities, a full shower, and direct access to the main-floor laundry. Two additional bedrooms and an updated hall bath complete the main level. The newly finished view-out lower level adds substantial living and entertaining space, including an expansive family and recreation room with LED lighting and plumbing already in place for a future wet bar. Both lower-level bedrooms feature walk-in closets, while the third full bath features an extended vanity and tub/shower combination. Multiple dedicated storage areas provide the kind of functionality that is often missing in finished lower levels. Outdoor living is equally well considered, with an extended rear patio spanning the length of the home, along with a partially fenced yard, irrigation well, sprinkler system, and convenient sidewalk connecting the backyard to the front of the property. Neighborhood amenities include lakes, walking paths, a playground, and swimming pool, all within easy reach of schools, shopping, dining, and everyday conveniences. With generous living spaces, thoughtful updates, desirable neighborhood amenities, and a prime Maize South location, this home delivers an exceptional combination of comfort, quality, and convenience. Schedule your private showing today and experience everything this home has to offer. *See the property video for additional views of the home and outdoor spaces.</p>
     </div>
@@ -209,8 +211,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -220,13 +222,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="8203 Lang St, Wichita, KS, 67205">
-        <input type="hidden" name="message" value="I am interested in the property at 8203 Lang St, Wichita, KS, 67205 (MLS# 679963). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 8203 Lang St, Wichita, KS, 67205 (MLS# 679963). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
