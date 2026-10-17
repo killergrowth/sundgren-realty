@@ -29309,7 +29309,7 @@
     "state": "KS",
     "lat": 37.781801,
     "lng": -97.376211,
-    "price": 375000,
+    "price": 369000,
     "beds": null,
     "baths": null,
     "sqft": "2364",
@@ -29321,7 +29321,8 @@
     "isSundgren": false,
     "agentName": "Bree Russell",
     "agentPhone": "3165167417",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 375000
   },
   {
     "slug": "55105512-sandkey-ct-wichita-ks-643343",
@@ -29332,7 +29333,7 @@
     "state": "KS",
     "lat": 37.783462,
     "lng": -97.376855,
-    "price": 375000,
+    "price": 369000,
     "beds": null,
     "baths": null,
     "sqft": "2364",
@@ -29344,7 +29345,8 @@
     "isSundgren": false,
     "agentName": "Bree Russell",
     "agentPhone": "3165167417",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 375000
   },
   {
     "slug": "4319-sandplum-st-4321-st-wichita-ks-641330",
@@ -29378,7 +29380,7 @@
     "state": "KS",
     "lat": 37.783459,
     "lng": -97.376578,
-    "price": 375000,
+    "price": 369000,
     "beds": null,
     "baths": null,
     "sqft": "2364",
@@ -29390,7 +29392,8 @@
     "isSundgren": false,
     "agentName": "Bree Russell",
     "agentPhone": "3165167417",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 375000
   },
   {
     "slug": "5196-honeylocust-st-wichita-ks-674116",
@@ -29424,7 +29427,7 @@
     "state": "KS",
     "lat": 37.782455,
     "lng": -97.376128,
-    "price": 375000,
+    "price": 369000,
     "beds": null,
     "baths": null,
     "sqft": "2364",
@@ -29436,7 +29439,8 @@
     "isSundgren": false,
     "agentName": "Bree Russell",
     "agentPhone": "3165167417",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 375000
   },
   {
     "slug": "719-ottawa-st-minneapolis-ks-676040",
@@ -78850,7 +78854,7 @@
     "state": "KS",
     "lat": 37.561392,
     "lng": -97.364429,
-    "price": 165000,
+    "price": 159900,
     "beds": 3,
     "baths": 1,
     "sqft": "1415",
@@ -78863,7 +78867,7 @@
     "agentName": "Ray Beehler",
     "agentPhone": "3165226066",
     "agentEmail": "",
-    "previousPrice": 175000
+    "previousPrice": 165000
   },
   {
     "slug": "1938-larson-st-salina-ks-676640",
@@ -81896,7 +81900,7 @@
     "state": "KS",
     "lat": 37.569602,
     "lng": -97.358839,
-    "price": 165000,
+    "price": 155900,
     "beds": 3,
     "baths": 1,
     "sqft": "2050",
@@ -81908,7 +81912,8 @@
     "isSundgren": false,
     "agentName": "Ray Beehler",
     "agentPhone": "3165226066",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 165000
   },
   {
     "slug": "1532-mason-dr-unit-a-104-dr-kechi-ks-661037",
@@ -87479,7 +87484,7 @@
     "state": "KS",
     "lat": 37.5615,
     "lng": -97.352856,
-    "price": 149900,
+    "price": 139900,
     "beds": 3,
     "baths": 1,
     "sqft": "1112",
@@ -87491,7 +87496,8 @@
     "isSundgren": false,
     "agentName": "Ray Beehler",
     "agentPhone": "3165226066",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 149900
   },
   {
     "slug": "3122-everett-st-wichita-ks-672989",
@@ -87801,7 +87807,7 @@
     "state": "KS",
     "lat": 37.561519,
     "lng": -97.362703,
-    "price": 149000,
+    "price": 139900,
     "beds": 3,
     "baths": 1,
     "sqft": "1025",
@@ -87813,7 +87819,8 @@
     "isSundgren": false,
     "agentName": "Ray Beehler",
     "agentPhone": "3165226066",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 149000
   },
   {
     "slug": "1752-market-st-wichita-ks-674646",
@@ -97199,7 +97206,7 @@
     "state": "KS",
     "lat": 37.559621,
     "lng": -97.357004,
-    "price": 115000,
+    "price": 105000,
     "beds": 2,
     "baths": 1,
     "sqft": "840",
@@ -97212,7 +97219,7 @@
     "agentName": "Ray Beehler",
     "agentPhone": "3165226066",
     "agentEmail": "",
-    "previousPrice": 119000
+    "previousPrice": 115000
   },
   {
     "slug": "133-tiffany-lane-eureka-ks-676348",
