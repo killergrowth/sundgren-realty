@@ -23575,7 +23575,7 @@
     "state": "KS",
     "lat": 37.539356,
     "lng": -97.253339,
-    "price": 400000,
+    "price": 385000,
     "beds": 4,
     "baths": 4,
     "sqft": "3060",
@@ -23588,7 +23588,7 @@
     "agentName": "Nicholas Weathers",
     "agentPhone": "3163617372",
     "agentEmail": "",
-    "previousPrice": 405000
+    "previousPrice": 400000
   },
   {
     "slug": "145-shay-rd-andover-ks-673466",
