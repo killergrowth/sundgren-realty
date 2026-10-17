@@ -23761,7 +23761,7 @@
     "state": "KS",
     "lat": 37.725709,
     "lng": -97.137833,
-    "price": 403990,
+    "price": 409990,
     "beds": 2,
     "baths": 2,
     "sqft": "1559",
@@ -97825,7 +97825,7 @@
     "state": "KS",
     "lat": 37.07484,
     "lng": -97.04379,
-    "price": 105000,
+    "price": 95000,
     "beds": 3,
     "baths": 2,
     "sqft": "1859",
@@ -97838,7 +97838,7 @@
     "agentName": "Lance Catron",
     "agentPhone": "3164427851",
     "agentEmail": "",
-    "previousPrice": 115000
+    "previousPrice": 105000
   },
   {
     "slug": "404-2nd-st-arkansas-city-ks-670487",
