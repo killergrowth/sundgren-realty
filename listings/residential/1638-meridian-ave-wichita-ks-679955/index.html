@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Don&#39;t miss this updated 3-bedroom brick ranch home just north of Indian Hills! The big-ticket items have already been taken care of, with a 1-year-old roof, HVAC replaced within the last 3 years, and a 4-year-old water heater. All appliances stay with the home as well, including the refrigerator, washer, and dryer. The location is just as convenient, with Botanica in the Riverside area and Exploration Place downtown only minutes away, and the Sedgwick County Zoo not far beyond. Pulling up to the home, you&#39;ll notice the two-car garage, freshly mulched landscape beds, and a large mature shade tree out front. The covered entry opens onto a recessed front patio framed by wrought iron railing, a great spot to sit and enjoy your morning coffee. Step inside to the living room, where original hardwood floors and a large front window set a warm, inviting tone. The living room opens into the formal dining room, which continues the original hardwood and offers plenty of space for gatherings. Just off the dining room, the kitchen features freshly painted cabinetry with brass hardware, butcher block countertops, a white tile backsplash, and luxury vinyl plank flooring. You&#39;ll also appreciate the workstation sink, recessed lighting, and upper cabinets that run to the ceiling for extra storage. A convenient half bath sits right off the kitchen near the entry from the dining room. Past the kitchen, a large bonus space works well as a second dining area or an additional living area. Built-in cabinetry with a butcher block top runs along one wall, and a sliding glass door leads out to the back deck. A door to the garage makes bringing in groceries easy. Back toward the front of the home, a hallway off the living room leads to three spacious bedrooms and a full hall bathroom with a shiplap accent wall and a tub and shower combo. Head downstairs to find a large family room anchored by a brick wood-burning fireplace. A limestone half wall separates the space into two living areas, giving you room for a TV area along with a rec room, playroom, or home gym. Just beyond, a bonus room with a directly attached half bath works well as an office, guest space, or hobby room. Laundry is tucked away in the large unfinished storage room, keeping it out of the main living space. Heading outside, the large wood deck overlooks a fully fenced yard where mature trees provide plenty of shade, and a storage shed in the back adds extra space for lawn and garden equipment. With the major updates already done and room to spread out inside and out, this home is ready for its next owner. Schedule your private tour today!</p>
     </div>
@@ -201,8 +203,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -212,13 +214,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="1638 Meridian Ave, Wichita, KS, 67203">
-        <input type="hidden" name="message" value="I am interested in the property at 1638 Meridian Ave, Wichita, KS, 67203 (MLS# 679955). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 1638 Meridian Ave, Wichita, KS, 67203 (MLS# 679955). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
