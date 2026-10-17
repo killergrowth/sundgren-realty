@@ -47998,7 +47998,7 @@
     "state": "KS",
     "lat": 37.731873,
     "lng": -97.468847,
-    "price": 285000,
+    "price": 260000,
     "beds": 4,
     "baths": 3,
     "sqft": "2444",
@@ -48010,7 +48010,8 @@
     "isSundgren": false,
     "agentName": "Bobbie Lane",
     "agentPhone": "3169900697",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 285000
   },
   {
     "slug": "1202-stoneybrook-cir-wichita-ks-674355",
