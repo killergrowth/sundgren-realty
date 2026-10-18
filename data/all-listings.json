@@ -65011,7 +65011,7 @@
     "state": "KS",
     "lat": 37.690222,
     "lng": -97.30625,
-    "price": 214900,
+    "price": 209900,
     "beds": 5,
     "baths": 2,
     "sqft": "2073",
@@ -65024,7 +65024,7 @@
     "agentName": "Michelle M Crouch",
     "agentPhone": "3164611405",
     "agentEmail": "",
-    "previousPrice": 219900
+    "previousPrice": 214900
   },
   {
     "slug": "1007-lingonberry-ln-lindsborg-ks-676876",
@@ -71579,7 +71579,7 @@
     "state": "KS",
     "lat": 37.79986799,
     "lng": -97.31476398,
-    "price": 195000,
+    "price": 185000,
     "beds": 3,
     "baths": 1,
     "sqft": "1285",
@@ -71591,7 +71591,8 @@
     "isSundgren": false,
     "agentName": "Lindsey Magana",
     "agentPhone": "3169907095",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 195000
   },
   {
     "slug": "2001-elm-st-wichita-ks-674448",
