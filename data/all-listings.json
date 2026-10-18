@@ -107402,7 +107402,7 @@
     "state": "KS",
     "lat": 37.66754,
     "lng": -97.320096,
-    "price": 69900,
+    "price": 64900,
     "beds": 2,
     "baths": 1,
     "sqft": "690",
@@ -107414,7 +107414,8 @@
     "isSundgren": false,
     "agentName": "Vic L Hannah",
     "agentPhone": "3166823866",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 69900
   },
   {
     "slug": "212-princeton-st-bennington-ks-677335",
