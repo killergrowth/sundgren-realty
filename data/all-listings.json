@@ -49859,7 +49859,7 @@
     "state": "KS",
     "lat": 37.733001,
     "lng": -97.277061,
-    "price": 279000,
+    "price": 269000,
     "beds": 4,
     "baths": 2,
     "sqft": "2176",
@@ -49871,7 +49871,8 @@
     "isSundgren": false,
     "agentName": "Chi M McKanlam",
     "agentPhone": "3168062859",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 279000
   },
   {
     "slug": "102-lochinvar-st-wichita-ks-674324",
@@ -90126,7 +90127,7 @@
     "state": "KS",
     "lat": 37.678059,
     "lng": -97.319498,
-    "price": 129900,
+    "price": 119900,
     "beds": 4,
     "baths": 1,
     "sqft": "1321",
@@ -90139,7 +90140,7 @@
     "agentName": "Omar Abushikha",
     "agentPhone": "3165181441",
     "agentEmail": "",
-    "previousPrice": 139900
+    "previousPrice": 129900
   },
   {
     "slug": "621-grant-st-mcpherson-ks-677239",
