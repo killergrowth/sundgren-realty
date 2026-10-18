@@ -26820,7 +26820,7 @@
     "state": "KS",
     "lat": 37.656103,
     "lng": -97.184754,
-    "price": 385000,
+    "price": 365000,
     "beds": 5,
     "baths": 3,
     "sqft": "3014",
@@ -26832,7 +26832,8 @@
     "isSundgren": false,
     "agentName": "Winston Stith",
     "agentPhone": "3162591953",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 385000
   },
   {
     "slug": "101103-mendocino-ct-goddard-ks-672506",
@@ -26935,7 +26936,7 @@
     "state": "KS",
     "lat": 37.782049,
     "lng": -97.376115,
-    "price": 385000,
+    "price": 375000,
     "beds": null,
     "baths": null,
     "sqft": "2752",
@@ -26947,7 +26948,8 @@
     "isSundgren": false,
     "agentName": "Bree Russell",
     "agentPhone": "3165167417",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 385000
   },
   {
     "slug": "5416-sandkey-ct-5418-st-wichita-ks-643350",
@@ -29263,7 +29265,7 @@
     "state": "KS",
     "lat": 37.784177,
     "lng": -97.377821,
-    "price": 375000,
+    "price": 374900,
     "beds": null,
     "baths": null,
     "sqft": "2364",
@@ -29275,7 +29277,8 @@
     "isSundgren": false,
     "agentName": "Bree Russell",
     "agentPhone": "3165167417",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 375000
   },
   {
     "slug": "43074309-sandplum-st-wichita-ks-651992",
@@ -88155,7 +88158,7 @@
     "state": "KS",
     "lat": 37.709477,
     "lng": -97.292566,
-    "price": 144500,
+    "price": 139900,
     "beds": 3,
     "baths": 1,
     "sqft": "993",
@@ -88168,7 +88171,7 @@
     "agentName": "Oricel Iron Wing",
     "agentPhone": "3168336248",
     "agentEmail": "",
-    "previousPrice": 146000
+    "previousPrice": 144500
   },
   {
     "slug": "7051-rutan-st-wichita-ks-676971",
@@ -98665,7 +98668,7 @@
     "state": "KS",
     "lat": 37.64916,
     "lng": -97.322097,
-    "price": 109500,
+    "price": 107500,
     "beds": 2,
     "baths": 1,
     "sqft": "931",
@@ -98678,7 +98681,7 @@
     "agentName": "Heather Stevenson",
     "agentPhone": "3169938451",
     "agentEmail": "",
-    "previousPrice": 112500
+    "previousPrice": 109500
   },
   {
     "slug": "1717-cypress-st-wichita-ks-677512",
