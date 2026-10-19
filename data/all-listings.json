@@ -25708,7 +25708,7 @@
     "state": "KS",
     "lat": 37.50751898,
     "lng": -97.23633602,
-    "price": 379900,
+    "price": 365000,
     "beds": 5,
     "baths": 3,
     "sqft": "2964",
@@ -25721,7 +25721,7 @@
     "agentName": "Debi Strange",
     "agentPhone": "3168064860",
     "agentEmail": "",
-    "previousPrice": 392000
+    "previousPrice": 379900
   },
   {
     "slug": "8232-prairie-lake-rd-moundridge-ks-678189",
@@ -39046,7 +39046,7 @@
     "state": "KS",
     "lat": 37.681244,
     "lng": -97.244053,
-    "price": 311500,
+    "price": 310000,
     "beds": 4,
     "baths": 3,
     "sqft": "3452",
@@ -39059,7 +39059,7 @@
     "agentName": "Amanda Jolley",
     "agentPhone": "3162139043",
     "agentEmail": "",
-    "previousPrice": 312000
+    "previousPrice": 311500
   },
   {
     "slug": "142-magnolia-dr-kaw-city-ok-676981",
@@ -50553,7 +50553,7 @@
     "state": "KS",
     "lat": 37.467311,
     "lng": -97.769866,
-    "price": 247000,
+    "price": 227000,
     "beds": null,
     "baths": null,
     "sqft": "3,001 - 5,000",
@@ -50566,7 +50566,7 @@
     "agentName": "Debbie Haukap",
     "agentPhone": "3167220030",
     "agentEmail": "",
-    "previousPrice": 257000
+    "previousPrice": 247000
   },
   {
     "slug": "5122-peregrine-ct-wichita-ks-677931",
@@ -63442,7 +63442,7 @@
     "state": "KS",
     "lat": 37.814498,
     "lng": -96.865387,
-    "price": 225000,
+    "price": 215000,
     "beds": 3,
     "baths": 2,
     "sqft": "1446",
@@ -63454,7 +63454,8 @@
     "isSundgren": false,
     "agentName": "Derek Waite",
     "agentPhone": "3163220777",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 225000
   },
   {
     "slug": "641-woodlawn-blvd-64-blvd-wichita-ks-670910",
