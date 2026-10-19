@@ -19855,7 +19855,7 @@
     "state": "KS",
     "lat": 37.795037,
     "lng": -97.309014,
-    "price": 439500,
+    "price": 434500,
     "beds": 3,
     "baths": 3,
     "sqft": "1928",
@@ -19868,7 +19868,7 @@
     "agentName": "Angie Vailas",
     "agentPhone": "3166507251",
     "agentEmail": "",
-    "previousPrice": 449500
+    "previousPrice": 439500
   },
   {
     "slug": "134-emporia-ave-valley-center-ks-678347",
@@ -107245,7 +107245,7 @@
     "state": "KS",
     "lat": 37.39162592,
     "lng": -97.07291529,
-    "price": 70000,
+    "price": 67000,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -107257,7 +107257,8 @@
     "isSundgren": false,
     "agentName": "Abigail Young",
     "agentPhone": "6202626912",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 70000
   },
   {
     "slug": "000-highcliff-udall-ks-677608",
@@ -107268,7 +107269,7 @@
     "state": "KS",
     "lat": 37.40138984,
     "lng": -97.07044161,
-    "price": 70000,
+    "price": 67000,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -107280,7 +107281,8 @@
     "isSundgren": false,
     "agentName": "Abigail Young",
     "agentPhone": "6202626912",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 70000
   },
   {
     "slug": "000-highcliff-udall-ks-677607",
@@ -107291,7 +107293,7 @@
     "state": "KS",
     "lat": 37.40213884,
     "lng": -97.06690807,
-    "price": 70000,
+    "price": 67000,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -107303,7 +107305,8 @@
     "isSundgren": false,
     "agentName": "Abigail Young",
     "agentPhone": "6202626912",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 70000
   },
   {
     "slug": "000-highcliff-udall-ks-677605",
@@ -107314,7 +107317,7 @@
     "state": "KS",
     "lat": 37.40200181,
     "lng": -97.06978729,
-    "price": 70000,
+    "price": 67000,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -107326,7 +107329,8 @@
     "isSundgren": false,
     "agentName": "Abigail Young",
     "agentPhone": "6202626912",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 70000
   },
   {
     "slug": "16735-hickory-ct-goddard-ks-635137",
@@ -107661,7 +107665,7 @@
     "state": "KS",
     "lat": 37.39713014,
     "lng": -97.07215776,
-    "price": 69000,
+    "price": 66000,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -107673,7 +107677,8 @@
     "isSundgren": false,
     "agentName": "Abigail Young",
     "agentPhone": "6202626912",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 69000
   },
   {
     "slug": "lot-7-block-3-dry-creek-estates-goddard-ks-638388",
@@ -107753,7 +107758,7 @@
     "state": "KS",
     "lat": 37.39616415,
     "lng": -97.07186396,
-    "price": 68000,
+    "price": 65000,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -107765,7 +107770,8 @@
     "isSundgren": false,
     "agentName": "Abigail Young",
     "agentPhone": "6202626912",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 68000
   },
   {
     "slug": "000-highcliff-udall-ks-677603",
@@ -107776,7 +107782,7 @@
     "state": "KS",
     "lat": 37.39649891,
     "lng": -97.07108568,
-    "price": 68000,
+    "price": 65000,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -107788,7 +107794,8 @@
     "isSundgren": false,
     "agentName": "Abigail Young",
     "agentPhone": "6202626912",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 68000
   },
   {
     "slug": "000-highcliff-udall-ks-677610",
@@ -107799,7 +107806,7 @@
     "state": "KS",
     "lat": 37.39305537,
     "lng": -97.0729111,
-    "price": 68000,
+    "price": 65000,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -107811,7 +107818,8 @@
     "isSundgren": false,
     "agentName": "Abigail Young",
     "agentPhone": "6202626912",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 68000
   },
   {
     "slug": "000-highcliff-udall-ks-677604",
@@ -107822,7 +107830,7 @@
     "state": "KS",
     "lat": 37.40294193,
     "lng": -97.07041232,
-    "price": 68000,
+    "price": 65000,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -107834,7 +107842,8 @@
     "isSundgren": false,
     "agentName": "Abigail Young",
     "agentPhone": "6202626912",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 68000
   },
   {
     "slug": "214-216-market-street-derby-ks-664195",
@@ -108767,7 +108776,7 @@
     "state": "KS",
     "lat": 37.39593881,
     "lng": -97.06774098,
-    "price": 65000,
+    "price": 62000,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -108779,7 +108788,8 @@
     "isSundgren": false,
     "agentName": "Abigail Young",
     "agentPhone": "6202626912",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 65000
   },
   {
     "slug": "000-highcliff-udall-ks-677615",
@@ -108790,7 +108800,7 @@
     "state": "KS",
     "lat": 37.39192912,
     "lng": -97.06615469,
-    "price": 65000,
+    "price": 62000,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -108802,7 +108812,8 @@
     "isSundgren": false,
     "agentName": "Abigail Young",
     "agentPhone": "6202626912",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 65000
   },
   {
     "slug": "000-highcliff-udall-ks-677614",
@@ -108813,7 +108824,7 @@
     "state": "KS",
     "lat": 37.39312248,
     "lng": -97.06933042,
-    "price": 65000,
+    "price": 62000,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -108825,7 +108836,8 @@
     "isSundgren": false,
     "agentName": "Abigail Young",
     "agentPhone": "6202626912",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 65000
   },
   {
     "slug": "000-highcliff-udall-ks-677612",
@@ -108836,7 +108848,7 @@
     "state": "KS",
     "lat": 37.39747058,
     "lng": -97.06780084,
-    "price": 65000,
+    "price": 62000,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -108848,7 +108860,8 @@
     "isSundgren": false,
     "agentName": "Abigail Young",
     "agentPhone": "6202626912",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 65000
   },
   {
     "slug": "000-highcliff-udall-ks-677606",
@@ -108859,7 +108872,7 @@
     "state": "KS",
     "lat": 37.40327964,
     "lng": -97.0674016,
-    "price": 65000,
+    "price": 62000,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -108871,7 +108884,8 @@
     "isSundgren": false,
     "agentName": "Abigail Young",
     "agentPhone": "6202626912",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 65000
   },
   {
     "slug": "4476-portwest-wichita-ks-675920",
