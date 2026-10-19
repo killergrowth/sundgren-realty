@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Welcome to a home designed with space, comfort, and everyday living in mind. From the moment you enter, you&#39;ll appreciate the generous proportions and thoughtful layout, beginning with a welcoming living area anchored by a striking fireplace. The fireplace creates a beautiful focal point while providing a natural connection between the living spaces. The adjoining peninsula kitchen offers an abundance of cabinetry and countertop space, along with a dedicated dining area just beyond the peninsula, creating an easy for for everyday meals and entertaining. A large pantry adds even more valuable storage. The main level features three generously sized bedrooms, including a spacious primary suite tucked away for privacy. The primary bath provides an impressive amount of space, while the walk-in closet offers exceptional storage. The main floor also offers a full hall bathroom. Beyond the main living areas, the lower level opens the door to even more possibilities with a huge living/recreational space, an additional huge bedroom, and an extra finished room to create the spaces your household needs-whether that means a media room, game room, home office, fitness area, or more guest accommodations. With multiple living areas, there is room for everyone to spread out without sacrificing the feeling of home. Step outside to the covered patio, an inviting extension of the home that provides a comfortable spot for outdoor dining, morning coffee, or relaxing with friend while enjoying the backyard. Beautifully maintained and thoughtfully designed throughout, this property offers the combination of generous living space, exceptional storage, and flexibility that is increasing hard to find. DON&#39;T MISS THE OVERSIZED CAR GARAGE WITH A CONNECTED SEPARATE WORKSHOP AREA THAT IS HEATED AND COOLED!</p>
     </div>
@@ -201,8 +203,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -212,13 +214,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="2049 Cypress CT, Wichita, KS, 67207">
-        <input type="hidden" name="message" value="I am interested in the property at 2049 Cypress CT, Wichita, KS, 67207 (MLS# 679441). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 2049 Cypress CT, Wichita, KS, 67207 (MLS# 679441). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

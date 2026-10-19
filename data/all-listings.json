@@ -1080,7 +1080,7 @@
     "state": "KS",
     "lat": 37.824169,
     "lng": -96.290266,
-    "price": 55000,
+    "price": 50000,
     "beds": 4,
     "baths": 2,
     "sqft": "1747",
@@ -1093,7 +1093,7 @@
     "agentName": "Audrey Reese",
     "agentPhone": "3167081587",
     "agentEmail": "",
-    "previousPrice": 60000
+    "previousPrice": 55000
   },
   {
     "slug": "410-randall-st-potwin-ks-669815",
@@ -74884,7 +74884,7 @@
     "state": "KS",
     "lat": 37.243281,
     "lng": -96.97492,
-    "price": 180000,
+    "price": 175000,
     "beds": 3,
     "baths": 2,
     "sqft": "1509",
@@ -74897,7 +74897,7 @@
     "agentName": "Katie Minton",
     "agentPhone": "6202293432",
     "agentEmail": "",
-    "previousPrice": 185000
+    "previousPrice": 180000
   },
   {
     "slug": "10607-nantucket-st-wichita-ks-678167",
@@ -82390,7 +82390,7 @@
     "state": "KS",
     "lat": 38.379247,
     "lng": -97.662038,
-    "price": 159900,
+    "price": 155000,
     "beds": 3,
     "baths": 1,
     "sqft": "1008",
@@ -82403,7 +82403,7 @@
     "agentName": "Linda Sauer",
     "agentPhone": "7855775866",
     "agentEmail": "",
-    "previousPrice": 164900
+    "previousPrice": 159900
   },
   {
     "slug": "1772-clifton-ave-wichita-ks-675469",
@@ -85476,7 +85476,7 @@
     "state": "KS",
     "lat": 37.632607,
     "lng": -97.348254,
-    "price": 150000,
+    "price": 140000,
     "beds": 4,
     "baths": 1,
     "sqft": "1150",
@@ -85489,7 +85489,7 @@
     "agentName": "Jack Tomlinson",
     "agentPhone": "6143577389",
     "agentEmail": "",
-    "previousPrice": 154000
+    "previousPrice": 150000
   },
   {
     "slug": "3328-chase-ave-wichita-ks-677750",
