@@ -46838,7 +46838,7 @@
     "state": "KS",
     "lat": 37.777579,
     "lng": -98.024724,
-    "price": 279000,
+    "price": 275000,
     "beds": 4,
     "baths": 2,
     "sqft": "2104",
@@ -46851,7 +46851,7 @@
     "agentName": "Gina Nutile",
     "agentPhone": "3164616720",
     "agentEmail": "",
-    "previousPrice": 289000
+    "previousPrice": 279000
   },
   {
     "slug": "807-gilman-ave-wichita-ks-676389",
@@ -56665,7 +56665,7 @@
     "state": "KS",
     "lat": 37.727229,
     "lng": -97.372172,
-    "price": 250000,
+    "price": 244900,
     "beds": 3,
     "baths": 3,
     "sqft": "2157",
@@ -56677,7 +56677,8 @@
     "isSundgren": false,
     "agentName": "Rena Anaya",
     "agentPhone": "3163080297",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 250000
   },
   {
     "slug": "10013-dora-st-wichita-ks-676639",
