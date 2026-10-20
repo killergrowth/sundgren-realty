@@ -28168,7 +28168,7 @@
     "state": "KS",
     "lat": 37.729758,
     "lng": -97.138571,
-    "price": 374800,
+    "price": 369800,
     "beds": 4,
     "baths": 3,
     "sqft": "2432",
@@ -28181,7 +28181,7 @@
     "agentName": "Nancy Shih",
     "agentPhone": "3169921108",
     "agentEmail": "",
-    "previousPrice": 379000
+    "previousPrice": 374800
   },
   {
     "slug": "1231-dry-creek-dr-derby-ks-673999",
@@ -47375,7 +47375,7 @@
     "state": "KS",
     "lat": 37.56115198,
     "lng": -97.34110603,
-    "price": 274000,
+    "price": 277000,
     "beds": 4,
     "baths": 3,
     "sqft": "1956",
@@ -47387,8 +47387,7 @@
     "isSundgren": false,
     "agentName": "Monica Ronnebaum",
     "agentPhone": "3166559133",
-    "agentEmail": "",
-    "previousPrice": 287000
+    "agentEmail": ""
   },
   {
     "slug": "179-tomahawk-clearwater-ks-672358",
@@ -60082,7 +60081,7 @@
     "state": "KS",
     "lat": 39.12344401,
     "lng": -97.71081896,
-    "price": 239000,
+    "price": 229000,
     "beds": 3,
     "baths": 2,
     "sqft": "2087",
@@ -60094,7 +60093,8 @@
     "isSundgren": false,
     "agentName": "Juanelle Garretson",
     "agentPhone": "7858266074",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 239000
   },
   {
     "slug": "3301-walnut-st-wichita-ks-677732",
@@ -80042,7 +80042,7 @@
     "state": "KS",
     "lat": 38.83236801,
     "lng": -97.61185601,
-    "price": 159000,
+    "price": 149000,
     "beds": 4,
     "baths": 3,
     "sqft": "3102",
@@ -80055,7 +80055,7 @@
     "agentName": "Jessica Decker",
     "agentPhone": "7853420935",
     "agentEmail": "",
-    "previousPrice": 170000
+    "previousPrice": 159000
   },
   {
     "slug": "325-wichita-st-benton-ks-675049",
@@ -89134,7 +89134,7 @@
     "state": "KS",
     "lat": 37.264881,
     "lng": -97.403353,
-    "price": 133000,
+    "price": 125000,
     "beds": 2,
     "baths": 2,
     "sqft": "1108",
@@ -89147,7 +89147,7 @@
     "agentName": "Rachel Westmoreland",
     "agentPhone": "6203260633",
     "agentEmail": "",
-    "previousPrice": 137000
+    "previousPrice": 133000
   },
   {
     "slug": "746-osage-ave-salina-ks-677656",
@@ -91682,7 +91682,7 @@
     "state": "KS",
     "lat": 38.83209899,
     "lng": -97.61185601,
-    "price": 135000,
+    "price": 134000,
     "beds": 3,
     "baths": 2,
     "sqft": "1688",
@@ -91694,7 +91694,8 @@
     "isSundgren": false,
     "agentName": "Daniel Goble",
     "agentPhone": "7858191904",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 135000
   },
   {
     "slug": "1215-logan-st-newton-ks-671398",
@@ -99367,7 +99368,7 @@
     "state": "KS",
     "lat": 37.237209,
     "lng": -96.980932,
-    "price": 108000,
+    "price": 103000,
     "beds": 2,
     "baths": 1,
     "sqft": "1330",
@@ -99379,7 +99380,8 @@
     "isSundgren": false,
     "agentName": "Alia S Tate",
     "agentPhone": "6202626355",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 108000
   },
   {
     "slug": "lot-3-blk-3-saddle-ridge-at-andale-rd-andale-ks-666051",
