@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Completely remodeled within the last four years, this move-in-ready condo combines stylish finishes, smart-home convenience, and low-maintenance living with Pawnee Prairie Nature Park just across the street! Featuring two spacious bedrooms, a versatile loft, and one-and-a-half bathrooms, the open floor plan welcomes you with vaulted ceilings, large windows, and abundant natural light. Updates include fresh interior paint, luxury vinyl plank flooring, carpet, and a modernized gas fireplace with a refreshed front and thermostat-controlled insert that provides cozy warmth extending upstairs. The kitchen shines with granite countertops, newer stainless steel appliances, and updated lighting. All appliances stay, including the washer and dryer! Samsung SmartThings switches offer convenient lighting control, while the SmartThings Wi-Fi router and Ring camera also remain with the home. A skylight brightens the upstairs loft—ideal for a home office, reading nook, or hobbies. Outside, enjoy morning coffee or gather with friends on the spacious, newer private concrete patio, with a smart drip irrigation system helping keep the landscaping beds watered with ease. Community amenities include a swimming pool, picnic tables, and grill, with walking, biking, and horseback riding trails at the park across the street. HOA dues cover exterior maintenance and insurance, roof and gutter upkeep, exterior painting, lawn service, trash service, and snow removal. Please note: this unit does not include a carport. Thoughtfully updated and ready to enjoy, this condo makes everyday living easy!</p>
     </div>
@@ -205,8 +207,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -216,13 +218,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="2421 Yellowstone St. Unit 1702 ST, Wichita, KS, 67215">
-        <input type="hidden" name="message" value="I am interested in the property at 2421 Yellowstone St. Unit 1702 ST, Wichita, KS, 67215 (MLS# 680508). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 2421 Yellowstone St. Unit 1702 ST, Wichita, KS, 67215 (MLS# 680508). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

@@ -20900,7 +20900,7 @@
     "state": "KS",
     "lat": 37.57859601,
     "lng": -97.29792297,
-    "price": 430000,
+    "price": 420000,
     "beds": 5,
     "baths": 3,
     "sqft": "2903",
@@ -20913,7 +20913,7 @@
     "agentName": "Brittanie Pechin",
     "agentPhone": "3163084623",
     "agentEmail": "",
-    "previousPrice": 435000
+    "previousPrice": 430000
   },
   {
     "slug": "1254-osage-rd-mulvane-ks-674413",
@@ -25268,7 +25268,7 @@
     "state": "KS",
     "lat": 37.570954,
     "lng": -97.340763,
-    "price": 375000,
+    "price": 369900,
     "beds": 5,
     "baths": 3,
     "sqft": "3266",
@@ -25281,7 +25281,7 @@
     "agentName": "Sissy Koury",
     "agentPhone": "3164099955",
     "agentEmail": "",
-    "previousPrice": 385000
+    "previousPrice": 375000
   },
   {
     "slug": "2200-51st-st-wichita-ks-676069",
@@ -86243,7 +86243,7 @@
     "state": "KS",
     "lat": 37.67699,
     "lng": -97.287648,
-    "price": 145000,
+    "price": 140000,
     "beds": 2,
     "baths": 1,
     "sqft": "992",
@@ -86256,7 +86256,7 @@
     "agentName": "Benjamin Wiltshire",
     "agentPhone": "9134243168",
     "agentEmail": "",
-    "previousPrice": 150000
+    "previousPrice": 145000
   },
   {
     "slug": "1500-9th-st-newton-ks-675241",
