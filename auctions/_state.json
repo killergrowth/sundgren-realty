@@ -1,5 +1,5 @@
 {
-  "lastFetch": "2026-10-20T14:09:13.781Z",
+  "lastFetch": "2026-10-20T18:58:38.408Z",
   "auctions": {
     "24096": {
       "slug": "test-auction-24096",
@@ -2958,6 +2958,12 @@
       "status": "pending",
       "name": "320+- Acres Butler County, Kansas Native Flint Hills Pasture – 2 Tracts",
       "generated": "2026-10-15T16:27:44.450Z"
+    },
+    "172247": {
+      "slug": "307-acres-west-of-peabody-in-marion-county-ks-2-tracts-172247",
+      "status": "pending",
+      "name": "307+- Acres West of Peabody in Marion County, KS – 2 Tracts",
+      "generated": "2026-10-20T18:58:42.395Z"
     }
   }
 }
