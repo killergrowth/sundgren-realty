@@ -31032,7 +31032,7 @@
     "state": "KS",
     "lat": 37.762359,
     "lng": -97.423501,
-    "price": 368000,
+    "price": 352000,
     "beds": null,
     "baths": null,
     "sqft": "2315",
@@ -31044,7 +31044,8 @@
     "isSundgren": false,
     "agentName": "Jessica Ritter",
     "agentPhone": "3162508804",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 368000
   },
   {
     "slug": "330-fairway-cir-andover-ks-669816",
@@ -40346,7 +40347,7 @@
     "state": "KS",
     "lat": 37.563576,
     "lng": -97.13677,
-    "price": 310000,
+    "price": 305000,
     "beds": 4,
     "baths": 3,
     "sqft": "1900",
@@ -40359,7 +40360,7 @@
     "agentName": "Patty Cisney",
     "agentPhone": "3166700994",
     "agentEmail": "",
-    "previousPrice": 315000
+    "previousPrice": 310000
   },
   {
     "slug": "602-high-st-argonia-ks-671411",
