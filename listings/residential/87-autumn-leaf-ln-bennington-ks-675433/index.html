@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Enjoy the best that country living has to offer with this beautiful 3,300 sqft, 5 bedroom, 3 bath home nestled on 3 acres. This custom home is loaded with high end finish carpentry and beautiful decor that makes you feel as if your walking through a Hallmark home. This home is close enough to Salina to make it a short drive to amenities but still gives you the peace and tranquility of living in the country. From the back deck above the full walk out basement you can start your morning or end your day watching the deer and other wildlife that come out to graze on the open field. This home is built with beauty, comfort and family in mind. It features an open concept kitchen and living room with a 16&#39; vaulted ceiling, stone fireplace, and granite countertops through out. The kitchen features all new stainless steel appliances, custom butcher block Island, solid wood cabinets and a rarely seen pot filler. The master suite has everything you could want with a large bedroom with direct access to the back deck. The master bathroom features a full size custom vanity with double farm sinks, dual led back lit mirrors, full tiled walk in shower and a large Jacuzzi tub. The master closet is a room in itself with french door entry that opens to a closet that was designed to be paired with beauty, size and function. This home on the main floor features 2 bedrooms, 2 bathrooms, laundry room, walk in pantry and a large 2 1/2 car garage. The basement is not your typical basement either. This basement has custom finish work which continues throughout the lower level. Starting with 9&#39; tall ceilings, beautiful shiplap and crown molding throughout it makes you feel like your in another home. The basement offers 3 bedrooms, 1 bathroom, large storage area and a large open living area. This home is all electric featuring an energy efficient heat pump with auxiliary heat. but has been pre plumbed to have gas at the fireplace, stove, furnace and upper deck gas grill. There are very few country homes currently on the market so this custom built home is a must see!</p>
     </div>
@@ -205,8 +207,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -216,13 +218,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="87 Autumn Leaf LN, Bennington, KS, 67422">
-        <input type="hidden" name="message" value="I am interested in the property at 87 Autumn Leaf LN, Bennington, KS, 67422 (MLS# 675433). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 87 Autumn Leaf LN, Bennington, KS, 67422 (MLS# 675433). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

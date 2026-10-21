@@ -42085,7 +42085,7 @@
     "state": "KS",
     "lat": 37.745638,
     "lng": -97.41745302,
-    "price": 295900,
+    "price": 265450,
     "beds": 5,
     "baths": 3,
     "sqft": "3299",
@@ -42098,7 +42098,7 @@
     "agentName": "Dawn R Wade",
     "agentPhone": "3168061060",
     "agentEmail": "",
-    "previousPrice": 312000
+    "previousPrice": 295900
   },
   {
     "slug": "1422-rutgers-st-wichita-ks-675803",
@@ -74958,7 +74958,7 @@
     "state": "KS",
     "lat": 37.68087698,
     "lng": -96.97862895,
-    "price": 184000,
+    "price": 177000,
     "beds": 2,
     "baths": 1,
     "sqft": "1080",
@@ -74970,7 +74970,8 @@
     "isSundgren": false,
     "agentName": "Steve Myers",
     "agentPhone": "3163304318",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 184000
   },
   {
     "slug": "2928-denene-st-wichita-ks-677304",
@@ -76545,7 +76546,7 @@
     "state": "KS",
     "lat": 37.81429,
     "lng": -96.85852,
-    "price": 183000,
+    "price": 150000,
     "beds": null,
     "baths": null,
     "sqft": "2346",
@@ -76557,7 +76558,8 @@
     "isSundgren": false,
     "agentName": "Yvonne J Martin",
     "agentPhone": "3163234534",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 183000
   },
   {
     "slug": "211-meridian-rd-wellington-ks-673793",
