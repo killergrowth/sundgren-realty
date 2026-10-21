@@ -1,5 +1,5 @@
 {
-  "lastFetch": "2026-10-21T11:18:45.618Z",
+  "lastFetch": "2026-10-21T16:45:19.728Z",
   "auctions": {
     "24096": {
       "slug": "test-auction-24096",
@@ -2895,9 +2895,10 @@
     },
     "170742": {
       "slug": "10-acres-w-walnut-river-frontage-amazing-mature-trees-august-170742",
-      "status": "pending",
+      "status": "accepting_bids",
       "name": "10+- Acres w/ Walnut River Frontage & Amazing Mature Trees – Augusta, Kansas",
-      "generated": "2026-09-29T19:49:04.569Z"
+      "generated": "2026-09-29T19:49:04.569Z",
+      "updated": "2026-10-21T16:45:21.784Z"
     },
     "170941": {
       "slug": "37-acres-north-of-severy-in-greenwood-county-kansas-pond-pas-170941",
