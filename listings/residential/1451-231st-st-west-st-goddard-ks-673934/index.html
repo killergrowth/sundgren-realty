@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Rare opportunity to own a truly one-of-a-kind 15.6-acre country estate featuring a 1,900 sq. ft. custom barndominium, separate 1,200 sq. ft. apartment, 3,800 sq. ft. insulated shop, private stocked pond, resort-style swimming pool, and wooded acreage filled with deer and wildlife. This exceptional property offers the perfect blend of luxury living, recreation, privacy, and functionality. The main residence features 2 bedrooms and 2 full bathrooms with soaring vaulted ceilings, exposed wood and metal accents, luxury vinyl flooring, and an expansive open-concept design. The chef&#39;s kitchen serves as the centerpiece of the home with a massive granite island, custom cabinetry, walk-in pantry, and abundant space for entertaining family and friends. Large windows throughout the home capture beautiful views of the surrounding acreage. The spacious primary suite includes a large walk-in closet and private bath, while the second bedroom and full bath provide comfortable accommodations for family or guests. Thoughtfully designed for both comfort and entertaining, the home combines rustic charm with modern amenities and high-end finishes. Adding incredible versatility is the separate 1,200-square-foot apartment with its own private entrance, bedroom, full kitchen, and full bathroom. Whether used for extended family, guests, rental income, caretaker quarters, or a private home office, this additional living space offers endless possibilities. Step outside and enjoy your own private retreat featuring a screened-in patio overlooking the in-ground swimming pool and expansive concrete entertaining area. The stocked pond is maintained by a solar-powered well system that helps maintain water levels and provides year-round enjoyment for fishing and outdoor recreation. The property extends into a wooded area at the rear of the acreage where deer, turkey, and other wildlife are frequently seen, creating a peaceful natural setting rarely found this close to town. Whether enjoying a morning coffee, evening sunset, or simply watching wildlife, the property offers a true country-living experience. The impressive 3,800-square-foot insulated shop is designed for work, storage, and recreation. Featuring multiple overhead doors, extensive storage space, workshop areas, laundry facilities, a storm shelter, and room for RVs, boats, tractors, equipment, recreational vehicles, or a home-based business, this building is a dream for hobbyists, entrepreneurs, and outdoor enthusiasts alike. The expansive concrete parking area provides plenty of room for trailers, guests, and equipment. With 15.6 acres, there is still ample room for future expansion. Whether you&#39;re considering an additional residence, guest house, horse facilities, another large shop building, or simply preserving the privacy and open space, this property offers outstanding flexibility and long-term potential. Properties offering a stocked pond with a solar-powered well, resort-style pool, separate living quarters, wooded wildlife habitat, extensive shop space, and room for future expansion are rarely available. Whether you&#39;re looking for a luxury country retreat, multi-generational living setup, hobby farm, recreational property, or the ultimate live-work estate, this exceptional property delivers a lifestyle that is truly difficult to replicate.</p>
     </div>
@@ -158,7 +160,7 @@
     <div class="feat-grid">
     <div class="feat-cell">
       <i class="fas fa-fire"></i>
-      <div><span class="mlabel">Heating</span>Forced Air, Natural Gas</div>
+      <div><span class="mlabel">Heating</span>Natural Gas, Forced Air</div>
     </div>
     <div class="feat-cell">
       <i class="fas fa-snowflake"></i>
@@ -199,9 +201,9 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
     (function(){
-      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.667577,-97.607958],15);
+      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.667573,-97.607957],15);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap contributors',maxZoom:19}).addTo(map);
-      L.marker([37.667577,-97.607958]).addTo(map).bindPopup('1451 231st St West ST, Goddard, KS 67052').openPopup();
+      L.marker([37.667573,-97.607957]).addTo(map).bindPopup('1451 231st St West ST, Goddard, KS 67052').openPopup();
     })();
     </script>
   </div>
@@ -209,8 +211,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -220,13 +222,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="1451 231st St West ST, Goddard, KS, 67052">
-        <input type="hidden" name="message" value="I am interested in the property at 1451 231st St West ST, Goddard, KS, 67052 (MLS# 673934). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 1451 231st St West ST, Goddard, KS, 67052 (MLS# 673934). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
