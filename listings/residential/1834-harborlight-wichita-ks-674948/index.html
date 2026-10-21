@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>1834 West Harborlight Street is Harbor Isle’s newest no-step-entry patio home with NO SPECIAL ASSESSMENTS and a full basement for additional storage and entertaining. Built by Brad Bachman Homes, the property offers 3,650 square feet of living space, including 2,205 square feet on the main level and five bedrooms, four bathrooms, a finished basement, and a four-car garage. Designed for long-term accessibility, it features zero-step entry from the front entrance, garage, and rear patio, wider hallways and doorways, and a floor truss system engineered for future elevator installation. The main living area combines the kitchen, dining area, and living room into one open space with large rear-facing windows overlooking the backyard. The kitchen features quarter-sawn oak cabinetry, a large island with seating for up to eight people, roll-out lower cabinet shelving, double ovens, gas cooktop, and walk-in pantry with adjustable shelving. By locating the sink away from the island, the layout creates a large uninterrupted island workspace. An electric fireplace nearby can operate with or without heat. Luxury flooring runs throughout the main living areas, with tile in most bathrooms and upgraded carpet in the bedrooms and basement. The primary suite features accent ceiling lighting, dual vanities, and linen storage as well as a no-threshold tile shower with multiple showerheads, granite seat, and niches for shower essentials. The walk-in closet offers built-in shoe storage with adjustable shelves and seating, a folding/packing counter with charging outlet, extra-deep luggage storage, and direct access to the laundry room. A raised washer and dryer platform improves accessibility and convenience. A second primary suite occupies its own wing and features accent lighting, a full bathroom with an oversized soaking tub, and walk-in closet. A separating door allows the wing to function independently from the rest of the home when desired. An additional bedroom or office is located near the front entry, while the garage hall provides a half-bath and bench with key drop zone. The finished basement provides extensive storage, two additional bedrooms, a full bathroom, and a large family room with a wet bar featuring a pull-down faucet, LED lighting, and space for a wine cooler or compact refrigerator. Routing the HVAC system through floor trusses rather than the attic improves efficiency and performance. The four-car garage offers extra-wide 18-foot and 9-foot insulated garage doors, belt-drive openers, additional depth for storage or workshop space, and a raised transom window that provides natural light while maintaining privacy. Mechanical features include Class 4 impact-rated shingles, blown-in wall insulation, a 93% efficiency furnace, ManaBloc plumbing system, and upgraded plumbing fixtures throughout. Outside, the home offers covered front and rear porches, including a massive rear patio with accent ceiling details and ceiling fan and Andersen composite-frame windows for low-maintenance ownership. The property comes complete with a private water well, sprinkler system, sodded lawn, landscaping, trees, shrubs, and perennial plantings. Fencing, swimming pools, gardens, and additional landscaping may be added subject to HOA approval. Located in the Harbor Isle Patio Home community, this property is unique by having NO SPECIAL ASSESSMENTS, low HOA dues of $55 per month, quiet streets, and convenient access to major Wichita highways. Most homesites back to berms or drainage areas, providing added separation from neighboring properties. Offered at $773,500. Seller/developer is a licensed Kansas real estate broker.</p>
     </div>
@@ -158,7 +160,7 @@
     <div class="feat-grid">
     <div class="feat-cell">
       <i class="fas fa-fire"></i>
-      <div><span class="mlabel">Heating</span>Forced Air, Natural Gas</div>
+      <div><span class="mlabel">Heating</span>Natural Gas, Forced Air</div>
     </div>
     <div class="feat-cell">
       <i class="fas fa-snowflake"></i>
@@ -201,8 +203,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -212,13 +214,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="1834 Harborlight, Wichita, KS, 67204">
-        <input type="hidden" name="message" value="I am interested in the property at 1834 Harborlight, Wichita, KS, 67204 (MLS# 674948). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 1834 Harborlight, Wichita, KS, 67204 (MLS# 674948). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

@@ -8198,7 +8198,7 @@
     "state": "KS",
     "lat": 37.711947,
     "lng": -97.24709,
-    "price": 699000,
+    "price": 485000,
     "beds": 2,
     "baths": 1,
     "sqft": "1232",
@@ -8210,7 +8210,8 @@
     "isSundgren": false,
     "agentName": "Kevin Pham",
     "agentPhone": "3164090444",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 699000
   },
   {
     "slug": "224-cedar-ranch-st-derby-ks-636798",
@@ -21969,7 +21970,7 @@
     "state": "KS",
     "lat": 37.711708,
     "lng": -97.115189,
-    "price": 409999,
+    "price": 399900,
     "beds": 5,
     "baths": 3,
     "sqft": "2760",
@@ -21982,7 +21983,7 @@
     "agentName": "Gayle Atkins",
     "agentPhone": "3166507816",
     "agentEmail": "",
-    "previousPrice": 414900
+    "previousPrice": 409999
   },
   {
     "slug": "2104-cedarcrest-ct-arkansas-city-ks-676774",
@@ -39023,7 +39024,7 @@
     "state": "KS",
     "lat": 37.695833,
     "lng": -97.486066,
-    "price": 315000,
+    "price": 300000,
     "beds": 4,
     "baths": 3,
     "sqft": "2398",
@@ -39036,7 +39037,7 @@
     "agentName": "Shane Phillips",
     "agentPhone": "3162950696",
     "agentEmail": "",
-    "previousPrice": 325000
+    "previousPrice": 315000
   },
   {
     "slug": "8001-willowbrook-rd-wichita-ks-677544",
@@ -63514,7 +63515,7 @@
     "state": "KS",
     "lat": 37.061425,
     "lng": -97.00504109,
-    "price": 225000,
+    "price": 220000,
     "beds": 3,
     "baths": 2,
     "sqft": "2123",
@@ -63526,7 +63527,8 @@
     "isSundgren": false,
     "agentName": "Jose Esparza-Moreno",
     "agentPhone": "6203330716",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 225000
   },
   {
     "slug": "336-deer-run-ave-el-dorado-ks-667238",
@@ -67340,7 +67342,7 @@
     "state": "KS",
     "lat": 37.64314,
     "lng": -97.358652,
-    "price": 202500,
+    "price": 197500,
     "beds": 4,
     "baths": 2,
     "sqft": "1500",
@@ -67353,7 +67355,7 @@
     "agentName": "Pam Hesse",
     "agentPhone": "3166484377",
     "agentEmail": "",
-    "previousPrice": 210000
+    "previousPrice": 202500
   },
   {
     "slug": "2618-athenian-ave-wichita-ks-676936",
@@ -103714,7 +103716,7 @@
     "state": "KS",
     "lat": 37.833011,
     "lng": -96.857494,
-    "price": 87400,
+    "price": 82800,
     "beds": 2,
     "baths": 3,
     "sqft": "2330",
@@ -103726,7 +103728,8 @@
     "isSundgren": false,
     "agentName": "Mary Froese-Swartz",
     "agentPhone": "7859693447",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 87400
   },
   {
     "slug": "210-poplar-st-wichita-ks-678341",

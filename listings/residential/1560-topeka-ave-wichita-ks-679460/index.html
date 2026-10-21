@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -133,7 +133,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Property offered at ONLINE ONLY auction. BIDDING OPENS: Tuesday, October 13th, 2026 at 2:00 PM (ct) | BIDDING CLOSING: Wednesday, October 21st, 2026 at 3:00 PM (ct). Bidding will remain open on this property until 90 seconds have passed without receiving a bid. Property available to preview by appointment. CLEAR TITLE AT CLOSING, NO BACK TAXES. ONLINE ONLY!!! NO MINIMUM, NO RESERVE!!! Welcome to this versatile commercial opportunity in Wichita, offering a flexible mixed-use space with excellent potential for a variety of business concepts. Conveniently located just minutes from Downtown Wichita, this property provides a highly visible setting with easy access to major areas of the city. PROPERTY FEATURES INCLUDE: 8,134± square-foot commercial building Situated on a 0.52± acre lot Zoned LC Limited Commercial Built in 1985 Mixed-use building with versatile potential Potential for office, banquet space, and other commercial uses Daily traffic count of 16,000+ vehicles Large Parking Lot Conveniently located just minutes from Downtown Wichita Roof repairs completed by Farha Roofing completed in March of 2026. Please see statement located in Property Information Packet Whether you&#39;re looking for an owner-user property, office space, event, venue or banquet facility, or a flexible commercial investment, this property offers a range of possibilities in a convenient Wichita location. With its size, zoning, visibility, and proximity to Downtown, this versatile commercial property is one you don&#39;t want to miss! *Buyer should verify school assignments as they are subject to change. The real estate is offered at public auction in its present, “as is where is” condition and is accepted by the buyer without any expressed or implied warranties or representations from the seller or seller’s agents. Full auction terms and conditions provided in the Property Information Packet. Total purchase price will include a 10% buyer’s premium ($2,500.00 minimum) added to the final bid. Property available to preview by appointment. Earnest money is due from the high bidder at the auction in the form of cash, check, or immediately available, certified funds in the amount of $10,000 for 30-day or $15,000 for 45-day. Per the seller, the water fountain is leaking. The AC does not blow cold. The walk in cooler is not working and mold is present. All or some of the utilities to the property are currently off. It will be the responsibility of the buyer to comply with any requirements imposed by the utility companies to return service to the property.</p>
     </div>
@@ -143,7 +145,7 @@
     <div class="feat-grid">
     <div class="feat-cell">
       <i class="fas fa-fire"></i>
-      <div><span class="mlabel">Heating</span>Forced Air, Natural Gas</div>
+      <div><span class="mlabel">Heating</span>Natural Gas, Forced Air</div>
     </div>
     <div class="feat-cell">
       <i class="fas fa-snowflake"></i>
@@ -194,8 +196,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -205,13 +207,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="1560 Topeka AVE, Wichita, KS, 67211">
-        <input type="hidden" name="message" value="I am interested in the property at 1560 Topeka AVE, Wichita, KS, 67211 (MLS# 679460). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 1560 Topeka AVE, Wichita, KS, 67211 (MLS# 679460). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
