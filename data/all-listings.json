@@ -99695,7 +99695,7 @@
     "state": "KS",
     "lat": 37.036723,
     "lng": -97.610896,
-    "price": 99900,
+    "price": 85000,
     "beds": 2,
     "baths": 1,
     "sqft": "912",
@@ -99708,7 +99708,7 @@
     "agentName": "Jeremiah Wood",
     "agentPhone": "6204330109",
     "agentEmail": "",
-    "previousPrice": 105000
+    "previousPrice": 99900
   },
   {
     "slug": "107-3rd-st-newton-ks-676297",

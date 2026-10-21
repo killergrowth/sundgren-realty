@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-terminated pill">Inactive</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Affordable living with impressive finishes! Welcome to 108 S Commercial Avenue in Sedgwick, Kansas, where nearly every inch of this 3-bedroom, 2-bath home has been thoughtfully updated! Located in Maple Leaf Estates, this beautifully renovated home delivers modern style, extensive improvements, and an affordable opportunity for homeownership. Step inside to an inviting open floor plan with vaulted ceilings, fresh paint, new carpet, luxury vinyl plank flooring, new baseboards, and LED lighting throughout. The spacious living room flows into the beautifully remodeled kitchen and dining area, making everyday living and entertaining a breeze. The kitchen is a showstopper! Enjoy brand-new cabinetry with soft-close doors and drawers, Bianco Venting Grey quartz countertops, abundant storage, and a convenient eating bar. Appliances include a stainless steel refrigerator, Frigidaire dishwasher, gas range, and new space-saving microwave. An impressive wet bar with a sink, floating shelves, and wine refrigerator adds another inviting space for entertaining. The primary suite offers vaulted ceilings, a new ceiling fan, and a beautifully updated en-suite bath with a walk-in tiled shower, quartz countertops, and a dedicated vanity area. Two additional bedrooms and a second updated bath provide comfortable, flexible living space. The laundry room features updated flooring and storage cabinetry, while motion-activated lights in the hallway and laundry add everyday convenience. And the improvements go far beyond the interior! Outside, you&#39;ll find LP SmartSide siding, new single-hung windows with double-pane Low-E glass, a metal roof, new exterior doors, and new decks. A storage shed offers room for tools and outdoor essentials. Major system upgrades include a brand-new furnace, all-new plumbing, new electrical service, and 2x6 exterior walls with new insulation. Together with the Low-E windows, these improvements were made with comfort and energy efficiency in mind. Enjoy the appeal of a beautifully updated home without the price tag of new construction! Sedgwick offers even more to love! This welcoming Kansas community is known for its small-town charm, local shops and restaurants, hometown traditions, and convenient access to Wichita and Newton. Follow community walking paths to the park, swimming pool, popular &quot;Turtle Pond&quot; fishing spot, DeHaven Park and Pond, and Sedgwick Public Schools. From outdoor recreation to community events, there&#39;s plenty to enjoy close to home. Sedgwick Public Schools (USD 439), home of the Cardinals, serves Pre-K through 12th grade with a small-school atmosphere and big opportunities. The district&#39;s R.L. Wright Elementary School earned recognition as a 2022 National Blue Ribbon School, reflecting its commitment to academic excellence. If you&#39;ve been searching for affordable living with beautiful finishes, modern conveniences, and meaningful updates, come take a look! HOME FOR SALE ON LEASED LOT: This sale includes the home only; the land is not included. The lot is owned by Maple Leaf Estates, with monthly lot rent of $260. For additional information about the community and lot lease, please contact the listing agent.</p>
     </div>
@@ -201,8 +203,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -212,13 +214,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="108 Commercial AVE, Sedgwick, KS, 67135">
-        <input type="hidden" name="message" value="I am interested in the property at 108 Commercial AVE, Sedgwick, KS, 67135 (MLS# 680643). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 108 Commercial AVE, Sedgwick, KS, 67135 (MLS# 680643). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
