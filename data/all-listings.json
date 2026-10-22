@@ -52143,7 +52143,7 @@
     "state": "KS",
     "lat": 37.590864,
     "lng": -97.326951,
-    "price": 272700,
+    "price": 269700,
     "beds": 5,
     "baths": 2,
     "sqft": "2051",
@@ -52155,7 +52155,8 @@
     "isSundgren": false,
     "agentName": "Debra J Smith",
     "agentPhone": "8165473121",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 272700
   },
   {
     "slug": "1748-goebel-wichita-ks-677902",
@@ -72352,7 +72353,7 @@
     "state": "KS",
     "lat": 37.740702,
     "lng": -97.482608,
-    "price": 189000,
+    "price": 185000,
     "beds": 3,
     "baths": 2,
     "sqft": "1158",
@@ -72365,7 +72366,7 @@
     "agentName": "Boone Downing",
     "agentPhone": "3168471471",
     "agentEmail": "",
-    "previousPrice": 193000
+    "previousPrice": 189000
   },
   {
     "slug": "1408-meridian-rd-peck-ks-675905",
