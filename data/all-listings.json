@@ -12352,7 +12352,7 @@
     "state": "KS",
     "lat": 37.937549,
     "lng": -97.014547,
-    "price": 565000,
+    "price": 555000,
     "beds": 5,
     "baths": 3,
     "sqft": "3101",
@@ -12364,7 +12364,8 @@
     "isSundgren": false,
     "agentName": "Colette Greene",
     "agentPhone": "6202559735",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 565000
   },
   {
     "slug": "1116-bentgrass-dr-salina-ks-672239",
@@ -102171,7 +102172,7 @@
     "state": "KS",
     "lat": 37.080125,
     "lng": -97.042653,
-    "price": 84900,
+    "price": 74900,
     "beds": 3,
     "baths": 1,
     "sqft": "1288",
@@ -102184,7 +102185,7 @@
     "agentName": "Dawn R Wade",
     "agentPhone": "3168061060",
     "agentEmail": "",
-    "previousPrice": 94900
+    "previousPrice": 84900
   },
   {
     "slug": "426-cave-springs-ave-el-dorado-ks-674339",

@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,9 +148,7 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section" style="border-left-color:#2563eb;">
-        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
-      </div><div class="desc-section">
+          <div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Welcome Home to 9668 SW Linden Rd! Tucked among mature trees on 1.8 acres, this inviting Augusta property offers the kind of space that makes it easy to slow down, spread out, and feel at home. With 3 bedrooms, 2 full bathrooms, abundant garage and storage space, established garden areas, and room to enjoy the outdoors, there is so much to appreciate both inside and out. And with the Red Bud Trail and Kellogg nearby, you can enjoy a peaceful setting without giving up convenient access to Wichita and surrounding areas. Step inside and you’ll immediately be drawn to the massive living room, where a large window fills the space with natural light. The vaulted ceiling creates an open and airy feel, while the fireplace with its beautiful stone surround brings warmth and character to the heart of the home. There is plenty of room to gather with family and friends, settle in for a quiet evening, or simply enjoy having space to truly get comfortable. The light and bright kitchen feels welcoming and functional, with a breakfast bar that creates an easy place for morning coffee, casual meals, or conversation while dinner is being prepared. The kitchen flows naturally into the main living areas, making everyday life and entertaining feel effortless. A main-floor laundry room adds even more convenience. The split bedroom floor plan offers privacy and separation, with a spacious primary suite that feels like its own retreat. Enjoy a walk-in closet along with a private bathroom featuring two sinks and plenty of room to get ready for the day. Two additional generously sized bedrooms and a second full bathroom provide comfortable space for family, guests, a home office, or hobbies. The home also features electrical wiring that was updated approximately two years ago. Outside is where this property becomes even more special. Step onto the covered patio and take in the peaceful 1.8 acre setting surrounded by mature trees. Established garden areas and a greenhouse are ready for someone with a green thumb, or anyone who has dreamed of spending more time outdoors. Two storage sheds offer plenty of room for lawn equipment, seasonal décor, tools, and all the extras that come with enjoying a little more land. And if garage space is high on your wish list, this property delivers. Two detached two car garages provide four garage spaces, plus there is an additional carport for covered parking. Whether you need room for vehicles, a workshop, hobbies, equipment, projects, or simply extra storage, you’ll appreciate having space and flexibility to make it your own. With its cozy interior, beautiful tree-filled acreage, generous living spaces, multiple garages and outbuildings, and room to garden, gather, and enjoy the outdoors, this is more than just a house; it’s a place that feels like home. Add in convenient access to the Red Bud Trail and Kellogg, and you have the best of both worlds: room to breathe with everyday conveniences still within easy reach. Come experience everything 9668 SW Linden Rd has to offer and imagine making this peaceful 1.8 acre property your own.</p>
     </div>
@@ -207,8 +205,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -218,13 +216,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="9668 Linden St, Augusta, KS, 67010">
-        <input type="hidden" name="message" value="I am interested in properties similar to 9668 Linden St, Augusta, KS, 67010 (MLS# 680136). Please contact me.">
+        <input type="hidden" name="message" value="I am interested in the property at 9668 Linden St, Augusta, KS, 67010 (MLS# 680136). Please contact me to schedule a showing.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Get In Touch
+          Contact Me About This Listing
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
