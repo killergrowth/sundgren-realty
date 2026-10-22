@@ -1,5 +1,5 @@
 {
-  "lastFetch": "2026-10-22T16:45:37.996Z",
+  "lastFetch": "2026-10-22T21:16:19.459Z",
   "auctions": {
     "24096": {
       "slug": "test-auction-24096",
@@ -2964,6 +2964,12 @@
       "status": "pending",
       "name": "307+- Acres West of Peabody in Marion County, KS – 2 Tracts",
       "generated": "2026-10-20T18:58:42.395Z"
+    },
+    "172468": {
+      "slug": "old-vehicles-tractors-implements-tools-scrap-iron-live-aucti-172468",
+      "status": "pending",
+      "name": "Old Vehicles, Tractors, Implements, Tools & Scrap Iron - LIVE AUCTION NEAR SEVERY, KS",
+      "generated": "2026-10-22T21:16:21.964Z"
     }
   }
 }
