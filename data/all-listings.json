@@ -13864,7 +13864,7 @@
     "state": "KS",
     "lat": 37.539451,
     "lng": -97.251006,
-    "price": 535000,
+    "price": 499900,
     "beds": 4,
     "baths": 4,
     "sqft": "4262",
@@ -13876,7 +13876,8 @@
     "isSundgren": false,
     "agentName": "David Sowden",
     "agentPhone": "3167082629",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 535000
   },
   {
     "slug": "501-main-st-la-crosse-ks-676585",
@@ -40649,7 +40650,7 @@
     "state": "KS",
     "lat": 37.795699,
     "lng": -97.285172,
-    "price": 299900,
+    "price": 297500,
     "beds": 4,
     "baths": 2,
     "sqft": "2678",
@@ -40662,7 +40663,7 @@
     "agentName": "Michael Crow",
     "agentPhone": "3166186591",
     "agentEmail": "",
-    "previousPrice": 309900
+    "previousPrice": 299900
   },
   {
     "slug": "1403-meridian-rd-peck-ks-677764",
@@ -43851,7 +43852,7 @@
     "state": "KS",
     "lat": 37.278723,
     "lng": -97.38155,
-    "price": 289900,
+    "price": 279900,
     "beds": 5,
     "baths": 3,
     "sqft": "2996",
@@ -43864,7 +43865,7 @@
     "agentName": "Sunni Goentzel",
     "agentPhone": "3162170217",
     "agentEmail": "",
-    "previousPrice": 294900
+    "previousPrice": 289900
   },
   {
     "slug": "9715-westlawn-st-wichita-ks-677872",
@@ -46770,7 +46771,7 @@
     "state": "KS",
     "lat": 37.77654017,
     "lng": -97.23294475,
-    "price": 272000,
+    "price": 269000,
     "beds": 4,
     "baths": 2,
     "sqft": "1599",
@@ -46783,7 +46784,7 @@
     "agentName": "Basem Krichati",
     "agentPhone": "3165160139",
     "agentEmail": "",
-    "previousPrice": 289000
+    "previousPrice": 272000
   },
   {
     "slug": "8974-joshua-st-bel-aire-ks-677394",
@@ -78494,7 +78495,7 @@
     "state": "KS",
     "lat": 37.697058,
     "lng": -97.300647,
-    "price": 165000,
+    "price": 160000,
     "beds": 4,
     "baths": 1,
     "sqft": "1466",
@@ -78507,7 +78508,7 @@
     "agentName": "Jadyn Barr",
     "agentPhone": "3162171717",
     "agentEmail": "",
-    "previousPrice": 170000
+    "previousPrice": 165000
   },
   {
     "slug": "225-belair-st-el-dorado-ks-678134",
@@ -92633,7 +92634,7 @@
     "state": "KS",
     "lat": 37.67485999,
     "lng": -97.25538004,
-    "price": 125000,
+    "price": 122000,
     "beds": 2,
     "baths": 1,
     "sqft": "821",
@@ -92646,7 +92647,7 @@
     "agentName": "Brittanie Pechin",
     "agentPhone": "3163084623",
     "agentEmail": "",
-    "previousPrice": 130000
+    "previousPrice": 125000
   },
   {
     "slug": "96-sedgwick-ave-haven-ks-678372",
@@ -113983,7 +113984,7 @@
     "state": "KS",
     "lat": 38.26739889,
     "lng": -98.40630195,
-    "price": 34900,
+    "price": 29900,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -113996,7 +113997,7 @@
     "agentName": "Jeffrey Richardson",
     "agentPhone": "3167776620",
     "agentEmail": "",
-    "previousPrice": 39900
+    "previousPrice": 34900
   },
   {
     "slug": "lot-16-block-b-sterling-east-add-derby-ks-663140",

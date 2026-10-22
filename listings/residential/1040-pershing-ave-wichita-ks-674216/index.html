@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Affordable living in Hilltop Manor Mutual Housing! This charming 2-bedroom, 1.5-bath home offers a welcoming covered front porch and a convenient storage shed. The kitchen comes complete with appliances, while the main level features a comfortable living room, kitchen/dining area, and half bath. Upstairs, you&#39;ll find two bedrooms and a full bathroom. Never been smoked in! New Flooring. Enjoy low-maintenance living with HOA services that cover extensive exterior and community upkeep, including roofing and siding (excluding windows), furnace maintenance, most plumbing and electrical repairs, trash service, common area mowing, parking lot maintenance, property taxes, and drive-by security. Residents also enjoy beautiful park-like green spaces perfect for relaxing or gathering with family and friends, plus access to a reservable party room in the community building for larger events. Hilltop Manor is a cooperative community where residents elect a neighborhood board of directors. Application fee is $100; closing/initiation fee is $250.</p>
     </div>
@@ -158,7 +160,7 @@
     <div class="feat-grid">
     <div class="feat-cell">
       <i class="fas fa-fire"></i>
-      <div><span class="mlabel">Heating</span>Forced Air, Natural Gas</div>
+      <div><span class="mlabel">Heating</span>Natural Gas, Forced Air</div>
     </div>
     <div class="feat-cell">
       <i class="fas fa-snowflake"></i>
@@ -187,9 +189,9 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
     (function(){
-      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.670128,-97.281193],15);
+      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.670183,-97.281201],15);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap contributors',maxZoom:19}).addTo(map);
-      L.marker([37.670128,-97.281193]).addTo(map).bindPopup('1040 Pershing AVE, Wichita, KS 67218').openPopup();
+      L.marker([37.670183,-97.281201]).addTo(map).bindPopup('1040 Pershing AVE, Wichita, KS 67218').openPopup();
     })();
     </script>
   </div>
@@ -197,8 +199,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -208,13 +210,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="1040 Pershing AVE, Wichita, KS, 67218">
-        <input type="hidden" name="message" value="I am interested in the property at 1040 Pershing AVE, Wichita, KS, 67218 (MLS# 674216). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 1040 Pershing AVE, Wichita, KS, 67218 (MLS# 674216). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
