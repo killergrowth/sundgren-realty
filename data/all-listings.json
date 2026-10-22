@@ -7663,7 +7663,7 @@
     "state": "KS",
     "lat": 37.546922,
     "lng": -97.220182,
-    "price": 709900,
+    "price": 699900,
     "beds": 5,
     "baths": 4,
     "sqft": "3737",
@@ -7676,7 +7676,7 @@
     "agentName": "Debi Strange",
     "agentPhone": "3168064860",
     "agentEmail": "",
-    "previousPrice": 725000
+    "previousPrice": 709900
   },
   {
     "slug": "534-richmond-ave-wichita-ks-672279",
@@ -8824,7 +8824,7 @@
     "state": "KS",
     "lat": 37.70142,
     "lng": -97.194574,
-    "price": 595000,
+    "price": 580000,
     "beds": 5,
     "baths": 5,
     "sqft": "3720",
@@ -8837,7 +8837,7 @@
     "agentName": "Lisa Soltesz",
     "agentPhone": "6233881135",
     "agentEmail": "",
-    "previousPrice": 610000
+    "previousPrice": 595000
   },
   {
     "slug": "19447-meadowlark-rd-rose-hill-ks-672873",
@@ -26729,7 +26729,7 @@
     "state": "KS",
     "lat": 37.599083,
     "lng": -97.082404,
-    "price": 350000,
+    "price": 330000,
     "beds": 4,
     "baths": 1,
     "sqft": "1586",
@@ -26742,7 +26742,7 @@
     "agentName": "Lisa Cox",
     "agentPhone": "3166509481",
     "agentEmail": "",
-    "previousPrice": 365000
+    "previousPrice": 350000
   },
   {
     "slug": "5540-porter-ave-wichita-ks-675748",
@@ -36309,7 +36309,7 @@
     "state": "KS",
     "lat": 37.724697,
     "lng": -97.458417,
-    "price": 325000,
+    "price": 315000,
     "beds": 3,
     "baths": 2,
     "sqft": "2582",
@@ -36322,7 +36322,7 @@
     "agentName": "Bobbie Lane",
     "agentPhone": "3169900697",
     "agentEmail": "",
-    "previousPrice": 340000
+    "previousPrice": 325000
   },
   {
     "slug": "422-cheyenne-ct-kechi-ks-677079",
@@ -43202,7 +43202,7 @@
     "state": "KS",
     "lat": 37.765394,
     "lng": -97.260853,
-    "price": 283000,
+    "price": 277000,
     "beds": 4,
     "baths": 3,
     "sqft": "2455",
@@ -43215,7 +43215,7 @@
     "agentName": "Lisa Soltesz",
     "agentPhone": "6233881135",
     "agentEmail": "",
-    "previousPrice": 289000
+    "previousPrice": 283000
   },
   {
     "slug": "419-myers-ct-mulvane-ks-678228",
@@ -53420,7 +53420,7 @@
     "state": "KS",
     "lat": 37.66081699,
     "lng": -97.212963,
-    "price": 260000,
+    "price": 250000,
     "beds": 4,
     "baths": 3,
     "sqft": "2076",
@@ -53433,7 +53433,7 @@
     "agentName": "Blake Billington",
     "agentPhone": "3168336156",
     "agentEmail": "",
-    "previousPrice": 265000
+    "previousPrice": 260000
   },
   {
     "slug": "1614-main-st-rose-hill-ks-677181",
@@ -55743,7 +55743,7 @@
     "state": "KS",
     "lat": 37.230785,
     "lng": -96.979826,
-    "price": 239000,
+    "price": 230000,
     "beds": 3,
     "baths": 2,
     "sqft": "2132",
@@ -55756,7 +55756,7 @@
     "agentName": "Tiffany Ribordy",
     "agentPhone": "3163476052",
     "agentEmail": "",
-    "previousPrice": 249000
+    "previousPrice": 239000
   },
   {
     "slug": "330-firefly-st-wichita-ks-677533",
