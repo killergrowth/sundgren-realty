@@ -10453,7 +10453,7 @@
     "state": "KS",
     "lat": 37.730717,
     "lng": -97.399863,
-    "price": 574900,
+    "price": 549900,
     "beds": 5,
     "baths": 3,
     "sqft": "2954",
@@ -10466,7 +10466,7 @@
     "agentName": "Sarah King",
     "agentPhone": "3166481199",
     "agentEmail": "",
-    "previousPrice": 579900
+    "previousPrice": 574900
   },
   {
     "slug": "202-hillside-st-wellington-ks-669812",
@@ -31869,7 +31869,7 @@
     "state": "KS",
     "lat": 38.209786,
     "lng": -98.202552,
-    "price": 355000,
+    "price": 335000,
     "beds": 4,
     "baths": 3,
     "sqft": "2240",
@@ -31882,7 +31882,7 @@
     "agentName": "Shirley J Lebien",
     "agentPhone": "6204747100",
     "agentEmail": "",
-    "previousPrice": 365000
+    "previousPrice": 355000
   },
   {
     "slug": "2880-ofelia-st-valley-center-ks-674902",
@@ -34109,7 +34109,7 @@
     "state": "KS",
     "lat": 37.659327,
     "lng": -97.199676,
-    "price": 350602,
+    "price": 352506,
     "beds": 5,
     "baths": 3,
     "sqft": "2689",
@@ -35033,7 +35033,7 @@
     "state": "KS",
     "lat": 37.55316,
     "lng": -97.33634,
-    "price": 350000,
+    "price": 450000,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -89374,7 +89374,7 @@
     "state": "KS",
     "lat": 37.672427,
     "lng": -97.322045,
-    "price": 135000,
+    "price": 132500,
     "beds": 2,
     "baths": 1,
     "sqft": "966",
@@ -89387,7 +89387,7 @@
     "agentName": "Nikki Chavez",
     "agentPhone": "3169900690",
     "agentEmail": "",
-    "previousPrice": 140000
+    "previousPrice": 135000
   },
   {
     "slug": "323-broadway-ave-augusta-ks-678238",
@@ -94373,7 +94373,7 @@
     "state": "KS",
     "lat": 37.658253,
     "lng": -97.338406,
-    "price": 127500,
+    "price": 125000,
     "beds": 3,
     "baths": 1,
     "sqft": "1160",
@@ -94385,7 +94385,8 @@
     "isSundgren": false,
     "agentName": "Jacob Henderson",
     "agentPhone": "3166500372",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 127500
   },
   {
     "slug": "729-729-12-s-martinson-st-wichita-ks-655443",
@@ -102521,7 +102522,7 @@
     "state": "KS",
     "lat": 37.06604901,
     "lng": -97.04179934,
-    "price": 90000,
+    "price": 80000,
     "beds": 4,
     "baths": 2,
     "sqft": "2173",
@@ -102533,7 +102534,8 @@
     "isSundgren": false,
     "agentName": "Shandon Weston",
     "agentPhone": "6204417611",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 90000
   },
   {
     "slug": "417-11th-ave-winfield-ks-675747",
