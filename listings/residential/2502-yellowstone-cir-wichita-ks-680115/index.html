@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>&quot;Welcome home!! Tucked away on corner lot within a quiet cul-de-sac, this beautiful 1.5-story residence offers the perfect combination of timeless charm, premium location, and modern peace of mind. What truly sets this property apart is the incredible value hidden behind the scenes. Big-ticket maintenance items have already been taken care of for you—the HVAC system, hot water heater, and roof were all replaced just 7 years ago, meaning you can move right in without worrying about major upcoming expenses. From the moment you arrive, the excellent curb appeal will make you feel right at home. Even better, you are just steps away from the neighborhood playground and community pool, making it incredibly easy to enjoy sunny afternoons outdoors. Step inside to discover a bright, open floor plan highlighting a large living room featuring LVP flooring and a cozy fireplace that serves as the perfect focal point for gatherings. The heart of the home is the huge kitchen, offering plenty of room for family holiday gatherings and hosting guests. The kitchen layout provides endless counter space, featuring cooktop, a mix of updated stainless steel appliances to include new refrigerator, dishwasher, and microwave and range/oven. Right off the main living space, you can unwind in the fantastic sunroom, which floods the home with natural light. The entertainment space flows seamlessly outdoors to a large patio and a great backyard space perfect for barbecues and outdoor fun. The massive master bedroom serves as a true sanctuary, offering an abundance of space to create your ideal layout. It boasts a beautifully updated master bathroom, making the primary suite a private and relaxing retreat. The home&#39;s main bathroom has also been completely modernized, offering stylish fixtures and a clean, contemporary feel. Convenience is key with a main-floor laundry room, while the partially finished basement provides endless possibilities for a home gym or office. Don&#39;t miss your chance to own this turnkey gem on one of the best lots in the neighborhood. Schedule your private showing today before it&#39;s gone!&quot;</p>
     </div>
@@ -209,8 +211,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -220,13 +222,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="2502 Yellowstone Cir, Wichita, KS, 67215">
-        <input type="hidden" name="message" value="I am interested in the property at 2502 Yellowstone Cir, Wichita, KS, 67215 (MLS# 680115). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 2502 Yellowstone Cir, Wichita, KS, 67215 (MLS# 680115). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

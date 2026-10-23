@@ -4749,7 +4749,7 @@
     "state": "KS",
     "lat": 37.622189,
     "lng": -97.407058,
-    "price": 960000,
+    "price": 900000,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -4761,7 +4761,8 @@
     "isSundgren": false,
     "agentName": "Janet Chadd",
     "agentPhone": "3168410568",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 960000
   },
   {
     "slug": "23-scottsdale-st-wichita-ks-676024",
@@ -5997,7 +5998,7 @@
     "state": "KS",
     "lat": 37.845925,
     "lng": -97.278787,
-    "price": 785000,
+    "price": 725000,
     "beds": 5,
     "baths": 3,
     "sqft": "3422",
@@ -6010,7 +6011,7 @@
     "agentName": "Tamara L Walker",
     "agentPhone": "3165587985",
     "agentEmail": "",
-    "previousPrice": 825000
+    "previousPrice": 785000
   },
   {
     "slug": "2625-saratoga-ct-goddard-ks-676135",
@@ -25735,7 +25736,7 @@
     "state": "KS",
     "lat": 38.143992,
     "lng": -97.64613,
-    "price": 375000,
+    "price": 365000,
     "beds": 4,
     "baths": 2,
     "sqft": "2506",
@@ -25748,7 +25749,7 @@
     "agentName": "Madilynn Burt",
     "agentPhone": "7854169428",
     "agentEmail": "",
-    "previousPrice": 390000
+    "previousPrice": 375000
   },
   {
     "slug": "727-goldspike-newton-ks-677988",
@@ -47702,7 +47703,7 @@
     "state": "KS",
     "lat": 37.717155,
     "lng": -97.479245,
-    "price": 280000,
+    "price": 277500,
     "beds": 4,
     "baths": 3,
     "sqft": "2070",
@@ -47715,7 +47716,7 @@
     "agentName": "Cheyenne L Harvey",
     "agentPhone": "3166489997",
     "agentEmail": "",
-    "previousPrice": 285000
+    "previousPrice": 280000
   },
   {
     "slug": "1905-deer-rd-abilene-ks-678313",
@@ -57453,7 +57454,7 @@
     "state": "KS",
     "lat": 37.654639,
     "lng": -97.467082,
-    "price": 240000,
+    "price": 235000,
     "beds": 3,
     "baths": 2,
     "sqft": "2020",
@@ -57466,7 +57467,7 @@
     "agentName": "Josh Roy",
     "agentPhone": "3166656799",
     "agentEmail": "",
-    "previousPrice": 249900
+    "previousPrice": 240000
   },
   {
     "slug": "12910-thorton-st-wichita-ks-677637",
