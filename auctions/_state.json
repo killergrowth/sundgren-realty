@@ -1,5 +1,5 @@
 {
-  "lastFetch": "2026-10-23T16:36:23.498Z",
+  "lastFetch": "2026-10-23T21:05:16.821Z",
   "auctions": {
     "24096": {
       "slug": "test-auction-24096",
@@ -2970,6 +2970,12 @@
       "status": "pending",
       "name": "Old Vehicles, Tractors, Implements, Tools & Scrap Iron - LIVE AUCTION NEAR SEVERY, KS",
       "generated": "2026-10-22T21:16:21.964Z"
+    },
+    "172581": {
+      "slug": "the-clubhouse-at-1204-e-park-glen-st-clearwater-ks-67026-172581",
+      "status": "pending",
+      "name": "'The Clubhouse' at 1204 E Park Glen St., Clearwater, KS 67026",
+      "generated": "2026-10-23T21:05:19.946Z"
     }
   }
 }
