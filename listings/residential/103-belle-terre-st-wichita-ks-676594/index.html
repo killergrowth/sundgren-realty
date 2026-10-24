@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-terminated pill">Inactive</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Impressive custom brick ranch with a wonderful curb presence. Situated on a large corner lot, the huge yard backs up to trees offering a park like setting. The interior of this sprawling home combines beautiful details including double coffered ceilings, gorgeous lighted glass sinks, and custom woodwork throughout with over 2300 square feet on the main floor alone! The gorgeous kitchen features custom cabinetry, gas stove, and well designed island with granite countertop and plenty of storage. A separate eating bar, breakfast nook and family room give everyone room to spread out. Formal living and dining rooms provide additional space for entertaining. The main-floor primary suite features a double-coffered ceiling, peaceful backyard views, private access to the covered deck and a spacious ensuite with dual sinks, separate soaker tub, large shower with dual shower heads and a walk-in closet with custom built-ins. An additional large bedroom, full bath and laundry room complete the main level. Down the open wide staircase to the finished walkout basement you are greeted by an expansive rec room, family room, beautiful wet bar, two bedrooms, a full bath and THREE additional bonus rooms. Located in Belle Terre, a well desired neighborhood, featuring beautiful walking paths, tennis courts, swimming pool and fishing ponds. Andover Schools, Sedgwick Co Taxes!</p>
     </div>
@@ -205,8 +207,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -216,13 +218,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="103 Belle Terre St, Wichita, KS, 67230">
-        <input type="hidden" name="message" value="I am interested in the property at 103 Belle Terre St, Wichita, KS, 67230 (MLS# 676594). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 103 Belle Terre St, Wichita, KS, 67230 (MLS# 676594). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

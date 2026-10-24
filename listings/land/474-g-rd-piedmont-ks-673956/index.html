@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Land</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-terminated pill">Inactive</span><span class="pill sg-type-pill">Land</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -133,7 +133,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>The Log Cabin Parcel consists of approximately 873 acres by our measurements. 83+- acres of creek bottom crop ground with the balance native rangeland, creek and timber. This has to be one of the most beautiful recreational/ranch properties in Kansas. From the lower elevations of 1,130 feet along Otter Creek, rising to 1,430 feet (300 feet!) on the high prairie plateau, the views are absolutely spectacular and the numbers will only be meaningful for those that experience the breathtaking views. Everything is in top notch condition, from grass to water, from fences to buildings, this is an immaculately maintained property. It is fenced to accommodate rotational grazing and wildlife protection. The stock ponds are strategically placed to accommodate uniform grazing and top management practices, and beyond that they are terrific fishing for Bluegill, Largemouth Bass, Crappie and Channel Cat. The Log Cabin, Bunkhouse and Toy Storage Building are all built near the top of the plateau, just under the rim for wind protection. The view from the Cabin is spectacular and it was placed in this location for that reason. The Bunkhouse was built to accommodate visitors and hunters. The Toy Storage Building is a very recent and necessary addition to store the extra recreational vehicles which allow the ranch to be used for pleasure at the highest level. The Cabin area is accessed by a private graveled road that meanders up the hill and is immaculately designed and maintained. The electric service is all underground to maintain the natural beauty of the landscape, so there are no powerlines all the way up the hill. The top of the plateau is relatively flat and covered by Tallgrass Prairie fauna. Buffalo wallows are still visible reminders of the activity and history from years gone by. The hillsides are a mixture of prairie and hardwood forests and the bottom ground is cultivated fields of wheat that culminate into Otter Creek. The fields have been aptly named “The Field of Dreams” and are so beautiful with the growing crops, bordered on one side by Otter Creek and the other side by the majestic hills. The jest is that if you build it, they will come, meaning the deer and turkeys and other wild animals. It is a daily exhibition with the parade of wildlife that is always lurking in the trees. And then there are the coyotes howling at sunset. Oh, and the sunrises and sunsets over the Flint Hills can be as beautiful as anywhere in the world. But the main attraction is likely to be the absence of things. The absence of noise, the absence of activity associated with modern society, gives this place a sense of calm and quiet that is rare and hard to find. The Log Cabin was built in 2002 and is full log construction with a low maintenance steel roof, 1.5 stories with a full finished basement. The main level is 1,120 square feet with an open floor plan, a fully functional kitchen, great room with wood-burning fireplace, bathroom and generous wall space for trophy mounts. The upper level is 448 square feet and houses a large master bedroom and bathroom. The basement contains two large bedrooms, a full bathroom, kitchenette. The basement walks outdoors through a bedroom and the kitchenette onto the patio below the wood deck. The real attraction is its placement on the land and the abundance of windows, enhancing the view that is visible for miles. The Bunkhouse was also constructed in 2002 and is a one-story metal clad building, 1,806 square feet, with two bedrooms, two full bathrooms, a large game room and an attached two-car garage. It was perfectly designed for overflow guests and entertainment. The Toy Barn was built in 2017 and is a 40×60 metal building on concrete slab with a finished interior, and includes split unit heating and air conditioning for climate control. The improvements overlook a beautiful small lake with a covered aluminum boat dock that is perfect for fishing, relaxing and sun bathing. Also, of note are two strategically lo</p>
     </div>
@@ -174,8 +176,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -185,13 +187,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="474 G Rd, Piedmont, KS, 67122">
-        <input type="hidden" name="message" value="I am interested in the property at 474 G Rd, Piedmont, KS, 67122 (MLS# 673956). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 474 G Rd, Piedmont, KS, 67122 (MLS# 673956). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

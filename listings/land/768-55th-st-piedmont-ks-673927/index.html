@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Land</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-terminated pill">Inactive</span><span class="pill sg-type-pill">Land</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -133,7 +133,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>The Lilley tract consists of approximately 752 acres by our measurements. The nostalgic and historic 2 story farm house began as a Sears and Roebuck kit package in 1870, that evolved with two later additions and then completely restored in 2012, mindful of history and the family it served for so many years. It sits on the original farmstead along Otter Creek where the Lilley family homesteaded in the late 1860’s. There is an old barn with hayloft and wooden milking stanchions and several older tool sheds near the house. At the other end of the property is a smaller cabin, completely restored in 2024 to original condition with wood cooking and heating stoves. At the south end of the property is a 12-acre trophy bass fishing lake built in 2018 and stocked with Bluegill, Crawdads, Minnows (as forage) and F1 Hybrid 6” Tiger Bass. A later addition of 300 mature Tigers weighing between 2-6 pounds completed the vision for this lake. The lake has crystal clear spring water, brush piles and beautiful natural landscaping. The fishing is truly “over the top”. It includes a Wahoo dock that was custom designed and built for this lake. It is all aluminum with maintenance free composite flooring, one covered boat slip, covered lounging area, upper-level patio on the roof and two swim ladders. The land has breathtaking views and diverse fauna and uses. Otter Creek meanders through the northern third of this property for one mile. The crystal-clear waters host many species of fish and amphibians as well as supplying water for the hardwood timber lining the creek. There are huge Oak trees, growing for more than 200 years, as well as large Sycamore, Black Walnut, Smooth and Shaggy Bark Hickory, and many others. Most of the creek is solid limestone rock bottom. Many Native American artifacts have been found around old camping sites on the property and a Mastodon (prehistoric elephant) tooth was discovered in 2019 just a couple of miles upstream. Land composition is estimated to be 162 acres of crop ground, 100 acres of Creek and Timber, and 478 acres of Bluestem grass covered hills. The views are spectacular from many spots. The elevation ranges from 1,130 to 1,420 feet, a nearly 300-foot difference from top to bottom. Besides the fishing lake there are several smaller stock ponds that have trophy fishing and provide fresh water for livestock. Dwelling is a 1,900 square foot 2-story farmhouse. 3 bedrooms, 3 full bathrooms, kitchen, living room and dining room. Centrally heated and cooled, wood burning fireplace, wood-shake shingles, beautiful front porch. There are also numerous building sites by the lake, creek or on the wooded hillsides. Utilities: Rural water, electricity, propane, internet. Sanitary septic system.</p>
     </div>
@@ -170,8 +172,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -181,13 +183,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="768 55th St, Piedmont, KS, 67122">
-        <input type="hidden" name="message" value="I am interested in the property at 768 55th St, Piedmont, KS, 67122 (MLS# 673927). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 768 55th St, Piedmont, KS, 67122 (MLS# 673927). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

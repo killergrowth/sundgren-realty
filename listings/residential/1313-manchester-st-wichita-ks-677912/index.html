@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-terminated pill">Inactive</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>This expansive three-level residence offers a perfect blend of luxury, comfort, and functionality across five spacious bedrooms and three and a half bathrooms. Designed for both effortless daily living and grand-scale entertaining, the home maximizes every square foot to provide a sophisticated retreat. The main level is anchored by a light-filled living room featuring a cozy fireplace, creating an inviting atmosphere for relaxation. At the heart of the home, the spacious gourmet kitchen is a chef’s dream, boasting elegant granite countertops and a timeless tile backsplash. For ultimate convenience, the primary suite is located on the main floor, serving as a private sanctuary complete with a generous walk-in closet. The lower level is designed for versatility and leisure. A comfortable den area, centered around a second fireplace, provides the perfect spot for movie nights or quiet evenings. A flexible bonus room offers the ideal footprint for a home gym, a quiet professional office, or a vibrant playroom. To simplify chores across the home&#39;s three levels, washer and dryer hookups are conveniently located on both the main floor and in the basement. The interior luxury extends seamlessly outdoors. A sunroom provides a tranquil transition to the backyard oasis, where a sparkling saltwater pool serves as the centerpiece of the entertaining area. Enclosed by a classic wrought iron fence for both safety and style, the outdoor living space is completed by breathtaking waterfront views, making it an idyllic setting for hosting guests or enjoying peaceful mornings by the water.</p>
     </div>
@@ -209,8 +211,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -220,13 +222,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="1313 Manchester St, Wichita, KS, 67212">
-        <input type="hidden" name="message" value="I am interested in the property at 1313 Manchester St, Wichita, KS, 67212 (MLS# 677912). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 1313 Manchester St, Wichita, KS, 67212 (MLS# 677912). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
