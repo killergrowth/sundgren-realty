@@ -43369,7 +43369,7 @@
     "state": "KS",
     "lat": 37.8402,
     "lng": -96.835183,
-    "price": 300000,
+    "price": 295000,
     "beds": 4,
     "baths": 2,
     "sqft": "1627",
@@ -43381,7 +43381,8 @@
     "isSundgren": false,
     "agentName": "Josiah Beal",
     "agentPhone": "3162511498",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 300000
   },
   {
     "slug": "4422-chase-ave-wichita-ks-676899",
@@ -86785,7 +86786,7 @@
     "state": "KS",
     "lat": 37.59059302,
     "lng": -97.15168169,
-    "price": 150000,
+    "price": 135000,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -86797,7 +86798,8 @@
     "isSundgren": false,
     "agentName": "Janiece M Erbert",
     "agentPhone": "3169903672",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 150000
   },
   {
     "slug": "4567-portwest-st-wichita-ks-675256",
