@@ -28898,7 +28898,7 @@
     "state": "KS",
     "lat": 37.546015,
     "lng": -97.213883,
-    "price": 375000,
+    "price": 360000,
     "beds": 3,
     "baths": 2,
     "sqft": "1624",
@@ -28910,7 +28910,8 @@
     "isSundgren": false,
     "agentName": "Dan Madrigal",
     "agentPhone": "3169900184",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 375000
   },
   {
     "slug": "248-250-mendocino-st-goddard-ks-674757",
