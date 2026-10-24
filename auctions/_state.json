@@ -1,5 +1,5 @@
 {
-  "lastFetch": "2026-10-24T15:30:44.494Z",
+  "lastFetch": "2026-10-24T20:22:13.254Z",
   "auctions": {
     "24096": {
       "slug": "test-auction-24096",
@@ -2976,6 +2976,12 @@
       "status": "pending",
       "name": "'The Clubhouse' at 1204 E Park Glen St., Clearwater, KS 67026",
       "generated": "2026-10-23T21:05:19.946Z"
+    },
+    "172603": {
+      "slug": "742-acres-whitewater-river-tillable-bottom-ground-near-towan-172603",
+      "status": "pending",
+      "name": "74.2 Acres Whitewater River Tillable Bottom Ground Near Towanda – Butler County, Kansas",
+      "generated": "2026-10-24T20:22:17.224Z"
     }
   }
 }
