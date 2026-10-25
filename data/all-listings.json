@@ -31638,7 +31638,7 @@
     "state": "KS",
     "lat": 37.660578,
     "lng": -97.197738,
-    "price": 359000,
+    "price": 347000,
     "beds": 5,
     "baths": 3,
     "sqft": "2616",
@@ -31651,7 +31651,7 @@
     "agentName": "Oricel Iron Wing",
     "agentPhone": "3168336248",
     "agentEmail": "",
-    "previousPrice": 365000
+    "previousPrice": 359000
   },
   {
     "slug": "13501-links-st-wichita-ks-677884",
@@ -41605,7 +41605,7 @@
     "state": "KS",
     "lat": 38.341488,
     "lng": -97.204154,
-    "price": 315000,
+    "price": 298000,
     "beds": 5,
     "baths": 3,
     "sqft": "3196",
@@ -41617,7 +41617,8 @@
     "isSundgren": false,
     "agentName": "Patty Putter",
     "agentPhone": "3162831000",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 315000
   },
   {
     "slug": "413-park-dr-haysville-ks-675965",
