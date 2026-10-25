@@ -30039,7 +30039,7 @@
     "state": "KS",
     "lat": 37.693117,
     "lng": -97.240498,
-    "price": 355000,
+    "price": 339900,
     "beds": 4,
     "baths": 3,
     "sqft": "3080",
@@ -30052,7 +30052,7 @@
     "agentName": "Myron K Klaassen",
     "agentPhone": "3164614847",
     "agentEmail": "",
-    "previousPrice": 360000
+    "previousPrice": 355000
   },
   {
     "slug": "16051607-limuel-st-wichita-ks-677917",
@@ -41489,7 +41489,7 @@
     "state": "KS",
     "lat": 38.38450699,
     "lng": -97.65645704,
-    "price": 315000,
+    "price": 299999,
     "beds": 3,
     "baths": 3,
     "sqft": "3098",
@@ -41501,7 +41501,8 @@
     "isSundgren": false,
     "agentName": "Stephanie Smith",
     "agentPhone": "3347072880",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 315000
   },
   {
     "slug": "1747-sabin-st-wichita-ks-677291",
@@ -50656,7 +50657,7 @@
     "state": "KS",
     "lat": 37.655965,
     "lng": -97.474984,
-    "price": 260000,
+    "price": 255000,
     "beds": 4,
     "baths": 3,
     "sqft": "2220",
@@ -50669,7 +50670,7 @@
     "agentName": "Margaret Metzger",
     "agentPhone": "3163719816",
     "agentEmail": "",
-    "previousPrice": 264900
+    "previousPrice": 260000
   },
   {
     "slug": "2634-viney-ave-murdock-ks-677531",
