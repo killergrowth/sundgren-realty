@@ -3938,7 +3938,7 @@
     "state": "KS",
     "lat": 37.720304,
     "lng": -97.153657,
-    "price": 1099000,
+    "price": 1075000,
     "beds": 5,
     "baths": 6,
     "sqft": "4749",
@@ -3951,7 +3951,7 @@
     "agentName": "Karen L McCaughan-Prahm",
     "agentPhone": "3165192491",
     "agentEmail": "",
-    "previousPrice": 1125000
+    "previousPrice": 1099000
   },
   {
     "slug": "11801-albert-cir-maize-ks-677699",
@@ -4055,7 +4055,7 @@
     "state": "KS",
     "lat": 37.694422,
     "lng": -97.240412,
-    "price": 1125000,
+    "price": 975000,
     "beds": 3,
     "baths": 4,
     "sqft": "3647",
@@ -4067,7 +4067,8 @@
     "isSundgren": false,
     "agentName": "Angel Culver Vos",
     "agentPhone": "3167087361",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 1125000
   },
   {
     "slug": "1818-burning-tree-cir-wichita-ks-670329",
