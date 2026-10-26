@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Welcome to a distinguished East Wichita residence where timeless elegance, distinctive architecture, superior craftsmanship, and an extraordinary backyard setting come together. Quality built in 2013, this charmer is situated on a picturesque 0.62-acre lot overlooking mature trees and a tranquil pond. Its striking stone and stucco exterior, charming turret, oversized custom iron front doors, and a sweeping circular driveway create an unforgettable first impression. A stunning porte-cochère connects the home to the detached third-car garage, adding architectural grandeur and a distinctive sense of arrival. Inside, the home’s refined quality and attention to detail are evident throughout. Sophisticated finishes, timeless lighting, and thoughtful craftsmanship define every space. The chef’s kitchen is truly the heart of the home, featuring an oversized center island with an eating bar, a gas range with a skillet and double ovens, under- and above-cabinet lighting, soft-close cabinets and drawers, and an abundance of storage, including cabinetry beneath the island. A convenient pullout cabinet keeps the mixer easily accessible yet neatly tucked away. The well-appointed butler’s pantry connects the formal dining room and eat-in kitchen, making entertaining effortless. It includes a sink, beverage refrigerator, and glass-front cabinets with lighting to beautifully display glassware. The spacious living room features custom built-in cabinetry flanking a beautiful fireplace shared with the adjoining office, which offers direct access to the expansive covered patio. The primary suite offers a luxurious retreat, complete with a spa-inspired bathroom featuring an oversized dual-sink vanity, separate soaking tub, and spacious walk-in shower with three shower heads, including a rainfall shower head, and a built-in bench. Both additional upstairs bedrooms enjoy the convenience and privacy of their own en-suite bathrooms. A powder room for guests and large separate laundry room with a sink complete the main level. Entertaining is effortless in the equally impressive walkout basement, offering a large family room with a fireplace and custom built-ins, game area, radiant heated flooring, a second powder room, and a nice wet bar. A dedicated storage area also presents the opportunity to create a custom wine room. Designed to embrace the surrounding natural beauty, the home’s outdoor living spaces include a large covered patio and an inviting ground level patio with a stone woodburning fireplace, providing the perfect setting to relax or entertain while enjoying picturesque views of the pond and mature trees. The incredible backyard setting, with its peaceful views and established landscape, is one of the home’s most distinctive features. Additional features include a cement roof, HVAC replaced in 2022, an integrated sound system currently serving the kitchen and primary bathroom with wiring for whole-home expansion, and fresh paint completed in October 2026 on the exterior, front door, and basement. Tucked away in a quiet neighborhood where construction is complete, this remarkable property offers a peaceful setting with convenient access to highways, shopping, dining, and nearby schools. With its timeless design, superior craftsmanship, impressive chef’s kitchen, distinctive architecture, seamless indoor-outdoor flow, and extraordinary backyard setting, this home offers a truly elevated living experience.</p>
     </div>
@@ -209,8 +211,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -220,13 +222,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="2105 Celtic St, Wichita, KS, 67230">
-        <input type="hidden" name="message" value="I am interested in the property at 2105 Celtic St, Wichita, KS, 67230 (MLS# 680823). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 2105 Celtic St, Wichita, KS, 67230 (MLS# 680823). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
