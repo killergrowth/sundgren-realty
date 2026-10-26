@@ -46014,7 +46014,7 @@
     "state": "KS",
     "lat": 37.658824,
     "lng": -97.216802,
-    "price": 290000,
+    "price": 285000,
     "beds": 4,
     "baths": 3,
     "sqft": "2256",
@@ -46026,7 +46026,8 @@
     "isSundgren": false,
     "agentName": "Michael K. Cheung",
     "agentPhone": "3165166453",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 290000
   },
   {
     "slug": "1802-hoyt-cir-wichita-ks-675800",
