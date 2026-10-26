@@ -9432,7 +9432,7 @@
     "state": "KS",
     "lat": 37.617734,
     "lng": -97.233959,
-    "price": 560000,
+    "price": 539000,
     "beds": 5,
     "baths": 4,
     "sqft": "3109",
@@ -9445,7 +9445,7 @@
     "agentName": "Nicolle Jausel",
     "agentPhone": "3166402564",
     "agentEmail": "",
-    "previousPrice": 585000
+    "previousPrice": 560000
   },
   {
     "slug": "435-130th-st-s-st-south-haven-ks-676399",
@@ -10827,7 +10827,7 @@
     "state": "KS",
     "lat": 37.18012398,
     "lng": -97.36755102,
-    "price": 589900,
+    "price": 549900,
     "beds": 4,
     "baths": 3,
     "sqft": "3416",
@@ -10840,7 +10840,7 @@
     "agentName": "Pamela Hinman",
     "agentPhone": "6203262162",
     "agentEmail": "",
-    "previousPrice": 599900
+    "previousPrice": 589900
   },
   {
     "slug": "1619-lakeside-dr-andover-ks-677903",
@@ -45412,7 +45412,7 @@
     "state": "KS",
     "lat": 37.713365,
     "lng": -97.364115,
-    "price": 292500,
+    "price": 289900,
     "beds": 3,
     "baths": 2,
     "sqft": "2755",
@@ -45425,7 +45425,7 @@
     "agentName": "Troy Fischer",
     "agentPhone": "3166191164",
     "agentEmail": "",
-    "previousPrice": 294900
+    "previousPrice": 292500
   },
   {
     "slug": "1813-pine-grove-st-wichita-ks-676515",
@@ -50730,7 +50730,7 @@
     "state": "KS",
     "lat": 37.548371,
     "lng": -97.25159795,
-    "price": 259000,
+    "price": 249000,
     "beds": 5,
     "baths": 2,
     "sqft": "2130",
@@ -50743,7 +50743,7 @@
     "agentName": "Lola Pfeifer",
     "agentPhone": "3167080330",
     "agentEmail": "",
-    "previousPrice": 265000
+    "previousPrice": 259000
   },
   {
     "slug": "9405-35th-st-n-c8-wichita-ks-677381",
@@ -55519,7 +55519,7 @@
     "state": "KS",
     "lat": 39.09572799,
     "lng": -97.613005,
-    "price": 250000,
+    "price": 245000,
     "beds": 2,
     "baths": 3,
     "sqft": "960",
@@ -55532,7 +55532,7 @@
     "agentName": "Samantha Swearingen",
     "agentPhone": "7855779878",
     "agentEmail": "",
-    "previousPrice": 254000
+    "previousPrice": 250000
   },
   {
     "slug": "1200-vista-sur-dr-salina-ks-671461",
@@ -82990,7 +82990,7 @@
     "state": "KS",
     "lat": 37.27028,
     "lng": -97.165816,
-    "price": 155000,
+    "price": 149995,
     "beds": 3,
     "baths": 2,
     "sqft": "1104",
@@ -83003,7 +83003,7 @@
     "agentName": "Andrea LaFever",
     "agentPhone": "3165582177",
     "agentEmail": "",
-    "previousPrice": 160000
+    "previousPrice": 155000
   },
   {
     "slug": "1639-hydraulic-ave-wichita-ks-677778",
@@ -92740,7 +92740,7 @@
     "state": "KS",
     "lat": 37.708603,
     "lng": -97.29495,
-    "price": 130000,
+    "price": 128000,
     "beds": 2,
     "baths": 1,
     "sqft": "1116",
@@ -92752,7 +92752,8 @@
     "isSundgren": false,
     "agentName": "Steve Myers",
     "agentPhone": "3163304318",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 130000
   },
   {
     "slug": "3109-alpine-ave-wichita-ks-676292",
