@@ -60583,7 +60583,7 @@
     "state": "KS",
     "lat": 38.80278,
     "lng": -97.602811,
-    "price": 235000,
+    "price": 220000,
     "beds": 3,
     "baths": 2,
     "sqft": "2538",
@@ -60595,7 +60595,8 @@
     "isSundgren": false,
     "agentName": "Jessica Decker",
     "agentPhone": "7853420935",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 235000
   },
   {
     "slug": "627-pershing-st-wichita-ks-673991",
@@ -60721,7 +60722,7 @@
     "state": "KS",
     "lat": 37.158134,
     "lng": -98.027679,
-    "price": 235000,
+    "price": 229000,
     "beds": 4,
     "baths": 3,
     "sqft": "5384",
@@ -60733,7 +60734,8 @@
     "isSundgren": false,
     "agentName": "Megan Inslee",
     "agentPhone": "6202432938",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 235000
   },
   {
     "slug": "305-central-ave-newton-ks-673093",
@@ -85609,7 +85611,7 @@
     "state": "KS",
     "lat": 37.678585,
     "lng": -97.145941,
-    "price": 134900,
+    "price": 120000,
     "beds": 3,
     "baths": 2,
     "sqft": "1528",
@@ -85622,7 +85624,7 @@
     "agentName": "Matthew Chavez",
     "agentPhone": "3168066537",
     "agentEmail": "",
-    "previousPrice": 145000
+    "previousPrice": 134900
   },
   {
     "slug": "2978-deer-dr-beverly-ks-674934",
@@ -98853,7 +98855,7 @@
     "state": "KS",
     "lat": 37.663525,
     "lng": -97.377023,
-    "price": 97500,
+    "price": 95000,
     "beds": 2,
     "baths": 1,
     "sqft": "720",
@@ -98866,7 +98868,7 @@
     "agentName": "Jessika E Mayer",
     "agentPhone": "3168074856",
     "agentEmail": "",
-    "previousPrice": 100000
+    "previousPrice": 97500
   },
   {
     "slug": "812-maris-st-winfield-ks-677735",
