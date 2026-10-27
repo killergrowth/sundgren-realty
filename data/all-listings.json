@@ -24185,7 +24185,7 @@
     "state": "KS",
     "lat": 37.68958,
     "lng": -97.145612,
-    "price": 394900,
+    "price": 384900,
     "beds": 5,
     "baths": 3,
     "sqft": "3424",
@@ -24198,7 +24198,7 @@
     "agentName": "Tara Maxwell",
     "agentPhone": "3162586878",
     "agentEmail": "",
-    "previousPrice": 399900
+    "previousPrice": 394900
   },
   {
     "slug": "5758-edwards-st-wichita-ks-675273",
@@ -94459,7 +94459,7 @@
     "state": "KS",
     "lat": 37.27225,
     "lng": -97.39391,
-    "price": 115100,
+    "price": 104140,
     "beds": 3,
     "baths": 2,
     "sqft": "1358",
@@ -94472,7 +94472,7 @@
     "agentName": "Gina Littleton",
     "agentPhone": "3167348378",
     "agentEmail": "",
-    "previousPrice": 126040
+    "previousPrice": 115100
   },
   {
     "slug": "105-main-st-sylvan-grove-ks-659039",
@@ -96987,7 +96987,7 @@
     "state": "KS",
     "lat": 37.068851,
     "lng": -97.035039,
-    "price": 114900,
+    "price": 107000,
     "beds": 3,
     "baths": 1,
     "sqft": "1217",
@@ -97000,7 +97000,7 @@
     "agentName": "Shandon Weston",
     "agentPhone": "6204417611",
     "agentEmail": "",
-    "previousPrice": 119900
+    "previousPrice": 114900
   },
   {
     "slug": "1006-emporia-ave-wichita-ks-674595",
@@ -98306,7 +98306,7 @@
     "state": "KS",
     "lat": 38.382442,
     "lng": -97.661326,
-    "price": 114900,
+    "price": 108900,
     "beds": 3,
     "baths": 1,
     "sqft": "1338",
@@ -98318,7 +98318,8 @@
     "isSundgren": false,
     "agentName": "Su H Fox",
     "agentPhone": "3166811313",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 114900
   },
   {
     "slug": "1702-8-st-arkansas-city-ks-664409",
@@ -98888,7 +98889,7 @@
     "state": "KS",
     "lat": 37.241066,
     "lng": -96.988289,
-    "price": 110000,
+    "price": 72000,
     "beds": 3,
     "baths": 2,
     "sqft": "1257",
@@ -98900,7 +98901,8 @@
     "isSundgren": false,
     "agentName": "Lori Newfer",
     "agentPhone": "6208454240",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 110000
   },
   {
     "slug": "6725-shade-ln-wichita-ks-677447",
