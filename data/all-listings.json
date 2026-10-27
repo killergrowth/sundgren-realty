@@ -3799,7 +3799,7 @@
     "state": "KS",
     "lat": 37.755574,
     "lng": -97.453489,
-    "price": 1199950,
+    "price": 1189000,
     "beds": 4,
     "baths": 4,
     "sqft": "5186",
@@ -3811,7 +3811,8 @@
     "isSundgren": false,
     "agentName": "Shannon Gaskill",
     "agentPhone": "3162002136",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 1199950
   },
   {
     "slug": "7550-327th-st-w-st-cheney-ks-675671",
@@ -17917,7 +17918,7 @@
     "state": "KS",
     "lat": 37.57345822,
     "lng": -97.24191431,
-    "price": 467442,
+    "price": 449775,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -17929,7 +17930,8 @@
     "isSundgren": false,
     "agentName": "Jatena Leon",
     "agentPhone": "3167069309",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 467442
   },
   {
     "slug": "8412-pebble-st-maize-ks-676746",
@@ -45805,7 +45807,7 @@
     "state": "KS",
     "lat": 37.705413,
     "lng": -96.962745,
-    "price": 291600,
+    "price": 291150,
     "beds": 3,
     "baths": 2,
     "sqft": "1313",
@@ -45817,7 +45819,8 @@
     "isSundgren": false,
     "agentName": "Janel Scott Talman",
     "agentPhone": "3167599640",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 291600
   },
   {
     "slug": "1790-redbud-lane-goddard-ks-670020",
@@ -54733,7 +54736,7 @@
     "state": "KS",
     "lat": 37.72026,
     "lng": -97.136913,
-    "price": 260000,
+    "price": 250000,
     "beds": 3,
     "baths": 2,
     "sqft": "1632",
@@ -54745,7 +54748,8 @@
     "isSundgren": false,
     "agentName": "Eric J Locke",
     "agentPhone": "3166409274",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 260000
   },
   {
     "slug": "924-splitwood-way-st-derby-ks-676021",
@@ -96797,7 +96801,7 @@
     "state": "KS",
     "lat": 37.464759,
     "lng": -97.198642,
-    "price": 89000,
+    "price": 85000,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -96810,7 +96814,7 @@
     "agentName": "Jatena Leon",
     "agentPhone": "3167069309",
     "agentEmail": "",
-    "previousPrice": 120000
+    "previousPrice": 89000
   },
   {
     "slug": "00000-160th-ave-cheney-ks-672471",
@@ -96821,7 +96825,7 @@
     "state": "KS",
     "lat": 37.64608014,
     "lng": -97.82422422,
-    "price": 120000,
+    "price": 117000,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -96833,7 +96837,8 @@
     "isSundgren": false,
     "agentName": "Kristen Petz",
     "agentPhone": "3166175196",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 120000
   },
   {
     "slug": "551-beckett-goddard-ks-669490",
@@ -99462,7 +99467,7 @@
     "state": "KS",
     "lat": 37.58812353,
     "lng": -97.67835423,
-    "price": 107500,
+    "price": 104500,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -99474,7 +99479,8 @@
     "isSundgren": false,
     "agentName": "Kristen Petz",
     "agentPhone": "3166175196",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 107500
   },
   {
     "slug": "1808-saint-paul-st-wichita-ks-678065",
@@ -102398,7 +102404,7 @@
     "state": "KS",
     "lat": 39.042807,
     "lng": -98.145722,
-    "price": 92500,
+    "price": 89900,
     "beds": 2,
     "baths": 2,
     "sqft": "1794",
@@ -102410,7 +102416,8 @@
     "isSundgren": false,
     "agentName": "Carla A Glessner",
     "agentPhone": "7855770334",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 92500
   },
   {
     "slug": "lot-5-willow-oak-estates-wichita-ks-674036",
@@ -104779,7 +104786,7 @@
     "state": "KS",
     "lat": 37.54096913,
     "lng": -97.46169566,
-    "price": 82000,
+    "price": 79000,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -104791,7 +104798,8 @@
     "isSundgren": false,
     "agentName": "Kristen Petz",
     "agentPhone": "3166175196",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 82000
   },
   {
     "slug": "lot-1-cottonwood-estates-clearwater-ks-669818",
@@ -106925,7 +106933,7 @@
     "state": "KS",
     "lat": 37.58965382,
     "lng": -97.67565057,
-    "price": 72500,
+    "price": 69500,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -106937,7 +106945,8 @@
     "isSundgren": false,
     "agentName": "Kristen Petz",
     "agentPhone": "3166175196",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 72500
   },
   {
     "slug": "00000-295th-st-w-garden-plain-ks-673448",
