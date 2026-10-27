@@ -42699,7 +42699,7 @@
     "state": "KS",
     "lat": 37.653312,
     "lng": -97.485672,
-    "price": 299000,
+    "price": 294000,
     "beds": 4,
     "baths": 3,
     "sqft": "2147",
@@ -42712,7 +42712,7 @@
     "agentName": "Oricel Iron Wing",
     "agentPhone": "3168336248",
     "agentEmail": "",
-    "previousPrice": 307000
+    "previousPrice": 299000
   },
   {
     "slug": "5043-toben-dr-bel-aire-ks-671527",
@@ -59767,7 +59767,7 @@
     "state": "KS",
     "lat": 37.475678,
     "lng": -97.235185,
-    "price": 224900,
+    "price": 219900,
     "beds": 3,
     "baths": 2,
     "sqft": "1867",
@@ -59780,7 +59780,7 @@
     "agentName": "Sue Wenger",
     "agentPhone": "3162046648",
     "agentEmail": "",
-    "previousPrice": 239900
+    "previousPrice": 224900
   },
   {
     "slug": "12831-willowgreen-st-wichita-ks-677701",
@@ -72133,7 +72133,7 @@
     "state": "KS",
     "lat": 37.232721,
     "lng": -96.977685,
-    "price": 194900,
+    "price": 180000,
     "beds": 5,
     "baths": 3,
     "sqft": "2568",
@@ -72145,7 +72145,8 @@
     "isSundgren": false,
     "agentName": "Connie Lee",
     "agentPhone": "4052540913",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 194900
   },
   {
     "slug": "5304-rolly-st-wichita-ks-672972",
@@ -98903,7 +98904,7 @@
     "state": "KS",
     "lat": 37.690241,
     "lng": -97.41963,
-    "price": 110000,
+    "price": 99990,
     "beds": 1,
     "baths": 1,
     "sqft": "712",
@@ -98915,7 +98916,8 @@
     "isSundgren": false,
     "agentName": "Shasta Wewe",
     "agentPhone": "6209604864",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 110000
   },
   {
     "slug": "1604-saint-francis-ave-wichita-ks-676244",
