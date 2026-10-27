@@ -85682,7 +85682,7 @@
     "state": "KS",
     "lat": 39.551474,
     "lng": -97.640946,
-    "price": 154500,
+    "price": 149900,
     "beds": 3,
     "baths": 2,
     "sqft": "1248",
@@ -85694,7 +85694,8 @@
     "isSundgren": false,
     "agentName": "Laura Krier",
     "agentPhone": "7856143854",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 154500
   },
   {
     "slug": "632-g-ave-kingman-ks-676563",
@@ -95545,7 +95546,7 @@
     "state": "KS",
     "lat": 39.572376,
     "lng": -97.665624,
-    "price": 124900,
+    "price": 119900,
     "beds": 4,
     "baths": 2,
     "sqft": "1465",
@@ -95557,7 +95558,8 @@
     "isSundgren": false,
     "agentName": "Laura Krier",
     "agentPhone": "7856143854",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 124900
   },
   {
     "slug": "1120-c-street-arkansas-city-ks-674250",
