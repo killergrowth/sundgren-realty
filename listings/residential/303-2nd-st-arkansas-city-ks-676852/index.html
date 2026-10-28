@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-terminated pill">Inactive</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>RARE OPPORTUNITY! FINISHED 2 BED 1 BATH DETACHED GARAGE APARTMENT!! Whether you&#39;re looking to offset your mortgage, expand your investment portfolio, or create the perfect multigenerational living setup, this one-of-a-kind property offers incredible flexibility. The charming 2-bedroom, 2.5-bath main home features 1,436 sq ft of living space, including a spacious primary suite with its own private en suite bathroom. Downstairs, the partially finished basement offers even more usable space with a large laundry room currently being used as a bedroom and an additional bonus room currently serving as a bedroom, perfect for a game room, home office, hobby space, or overnight guests. The true standout is the detached 3-car garage with a second-floor apartment, offering an additional 896 sq ft of living space and its own mailing address. With both the main home and the garage apartment being currently tenant occupied, this versatile space provides an excellent opportunity for supplemental rental income, private guest accommodations, or separate living quarters for extended family. The garage is thoughtfully divided with two bays designated for the main home and one bay for the apartment. For added peace of mind, brand-new roofs were installed on both the main home and detached garage in July 2026. Opportunities like this are hard to find! Whether you&#39;re dreaming of house hacking, investing, or simply needing extra space for family, this property checks all the boxes!</p>
     </div>
@@ -209,8 +211,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -220,13 +222,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="303 2nd ST, Arkansas City, KS, 67005">
-        <input type="hidden" name="message" value="I am interested in the property at 303 2nd ST, Arkansas City, KS, 67005 (MLS# 676852). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 303 2nd ST, Arkansas City, KS, 67005 (MLS# 676852). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

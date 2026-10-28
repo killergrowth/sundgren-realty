@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-terminated pill">Inactive</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>This stunning home offers a rare blend of refined craftsmanship, natural beauty, and inviting character both inside and out. Featuring 5 bedrooms, 3.5 baths, this property is tucked away on a quiet, wooded cul-de-sac in the highly sought after Montana Hills addition within the Andover School District. With over 4,100 square feet, this home is the one you have been looking for! From the moment you arrive, the home’s curb appeal stands out with mature trees, lush landscaping, and a serene setting that feels private and peaceful. The backyard is a true retreat, surrounded by nature and designed for relaxation or entertaining, while the screened-in porch provides the perfect place to enjoy morning coffee or unwind in the evenings. This area is also equipped with a ceiling fan, TV hook up capability and surround sound. Inside, the home showcases rich architectural details and warm, timeless finishes throughout. Soaring ceilings, big windows, and natural wood elements create a light-filled yet cozy atmosphere. The living room features a striking floor-to-ceiling fireplace with custom built-ins, adding both charm and functionality as well as a formal dining space just inside the front door. The spacious kitchen is the heart of the home, combining beauty and practicality with granite countertops, a large island, double ovens, gas range with pot filler, and a walk-in pantry. Knotty alder cabinetry brings a distinctive rustic elegance, complementing the home’s overall character and craftsmanship. There is also a drop zone and laundry area just off the kitchen for your convenience. The breakfast nook is perfect for an additional dining space, pub table or cozy reading area. The primary suite offers a peaceful escape, complete with wood flooring and a spa-like bathroom featuring dual vanities, a soaking tub, and a spacious walk-in closet with custom built-ins. Each additional bedroom is generously sized, offering comfort and flexibility. The walk-out basement continues the home’s warm, inviting feel with reclaimed wood accents, a large family room, and a wet bar, making it the perfect space for gatherings. With 2 additional bedrooms, a half bath and full bath, workout space, and abundant storage, the lower level is as functional as it is welcoming. There is also a second laundry hook-up area in the basement! This home has been thoughtfully designed and is full of personality, texture, and charm! Set up your private showing today!</p>
     </div>
@@ -205,8 +207,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -216,13 +218,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="1427 Timber Falls Ct, Andover, KS, 67002">
-        <input type="hidden" name="message" value="I am interested in the property at 1427 Timber Falls Ct, Andover, KS, 67002 (MLS# 671798). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 1427 Timber Falls Ct, Andover, KS, 67002 (MLS# 671798). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

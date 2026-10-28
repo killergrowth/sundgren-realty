@@ -103353,7 +103353,7 @@
     "state": "KS",
     "lat": 37.69776777,
     "lng": -97.57063576,
-    "price": 89950,
+    "price": 89900,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -103365,7 +103365,8 @@
     "isSundgren": false,
     "agentName": "Reuben G Loyd",
     "agentPhone": "3168061241",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 89950
   },
   {
     "slug": "19661-hickory-st-goddard-ks-667990",
@@ -103376,7 +103377,7 @@
     "state": "KS",
     "lat": 37.69855011,
     "lng": -97.56815224,
-    "price": 89950,
+    "price": 89900,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -103388,7 +103389,8 @@
     "isSundgren": false,
     "agentName": "Reuben G Loyd",
     "agentPhone": "3168061241",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 89950
   },
   {
     "slug": "8389-waterway-ct-maize-ks-626540",
