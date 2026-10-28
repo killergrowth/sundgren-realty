@@ -21116,7 +21116,7 @@
     "state": "KS",
     "lat": 37.699389,
     "lng": -97.146137,
-    "price": 430000,
+    "price": 410000,
     "beds": 5,
     "baths": 3,
     "sqft": "3567",
@@ -21128,7 +21128,8 @@
     "isSundgren": false,
     "agentName": "Laurie Stock",
     "agentPhone": "7855328880",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 430000
   },
   {
     "slug": "3728-ritchfield-st-wichita-ks-670522",
@@ -43304,7 +43305,7 @@
     "state": "KS",
     "lat": 37.696139,
     "lng": -97.290089,
-    "price": 285000,
+    "price": 300000,
     "beds": 4,
     "baths": 3,
     "sqft": "2180",
@@ -43316,8 +43317,7 @@
     "isSundgren": false,
     "agentName": "Erica Day",
     "agentPhone": "3167946728",
-    "agentEmail": "",
-    "previousPrice": 300000
+    "agentEmail": ""
   },
   {
     "slug": "7333-22nd-st-n-st-wichita-ks-677766",
@@ -46387,7 +46387,7 @@
     "state": "KS",
     "lat": 38.07229,
     "lng": -97.349433,
-    "price": 284900,
+    "price": 279900,
     "beds": 4,
     "baths": 3,
     "sqft": "2839",
@@ -46400,7 +46400,7 @@
     "agentName": "Chris Bergquist",
     "agentPhone": "3165187114",
     "agentEmail": "",
-    "previousPrice": 289900
+    "previousPrice": 284900
   },
   {
     "slug": "5103-toben-ct-bel-aire-ks-677324",
@@ -49549,7 +49549,7 @@
     "state": "KS",
     "lat": 37.229485,
     "lng": -96.978519,
-    "price": 279900,
+    "price": 275000,
     "beds": 3,
     "baths": 2,
     "sqft": "1776",
@@ -49561,7 +49561,8 @@
     "isSundgren": false,
     "agentName": "Sunni Goentzel",
     "agentPhone": "3162170217",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 279900
   },
   {
     "slug": "4109-danbury-st-bel-aire-ks-673647",
@@ -94600,7 +94601,7 @@
     "state": "KS",
     "lat": 37.664324,
     "lng": -97.23895,
-    "price": 120000,
+    "price": 95000,
     "beds": 3,
     "baths": 3,
     "sqft": "1548",
@@ -94613,7 +94614,7 @@
     "agentName": "Peggy Griffith",
     "agentPhone": "3169902075",
     "agentEmail": "",
-    "previousPrice": 125000
+    "previousPrice": 120000
   },
   {
     "slug": "615-elder-st-wichita-ks-677248",
