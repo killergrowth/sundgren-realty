@@ -1080,7 +1080,7 @@
     "state": "KS",
     "lat": 37.824169,
     "lng": -96.290266,
-    "price": 50000,
+    "price": 45000,
     "beds": 4,
     "baths": 2,
     "sqft": "1747",
@@ -1093,7 +1093,7 @@
     "agentName": "Audrey Reese",
     "agentPhone": "3167081587",
     "agentEmail": "",
-    "previousPrice": 55000
+    "previousPrice": 50000
   },
   {
     "slug": "410-randall-st-potwin-ks-669815",
@@ -3752,7 +3752,7 @@
     "state": "KS",
     "lat": 39.321126,
     "lng": -97.738096,
-    "price": 1065000,
+    "price": 975000,
     "beds": 4,
     "baths": 1,
     "sqft": "2016",
@@ -3765,7 +3765,7 @@
     "agentName": "Ray Swearingen",
     "agentPhone": "7858251199",
     "agentEmail": "",
-    "previousPrice": 1200000
+    "previousPrice": 1065000
   },
   {
     "slug": "10730-103rd-st-s-st-mulvane-ks-675789",
@@ -25764,7 +25764,7 @@
     "state": "KS",
     "lat": 38.017742,
     "lng": -97.358471,
-    "price": 390000,
+    "price": 375000,
     "beds": 4,
     "baths": 3,
     "sqft": "3332",
@@ -25776,7 +25776,8 @@
     "isSundgren": false,
     "agentName": "Arlan R Newell",
     "agentPhone": "3162841973",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 390000
   },
   {
     "slug": "2413-watersedge-ct-wichita-ks-677940",
@@ -115099,7 +115100,7 @@
     "state": "KS",
     "lat": 37.278263,
     "lng": -97.394568,
-    "price": 40000,
+    "price": 34900,
     "beds": 5,
     "baths": 2,
     "sqft": "1827",
@@ -115111,7 +115112,8 @@
     "isSundgren": false,
     "agentName": "Rachel Westmoreland",
     "agentPhone": "6203260633",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 40000
   },
   {
     "slug": "504-poplar-st-peabody-ks-670616",
