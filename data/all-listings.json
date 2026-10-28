@@ -58504,7 +58504,7 @@
     "state": "KS",
     "lat": 37.985027,
     "lng": -100.990522,
-    "price": 248000,
+    "price": 235600,
     "beds": 3,
     "baths": 3,
     "sqft": "2128",
@@ -58516,7 +58516,8 @@
     "isSundgren": false,
     "agentName": "Marti Vo",
     "agentPhone": "3168076935",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 248000
   },
   {
     "slug": "5192-toben-dr-bel-aire-ks-677001",
