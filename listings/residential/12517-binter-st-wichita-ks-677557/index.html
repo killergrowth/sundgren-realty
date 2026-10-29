@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-terminated pill">Inactive</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Some homes give you more square footage. This one gives you more ways to live in it. Formerly the community’s model home and owned by just two owners, this 5-bedroom, 3-bath home was designed with the kind of spaces that make everyday life easier—and the fun stuff even better. Picture mornings around the oversized granite kitchen island, casual dinners in the hearth room, and holidays when you can actually use that formal dining room. The kitchen gives you plenty of storage and thoughtful details, while the split-bedroom floor plan creates a little separation when everyone needs their own space. And then there’s the primary suite…Your own little get-ready retreat starts with a private foyer and a gorgeous renovated bathroom flooded with natural light. Pull up a seat at the quartz makeup vanity, then choose between the soaker tub or the spa-like stone shower with dual shower heads. And because one closet apparently wasn’t enough, you’ll have a three-level walk-in closet plus a separate seasonal closet. Downstairs is where movie nights, game days, and get-togethers happen. There’s an enormous family room with gas fireplace, a full wet bar with its own refrigerator and freezer, plus two more large bedrooms and a full bath. And when you need to hide all the stuff you don’t want anyone to see? There’s a HUGE storage room for that, too. When the weather is too good to stay inside, take life outdoors. Morning coffee on the oversized covered front porch, dinner on the covered back deck, evenings in the hot tub, or let everyone enjoy the fully fenced backyard. Add in a 3-car garage, irrigation well, new landscaping, newer roof, vinyl windows, recently painted interior— and NO SPECIALS —and you have a home that isn&#39;t just big on space. It&#39;s big on the way you actually want to live.</p>
     </div>
@@ -205,8 +207,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -216,13 +218,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="12517 Binter St, Wichita, KS, 67235">
-        <input type="hidden" name="message" value="I am interested in the property at 12517 Binter St, Wichita, KS, 67235 (MLS# 677557). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 12517 Binter St, Wichita, KS, 67235 (MLS# 677557). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
