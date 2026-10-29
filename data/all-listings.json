@@ -37915,7 +37915,7 @@
     "state": "KS",
     "lat": 37.57039399,
     "lng": -97.265326,
-    "price": 330000,
+    "price": 320000,
     "beds": 3,
     "baths": 3,
     "sqft": "2477",
@@ -37927,7 +37927,8 @@
     "isSundgren": false,
     "agentName": "Kirk Short",
     "agentPhone": "3163714668",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 330000
   },
   {
     "slug": "9405-35th-st-n-c4-wichita-ks-677386",
@@ -74839,7 +74840,7 @@
     "state": "KS",
     "lat": 37.653363,
     "lng": -97.368978,
-    "price": 179500,
+    "price": 175000,
     "beds": 3,
     "baths": 1,
     "sqft": "1068",
@@ -74852,7 +74853,7 @@
     "agentName": "Oricel Iron Wing",
     "agentPhone": "3168336248",
     "agentEmail": "",
-    "previousPrice": 186000
+    "previousPrice": 179500
   },
   {
     "slug": "lot-7-block-a-prairie-preserve-addition-bel-aire-ks-668276",
@@ -85156,7 +85157,7 @@
     "state": "KS",
     "lat": 38.740229,
     "lng": -98.031342,
-    "price": 155000,
+    "price": 150000,
     "beds": 2,
     "baths": 1,
     "sqft": "1240",
@@ -85168,7 +85169,8 @@
     "isSundgren": false,
     "agentName": "Jody Karlin",
     "agentPhone": "7852314617",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 155000
   },
   {
     "slug": "706-piatt-ave-wichita-ks-675223",
@@ -101532,7 +101534,7 @@
     "state": "KS",
     "lat": 39.274853,
     "lng": -97.765813,
-    "price": 95000,
+    "price": 85000,
     "beds": 4,
     "baths": 1,
     "sqft": "1479",
@@ -101544,7 +101546,8 @@
     "isSundgren": false,
     "agentName": "Molly Reilly",
     "agentPhone": "7853924186",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 95000
   },
   {
     "slug": "1022-3-st-arkansas-city-ks-678086",
@@ -103984,7 +103987,7 @@
     "state": "KS",
     "lat": 37.607346,
     "lng": -97.294499,
-    "price": 85000,
+    "price": 82000,
     "beds": 3,
     "baths": 1,
     "sqft": "864",
@@ -103996,7 +103999,8 @@
     "isSundgren": false,
     "agentName": "Josh Roy",
     "agentPhone": "3166656799",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 85000
   },
   {
     "slug": "200-river-st-eureka-ks-676935",
@@ -104700,7 +104704,7 @@
     "state": "KS",
     "lat": 37.600969,
     "lng": -97.296258,
-    "price": 83000,
+    "price": 80000,
     "beds": 4,
     "baths": 1,
     "sqft": "1056",
@@ -104712,7 +104716,8 @@
     "isSundgren": false,
     "agentName": "Josh Roy",
     "agentPhone": "3166656799",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 83000
   },
   {
     "slug": "337-sunflower-dr-wichita-ks-677180",
@@ -106040,7 +106045,7 @@
     "state": "KS",
     "lat": 37.608681,
     "lng": -97.297531,
-    "price": 75000,
+    "price": 72000,
     "beds": 3,
     "baths": 1,
     "sqft": "864",
@@ -106052,7 +106057,8 @@
     "isSundgren": false,
     "agentName": "Josh Roy",
     "agentPhone": "3166656799",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 75000
   },
   {
     "slug": "1003-springfield-ave-anthony-ks-676602",
@@ -127437,7 +127443,7 @@
     "state": "KS",
     "lat": 37.103911,
     "lng": -96.500347,
-    "price": 18000,
+    "price": 15000,
     "beds": 4,
     "baths": 2,
     "sqft": "2449",
@@ -127449,7 +127455,8 @@
     "isSundgren": false,
     "agentName": "Steve Myers",
     "agentPhone": "3163304318",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 18000
   },
   {
     "slug": "1308-pershing-ave-wichita-ks-670125",

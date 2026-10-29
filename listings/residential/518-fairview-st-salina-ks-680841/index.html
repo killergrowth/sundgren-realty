@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>This beautifully maintained home offers unexpected space, exceptional craftsmanship, and incredible versatility that you must see to believe. Tucked away on a quiet, one-block street with virtually no through traffic, this property has been cherished and meticulously cared for by the same owner for over 65 years. While currently configured as a 1-bedroom home, it was originally built as a 2-bedroom property and can easily be converted back. Buyers can also add an egress window to the finished basement room to unlock the potential for a 2- or even 3-bedroom layout, offering instant equity and flexibility. Inside, the house showcases the seller&#39;s master carpentry and custom woodwork throughout, adding timeless character and detail. The kitchen is an absolute showstopper, featuring high-end finishes and a level of quality you will not find anywhere else at this price point. Additionally, there is a bonus multipurpose room that has laundry hook-ups and an abundance of natural light for plants and relaxation. Beyond the main living spaces, the property boasts a mechanic’s or hobbyist’s 20&#39;x40&#39; dream garage—an oversized, 2-car detached workshop with full temperature control. The outdoor space is beautifully landscaped and complete with a full yard sprinkler system and a separate gardening shed. Relax on the durable Trex deck under a new remote controlled retractable awning while listening to the soothing sounds of a custom, babbling brook water feature. Centrally located close to local schools, parks, and shopping, this home offers premium upgrades and room to grow that standard listings simply cannot match.</p>
     </div>
@@ -205,8 +207,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -216,13 +218,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="518 Fairview St, Salina, KS, 67401">
-        <input type="hidden" name="message" value="I am interested in the property at 518 Fairview St, Salina, KS, 67401 (MLS# 680841). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 518 Fairview St, Salina, KS, 67401 (MLS# 680841). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

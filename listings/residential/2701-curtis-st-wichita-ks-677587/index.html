@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>We have a brand new price on this exceptionally-maintained dream home that is loaded with thoughtful extras! This impressive Sandcrest home offers exceptional space, style, and functionality in one of Wichita’s premier neighborhoods. Situated on a beautifully landscaped corner lot, the home backs to mature trees for added privacy and a peaceful backyard setting. A timeless front elevation welcomes you inside to a striking foyer featuring a natural stone accent that leads into the spacious living room. Large picture windows fill the space with natural light, while wood floors and a beautiful stone fireplace create a warm and inviting atmosphere. The well-equipped kitchen is designed for both everyday living and entertaining, featuring a large island with waterfall quartz countertops, abundant cabinetry, and a walk-in pantry. The adjoining dining area offers plenty of room to extend the table when hosting family and friends while remaining comfortable for everyday meals. Step outside to the spacious screened-in lanai, then down to a large ground-level patio overlooking the fenced backyard and mature trees beyond—an ideal setting for relaxing or entertaining. The luxurious primary suite features a spacious bedroom with a custom wood accent wall, private bath with dual vanities, tile shower, and walk-in closet. Two additional generously sized bedrooms and a full hall bath complete the bedroom wing. A separate main-floor laundry room with built-in folding table and a convenient drop zone at the garage entrance add everyday functionality. The fully finished basement continues to impress with a large family room featuring an elegant accent wall, plus a separate pub area with LVP flooring and a wet bar—perfect for entertaining or game nights. Two additional large bedrooms, including one with a walk-in closet, and a full hall bath provide plenty of room for guests. Two more spacious finished rooms offer incredible flexibility for a home office, exercise room, craft room, playroom, hobby space, or finished storage. Even the garage has been thoughtfully upgraded with insulated and sheetrocked walls, a mini-split air-conditioning system, and heavy-duty built-in shelving. Best of all, you’re just a short walk from Sandcrest’s incredible neighborhood amenities, including two pools, clubhouse, playground, soccer field, pickleball court, and boating lake. Homeowners also enjoy lake access and HOA beach areas at both neighborhood pools. Located within the City of Wichita and the Maize South School District, this home offers an outstanding combination of location, amenities, privacy, and space. Come see everything this exceptional Sandcrest home has to offer! Some information may be estimated and is not guaranteed. Please verify schools with USD 266.</p>
     </div>
@@ -209,8 +211,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -220,13 +222,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="2701 Curtis St, Wichita, KS, 67205">
-        <input type="hidden" name="message" value="I am interested in the property at 2701 Curtis St, Wichita, KS, 67205 (MLS# 677587). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 2701 Curtis St, Wichita, KS, 67205 (MLS# 677587). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
