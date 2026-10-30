@@ -23094,7 +23094,7 @@
     "state": "KS",
     "lat": 37.841358,
     "lng": -96.842172,
-    "price": 395000,
+    "price": 370000,
     "beds": 5,
     "baths": 4,
     "sqft": "3477",
@@ -23107,7 +23107,7 @@
     "agentName": "Zac Sundgren",
     "agentPhone": "3163225812",
     "agentEmail": "",
-    "previousPrice": 400000
+    "previousPrice": 395000
   },
   {
     "slug": "54265428-briskbay-ct-maize-ks-677655",
@@ -46902,7 +46902,7 @@
     "state": "KS",
     "lat": 37.77662921,
     "lng": -97.23314323,
-    "price": 274900,
+    "price": 259900,
     "beds": 4,
     "baths": 2,
     "sqft": "1599",
@@ -46915,7 +46915,7 @@
     "agentName": "Basem Krichati",
     "agentPhone": "3165160139",
     "agentEmail": "",
-    "previousPrice": 289000
+    "previousPrice": 274900
   },
   {
     "slug": "8980-forbes-cir-bel-aire-ks-674862",
@@ -52065,7 +52065,7 @@
     "state": "KS",
     "lat": 37.775843,
     "lng": -97.233146,
-    "price": 269900,
+    "price": 279900,
     "beds": 3,
     "baths": 2,
     "sqft": "1560",
@@ -52077,8 +52077,7 @@
     "isSundgren": false,
     "agentName": "Basem Krichati",
     "agentPhone": "3165160139",
-    "agentEmail": "",
-    "previousPrice": 273900
+    "agentEmail": ""
   },
   {
     "slug": "1316-main-st-halstead-ks-668363",
