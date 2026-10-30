@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -143,7 +143,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>LIVE AUCTION With ONLINE BIDDING: 5-BEDROOM TRADITIONAL HOME IN MCPHERSON 825 S. Ash Street, McPherson Bidding Opens: October 10th, 2026, at 2:00 PM Bidding Closes: October 17th, 2026, at 2:00 PM ATTENTION INVESTORS, HOUSE HACKERS, &amp; CHARACTER LOVERS: Tremendous opportunity at 825 S Ash Street! Converted to auction for an immediate, transparent sale, this grand 2.5-story Circa 1900 home boasts over 3,000 sq ft, 5 bedrooms, and 3 full baths. Major capital improvements are already done: Brand-New Roof (July 2026), Updated HVAC (2025), and New Vinyl Windows (excluding basement). Distinct features include a separate 3rd-Floor Unit (2 Bed / 1 Bath) featuring its own exterior entrance and independent HVAC — ideal for guest space, an income-producing rental, or multigenerational living. Located just blocks from McPherson College, Central Christian College, and the HutchCC Nursing Program, the income potential here is endless! Includes a backyard storage shed. Heavy Mechanicals Addressed: Brand-New Roof (July 2026), Updated HVAC Systems (2025), and New Vinyl Windows mean low immediate CapEx costs. Strategic College Location: Minutes from Central Christian College, McPherson College, and the HutchCC Practical Nursing Program. Strong localized demand for non-traditional student, nursing, and faculty housing. Flexible Layout (Dual Unit Potential): The main level and second story accommodate a large family or multi-bedroom rental unit, while the 3rd floor boasts a self-contained 2 Bed / 1 Bath setup with a private exterior entrance and separate HVAC system. Multiple Revenue Streams: Position as a long-term dual-lease property, an off-campus nursing/student rental, or leverage the 3rd floor as a high-demand Short-Term Rental for visiting parents and traveling medical staff.</p>
     </div>
@@ -192,8 +194,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -203,13 +205,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="825 Ash St, McPherson, KS, 67460">
-        <input type="hidden" name="message" value="I am interested in the property at 825 Ash St, McPherson, KS, 67460 (MLS# 678535). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 825 Ash St, McPherson, KS, 67460 (MLS# 678535). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

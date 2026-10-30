@@ -115435,7 +115435,7 @@
     "state": "KS",
     "lat": 37.79395891,
     "lng": -97.30942644,
-    "price": 40000,
+    "price": 30000,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -115447,7 +115447,8 @@
     "isSundgren": false,
     "agentName": "Angie Vailas",
     "agentPhone": "3166507251",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 40000
   },
   {
     "slug": "6135-hiebert-dr-park-city-ks-664518",
@@ -115458,7 +115459,7 @@
     "state": "KS",
     "lat": 37.79541714,
     "lng": -97.31011308,
-    "price": 40000,
+    "price": 30000,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -115470,7 +115471,8 @@
     "isSundgren": false,
     "agentName": "Angie Vailas",
     "agentPhone": "3166507251",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 40000
   },
   {
     "slug": "2237-beaumont-st-park-city-ks-664508",
@@ -115481,7 +115483,7 @@
     "state": "KS",
     "lat": 37.79415391,
     "lng": -97.31059588,
-    "price": 40000,
+    "price": 30000,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -115493,7 +115495,8 @@
     "isSundgren": false,
     "agentName": "Angie Vailas",
     "agentPhone": "3166507251",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 40000
   },
   {
     "slug": "6114-hiebert-dr-park-city-ks-664524",
@@ -115504,7 +115507,7 @@
     "state": "KS",
     "lat": 37.79384022,
     "lng": -97.3095981,
-    "price": 40000,
+    "price": 30000,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -115516,7 +115519,8 @@
     "isSundgren": false,
     "agentName": "Angie Vailas",
     "agentPhone": "3166507251",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 40000
   },
   {
     "slug": "6102-hiebert-dr-park-city-ks-664522",
@@ -115527,7 +115531,7 @@
     "state": "KS",
     "lat": 37.79363674,
     "lng": -97.30946935,
-    "price": 40000,
+    "price": 30000,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -115539,7 +115543,8 @@
     "isSundgren": false,
     "agentName": "Angie Vailas",
     "agentPhone": "3166507251",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 40000
   },
   {
     "slug": "6040-hiebert-dr-park-city-ks-664521",
@@ -115550,7 +115555,7 @@
     "state": "KS",
     "lat": 37.79459477,
     "lng": -97.30956591,
-    "price": 40000,
+    "price": 30000,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -115562,7 +115567,8 @@
     "isSundgren": false,
     "agentName": "Angie Vailas",
     "agentPhone": "3166507251",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 40000
   },
   {
     "slug": "2233-beaumont-st-park-city-ks-664506",
@@ -115573,7 +115579,7 @@
     "state": "KS",
     "lat": 37.7943913,
     "lng": -97.31044568,
-    "price": 40000,
+    "price": 30000,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -115585,7 +115591,8 @@
     "isSundgren": false,
     "agentName": "Angie Vailas",
     "agentPhone": "3166507251",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 40000
   },
   {
     "slug": "2305-beaumont-st-park-city-ks-664510",
@@ -115596,7 +115603,7 @@
     "state": "KS",
     "lat": 37.79405217,
     "lng": -97.3109392,
-    "price": 40000,
+    "price": 30000,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -115608,7 +115615,8 @@
     "isSundgren": false,
     "agentName": "Angie Vailas",
     "agentPhone": "3166507251",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 40000
   },
   {
     "slug": "6121-hiebert-dr-park-city-ks-664514",
@@ -115619,7 +115627,7 @@
     "state": "KS",
     "lat": 37.79473042,
     "lng": -97.31044568,
-    "price": 40000,
+    "price": 30000,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -115631,7 +115639,8 @@
     "isSundgren": false,
     "agentName": "Angie Vailas",
     "agentPhone": "3166507251",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 40000
   },
   {
     "slug": "6122-hiebert-dr-park-city-ks-664519",
@@ -115642,7 +115651,7 @@
     "state": "KS",
     "lat": 37.79449303,
     "lng": -97.30924405,
-    "price": 40000,
+    "price": 30000,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -115654,7 +115663,8 @@
     "isSundgren": false,
     "agentName": "Angie Vailas",
     "agentPhone": "3166507251",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 40000
   },
   {
     "slug": "2301-beaumont-st-park-city-ks-664509",
@@ -115665,7 +115675,7 @@
     "state": "KS",
     "lat": 37.79359435,
     "lng": -97.31087483,
-    "price": 40000,
+    "price": 30000,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -115677,7 +115687,8 @@
     "isSundgren": false,
     "agentName": "Angie Vailas",
     "agentPhone": "3166507251",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 40000
   },
   {
     "slug": "6107-hiebert-dr-park-city-ks-664511",
@@ -115688,7 +115699,7 @@
     "state": "KS",
     "lat": 37.79422174,
     "lng": -97.31018819,
-    "price": 40000,
+    "price": 30000,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -115700,7 +115711,8 @@
     "isSundgren": false,
     "agentName": "Angie Vailas",
     "agentPhone": "3166507251",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 40000
   },
   {
     "slug": "14309-barn-owl-st-wichita-ks-641874",
@@ -116516,7 +116528,7 @@
     "state": "KS",
     "lat": 37.79330609,
     "lng": -97.30946935,
-    "price": 37500,
+    "price": 27500,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -116528,7 +116540,8 @@
     "isSundgren": false,
     "agentName": "Angie Vailas",
     "agentPhone": "3166507251",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 37500
   },
   {
     "slug": "6131-hiebert-dr-park-city-ks-664517",
@@ -116539,7 +116552,7 @@
     "state": "KS",
     "lat": 37.7952391,
     "lng": -97.31068171,
-    "price": 37500,
+    "price": 27500,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -116551,7 +116564,8 @@
     "isSundgren": false,
     "agentName": "Angie Vailas",
     "agentPhone": "3166507251",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 37500
   },
   {
     "slug": "6111-hiebert-dr-park-city-ks-664512",
@@ -116562,7 +116576,7 @@
     "state": "KS",
     "lat": 37.79434043,
     "lng": -97.31042422,
-    "price": 37500,
+    "price": 27500,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -116574,7 +116588,8 @@
     "isSundgren": false,
     "agentName": "Angie Vailas",
     "agentPhone": "3166507251",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 37500
   },
   {
     "slug": "6110-hiebert-dr-park-city-ks-664520",
@@ -116585,7 +116600,7 @@
     "state": "KS",
     "lat": 37.79456086,
     "lng": -97.30935134,
-    "price": 37500,
+    "price": 27500,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -116597,7 +116612,8 @@
     "isSundgren": false,
     "agentName": "Angie Vailas",
     "agentPhone": "3166507251",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 37500
   },
   {
     "slug": "406-stoney-creek-st-clearwater-ks-673714",
@@ -117046,7 +117062,7 @@
     "state": "KS",
     "lat": 37.79432192,
     "lng": -97.31030115,
-    "price": 35000,
+    "price": 25000,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -117058,7 +117074,8 @@
     "isSundgren": false,
     "agentName": "Angie Vailas",
     "agentPhone": "3166507251",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 35000
   },
   {
     "slug": "6117-hiebert-dr-park-city-ks-664513",
@@ -117069,7 +117086,7 @@
     "state": "KS",
     "lat": 37.79443369,
     "lng": -97.31094993,
-    "price": 35000,
+    "price": 25000,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -117081,7 +117098,8 @@
     "isSundgren": false,
     "agentName": "Angie Vailas",
     "agentPhone": "3166507251",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 35000
   },
   {
     "slug": "lot-10-block-c-swaney-farms-add-wichita-ks-662056",
