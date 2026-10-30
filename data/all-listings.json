@@ -17942,7 +17942,7 @@
     "state": "KS",
     "lat": 37.772347,
     "lng": -97.440516,
-    "price": 467182,
+    "price": 457182,
     "beds": 3,
     "baths": 2,
     "sqft": "1600",
@@ -17954,7 +17954,8 @@
     "isSundgren": false,
     "agentName": "Julie Schmidt",
     "agentPhone": "3166176700",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 467182
   },
   {
     "slug": "12206-killenwood-dr-wichita-ks-678224",
@@ -22116,7 +22117,7 @@
     "state": "KS",
     "lat": 37.692157,
     "lng": -97.240345,
-    "price": 410000,
+    "price": 400000,
     "beds": 5,
     "baths": 3,
     "sqft": "3242",
@@ -22129,7 +22130,7 @@
     "agentName": "Jenny Grandfield",
     "agentPhone": "3166445102",
     "agentEmail": "",
-    "previousPrice": 420000
+    "previousPrice": 410000
   },
   {
     "slug": "52865288-cypress-st-bel-aire-ks-666605",
@@ -47715,7 +47716,7 @@
     "state": "KS",
     "lat": 37.717155,
     "lng": -97.479245,
-    "price": 277500,
+    "price": 270000,
     "beds": 4,
     "baths": 3,
     "sqft": "2070",
@@ -47728,7 +47729,7 @@
     "agentName": "Cheyenne L Harvey",
     "agentPhone": "3166489997",
     "agentEmail": "",
-    "previousPrice": 280000
+    "previousPrice": 277500
   },
   {
     "slug": "1905-deer-rd-abilene-ks-678313",
@@ -74817,7 +74818,7 @@
     "state": "KS",
     "lat": 37.77517255,
     "lng": -97.27821784,
-    "price": 187000,
+    "price": 157000,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -74829,7 +74830,8 @@
     "isSundgren": false,
     "agentName": "Angie Vailas",
     "agentPhone": "3166507251",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 187000
   },
   {
     "slug": "2315-grant-st-wichita-ks-677929",
@@ -74864,7 +74866,7 @@
     "state": "KS",
     "lat": 37.77610538,
     "lng": -97.27555708,
-    "price": 186000,
+    "price": 156000,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -74876,7 +74878,8 @@
     "isSundgren": false,
     "agentName": "Angie Vailas",
     "agentPhone": "3166507251",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 186000
   },
   {
     "slug": "641-woodlawn-18-blvd-wichita-ks-675940",
@@ -83926,7 +83929,7 @@
     "state": "KS",
     "lat": 37.77642762,
     "lng": -97.27759556,
-    "price": 160000,
+    "price": 130000,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -83938,7 +83941,8 @@
     "isSundgren": false,
     "agentName": "Angie Vailas",
     "agentPhone": "3166507251",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 160000
   },
   {
     "slug": "1945-overlook-drive-salina-ks-655767",
@@ -103081,7 +103085,7 @@
     "state": "KS",
     "lat": 37.24068001,
     "lng": -96.98911597,
-    "price": 89900,
+    "price": 84900,
     "beds": 4,
     "baths": 2,
     "sqft": "1680",
@@ -103093,7 +103097,8 @@
     "isSundgren": false,
     "agentName": "Brian Hopper",
     "agentPhone": "6202182221",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 89900
   },
   {
     "slug": "109-west-pl-salina-ks-677330",
@@ -123988,7 +123993,7 @@
     "state": "KS",
     "lat": 38.24524,
     "lng": -96.92371811,
-    "price": 28000,
+    "price": 20000,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -124000,7 +124005,8 @@
     "isSundgren": false,
     "agentName": "Cynthia Thompson",
     "agentPhone": "3167271107",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 28000
   },
   {
     "slug": "00000-7th-st-florence-ks-676606",
@@ -124011,7 +124017,7 @@
     "state": "KS",
     "lat": 38.244222,
     "lng": -96.92537,
-    "price": 28000,
+    "price": 20000,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -124023,7 +124029,8 @@
     "isSundgren": false,
     "agentName": "Cynthia Thompson",
     "agentPhone": "3167271107",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 28000
   },
   {
     "slug": "1180-countrywalk-st-rose-hill-ks-593039",
