@@ -1,5 +1,5 @@
 {
-  "lastFetch": "2026-10-29T18:07:33.557Z",
+  "lastFetch": "2026-10-30T00:39:14.252Z",
   "auctions": {
     "24096": {
       "slug": "test-auction-24096",
@@ -2909,8 +2909,7 @@
       "slug": "bentgrass-condo-1770-country-club-rd-9-el-dorado-ks-67042-170942",
       "status": "accepting_bids",
       "name": "BentGrass Condo: 1770 Country Club Rd #9, El Dorado, KS 67042",
-      "generated": "2026-10-01T04:35:25.600Z",
-      "updated": "2026-10-29T18:07:36.108Z"
+      "generated": "2026-10-01T04:35:25.600Z"
     },
     "171464": {
       "slug": "594-acres-west-of-andale-in-sedgwick-county-kansas-selling-i-171464",
@@ -2983,6 +2982,12 @@
       "status": "pending",
       "name": "74.2 Acres Whitewater River Tillable Bottom Ground Near Towanda – Butler County, Kansas",
       "generated": "2026-10-24T20:22:17.224Z"
+    },
+    "172952": {
+      "slug": "80-acres-sedgwick-county-kansas-pasture-pond-rural-water-met-172952",
+      "status": "pending",
+      "name": "80+- Acres Sedgwick County, Kansas: Pasture, Pond, Rural Water Meter & Trees",
+      "generated": "2026-10-30T00:39:17.213Z"
     }
   }
 }
