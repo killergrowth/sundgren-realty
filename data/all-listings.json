@@ -27454,7 +27454,7 @@
     "state": "KS",
     "lat": 37.76230027,
     "lng": -97.47335555,
-    "price": 380000,
+    "price": 375000,
     "beds": 5,
     "baths": 3,
     "sqft": "2502",
@@ -27466,7 +27466,8 @@
     "isSundgren": false,
     "agentName": "Bryce Jones",
     "agentPhone": "3166410878",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 380000
   },
   {
     "slug": "8621-tamarac-st-wichita-ks-674819",
@@ -40658,7 +40659,7 @@
     "state": "KS",
     "lat": 37.795699,
     "lng": -97.285172,
-    "price": 297500,
+    "price": 295000,
     "beds": 4,
     "baths": 2,
     "sqft": "2678",
@@ -40671,7 +40672,7 @@
     "agentName": "Michael Crow",
     "agentPhone": "3166186591",
     "agentEmail": "",
-    "previousPrice": 299900
+    "previousPrice": 297500
   },
   {
     "slug": "1403-meridian-rd-peck-ks-677764",
@@ -46854,7 +46855,7 @@
     "state": "KS",
     "lat": 37.777579,
     "lng": -98.024724,
-    "price": 275000,
+    "price": 269000,
     "beds": 4,
     "baths": 2,
     "sqft": "2104",
@@ -46867,7 +46868,7 @@
     "agentName": "Gina Nutile",
     "agentPhone": "3164616720",
     "agentEmail": "",
-    "previousPrice": 279000
+    "previousPrice": 275000
   },
   {
     "slug": "807-gilman-ave-wichita-ks-676389",
