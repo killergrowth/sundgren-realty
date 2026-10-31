@@ -1,5 +1,5 @@
 {
-  "lastFetch": "2026-10-31T11:48:33.959Z",
+  "lastFetch": "2026-10-31T16:55:45.492Z",
   "auctions": {
     "24096": {
       "slug": "test-auction-24096",
@@ -2988,6 +2988,12 @@
       "status": "pending",
       "name": "80+- Acres Sedgwick County, Kansas: Pasture, Pond, Rural Water Meter & Trees",
       "generated": "2026-10-30T00:39:17.213Z"
+    },
+    "173046": {
+      "slug": "4640-nw-160th-st-burns-ks-66840-house-buildings-on-88-acres-173046",
+      "status": "pending",
+      "name": "4640 NW 160th St., Burns KS 66840 – House & Buildings on 8.8 Acres",
+      "generated": "2026-10-31T16:55:48.795Z"
     }
   }
 }
