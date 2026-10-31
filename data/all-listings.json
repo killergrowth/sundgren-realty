@@ -14701,7 +14701,7 @@
     "state": "KS",
     "lat": 37.711231,
     "lng": -97.50907401,
-    "price": 500000,
+    "price": 489000,
     "beds": 5,
     "baths": 3,
     "sqft": "3198",
@@ -14714,7 +14714,7 @@
     "agentName": "Kelly Kemnitz",
     "agentPhone": "3163083717",
     "agentEmail": "",
-    "previousPrice": 520000
+    "previousPrice": 500000
   },
   {
     "slug": "1335-quartz-rd-minneapolis-ks-670453",
@@ -38850,7 +38850,7 @@
     "state": "KS",
     "lat": 37.78806807,
     "lng": -97.22916906,
-    "price": 327000,
+    "price": 336000,
     "beds": 4,
     "baths": 3,
     "sqft": "2299",
