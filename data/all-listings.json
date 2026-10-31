@@ -96164,7 +96164,7 @@
     "state": "KS",
     "lat": 37.83523,
     "lng": -96.847224,
-    "price": 120000,
+    "price": 109900,
     "beds": 2,
     "baths": 1,
     "sqft": "870",
@@ -96176,7 +96176,8 @@
     "isSundgren": false,
     "agentName": "Helen E Brown",
     "agentPhone": "3164091309",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 120000
   },
   {
     "slug": "528-79th-st-s-st-haysville-ks-674105",
