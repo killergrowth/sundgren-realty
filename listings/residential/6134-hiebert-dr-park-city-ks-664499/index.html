@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-terminated pill">Inactive</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Experience refined living with The Sherwin at Calistoga Estates. Inspired by the grandeur of Castello Di Amorosa, Napa Valley’s iconic castle winery, these patio homes blend elegant design with the warmth of a wine country retreat. This zero-entry 1,928 sq. ft. home offers 3 bedrooms, including a private third bedroom located on the second level, perfect for guests or a serene retreat. With 3 baths, a 2-car garage, and a Survive-A-Storm shelter for 5 occupants, FEMA-compliant for ultimate safety, this home is as practical as it is elegant. The kitchen features Koch ‘Midland’ cabinets, Cambria quartz countertops, Kitchen Aid appliances and a pantry. Cozy up by the fireplace , perfect for enjoying a fireside glass of wine. The front porch welcomes you through a wrought iron front door, Anderson 400 series windows, DaVinci 50-year roof and homeowners can further customize their living spaces with a range of available upgrades. The HOA will handle the irrigation well &amp; sprinkler system. Starting at $518,000+, it’s where style meets functionality. Contact us today to talk through pricing and lot options and upgrades! Don’t miss the chance to be part of this extraordinary community. Reach out now to learn more about the homes at Calistoga Estates and find your perfect match! Buyers can take advantage of exceptional city incentives, including a 75% property tax rebate for FIVE YEARS and $5,000 from the City toward buyer costs, helping reduce both upfront expenses and long-term ownership costs. In addition, the builder is offering a rate buydown equal to 1% of the buyer’s loan amount, providing meaningful savings on your mortgage and increased purchasing power. Plus, ask about the 2025 KitchenAid Rebate Program for additional appliance perks.</p>
     </div>
@@ -205,8 +207,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -216,13 +218,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="6134 Hiebert Dr, Park City, KS, 67219">
-        <input type="hidden" name="message" value="I am interested in the property at 6134 Hiebert Dr, Park City, KS, 67219 (MLS# 664499). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 6134 Hiebert Dr, Park City, KS, 67219 (MLS# 664499). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

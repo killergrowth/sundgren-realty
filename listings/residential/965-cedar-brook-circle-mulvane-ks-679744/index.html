@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-terminated pill">Inactive</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Have you been wanting an almost new home without all those high special taxes and NO HOA? This is a car lovers dream and priced well below tax value so what a deal! The home shows immaculately and sits in a great location by the city pool and sports complex in Mulvane just tucked away and within 5 minutes of shopping and restaurants and 10 mins from Derby/15-18 minutes to the Air Force Base. The added bonus is it only has $10,700 left in special taxes also! This is truly one to see with over 1770 square feet on the main level that allows for a large living room with gas fireplace, engineered wood flooring, kitchen with large, quartz countertop island that looks out over the back deck. The kitchen has upgraded finishes like quartz countertops, lots of cabinets for storage, walk-in hidden pantry that flows into existing cabinets, and an oversized dining area that can seat 8+ people for the holidays. Sellers loved the split bedroom floorplan also that allowed for an oversized primary suite that has plenty of room for a king size bed plus additional dressers, primary bath with walk-in tiled shower and oversized closet. Have I said oversized on multiple amenities as this home has above and beyond what you normally would see at this price point? Back deck is partially covered with concrete patio underneath that leads into concrete sidewalk to the garage door. Back yard is fenced with wood privacy fencing just added in last few years, sprinkler system, extended height space in garage to allow for the car enthusiast to consider a car lift, and the amenities go on and on. If you built this home today, you would be closer to $500K to build this size home. There is also a fully finished, viewout basement that offers a 4th and 5th bedroom, 3rd full bath (5th bedroom is arranged like a suite connecting to bath through a large walk in closet area that is doubling as a built-in office space. This office area is quite large and could be used for multiple aspects. The basement rec room is plumbed for future wet bar by previous owners so entertaining would be fabulous in this home. What distinguishes this home is all the large living spaces that area rarely found in homes at this price point. Sellers have priced home to sell and you will not be disappointed.</p>
     </div>
@@ -209,8 +211,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -220,13 +222,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="965 Cedar Brook Circle, Mulvane, KS, 67110">
-        <input type="hidden" name="message" value="I am interested in the property at 965 Cedar Brook Circle, Mulvane, KS, 67110 (MLS# 679744). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 965 Cedar Brook Circle, Mulvane, KS, 67110 (MLS# 679744). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

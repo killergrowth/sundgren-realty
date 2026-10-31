@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-terminated pill">Inactive</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Located in the highly sought-after Renwick School District, this exceptional property offers the best of country living on 5 beautiful acres, while being conveniently located just 2 miles from Goddard and 4 miles from Wichita. Great curb appeal, mature landscaping, and a private setting are just the beginning. The welcoming foyer opens to a spacious, open floor plan filled with natural light. The kitchen is built for both everyday living and entertaining, featuring granite countertops, custom maple cabinetry and trim, walk-in pantry, 6-burner JennAir range with commercial-style venting, pot filler, double ovens, large center island, and additional bar seating. A convenient drop zone off the garage provides additional organization and storage. The living room features a beautiful wood-burning fireplace, custom built-ins, abundant windows, and impressive views of the property. The oversized primary suite offers a spacious private retreat with a Jacuzzi tub and separate shower. This 5BR and 4.5 bath home also has a dedicated main floor office that could be a 3rd main floor bedroom with an added closet. The finished view-out/walk-out basement features 9-foot ceilings, creating a bright, open feel rarely found in a lower level. You&#39;ll find a large family/rec room, wet bar designed for entertaining, three generously sized bedrooms, two full bathrooms, a workout/flex room, and plenty of storage. Outdoor living is truly a highlight of this property. Step from the kitchen and dining area onto the covered composite deck and enjoy incredible west-facing Kansas sunsets. The centerpiece of the backyard is the impressive 20&#39; x 45&#39; in-ground swimming pool, featuring a large sun shelf, under-deck automatic pool cover, and copper and ion purification system. Add the hot tub, expansive acreage, and covered outdoor living space, and you have an exceptional backyard setup for relaxing and entertaining. Most of the yard is maintained by a sprinkler system supplied by a well. Toward the back of the 5-acre property, mature trees, walking trails, and a fire pit create additional space to explore, relax, and enjoy the outdoors. Major improvements include an HVAC system replaced in 2022 and a roof installed in 2019. From the private 5-acre setting and resort-style pool to the spacious interior and easy access to Goddard and Wichita, this property offers a rare opportunity to enjoy country living without sacrificing everyday convenience.</p>
     </div>
@@ -205,8 +207,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -216,13 +218,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="901 Springwood ST, Goddard, KS, 67052">
-        <input type="hidden" name="message" value="I am interested in the property at 901 Springwood ST, Goddard, KS, 67052 (MLS# 678402). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 901 Springwood ST, Goddard, KS, 67052 (MLS# 678402). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

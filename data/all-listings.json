@@ -72071,7 +72071,7 @@
     "state": "KS",
     "lat": 38.352554,
     "lng": -97.017179,
-    "price": 194900,
+    "price": 180000,
     "beds": 5,
     "baths": 6,
     "sqft": "3751",
@@ -72083,7 +72083,8 @@
     "isSundgren": false,
     "agentName": "Stefanie Zimmerman",
     "agentPhone": "7852090876",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 194900
   },
   {
     "slug": "409-woodlawn-st-wellington-ks-675496",
@@ -103363,7 +103364,7 @@
     "state": "KS",
     "lat": 37.69776777,
     "lng": -97.57063576,
-    "price": 89900,
+    "price": 90000,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -103375,8 +103376,7 @@
     "isSundgren": false,
     "agentName": "Reuben G Loyd",
     "agentPhone": "3168061241",
-    "agentEmail": "",
-    "previousPrice": 89950
+    "agentEmail": ""
   },
   {
     "slug": "19661-hickory-st-goddard-ks-667990",
@@ -103387,7 +103387,7 @@
     "state": "KS",
     "lat": 37.69855011,
     "lng": -97.56815224,
-    "price": 89900,
+    "price": 90000,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -103399,8 +103399,7 @@
     "isSundgren": false,
     "agentName": "Reuben G Loyd",
     "agentPhone": "3168061241",
-    "agentEmail": "",
-    "previousPrice": 89950
+    "agentEmail": ""
   },
   {
     "slug": "8389-waterway-ct-maize-ks-626540",
