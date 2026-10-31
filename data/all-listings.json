@@ -24211,7 +24211,7 @@
     "state": "KS",
     "lat": 37.7883,
     "lng": -97.375691,
-    "price": 399900,
+    "price": 389000,
     "beds": 5,
     "baths": 3,
     "sqft": "2525",
@@ -24223,7 +24223,8 @@
     "isSundgren": false,
     "agentName": "Alec Davis",
     "agentPhone": "3169906585",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 399900
   },
   {
     "slug": "443-karla-ave-haysville-ks-675182",
