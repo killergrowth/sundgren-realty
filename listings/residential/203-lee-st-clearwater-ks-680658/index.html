@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>ARE YOU LOOKING A ONE OF KIND HOME THAT YOU&#39;LL TRULY LOVE TO CALL YOUR OWN? COME SEE THIS GORGEOUS VICTORIAN STYLE HOME WITH OLD TIME CHARM AND MODERN CONVENIENCES. LOCATED IN THE MIDDLE OF CLEARWATER AND CLOSE TO SCHOOLS, DOWNTOWN AREA AND CITY PARK AND POOL. PULL UP AND YOU&#39;LL FALL IN LOVE WITH THE EXTERIOR FEATURING A HUGE WRAP AROUND PORCH WITH PORCH SWING. YOU&#39;LL LOVE THE NICELY LANDSCAPPED LAWN WITH SEVERAL GARDEN AREAS. IN ADDITION TO THE LARGE FRONT PORCH THERE ARE SEVERAL AREAS TO ENJOY THE OUTSIDE WITH FAMILY AND FRIENDS INCLUDING A BRICK COURTYARD AND LARGE REAR WOOD DECK THAT LOOKS OUT OVER NEARLY A 1/2 ACRE LOT FENCED WITH A WHITE PICKET FENCE. GO BACK IN TIME AS YOU SEE WELL PRESERVED FEATURES FROM THE TURN OF THE CENTURY LIKE WIDE BASEBOARDS, ORIGINAL DOORS AND LARGE STAINED GLASS WINDOWS. THE LIVING ROOM IS JUST THE PERFECT SIZE FOR ENTERTAINING AND THE DINING ROOM WILL ACCOMODATE ANY SIZE DINING ROOM TABLE. THE KITCHEN HAS PLENTY OF CABINET AND COUNTER SPACE AND FEATURES STAINLESS STEEL APPLIANCES. THE MASTER BEDROOM IS LOCATED CONVENTIONALY ON THE MAIN FLOOR AND IS CONNECTED TO THE MAIN FLOOR FULL BATHROOM AND HAS BOTH A WALK-IN SHOWER AS WELL AS A CLAW FOOT TUB. THERE ARE TWO BEDROOMS AND A BATHROOM UPSTAIRS AS WELL AS A SITTING ROOM THAT WOULD MAKE A GREAT MEDIA ROOM OR OFFICE. A GREAT FEATURE TO THIS HOME IS THE DETACHED GARAGE THAT HAS BEEN CONVERTED TO A MODERN GUEST SUITE, PERFECT FOR GUEST OR AS RENTAL INCOME. THIS IS A RARE OPPORTUNITY TO OWN A HISTORAL HOME IN CLEARWATER AND PRICED $8,600 BELOW APPRAISAL.</p>
     </div>
@@ -201,8 +203,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -212,13 +214,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="203 Lee ST, Clearwater, KS, 67026">
-        <input type="hidden" name="message" value="I am interested in the property at 203 Lee ST, Clearwater, KS, 67026 (MLS# 680658). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 203 Lee ST, Clearwater, KS, 67026 (MLS# 680658). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
