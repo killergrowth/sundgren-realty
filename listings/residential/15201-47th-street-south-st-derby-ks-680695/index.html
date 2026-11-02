@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Enjoy the peace and privacy of country living while remaining conveniently close to Wichita and surrounding communities. Situated on nearly 10 acres, this property offers plenty of space for livestock, equipment, hobbies, rural living. The home features a spacious family room with gas fireplace and patio doors opening to a deck and concrete patio-perfect for relaxing or entertaining while enjoying the outdoors. Kitchen has been updated and offers an eating bar and separate eat-in dining area. A large formal living room and formal dining room provide additional space for gatherings and special occasions. Equestrian and agricultural enthusiasts will appreciate the 5-stall livestock barn approximately 37x33&#39;, featuring electricity, water, and tack room a separate equipment building, approximately 22&#39;x30&#39;, provides valuable additional storage. The property also features partially fenced areas and corrals, along with a newer well and an owned water softener. Enjoy the best of both worlds: peaceful country surroundings, usable acreage, and convenient access to nearby communities. Convenient Location: Approximately 3 miles north of Rosehill, Approximately 6 miles west of Andover, Approximately 6 miles northeast of Derby The seller has elected to sell property &quot;As IS&quot; All inspections will be for buyer&#39;s information only, Seller will not make any repairs or renegotiate based on inspections. Getting ready for a sale so house is not very organized.</p>
     </div>
@@ -213,8 +215,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -224,13 +226,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="15201 47th Street South ST, Derby, KS, 67037">
-        <input type="hidden" name="message" value="I am interested in the property at 15201 47th Street South ST, Derby, KS, 67037 (MLS# 680695). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 15201 47th Street South ST, Derby, KS, 67037 (MLS# 680695). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

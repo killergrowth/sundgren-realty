@@ -67244,7 +67244,7 @@
     "state": "KS",
     "lat": 37.684185,
     "lng": -97.367992,
-    "price": 200000,
+    "price": 190000,
     "beds": 5,
     "baths": 2,
     "sqft": "2734",
@@ -67257,7 +67257,7 @@
     "agentName": "Tyus Becker",
     "agentPhone": "7855120066",
     "agentEmail": "",
-    "previousPrice": 205000
+    "previousPrice": 200000
   },
   {
     "slug": "504-stuart-st-south-haven-ks-677502",
@@ -77409,7 +77409,7 @@
     "state": "KS",
     "lat": 37.647103,
     "lng": -97.459479,
-    "price": 179900,
+    "price": 174900,
     "beds": 3,
     "baths": 1,
     "sqft": "988",
@@ -77421,7 +77421,8 @@
     "isSundgren": false,
     "agentName": "Stephanie Carlson",
     "agentPhone": "3166503797",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 179900
   },
   {
     "slug": "12592-northstar-st-maize-ks-673972",
@@ -83262,7 +83263,7 @@
     "state": "KS",
     "lat": 37.055156,
     "lng": -97.015249,
-    "price": 125000,
+    "price": 115000,
     "beds": 3,
     "baths": 2,
     "sqft": "1889",
@@ -83275,7 +83276,7 @@
     "agentName": "Brionne Kirk",
     "agentPhone": "3165122224",
     "agentEmail": "",
-    "previousPrice": 150000
+    "previousPrice": 125000
   },
   {
     "slug": "624-crawford-st-salina-ks-672213",
@@ -123552,7 +123553,7 @@
     "state": "KS",
     "lat": 38.01549501,
     "lng": -97.34789496,
-    "price": 28500,
+    "price": 29900,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -123575,7 +123576,7 @@
     "state": "KS",
     "lat": 38.01524799,
     "lng": -97.34725701,
-    "price": 28500,
+    "price": 29900,
     "beds": null,
     "baths": null,
     "sqft": null,
