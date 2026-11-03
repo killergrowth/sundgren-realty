@@ -25254,7 +25254,7 @@
     "state": "KS",
     "lat": 38.016789,
     "lng": -97.329802,
-    "price": 375000,
+    "price": 365000,
     "beds": 5,
     "baths": 3,
     "sqft": "3225",
@@ -25267,7 +25267,7 @@
     "agentName": "Alex Carbajal",
     "agentPhone": "3162889142",
     "agentEmail": "",
-    "previousPrice": 385000
+    "previousPrice": 375000
   },
   {
     "slug": "922-karla-ct-haysville-ks-676769",
@@ -81706,7 +81706,7 @@
     "state": "KS",
     "lat": 38.00032,
     "lng": -97.516261,
-    "price": 155000,
+    "price": 149900,
     "beds": 4,
     "baths": 2,
     "sqft": "1722",
@@ -81719,7 +81719,7 @@
     "agentName": "Jorie Thompson",
     "agentPhone": "3165301719",
     "agentEmail": "",
-    "previousPrice": 160000
+    "previousPrice": 155000
   },
   {
     "slug": "800-2nd-ave-el-dorado-ks-676610",
