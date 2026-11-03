@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>848 S Millwood St is the kind of Wichita home that makes you do a double take, because it offers the “extras” buyers usually have to give up at this price point. From the street, you’re welcomed by standout curb appeal with a classic white picket fence, a covered front porch, and a brand new roof. Got toys or need room to park? You’ll love the double driveway plus a separate additional pad beside the garage, ideal for an RV, boat, trailer, or extra vehicle. The fenced backyard is ready for pets, play, and weekend BBQs, and the large shed gives you the storage space everyone wants. Step inside to hardwood floors and a surprisingly spacious layout. The big kitchen is a true highlight with an abundance of cabinets, plus a built-in display cabinet that’s perfect for photos, collectibles, or your favorite décor. Both bedrooms are generously sized, and the enclosed back porch adds bonus space you can actually use and a main floor laundry! It even has direct access to a workshop area behind the garage, perfect for projects, hobbies, or extra storage. Downstairs, the basement is already set up with a family room that’s ready for movie nights, gaming, or a home office. You’ll also find tons of storage and a workbench area, making it easy to stay organized. If you’ve been waiting for a home with charm, function, and space to spread out, this is the one. Schedule your showing today.</p>
     </div>
@@ -205,8 +207,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -216,13 +218,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="848 Millwood AVE, Wichita, KS, 67213">
-        <input type="hidden" name="message" value="I am interested in the property at 848 Millwood AVE, Wichita, KS, 67213 (MLS# 680933). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 848 Millwood AVE, Wichita, KS, 67213 (MLS# 680933). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

@@ -1840,7 +1840,7 @@
     "state": "KS",
     "lat": 37.640981,
     "lng": -97.278542,
-    "price": 3250000,
+    "price": 3230000,
     "beds": null,
     "baths": null,
     "sqft": "21996",
@@ -1852,7 +1852,8 @@
     "isSundgren": false,
     "agentName": "Basem Krichati",
     "agentPhone": "3165160139",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 3250000
   },
   {
     "slug": "35483574-tyler-ct-wichita-ks-667791",
@@ -11846,7 +11847,7 @@
     "state": "KS",
     "lat": 37.701428,
     "lng": -97.193437,
-    "price": 575000,
+    "price": 565000,
     "beds": 4,
     "baths": 3,
     "sqft": "4289",
@@ -11858,7 +11859,8 @@
     "isSundgren": false,
     "agentName": "Steve Myers",
     "agentPhone": "3163304318",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 575000
   },
   {
     "slug": "1101-park-glen-st-clearwater-ks-673550",
@@ -33452,7 +33454,7 @@
     "state": "KS",
     "lat": 37.786083,
     "lng": -97.375688,
-    "price": 355500,
+    "price": 349500,
     "beds": 3,
     "baths": 2,
     "sqft": "2352",
@@ -33464,7 +33466,8 @@
     "isSundgren": false,
     "agentName": "Bree Russell",
     "agentPhone": "3165167417",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 355500
   },
   {
     "slug": "28052807-55th-ct-n-wichita-ks-658175",
@@ -67506,7 +67509,7 @@
     "state": "KS",
     "lat": 38.199794,
     "lng": -97.522255,
-    "price": 210000,
+    "price": 199000,
     "beds": 4,
     "baths": 2,
     "sqft": "2480",
@@ -67518,7 +67521,8 @@
     "isSundgren": false,
     "agentName": "Rachel Burge",
     "agentPhone": "6209514016",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 210000
   },
   {
     "slug": "506-bond-st-salina-ks-674830",
@@ -72934,7 +72938,7 @@
     "state": "KS",
     "lat": 37.711159,
     "lng": -97.349646,
-    "price": 185900,
+    "price": 179900,
     "beds": 2,
     "baths": 2,
     "sqft": "1592",
@@ -72947,7 +72951,7 @@
     "agentName": "Hattie Foster",
     "agentPhone": "3163050577",
     "agentEmail": "",
-    "previousPrice": 189900
+    "previousPrice": 185900
   },
   {
     "slug": "3153-cranberry-st-wichita-ks-675794",
@@ -84444,7 +84448,7 @@
     "state": "KS",
     "lat": 37.261022,
     "lng": -97.401547,
-    "price": 159000,
+    "price": 158000,
     "beds": 3,
     "baths": 2,
     "sqft": "1152",
@@ -84456,7 +84460,8 @@
     "isSundgren": false,
     "agentName": "Rachel Westmoreland",
     "agentPhone": "6203260633",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 159000
   },
   {
     "slug": "603-main-st-delphos-ks-676319",
@@ -86116,7 +86121,7 @@
     "state": "KS",
     "lat": 37.663739,
     "lng": -97.242034,
-    "price": 150000,
+    "price": 145000,
     "beds": 3,
     "baths": 3,
     "sqft": "1574",
@@ -86128,7 +86133,8 @@
     "isSundgren": false,
     "agentName": "Shana K Wurth",
     "agentPhone": "3163029553",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 150000
   },
   {
     "slug": "727-fountain-ave-wichita-ks-677886",
@@ -97304,7 +97310,7 @@
     "state": "KS",
     "lat": 37.826143,
     "lng": -96.292471,
-    "price": 119000,
+    "price": 109000,
     "beds": 4,
     "baths": 1,
     "sqft": "1412",
@@ -97316,7 +97322,8 @@
     "isSundgren": false,
     "agentName": "Becky Schaffer",
     "agentPhone": "6207500054",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 119000
   },
   {
     "slug": "1037-inverness-dr-wichita-ks-677618",
@@ -97812,7 +97819,7 @@
     "state": "KS",
     "lat": 37.66779799,
     "lng": -97.33888198,
-    "price": 110000,
+    "price": 98500,
     "beds": 2,
     "baths": 1,
     "sqft": "1044",
@@ -97825,7 +97832,7 @@
     "agentName": "Kami Bolin",
     "agentPhone": "6203660751",
     "agentEmail": "",
-    "previousPrice": 115000
+    "previousPrice": 110000
   },
   {
     "slug": "42694271-boston-dr-wichita-ks-675942",
@@ -111931,7 +111938,7 @@
     "state": "KS",
     "lat": 37.777163,
     "lng": -97.380113,
-    "price": 55000,
+    "price": 59000,
     "beds": null,
     "baths": null,
     "sqft": null,
