@@ -29977,7 +29977,7 @@
     "state": "KS",
     "lat": 37.500504,
     "lng": -97.489196,
-    "price": 370000,
+    "price": 359000,
     "beds": 4,
     "baths": 3,
     "sqft": "2455",
@@ -29989,7 +29989,8 @@
     "isSundgren": false,
     "agentName": "Corey Sandy",
     "agentPhone": "3166702769",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 370000
   },
   {
     "slug": "19-fleetwood-dr-winfield-ks-674155",

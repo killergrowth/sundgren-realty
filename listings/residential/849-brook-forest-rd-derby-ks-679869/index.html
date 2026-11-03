@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-terminated pill">Inactive</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>NEED MORE SPACE? HOW ABOUT 2,858 FINISHED SQUARE FEET, NEARLY THREE-QUARTERS OF AN ACRE, AND THE POTENTIAL FOR UP TO FIVE BEDROOMS? Welcome to 849 N. Brook Forest Road in Derby, Kansas, where updated interiors, generous living spaces, and incredible flexibility come together in one impressive ranch-style home! Priced at $325,000, this spacious 3-bedroom, 3-bathroom home offers the room you’ve been searching for, with opportunities to adapt the space as your needs change. Step inside and discover an inviting interior featuring multiple main-floor living areas, an updated kitchen with granite countertops, and a formal dining room with a beautiful bay window and statement lighting. Whether you’re hosting holiday gatherings, entertaining friends, or simply enjoying a quiet evening at home, there’s room for it all! The comfortable family room features a fireplace, creating a welcoming space to relax, while the additional main-floor living area offers even more flexibility for entertaining, reading, or everyday living. All three bedrooms are conveniently located on the main floor, making this ranch especially appealing to buyers who appreciate having their primary living spaces on one level. Updated bathrooms and attractive interior finishes add to the home’s move-in-ready appeal. BUT WAIT UNTIL YOU SEE THE BASEMENT! The expansive finished basement provides an incredible amount of additional living space, including a massive family room that’s perfect for a home theater, game room, exercise area, or entertaining. There’s also a separate finished bonus room with a closet that offers excellent potential for a future fourth bedroom with the addition of a code-compliant egress window and any other required modifications. NEED EVEN MORE BEDROOMS? The oversized basement family room offers the possibility of creating a fifth bedroom by adding a dividing wall and another egress window, subject to applicable building codes and approvals. Imagine purchasing a three-bedroom home today with the potential to expand to four or five bedrooms as your needs evolve, without adding square footage to the house! Outside, the possibilities continue with an impressive approximately 0.70-acre lot, offering significantly more outdoor space than many traditional subdivision properties. Whether you envision outdoor entertaining, gardening, recreational activities, or simply enjoying the extra breathing room, this generous property provides the space to make it happen. An attached two-car garage adds everyday convenience and storage. Located in Derby, Kansas, within the Derby USD 260 school district, this property offers convenient access to shopping, dining, parks, and the greater Wichita area, including McConnell Air Force Base. WHY SETTLE FOR LESS SPACE WHEN YOU CAN HAVE MORE ROOM TO LIVE, ENTERTAIN, WORK, AND GROW? With 2,858 finished square feet, three main-floor bedrooms, three bathrooms, multiple living areas, an updated kitchen, a finished basement with potential for additional bedrooms, and a spacious 0.70-acre lot, 849 N. Brook Forest Road delivers an outstanding combination of space, versatility, and value. SCHEDULE YOUR PRIVATE SHOWING TODAY WITH LESLEY PERREAULT, REAL BROKER LLC, AND DISCOVER HOW MUCH MORE HOME $325,000 CAN BUY IN DERBY!</p>
     </div>
@@ -201,8 +203,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -212,13 +214,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="849 Brook Forest Rd, Derby, KS, 67037">
-        <input type="hidden" name="message" value="I am interested in the property at 849 Brook Forest Rd, Derby, KS, 67037 (MLS# 679869). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 849 Brook Forest Rd, Derby, KS, 67037 (MLS# 679869). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
