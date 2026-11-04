@@ -1,5 +1,5 @@
 {
-  "lastFetch": "2026-11-03T20:48:46.484Z",
+  "lastFetch": "2026-11-04T01:04:22.861Z",
   "auctions": {
     "24096": {
       "slug": "test-auction-24096",
@@ -2921,8 +2921,7 @@
       "slug": "2-tracts-160-acres-w-home-buildings-land-north-of-peabody-in-171491",
       "status": "accepting_bids",
       "name": "2 Tracts: 160+- Acres w/ Home, Buildings & Land North of Peabody in Marion County, Kansas",
-      "generated": "2026-10-09T10:09:55.452Z",
-      "updated": "2026-11-03T20:48:50.858Z"
+      "generated": "2026-10-09T10:09:55.452Z"
     },
     "171494": {
       "slug": "2-80-acre-premium-hunting-land-tracts-cowley-county-kansas-171494",
@@ -3001,6 +3000,12 @@
       "status": "pending",
       "name": "400+- Acres Reno County, KS Near Kingman & Pretty Prairie – 3 Tracts",
       "generated": "2026-11-02T21:28:25.649Z"
+    },
+    "173248": {
+      "slug": "moveable-tiny-home-173248",
+      "status": "accepting_bids",
+      "name": "Moveable Tiny Home",
+      "generated": "2026-11-04T01:04:27.626Z"
     }
   }
 }
