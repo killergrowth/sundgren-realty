@@ -102382,7 +102382,7 @@
     "state": "KS",
     "lat": 38.828653,
     "lng": -97.605355,
-    "price": 87000,
+    "price": 79500,
     "beds": 6,
     "baths": 3,
     "sqft": "2638",
@@ -102395,7 +102395,7 @@
     "agentName": "Kenneth M Clark",
     "agentPhone": "3167212889",
     "agentEmail": "",
-    "previousPrice": 91000
+    "previousPrice": 87000
   },
   {
     "slug": "1313-fern-st-wichita-ks-678342",
@@ -130959,7 +130959,7 @@
     "state": "KS",
     "lat": 37.667511,
     "lng": -97.568195,
-    "price": 1450,
+    "price": 1400,
     "beds": 3,
     "baths": 2,
     "sqft": "1224",
@@ -130971,7 +130971,8 @@
     "isSundgren": false,
     "agentName": "Debbie Haukap",
     "agentPhone": "3167220030",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 1450
   },
   {
     "slug": "3150-mentor-st-wichita-ks-676872",

@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-terminated pill">Inactive</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>If you haven&#39;t experienced a home built by H&amp;H Homebuilders, now is your opportunity. Feel the difference in time tested quality construction, flexible living spaces and the use of real luxury products that go into each home. Welcome home to more than 1,800 square feet of thoughtfully designed main-floor living. This beautiful new home offers three bedrooms and two bathrooms, with an open-concept layout ideal for entertaining and everyday family life. The spacious kitchen features abundant cabinetry, a stylish mix of open and closed shelving, and a multi-level island with comfortable seating and generous work surfaces. An oversized pantry provides exceptional storage. The kitchen flows effortlessly into the dining and living areas, where expansive windows fill the space with natural light and an electric fireplace creates a warm, inviting focal point. The private primary retreat includes a beautifully appointed bathroom with a custom step-in tiled shower. A private entryway with soaring 10-foot ceilings adds to the home’s bright, spacious feel. The unfinished walkout basement offers outstanding potential and direct access up to the yard. Once finished, it could provide two additional bedrooms, a full bathroom, family room, recreation room, and plenty of storage—giving you the flexibility to create a home that grows with your needs.</p>
     </div>
@@ -209,8 +211,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -220,13 +222,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="5119 Highland St, Bel Aire, KS, 67220">
-        <input type="hidden" name="message" value="I am interested in the property at 5119 Highland St, Bel Aire, KS, 67220 (MLS# 679028). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 5119 Highland St, Bel Aire, KS, 67220 (MLS# 679028). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
