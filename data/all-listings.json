@@ -100324,7 +100324,7 @@
     "state": "KS",
     "lat": 38.20628598,
     "lng": -97.52010099,
-    "price": 100000,
+    "price": 95000,
     "beds": 3,
     "baths": 1,
     "sqft": "1004",
@@ -100336,7 +100336,8 @@
     "isSundgren": false,
     "agentName": "Arlan R Newell",
     "agentPhone": "3162841973",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 100000
   },
   {
     "slug": "204-east-st-fall-river-ks-676670",
