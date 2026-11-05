@@ -9434,7 +9434,7 @@
     "state": "KS",
     "lat": 37.617734,
     "lng": -97.233959,
-    "price": 539000,
+    "price": 535000,
     "beds": 5,
     "baths": 4,
     "sqft": "3109",
@@ -9447,7 +9447,7 @@
     "agentName": "Nicolle Jausel",
     "agentPhone": "3166402564",
     "agentEmail": "",
-    "previousPrice": 560000
+    "previousPrice": 539000
   },
   {
     "slug": "435-130th-st-s-st-south-haven-ks-676399",
@@ -19079,7 +19079,7 @@
     "state": "KS",
     "lat": 37.669374,
     "lng": -97.207418,
-    "price": 400000,
+    "price": 385000,
     "beds": 4,
     "baths": 4,
     "sqft": "4755",
@@ -19092,7 +19092,7 @@
     "agentName": "Lucy Ferrer-Gonzalez",
     "agentPhone": "3169789777",
     "agentEmail": "",
-    "previousPrice": 440000
+    "previousPrice": 400000
   },
   {
     "slug": "242-244-mendocino-st-goddard-ks-674756",
@@ -38416,7 +38416,7 @@
     "state": "KS",
     "lat": 37.721607,
     "lng": -97.074986,
-    "price": 326900,
+    "price": 255000,
     "beds": 3,
     "baths": 3,
     "sqft": "2159",
@@ -38429,7 +38429,7 @@
     "agentName": "Marcus Baysinger",
     "agentPhone": "3167068577",
     "agentEmail": "",
-    "previousPrice": 329900
+    "previousPrice": 326900
   },
   {
     "slug": "1629-thoroughbred-st-wichita-ks-674401",
@@ -42082,7 +42082,7 @@
     "state": "KS",
     "lat": 37.58787486,
     "lng": -97.26775803,
-    "price": 312100,
+    "price": 312175,
     "beds": 3,
     "baths": 2,
     "sqft": "1245",
@@ -43963,7 +43963,7 @@
     "state": "KS",
     "lat": 37.709763,
     "lng": -97.461328,
-    "price": 279900,
+    "price": 274900,
     "beds": 3,
     "baths": 3,
     "sqft": "3283",
@@ -43976,7 +43976,7 @@
     "agentName": "Danielle Brittain",
     "agentPhone": "3166553718",
     "agentEmail": "",
-    "previousPrice": 289900
+    "previousPrice": 279900
   },
   {
     "slug": "12047-arvada-blvd-maize-ks-676998",
@@ -54487,7 +54487,7 @@
     "state": "KS",
     "lat": 37.5872413,
     "lng": -97.2663794,
-    "price": 263650,
+    "price": 263725,
     "beds": 3,
     "baths": 2,
     "sqft": "1336",
@@ -56504,7 +56504,7 @@
     "state": "KS",
     "lat": 37.58756153,
     "lng": -97.26888459,
-    "price": 251300,
+    "price": 251375,
     "beds": 3,
     "baths": 2,
     "sqft": "1270",
