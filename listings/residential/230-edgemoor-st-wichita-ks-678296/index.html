@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Tucked into one of central Wichita’s most convenient locations between College Hill, Crown Heights and Eastborough, this 3-bedroom, 1.5-bath all-brick ranch combines timeless character, thoughtful updates and a surprisingly private setting. A covered front porch, brick walkway and convenient circle drive welcome you home, providing easy in-and-out access along with additional parking. Inside, beautiful hardwood floors, charming arched doorways, exposed wood beams, original built-ins and abundant natural light give this home personality around every corner. The spacious living room is warm and inviting with a fireplace, mantle and built-in bookshelves, plus direct access to the large sunroom. Connecting both the living room and primary bedroom, the sunroom creates an incredible bonus living space overlooking the secluded, wooded backyard—perfect for morning coffee, reading, plants or entertaining. The third bedroom is especially unique with floor-to-ceiling bookshelves, a walk-in closet, ensuite half bath and direct sunroom access. The dining room continues the hardwood flooring and features an updated modern light fixture, while the kitchen adds a fun, unexpected touch with restaurant-style booth seating. Laundry is conveniently located just off the kitchen. The beautifully remodeled main bathroom offers both a full tub and separate walk-in tile shower, while the additional half bath provides added convenience for guests. Outside, the all-brick exterior offers timeless curb appeal, while mature trees create a private backyard retreat complete with a fire pit. The oversized attached 1-car garage provides built-in shelving and attic access for additional storage. And then there’s the location! Enjoy the charm of an established central Wichita neighborhood with incredible convenience to nearly everything. Cypress Park is within walking distance, the Robert J. Dole VA Medical Center is nearby, and restaurants, shopping and everyday services are just minutes away along Central and Edgemoor. Quick access to Kellogg makes it easy to reach downtown, east Wichita and the extensive shopping, dining and entertainment options along Rock Road. Foundation stabilization/piering was completed by Groundworks in November 2025. Groundworks warranty is transferable. See the Seller’s Property Disclosure and supporting documentation for complete details. All-brick construction, original character, a flexible sunroom, private wooded backyard, circle drive and an incredibly convenient central Wichita location make 230 N Edgemoor one you’ll want to see in person!</p>
     </div>
@@ -209,8 +211,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -220,13 +222,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="230 Edgemoor ST, Wichita, KS, 67208">
-        <input type="hidden" name="message" value="I am interested in the property at 230 Edgemoor ST, Wichita, KS, 67208 (MLS# 678296). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 230 Edgemoor ST, Wichita, KS, 67208 (MLS# 678296). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

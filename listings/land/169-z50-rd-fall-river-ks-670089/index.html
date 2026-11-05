@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Land</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Land</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -123,7 +123,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>137.4 Acres of rolling native/mix pasture located just South of Fall River Lake. This tract offers good grazing, water, elevation change, and beautiful scenic views. The picturesque driveway winding up the hill to the Northwest sets the stage for your future dream home or cabin and offers an exceptional 360 degree view atop the hill. There is also a very nice clear water pond near the center of the property offering good water access for livestock as well as excellent fishing &amp; waterfowl hunting. One additional pond sits at the south end of the property along with a wet weather draw that runs along the Northeast corner. Additionally, several smaller draws and springs are spread across the property offering numerous other locations to develop your own additional water features. The blend of open grassland &amp; scattered timber provide natural cover attracting Whitetail deer, upland game birds, and numerous predators/furbearers. The Flint Hills native grass this property features provides exceptional summer grazing and in combination with the fescue lined bottoms/draws your grazing season can be extended long into the fall and winter! Situated in a prime location right off of Highway 400 at the Fall River Lake turn off, this property is less than 2 miles from the Fall River Lake dam. The opportunities are endless on a property such as this! The cell tower lease will transfer to the new owner and is currently paying over $4,500/year in 2026 with an expected increase to over $5,000/year in 2029, this is an income producing property! As well, several offers have been received from tower lease investors to purchase the cell tower lease, the seller has retained ownership currently however this could potentially be sold by a buyer and used as a down payment to purchase the property. This leaves the option open for the buyer should they decide to cash out the tower lease versus receiving annual payments for the remainder of the lease. Build a boat and RV storage facility close to the lake and turn this into an even higher return investment property and still retain plenty of room to build a secluded cabin over the hillside of the draw running through the property. A water well was drilled/developed in August of 2025 and sits atop the hill at the previous planned build site. These improvements offer a huge head start on your dream build while still leaving a blank slate for you to fulfill your own vision! There are electric lines and a rural water main line that run adjacent with the property on the east boundary. A 5.28 acre tract encompassing the cell tower/lease located in the SE corner of the property has been recently surveyed and would offer an opportunity for the buyer to sell said tract and tower lease separately after purchasing, if so desired. This tract is located just two miles from Fall River Lake, a 2,450 acre reservoir built in 1948–49 and known for its excellent fishing, boating, and water recreation. The property is also positioned near over 9,000 acres of public wildlife area, giving you unmatched access to hunting, hiking, and exploring across a massive stretch of protected Kansas habitat. With thousands of acres of public land just minutes away, you can expand your hunting and hiking territory far beyond your own boundaries. Fall River Lake’s water and quiet coves make it ideal for fishing, kayaking, and weekend relaxation. Whether you want to set up a home, campsite, build a cabin, raise livestock, ride ATVs, hunt or simply enjoy the peace of your own private acreage, this tract delivers the perfect base camp for outdoor adventure. Properties with this level of recreational access are rare — especially this close to both the lake and extensive public land.</p>
     </div>
@@ -160,8 +162,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -171,13 +173,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="169 Z50 Rd, Fall River, KS, 67047">
-        <input type="hidden" name="message" value="I am interested in the property at 169 Z50 Rd, Fall River, KS, 67047 (MLS# 670089). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 169 Z50 Rd, Fall River, KS, 67047 (MLS# 670089). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

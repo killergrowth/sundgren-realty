@@ -7249,7 +7249,7 @@
     "state": "KS",
     "lat": 38.39570441,
     "lng": -97.6730506,
-    "price": 759375,
+    "price": 758750,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -7261,7 +7261,8 @@
     "isSundgren": false,
     "agentName": "James Melland",
     "agentPhone": "6207554862",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 759375
   },
   {
     "slug": "1663-georgia-rd-humboldt-ks-674231",
@@ -8343,7 +8344,7 @@
     "state": "KS",
     "lat": 37.729941,
     "lng": -97.433277,
-    "price": 695000,
+    "price": 668500,
     "beds": 5,
     "baths": 4,
     "sqft": "3968",
@@ -8355,7 +8356,8 @@
     "isSundgren": false,
     "agentName": "Todd Davis",
     "agentPhone": "3169905460",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 695000
   },
   {
     "slug": "1451-231st-st-west-st-goddard-ks-673934",
@@ -9876,7 +9878,7 @@
     "state": "KS",
     "lat": 37.679843,
     "lng": -97.554636,
-    "price": 599000,
+    "price": 575000,
     "beds": 6,
     "baths": 3,
     "sqft": "4000",
@@ -9889,7 +9891,7 @@
     "agentName": "Rachel Lange-Mills",
     "agentPhone": "3167655764",
     "agentEmail": "",
-    "previousPrice": 615000
+    "previousPrice": 599000
   },
   {
     "slug": "4101-jasmine-street-wichita-ks-677134",
@@ -25816,7 +25818,7 @@
     "state": "KS",
     "lat": 37.666493,
     "lng": -97.176665,
-    "price": 379900,
+    "price": 369900,
     "beds": 4,
     "baths": 4,
     "sqft": "2806",
@@ -25829,7 +25831,7 @@
     "agentName": "Lisa Andrews",
     "agentPhone": "3166447893",
     "agentEmail": "",
-    "previousPrice": 390000
+    "previousPrice": 379900
   },
   {
     "slug": "3731-3733-longleaf-st-wichita-ks-668003",
@@ -34239,7 +34241,7 @@
     "state": "KS",
     "lat": 37.77619,
     "lng": -97.252685,
-    "price": 339900,
+    "price": 335000,
     "beds": 4,
     "baths": 3,
     "sqft": "2108",
@@ -34252,7 +34254,7 @@
     "agentName": "Amanda J Rempe",
     "agentPhone": "3169901497",
     "agentEmail": "",
-    "previousPrice": 347500
+    "previousPrice": 339900
   },
   {
     "slug": "1009-ruth-ann-dr-dodge-city-ks-676089",
@@ -40665,7 +40667,7 @@
     "state": "KS",
     "lat": 37.795699,
     "lng": -97.285172,
-    "price": 295000,
+    "price": 319000,
     "beds": 4,
     "baths": 2,
     "sqft": "2678",
@@ -40677,8 +40679,7 @@
     "isSundgren": false,
     "agentName": "Michael Crow",
     "agentPhone": "3166186591",
-    "agentEmail": "",
-    "previousPrice": 297500
+    "agentEmail": ""
   },
   {
     "slug": "1403-meridian-rd-peck-ks-677764",
@@ -54510,7 +54511,7 @@
     "state": "KS",
     "lat": 38.362,
     "lng": -97.675286,
-    "price": 258000,
+    "price": 253000,
     "beds": 4,
     "baths": 3,
     "sqft": "2510",
@@ -54523,7 +54524,7 @@
     "agentName": "Mark Bird",
     "agentPhone": "7855020036",
     "agentEmail": "",
-    "previousPrice": 263000
+    "previousPrice": 258000
   },
   {
     "slug": "11709-scarlett-ct-maize-ks-674821",
@@ -72077,7 +72078,7 @@
     "state": "KS",
     "lat": 38.352554,
     "lng": -97.017179,
-    "price": 180000,
+    "price": 145000,
     "beds": 5,
     "baths": 6,
     "sqft": "3751",
@@ -72090,7 +72091,7 @@
     "agentName": "Stefanie Zimmerman",
     "agentPhone": "7852090876",
     "agentEmail": "",
-    "previousPrice": 194900
+    "previousPrice": 180000
   },
   {
     "slug": "409-woodlawn-st-wellington-ks-675496",
