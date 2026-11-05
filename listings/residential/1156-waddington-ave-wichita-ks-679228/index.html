@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Beautiful Brick Home on a Shaded Corner Lot! **New Roof**Discover the charm of Wichita&#39;s established Westlink neighborhood! *This ranch has over 2100 Sq. Ft. giving you plenty of room to grow*Enjoy evenings on the patio grilling in this beautifully shaded yard on a corner lot enclosed with a combination of wrought-iron &amp; cedar fencing and includes an off-street parking area perfect for an RV, boat or camper*The galley-style kitchen has light &amp; bright white cabinets, a pantry cabinet with tons of storage and charcoal color tile back-splash &amp; tile floor +all appliances stay*A separate dining room opens to the living room, with a sliding glass door providing access to your back patio*The home&#39;s original oak floors have been beautifully refinished throughout the living areas and bedrooms making this home super pet &amp; kid friendly*The kitchen and both main-floor bathrooms feature new ceramic tile*The main floor features a nice size primary bedroom with a private primary bathroom all to yourself + 2 additional BR’s and an additional bathroom off the hallway with additional closets and storage*Finished basement adds tremendous living space, including a large family room with a wood-burning fireplace, making it a cozy gathering space*Numerous built-in cabinets that would be ideal for an office, hobbies, or displaying collectibles* A large, newly remodeled bathroom with a walk-in shower adds even more convenience*2 additional finished rooms that could be used for hobbies, storage, a workshop, or whatever suits your needs*2 car garage (20x23) provides plenty of room for vehicles and additional storage*And for peace of mind, the roof was replaced in August 2026, so you can move in without worrying about an aging roof*This home is truly move-in ready and offers a great combination of space, character, mature landscaping, and a convenient few steps for those that struggle with steps*No popcorn ceiling here, the seller took care of that for you so you don&#39;t have to deal with the mess*Fresh paint inside &amp; out*Harvest Park is right across the street with lovely walking path, tennis/pickleball courts, playground and swimming pool with slides!*Your kids can easily walk to school*Come see all that this home has to offer!</p>
     </div>
@@ -205,8 +207,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -216,13 +218,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="1156 Waddington AVE, Wichita, KS, 67212">
-        <input type="hidden" name="message" value="I am interested in the property at 1156 Waddington AVE, Wichita, KS, 67212 (MLS# 679228). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 1156 Waddington AVE, Wichita, KS, 67212 (MLS# 679228). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

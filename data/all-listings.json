@@ -8828,7 +8828,7 @@
     "state": "KS",
     "lat": 37.70142,
     "lng": -97.194574,
-    "price": 580000,
+    "price": 565000,
     "beds": 5,
     "baths": 5,
     "sqft": "3720",
@@ -8841,7 +8841,7 @@
     "agentName": "Lisa Soltesz",
     "agentPhone": "6233881135",
     "agentEmail": "",
-    "previousPrice": 595000
+    "previousPrice": 580000
   },
   {
     "slug": "19447-meadowlark-rd-rose-hill-ks-672873",
@@ -43220,7 +43220,7 @@
     "state": "KS",
     "lat": 37.765394,
     "lng": -97.260853,
-    "price": 277000,
+    "price": 274000,
     "beds": 4,
     "baths": 3,
     "sqft": "2455",
@@ -43233,7 +43233,7 @@
     "agentName": "Lisa Soltesz",
     "agentPhone": "6233881135",
     "agentEmail": "",
-    "previousPrice": 283000
+    "previousPrice": 277000
   },
   {
     "slug": "419-myers-ct-mulvane-ks-678228",
@@ -78713,7 +78713,7 @@
     "state": "KS",
     "lat": 37.833876,
     "lng": -96.845475,
-    "price": 169900,
+    "price": 164900,
     "beds": 3,
     "baths": 2,
     "sqft": "1606",
@@ -78726,7 +78726,7 @@
     "agentName": "Erika Head",
     "agentPhone": "3163932957",
     "agentEmail": "",
-    "previousPrice": 175000
+    "previousPrice": 169900
   },
   {
     "slug": "1509-smith-cir-wichita-ks-675655",
