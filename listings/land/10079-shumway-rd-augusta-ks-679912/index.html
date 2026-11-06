@@ -112,12 +112,14 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Land</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-terminated pill">Inactive</span><span class="pill sg-type-pill">Land</span></div></div>
 
         
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Auction Date: Bidding Ends Wednesday October 28, 2026 4:00 PM * Auction Location: ONLINE ONLY AUCTION! * PROPERTY DESCRIPTION: Take a look at this really fun opportunity to own 10+- acres with Walnut River frontage just outside Augusta, Kansas. This property offers a combination of mature trees, water features, and improvements, making it a great opportunity for someone looking for a rural property with character and potential. The property features frontage along the Walnut River, along with a small creek that flows into the river, creating multiple water features throughout the acreage. There is a gradually sloped area leading right down to the water, offering an accessible point to get on the KDOT owned stretch of river. While a variety of fishing opportunities exist, probably the most prominent is the opportunity to catch big channel and flathead catfish! Big trees drape over the banks edge, offering great structure for limb lines. Towering, mature oak trees provide shade, beauty, and a natural backdrop that is becoming increasingly difficult to find. You won’t believe the size of a few of these trees! An existing older home is located on the property and is in need of significant work, offering an opportunity for renovation, restoration, or future redevelopment depending on the buyer’s plans. For storage and utility purposes, the property also includes a 1260 square foot metal building with a concrete floor, providing valuable space for equipment, vehicles, tools, storage, or a workshop. The property has active electrical service, and a rural water meter is already in place and transfers to the buyer, providing important existing infrastructure for future use. With its combination of Walnut River frontage, a creek, mature oak trees, acreage, utilities, and a storage building, this property offers a unique setting with plenty of possibilities. Conveniently located near Augusta, Kansas, it provides a rural atmosphere while remaining within easy reach of town. If you like the idea of camp fires, hanging out with family and friends, the outdoors, hunting and fishing…take a look at this opportunity to Invest In Land! * RURAL WATER &amp; ELECTRIC: An active electric meter and a water meter with Butler County RWD #4 will transfer to the Buyer at closing.</p>
     </div>
@@ -145,8 +147,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -156,13 +158,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="10079 Shumway Rd, Augusta, KS, 67010">
-        <input type="hidden" name="message" value="I am interested in the property at 10079 Shumway Rd, Augusta, KS, 67010 (MLS# 679912). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 10079 Shumway Rd, Augusta, KS, 67010 (MLS# 679912). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

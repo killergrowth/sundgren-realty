@@ -47725,7 +47725,7 @@
     "state": "KS",
     "lat": 37.717155,
     "lng": -97.479245,
-    "price": 270000,
+    "price": 260000,
     "beds": 4,
     "baths": 3,
     "sqft": "2070",
@@ -47738,7 +47738,7 @@
     "agentName": "Cheyenne L Harvey",
     "agentPhone": "3166489997",
     "agentEmail": "",
-    "previousPrice": 277500
+    "previousPrice": 270000
   },
   {
     "slug": "1905-deer-rd-abilene-ks-678313",
@@ -54538,7 +54538,7 @@
     "state": "KS",
     "lat": 37.761031,
     "lng": -97.477564,
-    "price": 259999,
+    "price": 254999,
     "beds": 3,
     "baths": 2,
     "sqft": "1388",
@@ -54551,7 +54551,7 @@
     "agentName": "Ronda Welsh",
     "agentPhone": "3164094431",
     "agentEmail": "",
-    "previousPrice": 263000
+    "previousPrice": 259999
   },
   {
     "slug": "6707-pepperwood-ct-wichita-ks-673462",
@@ -85222,7 +85222,7 @@
     "state": "KS",
     "lat": 37.090882,
     "lng": -97.001784,
-    "price": 150000,
+    "price": 145000,
     "beds": 3,
     "baths": 2,
     "sqft": "1404",
@@ -85235,7 +85235,7 @@
     "agentName": "Elizabeth Gaston",
     "agentPhone": "6209687064",
     "agentEmail": "",
-    "previousPrice": 155000
+    "previousPrice": 150000
   },
   {
     "slug": "8201-harry-st-wichita-ks-673947",

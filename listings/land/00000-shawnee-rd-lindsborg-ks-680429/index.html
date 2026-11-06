@@ -112,12 +112,14 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Land</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-terminated pill">Inactive</span><span class="pill sg-type-pill">Land</span></div></div>
 
         
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Horizon Farm &amp; Ranch Realty, LLC is proud to present the Landgren Sale Land Auction, featuring 92 +/- acres of quality McPherson County land offered in 2 individual tracts. Situated approximately three miles southwest of Lindsborg along Shawnee Road, this property provides convenient blacktop road access, outstanding operational positioning, and versatile opportunities for farm operators, agricultural investors, and recreational buyers alike. The two tracts combine high-yield crop production capabilities with established Kansas wildlife habitat. Tract 1 features approximately 48 +/- acres of 100% tillable cropland dominated by high-yielding Class II soils, making it an ideal for expanding agricultural operations or cash-rent investors. Tract 2 provides a dynamic 41 +/- acre mix, combining 7 +/- acres of Class II/III tillable cropland with 34 +/- acres of mature wildlife habitat cover. With paved Shawnee Road frontage along both tracts, modern machinery transport and grain logistics are quick and convenient. Bidders have the opportunity to pursue individual parcels tailored to specific crop or recreational needs, or combine both tracts to secure a complete 92-acre agricultural asset near Lindsborg. Tract 1 presents an excellent opportunity to acquire a productive agricultural land asset in McPherson County, Kansas. Located approximately three miles southwest of Lindsborg along Shawnee Road, this 51 +/- acre parcel offers excellent access with blacktop frontage, providing convenient accessibility for farm equipment and agricultural operations. The property features approximately 48 +/- acres of productive tillable cropland, consisting of Class II soils. With approximately 51.02 taxable acres, the tract offers a high percentage of tillable ground within a conveniently located agricultural parcel. The tract is well suited for producers looking to expand their operation or buyers seeking productive Kansas farmland with established agricultural utility. Seller&#39;s Mineral Rights will transfer to the Buyer. Tract 2 offers a versatile combination of agricultural acreage and wildlife habitat in McPherson County, Kansas. Located approximately three miles southwest of Lindsborg along Shawnee Road, this 41 +/- acre parcel provides excellent access with blacktop frontage and a diverse land composition suitable for both agricultural and recreational interests. The property features approximately 34 +/- acres of wildlife habitat along with approximately 7 +/- acres of productive tillable cropland. The tillable acreage consists of Class II and Class III soils, providing agricultural utility while the substantial wildlife habitat offers additional recreational potential. With approximately 41.36 taxable acres, this tract provides an opportunity for buyers seeking a smaller acreage parcel with a combination of tillable ground and established habitat. There has been no oil production for 2 years. Seller&#39;s Mineral Rights will transfer to the Buyer.</p>
     </div>
@@ -145,8 +147,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -156,13 +158,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="00000 Shawnee Rd, Lindsborg, KS, 67456">
-        <input type="hidden" name="message" value="I am interested in the property at 00000 Shawnee Rd, Lindsborg, KS, 67456 (MLS# 680429). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 00000 Shawnee Rd, Lindsborg, KS, 67456 (MLS# 680429). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
