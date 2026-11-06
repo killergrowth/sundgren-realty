@@ -40370,7 +40370,7 @@
     "state": "KS",
     "lat": 37.563576,
     "lng": -97.13677,
-    "price": 305000,
+    "price": 300000,
     "beds": 4,
     "baths": 3,
     "sqft": "1900",
@@ -40383,7 +40383,7 @@
     "agentName": "Patty Cisney",
     "agentPhone": "3166700994",
     "agentEmail": "",
-    "previousPrice": 310000
+    "previousPrice": 305000
   },
   {
     "slug": "602-high-st-argonia-ks-671411",
@@ -112726,7 +112726,7 @@
     "state": "KS",
     "lat": 37.255212,
     "lng": -96.982789,
-    "price": 50000,
+    "price": 29950,
     "beds": 2,
     "baths": 1,
     "sqft": "924",
@@ -112738,7 +112738,8 @@
     "isSundgren": false,
     "agentName": "Christine L Fletcher",
     "agentPhone": "3167719646",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 50000
   },
   {
     "slug": "320-center-st-salina-ks-676195",
@@ -112795,7 +112796,7 @@
     "state": "KS",
     "lat": 37.239301,
     "lng": -96.985471,
-    "price": 50000,
+    "price": 29950,
     "beds": 4,
     "baths": 2,
     "sqft": "1593",
@@ -112807,7 +112808,8 @@
     "isSundgren": false,
     "agentName": "Christine L Fletcher",
     "agentPhone": "3167719646",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 50000
   },
   {
     "slug": "541-foresthills-ct-andover-ks-678353",
