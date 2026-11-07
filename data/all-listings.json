@@ -9136,7 +9136,7 @@
     "state": "KS",
     "lat": 37.730811,
     "lng": -97.145138,
-    "price": 635000,
+    "price": 625000,
     "beds": 5,
     "baths": 3,
     "sqft": "3058",
@@ -9149,7 +9149,7 @@
     "agentName": "Val Peare",
     "agentPhone": "3166190571",
     "agentEmail": "",
-    "previousPrice": 650000
+    "previousPrice": 635000
   },
   {
     "slug": "1255-120th-ave-cheney-ks-675758",
@@ -23431,7 +23431,7 @@
     "state": "KS",
     "lat": 37.683237,
     "lng": -97.135115,
-    "price": 408000,
+    "price": 399900,
     "beds": 2,
     "baths": 2,
     "sqft": "1633",
@@ -23443,7 +23443,8 @@
     "isSundgren": false,
     "agentName": "Kelly Kemnitz",
     "agentPhone": "3163083717",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 408000
   },
   {
     "slug": "1611-rock-rd-mulvane-ks-672247",
@@ -39071,7 +39072,7 @@
     "state": "KS",
     "lat": 37.681244,
     "lng": -97.244053,
-    "price": 310000,
+    "price": 309500,
     "beds": 4,
     "baths": 3,
     "sqft": "3452",
@@ -39084,7 +39085,7 @@
     "agentName": "Amanda Jolley",
     "agentPhone": "3162139043",
     "agentEmail": "",
-    "previousPrice": 311500
+    "previousPrice": 310000
   },
   {
     "slug": "142-magnolia-dr-kaw-city-ok-676981",
@@ -48470,7 +48471,7 @@
     "state": "KS",
     "lat": 37.590326,
     "lng": -97.26811,
-    "price": 284000,
+    "price": 283900,
     "beds": 3,
     "baths": 3,
     "sqft": "1614",
@@ -48483,7 +48484,7 @@
     "agentName": "Huynhnhu Tran",
     "agentPhone": "3169904307",
     "agentEmail": "",
-    "previousPrice": 284999
+    "previousPrice": 284000
   },
   {
     "slug": "9404-hurst-st-wichita-ks-677984",
@@ -72991,7 +72992,7 @@
     "state": "KS",
     "lat": 37.63988,
     "lng": -97.476657,
-    "price": 189900,
+    "price": 184900,
     "beds": 3,
     "baths": 2,
     "sqft": "1195",
@@ -73003,7 +73004,8 @@
     "isSundgren": false,
     "agentName": "Tammy Schmidt",
     "agentPhone": "3166172356",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 189900
   },
   {
     "slug": "2922-cedar-crest-wichita-ks-675464",
@@ -73014,7 +73016,7 @@
     "state": "KS",
     "lat": 37.63988,
     "lng": -97.476657,
-    "price": 189900,
+    "price": 184900,
     "beds": 3,
     "baths": 2,
     "sqft": "1195",
@@ -73026,7 +73028,8 @@
     "isSundgren": false,
     "agentName": "Tammy Schmidt",
     "agentPhone": "3166172356",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 189900
   },
   {
     "slug": "16904-leyland-st-goddard-ks-675096",
