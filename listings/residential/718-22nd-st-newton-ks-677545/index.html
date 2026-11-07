@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>718 SE 22nd Street, Newton, KS | Stone Creek Subdivision Lake Views, Exceptional Space &amp; Endless Possibilities in Stone Creek! Welcome to 718 SE 22nd Street, a beautifully maintained brick-front home in Newton’s desirable Stone Creek subdivision, offering an impressive combination of space, comfort, functionality, and stunning outdoor living. With five bedrooms, multiple living areas, a three-car attached garage, a walk-out basement, and beautiful lake views, this home offers room for everyone and then some. The main level welcomes you with a spacious 15 x 14 living room featuring new carpet, a ceiling fan, Anderson windows, an electric fireplace, and built-in shelving. The adjoining dining room measures approximately 15 x 13 and features hardwood flooring and direct access to the covered deck, creating an ideal setting for entertaining or enjoying peaceful evenings overlooking the lake. The kitchen is designed for both everyday living and entertaining, featuring hardwood flooring, quartz countertops, abundant cabinetry, a stainless steel refrigerator, a black range and dishwasher, plus a large walk-in pantry that provides exceptional storage. The main level includes two additional bedrooms, including a 10 x 13 bedroom with built-in shelving, as well as a 9 x 11 bedroom, along with a beautifully refreshed hall bathroom featuring ceramic tile and updated paint. The private primary suite is a true retreat. Measuring approximately 15 x 26, the spacious bedroom features a ceiling fan, direct access to the deck, and an enormous walk-in closet with shelving. The adjoining primary bathroom has been updated with ceramic tile, a jetted tub, walk-in shower, and dual sinks. The laundry room is exceptionally spacious at approximately 13 x 13, with a utility sink and washer/dryer hookups, with additional laundry hookups available downstairs. Step outside and the property really shines. The composite covered deck overlooks the lake and provides a wonderful outdoor living space. A stone patio with fire pit creates another perfect gathering area, while refreshed landscaping adds to the home&#39;s curb appeal. The walk-out lot provides convenient access between the lower level and backyard, and a storage shed offers additional space for tools and equipment. The finished walk-out basement dramatically expands the home&#39;s living space. The enormous 23 x 30 family room features an electric fireplace and flows into a second kitchen area measuring approximately 9 x 12, complete with a full-size refrigerator and space for a stove. Whether used for entertaining, multigenerational living, guests, recreation, or a private living area, this space offers tremendous flexibility. The basement also includes a 16 x 12 fourth bedroom with egress, closet, and additional storage, plus a ceramic-tile bathroom. The fifth bedroom is an impressive 21 x 14 and features a walk-in closet with shelving and a view-out window. The lower level also includes a game room and space for a pool table, additional storage, built-in speakers, and washer/dryer hookups. Additional features include two water heaters, an owned water softener, a battery-backup sump pump, irrigation system, security system covering all doors, built-in speakers, extensive shelving that stays with the home, insulated garage doors, and two garage door openers. The attached three-car garage provides plenty of room for vehicles, recreational equipment, and storage. This is more than a house. It is a home designed for entertaining, relaxing, and living well, with exceptional flexibility for a growing family, multigenerational household, or anyone who simply wants abundant space in one of Newton&#39;s appealing lake-view neighborhoods. 718 SE 22nd Street offers the space, views, amenities, and versatility that are increasingly hard to find. Experience everything this Stone Creek property has to offer.</p>
     </div>
@@ -209,8 +211,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -220,13 +222,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="718 22nd ST, Newton, KS, 67114">
-        <input type="hidden" name="message" value="I am interested in the property at 718 22nd ST, Newton, KS, 67114 (MLS# 677545). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 718 22nd ST, Newton, KS, 67114 (MLS# 677545). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Discover true luxury in this castle-like estate. Unrivaled elegance meets everyday luxury in this nearly 5,000 sq ft, full-brick architectural masterpiece situated on over half an acre. A grand driveway sets the tone, leading to a 3-car side-load garage with built-in loft storage and a 50 amp power source. Step up to the impressive stone porch and oversized front door into a breathtaking foyer anchored by a dramatic curved staircase, soaring ceilings, and rich hardwood floors. At the heart of the home, the gourmet kitchen features stunning travertine tile, an expansive island, and premium upgraded appliances—perfectly complemented by a convenient main-floor laundry room just steps away. The main-level primary suite serves as a true sanctuary, featuring a spa-inspired ensuite bathroom outfitted with high-end finishes for the ultimate private retreat. Stroll down the grand staircase to the walkout lower level— designed for effortless gathering. This expansive space features a large wet bar, a charming wine alcove under the stairs with custom shelving, and plenty of room to game with the included pool table. Three additional oversized bedrooms, two full bathrooms, a bonus finished room and abundant storage complete this ultimate lower-level. Step outside into your private backyard oasis, designed for effortless outdoor living and entertaining. Enjoy the sparkling saltwater pool—installed in 2020 with a brand-new liner in 2025—featuring a sun deck, diving end, and integrated ambient lighting. The outdoor entertaining setup is second to none: a sprawling lounging patio leads to a covered cabana outfitted with integrated speakers, lighting, and a mounted TV. The chef-ready outdoor kitchen features a premium Bull-brand grill, dedicated ice maker, and two mini-fridges. This pavilion also has a built-in half bath and outdoor shower feature. Beyond the pool, enjoy a half basketball/sport court for recreation, along with a walkout pit already pre-wired for a hot tub. Low-voltage landscape lighting throughout the property is easily controlled via a smartphone app. A gravity-drained sprinkler system fed by an irrigation well keeps the property pristine year-round. This prime location and exceptional home is within the Andover school district all while enjoying Sedgwick county taxes and no special assessments.</p>
     </div>
@@ -209,8 +211,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -220,13 +222,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="1729 Rocky Creek Ct, Wichita, KS, 67230">
-        <input type="hidden" name="message" value="I am interested in the property at 1729 Rocky Creek Ct, Wichita, KS, 67230 (MLS# 681181). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 1729 Rocky Creek Ct, Wichita, KS, 67230 (MLS# 681181). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

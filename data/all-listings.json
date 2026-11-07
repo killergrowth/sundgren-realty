@@ -9207,7 +9207,7 @@
     "state": "KS",
     "lat": 37.600194,
     "lng": -97.618684,
-    "price": 650000,
+    "price": 630000,
     "beds": 3,
     "baths": 5,
     "sqft": "3535",
@@ -9219,7 +9219,8 @@
     "isSundgren": false,
     "agentName": "Nancy Shih",
     "agentPhone": "3169921108",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 650000
   },
   {
     "slug": "9615-rock-rd-valley-center-ks-672263",
@@ -68981,7 +68982,7 @@
     "state": "KS",
     "lat": 37.389942,
     "lng": -97.641536,
-    "price": 200000,
+    "price": 190000,
     "beds": null,
     "baths": null,
     "sqft": "3,001 - 5,000",
@@ -68993,7 +68994,8 @@
     "isSundgren": false,
     "agentName": "Carrissa Wells",
     "agentPhone": "3166507637",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 200000
   },
   {
     "slug": "12041206-jefferson-st-wichita-ks-678055",
@@ -81621,7 +81623,7 @@
     "state": "KS",
     "lat": 37.820284,
     "lng": -96.852856,
-    "price": 158500,
+    "price": 150000,
     "beds": null,
     "baths": null,
     "sqft": "1982",
@@ -81634,7 +81636,7 @@
     "agentName": "Debra Pearman",
     "agentPhone": "3166442836",
     "agentEmail": "",
-    "previousPrice": 160000
+    "previousPrice": 158500
   },
   {
     "slug": "833-kokomo-ave-derby-ks-677569",
@@ -82688,7 +82690,7 @@
     "state": "KS",
     "lat": 37.653354,
     "lng": -97.369384,
-    "price": 155000,
+    "price": 150000,
     "beds": 3,
     "baths": 1,
     "sqft": "928",
@@ -82701,7 +82703,7 @@
     "agentName": "Jenny Grandfield",
     "agentPhone": "3166445102",
     "agentEmail": "",
-    "previousPrice": 155900
+    "previousPrice": 155000
   },
   {
     "slug": "7015-newell-st-wichita-ks-675760",
@@ -83179,7 +83181,7 @@
     "state": "KS",
     "lat": 37.691107,
     "lng": -97.424785,
-    "price": 160000,
+    "price": 152000,
     "beds": 4,
     "baths": 2,
     "sqft": "1482",
@@ -83191,7 +83193,8 @@
     "isSundgren": false,
     "agentName": "Jacob Henderson",
     "agentPhone": "3166500372",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 160000
   },
   {
     "slug": "7031-frazier-ln-wichita-ks-675764",
@@ -91540,7 +91543,7 @@
     "state": "KS",
     "lat": 37.66648,
     "lng": -97.340962,
-    "price": 134500,
+    "price": 124900,
     "beds": 3,
     "baths": 2,
     "sqft": "1560",
@@ -91553,7 +91556,7 @@
     "agentName": "Taylor Lock",
     "agentPhone": "3168679041",
     "agentEmail": "",
-    "previousPrice": 135000
+    "previousPrice": 134500
   },
   {
     "slug": "2726-spruce-st-wichita-ks-676436",
@@ -99032,7 +99035,7 @@
     "state": "KS",
     "lat": 39.119751,
     "lng": -97.702395,
-    "price": 110000,
+    "price": 100000,
     "beds": 2,
     "baths": 1,
     "sqft": "1584",
@@ -99044,7 +99047,8 @@
     "isSundgren": false,
     "agentName": "Monte Nelson",
     "agentPhone": "7853927481",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 110000
   },
   {
     "slug": "425-2nd-st-newton-ks-676578",

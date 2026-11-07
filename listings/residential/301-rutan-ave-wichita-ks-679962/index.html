@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -128,7 +128,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Property offered at ONLINE ONLY auction. | 10% Buyer&#39;s Premium will be added to the final bid. | BIDDING OPENS: Tuesday, October 27th, 2026 at 2:00 PM (ct) | BIDDING CLOSING: Thursday, November 5th, 2026 at 2:00 PM (ct). Bidding will remain open on this property until 90 seconds have passed without receiving a bid. Property available to preview by appointment. ONLINE ONLY!!! NO MINIMUM, NO RESERVE!!! WOW! Welcome to this updated, well-maintained bungalow duplex that sits on a corner lot in the coveted neighborhood of College Hill! The property offers a partially fenced backyard, covered front porch, separate entrances, large balcony, an oversized, attached two-car garage, and is selling to the highest bidder, regardless of price! 301 - This previously owner-occupied home features 3 bedrooms, 2 bathrooms, and access to the 2-car side-load garage. The main floor opens to a formal living room with a decorative stone fireplace and a wood-beamed ceiling, which continues through to the dining room and sunroom! The formal dining room has convenient built-in shelving and drawers. The sunroom features beautiful hardwood floors and loads of natural light! The updated kitchen offers ample storage, including two pantries, and counter space. There is an eating area and glass sliding doors to your huge private balcony, ideal for alfresco dining, watching sunsets, or sunbathing. The primary bedroom has double closets and additional built-in storage. A second bedroom with a walk-in closet and a full hallway bathroom with two sinks and extra counter space complete the main floor. Upstairs is the third bedroom with gorgeous hardwood floors, a walk-in cedar closet, and walls of windows! The partially finished basement has a heated garage with parking for two cars, TONS of storage/workspace, laundry hookups, a family room with a decorative fireplace, a finished bonus room, and a full bathroom. 301 Apt 1- This studio apartment boasts nearly 700± square feet and plenty of privacy! The open floor plan has a kitchen/living room combo, a bedroom separated by a built-in divider, two walk-in closets, and a full bathroom with a walk-in shower. A private laundry room is accessible from the exterior and features a locked door, a wash sink, cabinetry and countertops, and an adjacent storage room. Apt 1 was previously rented for $800/month. This is an amazing opportunity in a highly desirable area that doesn&#39;t come around often! 301 &amp; 301 Apt 1 S. Rutan Ave. is perfect for multi-generational families, an investment property, or owner-occupancy with the potential for additional rental income! Don&#39;t miss this excellent property, selling to the highest bidder, regardless of price! County Records for the finished living area do not reflect the entire finished living space. Basement finished living area provided is measured and approximate. Water meter is shared; separate electric and gas meters. Seller is a licensed real estate agent in the State of Kansas. *Buyer should verify school assignments as they are subject to change. The real estate is offered at public auction in its present, “as is where is” condition and is accepted by the buyer without any expressed or implied warranties or representations from the seller or seller’s agents. Full auction terms and conditions provided in the Property Information Packet. Total purchase price will include a 10% buyer’s premium ($2,500.00 minimum) added to the final bid. Property available to preview by appointment. Earnest money is due from the high bidder at the auction in the form of check, or immediately available, certified funds in the amount of $15,000 for a 30-day close, $20,000 for a 45-day close.</p>
     </div>
@@ -189,8 +191,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -200,13 +202,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="301 Rutan AVE, Wichita, KS, 67218">
-        <input type="hidden" name="message" value="I am interested in the property at 301 Rutan AVE, Wichita, KS, 67218 (MLS# 679962). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 301 Rutan AVE, Wichita, KS, 67218 (MLS# 679962). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
