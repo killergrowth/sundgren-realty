@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>With over 4,000 sq ft, 5 bedrooms, 3 full baths, and beautiful east-facing golf course views, this meticulously maintained home provides a thoughtfully designed living space, all while the covered deck and walkout patio provide the perfect outdoor setting for morning coffee, dining, or simply enjoying the scenic surroundings. From the moment you enter the home you will admire the high ceilings with exposed beams, floor-to-ceiling windows providing abundant natural light, a gas fireplace with adjoining custom cabinetry and shelving, all creates an inviting living room space. The open-concept kitchen is equally functional and stylish, featuring a generous island, abundant workspace, gas range, pantry cabinet, and a casual dining area that keeps everyone connected. Need a flexible space? The formal dining room featuring built-in cabinetry with glass-front display doors could easily convert into a home office, music room, or study. The split-bedroom layout enhances privacy, offering 2 secondary bedrooms and a full bath on the main level, while the spacious primary suite serves as a private retreat with a walk-in closet, dual vanities, soaking tub, walk-in shower, and separate water closet. Main-floor laundry adds everyday convenience. The walkout lower level is built for entertaining with a wet bar, second fireplace, expansive family room, bonus theater or hobby room, 2 additional bedrooms and a full bath, making it perfect for guests or multigenerational living. Outdoor living overlooking the golf course is just as impressive with the covered deck, patio ideal for a fire pit or table, and under the deck is the perfect place for a hot tub with electrical already in place. Recent improvements include a newer roof (2022), new carpet, whole-house RO water filtration system, water softener, humidifier, new fencing, and a finished insulated garage with epoxy flooring. Ideally situated near schools, shopping, restaurants, and more, this home delivers the perfect balance of elegance, functionality, and location, all waiting for you to move right in and start enjoying.</p>
     </div>
@@ -209,8 +211,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -220,13 +222,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="2224 Rough Creek Rd, Derby, KS, 67037">
-        <input type="hidden" name="message" value="I am interested in the property at 2224 Rough Creek Rd, Derby, KS, 67037 (MLS# 675879). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 2224 Rough Creek Rd, Derby, KS, 67037 (MLS# 675879). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
