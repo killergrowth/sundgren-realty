@@ -26817,7 +26817,7 @@
     "state": "KS",
     "lat": 37.761983,
     "lng": -97.423965,
-    "price": 385000,
+    "price": 375000,
     "beds": null,
     "baths": null,
     "sqft": "2752",
@@ -26829,7 +26829,8 @@
     "isSundgren": false,
     "agentName": "Bree Russell",
     "agentPhone": "3165167417",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 385000
   },
   {
     "slug": "2034-sierra-hills-ct-wichita-ks-672955",
@@ -29311,7 +29312,7 @@
     "state": "KS",
     "lat": 37.761406,
     "lng": -97.423957,
-    "price": 375000,
+    "price": 369000,
     "beds": null,
     "baths": null,
     "sqft": "2752",
@@ -29323,7 +29324,8 @@
     "isSundgren": false,
     "agentName": "Bree Russell",
     "agentPhone": "3165167417",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 375000
   },
   {
     "slug": "54025404-sandkey-ct-wichita-ks-643347",
@@ -29382,7 +29384,7 @@
     "state": "KS",
     "lat": 37.761756,
     "lng": -97.423926,
-    "price": 375000,
+    "price": 369000,
     "beds": null,
     "baths": null,
     "sqft": "2360",
@@ -29394,7 +29396,8 @@
     "isSundgren": false,
     "agentName": "Bree Russell",
     "agentPhone": "3165167417",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 375000
   },
   {
     "slug": "55165518-sandkey-ct-wichita-ks-641332",
@@ -31217,7 +31220,7 @@
     "state": "KS",
     "lat": 37.76458,
     "lng": -97.423301,
-    "price": 368000,
+    "price": 365000,
     "beds": null,
     "baths": null,
     "sqft": "2332",
@@ -31229,7 +31232,8 @@
     "isSundgren": false,
     "agentName": "Bree Russell",
     "agentPhone": "3165167417",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 368000
   },
   {
     "slug": "45514549-sandplum-st-wichita-ks-666427",
@@ -31240,7 +31244,7 @@
     "state": "KS",
     "lat": 37.764615,
     "lng": -97.423801,
-    "price": 368000,
+    "price": 365000,
     "beds": null,
     "baths": null,
     "sqft": "2332",
@@ -31252,7 +31256,8 @@
     "isSundgren": false,
     "agentName": "Bree Russell",
     "agentPhone": "3165167417",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 368000
   },
   {
     "slug": "45194521-sandplum-st-wichita-ks-666424",
@@ -31263,7 +31268,7 @@
     "state": "KS",
     "lat": 37.7642,
     "lng": -97.423275,
-    "price": 368000,
+    "price": 365000,
     "beds": null,
     "baths": null,
     "sqft": "2332",
@@ -31275,7 +31280,8 @@
     "isSundgren": false,
     "agentName": "Bree Russell",
     "agentPhone": "3165167417",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 368000
   },
   {
     "slug": "45254527-sandplum-st-wichita-ks-666422",
@@ -31286,7 +31292,7 @@
     "state": "KS",
     "lat": 37.763998,
     "lng": -97.423296,
-    "price": 368000,
+    "price": 365000,
     "beds": null,
     "baths": null,
     "sqft": "2332",
@@ -31298,7 +31304,8 @@
     "isSundgren": false,
     "agentName": "Bree Russell",
     "agentPhone": "3165167417",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 368000
   },
   {
     "slug": "45334531-sandplum-st-wichita-ks-666429",
@@ -31309,7 +31316,7 @@
     "state": "KS",
     "lat": 37.764042,
     "lng": -97.423802,
-    "price": 368000,
+    "price": 365000,
     "beds": null,
     "baths": null,
     "sqft": "2332",
@@ -31321,7 +31328,8 @@
     "isSundgren": false,
     "agentName": "Bree Russell",
     "agentPhone": "3165167417",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 368000
   },
   {
     "slug": "45134515-sandplum-st-wichita-ks-666423",
@@ -31332,7 +31340,7 @@
     "state": "KS",
     "lat": 37.764388,
     "lng": -97.423297,
-    "price": 368000,
+    "price": 365000,
     "beds": null,
     "baths": null,
     "sqft": "2332",
@@ -31344,7 +31352,8 @@
     "isSundgren": false,
     "agentName": "Bree Russell",
     "agentPhone": "3165167417",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 368000
   },
   {
     "slug": "45454543-sandplum-st-wichita-ks-666428",
@@ -31355,7 +31364,7 @@
     "state": "KS",
     "lat": 37.76442,
     "lng": -97.42385,
-    "price": 368000,
+    "price": 365000,
     "beds": null,
     "baths": null,
     "sqft": "2332",
@@ -31367,7 +31376,8 @@
     "isSundgren": false,
     "agentName": "Bree Russell",
     "agentPhone": "3165167417",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 368000
   },
   {
     "slug": "45014503-sandplum-st-wichita-ks-666419",
@@ -31401,7 +31411,7 @@
     "state": "KS",
     "lat": 37.764197,
     "lng": -97.423921,
-    "price": 368000,
+    "price": 365000,
     "beds": null,
     "baths": null,
     "sqft": "2332",
@@ -31413,7 +31423,8 @@
     "isSundgren": false,
     "agentName": "Bree Russell",
     "agentPhone": "3165167417",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 368000
   },
   {
     "slug": "44454447-sandplum-st-wichita-ks-656789",
@@ -31424,7 +31435,7 @@
     "state": "KS",
     "lat": 37.764006,
     "lng": -97.4228,
-    "price": 368000,
+    "price": 365000,
     "beds": null,
     "baths": null,
     "sqft": "1226",
@@ -31436,7 +31447,8 @@
     "isSundgren": false,
     "agentName": "Bree Russell",
     "agentPhone": "3165167417",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 368000
   },
   {
     "slug": "44514453-sandplum-st-wichita-ks-656785",
@@ -31447,7 +31459,7 @@
     "state": "KS",
     "lat": 37.764198,
     "lng": -97.422804,
-    "price": 368000,
+    "price": 365000,
     "beds": null,
     "baths": null,
     "sqft": "1226",
@@ -31459,7 +31471,8 @@
     "isSundgren": false,
     "agentName": "Bree Russell",
     "agentPhone": "3165167417",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 368000
   },
   {
     "slug": "44574459-sandplum-st-wichita-ks-656784",
@@ -31470,7 +31483,7 @@
     "state": "KS",
     "lat": 37.76439,
     "lng": -97.422807,
-    "price": 368000,
+    "price": 365000,
     "beds": null,
     "baths": null,
     "sqft": "1226",
@@ -31482,7 +31495,8 @@
     "isSundgren": false,
     "agentName": "Bree Russell",
     "agentPhone": "3165167417",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 368000
   },
   {
     "slug": "44634465-sandplum-st-wichita-ks-656382",
@@ -31493,7 +31507,7 @@
     "state": "KS",
     "lat": 37.764582,
     "lng": -97.422811,
-    "price": 368000,
+    "price": 365000,
     "beds": null,
     "baths": null,
     "sqft": "2332",
@@ -31505,7 +31519,8 @@
     "isSundgren": false,
     "agentName": "Bree Russell",
     "agentPhone": "3165167417",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 368000
   },
   {
     "slug": "2594-spring-meadows-ct-derby-ks-674359",
@@ -33485,7 +33500,7 @@
     "state": "KS",
     "lat": 37.786327,
     "lng": -97.375696,
-    "price": 355500,
+    "price": 349500,
     "beds": null,
     "baths": null,
     "sqft": "2352",
@@ -33497,7 +33512,8 @@
     "isSundgren": false,
     "agentName": "Bree Russell",
     "agentPhone": "3165167417",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 355500
   },
   {
     "slug": "28172819-55th-st-n-wichita-ks-658172",
@@ -33508,7 +33524,7 @@
     "state": "KS",
     "lat": 37.78568933,
     "lng": -97.37565434,
-    "price": 355500,
+    "price": 349500,
     "beds": null,
     "baths": null,
     "sqft": "2352",
@@ -33520,7 +33536,8 @@
     "isSundgren": false,
     "agentName": "Bree Russell",
     "agentPhone": "3165167417",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 355500
   },
   {
     "slug": "54065408-colburn-street-bel-aire-ks-677316",
@@ -33715,7 +33732,7 @@
     "state": "KS",
     "lat": 37.786541,
     "lng": -97.373799,
-    "price": 355000,
+    "price": 349000,
     "beds": null,
     "baths": null,
     "sqft": "2352",
@@ -33727,7 +33744,8 @@
     "isSundgren": false,
     "agentName": "Bree Russell",
     "agentPhone": "3165167417",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 355000
   },
   {
     "slug": "26052607-55th-st-n-st-wichita-ks-658167",
@@ -33761,7 +33779,7 @@
     "state": "KS",
     "lat": 37.786538,
     "lng": -97.373544,
-    "price": 355000,
+    "price": 349000,
     "beds": null,
     "baths": null,
     "sqft": "2352",
@@ -33773,7 +33791,8 @@
     "isSundgren": false,
     "agentName": "Bree Russell",
     "agentPhone": "3165167417",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 355000
   },
   {
     "slug": "25152513-55th-st-n-st-wichita-ks-658169",
@@ -33784,7 +33803,7 @@
     "state": "KS",
     "lat": 37.786593,
     "lng": -97.37284,
-    "price": 355000,
+    "price": 349000,
     "beds": null,
     "baths": null,
     "sqft": "2352",
@@ -33796,7 +33815,8 @@
     "isSundgren": false,
     "agentName": "Bree Russell",
     "agentPhone": "3165167417",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 355000
   },
   {
     "slug": "25092507-55th-st-n-st-wichita-ks-658170",
@@ -33807,7 +33827,7 @@
     "state": "KS",
     "lat": 37.786598,
     "lng": -97.37257,
-    "price": 355000,
+    "price": 349000,
     "beds": null,
     "baths": null,
     "sqft": "2352",
@@ -33819,7 +33839,8 @@
     "isSundgren": false,
     "agentName": "Bree Russell",
     "agentPhone": "3165167417",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 355000
   },
   {
     "slug": "27012703-55th-st-n-st-wichita-ks-658159",
@@ -33830,7 +33851,7 @@
     "state": "KS",
     "lat": 37.786546,
     "lng": -97.374308,
-    "price": 355000,
+    "price": 349000,
     "beds": null,
     "baths": null,
     "sqft": "2352",
@@ -33842,7 +33863,8 @@
     "isSundgren": false,
     "agentName": "Bree Russell",
     "agentPhone": "3165167417",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 355000
   },
   {
     "slug": "25192521-55th-st-n-st-wichita-ks-658168",
@@ -33853,7 +33875,7 @@
     "state": "KS",
     "lat": 37.786532,
     "lng": -97.373034,
-    "price": 355000,
+    "price": 349000,
     "beds": null,
     "baths": null,
     "sqft": "2352",
@@ -33865,7 +33887,8 @@
     "isSundgren": false,
     "agentName": "Bree Russell",
     "agentPhone": "3165167417",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 355000
   },
   {
     "slug": "27072709-55th-st-n-st-wichita-ks-658158",
@@ -33876,7 +33899,7 @@
     "state": "KS",
     "lat": 37.786539,
     "lng": -97.37458,
-    "price": 355000,
+    "price": 349000,
     "beds": null,
     "baths": null,
     "sqft": "2352",
@@ -33888,7 +33911,8 @@
     "isSundgren": false,
     "agentName": "Bree Russell",
     "agentPhone": "3165167417",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 355000
   },
   {
     "slug": "25032501-55th-st-n-st-wichita-ks-658171",
@@ -33899,7 +33923,7 @@
     "state": "KS",
     "lat": 37.786563,
     "lng": -97.372309,
-    "price": 355000,
+    "price": 349000,
     "beds": null,
     "baths": null,
     "sqft": "2352",
@@ -33911,7 +33935,8 @@
     "isSundgren": false,
     "agentName": "Bree Russell",
     "agentPhone": "3165167417",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 355000
   },
   {
     "slug": "736-scott-ave-salina-ks-676492",
