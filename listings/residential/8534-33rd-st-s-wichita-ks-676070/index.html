@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-terminated pill">Inactive</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Don&#39;t miss this better-than-new 5-bedroom, 3-bathroom ranch conveniently located near McConnell Air Force Base! Built in 2020, this home is just five years old and still shows like new, with a brand new roof installed in 2025 featuring Class 4 impact resistant shingles that can help lower your insurance premium. Best of all, nearly all of the special assessments have already been paid off early, a rarity for a home this new and one that saves the next owner thousands compared to the tax burden that usually comes with new construction. Zoned for the desirable Derby school district, the home also backs to open space with no neighbors behind you, giving you a level of privacy that&#39;s hard to find in most neighborhoods. Pulling up, you&#39;ll love the curb appeal of the brick veneer, wood siding, and cedar accents, along with a dormer window over the front entry and windows on the 3-car garage doors. Step inside to find a bright, open living space with vaulted ceilings, a ceiling fan, and luxury vinyl plank flooring that flows throughout the main level. A floating wood entertainment center with built-in drawers and lighting anchors the room, and a wall of windows plus a door out to the covered deck bring in natural light and frame the peaceful backyard views beyond. The kitchen features painted cabinetry with under-cabinet lighting, a white subway tile backsplash, and stainless steel appliances, along with a walk-in pantry that adds plenty of extra storage. Quartz countertops run throughout, and the dark stained island offers a nice contrast along with plenty of room for bar seating. Just off the kitchen, the dining area is wrapped in windows on three sides, flooding the space with natural light. The main level also includes a dedicated laundry room, a full hall bathroom, and 3 bedrooms. The primary suite is a true retreat, with a tray ceiling, a private bathroom featuring a dual sink vanity, a soaking tub, and a separate walk-in shower, plus a spacious walk-in closet. Head downstairs to find a view-out basement, where big windows keep the space feeling bright and full of natural light. There are two more bedrooms, a full bathroom, and a spacious family room, plus plenty of additional storage to round out the lower level. In the backyard you&#39;ll love the covered deck, perfect for relaxing while you take in the open view and enjoy the privacy of not backing to any neighbors. An irrigated yard with a mature shade tree completes the space. You&#39;re also just across the street from the community pool, playground, and basketball court, close enough to enjoy the amenities but far enough to keep things quiet. This kind of privacy, condition, and location doesn&#39;t come along often. Schedule your private tour today!</p>
     </div>
@@ -205,8 +207,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -216,13 +218,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="8534 33rd St S, Wichita, KS, 67210">
-        <input type="hidden" name="message" value="I am interested in the property at 8534 33rd St S, Wichita, KS, 67210 (MLS# 676070). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 8534 33rd St S, Wichita, KS, 67210 (MLS# 676070). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

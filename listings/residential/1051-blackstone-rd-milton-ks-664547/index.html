@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-terminated pill">Inactive</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Ultimate High Tech, High Efficiency &amp; High-End Construction Paradise on the Prairie! This estate offers absolutely everything imaginable! Best described as a &quot;Construction Innovation&quot; built by Jeff Jones owner of TRU-Build. A net-zero energy home built for a cleaner, healthier more efficient home. Only 30 minutes from Wichita, KS! &quot;Turn Key&quot; to the extreme! FULLY FURNISHED INSIDE &amp; OUT INCLUDING FARM EQUIPMENT (SEE ATTACHED PERSONAL PROPERTY LIST AND DETAILED FEATURE WRITE UP) (See visual tour link for detailed write up, 158 photos &amp; information). Colorado Alpen windows, double wall insulation-filled air gap, 4 energy recovery ventilators, R-38 &amp; R-58 insulation in walls &amp; attic, DaVinci Class 4 hail impact resistant roof, stone exterior, King Solar 25 KW system, Kohler generators &amp; propane gas. Self-sustaining residence! Surround yourself in ultimate luxury at this vacation getaway on 90 acres. Private gated entry driveway winds around &amp; ultimately lands you at the foot of a most impressive front residence elevation with horse statue &amp; tiered water fountain. &quot;Welcome Home!&quot; The massive solid cedar wood beams &amp; impressive stone construction materials (both interior &amp; exterior) are breathtaking. The eye-catching chandeliers, sconces &amp; warm tones throughout form magical lighting! The simply phenomenal main home measures approximately 7,000 sq feet! The 2400 sq ft great room&#39;s cathedral style timbered ceiling will knock your socks off. A Chef&#39;s dream kitchen that rivals homes anywhere in the world. Too much to mention here. (SEE DETAILED WRITE UP). Outdoor cooking area; built-in gas grill with separate deep fryer (both vent above the roofline through the exterior chimney). The views from this vantage point keep you wanting more. Imagine someone playing the Grand Piano next to a roaring fire while you step into the cigar room with ERV for fresh air to unwind. Retire to the peaceful master suite with features seldomly seen, (SEE DETAILED WRITE UP). Every square inch of this residence has been painstakingly created, designed and appointed with the highest quality materials; no expense was spared. Ingenious whole-house automated system installed by Living Sound. Top notch Savant Phone App controls media, theater room, indoor &amp; outdoor whole-house sound systems, security cameras, lighting, window blinds &amp; all the TV&#39;s. The lower level contains temperature-controlled wine room, cigar humidor, state-of-the-art audio &amp; video theater room, wet bar resembles a 2nd kitchen, hearth room, two more bedrooms, two bathrooms &amp; a huge recreation/family room with full walkout to the outdoor living experience. Retreat to your backyard private resort. Durable fiberglass saltwater pool. Popular sport-depth design with volleyball net, slide, auto cover, UV generator &amp; auto cleaner. Outdoor entertaining will be a breeze! Exclusive covered cabana, discrete hidden outdoor speaker system, night lighting, full bathroom with shower &amp; second laundry near pool. Soothe your soul in the hot tub, outdoor fireplace, Argentinian grill, covered pool cabana or at the firepit overlooking the pond, dock &amp; prairie views! Indulge yourself in the quiet solitude of a Kansas sunset! Horses live like royalty in the 38 x 70 upscale ICF constructed horse stable with radiant floor heat. Enjoy hunting, fishing, 2 stocked spring fed ponds, 2 docks, 2 deer stands, 300-yard shooting range, 14 acres of NEW 4-rail steel pipe horse fence corrals split for separate herds, 200 x 200 riding arena, round training corral, flat field for Polo stick &amp; ball practice, nicely finished &amp; appointed guest house/living quarters with full kitchen, bath, bed, laundry &amp; enclosed patio plus there is also a studio apartment adjacent to the horse barn. A plethora of outbuildings &amp; quality barn structures for all your additional farm &amp; storage needs. On-property hay production (Brome mix) is 65-85 round bales per year. **Qualified Buyers Only**</p>
     </div>
@@ -213,8 +215,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -224,13 +226,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="1051 Blackstone Rd, Milton, KS, 67106">
-        <input type="hidden" name="message" value="I am interested in the property at 1051 Blackstone Rd, Milton, KS, 67106 (MLS# 664547). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 1051 Blackstone Rd, Milton, KS, 67106 (MLS# 664547). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
