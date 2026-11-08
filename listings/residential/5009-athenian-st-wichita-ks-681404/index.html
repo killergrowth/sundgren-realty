@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Tucked away in the quiet neighborhood of Valencia, this beautifully maintained, one-owner home invites you to slow down and settle in. Timeless architecture, lush landscaping, and a charming front flower bed create a welcoming first impression, while the spacious covered front porch offers neighborhood lake views—the perfect backdrop for morning coffee and an unhurried start to the day. Behind the home, a large easement provides nearly 200 feet of green space with no direct rear neighbors, offering an added sense of openness and privacy. Inside, large picture windows fill the living room with natural light, highlighting the LVP flooring and inviting gas fireplace with its tile surround. Step outside onto the generous covered composite deck, where views of the lush, privacy-fenced backyard set the scene for relaxed evenings and easy conversation. In the kitchen, granite countertops, a gas range, abundant cabinetry, and a walk-in pantry bring together style and everyday practicality. The adjoining dining area features large picture windows and a flexible layout, with room for casual weeknight dinners or an extended table when holidays and special occasions bring everyone together. The primary suite offers a restful retreat with a spacious, light-filled bedroom and a private bath featuring a granite-topped double vanity, custom tile shower, and walk-in closet. Two additional main-floor bedrooms each include their own walk-in closet accompanied by a full hall bath. Just inside the three-car garage entrance, a convenient drop zone keeps daily essentials organized, while the separate laundry room offers built-in cabinetry and hanging rod. The fully finished walk-out lower level provides even more room to gather, unwind, and make yourself at home. An expansive family room offers space for movie nights, game days, or simply stretching out at the end of the day. The generous wet bar features granite countertops, a serving bar, and its own walk-in pantry for refreshments and entertaining essentials. Two oversized bedrooms, each with a walk-in closet, a spacious full bath, and plenty of dedicated storage complete the lower level. Walk outside to the covered lower patio, where a few steps lead up to the spacious ground-level patio and backyard. With multiple outdoor spaces to enjoy, there is a place for dinner beneath the covered deck, an afternoon in the fresh air, or a quiet evening overlooking the greenery beyond the fence. This peaceful setting also keeps everyday conveniences close at hand, with shopping and dining nearby at 53rd and Meridian and quick access to I-235 for commuting and getting around Wichita. Thoughtfully maintained and comfortably appointed, this Valencia home offers room to host, space to relax, and a welcoming retreat from the pace of the day. Come experience it for yourself, today! Some information may be estimated and is not guaranteed. Please verify schools with USD 259.</p>
     </div>
@@ -205,8 +207,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -216,13 +218,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="5009 Athenian St, Wichita, KS, 67204">
-        <input type="hidden" name="message" value="I am interested in the property at 5009 Athenian St, Wichita, KS, 67204 (MLS# 681404). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 5009 Athenian St, Wichita, KS, 67204 (MLS# 681404). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
