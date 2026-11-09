@@ -5493,7 +5493,7 @@
     "state": "KS",
     "lat": 37.692503,
     "lng": -97.175969,
-    "price": 874379,
+    "price": 899206,
     "beds": 5,
     "baths": 5,
     "sqft": "4021",
@@ -19062,7 +19062,7 @@
     "state": "KS",
     "lat": 37.269985,
     "lng": -98.047566,
-    "price": 450000,
+    "price": 425000,
     "beds": 5,
     "baths": 4,
     "sqft": "3191",
@@ -19074,7 +19074,8 @@
     "isSundgren": false,
     "agentName": "Kari Higgins",
     "agentPhone": "3169904383",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 450000
   },
   {
     "slug": "1340-greenwich-rd-wichita-ks-675564",
@@ -37834,7 +37835,7 @@
     "state": "KS",
     "lat": 37.780048,
     "lng": -97.269487,
-    "price": 320000,
+    "price": 309900,
     "beds": null,
     "baths": null,
     "sqft": "2532",
@@ -37847,7 +37848,7 @@
     "agentName": "Virginia Franzese",
     "agentPhone": "8167789434",
     "agentEmail": "",
-    "previousPrice": 325000
+    "previousPrice": 320000
   },
   {
     "slug": "5776-bristol-circle-wichita-ks-677882",
@@ -38188,7 +38189,7 @@
     "state": "KS",
     "lat": 37.61141599,
     "lng": -97.32232202,
-    "price": 320000,
+    "price": 315000,
     "beds": 5,
     "baths": 4,
     "sqft": "3400",
@@ -38201,7 +38202,7 @@
     "agentName": "Crystal Torres",
     "agentPhone": "6206391700",
     "agentEmail": "",
-    "previousPrice": 330000
+    "previousPrice": 320000
   },
   {
     "slug": "1931-wyndham-rd-park-city-ks-673114",
@@ -39308,7 +39309,7 @@
     "state": "KS",
     "lat": 37.78106,
     "lng": -97.270136,
-    "price": 320000,
+    "price": 309900,
     "beds": null,
     "baths": null,
     "sqft": "2532",
@@ -39321,7 +39322,7 @@
     "agentName": "Virginia Franzese",
     "agentPhone": "8167789434",
     "agentEmail": "",
-    "previousPrice": 325000
+    "previousPrice": 320000
   },
   {
     "slug": "5752-bristol-street-wichita-ks-674181",
@@ -39332,7 +39333,7 @@
     "state": "KS",
     "lat": 37.779831,
     "lng": -97.26947,
-    "price": 320000,
+    "price": 309900,
     "beds": null,
     "baths": null,
     "sqft": "2530",
@@ -39345,7 +39346,7 @@
     "agentName": "Virginia Franzese",
     "agentPhone": "8167789434",
     "agentEmail": "",
-    "previousPrice": 325000
+    "previousPrice": 320000
   },
   {
     "slug": "1727-main-st-rose-hill-ks-667967",
@@ -72413,7 +72414,7 @@
     "state": "KS",
     "lat": 37.740702,
     "lng": -97.482608,
-    "price": 185000,
+    "price": 182500,
     "beds": 3,
     "baths": 2,
     "sqft": "1158",
@@ -72426,7 +72427,7 @@
     "agentName": "Boone Downing",
     "agentPhone": "3168471471",
     "agentEmail": "",
-    "previousPrice": 189000
+    "previousPrice": 185000
   },
   {
     "slug": "1408-meridian-rd-peck-ks-675905",
@@ -74883,7 +74884,7 @@
     "state": "KS",
     "lat": 37.653363,
     "lng": -97.368978,
-    "price": 175000,
+    "price": 169900,
     "beds": 3,
     "baths": 1,
     "sqft": "1068",
@@ -74896,7 +74897,7 @@
     "agentName": "Oricel Iron Wing",
     "agentPhone": "3168336248",
     "agentEmail": "",
-    "previousPrice": 179500
+    "previousPrice": 175000
   },
   {
     "slug": "lot-7-block-a-prairie-preserve-addition-bel-aire-ks-668276",
@@ -85205,7 +85206,7 @@
     "state": "KS",
     "lat": 38.740229,
     "lng": -98.031342,
-    "price": 150000,
+    "price": 140000,
     "beds": 2,
     "baths": 1,
     "sqft": "1240",
@@ -85218,7 +85219,7 @@
     "agentName": "Jody Karlin",
     "agentPhone": "7852314617",
     "agentEmail": "",
-    "previousPrice": 155000
+    "previousPrice": 150000
   },
   {
     "slug": "706-piatt-ave-wichita-ks-675223",
@@ -92728,7 +92729,7 @@
     "state": "KS",
     "lat": 37.90119891,
     "lng": -97.78123938,
-    "price": 119400,
+    "price": 115000,
     "beds": 2,
     "baths": 1,
     "sqft": "948",
@@ -92741,7 +92742,7 @@
     "agentName": "Jessica Schmidt",
     "agentPhone": "6202811800",
     "agentEmail": "",
-    "previousPrice": 119900
+    "previousPrice": 119400
   },
   {
     "slug": "1147-main-st-wichita-ks-678295",
@@ -98921,7 +98922,7 @@
     "state": "KS",
     "lat": 37.663525,
     "lng": -97.377023,
-    "price": 95000,
+    "price": 90000,
     "beds": 2,
     "baths": 1,
     "sqft": "720",
@@ -98934,7 +98935,7 @@
     "agentName": "Jessika E Mayer",
     "agentPhone": "3168074856",
     "agentEmail": "",
-    "previousPrice": 97500
+    "previousPrice": 95000
   },
   {
     "slug": "812-maris-st-winfield-ks-677735",
@@ -107815,7 +107816,7 @@
     "state": "KS",
     "lat": 37.1712674,
     "lng": -96.99301268,
-    "price": 69000,
+    "price": 79000,
     "beds": null,
     "baths": null,
     "sqft": null,

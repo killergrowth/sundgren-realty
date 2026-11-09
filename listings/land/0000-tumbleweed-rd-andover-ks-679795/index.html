@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Land</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Land</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -123,7 +123,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Located just 4.5 miles northeast of the Andover city limits, this property offers an excellent opportunity to build your country home while enjoying the space, privacy, and recreational benefits of rural living. Situated along well-maintained gravel Southwest Tumbleweed Road and just over a mile from pavement, the property provides convenient access to Andover, Wichita, I-35, K-254, and Kellogg while remaining comfortably outside the city. The property is located within the highly sought-after Andover School District, with electric available in the road right-of-way and a 4-inch rural water line running along Tumbleweed Road. Approximately 35 acres are farmable and currently sitting fallow, providing flexibility for future agricultural use, hay production, food plots, or additional native cover. Another approximately 18 acres consist of grown-up pasture with thick cover and a wet-weather drainage creek winding through the property. This portion provides excellent habitat and creates opportunities for hunting, wildlife viewing, exploring, and other outdoor recreation right out your back door. With a combination of open acreage and established cover, the property offers several possibilities for someone looking to establish a rural homesite without giving up recreational land. Whether your vision includes a country home, shop, livestock, hunting ground, or simply room to enjoy the outdoors, this property provides the versatility to make it your own. Mineral rights are believed to be intact and will transfer with the property. A boundary survey will be completed during the contract to closing period. For questions or to schedule a time to view the property, contact the listing agent, Shaun Reid</p>
     </div>
@@ -151,8 +153,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -162,13 +164,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="0000 Tumbleweed Rd, Andover, KS, 67002">
-        <input type="hidden" name="message" value="I am interested in the property at 0000 Tumbleweed Rd, Andover, KS, 67002 (MLS# 679795). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 0000 Tumbleweed Rd, Andover, KS, 67002 (MLS# 679795). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
