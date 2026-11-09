@@ -1,5 +1,5 @@
 {
-  "lastFetch": "2026-11-09T10:59:07.160Z",
+  "lastFetch": "2026-11-09T22:00:08.404Z",
   "auctions": {
     "24096": {
       "slug": "test-auction-24096",
@@ -3006,6 +3006,12 @@
       "status": "pending",
       "name": "Moveable Tiny Home",
       "generated": "2026-11-04T01:04:27.626Z"
+    },
+    "173582": {
+      "slug": "14547-sw-210th-st-rose-hill-ks-67133-3-bed-2-bath-home-60-x-173582",
+      "status": "pending",
+      "name": "14547 SW 210th St, Rose Hill KS 67133 – 3 Bed 2 Bath Home & 60′ x 45′ Shop",
+      "generated": "2026-11-09T22:00:16.055Z"
     }
   }
 }
