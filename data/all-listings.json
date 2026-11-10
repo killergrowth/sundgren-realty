@@ -98898,7 +98898,7 @@
     "state": "KS",
     "lat": 38.835381,
     "lng": -97.612819,
-    "price": 99000,
+    "price": 95000,
     "beds": 3,
     "baths": 1,
     "sqft": "1388",
@@ -98911,7 +98911,7 @@
     "agentName": "Kimberlie Jarvis-Ryff",
     "agentPhone": "7855758616",
     "agentEmail": "",
-    "previousPrice": 110000
+    "previousPrice": 99000
   },
   {
     "slug": "1715-saint-paul-st-wichita-ks-677711",
@@ -101147,7 +101147,7 @@
     "state": "KS",
     "lat": 38.852982,
     "lng": -97.612158,
-    "price": 89000,
+    "price": 85000,
     "beds": 4,
     "baths": 1,
     "sqft": "1297",
@@ -101160,7 +101160,7 @@
     "agentName": "Kimberlie Jarvis-Ryff",
     "agentPhone": "7855758616",
     "agentEmail": "",
-    "previousPrice": 99000
+    "previousPrice": 89000
   },
   {
     "slug": "1608-delmar-st-wichita-ks-673713",
