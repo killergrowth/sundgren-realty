@@ -1,5 +1,5 @@
 {
-  "lastFetch": "2026-11-10T06:16:31.416Z",
+  "lastFetch": "2026-11-10T22:55:19.426Z",
   "auctions": {
     "24096": {
       "slug": "test-auction-24096",
@@ -2919,9 +2919,10 @@
     },
     "171491": {
       "slug": "2-tracts-160-acres-w-home-buildings-land-north-of-peabody-in-171491",
-      "status": "accepting_bids",
+      "status": "complete",
       "name": "2 Tracts: 160+- Acres w/ Home, Buildings & Land North of Peabody in Marion County, Kansas",
-      "generated": "2026-10-09T10:09:55.452Z"
+      "generated": "2026-10-09T10:09:55.452Z",
+      "updated": "2026-11-10T22:55:22.867Z"
     },
     "171494": {
       "slug": "2-80-acre-premium-hunting-land-tracts-cowley-county-kansas-171494",
@@ -2943,9 +2944,10 @@
     },
     "171813": {
       "slug": "1158-acres-farm-house-barns-pasture-near-toronto-in-greenwoo-171813",
-      "status": "pending",
+      "status": "accepting_bids",
       "name": "115.8 Acres Farm House, Barns & Pasture near Toronto in Greenwood County, Kansas",
-      "generated": "2026-10-14T00:11:16.739Z"
+      "generated": "2026-10-14T00:11:16.739Z",
+      "updated": "2026-11-10T22:55:22.853Z"
     },
     "171835": {
       "slug": "1120-acres-kansas-native-bluestem-pasture-ranch-woodson-coun-171835",
