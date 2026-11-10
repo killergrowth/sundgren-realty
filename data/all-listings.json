@@ -14663,7 +14663,7 @@
     "state": "KS",
     "lat": 37.696291,
     "lng": -97.157124,
-    "price": 520000,
+    "price": 515000,
     "beds": 4,
     "baths": 3,
     "sqft": "3110",
@@ -14675,7 +14675,8 @@
     "isSundgren": false,
     "agentName": "Josh Roy",
     "agentPhone": "3166656799",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 520000
   },
   {
     "slug": "3227-grey-meadow-wichita-ks-677930",
@@ -23105,7 +23106,7 @@
     "state": "KS",
     "lat": 37.841358,
     "lng": -96.842172,
-    "price": 370000,
+    "price": 350000,
     "beds": 5,
     "baths": 4,
     "sqft": "3477",
@@ -23118,7 +23119,7 @@
     "agentName": "Zac Sundgren",
     "agentPhone": "3163225812",
     "agentEmail": "",
-    "previousPrice": 395000
+    "previousPrice": 370000
   },
   {
     "slug": "54265428-briskbay-ct-maize-ks-677655",
@@ -42231,7 +42232,7 @@
     "state": "KS",
     "lat": 37.215656,
     "lng": -96.989506,
-    "price": 299000,
+    "price": 288000,
     "beds": 5,
     "baths": 3,
     "sqft": "2534",
@@ -42244,7 +42245,7 @@
     "agentName": "Brianna Brooks",
     "agentPhone": "6204413575",
     "agentEmail": "",
-    "previousPrice": 310000
+    "previousPrice": 299000
   },
   {
     "slug": "444-greenvalley-dr-andover-ks-677163",
@@ -45087,7 +45088,7 @@
     "state": "KS",
     "lat": 37.697404,
     "lng": -97.453749,
-    "price": 289000,
+    "price": 280000,
     "beds": 4,
     "baths": 2,
     "sqft": "2166",
@@ -45100,7 +45101,7 @@
     "agentName": "Heather L Hogan",
     "agentPhone": "3162137562",
     "agentEmail": "",
-    "previousPrice": 295000
+    "previousPrice": 289000
   },
   {
     "slug": "904-5th-ave-winfield-ks-671903",
@@ -46990,7 +46991,7 @@
     "state": "KS",
     "lat": 38.35972099,
     "lng": -97.673765,
-    "price": 274900,
+    "price": 269900,
     "beds": 4,
     "baths": 3,
     "sqft": "2789",
@@ -47003,7 +47004,7 @@
     "agentName": "Larry Showalter",
     "agentPhone": "7857664497",
     "agentEmail": "",
-    "previousPrice": 279900
+    "previousPrice": 274900
   },
   {
     "slug": "2720-beacon-hill-wichita-ks-672567",
@@ -125031,7 +125032,7 @@
     "state": "KS",
     "lat": 37.50825146,
     "lng": -97.48972171,
-    "price": 23000,
+    "price": 18500,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -125044,7 +125045,7 @@
     "agentName": "Nela Bayouth",
     "agentPhone": "3163935259",
     "agentEmail": "",
-    "previousPrice": 27000
+    "previousPrice": 23000
   },
   {
     "slug": "lot-6-block-a-park-city-ks-626998",

@@ -112,12 +112,14 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Land</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Land</span></div></div>
 
         
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>157± Acres - Barber County, Kansas Land Auction - Hazelton Area Saturday, November 7, 2026, at 10:00 a.m. Off-Site at the Kiowa Community Building - Kiowa, Kansas Live Auction with Online Bidding We are honored to offer approximately 157 acres of Barber County grassland in the Hazelton area-an opportunity to expand a livestock operation or purchase a rural land investment in south-central Kansas. The property features open pasture, gently rolling terrain, a pond, and scattered trees and brush along natural drainage areas. Road frontage along two sides provides convenient access, while the combination of grazing land, water, and pockets of cover adds appeal for agricultural use and outdoor recreation. Whether you are adding to an existing operation or purchasing your first tract, this farm deserves a look. Legal Description: Southeast Quarter of Section 9, Township 33 South, Range 10 West, Barber County, Kansas, less road right-of-way. Surface Rights Only: No mineral rights are included. Possession: At closing. Auction Date: Saturday, November 7, 2026 Time: 10:00 a.m. Auction Location: Kiowa Community Building, 119 S. 5th St., Kiowa, KS 67070 Property Location / Directions: From State Highway 2 and Tri-City Blacktop in Hazelton, travel north on Tri-City Road approximately 6 miles to SE Crooked Post Road. The property lies northwest of the intersection. Travel west on Crooked Post Road along the farm’s southern boundary, with the property on the north side of the road. Watch for auction signs. Auction Terms: A 10% buyer’s premium will be added to the winning bid to establish the total contract purchase price. A $10,000 earnest money deposit is due upon signing the purchase contract. The property is being sold “AS-IS, WHERE-IS,” without warranty or guarantee of any kind. Prospective buyers are encouraged to conduct their own independent inspections, investigations, and due diligence before bidding. Property descriptions are believed to be accurate but are not guaranteed. The sale is not contingent upon financing or inspections. Buyers may obtain financing but must make their arrangements before bidding and be prepared to complete the purchase under the auction contract terms. Announcements made on auction day supersede previously published auction information.</p>
     </div>
@@ -145,8 +147,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -156,13 +158,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="10566 Crooked Post, Hazelton, KS, 67061">
-        <input type="hidden" name="message" value="I am interested in the property at 10566 Crooked Post, Hazelton, KS, 67061 (MLS# 680305). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 10566 Crooked Post, Hazelton, KS, 67061 (MLS# 680305). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
