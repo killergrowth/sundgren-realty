@@ -18946,7 +18946,7 @@
     "state": "KS",
     "lat": 37.628823,
     "lng": -97.234876,
-    "price": 454714,
+    "price": 448476,
     "beds": 5,
     "baths": 3,
     "sqft": "2564",
@@ -18958,7 +18958,8 @@
     "isSundgren": false,
     "agentName": "Jacob Gibbs",
     "agentPhone": "3162825676",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 454714
   },
   {
     "slug": "16911-woodberry-rd-mount-hope-ks-677654",
