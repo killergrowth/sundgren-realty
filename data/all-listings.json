@@ -20386,7 +20386,7 @@
     "state": "KS",
     "lat": 37.65488898,
     "lng": -97.19599601,
-    "price": 430000,
+    "price": 420000,
     "beds": 4,
     "baths": 4,
     "sqft": "2914",
@@ -20399,7 +20399,7 @@
     "agentName": "Karen Peters",
     "agentPhone": "3162139770",
     "agentEmail": "",
-    "previousPrice": 440000
+    "previousPrice": 430000
   },
   {
     "slug": "116-f-st-wellington-ks-674996",
@@ -48501,7 +48501,7 @@
     "state": "KS",
     "lat": 37.590326,
     "lng": -97.26811,
-    "price": 283900,
+    "price": 283800,
     "beds": 3,
     "baths": 3,
     "sqft": "1614",
@@ -48514,7 +48514,7 @@
     "agentName": "Huynhnhu Tran",
     "agentPhone": "3169904307",
     "agentEmail": "",
-    "previousPrice": 284000
+    "previousPrice": 283900
   },
   {
     "slug": "9404-hurst-st-wichita-ks-677984",
@@ -64572,7 +64572,7 @@
     "state": "KS",
     "lat": 38.879241,
     "lng": -97.505273,
-    "price": 210000,
+    "price": 189900,
     "beds": 3,
     "baths": 1,
     "sqft": "1100",
@@ -64585,7 +64585,7 @@
     "agentName": "Tammy Shirack",
     "agentPhone": "7854932984",
     "agentEmail": "",
-    "previousPrice": 220000
+    "previousPrice": 210000
   },
   {
     "slug": "211-brookside-pkwy-wichita-ks-677008",
@@ -65082,7 +65082,7 @@
     "state": "KS",
     "lat": 37.690222,
     "lng": -97.30625,
-    "price": 209900,
+    "price": 199900,
     "beds": 5,
     "baths": 2,
     "sqft": "2073",
@@ -65095,7 +65095,7 @@
     "agentName": "Michelle M Crouch",
     "agentPhone": "3164611405",
     "agentEmail": "",
-    "previousPrice": 214900
+    "previousPrice": 209900
   },
   {
     "slug": "1007-lingonberry-ln-lindsborg-ks-676876",
@@ -67799,7 +67799,7 @@
     "state": "KS",
     "lat": 37.658492,
     "lng": -97.362256,
-    "price": 199900,
+    "price": 195000,
     "beds": 3,
     "baths": 2,
     "sqft": "1244",
@@ -67812,7 +67812,7 @@
     "agentName": "Jordan Hoefler",
     "agentPhone": "3162599333",
     "agentEmail": "",
-    "previousPrice": 209999
+    "previousPrice": 199900
   },
   {
     "slug": "2614-executive-way-wichita-ks-678421",
@@ -70657,7 +70657,7 @@
     "state": "KS",
     "lat": 37.712483,
     "lng": -97.341595,
-    "price": 194000,
+    "price": 191500,
     "beds": 5,
     "baths": 2,
     "sqft": "2139",
@@ -70670,7 +70670,7 @@
     "agentName": "Jamie Love",
     "agentPhone": "3167122055",
     "agentEmail": "",
-    "previousPrice": 199000
+    "previousPrice": 194000
   },
   {
     "slug": "1908-cypress-ln-newton-ks-678009",
@@ -74959,7 +74959,7 @@
     "state": "KS",
     "lat": 37.243281,
     "lng": -96.97492,
-    "price": 175000,
+    "price": 170000,
     "beds": 3,
     "baths": 2,
     "sqft": "1509",
@@ -74972,7 +74972,7 @@
     "agentName": "Katie Minton",
     "agentPhone": "6202293432",
     "agentEmail": "",
-    "previousPrice": 180000
+    "previousPrice": 175000
   },
   {
     "slug": "10607-nantucket-st-wichita-ks-678167",
@@ -94753,7 +94753,7 @@
     "state": "KS",
     "lat": 37.388968,
     "lng": -97.123582,
-    "price": 115000,
+    "price": 95000,
     "beds": 4,
     "baths": 2,
     "sqft": "2148",
@@ -94766,7 +94766,7 @@
     "agentName": "Chi M McKanlam",
     "agentPhone": "3168062859",
     "agentEmail": "",
-    "previousPrice": 125000
+    "previousPrice": 115000
   },
   {
     "slug": "525-santa-fe-st-newton-ks-674901",

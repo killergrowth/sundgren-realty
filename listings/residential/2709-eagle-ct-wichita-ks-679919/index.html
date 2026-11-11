@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>**Room to live, light to love, and custom details throughout!** Welcome to 2709 N Eagle Ct., a custom-built home by Prairie Construction on a large cul-de-sac lot. With five bedrooms, a bonus room, three bathrooms, 3,146 square feet, and a three-car garage, this home offers generous space and features galore: - **Oversized primary suite** featuring a soaker tub and a convenient connection to the main-floor laundry room. - **Expansive main-floor living area** with wide-open spaces—perfect for entertaining guests or sharing dinner with friends and family. - **Tall ceilings and oversized windows** that create a bright, airy atmosphere. - **Custom built-ins** that add character and practical storage. - **Walk-in pantry** to keep kitchen essentials organized and within reach. - **Insulated third-car garage bay with a separate door**—perfect for a man cave, workshop, or hobby space. - **Spacious lower level** featuring an oversized family room, a bar, two spacious bedrooms, a bathroom, and ample storage. - **Versatile bonus room** ideal for a home office or workout space. - **Large backyard** with plenty of room for outdoor entertaining, play, and relaxation. With room to gather, unwind, and make yourself at home, this property brings together comfortable living and thoughtful custom details. Come experience what makes it special!</p>
     </div>
@@ -209,8 +211,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -220,13 +222,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="2709 Eagle Ct, Wichita, KS, 67226">
-        <input type="hidden" name="message" value="I am interested in the property at 2709 Eagle Ct, Wichita, KS, 67226 (MLS# 679919). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 2709 Eagle Ct, Wichita, KS, 67226 (MLS# 679919). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
