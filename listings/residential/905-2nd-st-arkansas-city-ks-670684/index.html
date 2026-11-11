@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-terminated pill">Inactive</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Offered well below its recent appraised value of $345,400, this beautifully preserved Arts &amp; Crafts home, originally built in 1916 by Anthony Carlton, offers a rare and captivating opportunity for an owner who values history and craftsmanship. You will find that one of the most significant features of this home is the recent full roof replacements on BOTH the main house and carriage house, completed in March 2026 using durable concrete tile—providing exceptional longevity, peace of mind, and long-term value. This early twentieth century prairie house is rich in history and character, this home was crafted by Mr. Carlton, an Osage Native and former tribal councilman, and continues to reflect the craftsmanship of its era while thoughtfully incorporating today’s conveniences. From the moment you step inside, you’re welcomed by professionally refinished hardwood floors that span the main level, setting the tone for the warmth and sophistication found throughout. The home’s original charm is beautifully complemented by modern updates, including renovated bathrooms with new fixtures, updated tile, and a newly added second-floor bath—ideal for a growing household. The fully transformed basement offers a private and functional living space, perfect as a guest suite or income-producing apartment. With its own updated bathroom and comfortable layout, it provides flexibility and the opportunity to generate additional monthly income. Beyond its character, this home has been extensively improved for comfort and efficiency. Additional recent upgrades include new gutter guards (2026), a new flat roof over the sunroom (2026), updated window well covers, a new hot water heater (2025), and a new sump pump (2025). An added upstairs air conditioning unit ensures comfort during warmer months. The kitchen features a brand-new convection oven (2025) and newer refrigerator (2024), while fresh interior paint, updated cabinetry, and new window treatments throughout create a clean, cohesive feel. The exterior has also been fully refreshed with new paint and caulking (2024), and the carriage house has undergone a complete remodel, showcasing the attention to detail throughout the property. Step outside to a spacious backyard retreat designed for both relaxation and entertaining. A custom-built structure with electricity creates the perfect gathering space. Additional highlights include new ceiling fans, a cozy fireplace insert in the sunroom, a water softener, and historically inspired paint selections that honor the home’s original era. This is more than just a home—it’s a rare combination of historic charm, thoughtful upgrades, and income potential. With major improvements already completed—including the new concrete tile roofs on both structures—this property offers both beauty and long-term confidence. Schedule your private showing today and experience a home where history and modern living come together seamlessly. Listing agent to accompany all showings. Please allow adequate notice when scheduling to ensure listing agent availability</p>
     </div>
@@ -197,8 +199,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -208,13 +210,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="905 2nd St, Arkansas City, KS, 67005">
-        <input type="hidden" name="message" value="I am interested in the property at 905 2nd St, Arkansas City, KS, 67005 (MLS# 670684). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 905 2nd St, Arkansas City, KS, 67005 (MLS# 670684). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
