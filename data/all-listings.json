@@ -1841,7 +1841,7 @@
     "state": "KS",
     "lat": 37.640981,
     "lng": -97.278542,
-    "price": 3230000,
+    "price": 3150000,
     "beds": null,
     "baths": null,
     "sqft": "21996",
@@ -1854,7 +1854,7 @@
     "agentName": "Basem Krichati",
     "agentPhone": "3165160139",
     "agentEmail": "",
-    "previousPrice": 3250000
+    "previousPrice": 3230000
   },
   {
     "slug": "35483574-tyler-ct-wichita-ks-667791",
@@ -1957,7 +1957,7 @@
     "state": "KS",
     "lat": 37.77582,
     "lng": -97.232947,
-    "price": 2920000,
+    "price": 2700000,
     "beds": null,
     "baths": null,
     "sqft": "18400",
@@ -1969,7 +1969,8 @@
     "isSundgren": false,
     "agentName": "Basem Krichati",
     "agentPhone": "3165160139",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 2920000
   },
   {
     "slug": "0000-37th-st-n-wichita-ks-648628",
@@ -41374,7 +41375,7 @@
     "state": "KS",
     "lat": 37.77532,
     "lng": -97.232749,
-    "price": 317000,
+    "price": 314900,
     "beds": 4,
     "baths": 3,
     "sqft": "2312",
@@ -41386,7 +41387,8 @@
     "isSundgren": false,
     "agentName": "Basem Krichati",
     "agentPhone": "3165160139",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 317000
   },
   {
     "slug": "8961-joshua-st-bel-aire-ks-675481",
@@ -75724,7 +75726,7 @@
     "state": "KS",
     "lat": 37.598205,
     "lng": -97.351955,
-    "price": 164900,
+    "price": 154900,
     "beds": 2,
     "baths": 2,
     "sqft": "1188",
@@ -75737,7 +75739,7 @@
     "agentName": "Eric Malone",
     "agentPhone": "3162527498",
     "agentEmail": "",
-    "previousPrice": 174900
+    "previousPrice": 164900
   },
   {
     "slug": "1401-hornecker-dr-wichita-ks-677928",
@@ -79837,7 +79839,7 @@
     "state": "KS",
     "lat": 38.837794,
     "lng": -97.605969,
-    "price": 173000,
+    "price": 179000,
     "beds": 5,
     "baths": 3,
     "sqft": "1957",
@@ -129410,7 +129412,7 @@
     "state": "KS",
     "lat": 38.83625901,
     "lng": -97.61893201,
-    "price": 9500,
+    "price": 8500,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -129423,7 +129425,7 @@
     "agentName": "Tammy Rank",
     "agentPhone": "7853429359",
     "agentEmail": "",
-    "previousPrice": 10500
+    "previousPrice": 9500
   },
   {
     "slug": "1539-pershing-ave-wichita-ks-667318",
