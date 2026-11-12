@@ -1,5 +1,5 @@
 {
-  "lastFetch": "2026-11-12T06:04:08.599Z",
+  "lastFetch": "2026-11-12T17:24:22.370Z",
   "auctions": {
     "24096": {
       "slug": "test-auction-24096",
@@ -2913,9 +2913,10 @@
     },
     "171464": {
       "slug": "594-acres-west-of-andale-in-sedgwick-county-kansas-selling-i-171464",
-      "status": "accepting_bids",
+      "status": "complete",
       "name": "59.4+- Acres West of Andale in Sedgwick County, Kansas Selling in 2 Tracts",
-      "generated": "2026-10-09T01:01:15.260Z"
+      "generated": "2026-10-09T01:01:15.260Z",
+      "updated": "2026-11-12T17:24:27.104Z"
     },
     "171491": {
       "slug": "2-tracts-160-acres-w-home-buildings-land-north-of-peabody-in-171491",
@@ -2939,8 +2940,7 @@
       "slug": "rolling-hills-estates-condominium-120-s-maize-rd-unit-23-wic-171552",
       "status": "complete",
       "name": "Rolling Hills Estates Condominium: 120 N Maize Rd. Unit 23, Wichita and Personal Property Auction",
-      "generated": "2026-10-10T09:31:23.301Z",
-      "updated": "2026-11-12T06:04:10.679Z"
+      "generated": "2026-10-10T09:31:23.301Z"
     },
     "171813": {
       "slug": "1158-acres-farm-house-barns-pasture-near-toronto-in-greenwoo-171813",
@@ -2962,9 +2962,10 @@
     },
     "172247": {
       "slug": "307-acres-west-of-peabody-in-marion-county-ks-2-tracts-172247",
-      "status": "pending",
+      "status": "accepting_bids",
       "name": "307+- Acres West of Peabody in Marion County, KS – 2 Tracts",
-      "generated": "2026-10-20T18:58:42.395Z"
+      "generated": "2026-10-20T18:58:42.395Z",
+      "updated": "2026-11-12T17:24:27.096Z"
     },
     "172468": {
       "slug": "old-vehicles-tractors-implements-tools-scrap-iron-live-aucti-172468",
