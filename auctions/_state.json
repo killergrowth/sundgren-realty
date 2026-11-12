@@ -1,5 +1,5 @@
 {
-  "lastFetch": "2026-11-11T21:45:52.682Z",
+  "lastFetch": "2026-11-12T06:04:08.599Z",
   "auctions": {
     "24096": {
       "slug": "test-auction-24096",
@@ -2937,9 +2937,10 @@
     },
     "171552": {
       "slug": "rolling-hills-estates-condominium-120-s-maize-rd-unit-23-wic-171552",
-      "status": "accepting_bids",
+      "status": "complete",
       "name": "Rolling Hills Estates Condominium: 120 N Maize Rd. Unit 23, Wichita and Personal Property Auction",
-      "generated": "2026-10-10T09:31:23.301Z"
+      "generated": "2026-10-10T09:31:23.301Z",
+      "updated": "2026-11-12T06:04:10.679Z"
     },
     "171813": {
       "slug": "1158-acres-farm-house-barns-pasture-near-toronto-in-greenwoo-171813",
@@ -2957,8 +2958,7 @@
       "slug": "320-acres-butler-county-kansas-native-flint-hills-pasture-2-171923",
       "status": "accepting_bids",
       "name": "320+- Acres Butler County, Kansas Native Flint Hills Pasture – 2 Tracts",
-      "generated": "2026-10-15T16:27:44.450Z",
-      "updated": "2026-11-11T21:45:59.029Z"
+      "generated": "2026-10-15T16:27:44.450Z"
     },
     "172247": {
       "slug": "307-acres-west-of-peabody-in-marion-county-ks-2-tracts-172247",
