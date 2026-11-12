@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-terminated pill">Inactive</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>There’s a certain feeling you get the moment you step inside this home—something warm, familiar, and full of possibility. Tucked quietly at the end of a cul-de-sac in the Maize School District, this 4-bedroom, 3-bath home has been lived in, loved in, and is now ready for its next chapter. The living room greets you first, with the soft crackle of a wood-burning fireplace and space that naturally draws people together. Just beyond, the kitchen becomes the heart of the home—granite island, easy flow, and cabinets that have seen countless meals and memories. The main-floor laundry sits conveniently nearby, keeping everyday life simple. Down the hall, the primary suite offers a quiet retreat with a double granite vanity and walk-in closet. Two additional main-floor bedrooms complete the upstairs layout; each filled with natural light. Head downstairs and the story continues: a fourth bedroom, a massive bonus room currently used as a teenager’s gaming haven, and storage for everything life brings with it. It’s a space that can evolve with you—movie nights, hobbies, home office, or whatever your next chapter needs. Outside, the backyard stretches wide beneath mature trees, offering shade, privacy, and room to breathe. The wood fence frames it all, creating a space ready for gatherings, quiet mornings, or simple evenings at home. Yes, the home needs a bit of TLC—but that’s where the opportunity lives. With the right vision, this becomes a place you shape, improve, and grow into. Sweat equity is waiting for the buyer who sees the potential behind every room. All this home really needs is… you.</p>
     </div>
@@ -201,8 +203,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -212,13 +214,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="2718 Parkridge Ct, Wichita, KS, 67205">
-        <input type="hidden" name="message" value="I am interested in the property at 2718 Parkridge Ct, Wichita, KS, 67205 (MLS# 679571). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 2718 Parkridge Ct, Wichita, KS, 67205 (MLS# 679571). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
