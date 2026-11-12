@@ -220,7 +220,7 @@
     "state": "KS",
     "lat": 37.205362,
     "lng": -97.000956,
-    "price": 345000,
+    "price": 325000,
     "beds": 2,
     "baths": 1,
     "sqft": "1152",
@@ -233,7 +233,7 @@
     "agentName": "Tamara Cooley",
     "agentPhone": "6202222356",
     "agentEmail": "",
-    "previousPrice": 354900
+    "previousPrice": 345000
   },
   {
     "slug": "635-central-ave-el-dorado-ks-675644",
@@ -2972,7 +2972,7 @@
     "state": "KS",
     "lat": 37.76825524,
     "lng": -97.42708755,
-    "price": 1500000,
+    "price": 1300000,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -2984,7 +2984,8 @@
     "isSundgren": false,
     "agentName": "Shannon Gaskill",
     "agentPhone": "3162002136",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 1500000
   },
   {
     "slug": "3412-bedford-court-wichita-ks-678384",
