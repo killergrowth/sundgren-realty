@@ -1,5 +1,5 @@
 {
-  "lastFetch": "2026-11-12T17:24:22.370Z",
+  "lastFetch": "2026-11-12T23:16:35.191Z",
   "auctions": {
     "24096": {
       "slug": "test-auction-24096",
@@ -2915,8 +2915,7 @@
       "slug": "594-acres-west-of-andale-in-sedgwick-county-kansas-selling-i-171464",
       "status": "complete",
       "name": "59.4+- Acres West of Andale in Sedgwick County, Kansas Selling in 2 Tracts",
-      "generated": "2026-10-09T01:01:15.260Z",
-      "updated": "2026-11-12T17:24:27.104Z"
+      "generated": "2026-10-09T01:01:15.260Z"
     },
     "171491": {
       "slug": "2-tracts-160-acres-w-home-buildings-land-north-of-peabody-in-171491",
@@ -2926,9 +2925,10 @@
     },
     "171494": {
       "slug": "2-80-acre-premium-hunting-land-tracts-cowley-county-kansas-171494",
-      "status": "accepting_bids",
+      "status": "complete",
       "name": "(2) 80+- Acre Premium Hunting Land Tracts – Cowley County, Kansas",
-      "generated": "2026-10-09T10:09:55.454Z"
+      "generated": "2026-10-09T10:09:55.454Z",
+      "updated": "2026-11-12T23:16:38.345Z"
     },
     "171497": {
       "slug": "guns-ammo-oil-cans-antiques-171497",
@@ -2964,8 +2964,7 @@
       "slug": "307-acres-west-of-peabody-in-marion-county-ks-2-tracts-172247",
       "status": "accepting_bids",
       "name": "307+- Acres West of Peabody in Marion County, KS – 2 Tracts",
-      "generated": "2026-10-20T18:58:42.395Z",
-      "updated": "2026-11-12T17:24:27.096Z"
+      "generated": "2026-10-20T18:58:42.395Z"
     },
     "172468": {
       "slug": "old-vehicles-tractors-implements-tools-scrap-iron-live-aucti-172468",
