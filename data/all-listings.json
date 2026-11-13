@@ -12599,7 +12599,7 @@
     "state": "KS",
     "lat": 37.707462,
     "lng": -97.475228,
-    "price": 524900,
+    "price": 497400,
     "beds": 5,
     "baths": 4,
     "sqft": "3893",
@@ -12612,7 +12612,7 @@
     "agentName": "Debi Strange",
     "agentPhone": "3168064860",
     "agentEmail": "",
-    "previousPrice": 539000
+    "previousPrice": 524900
   },
   {
     "slug": "4809-portwest-st-wichita-ks-675299",
@@ -26684,7 +26684,7 @@
     "state": "KS",
     "lat": 37.640712,
     "lng": -97.460624,
-    "price": 385000,
+    "price": 375000,
     "beds": null,
     "baths": null,
     "sqft": "2752",
@@ -26696,7 +26696,8 @@
     "isSundgren": false,
     "agentName": "Bree Russell",
     "agentPhone": "3165167417",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 385000
   },
   {
     "slug": "2908-denene-st-wichita-ks-676990",
@@ -26707,7 +26708,7 @@
     "state": "KS",
     "lat": 37.641498,
     "lng": -97.46064,
-    "price": 385000,
+    "price": 375000,
     "beds": null,
     "baths": null,
     "sqft": "2752",
@@ -26719,7 +26720,8 @@
     "isSundgren": false,
     "agentName": "Bree Russell",
     "agentPhone": "3165167417",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 385000
   },
   {
     "slug": "925-honeybrook-ln-derby-ks-676502",
@@ -30740,7 +30742,7 @@
     "state": "KS",
     "lat": 37.641303,
     "lng": -97.460636,
-    "price": 369000,
+    "price": 360000,
     "beds": null,
     "baths": null,
     "sqft": "2364",
@@ -30752,7 +30754,8 @@
     "isSundgren": false,
     "agentName": "Bree Russell",
     "agentPhone": "3165167417",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 369000
   },
   {
     "slug": "2920-denene-st-wichita-ks-677011",
@@ -30763,7 +30766,7 @@
     "state": "KS",
     "lat": 37.640907,
     "lng": -97.460628,
-    "price": 369000,
+    "price": 360000,
     "beds": null,
     "baths": null,
     "sqft": "2440",
@@ -30775,7 +30778,8 @@
     "isSundgren": false,
     "agentName": "Bree Russell",
     "agentPhone": "3165167417",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 369000
   },
   {
     "slug": "2738-ironstone-st-park-city-ks-676653",
@@ -31770,7 +31774,7 @@
     "state": "KS",
     "lat": 37.641698,
     "lng": -97.460625,
-    "price": 365000,
+    "price": 360000,
     "beds": null,
     "baths": null,
     "sqft": "2364",
@@ -31782,7 +31786,8 @@
     "isSundgren": false,
     "agentName": "Bree Russell",
     "agentPhone": "3165167417",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 365000
   },
   {
     "slug": "2928-denene-st-wichita-ks-676889",
@@ -31793,7 +31798,7 @@
     "state": "KS",
     "lat": 37.640513,
     "lng": -97.460602,
-    "price": 365000,
+    "price": 360000,
     "beds": null,
     "baths": null,
     "sqft": "2364",
@@ -31805,7 +31810,8 @@
     "isSundgren": false,
     "agentName": "Bree Russell",
     "agentPhone": "3165167417",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 365000
   },
   {
     "slug": "195-arbor-valley-way-valley-center-ks-676784",
@@ -36152,7 +36158,7 @@
     "state": "KS",
     "lat": 37.840842,
     "lng": -96.848614,
-    "price": 335000,
+    "price": 325000,
     "beds": 5,
     "baths": 4,
     "sqft": "2667",
@@ -36165,7 +36171,7 @@
     "agentName": "Micaela Jacquemin",
     "agentPhone": "6205832916",
     "agentEmail": "",
-    "previousPrice": 343000
+    "previousPrice": 335000
   },
   {
     "slug": "123-sunset-dr-andover-ks-636981",
@@ -46064,7 +46070,7 @@
     "state": "KS",
     "lat": 37.658824,
     "lng": -97.216802,
-    "price": 285000,
+    "price": 275000,
     "beds": 4,
     "baths": 3,
     "sqft": "2256",
@@ -46077,7 +46083,7 @@
     "agentName": "Michael K. Cheung",
     "agentPhone": "3165166453",
     "agentEmail": "",
-    "previousPrice": 290000
+    "previousPrice": 285000
   },
   {
     "slug": "1802-hoyt-cir-wichita-ks-675800",
@@ -68131,7 +68137,7 @@
     "state": "KS",
     "lat": 37.669761,
     "lng": -97.239051,
-    "price": 199000,
+    "price": 190999,
     "beds": 4,
     "baths": 2,
     "sqft": "1428",
@@ -68144,7 +68150,7 @@
     "agentName": "Braden McCurdy",
     "agentPhone": "3166830612",
     "agentEmail": "",
-    "previousPrice": 205000
+    "previousPrice": 199000
   },
   {
     "slug": "142-tracy-st-wichita-ks-677466",
@@ -70358,7 +70364,7 @@
     "state": "KS",
     "lat": 37.274028,
     "lng": -97.40473,
-    "price": 182500,
+    "price": 174500,
     "beds": null,
     "baths": null,
     "sqft": "1404",
@@ -70371,7 +70377,7 @@
     "agentName": "Pamela Hinman",
     "agentPhone": "6203262162",
     "agentEmail": "",
-    "previousPrice": 187500
+    "previousPrice": 182500
   },
   {
     "slug": "260-minneapolis-ave-wichita-ks-677457",
@@ -71493,7 +71499,7 @@
     "state": "KS",
     "lat": 37.641498,
     "lng": -97.46064,
-    "price": 195000,
+    "price": 189900,
     "beds": 4,
     "baths": 2,
     "sqft": "1376",
@@ -71505,7 +71511,8 @@
     "isSundgren": false,
     "agentName": "Bree Russell",
     "agentPhone": "3165167417",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 195000
   },
   {
     "slug": "2916-denene-st-wichita-ks-677299",
@@ -71516,7 +71523,7 @@
     "state": "KS",
     "lat": 37.641105,
     "lng": -97.460632,
-    "price": 195000,
+    "price": 182500,
     "beds": 4,
     "baths": 2,
     "sqft": "1376",
@@ -71528,7 +71535,8 @@
     "isSundgren": false,
     "agentName": "Bree Russell",
     "agentPhone": "3165167417",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 195000
   },
   {
     "slug": "2924-denene-st-wichita-ks-677302",
@@ -71539,7 +71547,7 @@
     "state": "KS",
     "lat": 37.640712,
     "lng": -97.460624,
-    "price": 195000,
+    "price": 189900,
     "beds": 4,
     "baths": 2,
     "sqft": "1376",
@@ -71551,7 +71559,8 @@
     "isSundgren": false,
     "agentName": "Bree Russell",
     "agentPhone": "3165167417",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 195000
   },
   {
     "slug": "2908-denene-st-wichita-ks-677254",
@@ -71562,7 +71571,7 @@
     "state": "KS",
     "lat": 37.641498,
     "lng": -97.46064,
-    "price": 195000,
+    "price": 189900,
     "beds": 4,
     "baths": 2,
     "sqft": "1376",
@@ -71574,7 +71583,8 @@
     "isSundgren": false,
     "agentName": "Bree Russell",
     "agentPhone": "3165167417",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 195000
   },
   {
     "slug": "2919-cedar-crest-ct-100-ct-wichita-ks-677129",
@@ -72001,7 +72011,7 @@
     "state": "KS",
     "lat": 37.641105,
     "lng": -97.460632,
-    "price": 195000,
+    "price": 189900,
     "beds": 4,
     "baths": 2,
     "sqft": "1376",
@@ -72013,7 +72023,8 @@
     "isSundgren": false,
     "agentName": "Bree Russell",
     "agentPhone": "3165167417",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 195000
   },
   {
     "slug": "622-broadview-st-wichita-ks-676772",
@@ -73898,7 +73909,7 @@
     "state": "KS",
     "lat": 37.640907,
     "lng": -97.460628,
-    "price": 189500,
+    "price": 182500,
     "beds": 3,
     "baths": 2,
     "sqft": "1220",
@@ -73910,7 +73921,8 @@
     "isSundgren": false,
     "agentName": "Bree Russell",
     "agentPhone": "3165167417",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 189500
   },
   {
     "slug": "2920-denene-st-wichita-ks-677300",
@@ -73921,7 +73933,7 @@
     "state": "KS",
     "lat": 37.640907,
     "lng": -97.460628,
-    "price": 189500,
+    "price": 182500,
     "beds": 3,
     "baths": 2,
     "sqft": "1220",
@@ -73933,7 +73945,8 @@
     "isSundgren": false,
     "agentName": "Bree Russell",
     "agentPhone": "3165167417",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 189500
   },
   {
     "slug": "2912-denene-st-wichita-ks-677257",
@@ -73944,7 +73957,7 @@
     "state": "KS",
     "lat": 37.641303,
     "lng": -97.460636,
-    "price": 189500,
+    "price": 182500,
     "beds": 3,
     "baths": 2,
     "sqft": "1220",
@@ -73956,7 +73969,8 @@
     "isSundgren": false,
     "agentName": "Bree Russell",
     "agentPhone": "3165167417",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 189500
   },
   {
     "slug": "2912-denene-st-wichita-ks-677256",
@@ -73967,7 +73981,7 @@
     "state": "KS",
     "lat": 37.641303,
     "lng": -97.460636,
-    "price": 189500,
+    "price": 182500,
     "beds": 3,
     "baths": 2,
     "sqft": "1220",
@@ -73979,7 +73993,8 @@
     "isSundgren": false,
     "agentName": "Bree Russell",
     "agentPhone": "3165167417",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 189500
   },
   {
     "slug": "436-long-path-ct-goddard-ks-676788",
