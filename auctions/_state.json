@@ -1,5 +1,5 @@
 {
-  "lastFetch": "2026-11-13T14:03:04.283Z",
+  "lastFetch": "2026-11-13T21:14:08.253Z",
   "auctions": {
     "24096": {
       "slug": "test-auction-24096",
@@ -2949,9 +2949,10 @@
     },
     "171835": {
       "slug": "1120-acres-kansas-native-bluestem-pasture-ranch-woodson-coun-171835",
-      "status": "pending",
+      "status": "accepting_bids",
       "name": "1,120+- Acres Kansas Native Bluestem Pasture Ranch – Woodson County, Kansas",
-      "generated": "2026-10-14T00:11:16.740Z"
+      "generated": "2026-10-14T00:11:16.740Z",
+      "updated": "2026-11-13T21:14:10.796Z"
     },
     "171923": {
       "slug": "320-acres-butler-county-kansas-native-flint-hills-pasture-2-171923",
@@ -3012,6 +3013,12 @@
       "status": "pending",
       "name": "14547 SW 210th St, Rose Hill KS 67133 – 3 Bed 2 Bath Home & 60′ x 45′ Shop",
       "generated": "2026-11-09T22:00:16.055Z"
+    },
+    "173950": {
+      "slug": "54-acres-pasture-trees-pond-tillable-near-whitewater-butler-173950",
+      "status": "pending",
+      "name": "54 Acres Pasture, Trees, Pond & Tillable Near Whitewater, Butler County, KS",
+      "generated": "2026-11-13T21:14:10.802Z"
     }
   }
 }
