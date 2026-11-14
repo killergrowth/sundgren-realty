@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -138,7 +138,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>This 3,048± square-foot commercial building is situated on approximately 3 acres near the Winfield Industrial Park. The property features a 2,400± square foot warehouse/shop area with two large overhead doors, along with 648± square feet of office and administrative space. Zoned Light Industrial, this property offers an excellent opportunity for a growing business seeking a functional facility with convenient access. Additional features include a large gravel parking area and a circular drive providing easy access around the building. With its desirable location and versatile layout, this property is well positioned for a variety of Industrial uses and is ready for its next owner. Square footage is based on county parcel records. Buyers and buyer&#39;s agents to independently verify all information deemed important to their purchase decision. All information is believed to be reliable but is not guaranteed.</p>
     </div>
@@ -148,7 +150,7 @@
     <div class="feat-grid">
     <div class="feat-cell">
       <i class="fas fa-fire"></i>
-      <div><span class="mlabel">Heating</span>Electric, Forced Air, Natural Gas</div>
+      <div><span class="mlabel">Heating</span>Natural Gas, Electric, Forced Air</div>
     </div>
     <div class="feat-cell">
       <i class="fas fa-snowflake"></i>
@@ -181,9 +183,9 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
     (function(){
-      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.240439,-96.957509],15);
+      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.240431,-96.957503],15);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap contributors',maxZoom:19}).addTo(map);
-      L.marker([37.240439,-96.957509]).addTo(map).bindPopup('3315 Central AVE, Winfield, KS 67156').openPopup();
+      L.marker([37.240431,-96.957503]).addTo(map).bindPopup('3315 Central AVE, Winfield, KS 67156').openPopup();
     })();
     </script>
   </div>
@@ -191,8 +193,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -202,13 +204,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="3315 Central AVE, Winfield, KS, 67156">
-        <input type="hidden" name="message" value="I am interested in the property at 3315 Central AVE, Winfield, KS, 67156 (MLS# 674369). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 3315 Central AVE, Winfield, KS, 67156 (MLS# 674369). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
