@@ -30673,7 +30673,7 @@
     "state": "KS",
     "lat": 37.58789187,
     "lng": -97.26745763,
-    "price": 369335,
+    "price": 370274,
     "beds": 5,
     "baths": 3,
     "sqft": "2565",
@@ -30685,8 +30685,7 @@
     "isSundgren": false,
     "agentName": "Shelly S Voss",
     "agentPhone": "3162000701",
-    "agentEmail": "",
-    "previousPrice": 369513
+    "agentEmail": ""
   },
   {
     "slug": "38403842-blue-lake-street-wichita-ks-677413",
@@ -83021,7 +83020,7 @@
     "state": "KS",
     "lat": 37.65917,
     "lng": -97.273534,
-    "price": 155000,
+    "price": 149900,
     "beds": 2,
     "baths": 2,
     "sqft": "1325",
@@ -83034,7 +83033,7 @@
     "agentName": "Anita Ealey",
     "agentPhone": "3162142303",
     "agentEmail": "",
-    "previousPrice": 160000
+    "previousPrice": 155000
   },
   {
     "slug": "1113-main-st-newton-ks-677961",
