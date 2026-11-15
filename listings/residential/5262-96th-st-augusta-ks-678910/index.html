@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-terminated pill">Inactive</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>This is more than a home—it’s your own private Kansas retreat! Nestled on nearly three scenic acres, this genuine log cabin combines rustic character, peaceful country living, and extensive recent improvements. Inside, soaring vaulted ceilings, exposed beams, beautiful log walls, fresh interior paint, and a newly finished main-level laundry room create a warm and welcoming atmosphere. Step onto the back deck and enjoy remarkable views from atop the bluff overlooking a former rock quarry and deep, fish-filled pond. Mature trees, multiple outdoor living areas, a covered front porch, an attached two-car garage, a refreshed gravel driveway, and a 50-amp RV/camper connection add convenience and versatility. Major improvements include a brand-new Rheem packaged HVAC system providing heating and cooling, a new water heater, a new water main, upgraded freeze-proof outdoor spigots, a new garbage disposal, new toilets, an updated upstairs vanity and sink faucets, fresh interior paint, refreshed porches, and new exterior steps. The HVAC system was replaced in September 2025 and includes a transferable 10-year warranty. The water heater was replaced in November 2025 and includes a transferable 5-year warranty, providing added peace of mind. The refrigerator, range/oven, microwave, dishwasher, washer, and dryer are all included. An assumable VA loan may also be available to qualified buyers. With nearly three acres, waterfront scenery, no HOA, and numerous recent updates, this one-of-a-kind property offers a lifestyle that is difficult to find!</p>
     </div>
@@ -205,8 +207,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -216,13 +218,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="5262 96th St, Augusta, KS, 67010">
-        <input type="hidden" name="message" value="I am interested in the property at 5262 96th St, Augusta, KS, 67010 (MLS# 678910). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 5262 96th St, Augusta, KS, 67010 (MLS# 678910). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
