@@ -29790,7 +29790,7 @@
     "state": "KS",
     "lat": 37.650912,
     "lng": -97.216156,
-    "price": 373000,
+    "price": 368000,
     "beds": null,
     "baths": null,
     "sqft": "2682",
@@ -29802,7 +29802,8 @@
     "isSundgren": false,
     "agentName": "Jemmima Wanjau",
     "agentPhone": "3169931351",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 373000
   },
   {
     "slug": "1040810410-conifer-st-wichita-ks-675523",
@@ -29813,7 +29814,7 @@
     "state": "KS",
     "lat": 37.651278,
     "lng": -97.215972,
-    "price": 373000,
+    "price": 368000,
     "beds": null,
     "baths": null,
     "sqft": "2682",
@@ -29825,7 +29826,8 @@
     "isSundgren": false,
     "agentName": "Jemmima Wanjau",
     "agentPhone": "3169931351",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 373000
   },
   {
     "slug": "2941-bunker-hill-ct-wichita-ks-666718",
@@ -65742,7 +65744,7 @@
     "state": "KS",
     "lat": 39.12397098,
     "lng": -97.70126703,
-    "price": 219000,
+    "price": 209000,
     "beds": 4,
     "baths": 2,
     "sqft": "2308",
@@ -65754,7 +65756,8 @@
     "isSundgren": false,
     "agentName": "Meagan Nuessen",
     "agentPhone": "7856439629",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 219000
   },
   {
     "slug": "1704-8th-ave-winfield-ks-676972",
