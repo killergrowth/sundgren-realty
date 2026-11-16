@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>The space you’ve been looking for — inside and out! Enjoy the perfect blend of country living, convenience, and functionality with this well-maintained ranch-style home situated on 1.67 acres outside city limits. Offering 1,572 square feet of comfortable living space, this property gives you room to spread out while still enjoying the convenience of being close to town. Step inside and you’ll find a welcoming home featuring a cozy pellet stove, creating the perfect place to relax and unwind. The home also includes a partial unfinished basement that is ready for your ideas — whether you envision additional living space, a hobby room, home gym, recreation area, or simply need extra storage. Outside is where this property truly sets itself apart! The 30x30 Wick shop features ceiling insulation and a 100 amp breaker box, making it ideal for projects, equipment, tools, or hobbies. You’ll also appreciate the 36x24 oversized 2-car detached garage plus a 14-foot-tall carport designed for RV storage, trailers, boats, or additional covered parking. The sellers have already taken care of several major updates, including a new roof with Class 3 shingles, new gutters with leaf guards, and durable Hardie board siding, giving the next owner added peace of mind. Additional property features include rural water service to the home, a water well for outdoor use, and a septic system cleaned in 2026 for both the home and dog run system. The dog area also features convenient dusk-to-dawn lighting at the dog shed. With acreage, garage space, a shop, RV storage, important updates, and the freedom that comes with being outside city limits — this property offers the lifestyle so many buyers are looking for. Schedule your private showing and come see everything this one has to offer!</p>
     </div>
@@ -158,7 +160,7 @@
     <div class="feat-grid">
     <div class="feat-cell">
       <i class="fas fa-fire"></i>
-      <div><span class="mlabel">Heating</span>Forced Air, Natural Gas</div>
+      <div><span class="mlabel">Heating</span>Natural Gas, Forced Air</div>
     </div>
     <div class="feat-cell">
       <i class="fas fa-snowflake"></i>
@@ -195,9 +197,9 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
     (function(){
-      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.053861,-97.076256],15);
+      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.05387256,-97.076252],15);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap contributors',maxZoom:19}).addTo(map);
-      L.marker([37.053861,-97.076256]).addTo(map).bindPopup('4962 294th DR, Arkansas City, KS 67005').openPopup();
+      L.marker([37.05387256,-97.076252]).addTo(map).bindPopup('4962 294th DR, Arkansas City, KS 67005').openPopup();
     })();
     </script>
   </div>
@@ -205,8 +207,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -216,13 +218,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="4962 294th DR, Arkansas City, KS, 67005">
-        <input type="hidden" name="message" value="I am interested in the property at 4962 294th DR, Arkansas City, KS, 67005 (MLS# 675048). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 4962 294th DR, Arkansas City, KS, 67005 (MLS# 675048). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

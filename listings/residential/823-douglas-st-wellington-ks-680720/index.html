@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Dreaming of a little country living without giving up the convenience of town? This charming, well-maintained manufactured home on a permanent foundation offers the best of both worlds! Situated on just over an acre, this inviting property combines comfortable living, outdoor charm, and room to explore your homesteading dreams. Start your mornings on the gorgeous covered front deck, or gather with friends and family on the back deck for those cool fall evenings. Mature, established fruit and nut trees add character and natural beauty to the property, while the limestone retaining wall and thoughtfully landscaped grounds create standout curb appeal. Step inside to discover a welcoming, open floor plan with a spacious kitchen that makes everyday living and entertaining a breeze. Brand-new carpet throughout gives the home a fresh feel. The private primary suite features an ensuite bathroom with double sinks and a beautifully tiled shower. Three additional bedrooms on the south side of the home offer plenty of space for family, guests, or a home office, with a full hall bathroom featuring a convenient tub/shower combination. Need room for projects, hobbies, or extra storage? The oversized 2 car detached garage is ready to deliver! With a 220V electrical hookup, it&#39;s ideal for power tools, equipment, or other hobby interests. A convenient north-side utility door makes accessing the garage with a golf cart, lawn mower, or other equipment even easier. And for those dreaming of a simpler, more self-sufficient lifestyle, there&#39;s even an adorable little chicken coop ready for your future flock of chickens or ducks! One more bonus: the large lot to the east is included in the sale and sits on a separate tax parcel, offering even more room to spread out and enjoy your own slice of country living. Charming, functional, and full of possibilities—this is your opportunity to enjoy a little breathing room, a touch of country life, and the convenience of being right on the edge of Wellington!</p>
     </div>
@@ -197,8 +199,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -208,13 +210,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="823 Douglas St, Wellington, KS, 67152">
-        <input type="hidden" name="message" value="I am interested in the property at 823 Douglas St, Wellington, KS, 67152 (MLS# 680720). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 823 Douglas St, Wellington, KS, 67152 (MLS# 680720). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

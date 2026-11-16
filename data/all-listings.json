@@ -16591,7 +16591,7 @@
     "state": "KS",
     "lat": 38.813445,
     "lng": -97.567289,
-    "price": 489900,
+    "price": 474900,
     "beds": 3,
     "baths": 2,
     "sqft": "1914",
@@ -16603,7 +16603,8 @@
     "isSundgren": false,
     "agentName": "Amber Renfro",
     "agentPhone": "7858207472",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 489900
   },
   {
     "slug": "12630-zimmerly-ct-wichita-ks-672272",
@@ -20900,7 +20901,7 @@
     "state": "KS",
     "lat": 38.812299,
     "lng": -97.566595,
-    "price": 435000,
+    "price": 425000,
     "beds": 5,
     "baths": 3,
     "sqft": "3843",
@@ -20912,7 +20913,8 @@
     "isSundgren": false,
     "agentName": "Jody Karlin",
     "agentPhone": "7852314617",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 435000
   },
   {
     "slug": "6410-jade-ct-derby-ks-675203",
@@ -21342,7 +21344,7 @@
     "state": "KS",
     "lat": 38.014616,
     "lng": -97.334759,
-    "price": 424900,
+    "price": 419900,
     "beds": 4,
     "baths": 4,
     "sqft": "3287",
@@ -21355,7 +21357,7 @@
     "agentName": "Elizabeth Barker",
     "agentPhone": "3162048575",
     "agentEmail": "",
-    "previousPrice": 429000
+    "previousPrice": 424900
   },
   {
     "slug": "421-estates-dr-salina-ks-675701",
@@ -70670,7 +70672,7 @@
     "state": "KS",
     "lat": 37.712483,
     "lng": -97.341595,
-    "price": 191500,
+    "price": 189000,
     "beds": 5,
     "baths": 2,
     "sqft": "2139",
@@ -70683,7 +70685,7 @@
     "agentName": "Jamie Love",
     "agentPhone": "3167122055",
     "agentEmail": "",
-    "previousPrice": 194000
+    "previousPrice": 191500
   },
   {
     "slug": "1908-cypress-ln-newton-ks-678009",
@@ -91739,7 +91741,7 @@
     "state": "KS",
     "lat": 37.642464,
     "lng": -98.735789,
-    "price": 129999,
+    "price": 124999,
     "beds": 6,
     "baths": 3,
     "sqft": "2441",
@@ -91752,7 +91754,7 @@
     "agentName": "MaKayla Jackson",
     "agentPhone": "4796899080",
     "agentEmail": "",
-    "previousPrice": 135000
+    "previousPrice": 129999
   },
   {
     "slug": "622-carr-ave-el-dorado-ks-673712",
@@ -95191,7 +95193,7 @@
     "state": "KS",
     "lat": 39.0238,
     "lng": -98.1345,
-    "price": 125000,
+    "price": 100000,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -95203,7 +95205,8 @@
     "isSundgren": false,
     "agentName": "Chris Rost",
     "agentPhone": "7858273641",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 125000
   },
   {
     "slug": "00000-170th-rd-l1-blk-5-l2-blk-5-bennington-ks-672443",
@@ -111977,7 +111980,7 @@
     "state": "KS",
     "lat": 37.8298,
     "lng": -96.841,
-    "price": 52000,
+    "price": 49000,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -111990,7 +111993,7 @@
     "agentName": "Bryce Jones",
     "agentPhone": "3166410878",
     "agentEmail": "",
-    "previousPrice": 55000
+    "previousPrice": 52000
   },
   {
     "slug": "3118-crystal-beach-st-wichita-ks-659313",
