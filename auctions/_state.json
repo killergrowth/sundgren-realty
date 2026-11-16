@@ -1,5 +1,5 @@
 {
-  "lastFetch": "2026-11-16T10:43:38.308Z",
+  "lastFetch": "2026-11-16T21:43:29.305Z",
   "auctions": {
     "24096": {
       "slug": "test-auction-24096",
@@ -3003,9 +3003,10 @@
     },
     "173248": {
       "slug": "moveable-tiny-home-173248",
-      "status": "pending",
+      "status": "accepting_bids",
       "name": "Moveable Tiny Home",
-      "generated": "2026-11-04T01:04:27.626Z"
+      "generated": "2026-11-04T01:04:27.626Z",
+      "updated": "2026-11-16T21:43:32.343Z"
     },
     "173582": {
       "slug": "14547-sw-210th-st-rose-hill-ks-67133-3-bed-2-bath-home-60-x-173582",
@@ -3016,7 +3017,7 @@
     "173950": {
       "slug": "54-acres-pasture-trees-pond-tillable-near-whitewater-butler-173950",
       "status": "pending",
-      "name": "54 Acres Pasture, Trees, Pond & Tillable Near Whitewater, Butler County, KS",
+      "name": "54 Acres Pasture, Trees, Pond & Tillable Near Whitewater, Harvey County, KS",
       "generated": "2026-11-13T21:14:10.802Z"
     }
   }
