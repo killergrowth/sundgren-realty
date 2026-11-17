@@ -18790,7 +18790,7 @@
     "state": "KS",
     "lat": 37.772711,
     "lng": -97.444212,
-    "price": 457000,
+    "price": 447000,
     "beds": 3,
     "baths": 2,
     "sqft": "1694",
@@ -18802,7 +18802,8 @@
     "isSundgren": false,
     "agentName": "Julie Schmidt",
     "agentPhone": "3166176700",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 457000
   },
   {
     "slug": "810-thornton-ct-wichita-ks-667126",
@@ -18882,7 +18883,7 @@
     "state": "KS",
     "lat": 37.772797,
     "lng": -97.443678,
-    "price": 455000,
+    "price": 445000,
     "beds": 3,
     "baths": 3,
     "sqft": "1720",
@@ -18894,7 +18895,8 @@
     "isSundgren": false,
     "agentName": "Julie Schmidt",
     "agentPhone": "3166176700",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 455000
   },
   {
     "slug": "3-timothy-dr-goddard-ks-675805",
@@ -35745,7 +35747,7 @@
     "state": "KS",
     "lat": 37.036098,
     "lng": -97.615446,
-    "price": 334900,
+    "price": 319900,
     "beds": 4,
     "baths": 2,
     "sqft": "2852",
@@ -35758,7 +35760,7 @@
     "agentName": "Vickie L Vargas-Jacobs",
     "agentPhone": "3163934445",
     "agentEmail": "",
-    "previousPrice": 339800
+    "previousPrice": 334900
   },
   {
     "slug": "14109-barn-owl-st-wichita-ks-668354",
@@ -53465,7 +53467,7 @@
     "state": "KS",
     "lat": 37.662144,
     "lng": -97.213585,
-    "price": 249000,
+    "price": 239000,
     "beds": 3,
     "baths": 2,
     "sqft": "1954",
@@ -53478,7 +53480,7 @@
     "agentName": "Sharon Rickard",
     "agentPhone": "3163129293",
     "agentEmail": "",
-    "previousPrice": 265000
+    "previousPrice": 249000
   },
   {
     "slug": "1801-smithmoor-st-wichita-ks-677311",
@@ -61132,7 +61134,7 @@
     "state": "KS",
     "lat": 37.67347,
     "lng": -95.450545,
-    "price": 229900,
+    "price": 224500,
     "beds": 3,
     "baths": 3,
     "sqft": "3551",
@@ -61145,7 +61147,7 @@
     "agentName": "Judith H Carty",
     "agentPhone": "3163059456",
     "agentEmail": "",
-    "previousPrice": 234900
+    "previousPrice": 229900
   },
   {
     "slug": "5022-vassar-ave-wichita-ks-677953",
