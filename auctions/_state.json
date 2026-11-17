@@ -1,5 +1,5 @@
 {
-  "lastFetch": "2026-11-17T06:55:33.031Z",
+  "lastFetch": "2026-11-17T18:13:38.508Z",
   "auctions": {
     "24096": {
       "slug": "test-auction-24096",
@@ -2973,9 +2973,10 @@
     },
     "172581": {
       "slug": "the-clubhouse-at-1204-e-park-glen-st-clearwater-ks-67026-172581",
-      "status": "pending",
+      "status": "accepting_bids",
       "name": "'The Clubhouse' at 1204 E Park Glen St., Clearwater, KS 67026",
-      "generated": "2026-10-23T21:05:19.946Z"
+      "generated": "2026-10-23T21:05:19.946Z",
+      "updated": "2026-11-17T18:13:40.672Z"
     },
     "172603": {
       "slug": "742-acres-whitewater-river-tillable-bottom-ground-near-towan-172603",
