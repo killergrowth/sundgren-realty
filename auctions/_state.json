@@ -1,5 +1,5 @@
 {
-  "lastFetch": "2026-11-16T21:43:29.305Z",
+  "lastFetch": "2026-11-17T06:55:33.031Z",
   "auctions": {
     "24096": {
       "slug": "test-auction-24096",
@@ -3005,8 +3005,7 @@
       "slug": "moveable-tiny-home-173248",
       "status": "accepting_bids",
       "name": "Moveable Tiny Home",
-      "generated": "2026-11-04T01:04:27.626Z",
-      "updated": "2026-11-16T21:43:32.343Z"
+      "generated": "2026-11-04T01:04:27.626Z"
     },
     "173582": {
       "slug": "14547-sw-210th-st-rose-hill-ks-67133-3-bed-2-bath-home-60-x-173582",
