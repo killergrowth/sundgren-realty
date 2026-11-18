@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Move-in ready and thoughtfully updated, this well-maintained 4 BR, 3 BA ranch offers the ease of turnkey living with inviting spaces for everyday enjoyment and entertaining. From the well-manicured lawn and attractive curb appeal to the fresh interior finishes, you&#39;ll appreciate the care and improvements throughout. Newer carpet, luxury vinyl flooring, and fresh interior paint give the home a crisp, refreshed feel. The open-concept living area features vaulted ceilings, a gas fireplace, and decorative shelving, flowing seamlessly into the dining area and kitchen with a pantry and reverse osmosis drinking water system. A convenient main-floor laundry room, three main-floor bedrooms, and a full hall bath complete the main living level. The spacious primary suite offers large windows, a decorative trayed ceiling, and a remodeled ensuite featuring dual sinks, new vanity, new flooring, fresh paint, an updated shower, soaker tub, and a walk-in closet. Entertaining is easy in the finished view-out basement with additional living space including a sprawling family room, wet bar, room for a sectional and game table, plus a fourth bedroom and full bath. The finished three-car garage is an exceptional bonus, featuring insulated walls and ceiling, a mini-split heating and cooling, epoxy floors, and Bluetooth-enabled garage door openers. Whether for hobbies, projects, or simply enjoying a comfortable workspace year-round, this garage offers versatility rarely found. Additional peace of mind comes with a newer air conditioning system and hot water heater (2024), along with a whole-house water softener. Enjoy a fenced yard with a mature tree-lined backdrop, freshly stained covered deck, brick patio, and storage shed. It&#39;s an inviting setting for summer gatherings, barbecues, or evenings on the patio. The neighborhood adds even more appeal with a community pool, playground, ponds, and sidewalks, while quick access to Kellogg, shopping, and dining makes everyday living convenient. An appealing combination of move-in-ready condition, meaningful updates, and outstanding functionality!</p>
     </div>
@@ -205,8 +207,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -216,13 +218,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="13011 Laguna ST, Wichita, KS, 67230">
-        <input type="hidden" name="message" value="I am interested in the property at 13011 Laguna ST, Wichita, KS, 67230 (MLS# 681759). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 13011 Laguna ST, Wichita, KS, 67230 (MLS# 681759). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

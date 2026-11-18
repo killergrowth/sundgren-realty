@@ -13811,7 +13811,7 @@
     "state": "KS",
     "lat": 37.703151,
     "lng": -97.053824,
-    "price": 539000,
+    "price": 485000,
     "beds": null,
     "baths": null,
     "sqft": null,
@@ -13823,7 +13823,8 @@
     "isSundgren": false,
     "agentName": "Rachel Lange-Mills",
     "agentPhone": "3167655764",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 539000
   },
   {
     "slug": "2224-rough-creek-rd-derby-ks-675879",
@@ -29095,7 +29096,7 @@
     "state": "KS",
     "lat": 37.659956,
     "lng": -97.491696,
-    "price": 375000,
+    "price": 365000,
     "beds": null,
     "baths": null,
     "sqft": "2528",
@@ -29107,7 +29108,8 @@
     "isSundgren": false,
     "agentName": "Bree Russell",
     "agentPhone": "3165167417",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 375000
   },
   {
     "slug": "68376839-kollmeyer-st-wichita-ks-671704",
@@ -29118,7 +29120,7 @@
     "state": "KS",
     "lat": 37.760883,
     "lng": -97.423385,
-    "price": 375000,
+    "price": 365000,
     "beds": null,
     "baths": null,
     "sqft": "2354",
@@ -29130,7 +29132,8 @@
     "isSundgren": false,
     "agentName": "Bree Russell",
     "agentPhone": "3165167417",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 375000
   },
   {
     "slug": "68496851-kollmeyer-st-wichita-ks-671702",
@@ -29141,7 +29144,7 @@
     "state": "KS",
     "lat": 37.760879,
     "lng": -97.423877,
-    "price": 375000,
+    "price": 365000,
     "beds": null,
     "baths": null,
     "sqft": "2354",
@@ -29153,7 +29156,8 @@
     "isSundgren": false,
     "agentName": "Bree Russell",
     "agentPhone": "3165167417",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 375000
   },
   {
     "slug": "1633116333-lynndale-st-goddard-ks-671705",
@@ -29326,7 +29330,7 @@
     "state": "KS",
     "lat": 37.761406,
     "lng": -97.423957,
-    "price": 369000,
+    "price": 365000,
     "beds": null,
     "baths": null,
     "sqft": "2752",
@@ -29339,7 +29343,7 @@
     "agentName": "Bree Russell",
     "agentPhone": "3165167417",
     "agentEmail": "",
-    "previousPrice": 375000
+    "previousPrice": 369000
   },
   {
     "slug": "54025404-sandkey-ct-wichita-ks-643347",
@@ -29350,7 +29354,7 @@
     "state": "KS",
     "lat": 37.781801,
     "lng": -97.376211,
-    "price": 369000,
+    "price": 365000,
     "beds": null,
     "baths": null,
     "sqft": "2364",
@@ -29363,7 +29367,7 @@
     "agentName": "Bree Russell",
     "agentPhone": "3165167417",
     "agentEmail": "",
-    "previousPrice": 375000
+    "previousPrice": 369000
   },
   {
     "slug": "55105512-sandkey-ct-wichita-ks-643343",
@@ -29374,7 +29378,7 @@
     "state": "KS",
     "lat": 37.783462,
     "lng": -97.376855,
-    "price": 369000,
+    "price": 365000,
     "beds": null,
     "baths": null,
     "sqft": "2364",
@@ -29387,7 +29391,7 @@
     "agentName": "Bree Russell",
     "agentPhone": "3165167417",
     "agentEmail": "",
-    "previousPrice": 375000
+    "previousPrice": 369000
   },
   {
     "slug": "4319-sandplum-st-4321-st-wichita-ks-641330",
@@ -29398,7 +29402,7 @@
     "state": "KS",
     "lat": 37.761756,
     "lng": -97.423926,
-    "price": 369000,
+    "price": 365000,
     "beds": null,
     "baths": null,
     "sqft": "2360",
@@ -29411,7 +29415,7 @@
     "agentName": "Bree Russell",
     "agentPhone": "3165167417",
     "agentEmail": "",
-    "previousPrice": 375000
+    "previousPrice": 369000
   },
   {
     "slug": "55165518-sandkey-ct-wichita-ks-641332",
@@ -29422,7 +29426,7 @@
     "state": "KS",
     "lat": 37.783459,
     "lng": -97.376578,
-    "price": 369000,
+    "price": 365000,
     "beds": null,
     "baths": null,
     "sqft": "2364",
@@ -29435,7 +29439,7 @@
     "agentName": "Bree Russell",
     "agentPhone": "3165167417",
     "agentEmail": "",
-    "previousPrice": 375000
+    "previousPrice": 369000
   },
   {
     "slug": "5196-honeylocust-st-wichita-ks-674116",
@@ -29469,7 +29473,7 @@
     "state": "KS",
     "lat": 37.782455,
     "lng": -97.376128,
-    "price": 369000,
+    "price": 365000,
     "beds": null,
     "baths": null,
     "sqft": "2364",
@@ -29482,7 +29486,7 @@
     "agentName": "Bree Russell",
     "agentPhone": "3165167417",
     "agentEmail": "",
-    "previousPrice": 375000
+    "previousPrice": 369000
   },
   {
     "slug": "719-ottawa-st-minneapolis-ks-676040",
@@ -49259,7 +49263,7 @@
     "state": "KS",
     "lat": 37.649555,
     "lng": -97.235127,
-    "price": 274900,
+    "price": 264900,
     "beds": 4,
     "baths": 3,
     "sqft": "2286",
@@ -49272,7 +49276,7 @@
     "agentName": "Adrienne M Winfield",
     "agentPhone": "3162100120",
     "agentEmail": "",
-    "previousPrice": 280000
+    "previousPrice": 274900
   },
   {
     "slug": "604-saint-james-pl-wichita-ks-677161",
@@ -68451,7 +68455,7 @@
     "state": "KS",
     "lat": 37.782043,
     "lng": -97.376107,
-    "price": 195000,
+    "price": 189000,
     "beds": 4,
     "baths": 2,
     "sqft": "1376",
@@ -68464,7 +68468,7 @@
     "agentName": "Bree Russell",
     "agentPhone": "3165167417",
     "agentEmail": "",
-    "previousPrice": 205000
+    "previousPrice": 195000
   },
   {
     "slug": "193-mendocino-st-goddard-ks-672547",
@@ -79704,7 +79708,7 @@
     "state": "KS",
     "lat": 37.397399,
     "lng": -97.282217,
-    "price": 169900,
+    "price": 159900,
     "beds": 3,
     "baths": 3,
     "sqft": "2139",
@@ -79717,7 +79721,7 @@
     "agentName": "Julie Gooch",
     "agentPhone": "6203260626",
     "agentEmail": "",
-    "previousPrice": 174900
+    "previousPrice": 169900
   },
   {
     "slug": "8018-woodspring-way-wichita-ks-675900",
