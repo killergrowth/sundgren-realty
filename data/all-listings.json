@@ -49911,7 +49911,7 @@
     "state": "KS",
     "lat": 37.688613,
     "lng": -97.268579,
-    "price": 279000,
+    "price": 269000,
     "beds": 3,
     "baths": 2,
     "sqft": "1845",
@@ -49923,7 +49923,8 @@
     "isSundgren": false,
     "agentName": "Eric Malone",
     "agentPhone": "3162527498",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 279000
   },
   {
     "slug": "2741-battin-ct-wichita-ks-675014",
