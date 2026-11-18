@@ -1035,7 +1035,7 @@
     "state": "KS",
     "lat": 37.817712,
     "lng": -96.853706,
-    "price": 69000,
+    "price": 68000,
     "beds": 1,
     "baths": 1,
     "sqft": "1039",
@@ -1047,7 +1047,8 @@
     "isSundgren": true,
     "agentName": "Audrey Reese",
     "agentPhone": "3167081587",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 69000
   },
   {
     "slug": "712-8th-st-arkansas-city-ks-678385",
@@ -63310,7 +63311,7 @@
     "state": "KS",
     "lat": 38.780546,
     "lng": -97.592063,
-    "price": 219500,
+    "price": 217000,
     "beds": 3,
     "baths": 2,
     "sqft": "1076",
@@ -63323,7 +63324,7 @@
     "agentName": "Jennifer Stutterheim",
     "agentPhone": "7858221969",
     "agentEmail": "",
-    "previousPrice": 222500
+    "previousPrice": 219500
   },
   {
     "slug": "7077-central-23-ave-wichita-ks-677908",
@@ -85236,7 +85237,7 @@
     "state": "KS",
     "lat": 38.740229,
     "lng": -98.031342,
-    "price": 140000,
+    "price": 128000,
     "beds": 2,
     "baths": 1,
     "sqft": "1240",
@@ -85249,7 +85250,7 @@
     "agentName": "Jody Karlin",
     "agentPhone": "7852314617",
     "agentEmail": "",
-    "previousPrice": 150000
+    "previousPrice": 140000
   },
   {
     "slug": "706-piatt-ave-wichita-ks-675223",
@@ -99072,7 +99073,7 @@
     "state": "KS",
     "lat": 37.675768,
     "lng": -97.383203,
-    "price": 114900,
+    "price": 109900,
     "beds": 2,
     "baths": 1,
     "sqft": "1002",
@@ -99084,7 +99085,8 @@
     "isSundgren": false,
     "agentName": "Ayanna Stidham",
     "agentPhone": "3167377552",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 114900
   },
   {
     "slug": "222-mackenzie-ave-minneapolis-ks-668116",
@@ -102288,7 +102290,7 @@
     "state": "KS",
     "lat": 37.080125,
     "lng": -97.042653,
-    "price": 74900,
+    "price": 69900,
     "beds": 3,
     "baths": 1,
     "sqft": "1288",
@@ -102301,7 +102303,7 @@
     "agentName": "Dawn R Wade",
     "agentPhone": "3168061060",
     "agentEmail": "",
-    "previousPrice": 84900
+    "previousPrice": 74900
   },
   {
     "slug": "426-cave-springs-ave-el-dorado-ks-674339",

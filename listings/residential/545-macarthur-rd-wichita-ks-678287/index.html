@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Need space? Wanting clean, updated and move-in ready, but still want some upside opportunity to make it your own? Well, stop and check out 545 MacArthur! This home offers the best of both worlds—move-in ready with plenty of room to add your own personal touches. It boasts tons of new updates, including all-new lighting, fresh paint, a brand-new breaker panel, updated kitchen, updated privacy fencing, newer guttering, a brand-new water heater, and over $30,000 spent on new plumbing! The home has been tastefully updated with a modern look, warm neutral tones, and custom faux painting throughout. Walking in the front of the home, you are welcomed by a beautiful wood faux-painted door leading into the front living room, featuring gorgeous, engineered hardwood flooring that continues into the front two bedrooms. The front bathroom has been completely renovated and features a new shower/tub combo, toilet, vanity top, lighting, and custom textured walls. Moving into the kitchen, you’ll find all-new flooring and lighting, brand-new base cabinets and countertops with an eat-at bar, all highlighted by stainless steel appliances, including a brand-new dishwasher and large sink. There’s also additional countertop space that would be perfect for a buffet setup when hosting family and friends. The laundry room is tucked neatly away within the kitchen and is separated by a one-of-a-kind glass-paneled barn door, adding a great touch of character to the space. Just past the kitchen is the large family/hearth room, complete with a wood-burning fireplace that makes this a great spot to gather and relax. The master bedroom features brand-new carpet, a large closet, and a renovated bathroom with his-and-her sinks. As we head into the fall season, the attic fan is another great feature to appreciate, offering a simple way to help circulate fresh air and take advantage of those cooler Kansas days and evenings. Now, head to the backyard, because this is where the fun—and the opportunity—really begins. The 22’ x 45’ detached garage, complete with a faux-painted overhead door, offers an incredible amount of space for storage, a workshop, hobbies, toys, or whatever you can dream up. And immediately to the right of the porch is something you simply don’t see every day—a one-of-a-kind koi pond feature with two streams, two ponds, and the potential for up to four waterfalls. While it could use a little attention to bring it back to its full potential, the bones are already there to create something truly special. With a little vision and some finishing touches, this could become a beautiful backyard oasis and one of the most unique features of the property—a peaceful place to sit, relax, and enjoy your own little retreat right at home. This home truly has so much to offer. You get the updates, the space, the character, and still have the opportunity to put your own stamp on it. Add in the great location right next to I-235, giving you access to essentially anywhere in Wichita within 15 minutes, and you have a property that checks a lot of boxes. You do not want to miss out on 545 MacArthur! DISCLOSURE: Trevor Burford is a licensed agent in the state of Kansas and is a member of TBD Properties, LLC and has a vested financial interest. Trevor Burford purchased the property in 2016 as principal residence and sold it to TBD Properties in 2019 and has not resided in the property since. A property disclosure report has been provided and deemed accurate but not guaranteed and is highly suggested that any buyer does their own due diligence and inspection(s) to satisfy their issues or concern if any.</p>
     </div>
@@ -205,8 +207,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -216,13 +218,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="545 Macarthur RD, Wichita, KS, 67217">
-        <input type="hidden" name="message" value="I am interested in the property at 545 Macarthur RD, Wichita, KS, 67217 (MLS# 678287). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 545 Macarthur RD, Wichita, KS, 67217 (MLS# 678287). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
