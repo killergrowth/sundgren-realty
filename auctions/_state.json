@@ -1,5 +1,5 @@
 {
-  "lastFetch": "2026-11-17T18:13:38.508Z",
+  "lastFetch": "2026-11-18T02:45:38.837Z",
   "auctions": {
     "24096": {
       "slug": "test-auction-24096",
@@ -2943,9 +2943,10 @@
     },
     "171813": {
       "slug": "1158-acres-farm-house-barns-pasture-near-toronto-in-greenwoo-171813",
-      "status": "accepting_bids",
+      "status": "complete",
       "name": "115.8 Acres Farm House, Barns & Pasture near Toronto in Greenwood County, Kansas",
-      "generated": "2026-10-14T00:11:16.739Z"
+      "generated": "2026-10-14T00:11:16.739Z",
+      "updated": "2026-11-18T02:45:41.558Z"
     },
     "171835": {
       "slug": "1120-acres-kansas-native-bluestem-pasture-ranch-woodson-coun-171835",
@@ -2975,8 +2976,7 @@
       "slug": "the-clubhouse-at-1204-e-park-glen-st-clearwater-ks-67026-172581",
       "status": "accepting_bids",
       "name": "'The Clubhouse' at 1204 E Park Glen St., Clearwater, KS 67026",
-      "generated": "2026-10-23T21:05:19.946Z",
-      "updated": "2026-11-17T18:13:40.672Z"
+      "generated": "2026-10-23T21:05:19.946Z"
     },
     "172603": {
       "slug": "742-acres-whitewater-river-tillable-bottom-ground-near-towan-172603",
