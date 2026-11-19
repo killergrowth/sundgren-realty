@@ -1,5 +1,5 @@
 {
-  "lastFetch": "2026-11-19T11:13:26.587Z",
+  "lastFetch": "2026-11-19T20:04:14.465Z",
   "auctions": {
     "24096": {
       "slug": "test-auction-24096",
@@ -3018,6 +3018,12 @@
       "status": "pending",
       "name": "54 Acres Pasture, Trees, Pond & Tillable Near Whitewater, Harvey County, KS",
       "generated": "2026-11-13T21:14:10.802Z"
+    },
+    "174213": {
+      "slug": "retail-open-box-refurbished-repurposed-furniture-appliances-174213",
+      "status": "accepting_bids",
+      "name": "Retail Open Box, Refurbished & Repurposed Furniture, Appliances & Accessories ",
+      "generated": "2026-11-19T20:04:19.536Z"
     }
   }
 }
