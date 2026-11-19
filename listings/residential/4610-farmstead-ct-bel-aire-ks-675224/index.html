@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-terminated pill">Inactive</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Sellers are Highly Motivated!!! Open to all offers!!! Welcome to 4610 N Farmstead, nestled in the highly desirable community of Bel Aire Heights! This stunning 4-bedroom, 4-bathroom Ranch/Traditional-style home perfectly blends timeless character with move-in-ready convenience. From the moment you step inside, you&#39;ll be captivated by the rich original woodwork showcased throughout the home, adding warmth, charm, and a sense of craftsmanship rarely found today. Spacious living areas provide the ideal setting for both everyday living and entertaining, while the thoughtful layout offers comfort and functionality for families of all sizes. Updates consist of &quot;fresh outside paint&quot;, &quot;roof work/new vents&quot;, &quot;east side of the house has replaced siding&quot;, &quot;new soffits and fascia&quot;, &quot;two handicap height stools in main floor baths&quot;, &quot;both bathrooms re-painted&quot;, &quot; gas stove converted to electric&quot;, lastly &quot; new gutter guards&quot;. All kitchen appliances will be included with a full price offer. Step outside and discover your own private oasis. The beautifully enclosed backyard creates the perfect retreat for relaxing evenings, outdoor gatherings, pets, or play—offering both privacy and tranquility right at home. Meticulously maintained and ready for its next owners, this exceptional property offers the perfect combination of classic elegance, generous living space, and an unbeatable Bel Aire location. Opportunities like this don&#39;t come along often—schedule your private showing today and experience everything this remarkable home has to offer!</p>
     </div>
@@ -201,8 +203,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -212,13 +214,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="4610 Farmstead Ct, Bel Aire, KS, 67220">
-        <input type="hidden" name="message" value="I am interested in the property at 4610 Farmstead Ct, Bel Aire, KS, 67220 (MLS# 675224). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 4610 Farmstead Ct, Bel Aire, KS, 67220 (MLS# 675224). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-terminated pill">Inactive</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Don&#39;t let the address fool you. It is 13 minutes from Goddard, 21 minutes from New Market Square, under 30 minutes to McConnel Air Force Base or Wesley hospital. The property is situated on a 40+/-acre lot, offering a private and secluded setting. The barndominium is an impressive structure that demands to be seen with an impressive spanning of 8200 square feet in barn space alone. With its large size and unique design, it stands out among other properties. The living quarters feature three bedrooms, equipped with walk-in showers and walk-in closets for added convenience. The kitchen showcases solid-surface countertops, and the living areas boast 10 to 14-footceilings, giving it an open and spacious feel. Other notable features of the property include reverse osmosis filtration system, power assisted flush toilets, a tankless Rinnai system for efficient water heating, radiant floor heating, pellet stove heating, an upgraded metal roof for increased durability, and underground electric with 200-amp panels and an additional two panels are ready for additional structures, hardwired security system, additional loft, and multiple mini splits through out for more controlled temperatures. The home is also equipped with fiber optic internet and phone systems, ensuring fast and reliable connectivity. Additionally, the property enjoys the shade and beauty of numerous mature trees and is serviced by a well and septic system. The barn is equipped with three separate entry and exit areas, allowing for convenient access and functionality. It offers ample space for storage, livestock, or any other purpose you may have in mind. The property itself is divided into two tracts, totaling approximately 40 acres. This provides plenty of room to roam and explore. The land is a mix of open fields and wooded areas, providing diverse opportunities for recreation and enjoyment. Whether you&#39;re into hunting, hiking, caring for animals or simply appreciating the beauty of nature, this property has it all.</p>
     </div>
@@ -209,8 +211,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -220,13 +222,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="21950 79th St S St, Viola, KS, 67149">
-        <input type="hidden" name="message" value="I am interested in the property at 21950 79th St S St, Viola, KS, 67149 (MLS# 667011). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 21950 79th St S St, Viola, KS, 67149 (MLS# 667011). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

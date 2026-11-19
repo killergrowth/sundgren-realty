@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-terminated pill">Inactive</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>This beautiful custom-built West Wichita patio home near Rolling Hills Golf Course offers the space you want with the low-maintenance lifestyle you’ll love! Tucked away on a quiet cul-de-sac and situated on a desirable corner lot, this home is conveniently located near shopping, dining, golf, and highway access. A private courtyard welcomes you into the spacious main living area, featuring a cozy fireplace and plenty of room to gather and entertain. The main floor offers 2 spacious bedrooms, 2 full bathrooms, and convenient main-floor laundry. The house has been tastefully updated with LVP flooring and granite countertops, creating a fresh and inviting space for everyday living. The spacious primary suite is designed with comfort and accessibility in mind. The updated bathroom features a beautiful tile shower with handicap-accessible entry and a convenient dressing bench, along with a large walk-in closet. Downstairs, the fully finished daylight basement provides an incredible amount of additional living and entertaining space. Natural light fills the enormous family room, complete with a second fireplace and large wet bar—perfect for hosting family and friends. You&#39;ll also find a generously sized third bedroom with large walk in closet, full bathroom, bonus room, and abundant storage space. One of this home&#39;s standout features is the garage space! In addition to the 2-car garage, there is a separate golf cart garage. Best of all, enjoy the ease of a low-maintenance patio home lifestyle, with the HOA taking care of lawn mowing &amp; watering plus trash service. With its spacious floor plan, thoughtful updates, incredible storage, extra garage space, and fantastic location near Rolling Hills Golf Course, this home is a must-see. Schedule your private showing today and see everything this West Wichita patio home has to offer!</p>
     </div>
@@ -205,8 +207,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -216,13 +218,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="279 Byron CT, Wichita, KS, 67209">
-        <input type="hidden" name="message" value="I am interested in the property at 279 Byron CT, Wichita, KS, 67209 (MLS# 677987). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 279 Byron CT, Wichita, KS, 67209 (MLS# 677987). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

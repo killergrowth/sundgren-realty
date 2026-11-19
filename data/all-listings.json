@@ -9443,7 +9443,7 @@
     "state": "KS",
     "lat": 37.617734,
     "lng": -97.233959,
-    "price": 535000,
+    "price": 510000,
     "beds": 5,
     "baths": 4,
     "sqft": "3109",
@@ -9456,7 +9456,7 @@
     "agentName": "Nicolle Jausel",
     "agentPhone": "3166402564",
     "agentEmail": "",
-    "previousPrice": 539000
+    "previousPrice": 535000
   },
   {
     "slug": "435-130th-st-s-st-south-haven-ks-676399",
@@ -39123,7 +39123,7 @@
     "state": "KS",
     "lat": 37.681244,
     "lng": -97.244053,
-    "price": 309500,
+    "price": 305000,
     "beds": 4,
     "baths": 3,
     "sqft": "3452",
@@ -39136,7 +39136,7 @@
     "agentName": "Amanda Jolley",
     "agentPhone": "3162139043",
     "agentEmail": "",
-    "previousPrice": 310000
+    "previousPrice": 309500
   },
   {
     "slug": "142-magnolia-dr-kaw-city-ok-676981",
@@ -86297,7 +86297,7 @@
     "state": "KS",
     "lat": 38.05388,
     "lng": -97.321143,
-    "price": 130000,
+    "price": 125000,
     "beds": 2,
     "baths": 1,
     "sqft": "728",
@@ -86310,7 +86310,7 @@
     "agentName": "Arlan R Newell",
     "agentPhone": "3162841973",
     "agentEmail": "",
-    "previousPrice": 150000
+    "previousPrice": 130000
   },
   {
     "slug": "6429-keystone-st-haysville-ks-676156",
@@ -97090,7 +97090,7 @@
     "state": "KS",
     "lat": 37.068851,
     "lng": -97.035039,
-    "price": 107000,
+    "price": 99900,
     "beds": 3,
     "baths": 1,
     "sqft": "1217",
@@ -97103,7 +97103,7 @@
     "agentName": "Shandon Weston",
     "agentPhone": "6204417611",
     "agentEmail": "",
-    "previousPrice": 114900
+    "previousPrice": 107000
   },
   {
     "slug": "1006-emporia-ave-wichita-ks-674595",
