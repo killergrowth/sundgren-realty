@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -143,7 +143,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Property offered at ONLINE ONLY auction. | 10% Buyer&#39;s Premium will be added to the final bid. | BIDDING OPENS: Tuesday, November 3rd, 2026 at 2 PM (ct) | BIDDING CLOSING: Thursday, November 12th 2026 at 2 PM (ct). Bidding will remain open on this property until 90 seconds have passed without receiving a bid. Property available to preview by appointment. ONLINE ONLY!!! NO MINIMUM, NO RESERVE!!! Welcome to 22 E. Hawthorne St. in NE Wichita’s Forest Hills neighborhood. This move-in ready home offers 1950’s craftsmanship and charm with modern updates. New carpet in the den and bedrooms, electric fireplace insert, and sewer mainline repair and restoration completed in August 2026 are updates made in current year. What Seller likes about the home: An open floor plan and galley-style kitchen anchor this 3-bedroom, 2-bathroom home with 2 fenced, private patios, oversized two-car attached garage/shop, matching stainless steel Whirlpool appliances, and hookups for a hot tub on the patio off the foyer/sunroom. From the front door, go through the sunroom to the living room with warm hardwood floors and a beautiful brick fireplace with an electric insert. You&#39;ll continue into the open dining room and hall, past 1 full bath and 2 bedrooms, featuring new carpet; one with hardwood floors that match the hall, and the second with parquet wood-style flooring. Returning to the dining area, you will pass through an open pocket door to the galley-style kitchen with solid wood cabinets, electric stove, built-in microwave, refrigerator, dishwasher, and granite countertops. Washer and dryer hookups complete the kitchen. Continue to the den, which has a built-in desk and Pella French doors to the side patio. The primary bedroom with new carpet and ensuite bathroom and walk-in closet completes this wing of the home. There is a split plan to keep distance between the primary bedroom and the rest of the home. In addition, the oversized 2-car attached garage leads to the den. The garage features a workshop area and a small finished storage area, bright and clean. Built-in wood shelves throughout the garage and home ensure plenty of storage. A partial fence encloses the side yard, and the driveway to the garages has a basketball goal. Mature trees, sprinkler system (winterized for you.) Location near The Independent School, East YMCA, Costco, and Kapaun Mt. Carmel make this a great starter home or rental. Do not miss this home, selling to the highest bidder!!! This home was previously rented for $1,850/month. Listing agent is related to the Seller. Photos of the primary bedroom, dining area, and living room have been digitally staged. Previous tenants have some belongings stored which will be removed prior to auction bidding closing. Any personal property remaining in the property at closing will be considered abandoned property. Per the seller, there is a current class action lawsuit in progress with Textron for Forest Hills subdivision. *Buyer should verify school assignments as they are subject to change. The real estate is offered at public auction in its present, “as is where is” condition and is accepted by the buyer without any expressed or implied warranties or representations from the seller or seller’s agents. Full auction terms and conditions provided in the Property Information Packet. Total purchase price will include a 10% buyer’s premium ($2,500.00 minimum) added to the final bid. Property available to preview by appointment. Earnest money is due from the high bidder at the auction in the form of check, or immediately available, certified funds in the amount of $15,000.</p>
     </div>
@@ -204,8 +206,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -215,13 +217,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="22 Hawthorne St, Wichita, KS, 67206">
-        <input type="hidden" name="message" value="I am interested in the property at 22 Hawthorne St, Wichita, KS, 67206 (MLS# 680611). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 22 Hawthorne St, Wichita, KS, 67206 (MLS# 680611). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

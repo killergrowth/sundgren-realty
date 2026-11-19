@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Welcome to this exceptional estate style property in the desirable Hidden Lakes neighborhood, where timeless architecture, meticulous care, and an extraordinary outdoor setting come together on a sprawling 0.6 acre lot! From the moment you arrive, the stately red brick ranch makes a lasting impression with its captivating curb appeal, Colorado River rock landscaping, and beautiful mature trees that provide shade and character. The inviting covered front porch is perfect for enjoying a quiet morning, visiting with friends, or watching a Kansas storm roll in. This is certainly no ordinary home, and the pride of ownership is evident throughout. Step inside through elegant French doors with decorative glass accents into a welcoming tiled foyer leading into an expansive living room filled with natural light. The thoughtful floor plan offers multiple gathering spaces, including a charming front sitting area with a bay window and a cozy family room featuring a handsome brick gas fireplace, wood mantel, and built in shelving. The beautifully remodeled kitchen is a standout with elegant quartz countertops, attractive tile backsplash, new tile flooring, quality KitchenAid appliances including a double oven and dishwasher, and abundant cabinetry and counter space. Thoughtful conveniences include a dedicated coffee bar, pantry storage, and under cabinet wine glass storage. A delightful breakfast nook overlooking the landscaped backyard offers the perfect setting for morning coffee, while the adjoining dining area features extensive cabinetry, quartz countertops, and ample space for hosting holiday gatherings. Beautiful engineered wood flooring, generous closets, and natural light add to the comfort throughout. The primary suite includes its own private bathroom, while the spacious hall bathroom features double sinks and tile flooring. A convenient half bath near the laundry area adds practicality, and the washer and dryer stay! Downstairs, the appeal continues with an extraordinary basement renovation representing an investment of over $100,000! This expansive finished space offers another beautiful brick gas fireplace, an inviting family room, additional recreation space, and a stylish wet bar with quartz countertops and room for a mini refrigerator. Two bonus rooms offer flexibility for an office, library, or hobby room, while an additional bedroom with an attached bathroom creates a comfortable guest retreat. The layout also offers possibilities for extended family accommodations, and a substantial unfinished storage room provides plenty of space for seasonal decorations. Outside, the property is nothing short of a backyard oasis and a gardener&#39;s dream! The expansive grounds have been lovingly maintained, featuring mature trees, attractive landscaping, and plenty of room to enjoy the outdoors. An extensive concrete patio creates the perfect setting for summer barbecues, outdoor dining, and entertaining. A dedicated gardening area includes two garden and equipment sheds, while chain link fencing provides a practical space for pets. Even the driveway features an additional concrete turnaround for convenient maneuverability. Beyond its beauty, this home offers exceptional peace of mind with valuable improvements including updated Andersen picture windows and rear sliding door, additional replacement windows with real wood casing, a Class 4 impact resistant roof installed in 2020, a high efficiency furnace, new air conditioning in August 2026, a water heater replaced in 2021, additional attic insulation, and an updated basement window well. With four bedrooms, five bathrooms, exceptional storage, and a remarkable combination of quality, character, and functionality, this home truly stands apart. Come experience everything this extraordinary Hidden Lakes property has to offer!</p>
     </div>
@@ -209,8 +211,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -220,13 +222,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="11528 Valley Hi Dr, Wichita, KS, 67209">
-        <input type="hidden" name="message" value="I am interested in the property at 11528 Valley Hi Dr, Wichita, KS, 67209 (MLS# 680496). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 11528 Valley Hi Dr, Wichita, KS, 67209 (MLS# 680496). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

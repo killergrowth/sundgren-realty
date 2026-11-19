@@ -13486,7 +13486,7 @@
     "state": "KS",
     "lat": 37.682689,
     "lng": -97.527983,
-    "price": 542161,
+    "price": 548361,
     "beds": 5,
     "baths": 3,
     "sqft": "3037",
@@ -19213,7 +19213,7 @@
     "state": "KS",
     "lat": 37.73907366,
     "lng": -97.38637146,
-    "price": 450000,
+    "price": 435000,
     "beds": null,
     "baths": null,
     "sqft": "3622",
@@ -19225,7 +19225,8 @@
     "isSundgren": false,
     "agentName": "Lindsey Pfeifer",
     "agentPhone": "3162852999",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 450000
   },
   {
     "slug": "3619-3621-longleaf-st-wichita-ks-668006",
@@ -19236,7 +19237,7 @@
     "state": "KS",
     "lat": 37.73835443,
     "lng": -97.38699074,
-    "price": 450000,
+    "price": 435000,
     "beds": null,
     "baths": null,
     "sqft": "3622",
@@ -19248,7 +19249,8 @@
     "isSundgren": false,
     "agentName": "Lindsey Pfeifer",
     "agentPhone": "3162852999",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 450000
   },
   {
     "slug": "4520-70th-st-el-dorado-ks-674812",
@@ -61883,7 +61885,7 @@
     "state": "KS",
     "lat": 37.739282,
     "lng": -97.386326,
-    "price": 230000,
+    "price": 219900,
     "beds": 4,
     "baths": 3,
     "sqft": "1811",
@@ -61895,7 +61897,8 @@
     "isSundgren": false,
     "agentName": "Lindsey Pfeifer",
     "agentPhone": "3162852999",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 230000
   },
   {
     "slug": "3621-longleaf-st-wichita-ks-668092",
@@ -61906,7 +61909,7 @@
     "state": "KS",
     "lat": 37.738441,
     "lng": -97.387061,
-    "price": 230000,
+    "price": 219900,
     "beds": 4,
     "baths": 3,
     "sqft": "1811",
@@ -61918,7 +61921,8 @@
     "isSundgren": false,
     "agentName": "Lindsey Pfeifer",
     "agentPhone": "3162852999",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 230000
   },
   {
     "slug": "3010-westridge-dr-wichita-ks-668044",
@@ -61929,7 +61933,7 @@
     "state": "KS",
     "lat": 37.739115,
     "lng": -97.386403,
-    "price": 230000,
+    "price": 219900,
     "beds": 4,
     "baths": 3,
     "sqft": "1811",
@@ -61941,7 +61945,8 @@
     "isSundgren": false,
     "agentName": "Lindsey Pfeifer",
     "agentPhone": "3162852999",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 230000
   },
   {
     "slug": "3619-longleaf-st-wichita-ks-668091",
@@ -61952,7 +61957,7 @@
     "state": "KS",
     "lat": 37.738369,
     "lng": -97.387035,
-    "price": 230000,
+    "price": 219900,
     "beds": 4,
     "baths": 3,
     "sqft": "1811",
@@ -61964,7 +61969,8 @@
     "isSundgren": false,
     "agentName": "Lindsey Pfeifer",
     "agentPhone": "3162852999",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 230000
   },
   {
     "slug": "3012-westridge-dr-wichita-ks-668045",
@@ -61975,7 +61981,7 @@
     "state": "KS",
     "lat": 37.739151,
     "lng": -97.38647,
-    "price": 230000,
+    "price": 219900,
     "beds": 4,
     "baths": 3,
     "sqft": "1811",
@@ -61987,7 +61993,8 @@
     "isSundgren": false,
     "agentName": "Lindsey Pfeifer",
     "agentPhone": "3162852999",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 230000
   },
   {
     "slug": "9149-chris-ct-bel-aire-ks-664477",
@@ -71726,7 +71733,7 @@
     "state": "KS",
     "lat": 37.68177,
     "lng": -97.305491,
-    "price": 195000,
+    "price": 180000,
     "beds": 3,
     "baths": 2,
     "sqft": "2964",
@@ -71738,7 +71745,8 @@
     "isSundgren": false,
     "agentName": "Carrie Licon",
     "agentPhone": "3163044152",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 195000
   },
   {
     "slug": "103-mendocino-ct-goddard-ks-672748",
@@ -76350,7 +76358,7 @@
     "state": "KS",
     "lat": 37.738349,
     "lng": -97.388436,
-    "price": 184900,
+    "price": 179900,
     "beds": 3,
     "baths": 2,
     "sqft": "1259",
@@ -76362,7 +76370,8 @@
     "isSundgren": false,
     "agentName": "Lindsey Pfeifer",
     "agentPhone": "3162852999",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 184900
   },
   {
     "slug": "3737-longleaf-st-wichita-ks-667939",
@@ -76373,7 +76382,7 @@
     "state": "KS",
     "lat": 37.738352,
     "lng": -97.387735,
-    "price": 184900,
+    "price": 179900,
     "beds": 3,
     "baths": 2,
     "sqft": "1259",
@@ -76385,7 +76394,8 @@
     "isSundgren": false,
     "agentName": "Lindsey Pfeifer",
     "agentPhone": "3162852999",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 184900
   },
   {
     "slug": "17130-lawson-cir-goddard-ks-660044",
@@ -110515,7 +110525,7 @@
     "state": "KS",
     "lat": 37.827388,
     "lng": -96.851034,
-    "price": 50000,
+    "price": 40000,
     "beds": 4,
     "baths": 1,
     "sqft": "1464",
@@ -110528,7 +110538,7 @@
     "agentName": "Darren Jackson Jr.",
     "agentPhone": "3163237503",
     "agentEmail": "",
-    "previousPrice": 60000
+    "previousPrice": 50000
   },
   {
     "slug": "304-linden-st-dexter-ks-668933",
@@ -111828,7 +111838,7 @@
     "state": "KS",
     "lat": 37.24537,
     "lng": -98.227115,
-    "price": 55000,
+    "price": 50000,
     "beds": 3,
     "baths": 1,
     "sqft": "2339",
@@ -111840,7 +111850,8 @@
     "isSundgren": false,
     "agentName": "Debra Allen",
     "agentPhone": "6203059722",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 55000
   },
   {
     "slug": "1611-8-st-arkansas-city-ks-676057",
