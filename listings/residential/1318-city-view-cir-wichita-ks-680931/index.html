@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -143,7 +143,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Property offered at ONLINE ONLY auction. BIDDING OPENS: Tuesday, November 10th, 2026 at 2:00 PM (ct) | BIDDING CLOSING: Thursday, November 19th, 2026 at 2:30 PM (ct). Bidding will remain open on this property until 90 seconds have passed without receiving a bid. Property available to preview by appointment. CLEAR TITLE AT CLOSING, NO BACK TAXES. ONLINE ONLY!!! PREMIER!!! Welcome to this beautifully appointed 4-bedroom, 3-bath home with an oversized 3-car garage, built by Matt Peters in the highly desirable Auburn Hills neighborhood. This home has it all, 3 levels of back patio overlook the 16th hole of the golf course &amp; 2 large manicured ponds!!! Finishes like hickory hardwood, travertine, granite &amp; copper sinks highlight the quality of this build. The open-concept living area features a foyer with oversized wooden front door leading to the living room with vaulted ceilings, the hickory hardwood flows through the open plan kitchen, dining &amp; hearth room with gas fireplace, creating a spacious setting for everyday living &amp; entertaining. The kitchen offers granite countertops, a center island with eating bar, a large hidden walk-in pantry, &amp; stainless steel appliances, including a microwave, oven, gas range with pot filler &amp; hood, two dishwashers surrounding each side of the oversized sink &amp; Sub-Zero refrigerator, all of which transfer with the property. Just off the garage to the kitchen, the mudroom/laundry room includes a wash sink &amp; build it bench. The main level features three bedrooms, each with a walk-in closet. The primary suite includes a private ensuite bathroom with a jetted tub, double vanity with copper sinks, walk-in shower, walk-in closet, &amp; separate water closet. the travertine tile, tub &amp; shower surround elevate the space. The second main-level bathroom features a tub/shower combo, with granite countertops in both main-level bathrooms. The primary suite gives you private door to the open covered patio at overlooking the 16th hole &amp; the lower paver patio. Downstairs, the finished basement offers a spacious recreation/family room complete with a wet bar &amp; billiards table, making it a great space for entertaining. The basement also includes a fourth bedroom, a bonus room ideal for an office, hobby room, or other flexible-use space, &amp; a third bathroom with a walk-in shower. A utility room with built-in shelving provides additional storage. Walk out to the lower lever covered patio &amp; access the main level patio. Per Seller, the pool table transfers. The oversized 3-car garage offers room for storage, golf carts, or a workspace. Outside, the property features beautiful wrought-iron fencing, irrigation well, half basketball hoop, &amp; multiple areas to enjoy the outdoors. The entire home has whole house speakers &amp; those speakers continued outdoor as well. Total outdoor patio space is an impressive 1,398 square feet &amp; each level has an amazing view of the course, 16th hole, &amp; accesses the course walking path with a view of 2 ponds. Landscaped artfully, you can also see trees beyond it. The coveted Auburn Hills neighborhood offers a variety of amenities, including a jogging path, lake/ponds, community swimming pool, golf course, &amp; greenbelt. With its spacious layout, finished basement, oversized garage, &amp; inviting indoor *Buyer should verify school assignments as they are subject to change. The real estate is offered at public auction in its present, “as is where is” condition &amp; is accepted by the buyer without any expressed or implied warranties or representations from the seller or seller’s agents. Full auction terms &amp; conditions provided in the Property Information Packet. Total purchase price will include a 10% buyer’s premium ($2,500.00 minimum) added to the final bid. Property available to preview by appointment. Earnest money is due from the high bidder at the auction in the form of cash, check, or immediately available, certified funds in the amount of $20,000 for a 30-day closing or $30,000 for a 45-day closing.</p>
     </div>
@@ -204,8 +206,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -215,13 +217,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="1318 City View Cir, Wichita, KS, 67235">
-        <input type="hidden" name="message" value="I am interested in the property at 1318 City View Cir, Wichita, KS, 67235 (MLS# 680931). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 1318 City View Cir, Wichita, KS, 67235 (MLS# 680931). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
@@ -306,6 +308,20 @@
           <span class="listing-card-more">View Details &rarr;</span>
         </div>
       </a>
+      <a href="/listings/residential/1748-grant-rd-el-dorado-ks-682119/" class="listing-card">
+        <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-682119_62746e21c8731ec26f502e38d7c76bb847a379b2df8c03d874b3e63c5b625a70.jpg" alt="1748 Grant Rd, El Dorado, KS, 67042" loading="lazy">
+        <div class="listing-card-body">
+          <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+            <span class="listing-card-badge" style="background:#22c55e;">Active</span>
+            <span class="listing-card-badge" style="background:#0ea5e9;">Residential</span>
+          </div>
+          <p class="listing-card-address">1748 Grant Rd</p>
+          <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>El Dorado, KS</p>
+          <p class="listing-card-meta"><i class="fas fa-ruler-combined"></i>4 Bd · 3 Ba · 3,250 sq ft</p>
+          <p class="listing-card-price">$995,000</p>
+          <span class="listing-card-more">View Details &rarr;</span>
+        </div>
+      </a>
       <a href="/listings/residential/10608-90th-st-augusta-ks-676431/" class="listing-card">
         <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-676431_6706346247435258080.jpg" alt="10608 90th ST, Augusta, KS, 67010" loading="lazy">
         <div class="listing-card-body">
@@ -317,20 +333,6 @@
           <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Augusta, KS</p>
           <p class="listing-card-meta"><i class="fas fa-ruler-combined"></i>4 Bd · 3 Ba · 2,904 sq ft</p>
           <p class="listing-card-price">$695,000</p>
-          <span class="listing-card-more">View Details &rarr;</span>
-        </div>
-      </a>
-      <a href="/listings/residential/810-29th-rd-little-river-ks-664897/" class="listing-card">
-        <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-664897_3d9ef5211b70ed56aca6914655526de643260be70aa1182b21524c9e6a527838.jpg" alt="810 29th Rd, Little River, KS, 67457" loading="lazy">
-        <div class="listing-card-body">
-          <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
-            <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-            <span class="listing-card-badge" style="background:#0ea5e9;">Residential</span>
-          </div>
-          <p class="listing-card-address">810 29th Rd</p>
-          <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Little River, KS</p>
-          <p class="listing-card-meta"><i class="fas fa-ruler-combined"></i>3 Bd · 3 Ba · 3,307 sq ft</p>
-          <p class="listing-card-price">$600,000</p>
           <span class="listing-card-more">View Details &rarr;</span>
         </div>
       </a>

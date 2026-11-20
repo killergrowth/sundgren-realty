@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -143,7 +143,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Property offered at ONLINE ONLY auction. | 10% Buyer&#39;s Premium will be added to the final bid. | BIDDING OPENS: Tuesday, Novemeber 10th, 2026 at 2:00 PM (ct) | BIDDING CLOSING: Thursday, November 19th, 2026 at 3:00 PM (ct). Bidding will remain open on this property until 90 seconds have passed without receiving a bid. Property available to preview by appointment. CLEAR TITLE AT CLOSING, NO BACK TAXES. ONLINE ONLY!!! NO MINIMUM, NO RESERVE!!! Welcome home to 1540 N. Lawrence Ct., tucked away on a cul-de-sac in the desirable Eastside Rockhurst neighborhood, near 13th &amp; Woodlawn! This sprawling ranch home boasts great curb appeal and an attached 2-car garage, and is selling to the highest bidder, regardless of price! Inside, the foyer leads to the left to a sunken formal living room with vaulted ceilings, a beautiful Tiffany-style stained-glass ceiling light fixture, and a formal dining room. Straight ahead from the front door is the great family room with vaulted ceilings, wood beams, and a large brick fireplace. The updated kitchen features granite countertops, a trash compactor, a breakfast bar, and a dining area. Just off the kitchen is a half bath and the laundry closet. Don&#39;t miss the bright sunroom, leading to the backyard through glass sliders! Across the home are two secondary bedrooms, a full bathroom with two sinks and a tub/shower combo, and a spacious primary suite! Nestle into your own oasis with double closets and an ensuite bathroom with two sinks and a tub/shower combo. The oversized, attached 2-car garage offers storage, built-in shelving, and a pegboard. The partially finished basement offers an amazing opportunity to add up to 775 sq. ft. of finished living space, with many walls and ceilings already completed! Don&#39;t miss this rare and incredible opportunity to own 1540 N. Lawrence Ct., selling regardless of price! Property offered at ONLINE ONLY auction. | 10% Buyer&#39;s Premium will be added to the final bid. | BIDDING OPENS: Tuesday, Novemeber 10th, 2026 at 2:00 PM (ct) | BIDDING CLOSING: Thursday, November 19th, 2026 at 3:00 PM (ct). Bidding will remain open on this property until 90 seconds have passed without receiving a bid. Property available to preview by appointment. Per the seller, the wine fridge will not transfer with the property. Buyer&#39;s choice for earnest money: $10,000 for 30-day closing or $15,000 for 45-day closing. County Records for the finished living area do not reflect the entire finished living space. Basement finished living area provided is measured and approximate. *Buyer should verify school assignments as they are subject to change. The real estate is offered at public auction in its present, “as is where is” condition and is accepted by the buyer without any expressed or implied warranties or representations from the seller or seller’s agents. Full auction terms and conditions provided in the Property Information Packet. Total purchase price will include a 10% buyer’s premium ($2,500.00 minimum) added to the final bid. Property available to preview by appointment. Earnest money is due from the high bidder at the auction in the form of check, or immediately available, certified funds in the amount of $10,000 for 30-day or $15,000 for 45-day.</p>
     </div>
@@ -200,8 +202,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -211,13 +213,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="1540 Lawrence CT, Wichita, KS, 67206">
-        <input type="hidden" name="message" value="I am interested in the property at 1540 Lawrence CT, Wichita, KS, 67206 (MLS# 681080). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 1540 Lawrence CT, Wichita, KS, 67206 (MLS# 681080). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
@@ -302,6 +304,20 @@
           <span class="listing-card-more">View Details &rarr;</span>
         </div>
       </a>
+      <a href="/listings/residential/1748-grant-rd-el-dorado-ks-682119/" class="listing-card">
+        <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-682119_62746e21c8731ec26f502e38d7c76bb847a379b2df8c03d874b3e63c5b625a70.jpg" alt="1748 Grant Rd, El Dorado, KS, 67042" loading="lazy">
+        <div class="listing-card-body">
+          <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
+            <span class="listing-card-badge" style="background:#22c55e;">Active</span>
+            <span class="listing-card-badge" style="background:#0ea5e9;">Residential</span>
+          </div>
+          <p class="listing-card-address">1748 Grant Rd</p>
+          <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>El Dorado, KS</p>
+          <p class="listing-card-meta"><i class="fas fa-ruler-combined"></i>4 Bd · 3 Ba · 3,250 sq ft</p>
+          <p class="listing-card-price">$995,000</p>
+          <span class="listing-card-more">View Details &rarr;</span>
+        </div>
+      </a>
       <a href="/listings/residential/10608-90th-st-augusta-ks-676431/" class="listing-card">
         <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-676431_6706346247435258080.jpg" alt="10608 90th ST, Augusta, KS, 67010" loading="lazy">
         <div class="listing-card-body">
@@ -313,20 +329,6 @@
           <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Augusta, KS</p>
           <p class="listing-card-meta"><i class="fas fa-ruler-combined"></i>4 Bd · 3 Ba · 2,904 sq ft</p>
           <p class="listing-card-price">$695,000</p>
-          <span class="listing-card-more">View Details &rarr;</span>
-        </div>
-      </a>
-      <a href="/listings/residential/810-29th-rd-little-river-ks-664897/" class="listing-card">
-        <img class="listing-card-img" src="https://cdn.repliers.io/southcentralkansas/IMG-664897_3d9ef5211b70ed56aca6914655526de643260be70aa1182b21524c9e6a527838.jpg" alt="810 29th Rd, Little River, KS, 67457" loading="lazy">
-        <div class="listing-card-body">
-          <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
-            <span class="listing-card-badge" style="background:#22c55e;">Active</span>
-            <span class="listing-card-badge" style="background:#0ea5e9;">Residential</span>
-          </div>
-          <p class="listing-card-address">810 29th Rd</p>
-          <p class="listing-card-meta"><i class="fas fa-map-marker-alt"></i>Little River, KS</p>
-          <p class="listing-card-meta"><i class="fas fa-ruler-combined"></i>3 Bd · 3 Ba · 3,307 sq ft</p>
-          <p class="listing-card-price">$600,000</p>
           <span class="listing-card-more">View Details &rarr;</span>
         </div>
       </a>

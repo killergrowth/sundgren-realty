@@ -25862,7 +25862,7 @@
     "state": "KS",
     "lat": 37.73834363,
     "lng": -97.38746357,
-    "price": 390000,
+    "price": 375000,
     "beds": null,
     "baths": null,
     "sqft": "2752",
@@ -25874,7 +25874,8 @@
     "isSundgren": false,
     "agentName": "Lindsey Pfeifer",
     "agentPhone": "3162852999",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 390000
   },
   {
     "slug": "3749-3751-longleaf-st-wichita-ks-667999",
@@ -33016,7 +33017,7 @@
     "state": "KS",
     "lat": 37.763795,
     "lng": -97.408844,
-    "price": 359900,
+    "price": 349900,
     "beds": 3,
     "baths": 2,
     "sqft": "1524",
@@ -33028,7 +33029,8 @@
     "isSundgren": false,
     "agentName": "Carol Phipps",
     "agentPhone": "3166481199",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 359900
   },
   {
     "slug": "4438-sunny-ct-wichita-ks-677657",
@@ -33339,7 +33341,7 @@
     "state": "KS",
     "lat": 37.557147,
     "lng": -97.258172,
-    "price": 339900,
+    "price": 329900,
     "beds": 3,
     "baths": 3,
     "sqft": "3277",
@@ -33352,7 +33354,7 @@
     "agentName": "Susanne Spring",
     "agentPhone": "3162587073",
     "agentEmail": "",
-    "previousPrice": 349900
+    "previousPrice": 339900
   },
   {
     "slug": "11857-160th-st-rose-hill-ks-675633",
@@ -86203,7 +86205,7 @@
     "state": "KS",
     "lat": 37.663739,
     "lng": -97.242034,
-    "price": 145000,
+    "price": 139999,
     "beds": 3,
     "baths": 3,
     "sqft": "1574",
@@ -86216,7 +86218,7 @@
     "agentName": "Shana K Wurth",
     "agentPhone": "3163029553",
     "agentEmail": "",
-    "previousPrice": 150000
+    "previousPrice": 145000
   },
   {
     "slug": "727-fountain-ave-wichita-ks-677886",
@@ -107562,7 +107564,7 @@
     "state": "KS",
     "lat": 37.66754,
     "lng": -97.320096,
-    "price": 64900,
+    "price": 60900,
     "beds": 2,
     "baths": 1,
     "sqft": "690",
@@ -107575,7 +107577,7 @@
     "agentName": "Vic L Hannah",
     "agentPhone": "3166823866",
     "agentEmail": "",
-    "previousPrice": 69900
+    "previousPrice": 64900
   },
   {
     "slug": "212-princeton-st-bennington-ks-677335",
