@@ -39125,7 +39125,7 @@
     "state": "KS",
     "lat": 37.681244,
     "lng": -97.244053,
-    "price": 305000,
+    "price": 299999,
     "beds": 4,
     "baths": 3,
     "sqft": "3452",
@@ -39138,7 +39138,7 @@
     "agentName": "Amanda Jolley",
     "agentPhone": "3162139043",
     "agentEmail": "",
-    "previousPrice": 309500
+    "previousPrice": 305000
   },
   {
     "slug": "142-magnolia-dr-kaw-city-ok-676981",
@@ -45923,7 +45923,7 @@
     "state": "KS",
     "lat": 37.698427,
     "lng": -97.497607,
-    "price": 290890,
+    "price": 297265,
     "beds": 3,
     "baths": 2,
     "sqft": "1501",
@@ -91737,7 +91737,7 @@
     "state": "KS",
     "lat": 37.667602,
     "lng": -97.286847,
-    "price": 130000,
+    "price": 128000,
     "beds": 4,
     "baths": 2,
     "sqft": "1368",
@@ -91750,7 +91750,7 @@
     "agentName": "Carrie Licon",
     "agentPhone": "3163044152",
     "agentEmail": "",
-    "previousPrice": 135000
+    "previousPrice": 130000
   },
   {
     "slug": "407-pine-st-pratt-ks-674188",
@@ -99694,7 +99694,7 @@
     "state": "KS",
     "lat": 37.395538,
     "lng": -97.277453,
-    "price": 95000,
+    "price": 79900,
     "beds": 2,
     "baths": 1,
     "sqft": "800",
@@ -99707,7 +99707,7 @@
     "agentName": "Sunni Goentzel",
     "agentPhone": "3162170217",
     "agentEmail": "",
-    "previousPrice": 106000
+    "previousPrice": 95000
   },
   {
     "slug": "0000-sierra-ridge-st-garden-plain-ks-669564",
@@ -126394,7 +126394,7 @@
     "state": "KS",
     "lat": 37.148062,
     "lng": -98.032507,
-    "price": 23000,
+    "price": 22000,
     "beds": 2,
     "baths": 1,
     "sqft": "960",
@@ -126407,7 +126407,7 @@
     "agentName": "Steve Myers",
     "agentPhone": "3163304318",
     "agentEmail": "",
-    "previousPrice": 24000
+    "previousPrice": 23000
   },
   {
     "slug": "1103-stutzman-cir-halstead-ks-673310",
@@ -127616,7 +127616,7 @@
     "state": "KS",
     "lat": 37.962379,
     "lng": -97.141504,
-    "price": 17500,
+    "price": 21000,
     "beds": null,
     "baths": null,
     "sqft": null,

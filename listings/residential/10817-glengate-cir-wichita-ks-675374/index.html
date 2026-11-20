@@ -101,7 +101,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-terminated pill">Inactive</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -137,7 +137,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Welcome to a residence that redefines luxury with unforgettable design and elevated living at every turn. Tucked within a gated community, this exceptional home offers a rare blend of architectural drama, refined comfort, and thoughtfully curated and neutral spaces. From the moment you arrive, the inviting front patio with a built-in firepit sets the tone—perfect for quiet mornings or evenings under the stars. Inside, the home unfolds with striking details and seamless flow, anchored by a truly one-of-a-kind dining experience featuring a glass floor that reveals a stunning view into the pool below—an architectural centerpiece sure to leave a lasting impression. The heart of the home is a chef-inspired kitchen, outfitted with premium luxury appliances including a 6-burner gas Wolf range with griddle and a Sub-Zero contemporary glass-door refrigerator. Abundant soft-close cabinets and drawers provide exceptional storage, complemented by a spacious walk-in pantry. Cabinets have been stripped and are ready for a new color of buyers choice. Expansive living areas showcase floor-to-ceiling glass, filling the home with natural light and capturing peaceful pond and pool views that create a sense of calm throughout. With 3 bedrooms, an office, theater room (also concrete a safe room), exercise room, game room, and 4.5 baths, the layout balances openness with privacy. The main-floor office offers a quiet, functional workspace and can easily serve as a flexible space such as a den, library, or additional 4th bedroom with the addition of a door, as it has access to a Jack-and-Jill full bath. The primary suite is a true retreat, featuring pond views and private access to the covered balcony. The ensuite bath delivers a spa-like experience with dual sinks, a freestanding tub with ceiling-mounted rain fill, and a Wasauna enclosed steam shower (one of two in the home). The primary closet is thoughtfully designed with a full-size washer and dryer, built-in ironing board, three hampers, and seasonal storage racks. In total, the home offers three separate laundry areas, including a full-size laundry room with sink and extensive cabinetry, plus an additional space ready for a stackable unit. The lower level features stylish heated concrete floors throughout. A spacious family room is highlighted by a two-way gas fireplace, enjoyed both indoors and out. The game room includes a full wet bar with space for a full-size refrigerator, dishwasher, and contemporary cabinetry, along with glass accents overlooking the pool. The exercise room offers a mirrored wall, built-in cabinetry, a cedar sauna, and private access to the hall full bath. A private bedroom suite on this level includes its own sitting area, coffee bar, and en-suite bath—ideal for extended stays or flexible living arrangements. The theater room delivers a truly immersive experience with a twinkling, sky-inspired ceiling, tiered seating platform, and included projector and sound equipment—plus a few fun surprises. Outdoor living continues with a covered balcony, additional side patio with a plumbed gas line, and multiple spaces to relax while taking in serene water views. Whether enjoying the pool, soaking up the sun, or unwinding in the shade, the setting offers a peaceful escape. Bold in design yet effortless in livability, this home is a true statement—crafted for those who appreciate distinctive architecture, elevated finishes, and a setting that offers both privacy and convenient access to nearby amenities.</p>
     </div>
@@ -198,8 +200,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -209,13 +211,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="10817 Glengate Cir, Wichita, KS, 67206">
-        <input type="hidden" name="message" value="I am interested in the property at 10817 Glengate Cir, Wichita, KS, 67206 (MLS# 675374). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 10817 Glengate Cir, Wichita, KS, 67206 (MLS# 675374). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

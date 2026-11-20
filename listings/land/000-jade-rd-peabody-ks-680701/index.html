@@ -112,12 +112,14 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Land</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Land</span></div></div>
 
         
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Auction Date: THURSDAY NOVEMBER 19, 2026 4:00 PM * Auction Location: Peabody Senior Center, 106 N Walnut, Peabody, KS 66866 * PROPERTY DESCRIPTION: 307± acres of quality land offered for sale in two separate tracts between Peabody and Newton in Marion County, Kansas. This diverse property offers an excellent combination of productive tillable farmland, native pasture, and valuable water resources, providing a versatile investment opportunity for farmers, ranchers, and land investors alike. Harvey County Rural Water District No. 1 has a 2-inch water line along the north side of Highway 50 and a 1.5-inch water line along the north side of 80th Street, offering additional rural water access potential. Buyers should verify availability, connection requirements, and service details with the water district. With a desirable blend of tillable acreage, native grass, and water resources, this property presents a high-quality and diversified land investment opportunity in central Kansas. Whether you’re looking to expand an existing farming or ranching operation, add agricultural land to your portfolio, or invest in a property with multiple potential uses, both tracts offer all of the above! Tract 1 – Tillable Farmland &amp; Native Pasture: This 147+- acres consists of approximately two-thirds tillable farmland and one-third native pasture, Tract 1 offers a balanced mix of productive tillable farm ground and pasture that can be utilized has hay meadow or for livestock grazing. Two ponds provide a good water source and enhance the property’s versatility for livestock and recreational use. Tract 2 – Native Pasture &amp; Tillable Ground: 160+- acres that features approximately seven-eighths pasture and one-eighth tillable farmland, Tract 2 is a really clean high-quality pasture tract with some bonus tillable farm ground. A solar-powered water well provides a valuable water source for livestock. MANNER OF AUCTION: These tracts will be offered high bidders choice by the acre, with the option to take either or both tracts. If the initial high bidder only takes one tract, the remaining tract will then be offered in the same manner.</p>
     </div>
@@ -154,8 +156,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -165,13 +167,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="000 Jade Rd, Peabody, KS, 66866">
-        <input type="hidden" name="message" value="I am interested in the property at 000 Jade Rd, Peabody, KS, 66866 (MLS# 680701). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 000 Jade Rd, Peabody, KS, 66866 (MLS# 680701). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

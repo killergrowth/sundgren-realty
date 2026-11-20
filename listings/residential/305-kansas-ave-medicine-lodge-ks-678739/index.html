@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Fully Updated 2-Bedroom Home in Medicine Lodge! Move-in ready and full of updates! This charming 2-bedroom, 1-bath home in Medicine Lodge has been extensively updated and is ready for its next owner. Recent improvements include new flooring, fresh interior and exterior paint, new HVAC, new windows, an instant hot water tank, updated plumbing, and new LED lighting throughout. The home also features a full unfinished basement, offering plenty of storage and potential for future use. A covered front porch provides a welcoming space to relax and enjoy the neighborhood. The kitchen comes equipped with a stove and refrigerator, making this home ready for a new owner or tenant from day one. The backyard adds even more functionality with a carport, tool shed with a concrete floor, and a small garden shed—providing convenient covered parking and plenty of storage for tools, equipment, and outdoor items. With so many of the major updates already completed, this property offers low-maintenance ownership and excellent investment potential. It would make a great rental property, first home, or affordable opportunity for someone looking to own a fully updated home in Medicine Lodge.</p>
     </div>
@@ -158,7 +160,7 @@
     <div class="feat-grid">
     <div class="feat-cell">
       <i class="fas fa-fire"></i>
-      <div><span class="mlabel">Heating</span>Forced Air, Natural Gas</div>
+      <div><span class="mlabel">Heating</span>Natural Gas, Forced Air</div>
     </div>
     <div class="feat-cell">
       <i class="fas fa-snowflake"></i>
@@ -191,9 +193,9 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
     (function(){
-      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.280384,-98.58278],15);
+      var map = L.map('sg-map',{scrollWheelZoom:false}).setView([37.280314,-98.582781],15);
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap contributors',maxZoom:19}).addTo(map);
-      L.marker([37.280384,-98.58278]).addTo(map).bindPopup('305 Kansas Ave, Medicine Lodge, KS 67104').openPopup();
+      L.marker([37.280314,-98.582781]).addTo(map).bindPopup('305 Kansas Ave, Medicine Lodge, KS 67104').openPopup();
     })();
     </script>
   </div>
@@ -201,8 +203,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -212,13 +214,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="305 Kansas Ave, Medicine Lodge, KS, 67104">
-        <input type="hidden" name="message" value="I am interested in the property at 305 Kansas Ave, Medicine Lodge, KS, 67104 (MLS# 678739). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 305 Kansas Ave, Medicine Lodge, KS, 67104 (MLS# 678739). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
