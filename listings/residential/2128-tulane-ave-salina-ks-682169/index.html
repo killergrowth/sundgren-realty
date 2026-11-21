@@ -11,14 +11,14 @@
   <link rel="apple-touch-icon" href="/images/favicon.png">
   <meta property="og:title" content="2128 Tulane Ave, Salina, KS, 67401 | Sundgren Realty &amp; Auction">
   <meta property="og:description" content="Residential property at 2128 Tulane Ave, Salina, KS, 67401. Don’t miss this solid, well-laid-out duplex at 2128 Tulane Ave in Salina! Offering nearly 2,000...">
-  <meta property="og:image" content="https://sundgrenrealty.com/images/og-image.jpg">
+  <meta property="og:image" content="https://cdn.repliers.io/southcentralkansas/IMG-682169_2909b699266970c8fd615c4497733c084d261609518a273853fc31e695121cfc.jpg">
   <meta property="og:url" content="https://sundgrenrealty.com/listings/residential/2128-tulane-ave-salina-ks-682169/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Sundgren Realty &amp; Auction">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="2128 Tulane Ave, Salina, KS, 67401 | Sundgren Realty &amp; Auction">
   <meta name="twitter:description" content="Residential property at 2128 Tulane Ave, Salina, KS, 67401. Don’t miss this solid, well-laid-out duplex at 2128 Tulane Ave in Salina! Offering nearly 2,000...">
-  <meta name="twitter:image" content="https://sundgrenrealty.com/images/og-image.jpg">
+  <meta name="twitter:image" content="https://cdn.repliers.io/southcentralkansas/IMG-682169_2909b699266970c8fd615c4497733c084d261609518a273853fc31e695121cfc.jpg">
   <meta name="robots" content="noindex, nofollow">
   <!-- SCHEMA:BreadcrumbList -->
   <!-- SCHEMA:WebPage -->
@@ -56,7 +56,63 @@
       <!-- Left Column -->
       <div class="auction-main">
 
+        <div class="sg-photo-pill-wrap">
+  <section class="photo-gallery-section" style="margin-bottom:24px;">
+    <div class="sg-mosaic">
+      <button class="sg-mosaic-hero" data-idx="0" aria-label="View photo 1" type="button">
+        <img src="https://cdn.repliers.io/southcentralkansas/IMG-682169_2909b699266970c8fd615c4497733c084d261609518a273853fc31e695121cfc.jpg" alt="Primary property photo" loading="eager">
+      </button>
+      <div class="sg-mosaic-strip">
+      <button class="sg-mosaic-thumb" data-idx="1" aria-label="View photo 2" type="button">
+        <img src="https://cdn.repliers.io/southcentralkansas/IMG-682169_5f267a7bafd91dd56b9c6efd3002a98c1624b6cb4601767ced4d2cad7ecf0103.jpg" alt="Property photo 2" loading="lazy">
         
+      </button>
+      <button class="sg-mosaic-thumb" data-idx="2" aria-label="View photo 3" type="button">
+        <img src="https://cdn.repliers.io/southcentralkansas/IMG-682169_14dd4e6af3503eb78a3deff6529cfe4c5f3ba40abc54e0e3dec352df9912d820.jpg" alt="Property photo 3" loading="lazy">
+        
+      </button>
+      <button class="sg-mosaic-thumb" data-idx="3" aria-label="View photo 4" type="button">
+        <img src="https://cdn.repliers.io/southcentralkansas/IMG-682169_12ac5f2fe110c71bb398a7a2ad2e89c4f9b14db273f1c2cd9f2d7dfd60a466bd.jpg" alt="Property photo 4" loading="lazy">
+        <div class="sg-mosaic-more" aria-hidden="true">+4 more</div>
+      </button>
+      </div>
+    </div>
+    <div class="sg-gallery-bar">
+      <button class="sg-gallery-all-btn" id="sg-view-all" type="button">
+        <i class="fas fa-images"></i> View all 8 photos
+      </button>
+    </div>
+  </section>
+
+  <div id="sg-lightbox" role="dialog" aria-modal="true" aria-label="Photo gallery">
+    <button id="sg-lightbox-close" aria-label="Close">&times;</button>
+    <button id="sg-lightbox-prev" aria-label="Previous">&#8249;</button>
+    <img id="sg-lightbox-img" src="" alt="Property photo">
+    <button id="sg-lightbox-next" aria-label="Next">&#8250;</button>
+    <span id="sg-lightbox-counter"></span>
+  </div>
+
+  <script>
+  (function(){
+    var srcs = ["https://cdn.repliers.io/southcentralkansas/IMG-682169_2909b699266970c8fd615c4497733c084d261609518a273853fc31e695121cfc.jpg","https://cdn.repliers.io/southcentralkansas/IMG-682169_5f267a7bafd91dd56b9c6efd3002a98c1624b6cb4601767ced4d2cad7ecf0103.jpg","https://cdn.repliers.io/southcentralkansas/IMG-682169_14dd4e6af3503eb78a3deff6529cfe4c5f3ba40abc54e0e3dec352df9912d820.jpg","https://cdn.repliers.io/southcentralkansas/IMG-682169_12ac5f2fe110c71bb398a7a2ad2e89c4f9b14db273f1c2cd9f2d7dfd60a466bd.jpg","https://cdn.repliers.io/southcentralkansas/IMG-682169_96912dddab4bcacfddc8ac400a6428782eb7e360af5987ebf0f73754d1d887d3.jpg","https://cdn.repliers.io/southcentralkansas/IMG-682169_9f109032576dd9e77c954176c85f53ea4f2162492d8c7f5b3226281fbf57d52c.jpg","https://cdn.repliers.io/southcentralkansas/IMG-682169_d045c689fb6634aa6b223399b7284d17f7f83bea944763a58ebc22f19a828eef.jpg","https://cdn.repliers.io/southcentralkansas/IMG-682169_7e8fd0325c0cfa6d1c4d124228cf25806bb8abc973c54328b53fec8304d78570.jpg"];
+    var lb = document.getElementById('sg-lightbox');
+    var lbImg = document.getElementById('sg-lightbox-img');
+    var lbCtr = document.getElementById('sg-lightbox-counter');
+    var cur = 0;
+    function open(i){ cur=i; lbImg.src=srcs[i]; lbCtr.textContent=(i+1)+' / '+srcs.length; lb.classList.add('active'); document.body.style.overflow='hidden'; }
+    function close(){ lb.classList.remove('active'); document.body.style.overflow=''; }
+    document.querySelectorAll('.sg-mosaic-hero, .sg-mosaic-thumb').forEach(function(btn){
+      btn.addEventListener('click',function(){ open(parseInt(btn.dataset.idx,10)); });
+    });
+    var viewAll = document.getElementById('sg-view-all');
+    if (viewAll) viewAll.addEventListener('click', function(){ open(0); });
+    document.getElementById('sg-lightbox-close').addEventListener('click',close);
+    document.getElementById('sg-lightbox-prev').addEventListener('click',function(){ open((cur-1+srcs.length)%srcs.length); });
+    document.getElementById('sg-lightbox-next').addEventListener('click',function(){ open((cur+1)%srcs.length); });
+    lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
+    document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
+  })();
+  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -76,7 +132,7 @@
     </div>
   </div>
 
-        <div style="margin-top:0;">
+        <div style="margin-top:32px;">
           <div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Don’t miss this solid, well-laid-out duplex at 2128 Tulane Ave in Salina! Offering nearly 2,000 total square feet of living space, this 1978-built property features a practical 4-bedroom, 4-bathroom total configuration (2 bedrooms and 2 bathrooms per unit), giving tenants or an owner-occupant plenty of space and privacy. Situated on a generous 0.44-acre +/- lot, the property provides ample outdoor space, off-street parking, attached garage space, and room to breathe in an established residential neighborhood. Conveniently located just minutes from South High School / local parks / shopping and dining along South 9th Street, this property is an ideal turnkey addition to your investment portfolio—or a fantastic &quot;house-hack&quot; opportunity to live in one side while renting out the other.</p>
