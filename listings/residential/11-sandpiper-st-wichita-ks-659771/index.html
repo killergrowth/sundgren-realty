@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-terminated pill">Inactive</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Fantastic Shadybrook home built with steel structural components by and for the CEO of Christopher Steel! The craftsmanship and quality of the structure was unsurpassed when the home was built and still is today! The home is situated on a spectacular .68 acre treed lot to take advantage of the view of the large common areas behind for ultimate privacy! The Grand tone of the home is set up by the sweeping circle drive and the massive brick columned porch entryway! When you enter the home you are greeted by a spectacular Great Room with a massive wood and iron beamed ceiling in the high pitch vault with a complete wood lined ceiling! The great room boasts four large double windows, an arched hearth area that is suspended over the lower level with a woodburning fireplace in a full brick wall plus a unique custom iron and wood banister! The Great Room overlooks the family room on the lower level with an impressive view of four 7ft tall stacked windows in a 30.5ft tall ceiling, a one-of-a-kind custom built iron Chandelier and a flared stairway with an iron and wood railing! For entertaining there is a large formal dining room with set of five leaded glass windows, built-in hutch with leaded glass uppers and a passthrough from the kitchen for serving! Food prep will be a breeze in the large island kitchen with solid surface countertops, Butcher block island top, separate cooktop &amp; wall oven with warming drawer &amp; microwave, built-in Sub-Zero frig, sink with Instahot &amp; windows overlooking backyard plus a large breakfast nook with bay windows! Luxurious master suite with a full brick faced woodburning fireplace including built-ins, attached sunroom with French door entry with wood floor and wood ceiling! There are his and her separate bathrooms; hers&#39; includes a large vanity plus a separate makeup station, wet room with a 5ft Onyx walk-in shower, built-in cabinets and a large walk-in closet - his’ bathroom has a large vanity, walk-in tile shower and built-in closet! Off the kitchen is great all-purpose room with a Butler’s pantry, 2nd food prep station with cabinetry &amp; kitchen sink with windows, his and her built-in desks with bookcases above, door to backyard and a ½ guest bath! A back staircase leads to the basement &amp; an incredible storage room at garage level with an abundance of built-in cabinetry, a large walk-in shelved closet, a large walk-in cedar closet plus a secure trash room where it is serviced from the exterior! The lower level is an entertainment playground with a large family room with woodboring fireplace in a full brick faced wall, built-in entertainment center and a large rec area that can be shut off from family room plus a recessed wet bar! Basement guest bath with solid surface top vanity, shower and medicine cabinet plus access to a great office with a closet, wood beamed ceiling and skylights! Additionally, there are two more bedrooms – one with a wood beamed ceiling, built-in French door closets and a Atrium door to the walkout patio – second bedroom with viewout windows and a walk-in closet plus a Hollywood bath between the bedrooms with a double vanity and tub with tile shower over tub! Huge laundry room with an abundance of cabinetry, sink, folding table and a sewing desk! The 23x32 three car garage has 3 newer doors and openers and walkthrough door to yard! Out back the walkout patio is lined by a large arched brick retaining wall, the fenced yard has a sprinkler and well, plus there is a large sport court and an underground dog fence that also comes inside for control in the home! This is a great opportunity to own a very special, classic Wichita residence in a wonderful, prestigious neighborhood!</p>
     </div>
@@ -205,8 +207,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -216,13 +218,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="11 Sandpiper St, Wichita, KS, 67230">
-        <input type="hidden" name="message" value="I am interested in the property at 11 Sandpiper St, Wichita, KS, 67230 (MLS# 659771). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 11 Sandpiper St, Wichita, KS, 67230 (MLS# 659771). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
