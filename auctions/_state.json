@@ -1,5 +1,5 @@
 {
-  "lastFetch": "2026-11-21T10:42:52.439Z",
+  "lastFetch": "2026-11-21T18:46:52.217Z",
   "auctions": {
     "24096": {
       "slug": "test-auction-24096",
@@ -3024,6 +3024,12 @@
       "status": "accepting_bids",
       "name": "Retail Open Box, Refurbished & Repurposed Furniture, Appliances & Accessories ",
       "generated": "2026-11-19T20:04:19.536Z"
+    },
+    "174446": {
+      "slug": "multiproperty-auction-3-homes-for-sale-in-el-dorado-kansas-174446",
+      "status": "pending",
+      "name": "Multi-Property Auction: 3 Homes For Sale in El Dorado Kansas",
+      "generated": "2026-11-21T18:46:54.982Z"
     }
   }
 }
