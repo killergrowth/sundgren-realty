@@ -5451,7 +5451,7 @@
     "state": "KS",
     "lat": 37.094285,
     "lng": -96.154363,
-    "price": 875000,
+    "price": 860000,
     "beds": 3,
     "baths": 2,
     "sqft": "2020",
@@ -5463,7 +5463,8 @@
     "isSundgren": false,
     "agentName": "Cody Thurston",
     "agentPhone": "6207941229",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 875000
   },
   {
     "slug": "7501-53rd-st-n-st-maize-ks-654462",
