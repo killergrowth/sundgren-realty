@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Luxury, space, and functionality come together at 129 Springgate in Arkansas City, Kansas. Situated on approximately 5 +/- acres in one of the area’s premier neighborhoods, this impressive 4-bedroom, 4-bath home offers large main floor living and finished basement, extensive high-end updates, an in-ground gunite pool, and an exceptional 60&#39;x48&#39; heated shop. Built in 1996, the home underwent major modifications and renovations around 2020, creating a property designed for comfortable everyday living as well as entertaining on a large scale. At the center of the home is an expansive custom kitchen featuring an oversized island, extended-depth countertops, two ovens, abundant cabinetry and drawer space, and pull-out shelving throughout. A separate butler’s pantry with reverse osmosis provides additional prep and storage space. High-end lighting, detailed finishes, and an open layout connect the kitchen to multiple gathering areas, while three separate living spaces give everyone room to spread out. The home was built for entertaining. A full theater sound system extends throughout multiple rooms in the home and the large back porch. Walls of windows bring natural light into the rear living areas and create a seamless connection between the interior and outdoor spaces. The primary suite provides a private retreat complete with remote-controlled shades and a luxurious bath featuring a jetted tub and oversized shower with multiple body jets. Additional amenities include a separate steam shower, laundry/office room, three-zone climate control, ADT security system, whole-house generator, and wood-burning fireplaces on both the main level and in the basement. The full basement offers an incredible amount of additional living space. Two bedrooms are located downstairs, including one with a walk-in closet, along with an expansive recreation/living area centered around a second wood-burning fireplace. Use it as a game room, kids&#39; area, man cave, media space, or take advantage of the generous footprint to create additional offices or rooms. Outside is where this property truly separates itself. The in-ground gunite pool with a new pool liner, approximately 3.5&#39;-5&#39; deep, was designed so nearly the entire pool can be enjoyed for swimming, relaxing, and entertaining. The spacious patio, landscaping, large covered porch, and surrounding acreage create a private outdoor setting with plenty of room to gather. Just beyond the home sits the impressive 60&#39;x48&#39; insulated and heated shop. It features two large propane heaters, a bathroom, a loft, 220V power for a welder, 200-amp electrical service, large overhead doors, and newer metal roofing and siding. With 2,880 square feet of shop space, there is plenty of room for vehicles, equipment, a boat, UTVs, hobbies, storage, or a serious workshop. The acreage provides the space and privacy buyers often have to leave town to find, yet the property remains conveniently located near the Arkansas City Country Club/golf course and local amenities. For buyers looking outside the Wichita metro, Arkansas City also offers the opportunity to enjoy significantly more space without giving up reasonable access to Wichita. From the custom kitchen and multiple living areas to the pool, large 3-car garage, acreage, whole-house generator, entertainment systems, and oversized heated shop, no expense was spared in creating a property that is as functional as it is impressive. 129 Springgate offers a combination that is difficult to duplicate</p>
     </div>
@@ -197,8 +199,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -208,13 +210,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="129 Springgate, Arkansas City, KS, 67005">
-        <input type="hidden" name="message" value="I am interested in the property at 129 Springgate, Arkansas City, KS, 67005 (MLS# 679347). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 129 Springgate, Arkansas City, KS, 67005 (MLS# 679347). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

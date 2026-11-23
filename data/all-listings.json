@@ -103304,7 +103304,7 @@
     "state": "KS",
     "lat": 38.819694,
     "lng": -97.623479,
-    "price": 79900,
+    "price": 85000,
     "beds": 2,
     "baths": 1,
     "sqft": "1043",
@@ -103316,8 +103316,7 @@
     "isSundgren": false,
     "agentName": "Terri Hostetler",
     "agentPhone": "7858190350",
-    "agentEmail": "",
-    "previousPrice": 89900
+    "agentEmail": ""
   },
   {
     "slug": "1717-cypress-st-1522-st-wichita-ks-673060",
