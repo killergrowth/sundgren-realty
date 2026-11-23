@@ -1727,7 +1727,7 @@
     "state": "KS",
     "lat": 37.673897,
     "lng": -97.384078,
-    "price": 4250000,
+    "price": 3999500,
     "beds": null,
     "baths": null,
     "sqft": "18824",
@@ -1739,7 +1739,8 @@
     "isSundgren": false,
     "agentName": "Ridge S Estes",
     "agentPhone": "6205180838",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 4250000
   },
   {
     "slug": "1900-timberwood-st-wichita-ks-677996",
@@ -2629,7 +2630,7 @@
     "state": "KS",
     "lat": 37.671667,
     "lng": -97.284374,
-    "price": 1700000,
+    "price": 1450000,
     "beds": null,
     "baths": null,
     "sqft": "19848",
@@ -2641,7 +2642,8 @@
     "isSundgren": false,
     "agentName": "Ridge S Estes",
     "agentPhone": "6205180838",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 1700000
   },
   {
     "slug": "206-seneca-st-wichita-ks-669797",
@@ -41609,7 +41611,7 @@
     "state": "KS",
     "lat": 37.55678098,
     "lng": -97.27842901,
-    "price": 315000,
+    "price": 314500,
     "beds": 4,
     "baths": 3,
     "sqft": "2546",
@@ -41621,7 +41623,8 @@
     "isSundgren": false,
     "agentName": "Amanda Jolley",
     "agentPhone": "3162139043",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 315000
   },
   {
     "slug": "1051-aksarben-ct-wichita-ks-676490",
