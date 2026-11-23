@@ -1059,7 +1059,7 @@
     "state": "KS",
     "lat": 37.069996,
     "lng": -97.048697,
-    "price": 67000,
+    "price": 62000,
     "beds": 3,
     "baths": 1,
     "sqft": "1300",
@@ -1071,7 +1071,8 @@
     "isSundgren": true,
     "agentName": "Ashley Chastain",
     "agentPhone": "6202183755",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 67000
   },
   {
     "slug": "521-mulberry-st-eureka-ks-675524",
