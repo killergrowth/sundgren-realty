@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>**IMPORTANT HOME IMPROVEMENTS ALREADY COMPLETED, TWO GARAGES, AND ROOM TO MAKE IT YOUR OWN!** Welcome to 203 Martha Ave in Mulvane, where space, functionality, and value come together! Some of the biggest improvements aren&#39;t always the ones you can see! This home has already benefited from numerous important updates to its essential systems, offering buyers the added value of improvements that have already been taken care of. With approximately 1,950 sq. ft. of finished living space, this property offers a versatile floor plan with multiple living and gathering areas and plenty of opportunities to make each space your own. The spacious kitchen features abundant cabinetry and counter space, while the dining area showcases a beautiful stone accent feature and French doors. The primary suite includes a private bathroom and walk-in closet, with two additional bedrooms and another full bathroom nearby. Additional finished space provides flexibility for a home office, second living area, game room, hobby space, or whatever fits your lifestyle. Outside, enjoy a fenced backyard with mature trees and room to relax or entertain. Need garage space? You&#39;ll appreciate having BOTH an attached garage and a separate detached garage, offering options for parking, storage, a workshop, or hobbies. With numerous important improvements already completed, generous living space, and two garages, 203 Martha Ave offers a great opportunity to enjoy the benefits of previous updates while adding your own personal style. Schedule your private showing today and see the possibilities for yourself!</p>
     </div>
@@ -205,8 +207,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -216,13 +218,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="203 Martha Ave, Mulvane, KS, 67110">
-        <input type="hidden" name="message" value="I am interested in the property at 203 Martha Ave, Mulvane, KS, 67110 (MLS# 678873). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 203 Martha Ave, Mulvane, KS, 67110 (MLS# 678873). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
