@@ -3185,7 +3185,7 @@
     "state": "KS",
     "lat": 37.717416,
     "lng": -97.238757,
-    "price": 1290000,
+    "price": 1190000,
     "beds": 5,
     "baths": 4,
     "sqft": "5759",
@@ -3198,7 +3198,7 @@
     "agentName": "Kevin Pham",
     "agentPhone": "3164090444",
     "agentEmail": "",
-    "previousPrice": 1390000
+    "previousPrice": 1290000
   },
   {
     "slug": "1510-69th-st-n-st-park-city-ks-669296",
@@ -7539,7 +7539,7 @@
     "state": "KS",
     "lat": 37.729627,
     "lng": -97.185168,
-    "price": 734900,
+    "price": 709900,
     "beds": 4,
     "baths": 5,
     "sqft": "4397",
@@ -7551,7 +7551,8 @@
     "isSundgren": false,
     "agentName": "Kevin Pham",
     "agentPhone": "3164090444",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 734900
   },
   {
     "slug": "0000-22nd-avenue-eisenhower-road-moundridge-ks-675439",
@@ -90261,7 +90262,7 @@
     "state": "KS",
     "lat": 37.678059,
     "lng": -97.319498,
-    "price": 119900,
+    "price": 109900,
     "beds": 4,
     "baths": 1,
     "sqft": "1321",
@@ -90274,7 +90275,7 @@
     "agentName": "Omar Abushikha",
     "agentPhone": "3165181441",
     "agentEmail": "",
-    "previousPrice": 129900
+    "previousPrice": 119900
   },
   {
     "slug": "621-grant-st-mcpherson-ks-677239",
@@ -102660,7 +102661,7 @@
     "state": "KS",
     "lat": 37.06604901,
     "lng": -97.04179934,
-    "price": 80000,
+    "price": 69900,
     "beds": 4,
     "baths": 2,
     "sqft": "2173",
@@ -102673,7 +102674,7 @@
     "agentName": "Shandon Weston",
     "agentPhone": "6204417611",
     "agentEmail": "",
-    "previousPrice": 90000
+    "previousPrice": 80000
   },
   {
     "slug": "417-11th-ave-winfield-ks-675747",
