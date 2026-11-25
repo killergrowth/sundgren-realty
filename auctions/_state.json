@@ -1,5 +1,5 @@
 {
-  "lastFetch": "2026-11-24T19:59:29.677Z",
+  "lastFetch": "2026-11-25T03:58:18.531Z",
   "auctions": {
     "24096": {
       "slug": "test-auction-24096",
@@ -2973,16 +2973,16 @@
     },
     "172581": {
       "slug": "the-clubhouse-at-1204-e-park-glen-st-clearwater-ks-67026-172581",
-      "status": "accepting_bids",
+      "status": "complete",
       "name": "'The Clubhouse' at 1204 E Park Glen St., Clearwater, KS 67026",
-      "generated": "2026-10-23T21:05:19.946Z"
+      "generated": "2026-10-23T21:05:19.946Z",
+      "updated": "2026-11-25T03:58:21.927Z"
     },
     "172603": {
       "slug": "742-acres-whitewater-river-tillable-bottom-ground-near-towan-172603",
       "status": "accepting_bids",
       "name": "74.2 Acres Whitewater River Tillable Bottom Ground Near Towanda – Butler County, Kansas",
-      "generated": "2026-10-24T20:22:17.224Z",
-      "updated": "2026-11-24T19:59:37.203Z"
+      "generated": "2026-10-24T20:22:17.224Z"
     },
     "172952": {
       "slug": "80-acres-sedgwick-county-kansas-pasture-pond-rural-water-met-172952",
@@ -3031,6 +3031,12 @@
       "status": "pending",
       "name": "Multi-Property Auction: 3 Homes For Sale in El Dorado Kansas",
       "generated": "2026-11-21T18:46:54.982Z"
+    },
+    "174608": {
+      "slug": "the-hess-collection-auction-3-174608",
+      "status": "accepting_bids",
+      "name": "The Hess Collection Auction #3 ",
+      "generated": "2026-11-25T03:58:21.925Z"
     }
   }
 }
