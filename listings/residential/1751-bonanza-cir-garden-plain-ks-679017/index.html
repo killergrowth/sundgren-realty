@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>One of ICT&#39;s premier custom home builders is opening the doors to their personal sanctuary. Nestled on 6+ acres just three minutes west of Goddard, this 6-bedroom, 4.5-bathroom Modern European and French-inspired estate is an ultra-rare piece of living art. Built with zero compromises, it represents a lifetime of craftsmanship. Stepping through the front doors feels like stepping into a story. The home breathes history, anchored by striking bleached mahogany arched doors and antique hardware salvaged from a local turn-of-the-century industrial building. Every detail is over-the-top, from the chef’s kitchen draped in premium quartz, countertops, brushed nickel, custom hand built cabinets like the days of old! Soaring living spaces, cozy fireplace designed to bring a large family together with love and laughter. Outside, your private kingdom flows West through the tree line filled with wild life. Watch the sunset over your own quiet pond, work and play in the massive 72’x45’ insulated shop. Complete with an office, half bath and 12&#39; doors—built for your grandest passions. Dream of flying...located in the Yoder Airport neighborhood with Airfield access and no special assessments. This property seamlessly bridges absolute luxury with country tranquility. This is a rare opportunity to inherit a builder’s crown jewel. A home of this caliber, built by the master for his own family, almost never comes to market. The next chapter is yours to write.</p>
     </div>
@@ -205,8 +207,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -216,13 +218,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="1751 Bonanza CIR, Garden Plain, KS, 67050">
-        <input type="hidden" name="message" value="I am interested in the property at 1751 Bonanza CIR, Garden Plain, KS, 67050 (MLS# 679017). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 1751 Bonanza CIR, Garden Plain, KS, 67050 (MLS# 679017). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

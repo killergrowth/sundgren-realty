@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Not all condo living is created equal, and 11 E Via Roma is a perfect example of why. Tucked into the established surroundings of Crestview Country Club Estates, this beautifully updated residence brings together distinctive character, modern finishes, and a lifestyle centered around comfort and convenience. It&#39;s a refreshing departure from what you might expect from a condominium, offering the feel of a traditional home with the added appeal of lower-maintenance living. From the moment you arrive, there&#39;s a sense that this one is something a little different. Stepping inside, you&#39;ll immediately appreciate the updates that bring a fresh, inviting feel to the main level. The living room offers a comfortable place to relax or gather with friends and family, while the beautifully updated kitchen and dining area create a wonderful setting for everything from everyday meals to entertaining. Each of these spaces blends style with functionality, making the main floor as practical as it is appealing. Also on this level, you&#39;ll find a versatile bedroom that could easily serve as a home office, guest room, or additional living space, along with a full bathroom that completes the main floor. Heading upstairs, the spacious primary bedroom is a standout feature of the home, offering an abundance of room to create a comfortable retreat of your own. Ample storage provides plenty of space to stay organized, while access to a private balcony adds a wonderful spot to step outside and enjoy a little fresh air. An additional generously sized bedroom and bathroom complete the upper level, providing a comfortable arrangement with plenty of room for everyone to have their own space. The basement adds yet another layer of versatility to this home, featuring a comfortable family and recreation room with plenty of possibilities. Whether you envision a cozy movie night, a game room, or simply an additional space to relax and unwind, this lower level offers the flexibility to make it your own. A separate laundry room keeps the everyday necessities tucked away, allowing the recreation space to remain dedicated to whatever you enjoy most. The appeal of this home doesn&#39;t stop at the front door! With both front and back patios, you&#39;ll have inviting outdoor spaces to enjoy your morning coffee, entertain a few friends, or simply unwind at the end of the day. Add in the beauty of the established Crestview Country Club Estates community and the convenience of lower-maintenance condo living, and you have a wonderful combination of comfort, character, and ease. With thoughtful updates throughout, generous living spaces, and plenty of room to make yourself at home, 11 E Via Roma offers an opportunity to spend less time worrying about upkeep and more time enjoying the place you call home.</p>
     </div>
@@ -205,8 +207,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -216,13 +218,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="11 Via Roma ST, Wichita, KS, 67230">
-        <input type="hidden" name="message" value="I am interested in the property at 11 Via Roma ST, Wichita, KS, 67230 (MLS# 681861). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 11 Via Roma ST, Wichita, KS, 67230 (MLS# 681861). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>

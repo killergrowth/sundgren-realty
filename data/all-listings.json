@@ -90540,7 +90540,7 @@
     "state": "KS",
     "lat": 39.783879,
     "lng": -97.896673,
-    "price": 139500,
+    "price": 134500,
     "beds": 4,
     "baths": 2,
     "sqft": "1711",
@@ -90552,7 +90552,8 @@
     "isSundgren": false,
     "agentName": "Laura Krier",
     "agentPhone": "7856143854",
-    "agentEmail": ""
+    "agentEmail": "",
+    "previousPrice": 139500
   },
   {
     "slug": "5118-mount-vernon-st-wichita-ks-677837",

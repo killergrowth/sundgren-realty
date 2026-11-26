@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-pending pill">Pending</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -148,7 +148,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>Tucked away on a quiet cul-de-sac in Eagle Lake, this beautifully maintained two-story home is ready for its next chapter. Traditional architecture and tasteful landscaping create a welcoming first impression, while generous gathering spaces and a backyard framed by mature trees invite you to settle in and stay awhile. Inside, the spacious living room offers plenty of room to welcome guests, while the separate formal dining room sets the stage for holiday dinners and special celebrations. At the heart of the home, the well-equipped kitchen features hard-surface countertops, a spacious island, a storage pantry, and included appliances—even the refrigerator. The nearby breakfast nook is equally suited to quick weekday breakfasts and relaxed evening meals, with a door opening onto the expansive deck. Imagine taking your morning coffee outside, overlooking a spacious backyard where mature trees offer shade and a lovely sense of privacy. The main-floor family room brings everyone together near the kitchen and breakfast nook, with large windows and a gas fireplace creating an inviting place to unwind. Picture cookies being decorated at the island, Thanksgiving dinner in the oven, and conversation flowing between the spaces. Whether you’re hosting a crowd or enjoying a quiet evening by the fire, there’s room to feel connected and comfortable. A convenient half bath and separate laundry room complete the main level. Upstairs, five spacious bedrooms provide room to retreat and recharge. The primary suite features a generous bedroom, walk-in closet, and private bath with dual vanities, a separate tub, and a shower. Four additional bedrooms and a full hall bath offer flexibility for sleeping spaces, guests, hobbies, or a home office. The unfinished lower level opens the door to even more possibilities. With all five bedrooms already above ground, imagine creating an expansive family room, a home theater, a game room, or your own exercise space—or exploring the potential for additional bedrooms. It’s an opportunity to add finished living space and build equity while tailoring the home to your needs. With its welcoming character, peaceful cul-de-sac setting, and room to grow, this Eagle Lake home is ready for new memories. Come see it for yourself and imagine celebrating the holidays here! Some information may be estimated and is not guaranteed. Please verify schools with USD 259.</p>
     </div>
@@ -201,8 +203,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -212,13 +214,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="4372 Eagle Lake Ct, Wichita, KS, 67220">
-        <input type="hidden" name="message" value="I am interested in the property at 4372 Eagle Lake Ct, Wichita, KS, 67220 (MLS# 680570). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 4372 Eagle Lake Ct, Wichita, KS, 67220 (MLS# 680570). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
