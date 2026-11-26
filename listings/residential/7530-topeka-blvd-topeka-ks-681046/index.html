@@ -112,7 +112,7 @@
     lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
     document.addEventListener('keydown',function(e){ if(!lb.classList.contains('active')) return; if(e.key==='Escape') close(); if(e.key==='ArrowLeft') open((cur-1+srcs.length)%srcs.length); if(e.key==='ArrowRight') open((cur+1)%srcs.length); });
   })();
-  </script><div class="sg-photo-pills"><span class="pill-active pill">Active</span><span class="pill sg-type-pill">Residential</span></div></div>
+  </script><div class="sg-photo-pills"><span class="pill-terminated pill">Inactive</span><span class="pill sg-type-pill">Residential</span></div></div>
 
         <div class="stat-row">
     <div class="stat-cell">
@@ -133,7 +133,9 @@
   </div>
 
         <div style="margin-top:32px;">
-          <div class="desc-section">
+          <div class="desc-section" style="border-left-color:#2563eb;">
+        <p style="margin:0;font-size:14px;line-height:1.75;"><strong>This property is now under contract.</strong> See our other great properties <a href="/listings/" style="color:var(--yellow-dark);font-weight:700;">here</a>.</p>
+      </div><div class="desc-section">
       <h3 class="desc-section-title"><i class="fas fa-home"></i> Property Description</h3>
       <p>A rare offering of Heartland Motorsports Park in Topeka, Kansas - 29 tracts spanning a fully-improved motorsports facility and 288± acres of undeveloped I-1 light-industrial land. For more than three decades, Heartland Motorsports Park has been one of the Midwest&#39;s most recognized motorsports destinations — home to NHRA drag racing, road course competition, and a legacy of speed that put Topeka on the map. Now, Darana Motorsports Holdings, LLC is bringing the entire 622.96± acre property to auction: a single, extraordinary opportunity to own the race park itself and its surrounding light-industrial land. This offering is structured around two complementary parcels, sold in a unified 29-tract property: The Land (Tracts 1–12 &amp; 23–29, 288.80± acres). Undeveloped, shovel-ready acreage zoned I-1 Light Industrial, surrounding and adjacent to the race park core. Much of this land has been used for overflow and event parking and is stabilized in multiple areas. Located within minutes of US-75 and the Topeka metro, some of the land is positioned for distribution, logistics, light manufacturing, or industrial park development. The Race Park (Tracts 13–22, 334.16± acres). The heart of the property: existing racing surfaces, multiple grandstands, garage and paddock buildings, a shelter structure, and approximately 93,103± square feet of improvements, all with direct access to SE Gary Ormsby Drive. This is a turnkey opportunity for a motorsports operator, event promoter, or entertainment venue investor to reactivate an established, regionally known facility — or reimagine the site for a new use entirely. Location That Works as Hard as the Land. Situated in Shawnee County near SW Topeka Boulevard, SE 77th Street, and SE Adams Street, the property offers convenient access to the Topeka metro, the I-70/US-75 corridor, and the broader Kansas City region — while maintaining proximity to Forbes Field (KFOE) for aviation access. Why This Auction Matters. Properties of this scale — a fully-improved motorsports venue paired with nearly 300 acres of adjoining industrial land, offered as one unified auction — rarely come to market. Whether the vision is racing and events, industrial redevelopment, or a long-term land assembly play, this is a foundation to build on. Property Highlights 622.96± total acres across 29 tracts, Shawnee County, Kansas 334.16± acres of improved race park facilities (Parcel 2) plus 288.80± acres of undeveloped I-1 light-industrial land (Parcel 1) Zoned I-1 – Light Industrial across the entire property ~93,103± SF of existing buildings, including grandstands, garages, and support structures Direct access to SE Gary Ormsby Drive, a publicly dedicated street Flood Zone X — outside the mapped 100-year floodplain Minutes from US-75 and the Topeka metro; proximity to Forbes Field (KFOE) Suitable for motorsports/event operators, industrial developers, or land investors — acquired as a whole or in components *SEE TERMS OF SALE*</p>
     </div>
@@ -194,8 +196,8 @@
           <div class="sg-contact-col">
             
     <div class="info-card info-card--sticky">
-      <h4 style="margin:0 0 4px;font-size:17px;">Interested in this property?</h4>
-      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out to schedule a showing.</p>
+      <h4 style="margin:0 0 4px;font-size:17px;">Interested in properties like this?</h4>
+      <p style="font-size:13px;color:var(--text-light);margin:0 0 18px;line-height:1.5;">Call us directly or drop your info and we&#39;ll reach out.</p>
 
       <a href="tel:3163217112" class="btn-bid" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;">
         <i class="fas fa-phone"></i> (316) 321-7112
@@ -205,13 +207,13 @@
 
       <form id="sg-contact-form" style="display:flex;flex-direction:column;gap:10px;">
         <input type="hidden" name="interest" value="7530 Topeka Blvd, Topeka, KS, 66619">
-        <input type="hidden" name="message" value="I am interested in the property at 7530 Topeka Blvd, Topeka, KS, 66619 (MLS# 681046). Please contact me to schedule a showing.">
+        <input type="hidden" name="message" value="I am interested in properties similar to 7530 Topeka Blvd, Topeka, KS, 66619 (MLS# 681046). Please contact me.">
         <input type="text" name="name" placeholder="Your Name" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <input type="email" name="email" placeholder="Email Address" required
           style="width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;">
         <button type="submit" class="btn-bid" style="width:100%;justify-content:center;">
-          Contact Me About This Listing
+          Get In Touch
         </button>
         <p id="sg-form-msg" style="display:none;font-size:13px;text-align:center;margin:0;"></p>
       </form>
